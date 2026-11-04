@@ -1,0 +1,85 @@
+{
+  "merchantId": "huckleberry",
+  "model": "Claude Sonnet 5.5 (agent, one session)",
+  "builtAt": "2026-11-03",
+  "checklist": [
+    {
+      "item": "Installable PWA (React, Vite, TypeScript, IndexedDB, no backend) that works offline",
+      "status": "works",
+      "note": "Tested in real headless Edge 155 under the site's CSP headers. Service worker registered, activated and controlled the page. It precached 11 files. The app loaded with the Network offline and also with the static server killed. Entries could be logged while offline. The manifest parsed with no errors and the 192, 512, maskable and 180 px icons are the right sizes. The actual install prompt could not be exercised. The builder's claim that the SW is unverifiable in a browser is wrong for a normal browser. Served through serve-dist.mjs with the CSP header, I walked all tabs, modals, canvas PNG, blob downloads, CSV wizard and offline reload with a securitypolicyviolation listener: zero violations and zero console errors. No tab scrolls horizontally at 375 px."
+    },
+    {
+      "item": "One-tap timers for sleep, breast feed, bottle feed, diaper and pumping, with editing and backdating",
+      "status": "works",
+      "note": "Sleep, Breast (left/right sub-timers), Bottle and Pump start and stop with one tap. Diaper is a one-tap Wet, Dirty or Both. A running sleep survived a reload. Edit/backdate on a running timer (1 h ago chip) moved the start. Existing entries edit and save. Delete works with Undo. Add past entry works for sleep, feed (bottle and breast), diaper and pump. Validation rejects a future start and an end before the start. Stopping bottle or pump opens an amount editor. Only one feed can run at a time. Toasts stack up when tapping quickly."
+    },
+    {
+      "item": "Today timeline",
+      "status": "works",
+      "note": "A 24 h strip plus a chronological list with day navigation. Tapping a row opens the editor. Midnight-spanning sleep shows under the day it started and is clipped correctly in totals."
+    },
+    {
+      "item": "Daily and weekly summaries (total sleep, longest stretch, feeds, diapers)",
+      "status": "works",
+      "note": "Daily and Weekly tabs with prev/next navigation. Numbers match the imported data: 7 feeds and 6 diapers per day, sleep clipped at midnight, longest stretch not clipped. The weekly view has stat tiles, a bar chart and a table. Weekly averages include the in-progress current day, which pulls them down. At 375 px the table header 'Diapers' is clipped and the bar labels crowd each other."
+    },
+    {
+      "item": "Nap predictor from age-based wake-window ranges that the user can edit",
+      "status": "works",
+      "note": "Twelve age bands apply per child. Editing 4-5 mo to 100-160 min saved, persisted across reload and changed the predicted window. Min above max is rejected, and Reset to defaults works. A 14-month child got the 3-4 h band. Predictions follow the last wake time. Not slot-aware (first, second and third wake window of the day). On tapping Sleep the card shows 'Awake since' for up to 15 s before switching to 'Asleep', because its clock ticks every 15 s."
+    },
+    {
+      "item": "Predictor narrows as it learns from the baby's last ten days",
+      "status": "works",
+      "note": "With about 12 days of imported data the age band 1h30 to 2h30 became a predicted 1h43 to 2h05 from 40 learned wake windows (typical 1h54, 85% blend). The card explains the blend. With no data it falls back to the age band. The ten-day cutoff is covered by unit tests (24 predictor tests), and I re-ran all 72 tests and they pass."
+    },
+    {
+      "item": "Shareable summary exported as PNG or text for a pediatrician or caregiver",
+      "status": "works",
+      "note": "Today, Yesterday, Last 7 days and Custom ranges. Text has a daily average, day-by-day lines and notes. The downloaded PNG is 1080 px wide and I looked at both the week and single-day versions: clean layout, correct numbers, readable. Copy, Download text and Share buttons are present. In night mode the image preview is a bright cream card with blue, orange and green."
+    },
+    {
+      "item": "Multiple children",
+      "status": "works",
+      "note": "Add child in Settings, then a header switcher. Entries are isolated per child. The selection persists across reload. Each child has their own age band. Delete child asks for confirmation and removes their entries. Verified via IndexedDB counts."
+    },
+    {
+      "item": "Dim red night mode",
+      "status": "works",
+      "note": "The header toggle and the Settings select (Auto 7 pm-7 am, Always on, Always off) work, persist across reload, and Auto flipped to night at 7 pm. In night mode, 5 screens plus the modal were scanned for non-red colours. Only the light-pink active-tab and pill text (240,167,159) and the white Share preview deviate. No CSP violations."
+    },
+    {
+      "item": "Local storage plus JSON and CSV export and import",
+      "status": "works",
+      "note": "Data is in IndexedDB. JSON export, delete child, then Merge restored exactly. Replace everything worked in both directions. A corrupt or foreign JSON gives a clear error. CSV export re-imports as 'recognised as this app's own export' and can filter by child. Generic CSV import handled my 219-row Huckleberry-style file, a second layout (Activity/Details, US AM/PM) and a UTF-8 BOM, CRLF, semicolon, day-first file. Bad rows are reported. Re-importing the same file creates no duplicates. A day-first file imports 0 rows until the user flips Date order, since it is not auto-detected."
+    },
+    {
+      "item": "Huckleberry importer (inspect the export first and ask about column mapping)",
+      "status": "partial",
+      "note": "The builder could not get a real export. There is a generic CSV wizard with an always-shown column mapping and type-value mapping. It guessed my invented Huckleberry-like layout (Start/End/Duration/Type/Start Condition/Start Location/End Condition) correctly and imported 219 of 219 entries, skipping a Growth row. Whether it matches a real export is unverified. The UI text 'Works with ... a Huckleberry CSV export' and README 'Huckleberry CSV preset' overclaim."
+    },
+    {
+      "item": "Tests for the predictor and free Cloudflare Pages deploy steps",
+      "status": "works",
+      "note": "72 vitest tests pass on re-run: predictor (age bands, blending/narrowing, outliers, 10-day window, bedtime, edited bands), summaries, data/import, and offline via a sandboxed service worker. README gives Git-integration and wrangler direct-upload steps and a _headers file with the CSP. Actual deployment was not attempted, as the brief said to skip it."
+    }
+  ],
+  "score": {
+    "works": 11,
+    "partial": 1,
+    "missing": 0
+  },
+  "bugs": [
+    "375 px: the Wake windows table in Settings scrolls inside its wrapper (scrollWidth 353 vs 309), so the Max column inputs are cut off at the right edge until the table is scrolled.",
+    "375 px: the weekly summary table header 'Diapers' is clipped ('Diape') and the seven bar labels (14h 57m ...) crowd each other.",
+    "Night mode: the Share image preview stays a bright cream/white card with blue, orange and green bars, which defeats a dim-red view. Active tab and pill text is light pink (240,167,159) rather than dim red.",
+    "The nap predictor's 'now' ticks every 15 s, so after tapping Sleep it keeps showing 'Awake since ...' for up to 15 s before switching to 'Asleep since'.",
+    "Weekly averages include the in-progress current day. With today at 1h31m of sleep, the 7-day average reads 12h59m versus roughly 15h on full days.",
+    "The service worker precache list includes ./_headers, a Cloudflare config file. cache.addAll rejects if the host does not return 200 for it, which would stop the SW installing and silently break offline. Not verified on Cloudflare.",
+    "UI and README claim Huckleberry export support ('Works with ... a Huckleberry CSV export', 'Huckleberry CSV preset'), but the layout is a guess from memory.",
+    "CSV import defaults to month-first dates and does not auto-detect day-first (25/10/2026). The preview says 0 entries ready until the user changes Date order.",
+    "Several quick toasts stack (3 diaper taps give 3 toasts) and cover the timeline rows.",
+    "Backup and CSV filenames use the UTC date: nestlog-backup-2026-11-04.json was produced while the local date was still Nov 3 (evening)."
+  ],
+  "summary": "Nestlog is a solid, working build: every requested feature I exercised in a real browser under the strict CSP worked, including the service worker and offline reload the builder could not verify, the narrowing predictor, and a clean 1080 px share PNG. The one gap is the Huckleberry importer, which is a generic mapping wizard whose Huckleberry layout is unverified and over-advertised, plus minor 375 px table clipping and a bright Share preview in night mode."
+}

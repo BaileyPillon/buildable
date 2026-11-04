@@ -1,0 +1,29 @@
+{
+  "name": "private-pdf-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Private, offline-capable PDF toolkit. Everything runs in the browser.",
+  "scripts": {
+    "prepare-assets": "node scripts/copy-assets.mjs",
+    "predev": "npm run prepare-assets",
+    "dev": "vite",
+    "prebuild": "npm run prepare-assets",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "serve:csp": "node scripts/serve-csp.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.5.438",
+    "tesseract.js": "^2.1.5"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^6.2.7",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
+  }
+}

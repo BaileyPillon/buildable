@@ -1,0 +1,101 @@
+{
+  "file": "wellsfargo.csv",
+  "bank": "wellsFargo",
+  "statementStart": "2026-02-01",
+  "statementEnd": "2026-10-31",
+  "rows": 447,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 15.49,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "hulu",
+      "displayName": "Hulu",
+      "match": "HULU",
+      "merchantId": "hulu",
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "max",
+      "displayName": "Max",
+      "match": "MAX.COM",
+      "merchantId": "max",
+      "cadence": "monthly",
+      "currentAmount": 16.99,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "verizon",
+      "displayName": "Verizon Wireless",
+      "match": "VZWRLSS",
+      "merchantId": "verizon",
+      "cadence": "monthly",
+      "currentAmount": 92.7,
+      "charges": 9,
+      "active": true,
+      "variable": true
+    },
+    {
+      "key": "xfinity",
+      "displayName": "Xfinity",
+      "match": "COMCAST",
+      "merchantId": "xfinity",
+      "cadence": "monthly",
+      "currentAmount": 45,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "planet-fitness",
+      "displayName": "Planet Fitness",
+      "match": "PLANET FITNESS",
+      "merchantId": "planet-fitness",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "calendly",
+      "displayName": "Calendly",
+      "match": "CALENDLY",
+      "merchantId": "calendly",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 9,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

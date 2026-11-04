@@ -1,0 +1,362 @@
+{
+  "file": "public/sample-statement.csv",
+  "note": "merchantId values are ids in fixtures/test-kb.json (candidates are computed against the test KB); kbMerchantId is the id in the real KB (src/kb) that findRecurring must return, and kbCandidatesInclude the candidate ids the real KB must offer for a bundled charge.",
+  "statementStart": "2025-09-01",
+  "statementEnd": "2026-10-31",
+  "rows": 482,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 19.99,
+      "charges": 14,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 17.99,
+          "to": 19.99
+        }
+      ],
+      "kbMerchantId": "netflix"
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 19.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "spotify"
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "chatgpt-plus"
+    },
+    {
+      "key": "grammarly",
+      "displayName": "Grammarly",
+      "match": "GRAMMARLY",
+      "merchantId": "grammarly",
+      "cadence": "annual",
+      "currentAmount": 144,
+      "charges": 2,
+      "active": true,
+      "kbMerchantId": "grammarly-pro"
+    },
+    {
+      "key": "otter-ai",
+      "displayName": "Otter.ai",
+      "match": "OTTER",
+      "merchantId": "otter-ai",
+      "cadence": "monthly",
+      "currentAmount": 16.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "otter-ai"
+    },
+    {
+      "key": "notion",
+      "displayName": "Notion",
+      "match": "NOTION",
+      "merchantId": "notion",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "notion-plus"
+    },
+    {
+      "key": "todoist",
+      "displayName": "Todoist",
+      "match": "TODOIST",
+      "merchantId": "todoist",
+      "cadence": "monthly",
+      "currentAmount": 5,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "todoist-pro"
+    },
+    {
+      "key": "calendly",
+      "displayName": "Calendly",
+      "match": "CALENDLY",
+      "merchantId": "calendly",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "calendly-standard"
+    },
+    {
+      "key": "dropbox",
+      "displayName": "Dropbox",
+      "match": "DROPBOX",
+      "merchantId": "dropbox",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "dropbox-plus"
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($9.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 14,
+      "active": true,
+      "candidates": [
+        "icloud-plus",
+        "apple-tv-plus"
+      ],
+      "kbMerchantId": null,
+      "kbCandidatesInclude": [
+        "icloud-plus"
+      ]
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($0.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 0.99,
+      "charges": 14,
+      "active": true,
+      "candidates": [
+        "icloud-plus"
+      ],
+      "kbMerchantId": null,
+      "kbCandidatesInclude": [
+        "icloud-plus"
+      ]
+    },
+    {
+      "key": "ring-protect",
+      "displayName": "Ring Protect",
+      "match": "RING",
+      "merchantId": "ring-protect",
+      "cadence": "monthly",
+      "currentAmount": 10.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "ring-protect"
+    },
+    {
+      "key": "nordvpn",
+      "displayName": "NordVPN",
+      "match": "NORDVPN",
+      "merchantId": "nordvpn",
+      "cadence": "annual",
+      "currentAmount": 71.88,
+      "charges": 2,
+      "active": true,
+      "kbMerchantId": "nordvpn"
+    },
+    {
+      "key": "audible",
+      "displayName": "Audible",
+      "match": "AUDIBLE",
+      "merchantId": "audible",
+      "cadence": "monthly",
+      "currentAmount": 14.95,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "audible"
+    },
+    {
+      "key": "hulu",
+      "displayName": "Hulu",
+      "match": "HULU",
+      "merchantId": "hulu",
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "hulu"
+    },
+    {
+      "key": "max",
+      "displayName": "Max",
+      "match": "MAX.COM",
+      "merchantId": "max",
+      "cadence": "monthly",
+      "currentAmount": 16.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "hbo-max"
+    },
+    {
+      "key": "peloton-app",
+      "displayName": "Peloton App",
+      "match": "PELOTON",
+      "merchantId": "peloton-app",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "peloton-app"
+    },
+    {
+      "key": "myfitnesspal",
+      "displayName": "MyFitnessPal Premium",
+      "match": "MYFITNESSPAL",
+      "merchantId": "myfitnesspal",
+      "cadence": "monthly",
+      "currentAmount": 19.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "myfitnesspal-premium"
+    },
+    {
+      "key": "huckleberry",
+      "displayName": "Huckleberry",
+      "match": "HUCKLEBERRY",
+      "merchantId": "huckleberry",
+      "cadence": "monthly",
+      "currentAmount": 14.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "huckleberry"
+    },
+    {
+      "key": "headspace",
+      "displayName": "Headspace",
+      "match": "HEADSPACE",
+      "merchantId": "headspace",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "headspace"
+    },
+    {
+      "key": "xfinity",
+      "displayName": "Xfinity",
+      "match": "COMCAST",
+      "merchantId": "xfinity",
+      "cadence": "monthly",
+      "currentAmount": 87.42,
+      "charges": 14,
+      "active": true,
+      "variable": true,
+      "kbMerchantId": "xfinity"
+    },
+    {
+      "key": "verizon",
+      "displayName": "Verizon Wireless",
+      "match": "VZWRLSS",
+      "merchantId": "verizon",
+      "cadence": "monthly",
+      "currentAmount": 91.57,
+      "charges": 14,
+      "active": true,
+      "variable": true,
+      "kbMerchantId": "verizon"
+    },
+    {
+      "key": "planet-fitness",
+      "displayName": "Planet Fitness",
+      "match": "PLANET FITNESS",
+      "merchantId": "planet-fitness",
+      "cadence": "monthly",
+      "currentAmount": 24.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "planet-fitness"
+    },
+    {
+      "key": "nytimes",
+      "displayName": "The New York Times",
+      "match": "NYTIMES",
+      "merchantId": "nytimes",
+      "cadence": "monthly",
+      "currentAmount": 17,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "nyt-digital"
+    },
+    {
+      "key": "linktree",
+      "displayName": "Linktree",
+      "match": "LINKTREE",
+      "merchantId": "linktree",
+      "cadence": "monthly",
+      "currentAmount": 12,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "linktree-pro"
+    },
+    {
+      "key": "zapier",
+      "displayName": "Zapier",
+      "match": "ZAPIER",
+      "merchantId": "zapier",
+      "cadence": "monthly",
+      "currentAmount": 29.99,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "zapier"
+    },
+    {
+      "key": "ynab",
+      "displayName": "YNAB",
+      "match": "YNAB",
+      "merchantId": "ynab",
+      "cadence": "annual",
+      "currentAmount": 109,
+      "charges": 2,
+      "active": true,
+      "kbMerchantId": "ynab"
+    },
+    {
+      "key": "amazon-prime",
+      "displayName": "Amazon Prime",
+      "match": "AMAZON PRIME",
+      "merchantId": "amazon-prime",
+      "cadence": "annual",
+      "currentAmount": 139,
+      "charges": 1,
+      "active": true,
+      "kbMerchantId": "amazon-prime"
+    },
+    {
+      "key": "claude-pro",
+      "displayName": "Claude Pro",
+      "match": "CLAUDE",
+      "merchantId": "claude-pro",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 14,
+      "active": true,
+      "kbMerchantId": "claude-pro"
+    }
+  ],
+  "inactive": [
+    {
+      "key": "paramount-plus",
+      "displayName": "Paramount+",
+      "match": "PARAMOUNT",
+      "merchantId": "paramount-plus",
+      "cadence": "monthly",
+      "currentAmount": 7.99,
+      "charges": 8,
+      "active": false,
+      "kbMerchantId": "paramount-plus"
+    }
+  ]
+}

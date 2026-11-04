@@ -1,0 +1,101 @@
+{
+  "file": "generic.qfx",
+  "bank": "qfx",
+  "statementStart": "2026-01-01",
+  "statementEnd": "2026-10-31",
+  "rows": 344,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 17.99,
+      "charges": 10,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 15.49,
+          "to": 17.99
+        }
+      ]
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "hulu",
+      "displayName": "Hulu",
+      "match": "HULU",
+      "merchantId": "hulu",
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "ring-protect",
+      "displayName": "Ring Protect",
+      "match": "RING",
+      "merchantId": "ring-protect",
+      "cadence": "monthly",
+      "currentAmount": 4.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "grammarly",
+      "displayName": "Grammarly",
+      "match": "GRAMMARLY",
+      "merchantId": "grammarly",
+      "cadence": "annual",
+      "currentAmount": 144,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "planet-fitness",
+      "displayName": "Planet Fitness",
+      "match": "PLANET FITNESS",
+      "merchantId": "planet-fitness",
+      "cadence": "monthly",
+      "currentAmount": 24.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($9.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 10,
+      "active": true,
+      "candidates": [
+        "icloud-plus",
+        "apple-tv-plus"
+      ]
+    },
+    {
+      "key": "verizon",
+      "displayName": "Verizon Wireless",
+      "match": "VZWRLSS",
+      "merchantId": "verizon",
+      "cadence": "monthly",
+      "currentAmount": 91.16,
+      "charges": 10,
+      "active": true,
+      "variable": true
+    }
+  ],
+  "inactive": []
+}

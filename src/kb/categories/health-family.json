@@ -1,0 +1,1886 @@
+[
+  {
+    "id": "myfitnesspal-premium",
+    "name": "MyFitnessPal Premium",
+    "category": "health-family",
+    "url": "https://www.myfitnesspal.com/",
+    "match": {
+      "patterns": [
+        "MYFITNESSPAL|MY FITNESS PAL"
+      ],
+      "examples": [
+        "MYFITNESSPAL.COM PREMIUM CA",
+        "MYFITNESSPAL INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Premium monthly"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 6.67,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "The core job is a food and weight diary. A personal PWA on USDA and Open Food Facts data covers it for free; you lose the huge crowd-sourced food database and app integrations.",
+    "alternatives": [
+      {
+        "name": "Cronometer (free plan)",
+        "url": "https://cronometer.com/",
+        "note": "Free plan logs food, scans barcodes and uses a verified food database."
+      },
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/",
+        "note": "Free, open food database with barcode lookup; coverage is uneven for restaurant and store-brand items."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable food and weight diary: log foods by meal with calories and macros, scan barcodes, save meals, track weight with a trend line, and see daily targets.",
+        "hours": 10,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "MyFitnessPal's crowd-sourced food database is far larger than open data, which is patchier for store brands and restaurants. You also lose Apple Health and device syncs, friends, and phone-to-laptop sync.",
+        "prompt": "Build me a free personal food diary as an installable PWA (React, Vite, TypeScript, no backend, no accounts). Core features: (1) daily log by meal with calories, protein, carbs and fat; (2) food search against the USDA FoodData Central API (I will paste a free API key into settings) and Open Food Facts for packaged foods, plus a small bundled starter list so it works before the key is set; (3) barcode scanning with the phone camera using @zxing/browser, looking up Open Food Facts; (4) saved meals and custom foods; (5) a weight log with a 7-day moving-average chart; (6) calorie and macro targets with a daily progress ring. Store everything in IndexedDB, add JSON and CSV export and import, and tell me to export my MyFitnessPal data (Premium only) before I cancel, then write an importer for the CSV, inspecting its columns first and confirming the mapping with me. Work offline after first load. Deploy free to GitHub Pages or Cloudflare Pages and write a README. Propose the data model first, then build in small tested steps."
+      },
+      "cancel": {
+        "howTo": "Cancel in the app under Settings (Premium), or in the App Store or Google Play if you signed up there. Premium stays active until the end of the paid period. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://www.myfitnesspal.com/premium",
+        "gotchas": "The 7-day free trial auto-renews unless canceled at least 24 hours before the renewal date. Annual billing is $79.99 against $19.99 monthly, so check which one you are on. Cancelling leaves a limited free tier, not a deleted account. Export first: on the website go to Reports > Export Data while Premium is active. The bulk export (a zip of CSV files sent by email) is a Premium feature. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://www.myfitnesspal.com/premium",
+      "https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718",
+      "https://fdc.nal.usda.gov/",
+      "https://world.openfoodfacts.org/"
+    ]
+  },
+  {
+    "id": "noom",
+    "name": "Noom",
+    "category": "health-family",
+    "url": "https://www.noom.com/",
+    "match": {
+      "patterns": [
+        "NOOM"
+      ],
+      "examples": [
+        "NOOM INC NEW YORK NY",
+        "NOOM.COM NEW YORK NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 42.25,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "haggle"
+    ],
+    "why": "Noom bills the whole multi-month plan upfront and auto-renews. Most people get the habit lessons in a few months, then a free logger does the rest. End it on purpose, or ask for a renewal discount.",
+    "alternatives": [
+      {
+        "name": "Cronometer (free plan)",
+        "url": "https://cronometer.com/",
+        "note": "Free plan logs food, scans barcodes and uses a verified food database."
+      },
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/",
+        "note": "Free, open food database with barcode lookup; coverage is uneven for restaurant and store-brand items."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Plans auto-renew and can be cancelled at any time, so you can credibly say you are about to leave. Free food loggers (Cronometer, MyFitnessPal free tier) are real alternatives. Retention offers are reported by third parties but are not guaranteed.",
+        "script": "Hi, my Noom plan is about to renew and I am deciding whether to continue. I have been using it for a while, and at the current price I am leaning toward switching to a free food-logging app. Before I cancel, is there a discounted renewal rate or a lower-priced plan you can offer? I would stay at a price closer to [target price]. If you can offer something, please confirm the new price, the length of the term, and the next billing date in writing before I accept.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "A few days before the plan renews, through the in-app cancel flow or support chat. Not during the trial."
+      },
+      "cancel": {
+        "howTo": "Cancel in the Noom app (profile picture > Settings > Manage Subscription), on the web through the Subscription Portal (Cancel Subscription), or in the App Store or Google Play if you subscribed there. Uninstalling the app does not cancel. Cancel before a trial ends to avoid the first charge.",
+        "url": "https://www.noom.com/support/faqs/subscription-and-billing/2025/10/how-to-cancel-your-noom-subscription-or-trial/",
+        "gotchas": "Plans are billed upfront for the whole term and auto-renew. Noom lists, for new accounts from March 31, 2026, $70 for one month, $169 for 4 months and $209 for a year. The trial price you pick is separate from the plan. Noom Med and GLP-1 programs are clinical and billed separately: talk to your prescriber before stopping any medication."
+      }
+    },
+    "sources": [
+      "https://www.noom.com/blog/how-much-does-noom-cost/",
+      "https://www.noom.com/support/faqs/subscription-and-billing/2025/10/how-to-cancel-your-noom-subscription-or-trial/"
+    ]
+  },
+  {
+    "id": "weightwatchers",
+    "name": "WeightWatchers",
+    "category": "health-family",
+    "url": "https://www.weightwatchers.com/us/",
+    "match": {
+      "patterns": [
+        "WEIGHT ?WATCHERS|WW INTERNATIONAL|\\bWW\\.COM"
+      ],
+      "examples": [
+        "WEIGHTWATCHERS.COM NEW YORK NY",
+        "WW INTERNATIONAL INC NEW YORK NY",
+        "WW.COM MEMBERSHIP NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "WW plans renew automatically, and the price you joined at may not be the renewal price. Ask for a retention offer before the term ends, or cancel and use a free food logger.",
+    "alternatives": [
+      {
+        "name": "Cronometer (free plan)",
+        "url": "https://cronometer.com/",
+        "note": "Free plan logs food, scans barcodes and uses a verified food database."
+      },
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/",
+        "note": "Free, open food database with barcode lookup; coverage is uneven for restaurant and store-brand items."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "WW plans renew automatically, so you hold the cancel decision, and free food loggers are a credible alternative. Retention offers are common in subscription cancel flows but are not guaranteed.",
+        "script": "Hello, I am a WW member and my plan renews soon. I am considering cancelling and using a free tracking app instead. Is there a loyalty or retention rate that keeps me at or below my current monthly price? If so, please confirm the exact monthly price, whether it starts a new commitment, and the renewal date in writing before I agree. If not, please tell me how to cancel before the renewal date.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "A few weeks before your plan renews, by phone or chat, so cancellation is still possible before auto-renewal."
+      },
+      "cancel": {
+        "howTo": "Sign in at weightwatchers.com or the WW app and use the membership settings to cancel, or contact member support. If you joined through the App Store or Google Play, cancel there. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://www.weightwatchers.com/us/",
+        "gotchas": "Check your plan terms for any minimum commitment and the renewal date, and put that date in your calendar. The renewal price can differ from the sign-up rate. Med+ is a clinical program with medication costs billed separately: talk to your prescriber before stopping any medication."
+      }
+    },
+    "sources": [
+      "https://www.weightwatchers.com/us/"
+    ]
+  },
+  {
+    "id": "strava",
+    "name": "Strava",
+    "category": "health-family",
+    "url": "https://www.strava.com/",
+    "match": {
+      "patterns": [
+        "STRAVA"
+      ],
+      "examples": [
+        "STRAVA INC SAN FRANCISCO CA",
+        "STRAVA SUBSCRIPTION SAN FRANCISCO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Individual monthly"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Individual annual"
+        },
+        {
+          "amount": 139.99,
+          "cadence": "annual",
+          "plan": "Family annual"
+        },
+        {
+          "amount": 149.99,
+          "cadence": "annual",
+          "plan": "Strava + Runna annual"
+        }
+      ]
+    },
+    "typicalMonthly": 6.67,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Segments, heatmaps and your friends feed are a network and a data service, not something to rebuild. The free tier still records and shares activities, so pay only if you use the paid analysis.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel on the platform where you subscribed: your Strava account page if you subscribed on strava.com, or your App Store or Google Play subscription list. Your subscription renews unless you cancel at least 24 hours before the renewal date. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.strava.com/en-us/articles/15401936-how-do-i-cancel-my-subscription",
+        "gotchas": "Annual is $79.99 against $11.99 monthly, so a monthly plan costs about 80 percent more over a year. Canceling a recent renewal does not start a refund by itself; Strava says website purchases may be refundable within 14 days. Cancelling keeps your activities and the free feed; you lose paid analysis and routes at the end of the period."
+      }
+    },
+    "sources": [
+      "https://www.strava.com/pricing",
+      "https://support.strava.com/en-us/articles/15401936-how-do-i-cancel-my-subscription",
+      "https://apps.apple.com/us/app/strava-run-bike-walk/id426826309"
+    ]
+  },
+  {
+    "id": "peloton-app",
+    "name": "Peloton App",
+    "category": "health-family",
+    "url": "https://www.onepeloton.com/app",
+    "match": {
+      "patterns": [
+        "PELOTON"
+      ],
+      "examples": [
+        "PELOTON MEMBERSHIP NEW YORK NY",
+        "PELOTON INTERACTIVE INC NEW YORK NY"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "App One monthly"
+        },
+        {
+          "amount": 159,
+          "cadence": "annual",
+          "plan": "App One annual"
+        },
+        {
+          "amount": 28.99,
+          "cadence": "monthly",
+          "plan": "App+ monthly"
+        },
+        {
+          "amount": 289,
+          "cadence": "annual",
+          "plan": "App+ annual"
+        }
+      ]
+    },
+    "typicalMonthly": 15.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Classes are licensed content you can rent by the season. Pay month to month for a training block, cancel for the outdoor months, and skip the annual plan unless you use it most of the year.",
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe month to month while you follow a class series, cancel when it ends or when you move outdoors, and restart when you want classes again. The App Store lists App One at $15.99 a month or $159 a year, so rotation beats the annual plan only if you stay off 3 or more months.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Sign in at onepeloton.com, open Membership and cancel the App membership. If you subscribed through the App Store or Google Play, cancel there. Member Support at support.onepeloton.com can help. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.onepeloton.com/s/?language=en_US",
+        "gotchas": "Downgrading between App plans takes effect at the end of the billing cycle with no refund. The free trial needs a card and bills automatically. The App Store lists App One at $15.99 a month and App+ at $28.99 a month. A charge much larger than these is probably the All-Access membership that comes with a Peloton bike, tread or row, which this card does not cover."
+      }
+    },
+    "sources": [
+      "https://www.onepeloton.com/app",
+      "https://apps.apple.com/us/app/peloton-fitness-workouts/id792750948"
+    ]
+  },
+  {
+    "id": "fitbod",
+    "name": "Fitbod",
+    "category": "health-family",
+    "url": "https://fitbod.me/",
+    "match": {
+      "patterns": [
+        "FITBOD"
+      ],
+      "examples": [
+        "FITBOD INC",
+        "FITBOD.ME SUBSCRIPTION"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Monthly plan"
+        },
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Elite monthly"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Elite annual"
+        },
+        {
+          "amount": 95.99,
+          "cadence": "annual",
+          "plan": "Elite annual (higher price point)"
+        }
+      ]
+    },
+    "typicalMonthly": 8,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "absorb",
+      "cancel"
+    ],
+    "why": "A strength logger with history and progression is a classic weekend build, and Claude can write programs from your numbers. You lose Fitbod's exercise videos and its automatic recovery model.",
+    "alternatives": [
+      {
+        "name": "Hevy",
+        "url": "https://www.hevyapp.com/",
+        "note": "Workout logger with a free tier; check current free-tier limits."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable strength logger with an editable exercise library, set and rep logging with last-time numbers, a rest timer, a workout generator by muscle group and equipment, and progression suggestions.",
+        "hours": 8,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Fitbod exercise demo videos, its recovery-aware generator tuned on many users, and Apple Watch logging. There is no cross-device sync, only export and import.",
+        "prompt": "Build a personal strength workout logger as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) an editable exercise library tagged by muscle group and equipment, seeded from the open-source free-exercise-db dataset (download exercises.json from github.com/yuhonas/free-exercise-db); (2) log sets with weight, reps and RPE, showing last-time numbers inline, with a rest timer; (3) a workout generator that picks exercises for the muscle groups I choose, avoids groups trained in the last 48 hours, and matches the equipment I own; (4) progressive overload suggestions, such as adding weight after I hit the top of the rep range twice; (5) per-exercise history charts and personal records. Store data in IndexedDB with JSON and CSV export and import, and write a Fitbod history importer, telling me to export my data before I cancel (inspect the file first and confirm the mapping with me). Work offline with a one-handed UI, add tests for the suggestion logic, and give me free deploy steps for GitHub Pages."
+      },
+      "absorb": {
+        "claudeDoes": "Writes a progressive strength program from your goal, equipment and logged numbers, and updates the next session when you paste what you lifted. It explains the progression rules so you can follow them without it.",
+        "howTo": "Create a Project in Claude (Projects work on every plan; Pro is $17 a month billed annually or $20 monthly and raises usage limits), paste the prompt into the Project instructions, then paste your recent workouts as text or a spreadsheet. Paste results after each session.",
+        "limits": "No logging screen, rest timer or exercise videos, and Claude cannot see your gym or form. You keep the log yourself and paste it in. Health details are not saved to memory unless you opt in, so keep your profile in the Project instructions.",
+        "prompt": "Act as my strength coach. I will give you my goal, training days per week, available equipment, injuries to avoid, and my last two weeks of logged workouts, pasted as plain text or a spreadsheet. Write my next 4 weeks of training as a table of days, exercises, sets, rep ranges and target RPE, using progressive overload based on my logged numbers. After each session I will paste what I actually lifted, and you update the next session weights and flag stalled lifts with a swap or deload suggestion. Keep warm-up and mobility to 5 minutes. Avoid exercises that need equipment I do not have, give an easier substitute for any movement I might struggle with, and explain the progression rules in two sentences so I can follow them without you. Save my profile and these rules in this Project instructions."
+      },
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, where most Fitbod subscriptions are billed. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "The App Store lists current monthly plans at $12.99 and $15.99 and yearly plans at $79.99 and $95.99, plus legacy prices for older members, so read your renewal amount. A free trial converts to paid automatically unless cancelled. Cancelling and rejoining would likely reset you to the current list price. Export your workout history from the app's Settings before you cancel and confirm the file opens in a spreadsheet; ask Fitbod support if you cannot find the option. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/id1041517543",
+      "https://support.apple.com/en-us/118428",
+      "https://github.com/yuhonas/free-exercise-db",
+      "https://claude.com/pricing",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+    ]
+  },
+  {
+    "id": "calm",
+    "name": "Calm",
+    "category": "health-family",
+    "url": "https://www.calm.com/",
+    "match": {
+      "patterns": [
+        "CALM\\.COM|CALM PREMIUM|CALM SUBSCR"
+      ],
+      "examples": [
+        "CALM.COM SAN FRANCISCO CA",
+        "CALM PREMIUM ANNUAL"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Premium monthly"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Premium annual (web)"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Premium annual (App Store)"
+        }
+      ]
+    },
+    "typicalMonthly": 6.67,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Calm sells licensed audio such as sleep stories and guided sessions, which cannot be rebuilt. Subscription apps often show a discount when you start the cancel flow, so ask before paying full price again.",
+    "alternatives": [
+      {
+        "name": "Insight Timer (free)",
+        "url": "https://insighttimer.com/",
+        "note": "Free timer and a large library of guided meditations."
+      },
+      {
+        "name": "Smiling Mind",
+        "url": "https://www.smilingmind.com.au/",
+        "note": "Free guided mindfulness programs from a nonprofit."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Subscription apps often show a retention discount when you start the cancel flow, and free meditation apps are a credible alternative. Offers vary by account and are not guaranteed.",
+        "script": "Hi, my Calm Premium subscription is coming up for renewal and I am not sure I will continue at the full price. I use it for [sleep stories or meditation] a few times a month, and free apps cover some of that. Is there a renewal discount or a lower-priced plan available on my account? I would stay at a price near [target price]. Please confirm the exact renewal price and date in writing before I agree, and tell me how to cancel if there is no offer.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "In the weeks before your annual renewal, via Calm account settings or support chat, or when you start the cancel flow."
+      },
+      "cancel": {
+        "howTo": "On the web: calm.com/login > Settings > Manage Subscription > Cancel Subscription. Apple and Google purchases must be cancelled in the App Store or Google Play. Cancel at least 24 hours before the period ends. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.calm.com/hc/en-us/articles/115002473607-How-to-Cancel-Your-Subscription-or-Free-Trial",
+        "gotchas": "Cancelling stops renewal but does not by itself refund a charge already made; you keep Premium until the period ends. The App Store lists Premium at $14.99, $69.99 and $79.99 price points, so read your renewal amount. Lifetime and Family plans exist, so check which one you are on."
+      }
+    },
+    "sources": [
+      "https://www.calm.com/freetrial/plans",
+      "https://support.calm.com/hc/en-us/articles/115002473607-How-to-Cancel-Your-Subscription-or-Free-Trial",
+      "https://apps.apple.com/us/app/calm/id571800810"
+    ]
+  },
+  {
+    "id": "headspace",
+    "name": "Headspace",
+    "category": "health-family",
+    "url": "https://www.headspace.com/",
+    "match": {
+      "patterns": [
+        "HEADSPACE"
+      ],
+      "examples": [
+        "HEADSPACE INC SANTA MONICA CA",
+        "HEADSPACE.COM SANTA MONICA CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Monthly subscription"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Annual subscription"
+        }
+      ]
+    },
+    "typicalMonthly": 5.83,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Guided meditation audio is content you rent, and free apps cover the basics. Pay monthly only in the stretches you use it, then cancel; if you open it just a few times a month, cancel outright.",
+    "alternatives": [
+      {
+        "name": "Insight Timer (free)",
+        "url": "https://insighttimer.com/",
+        "note": "Free timer and a large library of guided meditations."
+      },
+      {
+        "name": "Smiling Mind",
+        "url": "https://www.smilingmind.com.au/",
+        "note": "Free guided mindfulness programs from a nonprofit."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Pay the $12.99 monthly plan only in stressful or sleep-poor stretches, cancel when they pass, and use a free app in between. This pays only if you are on the monthly plan: the $69.99 annual plan is cheaper unless you stay off 7 or more months a year.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "If you subscribed on headspace.com, log in and open subscription management to cancel; if the button is missing, email help@headspace.com. On iPhone use Settings > your name > Subscriptions; on Android use Google Play. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://help.headspace.com/hc/en-us/articles/115008364988-How-do-I-cancel-my-subscription",
+        "gotchas": "Subscriptions bought directly from Headspace are generally non-refundable, though the help center says special cases are reviewed by email. Promotional first-year prices can renew at the regular rate, so check the renewal amount before the first anniversary. Headspace coaching and therapy are separate, higher-priced products."
+      }
+    },
+    "sources": [
+      "https://help.headspace.com/hc/en-us/articles/115008364988-How-do-I-cancel-my-subscription",
+      "https://apps.apple.com/us/app/headspace-sleep-meditation/id493145008"
+    ]
+  },
+  {
+    "id": "habitify",
+    "name": "Habitify",
+    "category": "health-family",
+    "url": "https://habitify.me/",
+    "match": {
+      "patterns": [
+        "HABITIFY"
+      ],
+      "examples": [
+        "HABITIFY.ME",
+        "HABITIFY PRO YEARLY",
+        "PADDLE.NET* HABITIFY"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 8.99,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Pro yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 4.17,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A habit tracker is the textbook personal rebuild: checklist, streaks, calendar, local data. You give up cross-device sync and polish. The free plan covers up to 3 habits, which may be enough.",
+    "alternatives": [
+      {
+        "name": "Loop Habit Tracker (Android)",
+        "url": "https://github.com/iSoron/uhabits",
+        "note": "Open-source habit tracker for Android; data stays on the device."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable habit tracker with scheduled habits, numeric goals, a one-tap today screen, streaks and a calendar heatmap, weekly reviews, and optional reminders.",
+        "hours": 5,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Habitify's sync across devices, Apple Watch and widgets, Apple Health integration, and its polished reminders. Web notifications are less reliable on iPhone.",
+        "prompt": "Build a personal habit tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) habits with a schedule (daily, specific weekdays, or N times per week), optional numeric goals such as 8 glasses of water, and time-of-day grouping; (2) one-tap check-in from a Today screen, with skip and note options; (3) streaks, completion rate and a calendar heatmap per habit; (4) weekly and monthly review charts; (5) local reminders using the Notifications API where the browser supports them, with a clear fallback message where it does not; (6) archive and reorder habits. Keep all data in IndexedDB with JSON and CSV export and import. Check whether Habitify can export my history and, if so, write an importer after confirming its columns with me. Make it offline-first, dark-mode aware and keyboard accessible, add tests for the streak logic, and finish with free deploy steps for GitHub Pages."
+      },
+      "cancel": {
+        "howTo": "Cancel where you subscribed. For web purchases, Habitify payments go through Paddle: open the Paddle receipt email and use its link to manage the payment. For in-app purchases use the App Store or Google Play subscription list. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://intercom.help/habitify-app/en/articles/6713601-how-to-cancel-a-habitify-subscription",
+        "gotchas": "The help center says Pro Monthly carries a 12-month commitment on iOS, so cancelling mid-year may not stop the remaining charges the way you expect. Plus is annual only. Several price points exist across stores, so read the renewal amount in your subscription list. Export first from Settings > Import / Export (CSV, in newer app versions) and check the file. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://intercom.help/habitify-app/en/articles/6113487-explore-habitify-plans-free-plus-and-pro",
+      "https://intercom.help/habitify-app/en/articles/6713601-how-to-cancel-a-habitify-subscription",
+      "https://apps.apple.com/us/app/habitify-habit-tracker/id1111447047"
+    ]
+  },
+  {
+    "id": "fabulous",
+    "name": "Fabulous",
+    "category": "health-family",
+    "url": "https://www.thefabulous.co/",
+    "match": {
+      "patterns": [
+        "THEFABULOUS|FABULOUS\\.CO\\b|FABULOUS PREMIUM|FABULOUS SAS"
+      ],
+      "examples": [
+        "THEFABULOUS.CO PREMIUM",
+        "FABULOUS PREMIUM ANNUAL"
+      ],
+      "billedVia": "apple"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "absorb",
+      "cancel"
+    ],
+    "why": "Fabulous is reminders, streaks and a staged routine, which a personal PWA covers. Its coaching content and narrated audio you cannot rebuild. A Claude Project can coach a routine, but only when you open it.",
+    "alternatives": [
+      {
+        "name": "Loop Habit Tracker (Android)",
+        "url": "https://github.com/iSoron/uhabits",
+        "note": "Open-source habit tracker for Android; data stays on the device."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Interviews you, designs a 3-week staged routine with a cue for each habit, runs a check-in whenever you say check-in, adjusts when something fails, and writes a weekly summary when you ask for one.",
+        "howTo": "Create a Project in Claude (Projects work on every plan; Pro is $17 a month billed annually or $20 monthly), paste the prompt into the Project instructions, then open the Project each morning or evening and say check-in. Claude replies only after you send a message and has no clock unless you tell it the date, so keep a phone alarm for nudges. Paid plans can also schedule a recurring check-in task, but its results wait in Claude's Scheduled list.",
+        "limits": "Claude cannot edit the Project instructions itself, so paste each updated plan block back in. It sends no habit-app push reminders; scheduled tasks on paid plans produce results you review inside Claude. There are no streak visuals, narrated audio or Fabulous journeys. Health-related topics are not saved to memory unless you opt in.",
+        "prompt": "I want you to act as my daily routine coach, replacing the Fabulous app. First interview me with 6 questions: my main goal (for example better sleep, more energy, or exercise), when I wake up and go to bed, my current morning and evening habits, what usually derails me, how much time I can spare, and how I like to be nudged. Then design a 3-week progressive routine that adds one small habit at a time, with a morning, afternoon and evening checklist and a specific cue for each habit (after I do X, I do Y). When I say check-in, ask whether I did yesterday's habits, note what blocked me, and adjust the plan without guilt or lecturing. When I say weekly review, summarize the week in five lines and propose next week's change. Keep your messages under 120 words unless I ask for more. End each plan update with the full plan in one block that I can paste into this Project's instructions."
+      },
+      "cancel": {
+        "howTo": "Apple: Settings > your name > Subscriptions > Fabulous. Google Play: Payments & subscriptions. Website: sign in at app.thefabulous.co and cancel from your account. Deleting the app does not stop billing; cancel at least 24 hours before renewal.",
+        "url": "https://help.thefabulous.co/en/support/solutions/articles/101000405804",
+        "gotchas": "Fabulous cannot cancel App Store or Google Play subscriptions for you. Its App Store listing shows many price points from about $17 to $60, so check the renewal price. Trial charges are explained in its help article \"Why was I charged after my free trial?\"."
+      },
+      "rebuild": {
+        "whatYouBuild": "A routine builder PWA: an onboarding questionnaire, a staged 3-week plan that adds one small habit at a time with an if-then cue, morning, afternoon and evening checklists, streaks, a weekly review, and reminders exported as calendar alarms.",
+        "hours": 7,
+        "runsOn": "Installable PWA on Cloudflare Pages or GitHub Pages (free tier) with data in IndexedDB on your device. Reminders show in the app while it is open, and a downloadable calendar (.ics) file lets your phone fire the alarms.",
+        "ongoingCostYear": 0,
+        "youLose": "Fabulous's coaching content, narrated audio and journeys, true push reminders on iPhone (a PWA cannot alert you while closed; the calendar file is the workaround), and sync between devices except by exporting a JSON backup.",
+        "prompt": "Build me a daily routine builder to replace Fabulous, as an installable PWA using Vite, React and TypeScript with all data in IndexedDB and no backend. Features: 1) an onboarding questionnaire (goal, wake and bed times, current habits, what derails me, time available) that generates a 3-week staged plan adding one small habit at a time, each with an if-then cue; 2) Morning, Afternoon and Evening checklists with one-tap check-in, skip and a note; 3) streaks and a calendar heatmap, with no guilt wording; 4) a weekly review screen that summarizes completion and proposes next week's change, which I can edit; 5) in-app reminders while the app is open, plus an export of all reminders as a recurring .ics file with alarms so my calendar app notifies me; 6) JSON export and import for backup. Add tests for the plan generator and streak logic, make it offline-first, and give me free deploy steps for GitHub Pages."
+      }
+    },
+    "sources": [
+      "https://help.thefabulous.co/en/support/solutions/articles/101000405804",
+      "https://help.thefabulous.co/en/support/solutions/articles/101000500823-why-was-i-charged-after-my-free-trial-",
+      "https://apps.apple.com/us/app/fabulous-daily-habit-tracker/id1203637303",
+      "https://claude.com/pricing",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context",
+      "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork"
+    ]
+  },
+  {
+    "id": "flo-premium",
+    "name": "Flo Premium",
+    "category": "health-family",
+    "url": "https://flo.health/",
+    "match": {
+      "patterns": [
+        "FLO HEALTH|FLO\\.HEALTH|FLO PREMIUM"
+      ],
+      "examples": [
+        "FLO HEALTH INC",
+        "FLO.HEALTH PREMIUM"
+      ],
+      "billedVia": "apple"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Cycle and fertility predictions are health data that edge into clinical territory, so this is neither a rebuild nor a Claude job. The free version still tracks periods; keep Premium only for insights you use.",
+    "plans": {
+      "cancel": {
+        "howTo": "iPhone: Settings > your name > Subscriptions > Flo > Cancel. Android: Play Store > Payments & subscriptions > Subscriptions > Flo. Website purchases: log in, open Profile > Subscriptions. In the app: Profile > See your Premium benefits > Manage Subscription.",
+        "url": "https://help.flo.health/hc/en-us/articles/360057837892-How-do-I-cancel-a-web-subscription",
+        "gotchas": "Cancel at least 24 hours before the trial or billing period ends. Cancelling keeps Premium until the period ends and does not delete your data; you continue with the free version. It does not refund a charge already made: for App Store purchases use reportaproblem.apple.com."
+      }
+    },
+    "sources": [
+      "https://help.flo.health/hc/en-us/articles/360057837892-How-do-I-cancel-a-web-subscription",
+      "https://help.flo.health/hc/en-us/articles/360042141452-How-can-I-cancel-my-subscription-iOS",
+      "https://apps.apple.com/us/app/flo-period-pregnancy-tracker/id1038369065"
+    ]
+  },
+  {
+    "id": "clue-plus",
+    "name": "Clue Plus",
+    "category": "health-family",
+    "url": "https://helloclue.com/",
+    "match": {
+      "patterns": [
+        "CLUE PLUS|HELLOCLUE|BIOWINK|PADDLE\\.NET\\*? ?CLUE"
+      ],
+      "examples": [
+        "PADDLE.NET* CLUE PLUS",
+        "HELLOCLUE.COM BERLIN DE"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Clue Plus monthly"
+        },
+        {
+          "amount": 39.99,
+          "cadence": "annual",
+          "plan": "Clue Plus annual"
+        }
+      ]
+    },
+    "typicalMonthly": 3.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Clue lists its app on the App Store as a regulated medical device, so it is not a rebuild. Cancelling keeps your data, and the free version still tracks cycles. Keep Plus only for features you use.",
+    "plans": {
+      "cancel": {
+        "howTo": "iPhone: Settings > your name > Subscriptions > Clue > Cancel. Android: Play Store > Payments & subscriptions > Clue. Website purchases are handled by Paddle: email help@paddle.com or use the chatbot at paddle.net.",
+        "url": "https://support.helloclue.com/hc/en-us/articles/115005209523-How-can-I-cancel-my-subscription",
+        "gotchas": "Deleting the app or your Clue account does not cancel the subscription. A discount-code purchase renews at the full price. Switching between iOS and Android does not move a subscription. You keep Plus features until the paid period ends."
+      }
+    },
+    "sources": [
+      "https://support.helloclue.com/hc/en-us/articles/115005209523-How-can-I-cancel-my-subscription",
+      "https://apps.apple.com/us/app/clue-period-cycle-tracker/id657189652",
+      "https://helloclue.com/terms"
+    ]
+  },
+  {
+    "id": "huckleberry",
+    "name": "Huckleberry",
+    "category": "health-family",
+    "url": "https://huckleberrycare.com/",
+    "match": {
+      "patterns": [
+        "HUCKLEBERRY (LABS|PREMIUM|PLUS|CARE)|HUCKLEBERRYCARE"
+      ],
+      "examples": [
+        "HUCKLEBERRY LABS INC",
+        "HUCKLEBERRY PREMIUM"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Premium monthly"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Plus monthly"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Baby tracking is the textbook rebuild: timers, summaries and a nap predictor. You lose Huckleberry's SweetSpot-quality predictions, the sleep plans and easy multi-caregiver sync.",
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable baby tracker with one-tap sleep, feed, diaper and pumping timers, a daily timeline and weekly summaries, an editable age-based nap predictor, and a doctor-visit summary export.",
+        "hours": 8,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Huckleberry's SweetSpot predictions trained on many babies, its personalized sleep plans and AI guidance, and effortless multi-caregiver sync. Sharing is by export file, not live sync.",
+        "prompt": "Build a baby sleep and feeding tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) one-tap timers for sleep, breast or bottle feeds, diapers and pumping, with editing and backdating; (2) a today timeline plus daily and weekly summaries (total sleep, longest stretch, feeds, diapers); (3) a nap predictor that suggests the next sleep window from age-based wake-window ranges that I can edit, narrowing as it learns from my baby last ten days; (4) a shareable summary exported as a PNG or text for a pediatrician visit or caregiver; (5) multiple children; (6) a dim red night mode. Store data locally with JSON and CSV export and import, and add a Huckleberry importer if its data export can be downloaded (inspect it first and ask me about column mapping). Include tests for the predictor, offline support, and free deploy steps for Cloudflare Pages."
+      },
+      "cancel": {
+        "howTo": "In the Huckleberry app: Settings (gear icon) > Huckleberry Memberships > Cancel subscription. If you subscribed through the App Store or Google Play, cancel in that store's subscription list instead; if you bought on the Huckleberry website, use the link in your receipt. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://huckleberry.zendesk.com/hc/en-us/articles/4409380169363-How-can-I-cancel-my-membership-subscription",
+        "gotchas": "Cancel at least 24 hours before the next billing date. Deleting or uninstalling the app does not cancel, and cancelling does not automatically refund. Huckleberry lists Premium at $14.99 monthly or $9.99 a month billed yearly, and Plus at $11.99 monthly or $5.74 a month billed yearly. Export first: tap the child icon, then Export tracking data as CSV. The emailed link expires in 24 hours and covers one child per export, so repeat it for each child. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://huckleberrycare.com/pricing",
+      "https://huckleberry.zendesk.com/hc/en-us/articles/4409380169363-How-can-I-cancel-my-membership-subscription",
+      "https://huckleberrycare.com/huckleberry-plus-faq"
+    ]
+  },
+  {
+    "id": "glow-baby",
+    "name": "Glow Baby Premium",
+    "category": "health-family",
+    "url": "https://glowing.com/",
+    "match": {
+      "patterns": [
+        "GLOW ?BABY|GLOW PREMIUM|GLOW INC\\b"
+      ],
+      "examples": [
+        "GLOW BABY PREMIUM",
+        "GLOW INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Glow Premium monthly"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "quarterly",
+          "plan": "Glow Premium 3 months"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "Glow Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A baby log with growth percentiles and a vaccine checklist is a weekend build on public WHO and CDC data. You lose partner sync and community features; billing is mostly $59.99 a year.",
+    "alternatives": [
+      {
+        "name": "WHO child growth standards",
+        "url": "https://www.who.int/tools/child-growth-standards",
+        "note": "Free reference data for growth percentile charts."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable baby log: feeds, diapers, sleep, medication and temperature, a growth tab with WHO percentile curves, a vaccine and checkup checklist, a photo milestone journal, and a printable doctor-visit page.",
+        "hours": 9,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Glow's cloud sync between parents, community and expert content, and its curated milestone guidance. Moving data between phones means exporting and importing a file. Growth percentiles and vaccine lists are reference information, not medical advice.",
+        "prompt": "Build a baby tracker and growth log as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) quick logging for feeds (breast side timer, bottle ounces, solids), diapers, sleep, medication and temperature; (2) a growth tab for weight, length and head circumference with percentile curves computed from the WHO child growth standards LMS tables for ages 0 to 24 months, downloaded and bundled as JSON, labeled as reference only; (3) a vaccine and checkup checklist seeded from the CDC schedule that I can edit; (4) a milestone and photo journal with photos stored as local blobs; (5) a doctor-visit export as a printable page. Keep data on-device with JSON backup and restore, and import a Glow Baby export if one exists, telling me to look for it before I cancel (inspect the file first and confirm the mapping with me). Make it offline-first, add tests for the percentile math, and give me free deploy steps for GitHub Pages. Do not add cloud sync; let me move data between phones with the export file."
+      },
+      "cancel": {
+        "howTo": "iPhone: Settings > your name > Subscriptions > Glow > Cancel Subscription (scroll down if needed). On Mac use System Settings under your Apple Account. Glow runs several apps, so check each one.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Glow Baby Premium comes in monthly ($15.99), 3-month ($29.99) and yearly ($59.99) price points plus a lifetime option, and trials convert automatically. Glow Baby, Nurture and Eve subscriptions are separate. Look for a data export in the app's settings, or ask Glow support, before you cancel; if there is none, screenshot your growth charts and milestones first. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/id1077177456",
+      "https://appshunter.io/ios/app/1077177456/glow-baby-tracker-and-growth-app/how-to-cancel-subscription",
+      "https://support.apple.com/en-us/118428",
+      "https://www.who.int/tools/child-growth-standards"
+    ]
+  },
+  {
+    "id": "sleep-cycle",
+    "name": "Sleep Cycle Premium",
+    "category": "health-family",
+    "url": "https://www.sleepcycle.com/",
+    "match": {
+      "patterns": [
+        "SLEEP ?CYCLE"
+      ],
+      "examples": [
+        "SLEEP CYCLE AB",
+        "SLEEPCYCLE PREMIUM"
+      ],
+      "billedVia": "apple"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "The smart alarm and sleep analysis rely on microphone access and background running that a web app cannot match. Keep it if you use the alarm; otherwise the free version is the cheaper option.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, since Premium is sold through the stores. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Its App Store page lists many Premium price points, including $9.99 and $39.99 items, so the annual price is not fixed; read the renewal price in your subscription list. The trial converts to paid unless cancelled in time."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/sleep-cycle-sleep-tracker/id320606217",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "rise-science",
+    "name": "RISE Sleep (Rise Science)",
+    "category": "health-family",
+    "url": "https://www.risescience.com/",
+    "match": {
+      "patterns": [
+        "RISE SCIENCE|RISESCIENCE"
+      ],
+      "examples": [
+        "RISE SCIENCE LLC",
+        "RISESCIENCE.COM SUBSCRIPTION"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Sleep and Energy Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 5.83,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Sleep debt and an energy schedule are arithmetic on your sleep log, and Apple Health can export it. A personal tool covers the core; you lose automatic sleep detection and the tuned circadian model.",
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable sleep-debt tracker: log sleep manually or import an Apple Health export, estimate your sleep need, show 14-night sleep debt, and give a simple daily energy schedule and tonight's bedtime suggestion.",
+        "hours": 7,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "RISE's automatic sleep detection from your phone and wearables, its circadian model refined on many users, and nudges. Importing from Apple Health is a manual file upload, not a live sync.",
+        "prompt": "Build a sleep debt and energy tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) log bedtime and wake time manually, or import from my Apple Health export: I upload export.zip, you unzip it in the browser with fflate and stream-parse export.xml in a Web Worker, keeping HKCategoryTypeIdentifierSleepAnalysis asleep records; (2) estimate my personal sleep need as the median sleep on days I wake without an alarm, with a manual override; (3) a sleep debt number over the last 14 nights, with a chart; (4) a simple daily energy schedule showing a morning peak, an afternoon dip and an evening wind-down window, computed from wake time and a chronotype offset I can adjust; (5) a suggested bedtime tonight to chip away at the debt. Add JSON export and import, tests for the debt math, offline support, and free deploy steps for GitHub Pages. Explain the formulas in the README, and say clearly in the UI that this is a planning aid, not medical advice."
+      },
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, since RISE is sold through the stores. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "The yearly plan starts with a 7-day free trial that converts to $69.99 a year unless you cancel at least 24 hours before it ends. Company materials also mention monthly and lifetime options, so check which one you hold. RISE documents no export of its own history. It reads sleep from Apple Health or Health Connect, so export Apple Health (Health app > profile picture > Export All Health Data) before you cancel or delete the app. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://www.risescience.com/blog/rise-app-review",
+      "https://apps.apple.com/us/app/rise-sleep-tracker/id1453884781",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "whoop",
+    "name": "WHOOP Membership",
+    "category": "health-family",
+    "url": "https://www.whoop.com/",
+    "match": {
+      "patterns": [
+        "\\bWHOOP\\b"
+      ],
+      "examples": [
+        "WHOOP INC BOSTON MA",
+        "WHOOP MEMBERSHIP BOSTON MA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 19.92,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "The membership is the product: the strap works only with it, and the analysis runs on WHOOP's servers. There is nothing to rebuild, and the Life tier adds a heart screener. Cancel only if you stop wearing it.",
+    "plans": {
+      "cancel": {
+        "howTo": "Manage or cancel the membership in the WHOOP app (account and membership settings) or in your WHOOP account on the web. The WHOOP support site has the pause and cancel policy.",
+        "url": "https://support.whoop.com/",
+        "gotchas": "WHOOP's site lists memberships at $199 (One), $239 (Peak) and $359 (Life) a year. Ask what happens to the device if you cancel before the term ends, and check the terms before switching tiers."
+      }
+    },
+    "sources": [
+      "https://www.whoop.com/us/en/membership/",
+      "https://support.whoop.com/"
+    ]
+  },
+  {
+    "id": "oura-membership",
+    "name": "Oura Membership",
+    "category": "health-family",
+    "url": "https://ouraring.com/",
+    "match": {
+      "patterns": [
+        "OURA ?RING|OURA HEALTH|OURARING"
+      ],
+      "examples": [
+        "OURA HEALTH OY",
+        "OURARING.COM MEMBERSHIP"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 5.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "The ring works without a membership but with far fewer insights, and the models behind them are Oura's. There is nothing to rebuild. Keep it while you use the insights; you can export your data as CSV any time.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel anytime in the Membership Hub on ouraring.com. You keep full access until the end of the current billing cycle, and your data stays saved unless you delete the account.",
+        "url": "https://ouraring.com/membership",
+        "gotchas": "The ring and app keep working without a membership, but with far fewer insights. You can export your data as CSV from the Membership Hub even without a membership. Membership is $5.99 a month or $69.99 a year, and new members get the first month free."
+      }
+    },
+    "sources": [
+      "https://ouraring.com/membership"
+    ]
+  },
+  {
+    "id": "lose-it-premium",
+    "name": "Lose It Premium",
+    "category": "health-family",
+    "url": "https://www.loseit.com/",
+    "match": {
+      "patterns": [
+        "\\bLOSE ?IT\\b|FITNOW|LOSEIT\\.COM"
+      ],
+      "examples": [
+        "LOSE IT! PREMIUM BOSTON MA",
+        "FITNOW INC BOSTON MA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 39.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 3.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A daily calorie budget, food log, barcode scan and weight trend is a weekend build on open food data. You lose Lose It's database depth and the community, and Premium is only about $40 a year.",
+    "alternatives": [
+      {
+        "name": "Cronometer (free plan)",
+        "url": "https://cronometer.com/",
+        "note": "Free plan logs food, scans barcodes and uses a verified food database."
+      },
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/",
+        "note": "Free, open food database with barcode lookup; coverage is uneven for restaurant and store-brand items."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable calorie-budget tracker: goal weight and weekly rate set a daily budget, with a food log, barcode scan, exercise credit, and a weight trend with a projected goal date.",
+        "hours": 9,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Lose It's large branded-food database and its community challenges, plus Apple Health and fitness-device syncing and phone-to-laptop sync. Open Food Facts covers packaged foods unevenly.",
+        "prompt": "Build a personal calorie-budget tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) set a goal weight and weekly rate, then compute a daily calorie budget from my weight, height, age and activity level using Mifflin-St Jeor; (2) a fast food log by meal with search over Open Food Facts and USDA FoodData Central (I will paste a free USDA API key into settings), custom foods, and recent and frequent items; (3) barcode scanning through the camera using @zxing/browser; (4) an exercise log that adds calories back to the day; (5) weight entries with a trend line and projected goal date; (6) a weekly summary screen with streaks. Tell me to export my Lose It data before I cancel Premium, then write an importer after inspecting the file columns and confirming the mapping with me. Everything stays on my device with JSON and CSV backup. Work offline, keep the UI quick for one-handed use, add unit tests for the budget math, and give me free deploy steps for GitHub Pages."
+      },
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play if you subscribed there, or in your Lose It account on the website if you subscribed directly. Premium stays active through the paid period. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Lifetime purchases exist and are not subscriptions, so check the Apple Subscriptions list before assuming you are billed yearly. Free trials convert to paid unless cancelled at least 24 hours before the end. Export your food, weight and exercise logs from the Lose It website (account settings) while Premium is active; some export options have been Premium-only. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/lose-it-calorie-counter/id297368629",
+      "https://www.loseit.com/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "cronometer-gold",
+    "name": "Cronometer Gold",
+    "category": "health-family",
+    "url": "https://cronometer.com/",
+    "match": {
+      "patterns": [
+        "CRONOMETER"
+      ],
+      "examples": [
+        "CRONOMETER SOFTWARE INC",
+        "CRONOMETER.COM GOLD"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 4.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Cronometer's value is verified nutrient data down to micronutrients, which open data cannot match. Gold is cheap at $59.99 a year, and the free plan already logs food and scans barcodes.",
+    "alternatives": [
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/",
+        "note": "Free, open food database with barcode lookup; coverage is uneven for restaurant and store-brand items."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in your Cronometer account under the Gold subscription settings if you subscribed on the web, or in the App Store or Google Play if you subscribed there. You drop back to the free Basic plan. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://cronometer.com/gold/",
+        "gotchas": "Gold is $4.99 a month billed annually ($59.99) or $10.99 billed monthly, so a monthly plan costs more than twice as much. The free plan keeps food logging, barcode scanning and a 7-day reports window."
+      }
+    },
+    "sources": [
+      "https://cronometer.com/gold/"
+    ]
+  },
+  {
+    "id": "ladder-fitness",
+    "name": "Ladder",
+    "category": "health-family",
+    "url": "https://www.joinladder.com/",
+    "match": {
+      "patterns": [
+        "JOINLADDER|LADDER FITNESS|LADDER STRENGTH"
+      ],
+      "examples": [
+        "JOINLADDER.COM",
+        "LADDER FITNESS INC"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 179.99,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "You pay for coach-designed weekly plans with audio cueing, video demos and a team. Claude can write a program but not that structure. Keep it if the plan keeps you training; annual is half the monthly price.",
+    "alternatives": [
+      {
+        "name": "Hevy",
+        "url": "https://www.hevyapp.com/",
+        "note": "Workout logger with a free tier; check current free-tier limits."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in the App Store subscription list if you subscribed in the iOS app, or contact support@joinladder.com if you subscribed on the web. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://www.joinladder.com/pricing",
+        "gotchas": "Pro Annual is $179.99 billed once, against $29.99 monthly. Ladder's 7-day trial needs no credit card, so a charge means you subscribed after it. Check whether Apple or Ladder bills you, and switch to annual only if you will train for most of the year."
+      }
+    },
+    "sources": [
+      "https://www.joinladder.com/pricing",
+      "https://www.joinladder.com/"
+    ]
+  },
+  {
+    "id": "future-fitness",
+    "name": "Future",
+    "category": "health-family",
+    "url": "https://www.future.co/",
+    "match": {
+      "patterns": [
+        "FUTURE ?FITNESS|FUTURE\\.CO\\b|JOINFUTURE|FUTURE HUMAN"
+      ],
+      "examples": [
+        "FUTURE FITNESS",
+        "FUTURE.CO COACHING"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 199,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A human coach for check-ins and plan changes is the whole product, at $199 a month. Claude cannot see your form or hold you accountable. If you only need a plan, a program app costs under a tenth as much.",
+    "alternatives": [
+      {
+        "name": "Ladder",
+        "url": "https://www.joinladder.com/",
+        "note": "Coach-designed weekly programs at $14.99 a month billed annually; no personal coach."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Contact your coach or Future support to cancel. The site says you can cancel within 30 days for a full refund; it does not state terms after that, so ask for the cancellation terms in writing.",
+        "url": "https://www.future.co/",
+        "gotchas": "The site advertises $50 for the first month, then $199 a month. The refund window is 30 days, so decide early."
+      }
+    },
+    "sources": [
+      "https://www.future.co/",
+      "https://www.joinladder.com/pricing"
+    ]
+  },
+  {
+    "id": "apple-fitness-plus",
+    "name": "Apple Fitness+",
+    "category": "health-family",
+    "url": "https://www.apple.com/apple-fitness-plus/",
+    "match": {
+      "patterns": [
+        "APPLE ?FITNESS"
+      ],
+      "examples": [
+        "APPLE FITNESS+ CUPERTINO CA",
+        "APPLE FITNESS PLUS"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Fitness+ monthly"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Fitness+ annual"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Fitness+ is licensed video content you can rent by the month. Subscribe for a training block, cancel, and come back later. Check first whether your Apple One Premier plan already includes it.",
+    "plans": {
+      "rotate": {
+        "pattern": "Pay month to month ($9.99) for a 4 to 6 week program, cancel in Settings > Subscriptions, and resubscribe when you want new classes. Apple One Premier includes Fitness+, so if you hold that bundle you cannot cancel Fitness+ alone; change the bundle tier instead.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "On iPhone: Settings > your name > Subscriptions > Fitness+ > Cancel Subscription. On Mac: App Store > your name > Subscriptions. On the web: account.apple.com.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "New subscribers get 1 month free, and an eligible device can unlock 3 months free; cancel at least 24 hours before the trial ends. If Fitness+ comes with Apple One Premier, change or cancel the bundle instead. Annual is $79.99 against $9.99 monthly."
+      }
+    },
+    "sources": [
+      "https://www.apple.com/apple-fitness-plus/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "down-dog",
+    "name": "Down Dog",
+    "category": "health-family",
+    "url": "https://www.downdogapp.com/",
+    "match": {
+      "patterns": [
+        "DOWN ?DOG"
+      ],
+      "examples": [
+        "DOWN DOG INC",
+        "DOWNDOGAPP.COM"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "All Access monthly (App Store)"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "All Access annual (App Store)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Down Dog is a sequencing engine with recorded audio and video, not just a checklist, so there is nothing sensible to rebuild. Keep it if you practice weekly; otherwise cancel.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, or through the Down Dog website or help@support.downdogapp.com if you bought on the website. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://www.downdogapp.com/",
+        "gotchas": "The App Store lists All Access at $12.99 monthly and $99.99 yearly, and the website advertises discounts, so prices differ by where you buy: read the renewal amount where you are billed. Down Dog says it gives free memberships to students and teachers, so ask if you qualify before paying."
+      }
+    },
+    "sources": [
+      "https://www.downdogapp.com/",
+      "https://apps.apple.com/us/app/yoga-down-dog/id983693694"
+    ]
+  },
+  {
+    "id": "betterhelp",
+    "name": "BetterHelp",
+    "category": "health-family",
+    "url": "https://www.betterhelp.com/",
+    "match": {
+      "patterns": [
+        "BETTER ?HELP"
+      ],
+      "examples": [
+        "BETTERHELP.COM MOUNTAIN VIEW CA",
+        "BETTERHELP INC"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "why": "Therapy is clinical care, so nothing here is rebuilt or replaced by Claude. Keep it if it works for you. If cost is the problem, compare insurance-covered or sliding-scale options.",
+    "alternatives": [
+      {
+        "name": "Open Path Collective",
+        "url": "https://openpathcollective.org/",
+        "note": "Sliding-scale therapy sessions for people without enough insurance coverage; check current fees."
+      },
+      {
+        "name": "Psychology Today therapist finder",
+        "url": "https://www.psychologytoday.com/us/therapists",
+        "note": "Search therapists by insurance, fee and location."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Log in to BetterHelp, open your account or membership settings and cancel the subscription. BetterHelp says you can cancel at any point, for any reason, without penalty. Cancel before your next billing date.",
+        "url": "https://www.betterhelp.com/advice/psychology/how-much-does-betterhelp-cost/",
+        "gotchas": "Billing is weekly or every four weeks at roughly $70 to $100 a week, and you are not charged until matched. Missed sessions or sessions cancelled within 24 hours may incur a $15 fee. Refund terms are not stated on its pricing page, so ask support in writing. If you are in active treatment, tell your therapist before stopping, ask for a handoff or referral, and call or text 988 in a crisis."
+      }
+    },
+    "sources": [
+      "https://www.betterhelp.com/advice/psychology/how-much-does-betterhelp-cost/",
+      "https://openpathcollective.org/"
+    ]
+  },
+  {
+    "id": "talkspace",
+    "name": "Talkspace",
+    "category": "health-family",
+    "url": "https://www.talkspace.com/",
+    "match": {
+      "patterns": [
+        "TALKSPACE"
+      ],
+      "examples": [
+        "TALKSPACE.COM NEW YORK NY",
+        "TALKSPACE ONLINE THERAPY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 299,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "why": "Therapy is clinical care, so nothing here is rebuilt or replaced by Claude. Keep it if it helps. Messaging therapy is covered by many insurance plans, which can cut the cost sharply.",
+    "alternatives": [
+      {
+        "name": "Open Path Collective",
+        "url": "https://openpathcollective.org/",
+        "note": "Sliding-scale therapy sessions; check current fees."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel from your Talkspace account settings or by contacting Talkspace support. Out-of-pocket members can pause for up to seven days. Unused live sessions expire after 30 days.",
+        "url": "https://www.talkspace.com/blog/blog-how-much-talkspace-costs/",
+        "gotchas": "Out-of-pocket plans bill weekly: messaging $69, video plus messaging from $99, premium from $109. The $299 monthly figure here is the messaging plan averaged over a month. Check whether your insurance covers it before paying out of pocket. If you are in active treatment, tell your therapist before stopping, ask for a handoff or referral, and call or text 988 in a crisis."
+      }
+    },
+    "sources": [
+      "https://www.talkspace.com/blog/blog-how-much-talkspace-costs/",
+      "https://openpathcollective.org/"
+    ]
+  },
+  {
+    "id": "life360",
+    "name": "Life360",
+    "category": "health-family",
+    "url": "https://www.life360.com/",
+    "match": {
+      "patterns": [
+        "LIFE ?360"
+      ],
+      "examples": [
+        "LIFE360 INC SAN FRANCISCO CA",
+        "LIFE360 GOLD MEMBERSHIP"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Silver"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Gold"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "Platinum"
+        },
+        {
+          "amount": 7.99,
+          "cadence": "monthly",
+          "plan": "Plus (older plan)"
+        }
+      ]
+    },
+    "typicalMonthly": 16.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A location circle holds other people's data and works only if everyone uses the same app. Keep a paid tier for longer history and emergency dispatch; if you only share location, the free plan or built-in sharing may do.",
+    "alternatives": [
+      {
+        "name": "Apple Find My",
+        "url": "https://www.apple.com/icloud/find-my/",
+        "note": "Free location sharing between Apple devices."
+      },
+      {
+        "name": "Google Family Link",
+        "url": "https://families.google.com/familylink/",
+        "note": "Free location and screen-time tools for Android family groups."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In the Life360 app, open Settings and the membership section to manage or cancel; if you are billed through Apple or Google, cancel in the App Store or Play Store. Cancelling returns the circle to the free plan. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.life360.com/hc/en-us",
+        "gotchas": "Silver, Gold and Platinum are listed at $9.99, $16.99 and $24.99 a month on Life360's site, with a discount for annual billing, and the App Store lists the same monthly prices. Check which tier your charge matches."
+      }
+    },
+    "sources": [
+      "https://www.life360.com/",
+      "https://apps.apple.com/us/app/life360-family-safety-gps/id384830320",
+      "https://support.life360.com/hc/en-us"
+    ]
+  },
+  {
+    "id": "bark-parental-controls",
+    "name": "Bark",
+    "category": "health-family",
+    "url": "https://www.bark.us/",
+    "match": {
+      "patterns": [
+        "BARK\\.US|BARK TECHNOLOGIES|BARK (PREMIUM|JR)"
+      ],
+      "examples": [
+        "BARK.US",
+        "BARK TECHNOLOGIES INC ATLANTA GA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 14,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Monitoring a child's messages and accounts involves other people's sensitive data and continuously updated detection, so it is not a rebuild. Keep it while it fits your child's age; Bark Jr costs far less.",
+    "alternatives": [
+      {
+        "name": "Google Family Link",
+        "url": "https://families.google.com/familylink/",
+        "note": "Free screen-time limits, app approvals and location for Android kids; does not scan messages."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to your Bark account settings at bark.us/app/lab/account and cancel the plan, or contact Bark support. If you subscribed through an app store, cancel there. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.bark.us/en/articles/13461273-how-do-i-cancel-my-bark-account",
+        "gotchas": "Bark Jr is $5 a month or $49 a year and Bark Premium is $14 a month or $99 a year, plus tax; downgrading to Jr may be enough. Bark Phone and Watch devices are financed separately, and paying off a device does not cancel service."
+      }
+    },
+    "sources": [
+      "https://support.bark.us/en/articles/13460996-pricing",
+      "https://support.bark.us/en/articles/13461273-how-do-i-cancel-my-bark-account"
+    ]
+  },
+  {
+    "id": "greenlight",
+    "name": "Greenlight",
+    "category": "health-family",
+    "url": "https://greenlight.com/",
+    "match": {
+      "patterns": [
+        "GREENLIGHT (FINANCIAL|CORE|MAX|INFINITY|FAMILY)|GREENLIGHT\\*|GREENLIGHT\\.COM|GREENLIGHTCARD"
+      ],
+      "examples": [
+        "GREENLIGHT FINANCIAL TECH",
+        "GREENLIGHT*CORE PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 5.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Kids banking is regulated and holds children money, so there is nothing to rebuild. Keep it while you use the card, chores and controls; compare the fee with bank teen accounts at renewal.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in the Greenlight app or on the website under the parent account and plan settings, or contact support. Move balances out of the kids accounts first, since closing the plan will likely close the cards.",
+        "url": "https://help.greenlight.com/hc/en-us",
+        "gotchas": "Greenlight's help center lists Core at $5.99 a month, Max at $10.98, Infinity at $15.98 and Family Shield at $19.98, per family rather than per child. A custom card is a one-time $9.99."
+      }
+    },
+    "sources": [
+      "https://help.greenlight.com/hc/en-us/articles/235739508-How-much-does-Greenlight-cost"
+    ]
+  },
+  {
+    "id": "care-com",
+    "name": "Care.com Premium",
+    "category": "health-family",
+    "url": "https://www.care.com/",
+    "match": {
+      "patterns": [
+        "\\bCARE\\.COM"
+      ],
+      "examples": [
+        "CARE.COM INC",
+        "CARE.COM PREMIUM MEMBERSHIP"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "rotate"
+    ],
+    "why": "Premium only matters while you are actively searching for a caregiver. It auto-renews, and people forget it. Cancel once you have found someone, or buy one month at a time when you need it.",
+    "plans": {
+      "rotate": {
+        "pattern": "Buy the shortest term when you start a caregiver search, message and book people, then cancel the day you hire. Longer terms cost less per month but lock you in, so a 12-month plan only pays if you search more than a few months a year.",
+        "monthsOffPerYear": 9
+      },
+      "cancel": {
+        "howTo": "Sign in to Care.com, open Account & Settings, then the My Plan or Premium section, and choose Cancel Subscription. Cancel any add-ons separately from the same area. Expect a retention offer and decline it if you want to fully cancel.",
+        "url": "https://help.care.com/families/s/",
+        "gotchas": "Care.com advertises plans from $13.99 a month. Premium plans auto-renew, including those that start as trials, and reports say fees are not refunded once a billing period begins. Lower per-month rates come with a commitment to the full term. Cancel as soon as you stop searching."
+      }
+    },
+    "sources": [
+      "https://www.care.com/",
+      "https://recurdash.com/guides/how-to-cancel-care-com"
+    ]
+  },
+  {
+    "id": "ten-percent-happier",
+    "name": "Happier Meditation (Ten Percent Happier)",
+    "category": "health-family",
+    "url": "https://www.meditatehappier.com/",
+    "match": {
+      "patterns": [
+        "TEN ?PERCENT ?HAPPIER|10 ?% ?HAPPIER|HAPPIER MEDITATION|TENPERCENT\\.COM|MEDITATEHAPPIER"
+      ],
+      "examples": [
+        "TEN PERCENT HAPPIER INC",
+        "10% HAPPIER SUBSCRIPTION"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Monthly membership"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Annual membership"
+        }
+      ]
+    },
+    "typicalMonthly": 8.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Course-based teaching content you finish and move on from. Pay monthly while you work through a course, cancel, and return for the next one. Annual only pays if you use it most of the year.",
+    "alternatives": [
+      {
+        "name": "Insight Timer (free)",
+        "url": "https://insighttimer.com/",
+        "note": "Free timer and a large library of guided meditations."
+      },
+      {
+        "name": "Smiling Mind",
+        "url": "https://www.smilingmind.com.au/",
+        "note": "Free guided mindfulness programs from a nonprofit."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe monthly ($14.99) when you start a course, finish it, cancel, and come back for the next. Six months of monthly billing is about the same as the $99.99 annual plan, so rotation pays only if you stay off 6 or more months.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, where the app now appears as \"Happier: Meditation\". If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "The app was renamed, so search for \"Happier\" in your subscription list. The App Store lists several price points ($59.99 to $99.99 a year), so read the renewal price shown there."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/happier-meditation/id992210239",
+      "https://www.meditatehappier.com/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "insight-timer-plus",
+    "name": "Insight Timer Plus (MemberPlus)",
+    "category": "health-family",
+    "url": "https://insighttimer.com/",
+    "match": {
+      "patterns": [
+        "INSIGHT ?TIMER"
+      ],
+      "examples": [
+        "INSIGHT TIMER MEMBERPLUS",
+        "INSIGHTTIMER.COM"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "MemberPlus monthly"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "MemberPlus annual"
+        }
+      ]
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "The free tier already includes the timer and a large meditation library. MemberPlus adds extras such as a challenge archive, custom folders and journaling tools that most people use rarely.",
+    "alternatives": [
+      {
+        "name": "Insight Timer (free)",
+        "url": "https://insighttimer.com/",
+        "note": "Free timer and a large library of guided meditations."
+      },
+      {
+        "name": "Smiling Mind",
+        "url": "https://www.smilingmind.com.au/",
+        "note": "Free guided mindfulness programs from a nonprofit."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Turn off auto-renew in the App Store or Google Play subscription list, or in your Insight Timer account if you subscribed on the web. Do it at least 24 hours before renewal; you keep access until the period ends. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://insight-timer.freshdesk.com/support/solutions/articles/67000664939-how-can-i-cancel-my-subscription-",
+        "gotchas": "Unused portions of a subscription are not refunded. A 7-day free trial converts to paid unless you cancel in time. Annual is $59.99 against $9.99 monthly."
+      }
+    },
+    "sources": [
+      "https://insight-timer.freshdesk.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-",
+      "https://insight-timer.freshdesk.com/support/solutions/articles/67000664939-how-can-i-cancel-my-subscription-",
+      "https://apps.apple.com/us/app/insight-timer-meditate-sleep/id337472899"
+    ]
+  },
+  {
+    "id": "balance-meditation",
+    "name": "Balance (Meditation & Sleep)",
+    "category": "health-family",
+    "url": "https://themindcompany.com/apps/balance",
+    "match": {
+      "patterns": [
+        "BALANCE ?MEDITATION|BALANCEAPP"
+      ],
+      "examples": [
+        "BALANCE MEDITATION",
+        "BALANCEAPP.COM YEARLY"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Balance monthly"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Balance yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 5.83,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Balance starts with a free trial that renews at $69.99 a year. Calendar the renewal date and cancel unless you open the app weekly; free apps cover basic guided sessions.",
+    "alternatives": [
+      {
+        "name": "Insight Timer (free)",
+        "url": "https://insighttimer.com/",
+        "note": "Free timer and a large library of guided meditations."
+      },
+      {
+        "name": "Smiling Mind",
+        "url": "https://www.smilingmind.com.au/",
+        "note": "Free guided mindfulness programs from a nonprofit."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, since Balance is sold through the stores. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "After the trial, the App Store lists Balance at $11.99 a month or $69.99 a year (US), plus a $399.99 lifetime purchase that is not a subscription. Other price points appear in the store, so read the renewal price in your subscription list."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/balance-meditation-sleep/id1361356590",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "zero-fasting",
+    "name": "Zero (Fasting)",
+    "category": "health-family",
+    "url": "https://zerolongevity.com/",
+    "match": {
+      "patterns": [
+        "ZERO LONGEVITY|ZERO FASTING|BIG SKY HEALTH"
+      ],
+      "examples": [
+        "ZERO LONGEVITY SCIENCE",
+        "BIG SKY HEALTH INC"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Zero Plus annual"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A fasting timer with history and streaks is a few hours of work. Rebuild it, keep the data on your phone, and give up only Zero's content and stage visuals.",
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable fasting tracker with a circular timer, presets and custom windows, editable history, streaks, weekly charts, and optional weight and mood notes.",
+        "hours": 5,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Zero's guided content, its stage illustrations and community, and cross-device sync. Browser notifications are less reliable than a native app, especially on iPhone.",
+        "prompt": "Build an intermittent fasting tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) start and end a fast with a large circular timer, plus presets 12:12, 16:8, 18:6, 20:4 and a custom length; (2) edit start and end times after the fact; (3) fasting stage labels (fed, early fasting, fat burning, ketosis) shown as rough guides with a note that they are generalizations and not medical advice; (4) history with streaks, average fast length and a weekly bar chart; (5) optional weight and mood notes per fast; (6) local notifications for the planned end time where the browser supports them, with a clear fallback message where it does not. Keep data in IndexedDB with JSON and CSV export and import, and tell me to export my Zero history before I cancel, so you can add an importer after confirming the columns with me. Work offline, add tests for duration and streak logic, and finish with free deploy steps for Cloudflare Pages."
+      },
+      "cancel": {
+        "howTo": "Cancel in the App Store or Google Play subscription list, since Zero Plus is sold through the stores. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "The App Store lists Zero Plus at several price points, from $19.99 to $89.99, so read the renewal amount in your subscription list. Check the renewal date, since trials convert to paid unless cancelled. Export your fasting history from the app first (Zero lists a spreadsheet export) and check the file before you cancel. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/zero-fasting-food-tracker/id1168348542",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "yazio-pro",
+    "name": "YAZIO Pro",
+    "category": "health-family",
+    "url": "https://www.yazio.com/",
+    "match": {
+      "patterns": [
+        "YAZIO"
+      ],
+      "examples": [
+        "YAZIO GMBH",
+        "YAZIO PRO 12 MONTHS"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 47.9,
+          "cadence": "annual",
+          "plan": "Pro 12 months"
+        },
+        {
+          "amount": 23.99,
+          "cadence": "quarterly",
+          "plan": "Pro 3 months"
+        },
+        {
+          "amount": 34.99,
+          "cadence": "semiannual",
+          "plan": "Pro semi-annual"
+        }
+      ]
+    },
+    "typicalMonthly": 3.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A food diary, fasting timer and recipe book is a weekend build on Open Food Facts. You lose Yazio's curated database, ready-made meal plans and polish; Pro is under $50 a year.",
+    "alternatives": [
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/",
+        "note": "Free, open food database with barcode lookup; coverage is uneven for restaurant and store-brand items."
+      },
+      {
+        "name": "Cronometer (free plan)",
+        "url": "https://cronometer.com/",
+        "note": "Free plan logs food, scans barcodes and uses a verified food database."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable nutrition diary with a fasting timer, a recipe book that computes per-serving nutrition, weight tracking and a simple weekly meal planner.",
+        "hours": 11,
+        "runsOn": "Installable PWA on your phone home screen; data in IndexedDB on the device; hosted free on GitHub Pages or Cloudflare Pages.",
+        "ongoingCostYear": 0,
+        "youLose": "Yazio's curated food database, ready-made recipes and meal plans, and its coaching content. Barcode coverage depends on Open Food Facts, and there is no sync between devices.",
+        "prompt": "Build me a free personal nutrition and fasting tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no server). Core features: (1) a daily food diary with calories and macros, using Open Food Facts search and barcode scanning via @zxing/browser; (2) an intermittent fasting timer with presets 16:8, 18:6 and 5:2, history, and a local notification when the eating window opens or closes where the browser supports it; (3) a recipe book where I enter ingredients once and it computes per-serving nutrition and can add the recipe to the diary; (4) a weight and measurements log with a trend chart; (5) a weekly meal planner that sums each day. Offer JSON export and import for backup. Tell me to request my Yazio data export before I cancel, then write an importer after inspecting its format with me. Keep it offline-capable, accessible and fast. Include tests for the nutrition math and a README with free deploy steps for Cloudflare Pages."
+      },
+      "cancel": {
+        "howTo": "Cancel where you subscribed: the App Store or Google Play subscription list, or the cancellation form at yazio.com/en/app/account/cancel if you bought Pro on the website. Deleting the app does not stop billing. You keep Pro until the paid period ends. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://help.yazio.com/hc/en-us/articles/115005660409-How-do-I-cancel-my-Pro-subscription",
+        "gotchas": "Canceling does not trigger a refund, and you cannot pause or shorten an active term. Intro offers can be priced below the regular 12-month rate ($47.90 in the App Store), so check the renewal amount in your Apple Subscriptions screen. Yazio's in-app export is limited, so ask Yazio for your full data in writing (a data access request) and wait for the file before you cancel. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/ai-calorie-tracker-by-yazio/id946099227",
+      "https://help.yazio.com/hc/en-us/articles/115005660409-How-do-I-cancel-my-Pro-subscription",
+      "https://www.yazio.com/en/app/account/cancel"
+    ]
+  },
+  {
+    "id": "garmin-connect-plus",
+    "name": "Garmin Connect+",
+    "category": "health-family",
+    "url": "https://www.garmin.com/en-US/",
+    "match": {
+      "patterns": [
+        "GARMIN ?CONNECT|GARMIN (SUBSCRIPTION|MEMBERSHIP)",
+        "GARMIN INTERNATIONAL"
+      ],
+      "examples": [
+        "GARMIN CONNECT+ OLATHE KS",
+        "GARMIN SUBSCRIPTION",
+        "GARMIN INTERNATIONAL OLATHE KS"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 6.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Your Garmin watch works without it, and Garmin said existing Connect features stay free. Connect+ adds paid extras after a free trial. Cancel unless you use the AI insights and extra reports.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open Garmin Connect (app or web), go to the Connect+ membership page and cancel; if you subscribed through the App Store or Google Play, cancel there. Garmin support at support.garmin.com can help. If you subscribed through the App Store: iPhone Settings > your name > Subscriptions > the app > Cancel Subscription. If through Google Play: Play Store > profile icon > Payments & subscriptions > Subscriptions > the app > Cancel.",
+        "url": "https://support.garmin.com/",
+        "gotchas": "Launch coverage reports a 30-day free trial that converts to $6.99 a month or $69.99 a year. Cancelling does not remove the regular free Connect app or your watch data."
+      }
+    },
+    "sources": [
+      "https://www.tomsguide.com/wellness/smartwatches/garmin-launches-a-paywall-here-are-all-the-premium-connect-features-that-will-cost-you-usd6-99-a-month",
+      "https://www.androidcentral.com/wearables/new-garmin-connect-plus-subscription-adds-active-intelligence-beta-enhanced-smarts",
+      "https://bikeradar.com/news/garmin-connect-plus"
+    ]
+  }
+]

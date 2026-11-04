@@ -1,0 +1,762 @@
+{
+  "file": "apple-card-holdout.csv",
+  "format": "Apple Card (Transaction Date,Clearing Date,Description,Merchant,Category,Type,Amount (USD),Purchased By; MM/DD/YYYY)",
+  "statementStart": "2025-10-01",
+  "statementEnd": "2026-10-29",
+  "rows": 931,
+  "chargeRows": 917,
+  "creditRows": 14,
+  "installmentRows": 13,
+  "dupeEstimate": 3,
+  "series": [
+    {
+      "id": "apple-099",
+      "label": "App Store $1.08 (0.99 + tax)",
+      "merchantId": null,
+      "match": [
+        "APPLE.COM/BILL"
+      ],
+      "amounts": [
+        1.08
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-03",
+      "lastSeen": "2026-10-03",
+      "currentAmount": 1.08,
+      "meanAmount": 1.08,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "candidatesInclude": [
+        "icloud-plus"
+      ],
+      "bundle": true,
+      "note": "iCloud+ 50GB $0.99 + NY sales tax",
+      "detectable": true,
+      "sampleDescriptor": "APPLE.COM/BILL ONE APPLE PARK WAY 866-712-7753 CA US"
+    },
+    {
+      "id": "apple-999",
+      "label": "App Store $10.88 (9.99 + tax)",
+      "merchantId": null,
+      "match": [
+        "APPLE.COM/BILL"
+      ],
+      "amounts": [
+        10.88
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-14",
+      "lastSeen": "2026-10-14",
+      "currentAmount": 10.88,
+      "meanAmount": 10.88,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "candidatesInclude": [
+        "icloud-plus"
+      ],
+      "bundle": true,
+      "note": "iCloud+ 2TB $9.99 + NY sales tax",
+      "detectable": true,
+      "sampleDescriptor": "APPLE.COM/BILL ONE APPLE PARK WAY 866-712-7753 CA US"
+    },
+    {
+      "id": "apple-1299",
+      "label": "App Store $14.14 (12.99 + tax)",
+      "merchantId": null,
+      "match": [
+        "APPLE.COM/BILL"
+      ],
+      "amounts": [
+        14.14
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-20",
+      "lastSeen": "2026-10-20",
+      "currentAmount": 14.14,
+      "meanAmount": 14.14,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "candidatesInclude": [
+        "apple-tv-plus"
+      ],
+      "bundle": true,
+      "note": "Apple TV $12.99 + NY sales tax",
+      "detectable": true,
+      "sampleDescriptor": "APPLE.COM/BILL ONE APPLE PARK WAY 866-712-7753 CA US"
+    },
+    {
+      "id": "apple-699",
+      "label": "App Store $7.61 (6.99 + tax)",
+      "merchantId": null,
+      "match": [
+        "APPLE.COM/BILL"
+      ],
+      "amounts": [
+        7.61
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-24",
+      "lastSeen": "2026-10-24",
+      "currentAmount": 7.61,
+      "meanAmount": 7.61,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "candidatesInclude": [
+        "apple-arcade"
+      ],
+      "bundle": true,
+      "note": "Apple Arcade $6.99 + NY sales tax",
+      "detectable": true,
+      "sampleDescriptor": "APPLE.COM/BILL ONE APPLE PARK WAY 866-712-7753 CA US"
+    },
+    {
+      "id": "spotify-duo",
+      "label": "Spotify Duo (descriptor changes to Spotify P<ref> mid-statement)",
+      "merchantId": "spotify",
+      "match": [
+        "SPOTIFY"
+      ],
+      "amounts": [
+        16.99,
+        18.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-06",
+      "lastSeen": "2026-10-06",
+      "currentAmount": 18.99,
+      "meanAmount": 17.61,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 16.99,
+          "to": 18.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SPOTIFY USA 877-7781161 NEW YORK NY US"
+    },
+    {
+      "id": "midjourney",
+      "label": "Midjourney",
+      "merchantId": "midjourney",
+      "match": [
+        "MIDJOURNEY"
+      ],
+      "amounts": [
+        10
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-18",
+      "lastSeen": "2026-10-18",
+      "currentAmount": 10,
+      "meanAmount": 10,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MIDJOURNEY INC. SAN FRANCISCO CA US"
+    },
+    {
+      "id": "otter",
+      "label": "Otter.ai (cancelled May 2026)",
+      "merchantId": "otter-ai",
+      "match": [
+        "OTTER.AI"
+      ],
+      "amounts": [
+        16.99
+      ],
+      "cadence": "monthly",
+      "count": 8,
+      "firstSeen": "2025-10-21",
+      "lastSeen": "2026-05-21",
+      "currentAmount": 16.99,
+      "meanAmount": 16.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "OTTER.AI LOS ALTOS CA US"
+    },
+    {
+      "id": "readwise",
+      "label": "Readwise",
+      "merchantId": "readwise",
+      "match": [
+        "READWISE"
+      ],
+      "amounts": [
+        9.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-27",
+      "lastSeen": "2026-10-27",
+      "currentAmount": 9.99,
+      "meanAmount": 9.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "READWISE.IO NEW YORK NY US"
+    },
+    {
+      "id": "babbel",
+      "label": "Babbel (foreign descriptor)",
+      "merchantId": "babbel",
+      "match": [
+        "BABBEL"
+      ],
+      "amounts": [
+        14.95
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-08",
+      "lastSeen": "2026-10-08",
+      "currentAmount": 14.95,
+      "meanAmount": 14.95,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "BABBEL.COM BERLIN DEU"
+    },
+    {
+      "id": "pandora",
+      "label": "Pandora Plus",
+      "merchantId": "pandora",
+      "match": [
+        "PANDORA"
+      ],
+      "amounts": [
+        10.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-12",
+      "lastSeen": "2026-10-12",
+      "currentAmount": 10.99,
+      "meanAmount": 10.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PANDORA*SUBSCRIPTION 510-451-4100 CA US"
+    },
+    {
+      "id": "starz",
+      "label": "Starz (cancelled Mar 2026)",
+      "merchantId": "starz",
+      "match": [
+        "STARZ"
+      ],
+      "amounts": [
+        10.99
+      ],
+      "cadence": "monthly",
+      "count": 6,
+      "firstSeen": "2025-10-25",
+      "lastSeen": "2026-03-25",
+      "currentAmount": 10.99,
+      "meanAmount": 10.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "STARZ ENTERTAINMENT ENGLEWOOD CO US"
+    },
+    {
+      "id": "hellofresh",
+      "label": "HelloFresh weekly box (skips weeks)",
+      "merchantId": "hellofresh",
+      "match": [
+        "HELLOFRESH"
+      ],
+      "amounts": [
+        71.94,
+        79.92
+      ],
+      "cadence": "weekly",
+      "count": 47,
+      "firstSeen": "2025-10-05",
+      "lastSeen": "2026-10-25",
+      "currentAmount": 79.92,
+      "meanAmount": 75.85,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 71.94,
+          "to": 79.92
+        }
+      ],
+      "variable": false,
+      "note": "weekly with skipped weeks",
+      "detectable": true,
+      "sampleDescriptor": "HELLOFRESH 646-846-3663 NEW YORK NY US"
+    },
+    {
+      "id": "ancestry",
+      "label": "Ancestry (cancelled Feb 2026)",
+      "merchantId": "ancestry",
+      "match": [
+        "ANCESTRY"
+      ],
+      "amounts": [
+        24.99
+      ],
+      "cadence": "monthly",
+      "count": 5,
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-02-09",
+      "currentAmount": 24.99,
+      "meanAmount": 24.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ANCESTRY.COM 800-262-3787 UT US"
+    },
+    {
+      "id": "adt",
+      "label": "ADT monitoring",
+      "merchantId": "adt",
+      "match": [
+        "ADT SECURITY"
+      ],
+      "amounts": [
+        52.99,
+        54.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-15",
+      "lastSeen": "2026-10-16",
+      "currentAmount": 54.99,
+      "meanAmount": 53.76,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 52.99,
+          "to": 54.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ADT SECURITY SERVICES 800-238-2121 FL US"
+    },
+    {
+      "id": "norton",
+      "label": "Norton 360 (annual, renewal triples)",
+      "merchantId": "norton-360",
+      "match": [
+        "NORTON"
+      ],
+      "amounts": [
+        49.99,
+        119.99
+      ],
+      "cadence": "annual",
+      "count": 2,
+      "firstSeen": "2025-10-11",
+      "lastSeen": "2026-10-11",
+      "currentAmount": 119.99,
+      "meanAmount": 84.99,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 49.99,
+          "to": 119.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "NORTON *360 DELUXE 650-527-8000 CA US"
+    },
+    {
+      "id": "expressvpn",
+      "label": "ExpressVPN (cancelled Jul 2026)",
+      "merchantId": "expressvpn",
+      "match": [
+        "EXPRESSVPN"
+      ],
+      "amounts": [
+        12.95
+      ],
+      "cadence": "monthly",
+      "count": 10,
+      "firstSeen": "2025-10-04",
+      "lastSeen": "2026-07-04",
+      "currentAmount": 12.95,
+      "meanAmount": 12.95,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "EXPRESSVPN ROAD TOWN VGB"
+    },
+    {
+      "id": "google-workspace",
+      "label": "Google Workspace (2 seats)",
+      "merchantId": "google-workspace",
+      "match": [
+        "GSUITE"
+      ],
+      "amounts": [
+        16.8
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-10-01",
+      "currentAmount": 16.8,
+      "meanAmount": 16.8,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GOOGLE *GSUITE_JDOEDESI g.co/helppay#CA US"
+    },
+    {
+      "id": "nest-aware",
+      "label": "Google Nest Aware",
+      "merchantId": "google-nest-aware",
+      "match": [
+        "NEST AWARE"
+      ],
+      "amounts": [
+        8
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-19",
+      "lastSeen": "2026-10-19",
+      "currentAmount": 8,
+      "meanAmount": 8,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GOOGLE *NEST AWARE g.co/helppay#CA US"
+    },
+    {
+      "id": "att",
+      "label": "AT&T wireless (variable)",
+      "merchantId": "att",
+      "match": [
+        "ATT*BILL"
+      ],
+      "amounts": [],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-22",
+      "lastSeen": "2026-10-22",
+      "currentAmount": 168.41,
+      "meanAmount": 170.09,
+      "active": true,
+      "priceChanges": [],
+      "variable": true,
+      "detectable": true,
+      "sampleDescriptor": "ATT*BILL PAYMENT 800-288-2020 TX US"
+    },
+    {
+      "id": "allstate",
+      "label": "Allstate 6-month premium",
+      "merchantId": "allstate",
+      "match": [
+        "ALLSTATE"
+      ],
+      "amounts": [
+        742
+      ],
+      "cadence": "semiannual",
+      "count": 2,
+      "firstSeen": "2025-11-10",
+      "lastSeen": "2026-05-10",
+      "currentAmount": 742,
+      "meanAmount": 742,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ALLSTATE INSURANCE 800-255-7828 IL US"
+    },
+    {
+      "id": "weightwatchers",
+      "label": "WeightWatchers",
+      "merchantId": "weightwatchers",
+      "match": [
+        "WEIGHT WATCHERS"
+      ],
+      "amounts": [
+        23
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-15",
+      "lastSeen": "2026-10-16",
+      "currentAmount": 23,
+      "meanAmount": 23,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "WEIGHT WATCHERS INTL 212-589-2700 NY US"
+    },
+    {
+      "id": "equinox",
+      "label": "Equinox",
+      "merchantId": "equinox",
+      "match": [
+        "EQUINOX"
+      ],
+      "amounts": [
+        285
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-02",
+      "lastSeen": "2026-10-02",
+      "currentAmount": 285,
+      "meanAmount": 285,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "EQUINOX FITNESS CLUBS NEW YORK NY US"
+    },
+    {
+      "id": "fabletics",
+      "label": "Fabletics VIP (skips some months)",
+      "merchantId": null,
+      "match": [
+        "FABLETICS"
+      ],
+      "amounts": [
+        49.95
+      ],
+      "cadence": "monthly",
+      "count": 10,
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-10-09",
+      "currentAmount": 49.95,
+      "meanAmount": 49.95,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "FABLETICS 877-4333-8442 EL SEGUNDO CA US"
+    },
+    {
+      "id": "the-information",
+      "label": "The Information",
+      "merchantId": null,
+      "match": [
+        "THE INFORMATION"
+      ],
+      "amounts": [
+        39
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-16",
+      "lastSeen": "2026-10-17",
+      "currentAmount": 39,
+      "meanAmount": 39,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "THE INFORMATION SAN FRANCISCO CA US"
+    },
+    {
+      "id": "pure-barre",
+      "label": "Pure Barre",
+      "merchantId": null,
+      "match": [
+        "PURE BARRE"
+      ],
+      "amounts": [
+        199
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-10-01",
+      "currentAmount": 199,
+      "meanAmount": 199,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PURE BARRE UPPER WEST SIDE NEW YORK NY US"
+    },
+    {
+      "id": "tractive",
+      "label": "Tractive GPS tracker",
+      "merchantId": null,
+      "match": [
+        "TRACTIVE"
+      ],
+      "amounts": [
+        7.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-12",
+      "lastSeen": "2026-10-11",
+      "currentAmount": 7.99,
+      "meanAmount": 7.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "TRACTIVE GMBH PISTOIA ITA"
+    },
+    {
+      "id": "freshbooks",
+      "label": "FreshBooks",
+      "merchantId": null,
+      "match": [
+        "FRESHBOOKS"
+      ],
+      "amounts": [
+        21
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-05",
+      "lastSeen": "2026-10-05",
+      "currentAmount": 21,
+      "meanAmount": 21,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "FRESHBOOKS TORONTO ON CAN"
+    },
+    {
+      "id": "simplepractice",
+      "label": "SimplePractice",
+      "merchantId": null,
+      "match": [
+        "SIMPLEPRACTICE"
+      ],
+      "amounts": [
+        29
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-13",
+      "lastSeen": "2026-10-12",
+      "currentAmount": 29,
+      "meanAmount": 29,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SIMPLEPRACTICE.COM SAN FRANCISCO CA US"
+    },
+    {
+      "id": "liberty-mutual",
+      "label": "Liberty Mutual",
+      "merchantId": null,
+      "match": [
+        "LIBERTY MUTUAL"
+      ],
+      "amounts": [
+        96.12
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-17",
+      "lastSeen": "2026-10-17",
+      "currentAmount": 96.12,
+      "meanAmount": 96.12,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "LIBERTY MUTUAL INSURANCE 800-290-8711 MA US"
+    },
+    {
+      "id": "nails",
+      "label": "Fabulous Nails & Spa biweekly (looks like Fabulous)",
+      "merchantId": null,
+      "match": [
+        "FABULOUS NAILS"
+      ],
+      "amounts": [
+        52
+      ],
+      "cadence": "biweekly",
+      "count": 25,
+      "firstSeen": "2025-10-07",
+      "lastSeen": "2026-10-20",
+      "currentAmount": 52,
+      "meanAmount": 52,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "mimic": true,
+      "detectable": true,
+      "sampleDescriptor": "FABULOUS NAILS & SPA BROOKLYN NY US"
+    }
+  ],
+  "mustNotDetect": [
+    {
+      "id": "t-installment",
+      "label": "iPhone 0% monthly installment",
+      "match": [
+        "APPLE CARD MONTHLY INSTALLMENTS"
+      ],
+      "why": "Apple Card installment (a loan, not a subscription)",
+      "count": 13
+    },
+    {
+      "id": "t-amzn",
+      "label": "AMZN Mktp monthly same amount",
+      "match": [
+        "AMZN MKTP"
+      ],
+      "why": "marketplace purchase",
+      "count": 13
+    }
+  ],
+  "undetectableByDesign": [
+    {
+      "id": "daycare",
+      "label": "Daycare tuition (> $400, non-KB)",
+      "merchantId": null,
+      "match": [
+        "BRIGHT HORIZONS"
+      ],
+      "amounts": [
+        1240
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-10-01",
+      "currentAmount": 1240,
+      "meanAmount": 1240,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": false,
+      "undetectableReason": "non-KB single charge > $400 excluded by spec",
+      "sampleDescriptor": "BRIGHT HORIZONS CHILDREN S BOSTON MA US"
+    }
+  ]
+}

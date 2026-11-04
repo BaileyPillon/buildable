@@ -1,0 +1,77 @@
+{
+  "merchantId": "quizlet-plus",
+  "model": "Claude Sonnet 5.5 (agent, one session)",
+  "builtAt": "2026-11-03",
+  "checklist": [
+    {
+      "item": "Decks and cards with text and optional images stored in IndexedDB",
+      "status": "works",
+      "note": "Created decks and cards through the UI, they survived reload (IndexedDB flashcards-plus: decks/cards/reviews/meta). Image added via file input and via a paste event: stored as 900px WebP blob, shown in study view, restored from backup. Non-image file rejected with a toast; empty card rejected. Rename, edit, delete card and delete deck (cascades) all work. 1002-card deck imports in about 0.2s, lists 100 rows at a time with search."
+    },
+    {
+      "item": "FSRS/SM-2 scheduling with a daily due queue and a new-cards-per-day limit",
+      "status": "works",
+      "note": "FSRS-4.5 with the published default weights (new-card Good stability 3.7145, Easy about 14d). Learning steps, graduation, lapse and Hard/Good/Easy intervals shown on buttons. Set cards overdue in IndexedDB and the deck list showed 11 due; Again/Good ratings changed schedules. New limit defaults to 20, set to 3 on a 32-card deck, held after reload, and reset when I back-dated the review log by a day. Undo restores the previous schedule."
+    },
+    {
+      "item": "Study mode: flip",
+      "status": "works",
+      "note": "Space reveals, 1-4 rate (real key events), z undoes, Esc ends, session-complete screen, practice-all mode does not touch the schedule."
+    },
+    {
+      "item": "Study mode: type the answer",
+      "status": "works",
+      "note": "Typed with real keystrokes: lowercase typed answer accepted as Correct, wrong answer marked Not quite with suggested rating, Enter then Enter accepts, I don't know button works."
+    },
+    {
+      "item": "Study mode: multiple choice built from other cards in the deck",
+      "status": "works",
+      "note": "Four options (one correct, distractors from other cards in the same deck), right/wrong marking, fallback to fewer options/flip in tiny decks, works with an image card and with back-first direction."
+    },
+    {
+      "item": "Study mode: timed matching game",
+      "status": "works",
+      "note": "4/6/8 pairs, clock starts on first pick, miss counter, finished a 6-pair round in 0:04.5 with 1 miss and 'New best time' saved; tile keys 1-9/0/a-f select tiles; decks under 3 cards show a clear message."
+    },
+    {
+      "item": "Stats: streak, retention rate and a heatmap of reviews",
+      "status": "works",
+      "note": "Injected back-dated reviews: streak 6 days with a gap correctly breaking it, retention 82% then 94% matches the review-phase ratings, 12-month heatmap with per-day counts, card maturity bar, 14-day forecast, deck filter. Looks right in dark mode."
+    },
+    {
+      "item": "Import from a Quizlet export pasted as text (tab between term and definition, newline between cards)",
+      "status": "works",
+      "note": "Pasted 12 lines with accents, a ; inside a definition and one line with no tab: 11 cards ready, 1 line reported as skipped, imported into a new deck. Also .txt file with CRLF and blank lines, custom separators offered, preview before import. Card text containing HTML is rendered as text (no XSS)."
+    },
+    {
+      "item": "CSV and JSON import and export",
+      "status": "works",
+      "note": "CSV with quoted commas, escaped quotes, embedded newlines and a deck column imported correctly (32 cards); UTF-8 BOM + semicolon CSV and bare JSON arrays of term/definition also work; garbage/empty files give a friendly message. Exported deck CSV and deck JSON re-import with 32 cards; merge import adds no duplicates. Full backup JSON (decks, images, schedules, 64 reviews) then Erase all then Replace restore gave identical counts and the image blob back."
+    },
+    {
+      "item": "Dark mode and keyboard shortcuts",
+      "status": "works",
+      "note": "t toggles auto/dark/light and persists via localStorage; prefers-color-scheme dark honoured on a fresh profile; screenshots of dark decks, stats and matching look clean and text contrast is at least 4.5:1 on checked elements. ? help overlay (11 rows), g then d/s/i/b navigation, n focuses new deck, study keys all work."
+    },
+    {
+      "item": "Vite + TypeScript, installable, offline-capable, tests for the scheduler",
+      "status": "works",
+      "note": "tsc --noEmit clean and vitest 75/75 pass (24 FSRS tests incl. new/learning/review/lapse transitions). Served with the host strict CSP: zero CSP violations and no console errors from the app. Headless Chrome: service worker activated and controlled the page, cached all 10 files, then with the static server killed the app reloaded, showed a deck created earlier and navigated to #/stats. Chrome reports no installability errors and no manifest errors. The built-in browser pane cannot register service workers (environment limit), and iOS/Safari was not tested."
+    },
+    {
+      "item": "Host free on GitHub Pages and explain how to back up decks",
+      "status": "works",
+      "note": "pages.yml workflow (npm ci, test, build, upload-pages-artifact, deploy-pages) and a README section on Pages setup plus a clear backup/restore guide; the Backup & settings page repeats it, shows last-backup age and a 14-day nag. Backup and restore was verified end to end. The workflow itself was not run (not deployed by instruction)."
+    }
+  ],
+  "score": { "works": 12, "partial": 0, "missing": 0 },
+  "bugs": [
+    "Session-complete '% remembered' is wrong after Undo: study.ts undo() decrements stats.done but not stats.remembered, so a 21-review session that included an Again press on a new card reported '100% remembered' (it can exceed 100%).",
+    "JSON deck export lists cards in id order rather than creation order (CSV export keeps creation order).",
+    "'Import as copies' creates a deck with the identical name (no '(copy)' suffix), and because review history is not copied the copy shows a fresh daily new-card quota.",
+    "At 375px width there is no page horizontal scroll, but the header nav stacks into a tall block (Backup & settings wraps to two lines, about 195px of 812px) and matching tiles break long words mid-word ('bibliotec / a').",
+    "Erase all data relies on window.prompt (and some flows on window.confirm); in browsers/webviews that block prompt() it throws an unhandled rejection and nothing happens (the embedded browser pane does this).",
+    "Not verified: real iOS/Safari, the actual OS install flow, and the GitHub Pages workflow on real GitHub."
+  ],
+  "summary": "A complete, working offline flashcard PWA: every item in the prompt was exercised in a real browser under the host CSP and worked, including FSRS scheduling with daily limits, all four study modes, stats, Quizlet/CSV/JSON import and export, backup-erase-restore, dark mode, and offline reload in real Chrome with the server stopped. The defects found are minor (a wrong percentage in the session summary after Undo, scrambled JSON export order, cosmetic mobile header and copy-naming issues), and iOS/Safari and a real GitHub Pages deploy remain untested."
+}

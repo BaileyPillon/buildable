@@ -1,0 +1,107 @@
+{
+  "file": "apple-card.csv",
+  "bank": "appleCard",
+  "statementStart": "2026-03-01",
+  "statementEnd": "2026-10-31",
+  "rows": 356,
+  "active": [
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($9.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 8,
+      "active": true,
+      "candidates": [
+        "icloud-plus",
+        "apple-tv-plus"
+      ]
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($0.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 0.99,
+      "charges": 8,
+      "active": true,
+      "candidates": [
+        "icloud-plus"
+      ]
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 19.99,
+      "charges": 8,
+      "active": true
+    },
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 17.99,
+      "charges": 8,
+      "active": true
+    },
+    {
+      "key": "hulu",
+      "displayName": "Hulu",
+      "match": "HULU",
+      "merchantId": "hulu",
+      "cadence": "monthly",
+      "currentAmount": 18.99,
+      "charges": 8,
+      "active": true
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 8,
+      "active": true
+    },
+    {
+      "key": "claude-pro",
+      "displayName": "Claude Pro",
+      "match": "CLAUDE",
+      "merchantId": "claude-pro",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 8,
+      "active": true
+    },
+    {
+      "key": "max",
+      "displayName": "Max",
+      "match": "MAX.COM",
+      "merchantId": "max",
+      "cadence": "monthly",
+      "currentAmount": 16.99,
+      "charges": 8,
+      "active": true
+    },
+    {
+      "key": "crunch",
+      "displayName": "Crunch Fitness",
+      "match": "CRUNCH",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 29.99,
+      "charges": 8,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

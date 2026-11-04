@@ -1,0 +1,2163 @@
+[
+  {
+    "id": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "category": "software-learning",
+    "url": "https://www.adobe.com/creativecloud.html",
+    "match": {
+      "patterns": [
+        "^ADOBE ?(?:\\*|SYSTEMS|INC\\b|CREATIVE|PHOTO|STOCK|EXPRESS|LIGHTROOM|PHOTOSHOP)(?!.{0,60}\\bACRO)"
+      ],
+      "examples": [
+        "ADOBE *CREATIVE CLOUD 408-536-6000 CA",
+        "ADOBE *PHOTOGRAPHY PLAN 408-536-6000 CA",
+        "ADOBE SYSTEMS SOFTWARE IRE"
+      ]
+    },
+    "typicalMonthly": 69.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "All Apps is priced for professionals, yet most people use one or two apps. Adobe's cancel flow can surface a retention offer, and the Photography ($19.99) or single-app plans cost far less.",
+    "alternatives": [
+      {
+        "name": "Krita",
+        "url": "https://krita.org",
+        "note": "Free, open-source painting and illustration."
+      },
+      {
+        "name": "GIMP",
+        "url": "https://www.gimp.org",
+        "note": "Free, open-source photo editing, a Photoshop stand-in for most hobby work."
+      },
+      {
+        "name": "Inkscape",
+        "url": "https://inkscape.org",
+        "note": "Free vector graphics, comparable to Illustrator for logos and layouts."
+      },
+      {
+        "name": "DaVinci Resolve (free)",
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+        "note": "Free video editing and colour; replaces Premiere for most solo projects."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Adobe's own cheaper plans (Photography $19.99 a month, single apps $22.99) and free tools such as DaVinci Resolve, GIMP and Krita. Starting the cancel flow is a common way to see whether a retention offer is available.",
+        "script": "Hi, I am planning to cancel my Creative Cloud plan because it costs more than I use it for. I mostly use [APP]. Before I confirm, can you tell me what retention offers or lower-priced plans are available, such as the Photography plan, a single-app plan, or a discounted renewal for the next term? I would like to stay a customer if the price comes down. Please also confirm in writing the renewal price and term, and whether any early termination fee applies if I change plans.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Two to four weeks before an annual term ends. Cancelling mid-term on an annual-billed-monthly plan after the first 14 days costs half of the remaining commitment, so time the call to the renewal date."
+      },
+      "cancel": {
+        "howTo": "Sign in to your Adobe account, open Plans, choose Manage plan for the plan you want to end, select Cancel your plan, pick a reason and confirm. Each plan is cancelled separately.",
+        "url": "https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html",
+        "gotchas": "Annual-billed-monthly plans charge half the remaining commitment if you cancel after 14 days; prepaid annual plans are non-refundable after 14 days; month-to-month has no fee. Access continues to the end of the paid period. Plans bought through Apple, Google or Microsoft cancel there."
+      }
+    },
+    "sources": [
+      "https://www.adobe.com/creativecloud/plans.html",
+      "https://www.adobe.com/acrobat/pricing.html",
+      "https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html"
+    ]
+  },
+  {
+    "id": "adobe-acrobat-pro",
+    "name": "Adobe Acrobat Pro",
+    "category": "software-learning",
+    "url": "https://www.adobe.com/acrobat.html",
+    "match": {
+      "patterns": [
+        "^ADOBE\\b.{0,60}\\bACRO"
+      ],
+      "examples": [
+        "ADOBE *ACROPRO SUBS 408-536-6000 CA",
+        "ADOBE ACROBAT PRO SUBS CA"
+      ]
+    },
+    "typicalMonthly": 19.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "haggle",
+      "cancel"
+    ],
+    "why": "Most people merge, split, sign and fill PDFs. A private browser toolkit does that for free in an afternoon. Keep Acrobat only for true text editing, redaction or certified signatures.",
+    "alternatives": [
+      {
+        "name": "macOS Preview",
+        "url": "https://support.apple.com/guide/preview/welcome/mac",
+        "note": "Built into every Mac: merge, reorder, annotate, fill forms and sign."
+      },
+      {
+        "name": "PDFgear",
+        "url": "https://www.pdfgear.com",
+        "note": "Free desktop PDF editor and converter."
+      },
+      {
+        "name": "PDF24 Tools",
+        "url": "https://tools.pdf24.org",
+        "note": "Free PDF tools, including merge, split, compress and OCR."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A private PDF toolkit that runs in the browser: merge, split, reorder, rotate and delete pages, fill forms, add text and signatures, compress by re-rendering pages as images, and OCR scans into searchable PDFs.",
+        "hours": 9,
+        "runsOn": "Installable PWA (pdf-lib, pdf.js, tesseract.js) hosted free on Cloudflare Pages or GitHub Pages; files never leave the device.",
+        "ongoingCostYear": 0,
+        "youLose": "True text editing inside existing PDFs, Adobe-grade redaction and accessibility tagging, certified digital signatures, and Acrobat's polish and support.",
+        "prompt": "Build me a private PDF toolkit as an installable PWA with no backend and no accounts. Stack: Vite, TypeScript, pdf-lib for editing, pdf.js for rendering, and tesseract.js for optional OCR, all running in the browser so files never leave my device. Core features: (1) merge several PDFs and drag to reorder pages, (2) split by page range or extract pages, (3) rotate and delete pages, (4) fill form fields and add typed or drawn signatures and text boxes, (5) compress by re-rendering pages as JPEG at a chosen quality, with a warning that this flattens text, (6) OCR a scanned PDF into a searchable one. Keep only a recent-files list of names in IndexedDB, never file contents. Include unit tests for merge, split and rotate using small sample PDFs. Deploy free to Cloudflare Pages or GitHub Pages and explain how to install it from the browser. Finish with a README listing what it cannot do compared with Acrobat Pro."
+      },
+      "haggle": {
+        "leverage": "Cheaper tiers in the same family (Acrobat Standard $14.99, Acrobat Express $9.99) and free PDF tools. Adobe often shows a retention offer when you start cancelling.",
+        "script": "Hi, I use Acrobat Pro mainly to merge, sign and fill PDFs, and at $19.99 a month it is more than I need. I am about to cancel. Can you move me to Acrobat Standard or apply a retention discount for the next term? Please confirm the new price, the term length, and whether any early termination fee applies to the change.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Shortly before an annual term renews, via the cancel flow in your Adobe account or Adobe chat."
+      },
+      "cancel": {
+        "howTo": "Adobe account, Plans, Manage plan for Acrobat, Cancel your plan, then confirm. Save any PDFs stored in Adobe cloud storage first.",
+        "url": "https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html",
+        "gotchas": "Annual billed monthly: half of the remaining commitment is charged if you cancel after 14 days. Annual prepaid: non-refundable after 14 days. Monthly ($29.99): no fee but the highest rate."
+      }
+    },
+    "sources": [
+      "https://www.adobe.com/acrobat/pricing.html",
+      "https://www.adobe.com/creativecloud/plans.html",
+      "https://helpx.adobe.com/account/individual/subscriptions-and-plans/renewals-and-cancellations/cancel-adobe-subscription.html"
+    ]
+  },
+  {
+    "id": "canva-pro",
+    "name": "Canva Pro",
+    "category": "software-learning",
+    "url": "https://www.canva.com/pricing/",
+    "match": {
+      "patterns": [
+        "CANVA(?!S)"
+      ],
+      "examples": [
+        "CANVA* I04019-31837401 SYDNEY NSW",
+        "CANVA* I03877-20418855 SYDNEY AUS"
+      ]
+    },
+    "typicalMonthly": 12,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Canva Free covers most posts and flyers. Pro adds Brand Kit, Magic Resize, background removal and bigger AI and stock allowances, which many people need only in bursts. Monthly is $18, yearly $144.",
+    "alternatives": [
+      {
+        "name": "Canva Free",
+        "url": "https://www.canva.com/pricing/",
+        "note": "Free plan with core templates and editor."
+      },
+      {
+        "name": "Adobe Express",
+        "url": "https://www.adobe.com/express/",
+        "note": "Free tier for quick social graphics and resizing."
+      },
+      {
+        "name": "Penpot",
+        "url": "https://penpot.app",
+        "note": "Open-source design tool, free."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Stay on Free. Pay the $18 monthly rate only in months with a real Pro need (a brand kit set-up, a big resize batch, a campaign), export everything, then drop back. Monthly beats the $144 yearly plan only if you need Pro seven months a year or fewer.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Account settings, Billing and plans, Cancel subscription. If you subscribed in the Canva app on iOS or Android, cancel in Apple or Google subscriptions instead.",
+        "url": "https://www.canva.com/settings/billing-and-teams",
+        "gotchas": "Free trials convert to paid automatically. After downgrading, replace Pro-only stock and elements in existing designs before you export. Team plans are billed per person."
+      }
+    },
+    "sources": [
+      "https://www.canva.com/pricing/"
+    ]
+  },
+  {
+    "id": "figma",
+    "name": "Figma Professional",
+    "category": "software-learning",
+    "url": "https://www.figma.com/pricing/",
+    "match": {
+      "patterns": [
+        "FIGMA"
+      ],
+      "examples": [
+        "FIGMA SAN FRANCISCO CA",
+        "FIGMA, INC. SAN FRANCISCO CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 192,
+          "cadence": "annual",
+          "plan": "Professional Full seat, billed annually"
+        }
+      ]
+    },
+    "typicalMonthly": 16,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Few tools match Figma's shared libraries and Dev Mode. If you only review or comment on files, a Collab seat at $3 or the free Starter plan (three design files) is enough.",
+    "alternatives": [
+      {
+        "name": "Penpot",
+        "url": "https://penpot.app",
+        "note": "Open-source design and prototyping tool, free to self-host or use hosted."
+      },
+      {
+        "name": "Figma Starter",
+        "url": "https://www.figma.com/pricing/",
+        "note": "Free plan, limited to one team and three design files."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Open the team in Figma, go to Settings, Billing, and downgrade the team to Starter. The paid plan runs to the end of the billing period.",
+        "url": "https://help.figma.com/hc/en-us",
+        "gotchas": "Starter allows only three design files and one team, so export .fig copies of everything else before downgrading. Extra seats, including Dev and Collab seats, are billed separately."
+      }
+    },
+    "sources": [
+      "https://www.figma.com/pricing/",
+      "https://help.figma.com/hc/en-us/articles/360040328273-Compare-Figma-plans-and-features"
+    ]
+  },
+  {
+    "id": "microsoft-365",
+    "name": "Microsoft 365 Personal/Family",
+    "category": "software-learning",
+    "url": "https://www.microsoft.com/en-us/microsoft-365",
+    "match": {
+      "patterns": [
+        "MICROSOFT 365(?! ?(?:BUSINESS|ENTERPRISE|COPILOT))",
+        "OFFICE 365",
+        "M365 (PERSONAL|FAMILY)"
+      ],
+      "examples": [
+        "MICROSOFT*MICROSOFT 365 PERSONAL MSBILL.INFO WA",
+        "MSFT *MICROSOFT 365 FAMILY MSBILL.INFO WA"
+      ],
+      "priceHints": [
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Personal"
+        },
+        {
+          "amount": 129.99,
+          "cadence": "annual",
+          "plan": "Family"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Personal is $99.99 a year ($9.99 monthly) and Family $129.99 ($12.99) for up to six people. Family split across a household is the best value; a solo user who only needs basic documents can use free web Office.",
+    "alternatives": [
+      {
+        "name": "Office on the web",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web",
+        "note": "Free Word, Excel and PowerPoint in the browser with a Microsoft account."
+      },
+      {
+        "name": "LibreOffice",
+        "url": "https://www.libreoffice.org",
+        "note": "Free desktop office suite that opens and saves Office files."
+      },
+      {
+        "name": "Google Docs",
+        "url": "https://docs.google.com",
+        "note": "Free browser-based documents and spreadsheets."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at account.microsoft.com/services, find Microsoft 365, choose Manage, then Cancel subscription or turn off recurring billing. Access continues until the end date.",
+        "url": "https://account.microsoft.com/services",
+        "gotchas": "The free month converts to paid unless cancelled. After the plan ends, OneDrive drops to the free 5 GB tier, so move files off first. Subscriptions bought through Apple, Google or a carrier are cancelled there."
+      }
+    },
+    "sources": [
+      "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products",
+      "https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5dm"
+    ]
+  },
+  {
+    "id": "google-workspace",
+    "name": "Google Workspace",
+    "category": "software-learning",
+    "url": "https://workspace.google.com/pricing",
+    "match": {
+      "patterns": [
+        "GOOGLE.{0,8}(WORKSPACE|GSUITE|G SUITE)"
+      ],
+      "examples": [
+        "GOOGLE *GSUITE_SMITHCO CC@GOOGLE.COM CA",
+        "GOOGLE *WORKSPACE_SMITHCO CC@GOOGLE.COM CA"
+      ]
+    },
+    "typicalMonthly": 7,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Business Starter is $7 per user a month with a one-year commitment and is the simplest custom-domain email with Drive and Meet. Free email routing plus Gmail works for one person who can skip admin features.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Email Routing",
+        "url": "https://developers.cloudflare.com/email-routing/",
+        "note": "Free forwarding of you@yourdomain to a Gmail inbox; pair with Gmail Send mail as."
+      },
+      {
+        "name": "Proton Mail Free",
+        "url": "https://proton.me/mail",
+        "note": "Free encrypted mailbox, custom domains need a paid plan."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "As an admin, open the Admin console, Billing, Subscriptions, select the Workspace subscription and choose Cancel subscription. Export mail and files first with the data export tool or Google Takeout.",
+        "url": "https://support.google.com/a/answer/1257646",
+        "gotchas": "Cancelling removes user data after a grace period, and mail to your domain stops working until you point MX records elsewhere. Domain registration is billed separately from Workspace."
+      }
+    },
+    "sources": [
+      "https://workspace.google.com/pricing",
+      "https://support.google.com/a/answer/1257646"
+    ]
+  },
+  {
+    "id": "setapp",
+    "name": "Setapp",
+    "category": "software-learning",
+    "url": "https://setapp.com",
+    "match": {
+      "patterns": [
+        "SETAPP"
+      ],
+      "examples": [
+        "SETAPP LIMITED",
+        "SETAPP.COM NICOSIA CY"
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "At $14.99 a month for one Mac it pays off only if you use three or more of its apps regularly. Otherwise subscribe for the month you need an app, export your work, and cancel.",
+    "alternatives": [
+      {
+        "name": "Homebrew casks",
+        "url": "https://brew.sh",
+        "note": "Install many free and open-source Mac apps from the command line."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe in a month when you need two or more Setapp apps for a project, finish and export the work, then cancel. Re-subscribe when the next project needs them. The 7-day trial is free on each plan.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Open your Setapp account, go to Subscription, and cancel the plan. Setapp apps stop opening when the paid period ends.",
+        "url": "https://support.setapp.com/hc/en-us",
+        "gotchas": "The 7-day trial converts to paid monthly billing. Export documents from Setapp apps before the end date because they no longer launch afterwards."
+      }
+    },
+    "sources": [
+      "https://setapp.com/pricing",
+      "https://support.setapp.com/hc/en-us"
+    ]
+  },
+  {
+    "id": "cleanmymac",
+    "name": "CleanMyMac",
+    "category": "software-learning",
+    "url": "https://macpaw.com/cleanmymac",
+    "match": {
+      "patterns": [
+        "CLEANMYMAC|MACPAW"
+      ],
+      "examples": [
+        "MACPAW INC. CLEANMYMAC KYIV UA",
+        "CLEANMYMAC.COM"
+      ]
+    },
+    "typicalMonthly": 3.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "macOS already shows what is using storage and can clear it, and free tools such as AppCleaner and OnyX remove leftovers. Paying yearly to clean a Mac rarely beats the built-in options.",
+    "alternatives": [
+      {
+        "name": "AppCleaner",
+        "url": "https://freemacsoft.net/appcleaner/",
+        "note": "Free app uninstaller that also removes leftover files."
+      },
+      {
+        "name": "OnyX",
+        "url": "https://www.titanium-software.fr/en/onyx.html",
+        "note": "Free maintenance and cleanup utility for macOS."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to your MacPaw account and turn off auto-renewal under Subscriptions. If you bought through the Mac App Store, cancel in Apple subscriptions. If it came with Setapp, cancel there.",
+        "gotchas": "The yearly plan renews automatically. The malware scan is the main security pitch, but macOS already ships with XProtect and Gatekeeper, so this is not a reason to keep it."
+      }
+    },
+    "sources": [
+      "https://macpaw.com/cleanmymac"
+    ]
+  },
+  {
+    "id": "parallels-desktop",
+    "name": "Parallels Desktop",
+    "category": "software-learning",
+    "url": "https://www.parallels.com/products/desktop/",
+    "match": {
+      "patterns": [
+        "PARALLELS"
+      ],
+      "examples": [
+        "PARALLELS INTERNATIONAL GMBH SCHAFFHAUSEN CH",
+        "PARALLELS*PARALLELS DESKTOP"
+      ]
+    },
+    "typicalMonthly": 8.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "UTM is free and VMware Fusion has a personal-use licence; both run Windows or Linux on Apple silicon. Parallels wins on polish and graphics. Standard can also be bought outright, not renewed yearly.",
+    "alternatives": [
+      {
+        "name": "UTM",
+        "url": "https://mac.getutm.app",
+        "note": "Free, open-source virtual machines for Mac, runs Windows and Linux."
+      },
+      {
+        "name": "VMware Fusion Pro",
+        "url": "https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion",
+        "note": "Offered free for personal use at the time of writing; check the licence."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Turn off auto-renewal in your Parallels account under Subscriptions, or in Apple subscriptions if you bought through the Mac App Store. Keep Windows VMs by exporting or switching them to another hypervisor first.",
+        "gotchas": "A promotional price on the buy page may not be the renewal price, so check what your account will charge. The Standard edition is also sold as a one-time purchase. Purchases carry a 30-day money-back guarantee."
+      }
+    },
+    "sources": [
+      "https://www.parallels.com/products/desktop/buy/"
+    ]
+  },
+  {
+    "id": "jetbrains",
+    "name": "JetBrains IDEs",
+    "category": "software-learning",
+    "url": "https://www.jetbrains.com/store/",
+    "match": {
+      "patterns": [
+        "JET ?BRAINS"
+      ],
+      "examples": [
+        "JETBRAINS S.R.O. PRAGUE CZ",
+        "JETBRAINS AMERICAS INC"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "For daily professional work the IDEs earn their price. Hobby and open-source use may qualify for a free licence, and a paid subscription earns a perpetual fallback licence after 12 months.",
+    "alternatives": [
+      {
+        "name": "Visual Studio Code",
+        "url": "https://code.visualstudio.com",
+        "note": "Free editor with extensions for nearly every language."
+      },
+      {
+        "name": "Zed",
+        "url": "https://zed.dev",
+        "note": "Fast free editor with built-in collaboration."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to your JetBrains Account, open Subscriptions, and turn off automatic renewal. You keep working until the paid term ends.",
+        "url": "https://account.jetbrains.com",
+        "gotchas": "A yearly subscription, or 12 consecutive monthly renewals, earns a perpetual fallback licence for the version you had, so cancelling does not lock you out of it. Missing a monthly renewal before month 12 forfeits the fallback. Stopping can also reset the continuity discount."
+      }
+    },
+    "sources": [
+      "https://www.jetbrains.com/store/",
+      "https://www.jetbrains.com/idea/buy/",
+      "https://sales.jetbrains.com/hc/en-gb/articles/207240845-What-is-a-perpetual-fallback-license"
+    ]
+  },
+  {
+    "id": "github-pro",
+    "name": "GitHub Pro",
+    "category": "software-learning",
+    "url": "https://github.com/pricing",
+    "match": {
+      "patterns": [
+        "GITHUB(?!.{0,60}(?:COPILOT|SPONSOR))"
+      ],
+      "examples": [
+        "GITHUB, INC. SAN FRANCISCO CA",
+        "GITHUB.COM SAN FRANCISCO CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 48,
+          "cadence": "annual",
+          "plan": "GitHub Pro, billed yearly"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "GitHub Free already includes unlimited private repositories and 2,000 CI minutes a month. Pro adds protected branches, required reviewers and more Codespaces hours, which most solo developers never use.",
+    "alternatives": [
+      {
+        "name": "GitHub Free",
+        "url": "https://github.com/pricing",
+        "note": "Unlimited public and private repos, 2,000 CI/CD minutes a month."
+      },
+      {
+        "name": "Codeberg",
+        "url": "https://codeberg.org",
+        "note": "Non-profit, open-source Git hosting."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Open GitHub Settings, then Billing and licensing, then Additional billing details. Under Current plan open the Edit menu, choose Downgrade to Free and confirm. The downgrade takes effect on your next billing date.",
+        "url": "https://docs.github.com/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan",
+        "gotchas": "Private-repo features such as protected branches and required reviewers stop applying after the downgrade. GitHub Copilot is a separate subscription and must be cancelled on its own."
+      }
+    },
+    "sources": [
+      "https://github.com/pricing",
+      "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+      "https://docs.github.com/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan"
+    ]
+  },
+  {
+    "id": "vercel-pro",
+    "name": "Vercel Pro",
+    "category": "software-learning",
+    "url": "https://vercel.com/pricing",
+    "match": {
+      "patterns": [
+        "VERCEL"
+      ],
+      "examples": [
+        "VERCEL INC. WALNUT CA",
+        "VERCEL INC. VERCEL.COM CA"
+      ]
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Pro is $20 per developer seat with a $20 usage credit, and Hobby is free but personal and non-commercial only. Keep it for commercial projects; hobby sites can move to Hobby or free static hosts.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Pages",
+        "url": "https://pages.cloudflare.com",
+        "note": "Free static and edge hosting for personal and commercial sites."
+      },
+      {
+        "name": "GitHub Pages",
+        "url": "https://pages.github.com",
+        "note": "Free static hosting straight from a repository."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In the Vercel dashboard open your team, go to Settings, Billing, and downgrade or cancel the Pro plan. Remove extra seats first.",
+        "gotchas": "Hobby is for personal, non-commercial use only, so a commercial project must move host rather than downgrade. Usage beyond the credit is billed on Pro; check usage before cancelling."
+      }
+    },
+    "sources": [
+      "https://vercel.com/pricing"
+    ]
+  },
+  {
+    "id": "netlify",
+    "name": "Netlify Personal/Pro",
+    "category": "software-learning",
+    "url": "https://www.netlify.com/pricing/",
+    "match": {
+      "patterns": [
+        "NETLIFY"
+      ],
+      "examples": [
+        "NETLIFY, INC. SAN FRANCISCO CA",
+        "NETLIFY.COM SAN FRANCISCO CA"
+      ]
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Personal is $9 a month for 1,000 credits against 300 on the free plan. Most personal sites fit the free plan or a free static host. Keep it only if you actually run out of credits.",
+    "alternatives": [
+      {
+        "name": "Netlify Free",
+        "url": "https://www.netlify.com/pricing/",
+        "note": "Free plan with 300 credits a month."
+      },
+      {
+        "name": "Cloudflare Pages",
+        "url": "https://pages.cloudflare.com",
+        "note": "Free static hosting with generous limits."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In the Netlify app open Team settings, Billing, and change the plan to Free. Check this month's credit usage first.",
+        "gotchas": "Netlify now meters usage in credits. On Free, sites can stop serving when credits run out, so confirm your usage fits 300 credits before downgrading. Pro is a flat $20 per team."
+      }
+    },
+    "sources": [
+      "https://www.netlify.com/pricing/"
+    ]
+  },
+  {
+    "id": "digitalocean",
+    "name": "DigitalOcean",
+    "category": "software-learning",
+    "url": "https://www.digitalocean.com/pricing/droplets",
+    "match": {
+      "patterns": [
+        "DIGITAL ?OCEAN"
+      ],
+      "examples": [
+        "DIGITALOCEAN.COM NEW YORK NY",
+        "DIGITALOCEAN.COM"
+      ]
+    },
+    "typicalMonthly": 6,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "A $6 droplet is cheap rented uptime. Keep it if anything public depends on it. If it only runs your own hobby services, a Raspberry Pi or old laptop at home with Tailscale and a tunnel replaces it.",
+    "alternatives": [
+      {
+        "name": "Oracle Cloud Always Free",
+        "url": "https://www.oracle.com/cloud/free/",
+        "note": "Free-tier VMs for small projects; availability and limits vary."
+      },
+      {
+        "name": "Cloudflare Pages and Workers",
+        "url": "https://pages.cloudflare.com",
+        "note": "Free hosting for static sites and small edge functions."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Docker Compose",
+          "Caddy",
+          "Cloudflare Tunnel",
+          "Tailscale",
+          "Uptime Kuma",
+          "restic"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "old-laptop"
+        ],
+        "hours": 6,
+        "powerCostYear": 26,
+        "youLose": "Datacenter uptime, a fixed public IP, fast symmetric bandwidth and DigitalOcean snapshots and support. Home power or ISP outages take your services down, and public access needs a tunnel rather than open router ports. The cost figure includes about $4 a year for the Backblaze B2 off-site copy of a small hobby setup.",
+        "prompt": "Help me move my hobby DigitalOcean droplet to a Raspberry Pi 5 at home running Raspberry Pi OS Lite 64-bit, or an old laptop running Ubuntu Server LTS. I will run you on the home machine and give you SSH access to the droplet. First inventory what runs on the droplet (docker ps, systemctl list-units, crontab, web server config) and write it to inventory.md. Then write a Docker Compose stack that reproduces it, with Caddy as the reverse proxy. For public access without opening router ports use a Cloudflare Tunnel; for private admin use Tailscale (free tier) with SSH reachable only over the tailnet. Configure unattended-upgrades, ufw and fail2ban, nightly encrypted restic backups to a USB drive, and an offsite copy to Backblaze B2. Add Uptime Kuma for health checks. Include a cutover plan: lower the DNS TTL, rsync the data, test on a temporary hostname, switch DNS, keep the droplet for seven days, then destroy it, because powered-off droplets still bill."
+      },
+      "cancel": {
+        "howTo": "Destroy every droplet, volume, snapshot, floating IP and load balancer in the control panel, then confirm the billing page shows no active resources.",
+        "gotchas": "Powering a droplet off does not stop billing; only destroying it does. Snapshots, volumes and reserved IPs bill separately. Download backups before destroying."
+      }
+    },
+    "sources": [
+      "https://www.digitalocean.com/pricing/droplets"
+    ]
+  },
+  {
+    "id": "godaddy",
+    "name": "GoDaddy",
+    "category": "software-learning",
+    "url": "https://www.godaddy.com/domains",
+    "match": {
+      "patterns": [
+        "GO ?DADDY"
+      ],
+      "examples": [
+        "GODADDY.COM 480-505-8855 AZ",
+        "DNH*GODADDY.COM 480-505-8855 AZ"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "First-year prices are teasers; renewals, privacy and email add-ons cost more. Ask for a renewal coupon and drop unused add-ons, or transfer the domain to a registrar that charges closer to cost.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Registrar",
+        "url": "https://www.cloudflare.com/products/registrar/",
+        "note": "Sells domains at wholesale cost with free WHOIS privacy."
+      },
+      {
+        "name": "Namecheap",
+        "url": "https://www.namecheap.com/domains/",
+        "note": "Domains with free privacy protection for life."
+      },
+      {
+        "name": "Porkbun",
+        "url": "https://porkbun.com",
+        "note": "Low renewal prices with free WHOIS privacy."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A transfer quote from Cloudflare, Namecheap or Porkbun for the same domain, and the add-ons you can drop (privacy, email, website builder). GoDaddy support can apply promo codes on renewal.",
+        "script": "Hi, my domain [DOMAIN] renews on [DATE] at [PRICE]. I have a quote of [PRICE] to transfer it to another registrar, and I would rather stay if you can come closer. Can you apply a renewal discount or promo code and remove the add-ons I do not use, such as [PRIVACY / EMAIL / WEBSITE BUILDER]? Please confirm the final total and renewal term by email before I agree.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Two to four weeks before the renewal date, through chat or phone support."
+      },
+      "cancel": {
+        "howTo": "In your GoDaddy account open Renewals and Billing, turn off auto-renew on each product, and cancel add-ons. To keep the domain, unlock it, request the authorization code and transfer it to another registrar.",
+        "gotchas": "Each product renews separately, so cancelling the domain does not cancel hosting, email or a website builder. Domains registered or transferred in the last 60 days usually cannot be transferred out."
+      }
+    },
+    "sources": [
+      "https://www.godaddy.com/domains",
+      "https://www.namecheap.com/domains/"
+    ]
+  },
+  {
+    "id": "namecheap",
+    "name": "Namecheap",
+    "category": "software-learning",
+    "url": "https://www.namecheap.com/domains/",
+    "match": {
+      "patterns": [
+        "NAME-?CHEAP"
+      ],
+      "examples": [
+        "NAME-CHEAP.COM* 4F3A2B PHOENIX AZ",
+        "NAMECHEAP INC PHOENIX AZ"
+      ],
+      "priceHints": [
+        {
+          "amount": 19.98,
+          "cadence": "annual",
+          "plan": ".com renewal (from 2026-11-01)"
+        },
+        {
+          "amount": 15.98,
+          "cadence": "annual",
+          "plan": ".com registration or transfer (from 2026-11-01)"
+        }
+      ]
+    },
+    "typicalMonthly": 1.67,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A .com renews at $19.98 a year with free privacy protection, already low. Cloudflare Registrar sells at cost if you hold several domains. Watch hosting and email add-ons, which renew separately.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Registrar",
+        "url": "https://www.cloudflare.com/products/registrar/",
+        "note": "Wholesale-cost domains with free privacy."
+      },
+      {
+        "name": "Porkbun",
+        "url": "https://porkbun.com",
+        "note": "Low renewals and free WHOIS privacy."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In your Namecheap account open Domain List, choose Manage, and switch Auto-Renew off. To leave, unlock the domain and transfer it out with the authorization code.",
+        "gotchas": "An expired domain enters a redemption period that costs extra to recover. Private email, hosting and SSL add-ons renew on their own schedules, so turn those off separately."
+      }
+    },
+    "sources": [
+      "https://www.namecheap.com/domains/",
+      "https://www.namecheap.com/support/knowledgebase/article.aspx/10840/2201/com-price-change-november-1-2026/"
+    ]
+  },
+  {
+    "id": "squarespace",
+    "name": "Squarespace",
+    "category": "software-learning",
+    "url": "https://www.squarespace.com/pricing",
+    "match": {
+      "patterns": [
+        "SQSP|SQUARESPACE"
+      ],
+      "examples": [
+        "SQSP* INV27734091 NEW YORK NY",
+        "SQUARESPACE INC. NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 228,
+          "cadence": "annual",
+          "plan": "Basic, billed annually"
+        },
+        {
+          "amount": 348,
+          "cadence": "annual",
+          "plan": "Core, billed annually"
+        }
+      ]
+    },
+    "typicalMonthly": 19,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A portfolio or small business site is mostly static pages. Claude Code builds one in a day and free hosts serve it. You keep paying only for the domain. Stores and bookings are the exception.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Pages",
+        "url": "https://pages.cloudflare.com",
+        "note": "Free static hosting with a custom domain."
+      },
+      {
+        "name": "GitHub Pages",
+        "url": "https://pages.github.com",
+        "note": "Free static hosting from a repository."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A static personal or portfolio site with Home, About, Work, Blog and Contact pages, content in Markdown, RSS, sitemap and social-preview tags, deployed to free hosting on your own domain.",
+        "hours": 6,
+        "runsOn": "Astro static site on Cloudflare Pages or GitHub Pages (free). Only the domain costs money.",
+        "ongoingCostYear": 20,
+        "youLose": "The drag-and-drop editor (you edit Markdown or ask Claude), built-in forms, email campaigns, scheduling and commerce, analytics dashboards, template polish and support. If you sell products, keep Squarespace.",
+        "prompt": "Build my personal website as a static site I can host free. Use Astro with plain CSS and no CMS. Pages: Home, About, Work (a grid of projects from Markdown files with cover image, title, date and description), Blog (Markdown posts with tags and an RSS feed), and Contact (a mailto link plus an optional form endpoint I can swap in later). Requirements: responsive and accessible, light and dark mode, optimized images, sitemap.xml, Open Graph and Twitter card tags, and a 404 page. Put all content in /content as Markdown with frontmatter so I can edit it in any text editor. Before you start, ask me for my site name, tagline, accent color and my current site URL. Then fetch that URL's sitemap.xml and list the old URLs for the redirects. Walk me through deploying to Cloudflare Pages from a GitHub repository and attaching my existing domain. End with a checklist for exporting my Squarespace text and images before I cancel."
+      },
+      "cancel": {
+        "howTo": "Open Settings, Billing and Account, Billing, then Subscriptions, select the site's plan and cancel it. Domains and Google Workspace are billed separately and must be cancelled or transferred on their own.",
+        "gotchas": "Annual plans include a free domain for the first year only and renew at standard rates after that. Refund windows after purchase or renewal are short, so read the terms before you buy annual."
+      }
+    },
+    "sources": [
+      "https://www.squarespace.com/pricing"
+    ]
+  },
+  {
+    "id": "wix",
+    "name": "Wix",
+    "category": "software-learning",
+    "url": "https://www.wix.com/plans",
+    "match": {
+      "patterns": [
+        "\\bWIX\\.COM|\\bWIXCOM|\\bWIX ?\\*"
+      ],
+      "examples": [
+        "WIX.COM*8473829 SAN FRANCISCO CA",
+        "WIX.COM*5517602 NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 213.24,
+          "cadence": "annual",
+          "plan": "Light, billed yearly"
+        },
+        {
+          "amount": 357.24,
+          "cadence": "annual",
+          "plan": "Core, billed yearly"
+        },
+        {
+          "amount": 477.24,
+          "cadence": "annual",
+          "plan": "Business, billed yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 17.77,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A brochure site on the Light plan is a few static pages. Claude Code can rebuild it from your live pages and free hosts serve it, leaving only the domain cost. Keep Wix if you rely on bookings or a store.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Pages",
+        "url": "https://pages.cloudflare.com",
+        "note": "Free static hosting with a custom domain."
+      },
+      {
+        "name": "GitHub Pages",
+        "url": "https://pages.github.com",
+        "note": "Free static hosting from a repository."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A static copy of your Wix site: the same pages, text, images and navigation rebuilt in Astro, with a contact link, SEO tags, a sitemap and redirects from every old URL.",
+        "hours": 6,
+        "runsOn": "Astro static site on Cloudflare Pages (free) with your domain.",
+        "ongoingCostYear": 20,
+        "youLose": "Wix's editor, bookings, store, members area, built-in forms and email marketing, and one-click support. Wix has no full export, so Claude rebuilds from your published pages and downloaded images.",
+        "prompt": "I am replacing my Wix site with a static site hosted free. First ask me for my current Wix site URL, brand colors and fonts, and offer to read the colors and fonts from the live CSS. Then fetch its sitemap.xml and every page it lists, extract the text, headings and image URLs into Markdown files, and download the images into /public/images with descriptive file names. If a page needs JavaScript to show its content, tell me and I will paste the text. Rebuild the layout with Astro and plain CSS: header navigation, hero, content sections, a contact page with a mailto link, and a footer. Match those colors and fonts and the order of sections on each page. Add SEO basics: title and meta description per page, sitemap.xml, Open Graph tags, and a redirects file mapping every old Wix URL to its new path. Use Cloudflare Pages for hosting and walk me through moving my domain DNS. List anything you could not copy, such as bookings, a store or forms."
+      },
+      "cancel": {
+        "howTo": "In Wix, open Billing and Payments, then Subscriptions, select the plan and cancel it. Domains are separate subscriptions and need their own cancellation or transfer.",
+        "gotchas": "The free domain voucher applies to the first year of a first Premium purchase and the domain renews at regular price afterwards. Cancelling a site plan does not cancel the domain, and the refund window after purchase is short."
+      }
+    },
+    "sources": [
+      "https://www.wix.com/plans"
+    ]
+  },
+  {
+    "id": "wordpress-com",
+    "name": "WordPress.com",
+    "category": "software-learning",
+    "url": "https://wordpress.com/pricing/",
+    "match": {
+      "patterns": [
+        "WORDPRESS\\.COM|WPCOM|AUTOMATTIC(?!.{0,60}(?:JETPACK|TUMBLR|WOO|PCASTS|DAY ?ONE|SIMPLENOTE))"
+      ],
+      "examples": [
+        "WORDPRESS.COM SAN FRANCISCO CA",
+        "AUTOMATTIC INC* WPCOM SAN FRANCISCO CA"
+      ]
+    },
+    "typicalMonthly": 4,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "rebuild",
+      "cancel"
+    ],
+    "why": "Personal is $4 a month on yearly billing ($9 if paid monthly), so savings are small. Keep it, or move the blog to a static site on free hosting if you want to stop paying anything beyond the domain.",
+    "alternatives": [
+      {
+        "name": "WordPress.com Free",
+        "url": "https://wordpress.com/pricing/",
+        "note": "Free plan with a wordpress.com address and 1 GB of storage."
+      },
+      {
+        "name": "Astro blog starter",
+        "url": "https://astro.build/themes/",
+        "note": "Free static blog templates you can host on Cloudflare Pages."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A static blog converted from your WordPress export: posts and pages as Markdown, images downloaded locally, tag pages, RSS, search and redirects that preserve your old permalinks.",
+        "hours": 5,
+        "runsOn": "Astro static site on Cloudflare Pages or GitHub Pages (free) with your domain.",
+        "ongoingCostYear": 20,
+        "youLose": "The WordPress editor and plugins, comments, built-in stats, email subscribers and the one-click admin. You write in Markdown and publish with git.",
+        "prompt": "I want to move my WordPress.com blog to a static site on free hosting. Start from the WXR export file that I will place in this folder as export.xml. Write a script that converts posts and pages to Markdown with frontmatter (title, date, tags, categories, slug), downloads every referenced image into /public/uploads and rewrites the links, and keeps the old permalink structure through a redirects file. Then build the site with Astro: post list with pagination, tag pages, an RSS feed at /feed.xml, full-text search with Pagefind, dark mode, and an About page. Comments are dropped; note how I could add giscus later. Deploy to Cloudflare Pages with my domain, leave email with its current provider, and give me a checklist for cancelling the WordPress.com plan only after DNS is switched and the new site is verified."
+      },
+      "cancel": {
+        "howTo": "Open WordPress.com, go to Me, Purchases, select the plan and choose Cancel plan. Domains are listed as separate purchases.",
+        "url": "https://wordpress.com/me/purchases",
+        "gotchas": "Refund windows are short (about two weeks for plans, shorter for domains). Monthly billing costs more than twice the yearly rate. Export your content from Tools, Export before downgrading."
+      }
+    },
+    "sources": [
+      "https://wordpress.com/pricing/"
+    ]
+  },
+  {
+    "id": "medium",
+    "name": "Medium Membership",
+    "category": "software-learning",
+    "url": "https://medium.com/plans",
+    "match": {
+      "patterns": [
+        "MEDIUM\\.COM|A MEDIUM CORP|MEDIUM (MONTHLY|ANNUAL|MEMBERSHIP)"
+      ],
+      "examples": [
+        "MEDIUM.COM SAN FRANCISCO CA",
+        "MEDIUM MONTHLY MEMBERSHIP SAN FRANCISCO CA"
+      ]
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "At $5 a month Medium costs $60 a year for a reading list you can work through in a month or two. Pay for the months you read member-only stories and pause the rest.",
+    "alternatives": [
+      {
+        "name": "Writers' own newsletters",
+        "url": "https://substack.com",
+        "note": "Many Medium writers also publish free or paid newsletters."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Save member-only links in a reading list. Subscribe for a month when the list is long, read through it, then cancel. Re-subscribe when the list refills.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Go to Medium, open your profile menu, Membership, and choose Cancel membership. Access stays until the period ends.",
+        "url": "https://medium.com/me/membership",
+        "gotchas": "Check the refund terms before renewing an annual plan. If you joined through the iOS app, cancel in Apple subscriptions. Friend of Medium is $15 a month, so check which tier you are on."
+      }
+    },
+    "sources": [
+      "https://medium.com/plans"
+    ]
+  },
+  {
+    "id": "linkedin-premium",
+    "name": "LinkedIn Premium",
+    "category": "software-learning",
+    "url": "https://www.linkedin.com/premium/products/",
+    "match": {
+      "patterns": [
+        "LINKEDIN(?!.{0,60}\\b(?:ADS?|JOBS?|RECRUITER|TALENT)\\b)|LNKD\\.IN"
+      ],
+      "examples": [
+        "LINKEDIN PREMIUM SUNNYVALE CA",
+        "LINKEDIN P-4839122 SUNNYVALE CA"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Premium pays off during a job search or a sales push, not as a year-round habit. Free LinkedIn covers networking. Subscribe for the months you are actively applying or prospecting.",
+    "alternatives": [
+      {
+        "name": "LinkedIn Free",
+        "url": "https://www.linkedin.com",
+        "note": "Free profile, messaging with connections and job search."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe when you begin an active job search or outreach push, use InMail and applicant insights, and cancel when you land the role or the push ends. Use the free trial once, then pay monthly only when needed.",
+        "monthsOffPerYear": 8
+      },
+      "cancel": {
+        "howTo": "Open LinkedIn, then Me, Settings and Privacy, Subscriptions and payments, Manage Premium account, and choose Cancel subscription.",
+        "gotchas": "Free trials convert to paid unless cancelled. Cancelling keeps Premium until the period ends, and the flow may show a discounted continuation offer. Subscriptions bought through Apple or Google cancel there."
+      }
+    },
+    "sources": [
+      "https://www.linkedin.com/premium/products/"
+    ]
+  },
+  {
+    "id": "duolingo",
+    "name": "Duolingo Super/Max",
+    "category": "software-learning",
+    "url": "https://www.duolingo.com/super",
+    "match": {
+      "patterns": [
+        "DUOLINGO"
+      ],
+      "examples": [
+        "DUOLINGO SUPER PITTSBURGH PA",
+        "DUOLINGO.COM PITTSBURGH PA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Super"
+        },
+        {
+          "amount": 83.99,
+          "cadence": "annual",
+          "plan": "Super"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Max"
+        },
+        {
+          "amount": 167.99,
+          "cadence": "annual",
+          "plan": "Max"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "Duolingo is free with ads. Paid tiers remove hearts and ads, and Max adds AI explanations and role-play that Claude does natively. Claude holds a conversation at your level and explains every mistake.",
+    "alternatives": [
+      {
+        "name": "Duolingo Free",
+        "url": "https://www.duolingo.com",
+        "note": "Free tier with ads and limited hearts."
+      },
+      {
+        "name": "Anki",
+        "url": "https://apps.ankiweb.net",
+        "note": "Free spaced-repetition flashcards for vocabulary."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Runs typed or spoken conversation practice in your target language at your level, corrects each mistake with a one-line reason, drills vocabulary, builds a weekly study plan and explains grammar on request.",
+        "howTo": "Create a Claude Project for the language and put your level, goal and weekly time in the project instructions. Use voice mode on the mobile app for speaking practice. Claude Pro is $20 a month ($17 on annual billing).",
+        "limits": "No streaks, XP, hearts or reminders, no fixed curriculum unless you write one into the project instructions, no pronunciation scoring, and non-English voice mode is still in beta. Claude can make mistakes in less common languages, so cross-check grammar rules.",
+        "prompt": "You are my language tutor for [LANGUAGE]. My level is [A1/A2/B1/B2]. My goal is [travel / work / family] and I can study 20 minutes a day, five days a week. Start with a 10-question placement quiz, one question at a time. Then run a repeating session: (1) a five-minute recap of the words I missed last time, (2) a new topic with 8 to 10 words and example sentences, (3) a ten-minute conversation where you speak only [LANGUAGE] at my level and correct my mistakes after each reply, showing the corrected sentence and a one-line reason, (4) a five-question quiz. End every session with a list called Review words and ask me to paste it back at the start of the next one. If I type HELP, explain in English. Never write more than six lines unless I ask."
+      },
+      "cancel": {
+        "howTo": "Web: Settings, Super or Max subscription, Manage subscription, Cancel. iPhone: Settings, your name, Subscriptions. Android: Google Play, Payments and subscriptions.",
+        "url": "https://www.duolingo.com/help",
+        "gotchas": "Most subscribers are billed through Apple or Google, so deleting the app or your Duolingo account does not stop billing. A family plan is cancelled by its owner and ends for everyone."
+      }
+    },
+    "sources": [
+      "https://www.duolingo.com/super",
+      "https://www.duolingo.com/help",
+      "https://support.claude.com/en/articles/11101966-use-voice-mode",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "babbel",
+    "name": "Babbel",
+    "category": "software-learning",
+    "url": "https://www.babbel.com",
+    "match": {
+      "patterns": [
+        "BABBEL"
+      ],
+      "examples": [
+        "BABBEL.COM BERLIN DE",
+        "BABBEL GMBH BERLIN DE"
+      ],
+      "priceHints": [
+        {
+          "amount": 107.4,
+          "cadence": "annual",
+          "plan": "12-month plan, billed upfront"
+        }
+      ]
+    },
+    "typicalMonthly": 8.95,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "rotate"
+    ],
+    "why": "Babbel's 12-month plan is $8.95 a month, or about $17.95 monthly. Claude can run similar dialogue, grammar and review drills, though you give up native-speaker audio and speech scoring.",
+    "alternatives": [
+      {
+        "name": "Duolingo Free",
+        "url": "https://www.duolingo.com",
+        "note": "Free tier with ads."
+      },
+      {
+        "name": "Anki",
+        "url": "https://apps.ankiweb.net",
+        "note": "Free spaced-repetition flashcards."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Writes a structured course with dialogues, vocabulary, grammar notes and exercises, then delivers one lesson at a time, grades your answers, tracks your errors and repeats weak points.",
+        "howTo": "Start a Claude Project for the language, paste the course prompt below into the project instructions, and say next to get each lesson. Use voice mode on the phone to practice speaking.",
+        "limits": "No recorded native-speaker audio, no speech recognition feedback, no polished app flow or progress screens, and you must keep the review list yourself. Claude can be wrong on rare languages and idioms.",
+        "prompt": "Act as a course designer and tutor for [LANGUAGE] for an adult beginner. Create a 12-week plan with 4 lessons per week, each about 15 minutes. Each lesson has: a short dialogue with an English translation, 8 vocabulary items, one grammar point explained in plain English, and 5 exercises (fill in the blank, translation, and a mini role-play). Deliver one lesson only when I type next. After each lesson, grade my answers, show corrections with a short reason, and add every miss to a running Review list. Every fourth lesson, run a review that mixes the Review list with new material. Keep dialogues realistic for [travel / work / family] and tell me the weekly goal at the start of each week. Ask me to paste the Review list if the conversation is new."
+      },
+      "rotate": {
+        "pattern": "Buy a 3- or 6-month plan when you start a new language or course, work through it, and let it lapse. Cancel auto-renewal on day one so it does not roll into another term.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Log in to your Babbel account, open Subscription, and turn off auto-renewal. If you bought through Apple or Google, cancel there.",
+        "gotchas": "Plans are prepaid for 1, 3, 6 or 12 months and renew for the same term unless auto-renewal is turned off. Babbel advertises a money-back guarantee, so check its window."
+      }
+    },
+    "sources": [
+      "https://my.babbel.com/en/prices",
+      "https://support.claude.com/en/articles/11101966-use-voice-mode",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "rosetta-stone",
+    "name": "Rosetta Stone",
+    "category": "software-learning",
+    "url": "https://www.rosettastone.com/membership/",
+    "match": {
+      "patterns": [
+        "ROSETTA ?STONE"
+      ],
+      "examples": [
+        "ROSETTA STONE LTD ARLINGTON VA",
+        "ROSETTASTONE.COM ARLINGTON VA"
+      ]
+    },
+    "typicalMonthly": 13.25,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "absorb"
+    ],
+    "why": "Rosetta Stone is $19.99 monthly or $159 a year for 25 languages. It overlaps Duolingo and Babbel; its edge is TruAccent speech scoring. Without that need, free tools and Claude practice cover it.",
+    "alternatives": [
+      {
+        "name": "Duolingo Free",
+        "url": "https://www.duolingo.com",
+        "note": "Free tier with ads."
+      },
+      {
+        "name": "Anki",
+        "url": "https://apps.ankiweb.net",
+        "note": "Free spaced-repetition flashcards for vocabulary."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Runs immersion-style practice with short scene descriptions instead of pictures, asks you questions in the target language only, corrects errors and escalates difficulty.",
+        "howTo": "Create a Claude Project for the language and use the prompt below as the instructions. Use voice mode on the phone for speaking turns; non-English voice support is in beta.",
+        "limits": "No TruAccent pronunciation scoring, no image-based lessons, no structured units and no progress dashboard. Claude may miss subtle pronunciation problems, since it responds to your words, not your accent.",
+        "prompt": "Teach me [LANGUAGE] by immersion. Use only [LANGUAGE] unless I type HELP. Each lesson has: (1) six new words introduced through a short scene description in simple [LANGUAGE] (for example, someone ordering coffee), (2) three questions about the scene that I answer in [LANGUAGE], (3) a build-a-sentence exercise using the new words, and (4) a three-turn dialogue with you. When I make a mistake, repeat my sentence corrected, then ask me to say it again. Raise difficulty after two clean lessons. After each lesson, print a Review list of words I missed and ask me to paste it back next time. Keep every message under eight lines and never translate unless I type HELP."
+      },
+      "cancel": {
+        "howTo": "Sign in to your Rosetta Stone account, open Subscription settings and turn off automatic renewal. If that option is missing, contact Rosetta Stone support and ask for written confirmation.",
+        "gotchas": "Yearly plans renew for another year unless you turn renewal off, so note the date. Lifetime purchases do not renew. Check your receipt email for the term and price you actually bought."
+      }
+    },
+    "sources": [
+      "https://www.rosettastone.com/buy",
+      "https://www.rosettastone.com/membership/",
+      "https://support.claude.com/en/articles/11101966-use-voice-mode",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "brilliant",
+    "name": "Brilliant Premium",
+    "category": "software-learning",
+    "url": "https://brilliant.org/premium/",
+    "match": {
+      "patterns": [
+        "BRILLIANT\\.ORG|BRILLIANT ?PREMIUM"
+      ],
+      "examples": [
+        "BRILLIANT.ORG PREMIUM SAN FRANCISCO CA",
+        "BRILLIANT.ORG SUBSCRIPTION"
+      ]
+    },
+    "typicalMonthly": 30,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "absorb",
+      "cancel"
+    ],
+    "why": "Brilliant is a sprint tool at $30 a month. Finish a course path in one or two months, then cancel. Claude can tutor the same math, science and computer science topics as part of a plan you already pay for.",
+    "alternatives": [
+      {
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "note": "Free courses in math, science and computing."
+      },
+      {
+        "name": "MIT OpenCourseWare",
+        "url": "https://ocw.mit.edu",
+        "note": "Free university course materials."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for one or two months to complete a single course path, cancel the day you start, and return for the next path. Annual billing only pays off if you use it most months.",
+        "monthsOffPerYear": 8
+      },
+      "absorb": {
+        "claudeDoes": "Teaches STEM topics one concept at a time, starting from a puzzle, asks you to predict first, explains the reasoning, generates practice problems and checks numbers by running code.",
+        "howTo": "Put the prompt below in a Claude Project for your topic and ask for each session. Claude can run code to verify calculations and read photos of your handwritten work.",
+        "limits": "No interactive visualizations or polished lesson flow, no progress tracking beyond what you paste back, and Claude can make arithmetic or reasoning errors, so ask it to verify by running code.",
+        "prompt": "Teach me [TOPIC] the way Brilliant does. Build a four-week path of 20-minute sessions, three per week. For each session: start with a puzzle or question I can attempt before any explanation, ask me to predict the answer, then reveal the reasoning with a tiny worked example, then give a three-question check with increasing difficulty. Use code to verify any numbers before you state them. Keep a progress table (session, concept, score, weak spots) and print it at the end of every session so I can paste it back next time. If I get two checks wrong in a row, go back one step and explain differently. Use plain language and keep each message short."
+      },
+      "cancel": {
+        "howTo": "Open your Brilliant account settings, go to Subscription and cancel. If you subscribed in the iPhone app, cancel in Apple subscriptions.",
+        "gotchas": "Annual billing is advertised as saving 33 percent and renews yearly, so cancel before the renewal date. Family plans cover six seats and are cancelled by the owner."
+      }
+    },
+    "sources": [
+      "https://brilliant.org/premium/",
+      "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
+      "https://platform.claude.com/docs/en/build-with-claude/vision",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "coursera-plus",
+    "name": "Coursera Plus",
+    "category": "software-learning",
+    "url": "https://www.coursera.org/courseraplus",
+    "match": {
+      "patterns": [
+        "COURSERA"
+      ],
+      "examples": [
+        "COURSERA.ORG MOUNTAIN VIEW CA",
+        "COURSERA* PLUS MOUNTAIN VIEW CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 399,
+          "cadence": "annual",
+          "plan": "Coursera Plus Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 59,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Coursera Plus is $59 monthly or $399 yearly. The yearly price equals about seven months, so pay monthly for the one or two months a certificate takes, then cancel. Many courses can be audited free.",
+    "alternatives": [
+      {
+        "name": "Audit courses free",
+        "url": "https://www.coursera.org",
+        "note": "Many Coursera courses allow free audit access to lectures."
+      },
+      {
+        "name": "edX audit",
+        "url": "https://www.edx.org",
+        "note": "Audit many university courses for free."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Start the 7-day trial, pick the specializations you want, pay $59 for one or two months to finish them and collect certificates, then cancel. Re-subscribe for the next batch.",
+        "monthsOffPerYear": 8
+      },
+      "cancel": {
+        "howTo": "Sign in to Coursera, open your account settings, go to Subscriptions or Purchases and cancel the Plus subscription. Confirm the cancellation email.",
+        "url": "https://www.coursera.support",
+        "gotchas": "The 7-day trial converts to paid. The annual plan has a 14-day money-back guarantee; the monthly plan does not list one on the page. Cancel at least a day before renewal."
+      }
+    },
+    "sources": [
+      "https://www.coursera.org/courseraplus",
+      "https://www.coursera.support"
+    ]
+  },
+  {
+    "id": "masterclass",
+    "name": "MasterClass",
+    "category": "software-learning",
+    "url": "https://www.masterclass.com",
+    "match": {
+      "patterns": [
+        "MASTER ?CLASS"
+      ],
+      "examples": [
+        "MASTERCLASS.COM SAN FRANCISCO CA",
+        "MASTERCLASS ANNUAL MEMBERSHIP"
+      ],
+      "priceHints": [
+        {
+          "amount": 120,
+          "cadence": "annual",
+          "plan": "Standard"
+        },
+        {
+          "amount": 180,
+          "cadence": "annual",
+          "plan": "Plus"
+        },
+        {
+          "amount": 240,
+          "cadence": "annual",
+          "plan": "Premium"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "MasterClass is a video catalog sold mostly as annual memberships, so a forgotten renewal costs a full year. Join when several classes appeal to you, turn off renewal right away, and return when new ones ship.",
+    "alternatives": [
+      {
+        "name": "Your library's digital services",
+        "url": "https://www.libbyapp.com",
+        "note": "Libby offers free books, audiobooks and sometimes learning video through a library card."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Let the annual plan lapse after you finish your list. Re-subscribe when a new class you want ships, ideally during a sale, then turn off renewal right away.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in to MasterClass, open Account, then Membership, and turn off auto-renew or cancel the membership.",
+        "gotchas": "Memberships are annual and renew automatically. The site advertises a satisfaction guarantee on new purchases, so check its length. Set a reminder two weeks before renewal. Memberships bought through Apple are cancelled in Apple subscriptions."
+      }
+    },
+    "sources": [
+      "https://www.masterclass.com/checkout",
+      "https://www.masterclass.com/",
+      "https://recurdash.com/subscription-pricing/masterclass"
+    ]
+  },
+  {
+    "id": "skillshare",
+    "name": "Skillshare",
+    "category": "software-learning",
+    "url": "https://www.skillshare.com",
+    "match": {
+      "patterns": [
+        "SKILL ?SHARE"
+      ],
+      "examples": [
+        "SKILLSHARE.COM NEW YORK NY",
+        "SKILLSHARE ANNUAL NEW YORK NY"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Skillshare is a catalog of project classes that take weeks, not a year. Use the 7-day free trial, then subscribe for a month or two when you have classes queued, and cancel before it renews.",
+    "alternatives": [
+      {
+        "name": "YouTube tutorials",
+        "url": "https://www.youtube.com",
+        "note": "Free tutorials for most creative software and skills."
+      },
+      {
+        "name": "Your library's digital services",
+        "url": "https://www.libbyapp.com",
+        "note": "Many libraries bundle free learning video through a library card."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Queue the classes you want, start the free 7-day trial, finish them, then pay for one more month only if needed and cancel immediately. Come back when the next list is ready.",
+        "monthsOffPerYear": 8
+      },
+      "cancel": {
+        "howTo": "On skillshare.com open Account settings, choose Membership and Payments, click Cancel membership and follow the prompts. On a phone, do it in the mobile browser, not the app, unless you subscribed through the app store.",
+        "url": "https://help.skillshare.com/hc/en-us/articles/115001701651-How-do-I-cancel-my-Skillshare-subscription",
+        "gotchas": "The free trial charges your card unless you cancel first. Skillshare does not refund renewals, and a 7-day trial charge is refundable only if you contact support within 48 hours and have not used the service. App-store subscriptions cancel in Apple or Google settings."
+      }
+    },
+    "sources": [
+      "https://www.skillshare.com/en/",
+      "https://help.skillshare.com/hc/en-us/articles/4402806767117-How-do-Skillshare-subscriptions-pricing-and-refunds-work",
+      "https://help.skillshare.com/hc/en-us/articles/115001701651-How-do-I-cancel-my-Skillshare-subscription"
+    ]
+  },
+  {
+    "id": "blinkist",
+    "name": "Blinkist",
+    "category": "software-learning",
+    "url": "https://www.blinkist.com",
+    "match": {
+      "patterns": [
+        "BLINKIST"
+      ],
+      "examples": [
+        "BLINKIST.COM BERLIN DE",
+        "BLINKIST GMBH BERLIN DE"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "Blinkist sells short summaries of nonfiction books. Claude summarizes books you name, paste or upload, adds critique and a quiz, so the paid tier is largely redundant once you pay for Claude.",
+    "alternatives": [
+      {
+        "name": "Libby",
+        "url": "https://www.libbyapp.com",
+        "note": "Borrow the full book free with a library card."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Summarizes nonfiction books into key ideas, examples, action steps and a quiz; critiques the argument; and for text you paste or upload, summarizes only what the text says.",
+        "howTo": "Ask for a summary by title and author, or upload the PDF or paste chapters into a Claude Project. Claude Pro is $20 a month ($17 on annual billing) and Projects hold uploaded documents.",
+        "limits": "From memory Claude can be vague or wrong about lesser-known or very recent books, so give it the text when accuracy matters. No curated library, no narrated audio, and no licensed publisher summaries.",
+        "prompt": "Summarize [BOOK TITLE] by [AUTHOR] as a 15-minute read in the style of Blinkist. Give me: a one-sentence thesis, the 7 key ideas each with one concrete example from the book, 3 direct quotes only if you are certain they are accurate, 5 action steps I can try this week, and 2 places where the book is weak or contested. If you are not confident you know this book well, say so and ask me to paste the chapter titles or text instead. For text I paste or upload, summarize only what is in the text and mark anything you add from your own knowledge. Finish with a five-question quiz and wait for my answers before revealing the key."
+      },
+      "cancel": {
+        "howTo": "Open your Blinkist account settings, go to Subscription, and cancel. If you subscribed through Apple or Google Play, cancel in that store.",
+        "gotchas": "Blinkist is typically sold as a yearly plan charged in one payment after a free trial, so cancel before the trial ends. Check the renewal date and set a reminder."
+      }
+    },
+    "sources": [
+      "https://www.blinkist.com/",
+      "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "headway",
+    "name": "Headway",
+    "category": "software-learning",
+    "url": "https://makeheadway.com",
+    "match": {
+      "patterns": [
+        "HEADWAY ?APP|GTHW|MAKEHEADWAY|GET-?HEADWAY"
+      ],
+      "examples": [
+        "HEADWAY APP",
+        "GTHW APP LIMITED"
+      ]
+    },
+    "typicalMonthly": 28.9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "Headway renews at double its intro price: $79.98 every 12 weeks, about $29 a month. Claude summarizes nonfiction books you name or paste and can run flashcards, so the paid app is easy to replace.",
+    "alternatives": [
+      {
+        "name": "Libby",
+        "url": "https://www.libbyapp.com",
+        "note": "Borrow the full book free with a library card."
+      },
+      {
+        "name": "Anki",
+        "url": "https://apps.ankiweb.net",
+        "note": "Free spaced-repetition flashcards for key ideas."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Builds a weekly reading plan from your book list, summarizes each book into key ideas, and quizzes you with spaced-repetition-style flashcards across sessions.",
+        "howTo": "Create a Claude Project called Reading, paste the prompt below into its instructions, and add one book per week. Upload the text or paste chapters when accuracy matters.",
+        "limits": "No audio summaries or app notifications, no curated catalog of 1,700 titles, and Claude can be vague about obscure or recent books. Spaced repetition only works if you return and paste your card list.",
+        "prompt": "Act as my reading coach. I will give you a nonfiction book title and author each week. For each book: (1) write a 15-minute summary with the thesis, 7 key ideas, and one example per idea, (2) turn the ideas into 12 flashcards in the format Question | Answer, (3) give each card a review interval (next day, three days, one week, one month) and list the cards in a table I can paste back later. At the start of each conversation, ask me to paste my card list and my scores, then quiz me on cards that are due. Mark the cards I miss and show them more often. If you are not confident you know a book well, say so and ask me to paste text. Never invent quotes. Keep every answer short."
+      },
+      "cancel": {
+        "howTo": "Cancel in your Headway account or in the app store where you subscribed. Email support@get-headway.com if you cannot find the option, and keep the confirmation.",
+        "gotchas": "Plans run 4, 12 or 24 weeks, not months. The intro price (for example $39.99 for 12 weeks) renews at double ($79.98). Cancel at least 24 hours before renewal."
+      }
+    },
+    "sources": [
+      "https://makeheadway.com/",
+      "https://makeheadway.com/blog/how-much-does-the-headway-app-cost/",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "chess-com",
+    "name": "Chess.com Premium",
+    "category": "software-learning",
+    "url": "https://www.chess.com/membership",
+    "match": {
+      "patterns": [
+        "CHESS\\.COM"
+      ],
+      "examples": [
+        "CHESS.COM PALO ALTO CA",
+        "CHESS.COM* MEMBERSHIP"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Gold"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Platinum"
+        },
+        {
+          "amount": 119.99,
+          "cadence": "annual",
+          "plan": "Diamond"
+        }
+      ]
+    },
+    "typicalMonthly": 6.67,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Lichess is free, ad-free and open source, with unlimited puzzles, engine analysis and practice that cover most of what the paid tiers sell. Keep a free Chess.com account for your rating and friends.",
+    "alternatives": [
+      {
+        "name": "Lichess",
+        "url": "https://lichess.org",
+        "note": "Free, ad-free and open source, with unlimited puzzles and game analysis."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "On the website open Settings, then Membership, and cancel your plan. If you pay through Apple or Google, cancel in that store.",
+        "gotchas": "The 7-day free trial converts to paid, and yearly plans bill once. You keep access until the period ends. You lose Chess.com's coach, lessons and deeper game review, but your rating and games stay on the free account."
+      }
+    },
+    "sources": [
+      "https://www.chess.com/membership"
+    ]
+  },
+  {
+    "id": "lumosity",
+    "name": "Lumosity",
+    "category": "software-learning",
+    "url": "https://www.lumosity.com",
+    "match": {
+      "patterns": [
+        "LUMOSITY|LUMOS LABS"
+      ],
+      "examples": [
+        "LUMOSITY.COM SAN FRANCISCO CA",
+        "LUMOS LABS INC SAN FRANCISCO CA"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "rebuild"
+    ],
+    "why": "Evidence that brain games improve everyday skills is thin, and Lumosity's maker agreed to a $2M FTC settlement in 2016 over its claims. If you just enjoy the games, a free PWA of your own is a weekend build.",
+    "alternatives": [
+      {
+        "name": "Lumosity Free",
+        "url": "https://www.lumosity.com",
+        "note": "Limited free daily workouts."
+      },
+      {
+        "name": "Human Benchmark",
+        "url": "https://humanbenchmark.com",
+        "note": "Free reaction, memory and typing tests."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A brain-games PWA with five games (n-back, memory grid, reaction time, mental arithmetic, Stroop), daily 10-minute workouts, adaptive difficulty, streaks and weekly charts.",
+        "hours": 7,
+        "runsOn": "Installable offline PWA on GitHub Pages or Cloudflare Pages (free); scores in IndexedDB.",
+        "ongoingCostYear": 0,
+        "youLose": "Lumosity's dozens of designed games, tuned difficulty, benchmarks against other users and the research team behind them. Your build will be simpler and has no proven training effect.",
+        "prompt": "Build a brain-games PWA with no accounts and no tracking, and ask me what to name it before you start. Five games: n-back (levels 1 to 4), memory grid (flash a pattern, then recall it), reaction-time tap test, mental arithmetic sprint, and a Stroop color-word test. A daily workout picks three games and takes about ten minutes. Use adaptive difficulty: raise the level above 85 percent accuracy and lower it below 60 percent. Store scores, streaks and personal bests in IndexedDB, show a weekly chart per game, and work fully offline. Use Vite and TypeScript with plain DOM or Canvas, large touch targets, a reduce-motion setting and an installable manifest. Include tests for the difficulty adjustment logic. Host free on GitHub Pages. Write a README that is honest that brain games have limited evidence of improving everyday skills."
+      },
+      "cancel": {
+        "howTo": "Sign in, open Account, then Subscription, and turn off renewal. If you subscribed in the iPhone or Android app, cancel in Apple subscriptions or Google Play.",
+        "gotchas": "Subscriptions renew automatically. Look for the cancel option in Account settings before you contact support, and cancel at least a day before the renewal date."
+      }
+    },
+    "sources": [
+      "https://www.lumosity.com/en/",
+      "https://en.wikipedia.org/wiki/Lumosity"
+    ]
+  },
+  {
+    "id": "elevate",
+    "name": "Elevate",
+    "category": "software-learning",
+    "url": "https://themindcompany.com/apps/elevate",
+    "match": {
+      "patterns": [
+        "ELEVATE ?LABS|THE MIND COMPANY|ELEVATEAPP"
+      ],
+      "examples": [
+        "ELEVATE LABS INC SAN FRANCISCO CA",
+        "THE MIND COMPANY ELEVATE"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Full version"
+        },
+        {
+          "amount": 39.99,
+          "cadence": "annual",
+          "plan": "Full version"
+        }
+      ]
+    },
+    "typicalMonthly": 3.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "rebuild"
+    ],
+    "why": "Elevate sells daily word, math and memory drills at $39.99 a year. Few people keep up the daily habit. Free puzzle apps or a custom PWA give you the same practice.",
+    "alternatives": [
+      {
+        "name": "Elevate free version",
+        "url": "https://themindcompany.com/apps/elevate",
+        "note": "One three-game workout a day with basic tracking."
+      },
+      {
+        "name": "Human Benchmark",
+        "url": "https://humanbenchmark.com",
+        "note": "Free cognitive tests in the browser."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A daily practice PWA with vocabulary, spelling, mental math and reading-speed drills, adaptive difficulty, a daily three-game workout, streaks and stats.",
+        "hours": 6,
+        "runsOn": "Offline PWA on GitHub Pages or Cloudflare Pages (free); progress in localStorage.",
+        "ongoingCostYear": 0,
+        "youLose": "Elevate's game variety and polish, its editorial content, benchmarks and syncing across devices. Your build covers fewer skills and has no scientific validation.",
+        "prompt": "Build a daily word-and-math practice PWA with no accounts. Four modes: vocabulary (pick the definition for a word from a JSON list of 300 words with definitions that you write and I can extend), spelling (hear the word with the browser speech synthesis, then type it), mental math (timed operations at five difficulty levels), and reading speed (a short passage followed by three questions; write 10 original passages in /content). A daily workout picks three modes and takes about ten minutes. Adjust difficulty per mode: harder after three correct in a row, easier after two misses. Track streaks, accuracy and weekly stats in localStorage, with a simple chart. Use Vite and TypeScript, an installable manifest, offline support, large touch targets and a reduce-motion setting. Add tests for the scoring and difficulty logic. Host free on GitHub Pages."
+      },
+      "cancel": {
+        "howTo": "Elevate bills through the App Store. On iPhone open Settings, tap your name, Subscriptions, choose Elevate and cancel. Deleting the app does not cancel the subscription.",
+        "gotchas": "The annual plan includes a 7-day free trial that converts to paid. The monthly plan has no trial. Cancel at least 24 hours before renewal."
+      }
+    },
+    "sources": [
+      "https://themindcompany.com/apps/elevate"
+    ]
+  },
+  {
+    "id": "codecademy",
+    "name": "Codecademy Plus",
+    "category": "software-learning",
+    "url": "https://www.codecademy.com/pricing",
+    "match": {
+      "patterns": [
+        "CODECADEMY"
+      ],
+      "examples": [
+        "CODECADEMY.COM NEW YORK NY",
+        "CODECADEMY PLUS NEW YORK NY"
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "rotate",
+      "cancel"
+    ],
+    "why": "Claude explains code, writes exercises with tests and reviews your solutions on demand. Plus ($14.99 a month yearly, $29.99 monthly) mostly adds certificates and portfolio projects; the free plan covers basics.",
+    "alternatives": [
+      {
+        "name": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org",
+        "note": "Free, project-based curriculum with certifications."
+      },
+      {
+        "name": "The Odin Project",
+        "url": "https://www.theodinproject.com",
+        "note": "Free full-stack curriculum."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Explains concepts, writes graded practice exercises with test cases, reviews your code, explains errors, and can scaffold small projects you then study and change.",
+        "howTo": "Create a Claude Project for your language, paste the prompt below into the instructions, and work in your own editor. Claude Code is included with Claude Pro for project work.",
+        "limits": "No in-browser auto-graded exercises, no certificates, career paths or interview simulations, and no progress dashboard. Claude can be confidently wrong, so run the code and tests yourself.",
+        "prompt": "You are my coding tutor for [LANGUAGE]. My level is [beginner / some experience] and my goal is [build X / get a job]. Create a six-week syllabus with three sessions a week. In each session: explain one concept in under 150 words, show a tiny example, then give me three exercises of increasing difficulty with a test file I can run locally. Do not give the solution until I paste my attempt. When I paste code, review it for correctness, readability and one improvement, and explain any error message in plain language. Every second week, assign a small project and give me a rubric. Keep a Skills list of what I can do and what I keep missing, print it after each session, and ask me to paste it next time."
+      },
+      "rotate": {
+        "pattern": "Pay monthly ($29.99) only when you want a certificate or a guided path, finish it in a month or two, and cancel. Use Claude or free curricula the rest of the year.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in, open Settings, then Subscription, and cancel the plan. Plans bought through Apple or Google are cancelled in those stores.",
+        "url": "https://help.codecademy.com/hc/en-us",
+        "gotchas": "Annual plans renew yearly and free trials convert to paid. Cancel a day or more before the renewal date."
+      }
+    },
+    "sources": [
+      "https://www.codecademy.com/pricing",
+      "https://help.codecademy.com/hc/en-us",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "quizlet-plus",
+    "name": "Quizlet Plus",
+    "category": "software-learning",
+    "url": "https://quizlet.com/upgrade",
+    "match": {
+      "patterns": [
+        "QUIZLET"
+      ],
+      "examples": [
+        "QUIZLET.COM SAN FRANCISCO CA",
+        "QUIZLET PLUS SAN FRANCISCO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 35.99,
+          "cadence": "annual",
+          "plan": "Plus"
+        },
+        {
+          "amount": 44.99,
+          "cadence": "annual",
+          "plan": "Plus Unlimited"
+        },
+        {
+          "amount": 83.99,
+          "cadence": "annual",
+          "plan": "Family"
+        }
+      ]
+    },
+    "typicalMonthly": 2.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "absorb",
+      "cancel"
+    ],
+    "why": "Plus is $35.99 a year for ad-free studying and limited practice tests. Flashcards with spaced repetition are a weekend build, and Claude can write the cards and quiz you. Anki already does this free.",
+    "alternatives": [
+      {
+        "name": "Anki",
+        "url": "https://apps.ankiweb.net",
+        "note": "Free, open-source spaced-repetition flashcards."
+      },
+      {
+        "name": "Quizlet Free",
+        "url": "https://quizlet.com",
+        "note": "Free flashcards with ads and limited modes."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A flashcard PWA with decks, spaced-repetition scheduling, flip, type-answer, multiple-choice and matching modes, a daily due queue, stats, and import from Quizlet exports.",
+        "hours": 7,
+        "runsOn": "Offline PWA on GitHub Pages or Cloudflare Pages (free); decks in IndexedDB with JSON export.",
+        "ongoingCostYear": 0,
+        "youLose": "Quizlet's huge library of public sets, class sharing and live games, textbook solutions and cross-device sync unless you add your own export and import.",
+        "prompt": "Build a flashcard PWA with spaced repetition, no accounts and no backend. Features: (1) decks and cards with text and optional images stored in IndexedDB, (2) FSRS or SM-2 scheduling with a daily due queue and a new-cards-per-day limit, (3) study modes: flip, type the answer, multiple choice built from other cards in the deck, and a timed matching game, (4) stats: streak, retention rate and a heatmap of reviews, (5) import from a Quizlet export pasted as text, with a tab between term and definition and a new line between cards, plus CSV and JSON import and export, (6) dark mode and keyboard shortcuts. Use Vite and TypeScript, make it installable and offline-capable, and add tests for the scheduler. Host free on GitHub Pages and explain how I back up my decks."
+      },
+      "absorb": {
+        "claudeDoes": "Turns your notes into flashcards, quizzes you one card at a time, retests the cards you miss and writes practice tests with an answer key.",
+        "howTo": "Paste your notes or upload a PDF into a Claude Project and run the prompt below. Ask for a fresh set before each exam.",
+        "limits": "No automatic spaced-repetition scheduling or stats, no shared class sets, and you must paste the missed-card list back between sessions. Claude can make factual errors in cards, so check against your source.",
+        "prompt": "Make me a study set from the notes I paste below. First write 25 flashcards in the format term | definition, focusing on the most testable points. Then quiz me one card at a time: show the term, wait for my answer, mark it right or wrong with a one-line correction, and keep a list of missed cards. Re-test each missed card after five other cards, and again at the end. When we finish, print the missed cards as a list I can paste next session, then write a ten-question practice test with an answer key that mixes multiple choice and short answer. If my notes are unclear on a point, ask me instead of guessing."
+      },
+      "cancel": {
+        "howTo": "Sign in, open Settings, then Subscription, and cancel renewal. Plans bought in the iOS or Android app cancel in Apple subscriptions or Google Play.",
+        "url": "https://help.quizlet.com/hc/en-us",
+        "gotchas": "The 7-day trial applies to annual plans only and converts to a full-year charge. Annual plans renew automatically every year until cancelled. Export your sets on the website first: set menu (three dots) > Export > Copy text, one set at a time. Sets copied from other users cannot be exported, and sets that use Plus features may need Plus to copy. Keep the paid plan until the import is verified."
+      }
+    },
+    "sources": [
+      "https://quizlet.com/upgrade",
+      "https://help.quizlet.com/hc/en-us",
+      "https://support.claude.com/en/articles/9517075-what-are-projects",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "chegg-study",
+    "name": "Chegg Study Pack",
+    "category": "software-learning",
+    "url": "https://www.chegg.com/study-pack",
+    "match": {
+      "patterns": [
+        "CHEGG"
+      ],
+      "examples": [
+        "CHEGG INC SANTA CLARA CA",
+        "CHEGG* STUDY PACK SANTA CLARA CA"
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "Claude explains homework step by step, checks your work and drafts study guides. Chegg's edge is expert-written textbook solutions; if you mostly use it for explanations, Claude covers it.",
+    "alternatives": [
+      {
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "note": "Free lessons and practice in math, science and more."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Explains homework problems step by step, gives hints before answers, reads photos of printed or handwritten work, checks numbers by running code, and writes practice problems and study guides.",
+        "howTo": "Open a Claude chat or Project for the course, paste the problem or upload a photo, and use the tutor prompt below. Claude can run code to verify calculations.",
+        "limits": "No access to your textbook's own solution set, and it can make arithmetic or reasoning errors, so verify results. Follow your school's academic-integrity rules and use it to learn, not to submit answers.",
+        "prompt": "Act as my tutor for [COURSE]. When I paste a problem, do not give the answer first. Ask what I have tried, then give a hint. If I am still stuck, give a bigger hint, and only then show the full worked solution with each step explained in plain language. Verify final numbers by running code, and say so when you do. After each problem, give me one similar practice problem with a different setup and check my attempt. If I upload a photo, first restate what you read so I can confirm you read it correctly. At the end of the session, list the concepts I struggled with and suggest what to review. Remind me to cite my sources if I use your explanation in graded work."
+      },
+      "cancel": {
+        "howTo": "Sign in to Chegg, open Account settings, find My subscriptions, and cancel Chegg Study Pack. Keep the confirmation email.",
+        "gotchas": "Billing continues monthly until you cancel, so cancel before the renewal date. Check how many expert questions your plan allows each month against how much you actually use it."
+      }
+    },
+    "sources": [
+      "https://www.chegg.com/study-pack",
+      "https://platform.claude.com/docs/en/build-with-claude/vision",
+      "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "photomath-plus",
+    "name": "Photomath Plus",
+    "category": "software-learning",
+    "url": "https://photomath.com",
+    "match": {
+      "patterns": [
+        "PHOTOMATH"
+      ],
+      "examples": [
+        "PHOTOMATH PLUS",
+        "GOOGLE *PHOTOMATH"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Plus"
+        }
+      ]
+    },
+    "typicalMonthly": 5.83,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "Photomath lists step-by-step explanations on its free tier too, and Claude reads a photo of a problem and explains each step. Paying $9.99 monthly or $69.99 yearly is hard to justify.",
+    "alternatives": [
+      {
+        "name": "Photomath Basic",
+        "url": "https://photomath.com",
+        "note": "Free tier with step-by-step explanations."
+      },
+      {
+        "name": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "note": "Free lessons and practice in math."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Reads photos of printed or handwritten math problems, explains each step in plain language, checks the answer by running code, and generates similar practice problems.",
+        "howTo": "Upload a photo in the Claude mobile app and use the prompt below. Claude can run code to confirm calculations.",
+        "limits": "No instant camera overlay scan, so each problem takes a few seconds more. Claude can misread messy handwriting or small text and can slip on arithmetic, so ask it to verify with code and restate the problem first.",
+        "prompt": "You are my math tutor. When I upload a photo of a problem, first write out exactly what you read so I can confirm it. Then solve it step by step, explaining why each step is valid in plain language and naming the rule or property used. Verify the final answer by running code or substituting back, and say which you did. If the problem has more than one method, show the simplest first and mention the other in one sentence. After the solution, give me one similar problem with different numbers and check my attempt when I send it. If my handwriting is unclear, ask me to retake the photo instead of guessing. Keep explanations short unless I ask for more."
+      },
+      "cancel": {
+        "howTo": "Subscriptions are managed where you bought them. On iPhone open Settings, your name, Subscriptions. On Android open Google Play, Payments and subscriptions. Web purchases are managed in your Photomath account.",
+        "gotchas": "Deleting the app does not cancel a subscription. The annual plan renews yearly at full price and trials convert to paid unless cancelled."
+      }
+    },
+    "sources": [
+      "https://photomath.com/",
+      "https://platform.claude.com/docs/en/build-with-claude/vision",
+      "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "pluralsight",
+    "name": "Pluralsight",
+    "category": "software-learning",
+    "url": "https://www.pluralsight.com",
+    "match": {
+      "patterns": [
+        "PLURALSIGHT"
+      ],
+      "examples": [
+        "PLURALSIGHT.COM DRAPER UT",
+        "PLURALSIGHT LLC DRAPER UT"
+      ],
+      "priceHints": [
+        {
+          "amount": 299,
+          "cadence": "annual",
+          "plan": "Individual annual plan (AI+, Cloud+, Security+, Data+ tier)"
+        },
+        {
+          "amount": 449,
+          "cadence": "annual",
+          "plan": "Individual annual plan (Core Tech or Complete tier)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Individual plans (Core Tech, AI+, Cloud+, Security+, Data+, Complete) are video libraries. Pay for the months you are studying for a certification or a new stack, then cancel.",
+    "alternatives": [
+      {
+        "name": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org",
+        "note": "Free curriculum with projects and certifications."
+      },
+      {
+        "name": "Your library's digital services",
+        "url": "https://www.libbyapp.com",
+        "note": "Many libraries offer free learning resources through a library card."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Use the free trial first. Subscribe for the months when you are preparing for a certification or learning a new stack, finish the path, then cancel and return for the next one.",
+        "monthsOffPerYear": 8
+      },
+      "cancel": {
+        "howTo": "Sign in to Pluralsight, open your account settings and subscription or plan section, and cancel renewal. Keep the confirmation email.",
+        "gotchas": "Free trials convert to paid. Annual plans renew yearly, so set a reminder before the renewal date and check which individual plan (Core Tech, AI+, Cloud+, Complete) you are on."
+      }
+    },
+    "sources": [
+      "https://www.pluralsight.com/pricing",
+      "https://www.pluralsight.com/individuals/pricing"
+    ]
+  },
+  {
+    "id": "wolfram-alpha-pro",
+    "name": "Wolfram|Alpha Pro",
+    "category": "software-learning",
+    "url": "https://www.wolframalpha.com/pro",
+    "match": {
+      "patterns": [
+        "WOLFRAM"
+      ],
+      "examples": [
+        "WOLFRAM ALPHA PRO CHAMPAIGN IL",
+        "WOLFRAM RESEARCH INC CHAMPAIGN IL"
+      ]
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "Pro is $5 a month billed yearly and adds step-by-step solutions, file uploads and longer computations. Claude explains steps and runs Python to compute exactly; you lose Wolfram's curated data.",
+    "alternatives": [
+      {
+        "name": "Wolfram|Alpha (free)",
+        "url": "https://www.wolframalpha.com",
+        "note": "The free tier answers most one-off questions."
+      },
+      {
+        "name": "Desmos",
+        "url": "https://www.desmos.com",
+        "note": "Free graphing calculator."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Solves and explains algebra, calculus and statistics problems step by step, runs Python in its sandbox for exact computation and plots, and reads photos of problems.",
+        "howTo": "Ask in a Claude chat or Project and tell it to verify results with code. Claude can run code and create files such as charts and spreadsheets.",
+        "limits": "No access to Wolfram's curated, computable data (chemistry, geography, finance and more). Python's sympy covers most school-level symbolic work but not everything Wolfram's engine solves. Claude can make errors, so ask it to verify with code and double-check important results.",
+        "prompt": "Act as a math and science problem solver. For each problem I give you: (1) restate it and list the givens, (2) solve step by step and name the method, (3) verify the result independently by running Python (use sympy or numpy where helpful) and show the code and its output, (4) state any assumptions or domain restrictions, and (5) if there is a plot that helps, produce it. If a result depends on data you cannot get reliably, say so instead of estimating. For symbolic work, give the exact form first and a decimal approximation second. If two methods disagree, show both and explain which one is correct. Keep explanations plain and short."
+      },
+      "cancel": {
+        "howTo": "Sign in to your Wolfram account, open your subscriptions, and cancel Wolfram|Alpha Pro. Plans bought in the iOS or Android app cancel in the store.",
+        "gotchas": "Annual subscriptions renew automatically. Student and educator plans have separate pricing, so check which plan you are on."
+      }
+    },
+    "sources": [
+      "https://www.wolframalpha.com/pro/pricing",
+      "https://www.wolframalpha.com/pro",
+      "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
+      "https://platform.claude.com/docs/en/build-with-claude/vision",
+      "https://claude.com/pricing"
+    ]
+  }
+]

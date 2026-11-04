@@ -1,0 +1,42 @@
+# BUILDLOG: huckleberry rebuild
+
+## Prompt (verbatim, from merchants.json, id "huckleberry", plans.rebuild.prompt)
+
+Build a baby sleep and feeding tracker as an installable PWA (React, Vite, TypeScript, IndexedDB, no backend). Features: (1) one-tap timers for sleep, breast or bottle feeds, diapers and pumping, with editing and backdating; (2) a today timeline plus daily and weekly summaries (total sleep, longest stretch, feeds, diapers); (3) a nap predictor that suggests the next sleep window from age-based wake-window ranges that I can edit, narrowing as it learns from my baby last ten days; (4) a shareable summary exported as a PNG or text for a pediatrician visit or caregiver; (5) multiple children; (6) a dim red night mode. Store data locally with JSON and CSV export and import, and add a Huckleberry importer if its data export can be downloaded (inspect it first and ask me about column mapping). Include tests for the predictor, offline support, and free deploy steps for Cloudflare Pages.
+
+Host constraints added (not part of the prompt): static app, everything bundled locally, relative base './', works under the CSP `default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri 'self'; object-src 'none'`, copy build to D:\buildable\public\rebuilt\huckleberry\, skip deploying.
+
+## What was built ("Nestlog")
+
+React 18 + Vite 5 + TypeScript, no runtime deps beyond React. Output: `dist/` (also copied to `D:\buildable\public\rebuilt\huckleberry\`). 218 kB JS (70 kB gzip), 12 kB CSS.
+
+1. Timers: Sleep, Breast (left/right sub-timers that bank time per side), Bottle, Pump are one-tap start/stop tiles; Diaper is three one-tap buttons (Wet/Dirty/Both). Running timers survive reload (stored with `end = null`). Stopping a bottle or pump opens the editor for the amount. Edit/backdate on running timers, "Add past entry", backdate chips (now, 5, 10, 15, 30, 60 min ago), delete with Undo.
+2. Today timeline with a 24 h strip, previous/next day navigation, mini stats. Summary tab: Daily and Weekly (7-day, navigable), total sleep (midnight-split), longest stretch, naps, feeds (breast minutes, bottle amount), diapers (wet/dirty), pumping; weekly bar chart and table with averages.
+3. Nap predictor (`src/lib/predictor.ts`): 12 age bands (0 wk to 2 yr+), editable per child in Settings, reset to defaults. Learns from the last 10 days: wake windows between sleeps (sleeps within 10 min merged, night wakings ignored, bedtime windows excluded), outliers dropped, then blends the age range toward the observed inter-quartile range with weight n/(n+6) capped at 0.85, never wider than the age range, so it narrows as data accumulates. Shows next window, "in 25m / now / over", an "asleep, expected wake" mode, and a range bar. Explanation text shows prior range, learned stats, and blend weight.
+4. Share: today, yesterday, last 7 days, or custom range; text summary (copy/download/Web Share), 1080 px PNG drawn on canvas (stat tiles, day sleep strip or per-day bars, notes), download or share sheet.
+5. Multiple children (switcher in header, add/edit/delete in Settings, per-child wake windows).
+6. Night mode: Auto (7 pm to 7 am) / always / off, red-only palette; theme applied before first paint by an external `theme-init.js` (CSP safe), header moon/sun toggle.
+7. Data: JSON backup export/import (merge by id or replace all, validated), CSV export, CSV import wizard (own format round-trips; other CSVs go through a mapping step with type-value mapping, date order, units, child filter, preview, dedupe by deterministic ids).
+8. PWA: manifest, generated PNG icons (incl. maskable), service worker precaching the whole shell (generated at build by a Vite plugin with a content-hash cache version), navigation fallback to cached `index.html`, old-cache cleanup, install button when the browser offers it.
+9. Tests (vitest, 72 passing): predictor (bands, blending, narrowing, outliers, 10-day window, night/bedtime, edited bands, states), summaries and share text, CSV/JSON/importer, IndexedDB layer (fake-indexeddb), offline (service worker run in a vm sandbox with fake Cache Storage and a network that goes offline; precache list; versioning; activation cleanup; manifest).
+10. Cloudflare Pages deploy steps in README.md (Git integration and wrangler direct upload) plus `public/_headers` (CSP, caching).
+
+## Key decisions
+
+- Raw IndexedDB wrapper (no library) with an in-memory fallback and a visible banner if storage is blocked; data held in React state and written through.
+- Amounts stored in ml, displayed in ml or oz.
+- A sleep is a "nap" if it starts between 06:00 and 19:00 (constants in predictor.ts).
+- Longest stretch = full length of the longest sleep touching the day (not clipped at midnight) so overnight sleep reads correctly for a pediatrician; totals are clipped.
+- Service worker is a small hand-written one generated by a Vite plugin instead of vite-plugin-pwa/workbox (fewer deps, easy to test).
+- No inline scripts anywhere; only `style-src 'unsafe-inline'` is used (React style attributes for bar widths).
+- App name "Nestlog" (not Huckleberry branding).
+
+## What could not be done, and why
+
+- Huckleberry importer from a real export: its data export is behind an account and could not be downloaded or inspected here, and there was no way to ask the user mid-session. Instead: a generic CSV importer with an always-shown column mapping (Start, End, Duration, Type, detail columns, Notes, Child), type-value mapping, and auto-guessing tuned to a layout I believe Huckleberry uses (Start, End, Duration, Type, Start Condition, Start Location, End Condition, Notes). That layout is from memory and UNVERIFIED; the tests use a made-up file of that shape. Open question for the user: the real header names and how feeds/diapers are encoded, then adjust `guessMapping`/`buildEvents` in `src/lib/importer.ts`.
+- Service worker not verified in a real browser: the embedded browser pane refuses to register any service worker (even a trivial file), so offline support is verified by the vm-sandbox tests and by inspecting the generated `sw.js` only. Everything else was exercised live in that browser under the strict CSP (served by `scripts/serve-csp.mjs`): no CSP violations were logged, IndexedDB persistence across reload worked, night mode, timers, editor validation, undo toast, summaries, share text, PNG canvas generation, and a Huckleberry-style CSV import all worked. The PNG was generated (1080 px wide) but I could not look at it visually (pane not displayed), so its layout is unreviewed.
+- Not done: deploy (told to skip), slot-aware prediction (first/second/third wake window of the day), corrected age for preemies, notifications/reminders, cloud sync.
+
+## Rough step count
+
+About 95 tool calls: setup and install, ~25 source files written, 4 test files (72 tests), 2 bug fixes found by tests (service-worker template placeholder collision), 3 behavior fixes found in live testing (evening-only "bedtime" label, sleep count overlapping midnight, shared-pane tab), build, copy.

@@ -1,0 +1,120 @@
+{
+  "file": "capitalone.csv",
+  "bank": "capitalOne",
+  "statementStart": "2026-01-01",
+  "statementEnd": "2026-10-31",
+  "rows": 420,
+  "active": [
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 10,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 11.99,
+          "to": 12.99
+        }
+      ]
+    },
+    {
+      "key": "ring-protect",
+      "displayName": "Ring Protect",
+      "match": "RING",
+      "merchantId": "ring-protect",
+      "cadence": "monthly",
+      "currentAmount": 4.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "dropbox",
+      "displayName": "Dropbox",
+      "match": "DROPBOX",
+      "merchantId": "dropbox",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "duolingo",
+      "displayName": "Duolingo Super",
+      "match": "DUOLINGO",
+      "merchantId": "duolingo",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "nordvpn",
+      "displayName": "NordVPN",
+      "match": "NORDVPN",
+      "merchantId": "nordvpn",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($2.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 2.99,
+      "charges": 10,
+      "active": true,
+      "candidates": [
+        "icloud-plus"
+      ]
+    },
+    {
+      "key": "audible",
+      "displayName": "Audible",
+      "match": "AUDIBLE",
+      "merchantId": "audible",
+      "cadence": "monthly",
+      "currentAmount": 14.95,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "amazon-prime",
+      "displayName": "Amazon Prime",
+      "match": "AMAZON PRIME",
+      "merchantId": "amazon-prime",
+      "cadence": "monthly",
+      "currentAmount": 14.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "linktree",
+      "displayName": "Linktree",
+      "match": "LINKTREE",
+      "merchantId": "linktree",
+      "cadence": "monthly",
+      "currentAmount": 5,
+      "charges": 10,
+      "active": true
+    }
+  ],
+  "inactive": [
+    {
+      "key": "paramount-plus",
+      "displayName": "Paramount+",
+      "match": "PARAMOUNT",
+      "merchantId": "paramount-plus",
+      "cadence": "monthly",
+      "currentAmount": 7.99,
+      "charges": 6,
+      "active": false
+    }
+  ]
+}

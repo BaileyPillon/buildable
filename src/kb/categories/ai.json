@@ -1,0 +1,1793 @@
+[
+  {
+    "id": "chatgpt-plus",
+    "name": "ChatGPT Plus",
+    "category": "ai",
+    "url": "https://chatgpt.com",
+    "match": {
+      "patterns": [
+        "OPENAI.{0,60}CHATGPT(?!.{0,60}\\bPRO\\b)",
+        "CHATGPT PLUS"
+      ],
+      "examples": [
+        "OPENAI *CHATGPT SUBSCR SAN FRANCISCO CA",
+        "OPENAI *CHATGPT SUBSCR OPENAI.COM CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "Claude Pro covers chat, writing, coding, file analysis and research for the same $20. Keep ChatGPT only if you rely on its image generation or custom GPTs.",
+    "alternatives": [
+      {
+        "name": "ChatGPT Go",
+        "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+        "note": "OpenAI's lower-priced tier; check the pricing page for the current US price. Ads are being tested with some Go users."
+      },
+      {
+        "name": "ChatGPT Free",
+        "url": "https://chatgpt.com",
+        "note": "Limited free use if you only need ChatGPT for occasional image generation."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "General chat, writing and editing, coding with Claude Code, PDF and spreadsheet analysis, web search, multi-step Research, Projects with saved instructions, memory, voice mode, and creation of documents and slides.",
+        "howTo": "Subscribe to Claude Pro ($20 a month, or $200 billed yearly). Copy your ChatGPT custom instructions into a Claude Project for each recurring job (work, study, coding), then run your real tasks in both for a week before cancelling.",
+        "limits": "Claude's plans list no image generation, so you lose ChatGPT's image tools. Custom GPTs do not carry over; rebuild them as Projects. Claude usage is capped per five hours and per week.",
+        "prompt": "I am moving from ChatGPT Plus to Claude. These are my custom instructions and the five tasks I use ChatGPT for most: [paste them]. Create a setup for me: (1) a short Project instruction block for each task, (2) a list of ChatGPT features I will lose, such as image generation or custom GPTs, with a free alternative for each, (3) a one-week trial plan where I run the same real tasks in Claude and score each result from 1 to 5 against what ChatGPT gave me, and (4) a checklist for deciding on day 7 whether to cancel ChatGPT. Ask me any questions you need before you start, and keep the answer under 400 words."
+      },
+      "cancel": {
+        "howTo": "On the web: profile menu, Settings, Billing, then Cancel plan. If you subscribed in the iPhone or Android app, cancel in the App Store or Google Play instead; the ChatGPT app cannot cancel for you.",
+        "url": "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
+        "gotchas": "Cancel at least 24 hours before renewal. Go, Plus and Pro can bill under similar OPENAI *CHATGPT descriptors, so check the amount. Deleting the account or the app does not stop billing, and cancelling does not refund past charges."
+      }
+    },
+    "sources": [
+      "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
+      "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
+      "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "https://claude.com/pricing",
+      "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan"
+    ]
+  },
+  {
+    "id": "chatgpt-pro",
+    "name": "ChatGPT Pro",
+    "category": "ai",
+    "url": "https://chatgpt.com",
+    "match": {
+      "patterns": [
+        "CHATGPT PRO",
+        "OPENAI.{0,60}CHATGPT.{0,60}\\bPRO\\b"
+      ],
+      "examples": [
+        "OPENAI *CHATGPT PRO SAN FRANCISCO CA",
+        "OPENAI *CHATGPT PRO SUBSCR OPENAI.COM CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 200,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "absorb",
+      "cancel"
+    ],
+    "why": "Pro buys higher caps than Claude Pro ($20) offers. Heavy users may need Claude Max ($100) or Ultra ($200), so the saving can be anywhere from $0 to most of the cost. Test your heaviest tasks first.",
+    "alternatives": [
+      {
+        "name": "ChatGPT Plus",
+        "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
+        "note": "The $20 tier is enough for most people; Pro adds higher limits and Pro-only models."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Long reasoning and coding sessions, deep web Research, large-document analysis, Claude Code and Projects. Claude Max gives 5x Pro usage and early access to advanced features.",
+        "howTo": "Run Claude Pro for a month on your three heaviest weekly tasks, and treat the saving shown as a ceiling: ChatGPT Pro buyers are usually above Pro-level caps. If you hit the five-hour or weekly limit often, move to Claude Max ($100 a month, 5x Pro usage) or Ultra ($200 a month, 10x weekly usage), which cuts or erases the saving. Cancel ChatGPT Pro only after the comparison holds up.",
+        "limits": "No image generation, and none of OpenAI's Pro models or Codex. Claude usage is capped per five hours and per week, so very heavy users may need Max or Ultra. Model strengths differ, so test your own tasks, not benchmarks.",
+        "prompt": "I currently pay for ChatGPT Pro and want to see whether Claude Pro or Max can replace it. These are my three heaviest weekly tasks, each with a sample input: [task 1], [task 2], [task 3]. Do each one now as well as you can. After each, tell me what you would need from me to improve it. Then give me a table with the task, what you did, how long it would take me to verify the result, and any part you could not do, such as image generation. Finish with a plain recommendation: would Claude Pro, Claude Max, or keeping ChatGPT Pro fit this workload, and what evidence from this chat supports that?"
+      },
+      "cancel": {
+        "howTo": "On the web: profile menu, Settings, Billing, Cancel plan. App Store and Google Play subscriptions are cancelled in the store, not in ChatGPT.",
+        "url": "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
+        "gotchas": "Pro is billed monthly and has three tiers: Pro 100, Pro 200 and Pro 500. It may share the OPENAI *CHATGPT descriptor with Plus, so confirm which tier you pay by the amount. Cancel 24 hours before renewal; deleting your account does not cancel."
+      }
+    },
+    "sources": [
+      "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
+      "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "google-ai-pro",
+    "name": "Google AI Pro (Gemini)",
+    "category": "ai",
+    "url": "https://one.google.com/about/google-ai-plans/",
+    "match": {
+      "patterns": [
+        "GOOGLE.{0,4}AI (PRO|PLUS|ULTRA)",
+        "GEMINI ADVANCED",
+        "GOOGLE ?\\*? ?ONE AI (PREMIUM|PRO|PLUS|ULTRA)"
+      ],
+      "examples": [
+        "GOOGLE *GOOGLE AI PRO G.CO/HELPPAY# CA",
+        "GOOGLE *GOOGLE AI PRO 650-253-0000 CA",
+        "GOOGLE *Google One AI Premium g.co/helppay#CA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Google AI Pro"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "Google AI Pro (annual)"
+        }
+      ]
+    },
+    "typicalMonthly": 19.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Google AI Pro bundles Gemini with 5 TB of storage, YouTube Premium Lite and Google Home Premium for $19.99. Claude replaces only the chat, so cancelling saves money only if you use none of the rest.",
+    "alternatives": [
+      {
+        "name": "Gemini (free tier)",
+        "url": "https://gemini.google.com",
+        "note": "Free Gemini use stays available after you drop the paid plan."
+      },
+      {
+        "name": "Smaller Google storage plan",
+        "url": "https://one.google.com/about/plans",
+        "note": "Keep storage without paying for the AI bundle."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Go to gemini.google.com, open Settings & help, choose Manage subscription, then Cancel membership and confirm. On Android use the Google Play subscriptions page; on iPhone, subscriptions bought through Apple are managed in Apple settings.",
+        "url": "https://support.google.com/gemini/answer/14517446",
+        "gotchas": "If you store more than the free 15 GB, pick a smaller Google One storage plan before cancelling, or you may be blocked from saving new files. Gmail and Docs Gemini features end with the plan, and so do YouTube Premium Lite and Google Home Premium. Claude covers only the chat, so the real saving is the price of the storage and extras you still need. Workspace Gemini add-ons are cancelled in the Admin console, not here."
+      }
+    },
+    "sources": [
+      "https://one.google.com/about/google-ai-plans/",
+      "https://support.google.com/gemini/answer/14517446",
+      "https://support.google.com/googleone/answer/16476811",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "perplexity-pro",
+    "name": "Perplexity Pro",
+    "category": "ai",
+    "url": "https://www.perplexity.ai",
+    "match": {
+      "patterns": [
+        "PERPLEXITY"
+      ],
+      "examples": [
+        "PERPLEXITY AI PRO SAN FRANCISCO CA",
+        "PERPLEXITY.AI PRO PERPLEXITY.AI CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude Pro searches the web with linked sources and runs multi-step Research for the same $20. Perplexity is faster for quick cited lookups and has its own discovery and shopping features.",
+    "alternatives": [
+      {
+        "name": "Perplexity Free",
+        "url": "https://www.perplexity.ai",
+        "note": "Keeps quick cited lookups at no cost."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Web search with linked sources, a Research mode for multi-step questions, PDF and file analysis, and Projects that keep a topic's instructions and sources together.",
+        "howTo": "In Claude, turn on web search and use Research for questions that need many sources. Recreate each Perplexity Space as a Claude Project by pasting its standing instructions and key links.",
+        "limits": "Slower than Perplexity for one-line lookups, no Discover feed, no built-in shopping or finance pages, and no switching between vendors' models. Open the cited links; any AI can misread a source.",
+        "prompt": "Act as my research assistant in place of Perplexity. Topic: [your question]. Search the web, use at least eight distinct sources from the last twelve months, and give me a five-bullet answer, then a table of claims with the source link and date for each. Prefer primary sources such as official documentation, filings and papers over blogs. List where the sources disagree and what you could not verify. Suggest three follow-up searches. Finally tell me honestly whether this answer would likely have been better, worse or the same as a typical Perplexity answer, and why."
+      },
+      "cancel": {
+        "howTo": "On the web: Settings, find Subscription under Perplexity Pro, click Manage Subscription, then Cancel subscription. Subscribed through the App Store or Google Play? Cancel there instead.",
+        "url": "https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription",
+        "gotchas": "Deleting your account does not cancel the subscription, so cancel first. The account drops to the free tier at the end of the paid period. Refunds for unused time are generally not given. Max ($200 a month) may have separate steps."
+      }
+    },
+    "sources": [
+      "https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription",
+      "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
+      "https://www.perplexity.ai/help-center/en/articles/10353002-billing-faq-for-pro-plan-subscribers",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "microsoft-copilot-pro",
+    "name": "Microsoft 365 Premium (formerly Copilot Pro)",
+    "category": "ai",
+    "url": "https://www.microsoft.com/en-us/copilot/solutions/individuals",
+    "match": {
+      "patterns": [
+        "MICROSOFT\\W{0,2}COPILOT",
+        "^(?!.{0,60}GITHUB).{0,60}COPILOT PRO",
+        "M365 PREMIUM|365 PREMIUM"
+      ],
+      "examples": [
+        "MICROSOFT*COPILOT PRO MSBILL.INFO WA",
+        "MICROSOFT*M365 PREMIUM MSBILL.INFO WA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 19.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Microsoft 365 Premium ($19.99) bundles the Office apps with Copilot, and Copilot Pro was folded into it in Oct 2025. Claude replaces only the chat, so the saving is the gap to Family ($12.99).",
+    "alternatives": [
+      {
+        "name": "Microsoft Copilot (free)",
+        "url": "https://copilot.microsoft.com",
+        "note": "The free Copilot chat stays available without a paid plan."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at account.microsoft.com, open Services & subscriptions, find the plan, choose Manage, then Cancel subscription or Change plan to switch to Family or Personal.",
+        "url": "https://account.microsoft.com/services",
+        "gotchas": "Cancelling stops renewal but keeps access to the end of the paid period. The cancel flow can offer a downgrade or discount first, so go through to the end and check the status reads cancelled. Old charges may still say Copilot Pro. If you use Word, Excel or PowerPoint, step down to Family ($12.99) or Personal ($9.99) instead of cancelling: the saving is the gap, about $84 a year for Family, not the full price."
+      }
+    },
+    "sources": [
+      "https://www.microsoft.com/en-us/copilot/solutions/individuals",
+      "https://www.pcworld.com/article/2925962/microsoft-adds-microsoft-365-premium-cuts-copilot-pro.html",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "grammarly-pro",
+    "name": "Grammarly Pro",
+    "category": "ai",
+    "url": "https://www.grammarly.com",
+    "match": {
+      "patterns": [
+        "GRAMMARLY"
+      ],
+      "examples": [
+        "GRAMMARLY.COM SAN FRANCISCO CA",
+        "GRAMMARLY INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 144,
+          "cadence": "annual",
+          "plan": "Pro, billed annually"
+        }
+      ]
+    },
+    "typicalMonthly": 12,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude fixes grammar, tone and clarity at paragraph level and Pro includes it. Grammarly wins only for live underlining in every text box and browser field.",
+    "alternatives": [
+      {
+        "name": "Grammarly Free",
+        "url": "https://www.grammarly.com",
+        "note": "Basic corrections and 100 AI prompts a month at no cost."
+      },
+      {
+        "name": "LanguageTool",
+        "url": "https://languagetool.org",
+        "note": "Free grammar checker with browser and Word extensions."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Proofreading, tone and clarity rewrites, whole-document edits, formality changes, and an explanation for every correction.",
+        "howTo": "Paste your text and ask for corrections with a change list. Save your style notes in a Claude Project so every edit matches your voice. Claude in Chrome (included in Pro) can help on web pages.",
+        "limits": "No always-on underlining as you type in Gmail, Docs and other apps, no built-in plagiarism checker, and no team style-guide enforcement. You paste or ask each time. Before pasting confidential documents, turn off Help improve Claude in Settings, Privacy, or keep sensitive material in Grammarly.",
+        "prompt": "Proofread the text below the way Grammarly Pro would, but explain more. Keep my voice and meaning, and do not make it formal unless I ask. Output: (1) the corrected text, (2) a numbered list of every change with the reason in six words or fewer, (3) the three mistakes I repeat most, each with a one-line rule of thumb, and (4) a one-line tone read of how this sounds to a stranger. Audience: [who will read this]. Goal: [what I want them to do]. Text: [paste]. If a sentence is ambiguous, ask me before changing it instead of guessing."
+      },
+      "cancel": {
+        "howTo": "Sign in, open the Account tab, then Your account and Subscription. Click Cancel Subscription at the bottom, continue, pick a reason and confirm.",
+        "url": "https://support.grammarly.com/hc/en-us/articles/115000090172-How-do-I-cancel-my-subscription",
+        "gotchas": "Annual plans auto-renew, so note the renewal date. Free trials need a card and convert to paid; Grammarly emails a reminder two days before the trial ends. App Store subscriptions must be cancelled with Apple. Grammarly is part of the Superhuman suite, so a charge may show either name."
+      }
+    },
+    "sources": [
+      "https://www.grammarly.com/plans",
+      "https://support.grammarly.com/hc/en-us/articles/115000090172-How-do-I-cancel-my-subscription",
+      "https://support.grammarly.com/hc/en-us/articles/115000930251-Cancel-automatic-renewal-of-my-subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "category": "ai",
+    "url": "https://www.jasper.ai",
+    "match": {
+      "patterns": [
+        "JASPER ?\\.? ?AI"
+      ],
+      "examples": [
+        "JASPER.AI AUSTIN TX",
+        "JASPER AI SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 69,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude writes drafts in your brand voice from a saved Project. Jasper's campaign tools and team brand controls matter to marketing teams, not to a solo user paying $59 to $69 a month.",
+    "alternatives": [
+      {
+        "name": "Claude Free",
+        "url": "https://claude.ai",
+        "note": "Try a brand-voice Project on the free plan before committing."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Blog posts, ad copy, emails and social posts in a consistent voice, using a Project that stores your style guide, sample pieces and audience notes.",
+        "howTo": "Create a Claude Project, upload three to five pieces that sound like you plus your audience and banned-phrases list, then ask for drafts. Export your Jasper brand voice and knowledge documents before cancelling.",
+        "limits": "No Jasper template gallery, campaign workflows or multi-user brand-voice controls, and no publishing to your CMS. You manage drafts and versions yourself. Before pasting confidential documents, turn off Help improve Claude in Settings, Privacy, or keep sensitive material in Jasper.",
+        "prompt": "Set yourself up as my marketing writer, replacing Jasper. I am pasting my brand voice notes, three past pieces I like, my audience and my banned phrases: [paste]. First, summarize my voice in eight bullets and show two sentences that sound like me and two that do not. Then write a first draft of [asset type, such as a 600-word blog post] on [topic] for [audience] with this goal: [goal]. Include five headline variants, a meta description and three social posts. After the draft, list the claims that need a source and any place you guessed. Ask me up to three questions first if my notes are unclear."
+      },
+      "cancel": {
+        "howTo": "Open the workspace menu at the top left, then Workspace Settings, then Plans. Scroll to the bottom, select Cancel and follow the prompts. Cancellation is set for the end of the billing cycle.",
+        "url": "https://help.jasper.ai/hc/en-us/articles/18618705279899-Cancel-Your-Account-Pro-Plan",
+        "gotchas": "Annual plans are a 12-month commitment with only a 7-day refund window. If the Cancel button is missing, email hey@jasper.ai. The cancel flow also offers a 30, 60 or 90 day pause; choose Cancel, not Pause."
+      }
+    },
+    "sources": [
+      "https://www.jasper.ai/pricing",
+      "https://help.jasper.ai/hc/en-us/articles/18618705279899-Cancel-Your-Account-Pro-Plan",
+      "https://help.jasper.ai/hc/en-us/articles/18618699843739-Refund-Policy",
+      "https://help.jasper.ai/hc/en-us/articles/18618709412123-Annual-Plans",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "writesonic",
+    "name": "Writesonic",
+    "category": "ai",
+    "url": "https://writesonic.com",
+    "match": {
+      "patterns": [
+        "WRITESONIC"
+      ],
+      "examples": [
+        "WRITESONIC.COM SAN FRANCISCO CA",
+        "WRITESONIC INC"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 79,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Writesonic now sells an AI search-visibility tracker from $79 a month billed annually. Claude drafts articles but cannot track your brand in ChatGPT or Gemini answers, so it replaces only the writing.",
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in, open your account or billing settings, and choose Cancel plan. Check your email for a cancellation confirmation; if you cannot find the option, contact support from the same page.",
+        "gotchas": "The advertised prices ($79, $199 and $399 a month) are for annual billing; monthly billing costs more. Annual plans bill the full year upfront, so cancel before the renewal date."
+      }
+    },
+    "sources": [
+      "https://www.writesonic.com/pricing",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "quillbot-premium",
+    "name": "QuillBot Premium",
+    "category": "ai",
+    "url": "https://quillbot.com",
+    "match": {
+      "patterns": [
+        "QUILLBOT"
+      ],
+      "examples": [
+        "QUILLBOT.COM CHICAGO IL",
+        "QUILLBOT PREMIUM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude paraphrases, summarizes and grammar-checks in the tone you choose, which is QuillBot's core. Its browser and Word extensions are the only real loss.",
+    "alternatives": [
+      {
+        "name": "QuillBot Free",
+        "url": "https://quillbot.com",
+        "note": "Limited paraphrasing and grammar checking at no cost."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Paraphrasing in several tones, summarizing long text, grammar and clarity fixes, and rewriting at a chosen reading level.",
+        "howTo": "Paste your text into Claude and name the mode you used in QuillBot (Fluency, Formal, Simple, Creative). For long documents, upload the file and work section by section.",
+        "limits": "No one-click extension inside Word or Chrome, no side-by-side synonym slider, and no citation generator. If your school runs AI-writing detection, check its rules before submitting paraphrased text.",
+        "prompt": "Paraphrase the passage below the way QuillBot's [Formal / Simple / Creative / Fluency] mode would. Keep the meaning and every fact, number and name exactly as given. Give me three versions that differ in sentence structure, not just synonyms, then tell me which one reads best for [audience, such as a graduate seminar paper] and why. Flag any sentence where the original was ambiguous and you had to pick a reading. Do not add claims or citations that are not in the original. Passage: [paste]. If the passage is over 1,000 words, work in sections and wait for my go-ahead between them."
+      },
+      "cancel": {
+        "howTo": "Click your initial at top right, choose Account Details, open the Your Plan tab and select Cancel subscription. You can also cancel by submitting a ticket to support. Premium access continues until the end of the paid period.",
+        "url": "https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription",
+        "gotchas": "Cancelling does not refund the current period; refunds are issued only where the law requires. iOS and Android subscriptions must be cancelled in the store."
+      }
+    },
+    "sources": [
+      "https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription",
+      "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "wordtune",
+    "name": "Wordtune",
+    "category": "ai",
+    "url": "https://www.wordtune.com",
+    "match": {
+      "patterns": [
+        "WORDTUNE",
+        "AI21 ?LABS"
+      ],
+      "examples": [
+        "WORDTUNE.COM TEL AVIV IL",
+        "WORDTUNE PREMIUM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude rewrites sentences in different tones and lengths, which is all Wordtune does. The Chrome extension is the only convenience you give up.",
+    "alternatives": [
+      {
+        "name": "Wordtune Basic (free)",
+        "url": "https://www.wordtune.com/plans",
+        "note": "Free tier with limited rewrites."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Rewrites a sentence or paragraph in several tones, shortens or expands it, and explains what changed.",
+        "howTo": "Paste the draft and ask for options by tone. Keep a standing instruction in a Claude Project: your usual audience, the words you avoid, and how formal you like to sound.",
+        "limits": "No inline rewrite button inside Gmail, Docs or LinkedIn, so you copy text in and out. Wordtune Unlimited is $9.99 a month billed annually, so the savings are small.",
+        "prompt": "Rewrite the sentence or paragraph below the way Wordtune would. Give me six options: two shorter, two more casual, one more formal, and one that leads with the main point. Keep all facts and names unchanged. Mark which option you would pick for [audience and channel, such as a LinkedIn post to hiring managers] and say why in one line. Then point out any wording in my original that is vague, passive or repeated. Text: [paste]. If I paste more than two paragraphs, ask whether I want the whole piece rewritten for flow instead of sentence by sentence."
+      },
+      "cancel": {
+        "howTo": "Sign in at wordtune.com, open your account settings and billing section, and cancel the renewal. Subscribed in an app store? Cancel there.",
+        "gotchas": "The paid plans advertise a 3-day free trial that converts to a paid plan, and annual pricing is billed upfront (the $9.99 shown is the annual rate). Cancel before the trial ends if you are only testing."
+      }
+    },
+    "sources": [
+      "https://www.wordtune.com/plans",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "category": "ai",
+    "url": "https://otter.ai",
+    "match": {
+      "patterns": [
+        "OTTER ?\\.? ?AI"
+      ],
+      "examples": [
+        "OTTER.AI MOUNTAIN VIEW CA",
+        "OTTER.AI PRO SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 16.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude's file-upload help lists no audio or video, so it cannot transcribe a recording. A local Whisper tool plus Claude for summaries covers solo use in a weekend and runs free.",
+    "alternatives": [
+      {
+        "name": "Otter Basic (free)",
+        "url": "https://otter.ai/pricing",
+        "note": "300 transcription minutes a month on the free plan."
+      },
+      {
+        "name": "faster-whisper",
+        "url": "https://github.com/SYSTRAN/faster-whisper",
+        "note": "Open-source speech-to-text that runs on a laptop."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A local web app: drop in an audio or video file, get a timestamped transcript from faster-whisper, then a summary and action items made by Claude Code's headless mode. Transcripts are saved in SQLite with full-text search and exported as Markdown or SRT.",
+        "hours": 8,
+        "runsOn": "Your own laptop (Windows, Mac or Linux): Python 3.11, faster-whisper, SQLite and a local browser page. No server, no account. A modern CPU handles the small model; a GPU helps with larger ones. Summaries use the `claude` command and count against your Claude plan.",
+        "ongoingCostYear": 0,
+        "youLose": "Bots that join Zoom, Meet and Teams on their own, live captions, polished speaker labels, calendar integration, a phone app and team sharing. You record the meeting yourself and must tell participants you are recording.",
+        "prompt": "Build a local meeting-notes tool I can run on my laptop. Stack: Python 3.11, faster-whisper (model \"small\", configurable), FastAPI, a single-page HTML interface and SQLite with FTS5. Features: (1) drag and drop an mp3, m4a, wav or mp4 file and show progress, (2) a timestamped transcript with simple speaker turns split on long pauses, (3) a Summarize button that pipes the transcript to the `claude -p` command (hidden if it is not installed) and returns a summary, decisions and action items with owners, (4) full-text search across saved transcripts, (5) export to Markdown and SRT, (6) import my Otter exports (.txt or .srt) into the same database. Store everything under ./data and make no network calls except the claude command. Add a README with Windows and macOS setup, a test using a 30-second sample file, and a reminder to get consent before recording anyone."
+      },
+      "cancel": {
+        "howTo": "Only the owner or an admin can cancel. Sign in on the web, open Account Settings, then Billing, and choose Cancel plan. The subscription runs to the end of the period, then drops to Basic.",
+        "url": "https://help.otter.ai/hc/en-us/articles/23346776714903-Cancel-an-Otter-subscription",
+        "gotchas": "Apple and Google subscriptions can only be cancelled in the store. Otter's terms offer no refunds, and annual plans bill the full year. Workspace members must revert to an individual plan after the paid period ends."
+      }
+    },
+    "sources": [
+      "https://otter.ai/pricing",
+      "https://help.otter.ai/hc/en-us/articles/23346776714903-Cancel-an-Otter-subscription",
+      "https://help.otter.ai/hc/en-us/articles/360048593573-Cancel-your-Otter-Pro-subscription",
+      "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
+      "https://support.claude.com/en/articles/11101966-use-voice-mode"
+    ]
+  },
+  {
+    "id": "fireflies-ai",
+    "name": "Fireflies.ai",
+    "category": "ai",
+    "url": "https://fireflies.ai",
+    "match": {
+      "patterns": [
+        "FIREFLIES"
+      ],
+      "examples": [
+        "FIREFLIES.AI CORP SAN FRANCISCO CA",
+        "FIREFLIES.AI PRO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 18,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Same gap as Otter: Claude cannot transcribe uploaded audio. A watch-folder script with local Whisper plus Claude for notes replaces solo use. Teams that need the bot should keep it.",
+    "alternatives": [
+      {
+        "name": "Fireflies Free",
+        "url": "https://fireflies.ai/pricing",
+        "note": "Free plan with basic recording and transcription."
+      },
+      {
+        "name": "OpenAI Whisper",
+        "url": "https://github.com/openai/whisper",
+        "note": "Open-source speech recognition model."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A watch-folder transcriber: record calls with your meeting app's local recording or OBS, drop the file in a folder, and a script transcribes it with Whisper, writes a Markdown note with summary and action items, and adds it to a searchable index.",
+        "hours": 9,
+        "runsOn": "Your PC or Mac as a background Python script (faster-whisper, SQLite) started by Task Scheduler or launchd. Notes land in a plain folder you can open in Obsidian or any editor. Summaries use the `claude` command and count against your Claude plan.",
+        "ongoingCostYear": 0,
+        "youLose": "The notetaker bot that joins calls on its own, CRM and Slack integrations, a shared team workspace, conversation analytics and mobile access. You need participants' consent to record them.",
+        "prompt": "Write a background script that watches a folder for new meeting recordings and turns each into a note. Use Python 3.11 and faster-whisper (configurable model size, default \"small\"). For each new mp3, m4a, wav or mp4: transcribe with timestamps, save the transcript as Markdown, then call `claude -p` with the transcript to produce a summary, decisions, open questions and action items with owners and dates, and save that as a second Markdown file with YAML front matter (date, duration, title guess). Add every note to a SQLite FTS5 index and a `search \"query\"` command line tool. Import my Fireflies transcript downloads (DOCX, SRT or JSON) into the same index. Make it start at login on Windows and macOS, log errors to a file, skip files still being written, and never upload audio anywhere. Include tests and a README with consent reminders."
+      },
+      "cancel": {
+        "howTo": "In the web app click Settings in the left menu, go to Account, find Subscriptions, and click Cancel next to your plan. Give a reason and confirm. The plan moves to Free at the end of the billing cycle.",
+        "url": "https://guide.fireflies.ai/articles/6637635140-how-to-cancel-fireflies-subscription",
+        "gotchas": "An AI Credits subscription is separate and must be cancelled on its own. Pro is $18 a month billed monthly or $10 billed annually, and annual plans bill upfront. Existing meetings stay accessible within Free limits."
+      }
+    },
+    "sources": [
+      "https://guide.fireflies.ai/articles/3734844560-learn-about-the-fireflies-pricing-plans",
+      "https://guide.fireflies.ai/articles/6637635140-how-to-cancel-fireflies-subscription",
+      "https://fireflies.ai/pricing",
+      "https://support.claude.com/en/articles/8241126-upload-files-to-claude"
+    ]
+  },
+  {
+    "id": "deepl-pro",
+    "name": "DeepL Pro",
+    "category": "ai",
+    "url": "https://www.deepl.com/en/pro",
+    "match": {
+      "patterns": [
+        "DEEPL(?![A-Z])"
+      ],
+      "examples": [
+        "DEEPL SE COLOGNE DE",
+        "DEEPL.COM PRO SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 8.74,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "Claude translates text and documents well in the major languages and Pro includes it. DeepL still wins on formatted Word and PowerPoint files and on glossary-locked terminology.",
+    "alternatives": [
+      {
+        "name": "DeepL Free",
+        "url": "https://www.deepl.com/translator",
+        "note": "Free text translation with character limits."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Translates pasted text, PDFs and documents, matches tone and register, explains idioms, and applies a glossary you paste in. File creation can output the translation as a document.",
+        "howTo": "Paste text or upload the file and give the source language, target language, audience and a glossary. For documents over a few thousand words, translate in sections and keep the glossary in a Claude Project.",
+        "limits": "Document layout is not preserved as closely as DeepL's file translation, there is no one-click browser or Office add-in, and very long files must be split. Have a human check legal, medical or contract text. Before pasting confidential documents, turn off Help improve Claude in Settings, Privacy, or keep sensitive material in DeepL.",
+        "prompt": "Translate the text below from [source language] into [target language] for [audience, such as a business email to a client or a casual message to a friend]. Keep my formatting, leave names and product terms unchanged, and use these glossary pairs exactly: [term = translation, ...]. After the translation, give me a back-translation of any sentence where you had two reasonable options, three phrases where the tone could land differently, and a flag on anything that could be a false friend. If the text is longer than 1,500 words, translate in sections and wait for my go-ahead. Text: [paste]."
+      },
+      "cancel": {
+        "howTo": "Sign in to your DeepL account, open the Subscription tab, select the subscription and click Cancel subscription. It takes effect at the end of the current monthly or yearly period.",
+        "url": "https://support.deepl.com/hc/en-us/articles/360020723719-Cancel-subscription",
+        "gotchas": "Cancel at least one day before the next payment. There is no credit for ending a period early. The Individual plan is $8.74 a month billed annually, and monthly billing costs about 16% more. Plans sold through sales cannot be cancelled in the account."
+      }
+    },
+    "sources": [
+      "https://www.deepl.com/en/pro",
+      "https://support.deepl.com/hc/en-us/articles/360020723719-Cancel-subscription",
+      "https://support.deepl.com/hc/en-us/articles/360019924499-About-DeepL-plans",
+      "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "ai",
+    "url": "https://www.midjourney.com",
+    "match": {
+      "patterns": [
+        "MIDJOURNEY"
+      ],
+      "examples": [
+        "MIDJOURNEY INC. SAN FRANCISCO CA",
+        "MIDJOURNEY.COM BASIC PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 30,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Claude's plans list no image generation, so absorb is out. Plans cancel any time and run to cycle end, so subscribe only for the months you make images.",
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for a burst of projects (one to two months), download everything you want to keep, cancel on day 2 so the plan ends at renewal, and resubscribe when the next project starts. Basic ($10) is enough unless you want unlimited Relax images, which needs Standard ($30).",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Log in at midjourney.com, open Manage Subscription and click Cancel Plan. Access and remaining Fast time last until the end of the billing cycle.",
+        "url": "https://docs.midjourney.com/hc/en-us/articles/25384024738573-Canceling-Your-Subscription",
+        "gotchas": "Cancel any pending plan change first with Cancel Change, then Cancel Plan. Your images and history stay after cancelling. Refund eligibility is narrow and tied to very low usage, so do not count on one."
+      }
+    },
+    "sources": [
+      "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+      "https://docs.midjourney.com/hc/en-us/articles/25384024738573-Canceling-Your-Subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "category": "ai",
+    "url": "https://runway.com",
+    "match": {
+      "patterns": [
+        "RUNWAYML",
+        "\\bRUNWAY ?AI\\b",
+        "^RUNWAY\\.COM"
+      ],
+      "examples": [
+        "RUNWAYML.COM NEW YORK NY",
+        "RUNWAY AI, INC. NEW YORK NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 15,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "AI video generation is outside Claude. Credits reset every month, so a standing subscription is poor value if you generate in bursts. Subscribe for a project month, then cancel.",
+    "plans": {
+      "rotate": {
+        "pattern": "Plan a batch of clips, subscribe to Standard ($15 monthly, 625 credits), generate and download them in one cycle, then cancel straight away so it ends at renewal. Resubscribe only when the next project needs video.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Open the billing page, click Cancel plan, add feedback, and confirm the cancellation on the Stripe screen. If your plan came from the iOS App Store, cancel in your Apple subscriptions.",
+        "url": "https://help.runwayml.com/hc/en-us/articles/21668396605971-How-do-I-cancel-my-plan",
+        "gotchas": "Stopping before the final Confirm cancellation step in Stripe leaves the plan active. If the Cancel plan button is greyed out, cancellation is already scheduled and access runs to the expiry date shown. Standard is $15 monthly or $12 a month billed yearly."
+      }
+    },
+    "sources": [
+      "https://runway.com/pricing",
+      "https://help.runwayml.com/hc/en-us/articles/21668396605971-How-do-I-cancel-my-plan",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "ai",
+    "url": "https://elevenlabs.io",
+    "match": {
+      "patterns": [
+        "ELEVEN ?LABS"
+      ],
+      "examples": [
+        "ELEVENLABS.IO NEW YORK NY",
+        "ELEVENLABS INC NEW YORK NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 22,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Realistic AI voices are not something Claude produces. Credits reset monthly and unused ones vanish on cancel, so subscribe only for the months you need voice-over.",
+    "alternatives": [
+      {
+        "name": "ElevenLabs Free",
+        "url": "https://elevenlabs.io/pricing",
+        "note": "10,000 credits a month at no cost for testing voices."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Write and approve all scripts first, subscribe to Creator for one month, generate and download every voice track, then cancel. Use the free 10,000-credit plan for tests in the months between.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Log in at elevenlabs.io, open your profile menu, choose Subscription, then Billing. In the Modify Plan section select Cancel Plan, then Proceed, then Cancel Subscription. It takes effect at the end of the cycle and you can resume before then.",
+        "url": "https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription",
+        "gotchas": "Unused credits are lost when the plan ends and the account moves to the free plan. Intro prices ($1 Starter, $11 Creator for the first month) jump to $6 and $22 on renewal. A subscription bought through an app store has to be cancelled in that store."
+      }
+    },
+    "sources": [
+      "https://elevenlabs.io/pricing",
+      "https://elevenlabs.io/docs/help-center/account/cancellation-refunds/how-do-i-cancel-my-subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "category": "ai",
+    "url": "https://www.descript.com",
+    "match": {
+      "patterns": [
+        "DESCRIPT(?![A-Z])"
+      ],
+      "examples": [
+        "DESCRIPT.COM SAN FRANCISCO CA",
+        "DESCRIPT INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 24,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Text-based video and podcast editing is software Claude cannot replace. Pay monthly for production weeks, then drop to the free plan between projects. Hobbyist is $24 monthly or $16 billed yearly.",
+    "alternatives": [
+      {
+        "name": "Descript Free",
+        "url": "https://www.descript.com/pricing",
+        "note": "Free plan with text-based editing and a limited set of AI tools; check the current media-hour and export limits."
+      },
+      {
+        "name": "DaVinci Resolve (free)",
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+        "note": "Free, full-featured video editor with a steeper learning curve and no per-minute fees."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Batch your editing: record several episodes, subscribe to Hobbyist for the month you edit, export everything, then downgrade to Free until the next batch. Your existing projects stay accessible after the downgrade.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Log in at web.descript.com or open the desktop app, open App Settings (Ctrl or Cmd + comma), pick the right Drive, go to the Plan tab, click Change plan and choose Downgrade to Free. Pick a reason and click Cancel subscription. The paid plan runs to the end of the billing cycle.",
+        "url": "https://help.descript.com/billing-payments-plans/cancel",
+        "gotchas": "Each Drive has its own separately billed plan, so a second Drive on an old card keeps charging. Support only processes cancellations from the Drive owner's email. Leaving a legacy plan means you cannot return to it."
+      }
+    },
+    "sources": [
+      "https://www.descript.com/pricing",
+      "https://help.descript.com/billing-payments-plans/cancel",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "character-ai",
+    "name": "Character.AI (c.ai+)",
+    "category": "ai",
+    "url": "https://character.ai",
+    "match": {
+      "patterns": [
+        "CHARACTER ?\\.? ?AI",
+        "CHARACTER TECHNOLOGIES"
+      ],
+      "examples": [
+        "CHARACTER.AI C.AI+ SUBSCRIPTION",
+        "CHARACTER TECHNOLOGIES INC"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "c.ai+"
+        },
+        {
+          "amount": 94.99,
+          "cadence": "annual",
+          "plan": "c.ai+ annual"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "absorb",
+      "cancel"
+    ],
+    "why": "The company filed Chapter 11 in Oct 2026 and a sale or wind-down is pending. If you use it, stay month-to-month and never prepay a year; Claude can stand in for private persona chat.",
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Persona and roleplay chat through a Project that holds a character brief, with memory across chats and a voice mode for spoken conversation.",
+        "howTo": "Create a Claude Project per character, paste the description, speech style, backstory and ground rules, and start each session in that Project. Ask for a short story-so-far recap now and then to keep continuity.",
+        "limits": "No library of community characters, no character voices or images, no group chats, and Anthropic's usage policies apply to roleplay content. It is a different experience, not an exact copy.",
+        "prompt": "Set up a recurring character for me in this Project. Name: [name]. Personality: [traits]. How they talk: [style, quirks, example lines]. Backstory: [short]. Our relationship: [for example mentor, friend, rival or crew mate]. Ground rules: stay in character unless I type OOC, keep continuity with earlier events in this Project, keep scenes PG-13, and never claim to be human if I sincerely ask. Start with a short scene where we first meet, then ask me one question to continue. Every few sessions, write a ten-line story-so-far recap that I can paste back in."
+      },
+      "cancel": {
+        "howTo": "Bought on the website: Settings, Account, Manage, then use the Customer Portal link emailed to your account address. Bought in the app: cancel in the App Store or Google Play subscriptions.",
+        "url": "https://support.character.ai/hc/en-us/articles/17399592326555-How-do-I-manage-or-cancel-my-c-ai-subscription",
+        "gotchas": "Cancellation is handled in the Customer Portal or the app store, not in the chat itself. The portal link arrives by email, so check spam. Store purchases are refunded only by Apple or Google. The Oct 2026 notice says billing is unchanged for now."
+      }
+    },
+    "sources": [
+      "https://character.ai/subscribe",
+      "https://blog.character.ai/an-update-on-character-ai/",
+      "https://support.character.ai/hc/en-us/articles/17399592326555-How-do-I-manage-or-cancel-my-c-ai-subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "poe",
+    "name": "Poe",
+    "category": "ai",
+    "url": "https://poe.com",
+    "match": {
+      "patterns": [
+        "POE\\.COM",
+        "QUORA.{0,60}POE",
+        "POE SUBSCRIPTION"
+      ],
+      "examples": [
+        "POE.COM QUORA INC MOUNTAIN VIEW CA",
+        "POE SUBSCRIPTION"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Poe (660,000 points a month)"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "Poe (annual)"
+        }
+      ]
+    },
+    "typicalMonthly": 19.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Poe resells many vendors' models for about $20. If you mostly use one or two top models, Claude Pro gives chat, coding and research directly; Poe only wins for comparing models side by side.",
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Chat, writing, coding, document analysis, web search and Research on Claude's models, with Projects, memory and voice mode.",
+        "howTo": "List the three bots you use most on Poe, run the same prompts in Claude for a week, and keep notes on which answers you prefer. Cancel Poe if Claude wins on your own tasks.",
+        "limits": "No single place to compare other vendors' models, no image or video bots, no community-made bots, and different usage rules: Poe uses a monthly points pool while Claude uses five-hour and weekly limits.",
+        "prompt": "I currently use Poe to chat with several AI models. My three most common uses are: [use 1], [use 2], [use 3]. For each, here is a recent prompt I sent and the kind of answer I want: [paste]. Answer each prompt now, as well as you can. Then tell me honestly what you would do differently if I wanted a second opinion from a different model, and which of my uses depend on features Claude does not have, such as image generation or access to other vendors' models. End with a one-paragraph recommendation on whether Claude Pro can replace Poe for me."
+      },
+      "cancel": {
+        "howTo": "If you subscribed on the web, open Settings and choose Manage your subscription, which opens Stripe's customer portal. If you subscribed in the iPhone or Android app, cancel in the Apple or Google subscriptions list.",
+        "url": "https://help.poe.com/hc/en-us/articles/19945140063636-Poe-Purchases-FAQs",
+        "gotchas": "Cancel the day before your renewal date. The yearly plan is $199.99 upfront. A subscription started in an app is managed only through Apple or Google, so Poe's Settings will tell you which store to use if Manage your subscription is missing."
+      }
+    },
+    "sources": [
+      "https://poe.com/subscription_plans",
+      "https://help.poe.com/hc/en-us/articles/19945140063636-Poe-Purchases-FAQs",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "ai",
+    "url": "https://cursor.com",
+    "match": {
+      "patterns": [
+        "CURSOR.{0,3}AI POWERED",
+        "ANYSPHERE",
+        "CURSOR\\.COM"
+      ],
+      "examples": [
+        "CURSOR, AI POWERED IDE CURSOR.COM NY",
+        "ANYSPHERE INC NEW YORK NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 30,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "Claude Code comes with Claude Pro and runs in your terminal, VS Code and JetBrains. You lose Cursor's inline Tab completions. Cursor restructured its plans in 2026, so check which one you pay for.",
+    "alternatives": [
+      {
+        "name": "Cursor Free",
+        "url": "https://cursor.com/pricing",
+        "note": "Free tier with limited agent and chat requests."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Multi-file edits, refactors, test writing, debugging and repo questions through Claude Code in the terminal, in VS Code (and its forks) and in JetBrains IDEs, using the same Claude login.",
+        "howTo": "Install Claude Code, run `claude` in your repository and sign in with your Claude account. Keep your editor and add the Claude Code extension for diffs. Move your Cursor rules into a CLAUDE.md file in the repo root.",
+        "limits": "Claude Code runs cloud and scheduled tasks on Pro, but there is no Cursor Tab inline autocomplete and no Cursor-style editor agent UI, and Claude Code shares the same five-hour and weekly limits as Claude chat. If you used other vendors' models in Cursor, you lose them.",
+        "prompt": "Read this repository and write a CLAUDE.md that captures what a new engineer needs: how to run, test and lint; a folder map; and the conventions I currently keep as Cursor rules: [paste .cursorrules or .cursor/rules]. List anything I should never touch. Then run the test suite and report failures. Next, for the task \"[describe the feature or bug]\", propose a five-step plan and wait for my approval. After approval, implement in small commits with tests and explain each changed file in one line. If a step is risky, such as migrations, deletions or secrets, stop and ask first. Keep diffs minimal and do not reformat unrelated code."
+      },
+      "cancel": {
+        "howTo": "Sign in at cursor.com, open your dashboard billing page and choose Manage subscription. Cancel at least 24 hours before renewal; your plan runs to the end of the period.",
+        "url": "https://cursor.com/dashboard",
+        "gotchas": "Current plans are Plus ($8), Premium ($30), Super ($100) and Ultra ($200); older Hobby, Pro and Pro+ plans still work for existing subscribers. Third-party model usage bills separately from prepaid credit. Cursor is now sold as part of the X Subscription (Grok, Cursor and X). That charge reads X SUBSCRIPTION CORP and is matched to X Premium here; cancelling the bundle ends Cursor, Grok and X Premium together."
+      }
+    },
+    "sources": [
+      "https://cursor.com/pricing",
+      "https://cursor.com/docs/models-and-pricing",
+      "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "category": "ai",
+    "url": "https://github.com/features/copilot",
+    "match": {
+      "patterns": [
+        "GITHUB.{0,12}COPILOT"
+      ],
+      "examples": [
+        "GITHUB COPILOT SAN FRANCISCO CA",
+        "GITHUB, INC. COPILOT INDIVIDUAL"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 100,
+          "cadence": "annual",
+          "plan": "Copilot Pro, billed yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Copilot Pro is $10 and Copilot Free gives 2,000 completions a month. Inline completions have no Claude equivalent, so keep it or drop to Free. Claude Code covers agent-style work, but it does not replace Copilot.",
+    "alternatives": [
+      {
+        "name": "Copilot Free",
+        "url": "https://github.com/features/copilot/plans",
+        "note": "2,000 completions a month at no cost."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In GitHub open Settings, then Billing and licensing, and in the GitHub Copilot section use the Manage subscription menu to cancel or downgrade. You keep your features until the billing cycle ends, then drop to Copilot Free.",
+        "url": "https://docs.github.com/en/copilot/how-tos/manage-your-account/view-and-change-your-copilot-plan",
+        "gotchas": "Copilot Free costs nothing and keeps 2,000 completions a month, so downgrade instead of losing everything. Pro is free for verified students, teachers and maintainers of popular open source projects; check eligibility before paying. Pro+ ($39) and Max ($100) are separate tiers."
+      }
+    },
+    "sources": [
+      "https://github.com/features/copilot/plans",
+      "https://docs.github.com/en/copilot/get-started/plans",
+      "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan",
+      "https://docs.github.com/en/copilot/how-tos/manage-your-account/view-and-change-your-copilot-plan",
+      "https://docs.github.com/en/copilot/concepts/billing/billing-for-individuals"
+    ]
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "category": "ai",
+    "url": "https://gamma.app",
+    "match": {
+      "patterns": [
+        "GAMMA\\.APP",
+        "GAMMA TECHNOLOGIES"
+      ],
+      "examples": [
+        "GAMMA.APP SAN FRANCISCO CA",
+        "GAMMA TECHNOLOGIES INC"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude Pro builds slide decks and documents from a prompt, which is Gamma's job. Gamma wins on one-click visual themes, image layouts and web-style cards.",
+    "alternatives": [
+      {
+        "name": "Gamma Free",
+        "url": "https://gamma.app",
+        "note": "New accounts start with 400 credits, no monthly refresh."
+      },
+      {
+        "name": "Google Slides",
+        "url": "https://workspace.google.com/products/slides/",
+        "note": "Free slide editor to finish decks Claude drafts."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Builds full slide decks and documents from a brief, writes speaker notes, and creates presentation and document files. Slides and Docs creation are listed in Claude's plans.",
+        "howTo": "Give Claude the audience, goal and source material, approve an outline, then ask for the finished deck as a file. Save your brand colors and tone in a Claude Project so every deck matches.",
+        "limits": "Less automatic visual polish than Gamma's themes and generated images, no one-click web publishing or view analytics, and you finish layout tweaks in PowerPoint or Slides.",
+        "prompt": "Build me a [10]-slide deck for [audience] on [topic], with this goal: [decision or action I want]. Structure: one title slide, one slide that states the problem in a single sentence, [5 or 6] content slides that each have one claim as the headline and at most three bullets, one next-steps slide with owners and dates, and one appendix slide for sources. Style: [brand colors or plain and modern], large type, one idea per slide. Write two or three sentences of speaker notes per slide. Use only facts I supply or that you can cite, and mark guesses with [CHECK]. Deliver the deck as a file I can open in PowerPoint."
+      },
+      "cancel": {
+        "howTo": "Open Settings, choose Manage subscription in Stripe and follow the cancellation steps. Your plan stays active until the end of the billing period.",
+        "url": "https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription",
+        "gotchas": "Paid plans are per user, so every workspace member is billed separately. Annual plans are discounted about 28% and billed upfront. Plan credits end with the billing cycle; credits you bought separately stay for a year after you cancel."
+      }
+    },
+    "sources": [
+      "https://gamma.app/pricing",
+      "https://help.gamma.app/en/articles/8077107-how-can-i-upgrade-my-gamma-subscription",
+      "https://help.gamma.app/en/articles/8568920-how-do-i-manage-or-cancel-my-gamma-subscription",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "category": "ai",
+    "url": "https://www.beautiful.ai",
+    "match": {
+      "patterns": [
+        "BEAUTIFUL ?\\.? ?AI"
+      ],
+      "examples": [
+        "BEAUTIFUL.AI SAN FRANCISCO CA",
+        "BEAUTIFUL.AI PRO ANNUAL"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 14.5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude Pro drafts decks and documents. Beautiful.ai's smart templates mainly save layout time. Pro is sold annually and the trial needs a card, so watch the date.",
+    "alternatives": [
+      {
+        "name": "Google Slides",
+        "url": "https://workspace.google.com/products/slides/",
+        "note": "Free editor for finishing a deck Claude drafts."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Drafts a deck outline, slide copy and speaker notes, and creates a presentation file from your brief. Slides and Docs creation are listed in Claude's plans.",
+        "howTo": "Paste your content or notes into Claude, approve an outline, and ask for the deck as a file. Open it in PowerPoint or Slides to adjust layout. Export any existing Beautiful.ai decks to PowerPoint before cancelling.",
+        "limits": "No automatic smart-slide layouts that re-flow as you edit, no brand-locked template library, and no shared team workspace. You do more manual layout work.",
+        "prompt": "I am replacing Beautiful.ai. Turn the notes below into a [12]-slide deck for [audience]. First give me an outline with one headline per slide and a one-line purpose for each, and wait for my approval. After approval, write slide copy with at most 25 words per slide plus a suggested visual (chart type, diagram or photo idea) for each, and two sentences of speaker notes. Keep consistent terms and number formats. Suggest where a chart would beat bullets. Mark any figure that comes from me versus anything you inferred. Then produce the deck as a file for PowerPoint. Notes: [paste]."
+      },
+      "cancel": {
+        "howTo": "Sign in, open your account billing settings and cancel the plan before the renewal date. If you started a free trial, cancel before it ends.",
+        "gotchas": "The 14-day free trial requires a card and charges in full if you do not cancel before it ends. Pro is advertised at $14.50 a month billed annually, about $174 charged upfront, with no monthly option listed."
+      }
+    },
+    "sources": [
+      "https://www.beautiful.ai/pricing",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "speechify",
+    "name": "Speechify",
+    "category": "ai",
+    "url": "https://speechify.com",
+    "match": {
+      "patterns": [
+        "SPEECHIFY"
+      ],
+      "examples": [
+        "SPEECHIFY.COM MIAMI FL",
+        "SPEECHIFY INC PREMIUM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 11.58,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Reading text aloud is not a Claude feature. A free in-browser reader using open Kokoro voices covers solo use; you give up Speechify's most natural voices and its page-scanning app.",
+    "alternatives": [
+      {
+        "name": "Speechify Free",
+        "url": "https://speechify.com/pricing/",
+        "note": "Free plan with basic text-to-speech."
+      },
+      {
+        "name": "Kokoro TTS",
+        "url": "https://github.com/hexgrad/kokoro",
+        "note": "Open-source text-to-speech model with browser builds."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "An installable web app that reads pasted text, PDFs and EPUBs aloud with sentence highlighting, speed control, a reading queue and saved position. Voices come from Kokoro running in the browser, with built-in browser voices as fallback.",
+        "hours": 12,
+        "runsOn": "A static PWA on GitHub Pages or Cloudflare Pages, with your library in IndexedDB. Works offline after the first load. The quantized voice model downloads once (under 100 MB).",
+        "ongoingCostYear": 0,
+        "youLose": "Speechify's most natural and celebrity voices, camera scanning of printed pages, word-level highlighting with Kokoro voices, perfect sync between phone and desktop, and polished background audio on iOS. Browser voices are noticeably more robotic.",
+        "prompt": "Build an installable PWA called ReadAloud with Vite and TypeScript and no backend. Features: (1) paste text, or open a PDF (pdf.js) or EPUB (epub.js) from my device, (2) read aloud with kokoro-js using WebGPU when available and WASM otherwise, falling back to the Web Speech API, (3) sentence-level highlighting that follows the audio, with word-level highlighting only in the Web Speech fallback, (4) speed from 0.75x to 2x, skip sentence, a sleep timer and a reading queue, (5) a library in IndexedDB that saves my position per document, (6) Media Session controls so lock-screen buttons work. Synthesize one sentence ahead so playback does not stall. Add an offline service worker, Playwright tests for load, paste and play, and a GitHub Action that deploys to GitHub Pages. Document the iOS Safari limits honestly in the README."
+      },
+      "cancel": {
+        "howTo": "On the web, open your Speechify account settings and choose Manage subscription. If you subscribed through the iPhone or Android app, cancel in the Apple or Google subscriptions list.",
+        "gotchas": "Premium is $29 a month or $139 billed yearly, and the yearly plan renews automatically at the full price. Free trials convert to paid unless cancelled, so set a reminder. App store purchases cannot be cancelled on speechify.com."
+      }
+    },
+    "sources": [
+      "https://speechify.com/pricing/",
+      "https://github.com/hexgrad/kokoro"
+    ]
+  },
+  {
+    "id": "jenni-ai",
+    "name": "Jenni AI",
+    "category": "ai",
+    "url": "https://jenni.ai",
+    "match": {
+      "patterns": [
+        "JENNI ?\\.? ?AI"
+      ],
+      "examples": [
+        "JENNI.AI SUBSCRIPTION",
+        "JENNI AI PLUS"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude Pro drafts, edits and restructures papers. Jenni's edge is citation search over real papers; Claude can invent references, so verify every citation yourself.",
+    "alternatives": [
+      {
+        "name": "Zotero",
+        "url": "https://www.zotero.org",
+        "note": "Free reference manager for collecting and formatting real citations."
+      },
+      {
+        "name": "Jenni Free",
+        "url": "https://jenni.ai/pricing",
+        "note": "Limited free autocompletes, chat and PDF uploads."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Outlines, drafts, rewrites and critiques academic writing, summarizes papers you upload, and builds arguments and counterarguments from sources you provide.",
+        "howTo": "Collect real sources in Zotero first. Upload the PDFs or paste abstracts into a Claude Project, then draft section by section using only those sources. Verify every citation in Google Scholar before submitting.",
+        "limits": "No built-in database of papers with one-click citations, so Claude can produce references that do not exist unless you supply the sources. Check your institution's AI-use rules before submitting AI-assisted text.",
+        "prompt": "Act as my academic writing partner for a paper on [topic] for [course or journal]. Do not invent citations. Step 1: propose a thesis, a section outline with word targets, and the three strongest counterarguments. Step 2: for each section, write a draft using only the sources I paste below, and mark any claim those sources do not support as [NEEDS SOURCE]. Step 3: list the search terms I should use in Google Scholar to fill the gaps. Match my voice, using this sample paragraph: [paste]. Follow [APA or MLA] style. Sources: [paste abstracts or excerpts]."
+      },
+      "cancel": {
+        "howTo": "Sign in, open Settings and Billing, and cancel the subscription. Check your email for the confirmation.",
+        "gotchas": "The pricing page shows Plus at $12 and Pro at $29 with a monthly or annual toggle, so confirm which one you were charged. Annual plans bill the full year upfront."
+      }
+    },
+    "sources": [
+      "https://jenni.ai/pricing",
+      "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "chatpdf",
+    "name": "ChatPDF",
+    "category": "ai",
+    "url": "https://www.chatpdf.com",
+    "match": {
+      "patterns": [
+        "CHATPDF"
+      ],
+      "examples": [
+        "CHATPDF.COM",
+        "CHATPDF PLUS SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude accepts PDFs of up to 1,000 pages and answers questions about them, which is ChatPDF's whole job. Claude Pro does this and everything else for $20.",
+    "alternatives": [
+      {
+        "name": "ChatPDF Free",
+        "url": "https://www.chatpdf.com/",
+        "note": "Free plan with daily limits; check the site for the current caps."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Upload PDFs (500 MB per file, up to 20 files per chat, up to 1,000 pages), ask questions with page references, compare several documents in one chat, and keep a document set in a Project (Project files are limited to 30 MB each).",
+        "howTo": "Attach the PDF to a chat, or add it to a Project to keep asking about it later. Ask for answers with a quote and page number each time so you can check them.",
+        "limits": "PDFs over 100 pages are read as text only, so charts and images in long files are not analysed, and scanned PDFs without a text layer lose detail. Very long files may exceed the conversation length, so split them or use a Project. Usage is limited per five hours and per week.",
+        "prompt": "I am attaching a PDF called [document name]. Answer only from the document. First give me a ten-line summary and a table of contents with page numbers. Then answer these questions, each with a direct quote and page number: [question 1], [question 2], [question 3]. If the document does not answer a question, say so rather than guessing. Finally list any numbers, dates or definitions that look inconsistent across pages, and the five terms a newcomer must understand. Do not use outside knowledge unless I ask, and label anything you add from outside the PDF."
+      },
+      "cancel": {
+        "howTo": "Sign in to your ChatPDF account, open the subscription or billing page and cancel the Plus plan. If you cannot find it, email support@chatpdf.com from your account address.",
+        "gotchas": "Check whether you were billed monthly or yearly before cancelling, since a yearly plan bills once upfront. Account deletion does not necessarily stop billing, so cancel first."
+      }
+    },
+    "sources": [
+      "https://www.chatpdf.com/",
+      "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "claude-pro",
+    "name": "Claude Pro",
+    "category": "ai",
+    "url": "https://claude.ai",
+    "match": {
+      "patterns": [
+        "CLAUDE\\.?AI SUBSCRIPTION",
+        "CLAUDE PRO",
+        "ANTHROPIC.{0,60}CLAUDE(?!.{0,60}MAX)"
+      ],
+      "examples": [
+        "CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM CA",
+        "ANTHROPIC CLAUDE PRO SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 200,
+          "cadence": "annual",
+          "plan": "Pro, yearly billing"
+        }
+      ]
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "why": "The engine behind every ABSORB verdict here. $20 monthly or $200 billed yearly: Claude Code, Research, Projects, memory, voice, and Slides and Docs creation. Max and Pro may share one descriptor.",
+    "alternatives": [
+      {
+        "name": "Claude Free",
+        "url": "https://claude.com/pricing",
+        "note": "Limited usage, with chat, web search, memory and Projects (up to 5)."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "On the web or desktop: Settings, then Billing, then Cancel. On iOS tap your initials, choose Billing, then Manage subscription. Android works the same way, or use Google Play.",
+        "url": "https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription",
+        "gotchas": "Cancellation takes effect at the end of the paid period, so cancel at least 24 hours before renewal. The yearly plan ($200 upfront) runs to the end of the year. Refund requests go through Get help on claude.ai, and an App Store refund does not cancel the subscription."
+      }
+    },
+    "sources": [
+      "https://claude.com/pricing",
+      "https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription",
+      "https://support.claude.com/en/articles/12386328-request-a-refund-for-a-paid-claude-plan",
+      "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan",
+      "https://support.claude.com/en/articles/8241126-upload-files-to-claude"
+    ]
+  },
+  {
+    "id": "claude-max",
+    "name": "Claude Max",
+    "category": "ai",
+    "url": "https://claude.ai",
+    "match": {
+      "patterns": [
+        "CLAUDE\\.?AI MAX",
+        "CLAUDE MAX"
+      ],
+      "examples": [
+        "CLAUDE.AI MAX SUBSCRIPTION ANTHROPIC.COM CA",
+        "ANTHROPIC CLAUDE MAX SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 100,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "why": "Max is 5x Pro usage for $100 a month. Worth it only if you hit Pro's five-hour or weekly limits every week; otherwise move down to Pro and save $960 a year.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open Settings, then Billing on the web or desktop app and click Cancel. Anthropic's help pages do not describe a self-serve move from Max to Pro, so to downgrade, cancel and subscribe to Pro when the period ends, or ask Get help in the app. On iOS use Billing, then Manage subscription.",
+        "url": "https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription",
+        "gotchas": "Cancellation takes effect at the end of the current billing period. Cancel on the platform where you subscribed. Max includes $100 a month in Claude Platform API credits, so check you are not relying on them. Ultra is a separate $200 tier."
+      }
+    },
+    "sources": [
+      "https://claude.com/pricing",
+      "https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription",
+      "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan"
+    ]
+  },
+  {
+    "id": "replika",
+    "name": "Replika Pro",
+    "category": "ai",
+    "url": "https://replika.com",
+    "match": {
+      "patterns": [
+        "REPLIKA",
+        "LUKA,? INC"
+      ],
+      "examples": [
+        "REPLIKA PRO",
+        "LUKA INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A companion app: the avatar, AR and voice are the product, Claude cannot copy them, and its usage policies limit intimate roleplay. Not therapy; if you rely on it for support, call or text 988 or see a professional.",
+    "plans": {
+      "cancel": {
+        "howTo": "If you subscribed in the iPhone or Android app, cancel in the App Store or Google Play subscriptions list. If you subscribed on the web, use the subscription section of your account settings.",
+        "gotchas": "Deleting the app or your account does not cancel an app store subscription. Check whether your plan is monthly, annual or lifetime before cancelling."
+      }
+    },
+    "sources": [
+      "https://replika.com/",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "category": "ai",
+    "url": "https://suno.com",
+    "match": {
+      "patterns": [
+        "\\bSUNO\\W{0,2}(INC|COM|AI|PRO|PREMIER)\\b"
+      ],
+      "examples": [
+        "SUNO INC CAMBRIDGE MA",
+        "SUNO.COM PRO PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Song generation is outside Claude. Credits are monthly, so pay only while you are making songs, and read the commercial-rights terms before you cancel.",
+    "alternatives": [
+      {
+        "name": "Suno Free",
+        "url": "https://suno.com/pricing",
+        "note": "A free daily credit allowance; check Suno's terms for what the free plan lets you publish."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Write lyrics and song briefs first. Subscribe to Pro ($10 monthly, $8 billed yearly) for one month, generate and download every song you want, then cancel. Use the free daily credits between projects.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Open your Suno account page, choose Manage subscription and cancel. The plan keeps working until the end of the billing period.",
+        "gotchas": "Check the pricing FAQ for what happens to unused monthly credits and to top-up credits when you cancel. Read the commercial-use terms before you publish songs made on a paid plan after cancelling."
+      }
+    },
+    "sources": [
+      "https://suno.com/pricing",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "udio",
+    "name": "Udio",
+    "category": "ai",
+    "url": "https://www.udio.com",
+    "match": {
+      "patterns": [
+        "\\bUDIO\\b"
+      ],
+      "examples": [
+        "UDIO.COM STANDARD",
+        "UDIO PRO SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Music generation is outside Claude. Udio's monthly credits do not roll over, so subscribe only while you are making songs and use the free daily credits in between.",
+    "alternatives": [
+      {
+        "name": "Udio Free",
+        "url": "https://www.udio.com/pricing",
+        "note": "Free plan: 10 credits a day and 100 a month, with no rollover."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Draft lyrics and style notes first, subscribe to Standard ($10 monthly, $8 a month billed yearly) for one month when you are ready to generate, download what you want, then cancel. Use the free daily credits in between.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at udio.com, open your account or subscription settings and choose Manage subscription, then cancel. If you subscribed in an app store, cancel there.",
+        "gotchas": "Monthly credits have no rollovers. Extra credits (100 for $3, 1,000 for $25) are sold separately. Check the plan page for current download and commercial-use terms before you publish songs."
+      }
+    },
+    "sources": [
+      "https://udio.com/pricing",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo.ai",
+    "category": "ai",
+    "url": "https://leonardo.ai",
+    "match": {
+      "patterns": [
+        "LEONARDO ?\\.? ?AI"
+      ],
+      "examples": [
+        "LEONARDO.AI SYDNEY AU",
+        "LEONARDO AI PREMIUM PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Image generation is outside Claude. Leonardo has a free tier (150 tokens a day) and paid tiers (Essential, Premium, Ultimate), so pay only for the months you create.",
+    "alternatives": [
+      {
+        "name": "Leonardo Free",
+        "url": "https://leonardo.ai",
+        "note": "Free plan: 150 fast tokens a day."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Collect your prompts and reference images, subscribe for the month you produce assets, download everything in full resolution, then cancel so it ends at renewal.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in, open your account or subscription settings, choose Manage subscription and cancel. The Leonardo help center lists billing steps under Account Management.",
+        "url": "https://intercom.help/leonardo-ai/en/",
+        "gotchas": "Paid plans include a token bank for unused monthly tokens, so check what you lose before cancelling. If you subscribed through an app store, cancel there. The pricing page toggles between yearly and monthly billing."
+      }
+    },
+    "sources": [
+      "https://leonardo.ai/pricing",
+      "https://intercom.help/leonardo-ai/en/",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "ideogram",
+    "name": "Ideogram",
+    "category": "ai",
+    "url": "https://ideogram.ai",
+    "match": {
+      "patterns": [
+        "IDEOGRAM"
+      ],
+      "examples": [
+        "IDEOGRAM.AI PLUS",
+        "IDEOGRAM AI SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Ideogram's strength is readable text inside generated images, which Claude cannot make. Plus is $20 a month ($180 billed yearly), so subscribe for the months you need images and cancel after.",
+    "plans": {
+      "rotate": {
+        "pattern": "Prepare prompts for posters, logos or social graphics, subscribe to Plus for a single month to generate them in bulk, download the results, then cancel.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in, open your account or subscription settings and choose Manage subscription to cancel. See docs.ideogram.ai for the current billing steps.",
+        "url": "https://docs.ideogram.ai/",
+        "gotchas": "Credits are tied to the plan, and purchased extra credits are handled separately from the subscription. Plus is $20 monthly or $180 billed annually."
+      }
+    },
+    "sources": [
+      "https://ideogram.ai/pricing",
+      "https://docs.ideogram.ai/",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "krea",
+    "name": "Krea",
+    "category": "ai",
+    "url": "https://www.krea.ai",
+    "match": {
+      "patterns": [
+        "KREA ?\\.? ?AI"
+      ],
+      "examples": [
+        "KREA.AI SAN FRANCISCO CA",
+        "KREA AI PRO PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Krea's real-time image and video tools have no Claude equivalent. Paid plans are monthly (Basic $9, Pro $35, Max $105), so subscribe for project months and use Free otherwise.",
+    "alternatives": [
+      {
+        "name": "Krea Free",
+        "url": "https://www.krea.ai/pricing",
+        "note": "Free plan: 100 units a day."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Line up your reference images and prompts, subscribe to Basic for a month, generate and upscale everything you need, then cancel. Annual billing is 40% cheaper per month but only pays off if you use it all year.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in, open Settings and Billing, then manage or cancel the subscription. The plan runs until the end of the paid period.",
+        "gotchas": "Yearly billing is 40% cheaper per month (Basic is $5 against $9) but is charged upfront. Confirm which one you were charged."
+      }
+    },
+    "sources": [
+      "https://www.krea.ai/pricing",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "replit-core",
+    "name": "Replit Core",
+    "category": "ai",
+    "url": "https://replit.com",
+    "match": {
+      "patterns": [
+        "REPLIT"
+      ],
+      "examples": [
+        "REPLIT, INC. SAN FRANCISCO CA",
+        "REPLIT.COM CORE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Claude Code builds the same apps in your own repository, and it comes with Claude Pro. You give up Replit's one-click hosting and database; free tiers on Vercel or Cloudflare cover most hobby apps.",
+    "alternatives": [
+      {
+        "name": "Replit free plan",
+        "url": "https://replit.com/pricing",
+        "note": "Keeps the browser editor for small projects."
+      }
+    ],
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Plans, writes and debugs full applications (front end, back end, database schema) with Claude Code in your terminal or editor, then helps you deploy to a free host.",
+        "howTo": "Clone or download your Replit project, open the folder, and run `claude` there. Ask it to document the stack and environment variables, then move hosting to a free tier on Vercel, Netlify or Cloudflare Pages.",
+        "limits": "No browser IDE, one-click hosting, built-in database or live multiplayer editing; you set up git, hosting and secrets yourself. Replit Agent's autonomous build loop is not identical to Claude Code's workflow.",
+        "prompt": "Help me move my Replit project to a local repository and free hosting. Step 1: inspect the project files and describe the stack, the environment variables I must recreate, and any Replit-only services (ReplDB, Replit Auth, Object Storage) with a replacement for each. Step 2: create a git repo, a README with run steps, a .env.example and a CLAUDE.md. Step 3: propose a migration plan to Vercel, Netlify or Cloudflare Pages plus a free-tier database such as Supabase, Turso or SQLite, and wait for my approval. Step 4: implement it, run the tests, and give me a deploy checklist. Do not delete anything from the original project."
+      },
+      "cancel": {
+        "howTo": "Sign in, open your account settings and the Subscription or Billing section, then cancel the plan. It stays active until the end of the billing period.",
+        "gotchas": "Core is $20 a month, or $18 a month billed annually. Usage beyond the included credit can bill separately, so check your usage page before cancelling. Download or export your projects first."
+      }
+    },
+    "sources": [
+      "https://replit.com/pricing",
+      "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "mistral-le-chat-pro",
+    "name": "Mistral Pro (Le Chat / Vibe)",
+    "category": "ai",
+    "url": "https://chat.mistral.ai",
+    "match": {
+      "patterns": [
+        "MISTRAL ?\\.? ?AI",
+        "LE CHAT PRO"
+      ],
+      "examples": [
+        "MISTRAL AI PARIS FR",
+        "LE CHAT PRO MISTRAL.AI"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "absorb",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Mistral Pro duplicates Claude for chat and coding help. Keep it only if you prefer Mistral's models or use the monthly API credit that comes with it.",
+    "plans": {
+      "absorb": {
+        "claudeDoes": "Chat, writing, coding with Claude Code, document analysis, web search and Research, with Projects, memory and connectors.",
+        "howTo": "Run your usual Le Chat prompts in Claude for a week. If you use the included API credit, check whether you still need it, since Claude Max also includes API credits but at a much higher price.",
+        "limits": "Different model strengths and style, no Mistral API credit, and Claude's plans list no image generation, so you lose Le Chat's image tools. Usage is capped per five hours and per week.",
+        "prompt": "I currently pay for Mistral Le Chat Pro and want to know whether Claude can replace it. My typical uses are: [list]. Here are three real prompts I used recently, with what I wanted back: [paste]. Answer each now. Then list anything I use Le Chat for that depends on its own features, such as image generation or the monthly API credit, and tell me the cheapest way to keep each one. End with a recommendation: keep Le Chat Pro, drop to its free plan, or cancel, with the reason in two sentences."
+      },
+      "cancel": {
+        "howTo": "Sign in to your Le Chat or Mistral account, open the subscription or billing settings and cancel the Pro plan. Access continues until the end of the paid period.",
+        "gotchas": "The listed price ($14.99) excludes taxes. The Pro plan bundles a monthly API credit, which you lose on cancelling. Check whether you subscribed through the web or an app store."
+      }
+    },
+    "sources": [
+      "https://mistral.ai/pricing",
+      "https://claude.com/pricing"
+    ]
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "category": "ai",
+    "url": "https://www.heygen.com",
+    "match": {
+      "patterns": [
+        "HEYGEN"
+      ],
+      "examples": [
+        "HEYGEN TECHNOLOGY INC LOS ANGELES CA",
+        "HEYGEN.COM CREATOR"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 29,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "AI avatar video is outside Claude. Creator is $29 monthly or $24 a month billed yearly: render videos in a batch, then cancel and use the free plan until the next batch.",
+    "alternatives": [
+      {
+        "name": "HeyGen Free",
+        "url": "https://www.heygen.com/pricing",
+        "note": "Free plan: 3 watermarked videos a month, up to one minute each."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Write all scripts first, subscribe for one month, render and download every video, then cancel. Annual plans advertise two months free but only pay off if you make video all year.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in, open Settings and Billing, and cancel the plan. If you do not see the option, contact HeyGen support from the same page.",
+        "gotchas": "Annual billing is charged upfront. Adding team members may move you to business pricing, so check the Businesses tab before adding seats. Download your videos before cancelling."
+      }
+    },
+    "sources": [
+      "https://www.heygen.com/pricing",
+      "https://claude.com/pricing"
+    ]
+  }
+]

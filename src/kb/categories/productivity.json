@@ -1,0 +1,2128 @@
+[
+  {
+    "id": "notion-plus",
+    "name": "Notion (Plus)",
+    "category": "productivity",
+    "url": "https://www.notion.com",
+    "match": {
+      "patterns": [
+        "NOTION\\.SO|NOTION\\.COM|NOTION LABS"
+      ],
+      "examples": [
+        "NOTION LABS, INC.",
+        "NOTION.SO SAN FRANCISCO CA",
+        "NOTION LABS INC NOTION.SO CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A solo workspace often fits the Free plan. Plus mainly adds bigger uploads and longer page history. Nothing Claude builds in a weekend replaces Notion's databases, so keep it if you use them.",
+    "alternatives": [
+      {
+        "name": "Notion Free plan",
+        "url": "https://www.notion.com/pricing",
+        "note": "Same app, no cost. Check your file sizes and history needs first."
+      },
+      {
+        "name": "Obsidian",
+        "url": "https://obsidian.md",
+        "note": "Free for personal use; notes are plain Markdown files on your devices."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Workspace owner only: open Settings in the sidebar, then Billing, then Change plan, choose Free and confirm. The downgrade takes effect at the end of the billing cycle, and the confirmation shows the end date.",
+        "url": "https://www.notion.com/help/upgrade-or-downgrade-your-plan",
+        "gotchas": "Only workspace owners can see or change plans. Removing members lowers the bill at the next cycle, not mid-cycle. Notion refunds in full if you downgrade within 3 days of signing up for monthly billing or 30 days for annual; later than that, expect no refund."
+      }
+    },
+    "sources": [
+      "https://www.notion.com/pricing",
+      "https://www.notion.com/help/billing",
+      "https://www.notion.com/help/refunds",
+      "https://www.notion.com/help/upgrade-or-downgrade-your-plan"
+    ]
+  },
+  {
+    "id": "evernote",
+    "name": "Evernote",
+    "category": "productivity",
+    "url": "https://evernote.com",
+    "match": {
+      "patterns": [
+        "EVERNOTE"
+      ],
+      "examples": [
+        "EVERNOTE.COM",
+        "EVERNOTE PREMIUM SUBSCRIPTION",
+        "EVERNOTE CORP"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "selfhost",
+    "also": [
+      "cancel"
+    ],
+    "why": "Evernote's plans and prices have changed repeatedly and the free tier is capped at 50 notes. Joplin imports Evernote ENEX exports and syncs to a small box you own, with no per-month fee.",
+    "alternatives": [
+      {
+        "name": "Joplin",
+        "url": "https://joplinapp.org",
+        "note": "Open-source notes app; imports ENEX files and syncs through Nextcloud, WebDAV, Dropbox, OneDrive or S3."
+      },
+      {
+        "name": "Obsidian",
+        "url": "https://obsidian.md",
+        "note": "Free for personal use, local Markdown files; has an Evernote importer plugin."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Joplin (desktop and mobile apps)",
+          "Nextcloud with its WebDAV endpoint (Docker)",
+          "Tailscale (free tier) for remote access"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 4,
+        "powerCostYear": 22,
+        "youLose": "Evernote's polished web clipper, email-to-note, and attachment search. Sync only works while the server box is on, and you are the one who updates it and checks the backups.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Set up Joplin as my Evernote replacement. Target: a Raspberry Pi 4 or an old laptop running Debian or Ubuntu Server. Install Docker, then run Nextcloud in a compose file with a named volume and a nightly backup job (rsync to a USB drive, keep 14 days). Install Tailscale on the server, my phone and my laptop so sync works away from home without opening router ports. Then walk me through installing Joplin on my desktop and phone, setting the sync target to Nextcloud, turning on Joplin's end-to-end encryption, and importing my Evernote export (ENEX files, one per notebook) with tags preserved. Finish with a one-page README covering updates, restoring from backup, and what to check if sync stalls. Ask me which operating system and phone I use before you start."
+      },
+      "cancel": {
+        "howTo": "Export your notebooks first (select a notebook, then export as ENEX). Then cancel where you subscribed: your Evernote account's subscription settings on the web, or Apple or Google subscriptions if you bought in the app.",
+        "gotchas": "Plan names and prices have changed repeatedly, so read your receipt for the plan and renewal date. The free plan is limited to 50 notes, 1 notebook and 1 device, so export before you downgrade."
+      }
+    },
+    "sources": [
+      "https://evernote.com/compare-plans",
+      "https://joplinapp.org/help/apps/import_export",
+      "https://joplinapp.org/help/apps/sync/",
+      "https://nextcloud.com/"
+    ]
+  },
+  {
+    "id": "todoist-pro",
+    "name": "Todoist Pro",
+    "category": "productivity",
+    "url": "https://www.todoist.com",
+    "match": {
+      "patterns": [
+        "TODOIST|\\bDOIST\\b"
+      ],
+      "examples": [
+        "TODOIST",
+        "TODOIST.COM",
+        "DOIST TODOIST.COM"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 60,
+          "cadence": "annual",
+          "plan": "Pro, billed yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "A personal task list is a weekend of work for Claude Code, and Pro now costs $60 a year. The catch is reliable phone reminders and sync, so rebuild only if you can live with PWA limits.",
+    "alternatives": [
+      {
+        "name": "Todoist Beginner (free)",
+        "url": "https://www.todoist.com/pricing",
+        "note": "Free plan keeps your tasks but limits active projects to 5."
+      },
+      {
+        "name": "TickTick free plan",
+        "url": "https://ticktick.com",
+        "note": "Free tier covers lists, due dates and a basic calendar."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A task app with inbox, projects, sections, natural-language due dates (\"every Monday\"), priorities, labels, Today and Upcoming views, in-app reminders, a private .ics calendar feed, and optional cross-device sync through a free Cloudflare Worker.",
+        "hours": 10,
+        "runsOn": "Installable PWA on Cloudflare Pages (free tier), data in IndexedDB, optional sync via a Cloudflare Worker with D1 or KV (free tier).",
+        "ongoingCostYear": 0,
+        "youLose": "Todoist's mature natural-language parser, shared projects, true push reminders on iPhone (a PWA cannot alert you while closed; the calendar feed is the workaround), email-to-task, calendar integrations, and support when something breaks.",
+        "prompt": "Build me a personal task manager to replace Todoist Pro, as an installable PWA using Vite, React and TypeScript. Core features: inbox, projects with sections, due dates entered in plain language such as \"every Monday\" or \"tomorrow 5pm\", priorities, labels, and Today and Upcoming views. Store everything in IndexedDB. For phone-to-laptop sync, add a small Cloudflare Worker with a D1 or KV store behind one secret token that I set, using last-write-wins per task. Show in-app reminders while the app is open, and serve a private .ics feed from the Worker so my calendar app sends the real notifications. Import my Todoist CSV exports (one file per project; columns TYPE, CONTENT, DESCRIPTION, PRIORITY, INDENT, DATE; sections are TYPE=section) and tell me labels and comments are not in the CSV. Export everything to JSON. Write unit tests for the date parser and the sync merge. Deploy the PWA to Cloudflare Pages on the free tier and explain how I install it on iPhone and Android. Keep it under 3,000 lines and write a README with setup steps."
+      },
+      "cancel": {
+        "howTo": "On the web or desktop app: click your avatar, open Settings, then Subscription, choose Cancel plan and confirm. If you subscribed through the App Store or Google Play, cancel there instead.",
+        "url": "https://www.todoist.com/help/account-and-billing/billing/cancel-a-todoist-subscription-08AmJLVkC",
+        "gotchas": "Pro stays active until the period ends, then the account drops to the free plan: active personal projects go from 300 to 5 and automatic backups stop. Yearly web purchases can be refunded within 30 days."
+      }
+    },
+    "sources": [
+      "https://www.todoist.com/help/articles/todoist-plans-pricing-and-billing-faq-Vq2z0HWL6",
+      "https://www.todoist.com/help/account-and-billing/billing/cancel-a-todoist-subscription-08AmJLVkC",
+      "https://code.claude.com/docs/en/overview",
+      "https://www.todoist.com/pricing"
+    ]
+  },
+  {
+    "id": "ticktick-premium",
+    "name": "TickTick Premium",
+    "category": "productivity",
+    "url": "https://ticktick.com",
+    "match": {
+      "patterns": [
+        "TICKTICK|APPEST"
+      ],
+      "examples": [
+        "TICKTICK PREMIUM",
+        "TICKTICK.COM",
+        "APPEST LIMITED TICKTICK"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 4.99,
+          "cadence": "monthly",
+          "plan": "TickTick Premium (App Store)"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "TickTick Premium (App Store)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Premium unlocks higher limits and extra views on top of a capable free plan. Cheap enough to keep if you hit those limits, easy to drop to Free if you only keep simple lists.",
+    "alternatives": [
+      {
+        "name": "TickTick Free",
+        "url": "https://ticktick.com",
+        "note": "Lists, due dates and reminders stay free; Premium unlocks the extra views and limits."
+      },
+      {
+        "name": "Todoist Beginner (free)",
+        "url": "https://www.todoist.com/pricing",
+        "note": "Free plan keeps your tasks with tighter project limits."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel where you bought it. App Store: Settings, your name, Subscriptions, TickTick, Cancel Subscription. Google Play: Payments and subscriptions, Subscriptions, TickTick, Cancel. Web purchases: manage the plan in TickTick account settings.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Deleting the app does not cancel the subscription. The App Store price ($4.99 monthly, $49.99 yearly) can be higher than the price on TickTick's own site, so check which channel you used."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601",
+      "https://support.apple.com/en-us/118428",
+      "https://support.google.com/googleplay/answer/7018481"
+    ]
+  },
+  {
+    "id": "bear-pro",
+    "name": "Bear Pro",
+    "category": "productivity",
+    "url": "https://bear.app",
+    "match": {
+      "patterns": [
+        "SHINY FROG|\\bBEAR APP\\b|BEARAPP"
+      ],
+      "examples": [
+        "SHINY FROG LTD",
+        "BEAR APP SHINY FROG",
+        "BEARAPP"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Bear Pro"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Bear Pro"
+        }
+      ]
+    },
+    "typicalMonthly": 2.5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Bear Pro is mostly iCloud sync plus export and locking, for $29.99 a year. If you only use one Apple device, the free app is enough; if you sync across devices, it is cheap and polished.",
+    "alternatives": [
+      {
+        "name": "Apple Notes",
+        "url": "https://support.apple.com/guide/notes/welcome/mac",
+        "note": "Free with iCloud sync across Apple devices."
+      },
+      {
+        "name": "Obsidian",
+        "url": "https://obsidian.md",
+        "note": "Free for personal use; sync your vault with iCloud Drive at no extra cost."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Bear Pro is billed by Apple. iPhone: Settings, your name, Subscriptions, Bear, Cancel Subscription. Mac: App Store, your name, Account Settings, Subscriptions. Export notes you want to keep before you lose Pro sync.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Pro includes iCloud sync, locked notes, and advanced exports (PDF, HTML, DOCX, JPG). Export anything you need first. Existing customers on the older $1.49 monthly or $14.99 yearly price keep it only while subscribed, so do not cancel and resubscribe."
+      }
+    },
+    "sources": [
+      "https://bear.app/faq/features-and-price-of-bear-pro/",
+      "https://apps.apple.com/us/app/bear-markdown-notes/id1016366447",
+      "https://blog.bear.app/2023/04/bear-2-will-have-a-new-price-only-for-new-customers/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "craft-docs",
+    "name": "Craft Docs (Plus)",
+    "category": "productivity",
+    "url": "https://www.craft.do",
+    "match": {
+      "patterns": [
+        "CRAFT\\.DO|CRAFT DOCS|LUKI LABS"
+      ],
+      "examples": [
+        "CRAFT.DO",
+        "CRAFT DOCS PLUS",
+        "LUKI LABS LIMITED CRAFT"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 8,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Craft Plus is $96 a year for unlimited documents and 30-day history. The free Starter plan holds 1,500 blocks, so keep Plus only if you outgrew that; Claude cannot replace its editor.",
+    "alternatives": [
+      {
+        "name": "Craft Starter (free)",
+        "url": "https://www.craft.do/pricing",
+        "note": "Free plan: 1,500 content blocks, 1 GB storage, 7-day history."
+      },
+      {
+        "name": "Apple Notes",
+        "url": "https://support.apple.com/guide/notes/welcome/mac",
+        "note": "Free and synced through iCloud."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in Craft's subscription settings, or in Apple or Google subscriptions if you subscribed in the app. Export documents (Markdown or PDF) before the plan lapses.",
+        "gotchas": "Plus is $10 billed monthly or $96 billed yearly. Past the free limit of 1,500 blocks, new content may be restricted, so trim or export first."
+      }
+    },
+    "sources": [
+      "https://support.craft.do/en/account-and-subscription/subscription-plans/plans-and-pricing",
+      "https://www.craft.do/pricing"
+    ]
+  },
+  {
+    "id": "obsidian-sync",
+    "name": "Obsidian Sync",
+    "category": "productivity",
+    "url": "https://obsidian.md/sync",
+    "match": {
+      "patterns": [
+        "OBSIDIAN\\.MD|OBSIDIAN SYNC|DYNALIST"
+      ],
+      "examples": [
+        "OBSIDIAN.MD SYNC",
+        "OBSIDIAN SYNC STANDARD",
+        "DYNALIST INC OBSIDIAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 4,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Obsidian is free; Sync is $48 a year for hassle-free phone and laptop sync. Syncthing can replace it between computers and Android, but iPhone has no official Syncthing app, so keep Sync if you use an iPhone.",
+    "alternatives": [
+      {
+        "name": "iCloud Drive vault",
+        "url": "https://obsidian.md",
+        "note": "Free for Apple-only users: keep the vault in iCloud Drive."
+      },
+      {
+        "name": "Syncthing",
+        "url": "https://syncthing.net",
+        "note": "Open-source file sync between your own computers, no cloud server."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Syncthing",
+          "Obsidian (free, local vault)",
+          "Tailscale (free tier) for remote access to the hub"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 3,
+        "powerCostYear": 22,
+        "youLose": "Obsidian Sync's one-click setup, version history and iPhone support. Syncthing has no official iOS app, so an iPhone needs iCloud Drive or a paid third-party Syncthing client instead.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Replace Obsidian Sync with Syncthing. My always-on hub is a Raspberry Pi or old laptop running Debian or Ubuntu. Install Syncthing as a systemd service on the hub, keep its GUI bound to localhost, and reach it over Tailscale. Create a shared folder for my Obsidian vault with the hub set as an introducer and file versioning set to staggered. Pair it with my laptop and desktop, and set ignore patterns for the .obsidian/workspace files and the .trash folder so settings do not fight. Add a weekly encrypted backup of the vault from the hub to a USB drive. Explain how to handle sync conflicts in Markdown files, and tell me plainly what I should do on my iPhone instead (for example iCloud Drive). Ask what devices I own before you begin."
+      },
+      "cancel": {
+        "howTo": "Sign in to your Obsidian account on obsidian.md and cancel the Sync subscription there. Your vault stays on every device where it is already synced; the remote copy and version history belong to the subscription.",
+        "gotchas": "Sync Standard is $4 a month billed yearly or $5 billed monthly; Plus is $8 or $10. Confirm every device has the full vault locally before canceling, because the remote history will not be there afterward."
+      }
+    },
+    "sources": [
+      "https://obsidian.md/sync",
+      "https://obsidian.md/blog/standard-plan/",
+      "https://syncthing.net/"
+    ]
+  },
+  {
+    "id": "roam-research",
+    "name": "Roam Research",
+    "category": "productivity",
+    "url": "https://roamresearch.com",
+    "match": {
+      "patterns": [
+        "ROAM RESEARCH|ROAMRESEARCH"
+      ],
+      "examples": [
+        "ROAM RESEARCH",
+        "ROAMRESEARCH.COM",
+        "ROAM RESEARCH INC PRO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 15,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "selfhost",
+    "also": [
+      "cancel"
+    ],
+    "why": "Roam has no free tier and costs $165 a year, while Logseq (open source, local files) covers daily notes and backlinks at no cost. Moving takes an afternoon and your notes become plain files.",
+    "alternatives": [
+      {
+        "name": "Logseq",
+        "url": "https://logseq.com",
+        "note": "Open-source, local-first outliner with backlinks and daily notes."
+      },
+      {
+        "name": "Obsidian",
+        "url": "https://obsidian.md",
+        "note": "Free for personal use; local Markdown vault with backlinks."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Logseq (open-source outliner)",
+          "Syncthing for device sync",
+          "Tailscale (free tier) for remote access to the hub"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 5,
+        "powerCostYear": 22,
+        "youLose": "Roam's hosted multiplayer graph, its polished web app, and any extensions you rely on. Roam-specific block references may need cleanup after import, and iPhone sync needs an extra route since Syncthing has no iOS app.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Migrate me from Roam Research to Logseq. First, tell me how to export my Roam graph (JSON and Markdown) and keep a copy. Then help me install Logseq on my computers, import the export, and check daily notes, page links, tags and block references. List what did not convert and write a small script that reports broken references. For sync, set up Syncthing between my machines with an always-on hub (Raspberry Pi or old laptop on Debian or Ubuntu), keep the Syncthing GUI on localhost, reach the hub over Tailscale, and schedule a weekly backup of the graph folder to a USB drive. Add a short guide on how my daily-notes habit maps to Logseq's journals. Ask which operating systems I use first."
+      },
+      "cancel": {
+        "howTo": "Export your graph first (the graph menu, Export All, JSON and Markdown). Then cancel the subscription in Roam's account or billing settings before the next renewal.",
+        "gotchas": "Roam has no free tier, so access ends with the plan. Pro is $15 billed monthly or about $165 billed yearly, and there is a five-year Believer plan, so check which one you are on before canceling."
+      }
+    },
+    "sources": [
+      "https://roamresearch.com",
+      "https://www.costbench.com/software/note-taking/roam-research/",
+      "https://frontdeskreview.com/software/note-taking-apps/roam-research/",
+      "https://logseq.com/"
+    ]
+  },
+  {
+    "id": "calendly-standard",
+    "name": "Calendly (Standard)",
+    "category": "productivity",
+    "url": "https://calendly.com",
+    "match": {
+      "patterns": [
+        "CALENDLY"
+      ],
+      "examples": [
+        "CALENDLY.COM",
+        "CALENDLY",
+        "CALENDLY LLC ATLANTA GA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A booking page for one person is a small build: free hours from your calendar, a form, and a confirmation email. Calendly Free may already cover you; rebuild only if you need custom rules.",
+    "alternatives": [
+      {
+        "name": "Calendly Free",
+        "url": "https://calendly.com/pricing",
+        "note": "The always-free plan handles basic one-on-one booking."
+      },
+      {
+        "name": "Cal.com",
+        "url": "https://cal.com",
+        "note": "Open-source scheduling with a hosted free tier."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A booking page showing your open slots from Google Calendar, with meeting types, buffer times, timezone handling, and a Google Calendar invitation (with a Meet link) emailed to both of you, plus a private link to cancel or reschedule.",
+        "hours": 10,
+        "runsOn": "Static page on Cloudflare Pages plus a Cloudflare Worker (free tier) that reads Google Calendar free/busy and creates events through the Google Calendar API.",
+        "ongoingCostYear": 0,
+        "youLose": "Calendly's team routing, round-robin, polls, Zoom and Teams auto-links, SMS reminders, payment collection and polished mobile app. You also maintain the Google API credentials yourself, and the OAuth consent screen must be moved from Testing to In production or the token stops working after 7 days.",
+        "prompt": "Build me a personal booking page to replace Calendly Standard. First ask me for my current Calendly meeting types (name, length, buffer). Use a static front end (Vite, TypeScript) on Cloudflare Pages and a Cloudflare Worker for the API. Features: meeting types with duration and buffer, working-hours rules, minimum notice, visitor timezone detection, and available slots computed from my Google Calendar free/busy. A booking creates a Google Calendar event with a Meet link and sends the invitation to the visitor through Google (sendUpdates=all), so no email service is needed. Add a private manage link for cancelling or rescheduling. Use OAuth with my own Google Cloud project. Set the consent screen to In production (unverified is fine for one user), because refresh tokens issued in Testing expire after 7 days. Store the refresh token as a Worker secret, and add a /health check that reports invalid_grant. Add Cloudflare Turnstile spam protection. Write tests for slot generation across daylight-saving changes. Explain how to create the Google credentials and deploy on the free tier."
+      },
+      "cancel": {
+        "howTo": "In Calendly, open Account settings, then Billing, and downgrade to Free or cancel. Check which event types and features revert to the free plan before you confirm.",
+        "url": "https://calendly.com/help",
+        "gotchas": "Standard is $10 per seat per month billed yearly; the page shows a 17 percent annual saving, so monthly billing costs more. Check for team seats you added before canceling."
+      }
+    },
+    "sources": [
+      "https://calendly.com/pricing",
+      "https://calendly.com/help",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "doodle",
+    "name": "Doodle (Pro)",
+    "category": "productivity",
+    "url": "https://doodle.com",
+    "match": {
+      "patterns": [
+        "DOODLE\\.COM|DOODLE AG|DOODLE PRO"
+      ],
+      "examples": [
+        "DOODLE.COM",
+        "DOODLE AG ZURICH",
+        "DOODLE PRO SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Doodle's free plan runs basic group polls; Pro is a convenience for people who organize often. Most one-to-one scheduling is covered by Google Calendar or Calendly Free.",
+    "alternatives": [
+      {
+        "name": "Doodle Free",
+        "url": "https://doodle.com",
+        "note": "Group polls without a paid plan."
+      },
+      {
+        "name": "When2meet",
+        "url": "https://www.when2meet.com",
+        "note": "Free availability grid with no account needed."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Log in at doodle.com, open your profile menu, then Billing or Subscription, and turn off renewal or downgrade to Free. Close open polls first if you rely on paid options.",
+        "gotchas": "Published prices conflict across sources (older pages show $6.95, newer ones about $11 a month on yearly billing), so read the amount on your own receipt. Annual plans renew automatically."
+      }
+    },
+    "sources": [
+      "https://doodle.com",
+      "https://koalendar.com/blog/doodle-pricing"
+    ]
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "category": "productivity",
+    "url": "https://zapier.com",
+    "match": {
+      "patterns": [
+        "ZAPIER"
+      ],
+      "examples": [
+        "ZAPIER.COM",
+        "ZAPIER INC SAN FRANCISCO CA",
+        "ZAPIER"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 19.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Most personal Zaps are an API call on a schedule or a webhook. Claude Code can turn them into scripts that run free on Cloudflare Workers or GitHub Actions. Zapier Free (100 tasks) may already cover a light user.",
+    "alternatives": [
+      {
+        "name": "Zapier Free",
+        "url": "https://zapier.com/pricing",
+        "note": "Free plan includes 100 tasks a month."
+      },
+      {
+        "name": "Activepieces",
+        "url": "https://www.activepieces.com",
+        "note": "MIT-licensed open-source automation you can self-host."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A repo of small TypeScript or Python scripts, one per Zap (planned for about five automations), run by Cloudflare Workers Cron Triggers and webhooks, with GitHub Actions for daily jobs, plus retries, logs and failure alerts.",
+        "hours": 8,
+        "runsOn": "Cloudflare Workers free tier (Cron Triggers for frequent polling, plus webhooks); GitHub Actions cron on a private repo (about 2,000 free minutes a month) only for daily or hourly jobs.",
+        "ongoingCostYear": 0,
+        "youLose": "Zapier's thousands of ready-made app connectors, the visual editor, replay of failed runs, and instant triggers. Apps without a usable public API cannot be automated this way, and you maintain every token yourself.",
+        "prompt": "Replace my Zapier Professional plan with scripts. First ask me to list my active Zaps and the apps each one touches, then group them into triggers (webhook, schedule, new email, new row) and actions. Plan for up to five automations; if I list more, tell me the extra hours. For each Zap, write a small TypeScript or Python script in an automations/ folder with typed config, retries, logging and a dry-run flag. Run polling jobs more often than hourly as Cloudflare Workers Cron Triggers (free). Use GitHub Actions cron in a private repo only for daily or hourly jobs, and tell me how many free minutes I am using. Receive webhooks with a free Worker. Store API keys as secrets, never in code. Add one job that sends me a failure summary by email or Slack webhook. Write a README mapping every old Zap to its new script, with a checklist for running both side by side for a week before I cancel. Flag any Zap that needs an app with no usable API."
+      },
+      "selfhost": {
+        "software": [
+          "Activepieces Community Edition (MIT license)",
+          "Docker Compose with Postgres and Redis",
+          "Tailscale (free tier)"
+        ],
+        "hardware": [
+          "old-laptop",
+          "nas"
+        ],
+        "hours": 5,
+        "powerCostYear": 22,
+        "youLose": "Zapier's hosted reliability: if the box is off or your home internet drops, automations stop. Activepieces has fewer ready-made connectors than Zapier, its enterprise features need a paid license, and you handle updates and backups.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Set up Activepieces Community Edition on my spare machine to replace Zapier. Target: an old laptop or a NAS with Docker, with at least 2 CPU cores and 4 GB of RAM, running Debian or Ubuntu Server. Install Docker with Compose v2, then run the official install script from a dedicated folder so it starts the app, worker, Postgres and Redis containers. Back up the generated .env file, because stored connections cannot be decrypted without AP_ENCRYPTION_KEY. Put Tailscale on the box so I open the editor privately, and use a Cloudflare Tunnel only for webhook URLs that need public access. Add a nightly Postgres dump to a USB drive, keeping 14 days. Then help me recreate my three busiest Zaps as flows, test them, and write a short recovery note for what to do after a power cut. Ask which apps my Zaps use before starting."
+      },
+      "cancel": {
+        "howTo": "Log in to Zapier, open Billing and usage, click Manage, and select the Free plan. Zapier has no separate Cancel button. Paid features continue until the end of the billing cycle.",
+        "url": "https://help.zapier.com/hc/en-us/articles/44507749747341-Cancel-your-Zapier-plan",
+        "gotchas": "Zapier subscriptions are non-refundable. Pro tiers are priced by task volume, and annual billing is about a third lower than monthly ($19.99 against $29.99 at the lowest tier), so check which you are on. The Free plan allows 100 tasks a month; Zaps beyond that will not run."
+      }
+    },
+    "sources": [
+      "https://zapier.com/pricing",
+      "https://code.claude.com/docs/en/github-actions",
+      "https://code.claude.com/docs/en/overview",
+      "https://help.zapier.com/hc/en-us/articles/44507749747341-Cancel-your-Zapier-plan",
+      "https://www.activepieces.com/docs/install/options/docker-compose",
+      "https://github.com/activepieces/activepieces"
+    ]
+  },
+  {
+    "id": "ifttt-pro",
+    "name": "IFTTT Pro",
+    "category": "productivity",
+    "url": "https://ifttt.com",
+    "match": {
+      "patterns": [
+        "IFTTT"
+      ],
+      "examples": [
+        "IFTTT.COM",
+        "IFTTT PRO SUBSCRIPTION",
+        "IFTTT INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 5.49,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Pro is about $66 a year for 20,000 credits. Most applets are an API call plus a trigger, which Claude Code can script. Check whether Free (1,000 credits) or Starter ($25 a year) already covers you.",
+    "alternatives": [
+      {
+        "name": "IFTTT Free",
+        "url": "https://ifttt.com/plans",
+        "note": "Free plan includes 1,000 credits a month."
+      },
+      {
+        "name": "Home Assistant",
+        "url": "https://www.home-assistant.io",
+        "note": "Open-source local automation for smart-home applets."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A folder of small scripts, one per applet (planned for about five applets), run on Cloudflare Workers Cron Triggers or a webhook Worker, with a config file, a dry-run flag and failure alerts.",
+        "hours": 6,
+        "runsOn": "Cloudflare Workers free tier (Cron Triggers for frequent checks, plus webhooks); GitHub Actions cron on a private repo only for daily or hourly jobs.",
+        "ongoingCostYear": 0,
+        "youLose": "IFTTT's catalog of ready-made service connections, instant phone and location triggers, and its smart-home integrations. Services without a public API cannot be reproduced.",
+        "prompt": "Replace my IFTTT Pro applets with scripts. Ask me to paste my applet list, then classify each one as a scheduled check, a webhook, or a smart-home action. For the first two kinds, write small Python scripts in an automations/ folder that call each service's API directly, with a config file and a dry-run flag, and run frequent checks as Cloudflare Workers Cron Triggers (free), use GitHub Actions cron in a private repo only for daily or hourly jobs, and use a local systemd timer if the task needs my home network. Plan for up to five applets; if I list more, tell me the extra hours. For smart-home applets, tell me whether the device has a local API or whether I need Home Assistant, and give a short plan. Keep secrets in GitHub secrets, add retries, send me a notification when a run fails, and write a README table that maps each applet to its replacement. List any applet that depends on a service with no public API."
+      },
+      "cancel": {
+        "howTo": "Log in at ifttt.com, open your account's subscription settings, and downgrade to Free. On mobile subscriptions, cancel in the App Store or Google Play instead.",
+        "gotchas": "The page lists annual billing at a 30 percent discount, so monthly billing costs more. After a downgrade, applets beyond the Free plan's credit allowance stop firing."
+      }
+    },
+    "sources": [
+      "https://ifttt.com/plans",
+      "https://code.claude.com/docs/en/github-actions",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "make",
+    "name": "Make (Integromat)",
+    "category": "productivity",
+    "url": "https://www.make.com",
+    "match": {
+      "patterns": [
+        "\\bMAKE\\.COM|INTEGROMAT"
+      ],
+      "examples": [
+        "MAKE.COM",
+        "MAKE.COM CORE SUBSCRIPTION",
+        "INTEGROMAT"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Make Core is about $9 a month for 10,000 credits. Each scenario is a trigger plus a few API calls, which Claude Code can write as scheduled Worker scripts. Free gives 1,000 credits a month.",
+    "alternatives": [
+      {
+        "name": "Make Free",
+        "url": "https://www.make.com/en/pricing",
+        "note": "Free plan includes 1,000 credits a month."
+      },
+      {
+        "name": "Activepieces",
+        "url": "https://www.activepieces.com",
+        "note": "MIT-licensed open-source automation you can self-host."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A TypeScript project for Cloudflare Workers with one module per scenario (planned for about five scenarios), using Cron Triggers or webhooks, KV for de-duplication, retries and failure alerts.",
+        "hours": 7,
+        "runsOn": "Cloudflare Workers free tier (Cron Triggers, KV), deployed with Wrangler.",
+        "ongoingCostYear": 0,
+        "youLose": "Make's visual scenario builder, hundreds of ready-made modules, execution history with replay, and data-store tooling. Workers' free tier has request and CPU limits that heavy scenarios can exceed.",
+        "prompt": "Replace my Make scenarios with code. Plan for up to five scenarios; if I list more, tell me the extra hours. Ask me to describe each scenario's trigger, modules and filters, or paste the exported blueprint JSON. Then build a TypeScript project for Cloudflare Workers with one module per scenario, each exposing a scheduled handler (Cron Triggers) or an HTTP webhook handler, shared helpers for fetch with retries, and typed config. Use KV to remember what has already been processed so nothing runs twice. Keep API keys as Worker secrets. Add a dry-run mode, structured logs, and an email or webhook alert when a run fails. Include a test file per scenario using recorded sample payloads. Finish with a README that maps each scenario to its script and lists the steps to run both in parallel for a week before I cancel Make."
+      },
+      "cancel": {
+        "howTo": "In Make, open your organization's Billing settings and cancel the subscription or switch to the Free plan. Deactivate scenarios you no longer need first.",
+        "gotchas": "Annual plans are cheaper than monthly but bill upfront, so check your renewal date before canceling. The Free plan allows 1,000 credits a month, and scenarios that need more will stop once you use them up."
+      }
+    },
+    "sources": [
+      "https://www.make.com/en/pricing",
+      "https://www.jetadmin.io/blog/make-pricing/",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "typeform",
+    "name": "Typeform (Basic)",
+    "category": "productivity",
+    "url": "https://www.typeform.com",
+    "match": {
+      "patterns": [
+        "TYPEFORM"
+      ],
+      "examples": [
+        "TYPEFORM.COM",
+        "TYPEFORM S.L. BARCELONA",
+        "TYPEFORM BASIC PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Basic caps you at 100 responses a month on one seat. A one-question-at-a-time form that writes to a Google Sheet is a small build, and Google Forms is free if style does not matter.",
+    "alternatives": [
+      {
+        "name": "Google Forms",
+        "url": "https://forms.google.com",
+        "note": "Free, unlimited responses, writes to Google Sheets."
+      },
+      {
+        "name": "Tally",
+        "url": "https://tally.so",
+        "note": "Free form builder with a one-question style."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A form renderer that shows one question at a time from a JSON definition, with conditional logic, progress bar, themes, spam protection and responses saved to a Google Sheet.",
+        "hours": 6,
+        "runsOn": "Static site on Cloudflare Pages (free) plus a Cloudflare Worker that writes to the Google Sheets API.",
+        "ongoingCostYear": 0,
+        "youLose": "Typeform's visual editor, analytics, integrations, hosted file uploads, payments and team features. Every new form means editing JSON or asking Claude for a change.",
+        "prompt": "First ask me to paste my questions or the form JSON from the Typeform API. Then build a personal form builder to replace Typeform Basic. Output: a static site (Vite, TypeScript) where I define a form in a JSON file and it renders one question at a time with keyboard navigation, a progress bar, conditional logic, required fields, and question types: short text, long text, multiple choice, rating, email and date. On submit, post to a Cloudflare Worker that appends the response to a Google Sheet through the Sheets API and sends me a notification email through Resend's free tier. Add spam protection with Cloudflare Turnstile, a light and dark theme, and CSV export from the sheet. Provide three sample forms (contact, feedback, RSVP). Deploy on Cloudflare Pages free tier and show how to share a form by link or iframe. Write the steps to create the Google service account and the Resend key."
+      },
+      "cancel": {
+        "howTo": "In Typeform, open Account settings, then Billing or Plan, and choose Cancel subscription or Downgrade to Free. Export response data to CSV first.",
+        "gotchas": "Typeform's own pricing page shows two sets of Basic prices (about $28 or $25 a month on yearly billing, $39 or $29 monthly), so read your receipt. Annual plans bill upfront."
+      }
+    },
+    "sources": [
+      "https://www.typeform.com/pricing/",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "jotform",
+    "name": "Jotform (Bronze)",
+    "category": "productivity",
+    "url": "https://www.jotform.com",
+    "match": {
+      "patterns": [
+        "JOTFORM"
+      ],
+      "examples": [
+        "JOTFORM",
+        "JOTFORM INC SAN FRANCISCO CA",
+        "JOTFORM.COM BRONZE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 34,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "The free Starter plan gives 5 forms and 100 submissions a month. Bronze at about $408 a year only makes sense with 25 forms or 1,000 submissions; otherwise Google Forms or the free tier covers it.",
+    "alternatives": [
+      {
+        "name": "Jotform Starter (free)",
+        "url": "https://www.jotform.com/pricing/",
+        "note": "5 forms and 100 submissions a month."
+      },
+      {
+        "name": "Google Forms",
+        "url": "https://forms.google.com",
+        "note": "Free with unlimited responses."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Log in to Jotform, open your account's Plan or Billing page, and downgrade to Starter. Forms beyond the free limit may be disabled, so archive or delete the ones you do not need first.",
+        "url": "https://www.jotform.com/answers/",
+        "gotchas": "Bronze is $34 a month billed yearly ($408) or $39 billed monthly. The Starter plan allows 5 active forms and 100 submissions a month, so anything above that can stop working after the downgrade."
+      }
+    },
+    "sources": [
+      "https://www.jotform.com/pricing/",
+      "https://www.jotform.com/answers/"
+    ]
+  },
+  {
+    "id": "surveymonkey",
+    "name": "SurveyMonkey",
+    "category": "productivity",
+    "url": "https://www.surveymonkey.com",
+    "match": {
+      "patterns": [
+        "SURVEY ?MONKEY|SVMK"
+      ],
+      "examples": [
+        "SURVEYMONKEY",
+        "SURVEYMONKEY.COM SAN MATEO CA",
+        "SURVEY MONKEY ADVANTAGE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 39,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Individual plans run $468 a year or $149 a month, and many people need only one survey. Google Forms or the free Basic plan (10 questions) handles occasional surveys. Cancel before auto-renew.",
+    "alternatives": [
+      {
+        "name": "Google Forms",
+        "url": "https://forms.google.com",
+        "note": "Free, unlimited questions and responses."
+      },
+      {
+        "name": "SurveyMonkey Basic (free)",
+        "url": "https://www.surveymonkey.com/pricing/individual/",
+        "note": "One user, 10 questions per survey, limited responses."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in, open your account's Billing details, and turn off auto-renew. At the end of the billing cycle the account moves to the free Basic plan.",
+        "url": "https://help.surveymonkey.com/en/surveymonkey/billing/",
+        "gotchas": "Auto-renew is on by default. Responses beyond your plan limit are charged at $0.15 each. The monthly Standard plan is $149 a month, so a forgotten month-to-month plan is expensive. Export your results first."
+      }
+    },
+    "sources": [
+      "https://www.surveymonkey.com/pricing/individual/",
+      "https://help.surveymonkey.com/en/surveymonkey/billing/"
+    ]
+  },
+  {
+    "id": "linktree-pro",
+    "name": "Linktree Pro",
+    "category": "productivity",
+    "url": "https://linktr.ee",
+    "match": {
+      "patterns": [
+        "LINKTREE|LINKTR\\.EE"
+      ],
+      "examples": [
+        "LINKTREE",
+        "LINKTR.EE PRO",
+        "LINKTREE PTY LTD"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 12,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "A link-in-bio page is a static page with click counting, about four hours of work. Pro runs about $144 a year; the free plan covers a basic page if you do not need analytics.",
+    "alternatives": [
+      {
+        "name": "Linktree Free",
+        "url": "https://linktr.ee/s/pricing/",
+        "note": "A basic link page at no cost."
+      },
+      {
+        "name": "Carrd",
+        "url": "https://carrd.com",
+        "note": "One-page sites; the Pro Standard plan is $19 a year."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A static link-in-bio page from a links.json file, with themes, social icons, a QR code, and private per-link click stats counted by a tiny Worker.",
+        "hours": 4,
+        "runsOn": "Cloudflare Pages (free) with a Cloudflare Worker and D1 on the free tier for click counts. Your own domain is optional.",
+        "ongoingCostYear": 0,
+        "youLose": "Linktree's drag-and-drop editor, scheduling, email and payment blocks, social-platform integrations and audience analytics. Link updates mean editing a JSON file.",
+        "prompt": "First ask me to paste my current links (title and URL). Then build me a link-in-bio page to replace Linktree Pro. A single static page (plain HTML, CSS and a little TypeScript, no framework) generated from one links.json file: avatar, name, short bio, a list of link buttons with optional icons, a social icon row, light and dark themes that follow the system, Open Graph tags, and fast load with no third-party scripts. Add click counting: each button goes through a /go/<id> route handled by a Cloudflare Worker that logs the click to a D1 table and then redirects, plus a private /stats page protected by a token that shows clicks per link by day. Include a QR code generated at build time. Deploy on Cloudflare Pages free tier, show how to attach my own domain, and give me a one-command way to update links."
+      },
+      "cancel": {
+        "howTo": "In Linktree, open Settings, then Billing or Subscription, and cancel or downgrade to Free. Export your link list before the plan ends.",
+        "gotchas": "Pro is roughly $15 billed monthly or $12 a month billed yearly; the yearly bill is charged upfront. Pro-only themes and analytics revert when you downgrade."
+      }
+    },
+    "sources": [
+      "https://linktr.ee/s/pricing/",
+      "https://replug.io/blog/linktree-pricing",
+      "https://u2l.ai/blog/linktree-pricing",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "carrd-pro",
+    "name": "Carrd Pro",
+    "category": "productivity",
+    "url": "https://carrd.com",
+    "match": {
+      "patterns": [
+        "\\bCARRD\\b"
+      ],
+      "examples": [
+        "CARRD.CO",
+        "CARRD.COM",
+        "CARRD.CO PRO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 1.58,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Pro Standard is $19 a year for 10 sites with custom domains and forms. That is too little to beat with a weekend build, so keep it unless the sites are idle.",
+    "alternatives": [
+      {
+        "name": "Carrd Free",
+        "url": "https://carrd.com",
+        "note": "Free plan for simple one-page sites on a carrd.co address."
+      },
+      {
+        "name": "GitHub Pages",
+        "url": "https://pages.github.com",
+        "note": "Free static hosting if you are comfortable with files."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Open your Carrd dashboard, find the site's plan settings, and turn off auto-renewal or let the plan lapse. Download your site files first.",
+        "gotchas": "Carrd plans can renew automatically each year or be paid as you go. Carrd's page does not say what happens to a custom domain, forms or embeds at expiry, so export first and test with a free account."
+      }
+    },
+    "sources": [
+      "https://carrd.com/pro"
+    ]
+  },
+  {
+    "id": "mailchimp",
+    "name": "Mailchimp",
+    "category": "productivity",
+    "url": "https://mailchimp.com",
+    "match": {
+      "patterns": [
+        "MAILCHIMP"
+      ],
+      "examples": [
+        "MAILCHIMP",
+        "MAILCHIMP*MONTHLY",
+        "MAILCHIMP ATLANTA GA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 13,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Mailchimp prices by contact count and holds your subscriber list, so a rebuild is off the table. Prune dead contacts, then ask for a retention rate. Its Free plan stops at 250 contacts.",
+    "alternatives": [
+      {
+        "name": "Kit Free",
+        "url": "https://kit.com/pricing",
+        "note": "Free plan for up to 10,000 subscribers."
+      },
+      {
+        "name": "Mailchimp Free",
+        "url": "https://mailchimp.com/pricing/marketing/",
+        "note": "Free plan limited to 250 contacts."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Competing free and low-cost newsletter tools: Kit's Free plan covers up to 10,000 subscribers, while Mailchimp's Free plan stops at 250 contacts. Cleaning inactive contacts also lowers the tier.",
+        "script": "Hi, I have been a Mailchimp customer for a while and I am reviewing my email tools. Kit offers a free plan for up to 10,000 subscribers, so I am planning to move my list unless I can get a better rate. I have already removed inactive contacts. Is there a retention discount, a longer-term rate, or a lower plan that fits my list size? If you can keep me under my current monthly price, I would rather stay.",
+        "expectedDiscountPct": [
+          10,
+          20
+        ],
+        "bestTime": "A week or two before renewal, after you clean inactive contacts. Contact support, or start the downgrade flow and see whether a retention offer appears."
+      },
+      "cancel": {
+        "howTo": "Export your audience and campaign reports first. To downgrade, click your profile icon, choose Account, open Billing, then Monthly plans or credits, click Change Plan under Marketing Plan and pick Free. To close the account entirely, follow the Pause or Cancel Your Account help article.",
+        "url": "https://mailchimp.com/help/change-or-pause-your-pricing-plan/",
+        "gotchas": "A paid plan can be downgraded to Free only once over the life of the account, and the downgrade takes effect when the next billing cycle begins. Your bill follows the number of contacts you hold, so archive or delete contacts you no longer email before renewing."
+      }
+    },
+    "sources": [
+      "https://mailchimp.com/pricing/marketing/",
+      "https://mailchimp.com/help/about-mailchimp-pricing-plans/",
+      "https://kit.com/pricing",
+      "https://mailchimp.com/help/change-or-pause-your-pricing-plan/",
+      "https://mailchimp.com/help/close-an-account/"
+    ]
+  },
+  {
+    "id": "kit-convertkit",
+    "name": "Kit (ConvertKit)",
+    "category": "productivity",
+    "url": "https://kit.com",
+    "match": {
+      "patterns": [
+        "CONVERTKIT|(^| )KIT\\.COM"
+      ],
+      "examples": [
+        "CONVERTKIT",
+        "CONVERTKIT.COM CREATOR",
+        "KIT.COM CREATOR PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Kit holds your subscriber list, so it is not a candidate for a rebuild. Its Free plan covers up to 10,000 subscribers, so keep Creator only for the sequences, automations or sales tools you actually use.",
+    "alternatives": [
+      {
+        "name": "Kit Free",
+        "url": "https://kit.com/pricing",
+        "note": "Free plan for up to 10,000 subscribers."
+      },
+      {
+        "name": "Buttondown",
+        "url": "https://buttondown.com",
+        "note": "Low-cost newsletter tool for writers."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In Kit, open Account settings, then Billing, and cancel or downgrade to the Free plan. Export your subscribers as CSV first.",
+        "gotchas": "When you pass your plan's subscriber limit, Kit automatically moves you to the next tier. The discounted first-year Pro price renews at the standard rate. Creator is about $390 billed yearly, saving $78 versus monthly."
+      }
+    },
+    "sources": [
+      "https://kit.com/pricing"
+    ]
+  },
+  {
+    "id": "loom",
+    "name": "Loom (Business)",
+    "category": "productivity",
+    "url": "https://www.loom.com",
+    "match": {
+      "patterns": [
+        "\\bLOOM\\.COM|\\bLOOM,? INC"
+      ],
+      "examples": [
+        "LOOM.COM",
+        "LOOM INC SAN FRANCISCO CA",
+        "LOOM, INC. BUSINESS"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 18,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Loom Business is $18 a month per creator. A screen recorder with a private share link is a one-person tool Claude Code can build. The free Starter plan allows 25 videos of 5 minutes each.",
+    "alternatives": [
+      {
+        "name": "Loom Starter (free)",
+        "url": "https://www.loom.com/pricing",
+        "note": "25 videos, 5-minute recordings, 720p."
+      },
+      {
+        "name": "OBS Studio",
+        "url": "https://obsproject.com",
+        "note": "Free open-source screen and camera recorder for local files."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A browser screen recorder with optional camera bubble and mic, saved locally or uploaded to cloud storage, with an unguessable share link and a simple viewer page. No trimming or editing.",
+        "hours": 10,
+        "runsOn": "Static PWA on Cloudflare Pages, uploads to Cloudflare R2 (free allowance; R2 needs a payment method on file), small Worker for share links. Recording uses the browser's screen-capture and MediaRecorder APIs.",
+        "ongoingCostYear": 0,
+        "youLose": "Loom's instant desktop app, viewer comments and reactions, view analytics, auto transcripts and AI summaries, and workspace sharing. Browser recording is limited on some phones and tabs, and the R2 free tier has storage caps. Older Safari may not play WebM, so MP4 is preferred wherever the browser can record it.",
+        "prompt": "Build me a screen recording tool to replace Loom Business. A static PWA (Vite, TypeScript) that records my screen with optional webcam bubble and microphone using getDisplayMedia and MediaRecorder, shows a countdown, and has pause and stop controls. Save the recording locally, or upload it straight to Cloudflare R2 through a presigned URL from a Cloudflare Worker, and return a share link with a long random id. Prefer MP4 H.264 when MediaRecorder.isTypeSupported allows it, fall back to WebM, and tell me which format each recording uses. The share page plays the video with a minimal player, no tracking, and an optional expiry date. Add a library page listing my recordings with delete. Keep the Worker secret in environment variables. Deploy on Cloudflare Pages free tier and tell me the R2 storage and request limits I should watch. Do not add trimming in the first version. Include a README for setup."
+      },
+      "cancel": {
+        "howTo": "Workspace admin: open Loom's Settings, then Billing, and cancel the plan or downgrade to Starter. Download the videos you want to keep first.",
+        "gotchas": "Annual billing saves up to 17 percent, and a deactivated member's seat fees are forfeited for the rest of the billing cycle. On Starter, videos beyond the 25-video limit may become unavailable, so download them first."
+      }
+    },
+    "sources": [
+      "https://www.loom.com/pricing",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "docusign-personal",
+    "name": "DocuSign Personal",
+    "category": "productivity",
+    "url": "https://www.docusign.com",
+    "match": {
+      "patterns": [
+        "DOCUSIGN"
+      ],
+      "examples": [
+        "DOCUSIGN",
+        "DOCUSIGN INC SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Personal is $120 billed yearly for 5 envelopes a month, which is easy to forget after one lease or loan. A legal e-signature trail is not something to rebuild; send with a free signer when you can.",
+    "alternatives": [
+      {
+        "name": "Adobe Acrobat Fill and Sign",
+        "url": "https://www.adobe.com/acrobat/online/sign-pdf.html",
+        "note": "Free signing of your own PDFs."
+      },
+      {
+        "name": "Dropbox Sign",
+        "url": "https://sign.dropbox.com",
+        "note": "Has a free plan with a small monthly signature allowance."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to your DocuSign account, open the plan or billing page, and turn off auto-renew. If the web account shows no cancel option, contact DocuSign support to cancel before the renewal date.",
+        "gotchas": "Personal is billed annually at $120 and limited to 5 envelopes a month, so a plan you used once still renews. Download completed documents before the plan ends."
+      }
+    },
+    "sources": [
+      "https://ecom.docusign.com/en-us/plans-and-pricing/esignature"
+    ]
+  },
+  {
+    "id": "trello-premium",
+    "name": "Trello Premium",
+    "category": "productivity",
+    "url": "https://trello.com",
+    "match": {
+      "patterns": [
+        "TRELLO"
+      ],
+      "examples": [
+        "TRELLO.COM",
+        "TRELLO PREMIUM",
+        "ATLASSIAN TRELLO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Premium adds Calendar, Timeline, Dashboard and Map views. Free allows 10 boards per Workspace and Standard ($5) removes the board cap. Downgrade unless you use those views daily.",
+    "alternatives": [
+      {
+        "name": "Trello Free",
+        "url": "https://trello.com/pricing",
+        "note": "Up to 10 boards per Workspace, unlimited cards."
+      },
+      {
+        "name": "Trello Standard",
+        "url": "https://trello.com/pricing",
+        "note": "$5 per user per month on yearly billing; unlimited boards."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "As Workspace admin, open Billing from the Workspace menu and downgrade to Standard or Free. Check that boards using Premium views still make sense afterward.",
+        "gotchas": "Premium is $10 per user billed yearly or $12.50 monthly. Workspaces over 10 boards will be restricted on Free. Annual plans bill upfront, so downgrade before renewal."
+      }
+    },
+    "sources": [
+      "https://trello.com/pricing"
+    ]
+  },
+  {
+    "id": "clickup",
+    "name": "ClickUp",
+    "category": "productivity",
+    "url": "https://clickup.com",
+    "match": {
+      "patterns": [
+        "CLICKUP|MANGO TECHNOLOGIES"
+      ],
+      "examples": [
+        "CLICKUP",
+        "CLICKUP.COM SAN DIEGO CA",
+        "MANGO TECHNOLOGIES CLICKUP"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "ClickUp is a team tool that holds shared work, so rebuilding it is off the table. Core is $9 per member on yearly billing ($12 regular price). For a solo user, Free Forever may be enough.",
+    "alternatives": [
+      {
+        "name": "ClickUp Free Forever",
+        "url": "https://clickup.com/pricing",
+        "note": "Free plan for light personal use."
+      },
+      {
+        "name": "Trello Free",
+        "url": "https://trello.com/pricing",
+        "note": "Simple boards at no cost."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "As Workspace owner, open Workspace settings, then Billing, and downgrade to Free Forever or cancel. Remove guests and extra members first, since billing is per member.",
+        "gotchas": "Prices are per member per month; the listed $9 is the yearly rate against a $12 regular price. Free Forever has usage limits, so check your storage and automations before you downgrade."
+      }
+    },
+    "sources": [
+      "https://clickup.com/pricing"
+    ]
+  },
+  {
+    "id": "superhuman",
+    "name": "Superhuman",
+    "category": "productivity",
+    "url": "https://superhuman.com",
+    "match": {
+      "patterns": [
+        "SUPERHUMAN\\.COM|SUPERHUMAN MAIL|SUPERHUMAN LABS"
+      ],
+      "examples": [
+        "SUPERHUMAN.COM",
+        "SUPERHUMAN MAIL STARTER",
+        "SUPERHUMAN LABS INC"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A fast email client is a speed tool you either value or you do not, and Claude cannot replace the inbox. Superhuman also sells Grammarly and suite plans (Pro $12 a month yearly), so check which product you pay for.",
+    "alternatives": [
+      {
+        "name": "Gmail keyboard shortcuts",
+        "url": "https://support.google.com/mail/answer/6594",
+        "note": "Free; turn them on in Gmail settings."
+      },
+      {
+        "name": "Spark Mail Free",
+        "url": "https://sparkmailapp.com/pricing",
+        "note": "Free plan with a fast inbox on every platform."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Open Superhuman settings or your account's billing page and cancel the plan there. If you pay through an employer or an app store, cancel through that channel instead.",
+        "gotchas": "Superhuman's plans page lists Free, Pro ($12 yearly, $15 monthly) and Business ($33 yearly, $40 monthly), with Mail features under Business, and it also sells Grammarly, so a charge may be for another product. The standalone Mail price could not be confirmed from the site."
+      }
+    },
+    "sources": [
+      "https://superhuman.com/plans"
+    ]
+  },
+  {
+    "id": "spark-mail",
+    "name": "Spark Mail (Plus)",
+    "category": "productivity",
+    "url": "https://sparkmailapp.com",
+    "match": {
+      "patterns": [
+        "SPARK MAIL|SPARKMAIL"
+      ],
+      "examples": [
+        "SPARK MAIL PLUS",
+        "SPARKMAILAPP.COM",
+        "SPARK MAIL READDLE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 8.25,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Spark's pricing page now lists Free, Plus ($99 a year) and Pro ($199). Free runs mail fine; Plus adds AI features, and Claude can draft replies if you paste a thread. Keep Plus only for what Free lacks.",
+    "alternatives": [
+      {
+        "name": "Spark Free",
+        "url": "https://sparkmailapp.com/pricing",
+        "note": "Free plan for personal mail."
+      },
+      {
+        "name": "Apple Mail",
+        "url": "https://support.apple.com/guide/mail/welcome/mac",
+        "note": "Free and built in on Apple devices."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "If you subscribed in the app on iPhone or Mac, cancel in Apple subscriptions; on Android, in Google Play. For web or Stripe purchases, use Spark's account settings.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Plus is $10 monthly or $99 yearly, Pro $20 monthly or $199 yearly. Annual plans bill upfront, so cancel at least a day before renewal. If you started on a free trial, cancel before it ends."
+      }
+    },
+    "sources": [
+      "https://sparkmailapp.com/pricing",
+      "https://support.apple.com/en-us/118428",
+      "https://support.google.com/googleplay/answer/7018481"
+    ]
+  },
+  {
+    "id": "sanebox",
+    "name": "SaneBox",
+    "category": "productivity",
+    "url": "https://www.sanebox.com",
+    "match": {
+      "patterns": [
+        "SANEBOX"
+      ],
+      "examples": [
+        "SANEBOX",
+        "SANEBOX.COM",
+        "SANEBOX INC"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "SaneBox sorts mail by sender into a lesser-priority folder. A script on your own computer can learn the same thing from your read and reply history. Gmail and Outlook filters cover the basics for free.",
+    "alternatives": [
+      {
+        "name": "Gmail filters and tabs",
+        "url": "https://support.google.com/mail/answer/6579",
+        "note": "Built-in filters to label and skip the inbox."
+      },
+      {
+        "name": "Spark Mail Free",
+        "url": "https://sparkmailapp.com/pricing",
+        "note": "Free plan with smart inbox sorting."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A script that reads your mailbox over IMAP, scores each sender by how often you open and reply, moves low-score senders to a Later folder, and keeps a Digest note of what it moved.",
+        "hours": 9,
+        "runsOn": "Python script on your own computer or an old laptop on a schedule, using a Gmail app password, or OAuth2 (XOAUTH2) for Outlook.com and Microsoft 365, with read and move permissions only. Free.",
+        "ongoingCostYear": 0,
+        "youLose": "SaneBox's trained filtering across providers, reminders and snooze folders, one-click training from any mail app, and support. The script touches your mailbox credentials, so keep it local and read-only until you trust it. Microsoft no longer accepts app passwords for IMAP, so Outlook needs your own Entra app registration and an OAuth2 sign-in.",
+        "prompt": "Build me a local email triage script to replace SaneBox. Python 3, running on my own computer on a schedule. Connect over IMAP with a Gmail app password (2-step verification required) stored in the OS keychain, or for Outlook.com and Microsoft 365 with OAuth2 and XOAUTH2 through my own Entra app registration (MSAL device-code flow, token cache in the keychain), because Microsoft no longer accepts app passwords for IMAP. Start in dry-run mode that only prints what it would move. Score each sender from my last 90 days (share of messages I opened, replied to, or starred). Move low-score senders into a folder called Later and keep a Digest note listing what moved. Never touch flagged, starred or unread messages from anyone I have replied to. Let me rescue a sender by dragging a message back, which the script learns from. Log every move to a CSV with an undo command. Add unit tests for the scoring and a README with setup for Gmail and Outlook and how to schedule it."
+      },
+      "cancel": {
+        "howTo": "Log in at sanebox.com, open your account's subscription settings, and cancel. Messages SaneBox moved into its folders stay in your mailbox, so move anything you want back to the inbox first.",
+        "gotchas": "SaneBox's current prices were not visible on its pricing page, so check your receipt for the plan and renewal date. Disconnect SaneBox's access to your mail account after canceling."
+      }
+    },
+    "sources": [
+      "https://www.sanebox.com/pricing",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "fantastical",
+    "name": "Fantastical (Premium)",
+    "category": "productivity",
+    "url": "https://flexibits.com/fantastical",
+    "match": {
+      "patterns": [
+        "FANTASTICAL|FLEXIBITS"
+      ],
+      "examples": [
+        "FLEXIBITS INC FANTASTICAL",
+        "FANTASTICAL PREMIUM",
+        "FLEXIBITS.COM"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Flexibits Premium"
+        },
+        {
+          "amount": 56.99,
+          "cadence": "annual",
+          "plan": "Flexibits Premium"
+        },
+        {
+          "amount": 10.49,
+          "cadence": "monthly",
+          "plan": "Premium for Families"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "Premium for Families"
+        }
+      ]
+    },
+    "typicalMonthly": 4.75,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Fantastical is a polished Apple-first calendar. Its free tier handles a simple calendar; Premium at about $57 a year pays for natural-language entry and integrations. Keep it only if you use those daily.",
+    "alternatives": [
+      {
+        "name": "Fantastical Free",
+        "url": "https://flexibits.com/pricing?product=fantastical",
+        "note": "Free tier with a simple calendar and your existing accounts."
+      },
+      {
+        "name": "Apple Calendar",
+        "url": "https://support.apple.com/guide/calendar/welcome/mac",
+        "note": "Free and built in."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "If you subscribed through the App Store, cancel in Apple subscriptions: Settings, your name, Subscriptions, Fantastical. If you subscribed on flexibits.com, manage it in your Flexibits account.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "App Store prices listed are $6.99 and $56.99 for Premium and $10.49 and $89.99 for Families, but the listing does not state which is monthly or yearly, so check your receipt. Flexibits sells on both its site and the App Store."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/fantastical-calendar-tasks/id718043190",
+      "https://flexibits.com/pricing?product=fantastical",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "readwise",
+    "name": "Readwise",
+    "category": "productivity",
+    "url": "https://readwise.io",
+    "match": {
+      "patterns": [
+        "READWISE"
+      ],
+      "examples": [
+        "READWISE",
+        "READWISE.IO",
+        "READWISE INC"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "If you mainly want highlights resurfaced, a daily-review app with Kindle import is a weekend build. If you read in Reader, keep it. Highlights Lite is $5.59 a month if you only want daily review.",
+    "alternatives": [
+      {
+        "name": "Readwise Highlights Lite",
+        "url": "https://readwise.io/pricing",
+        "note": "$5.59 a month on yearly billing: daily review, search and sync."
+      },
+      {
+        "name": "Obsidian",
+        "url": "https://obsidian.md",
+        "note": "Keep highlights as Markdown notes in a free local vault."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A highlight vault that imports Kindle clippings and Readwise CSV exports, with tags, notes, search, a daily review of a handful of highlights, and Markdown export.",
+        "hours": 7,
+        "runsOn": "Installable PWA on Cloudflare Pages (free) with highlights in IndexedDB. The daily review lives in the app.",
+        "ongoingCostYear": 0,
+        "youLose": "Reader (read-it-later, RSS, PDF and EPUB highlighting), automatic syncing from Kindle and other services, and Readwise's tuned review scheduler. You would re-import highlights by file.",
+        "prompt": "Build me a highlight vault to replace Readwise Highlights. An installable PWA (Vite, React, TypeScript) storing everything in IndexedDB. Import: Kindle My Clippings.txt (parse book, author, location, note vs highlight), a Readwise CSV export, and plain Markdown. Features: books and sources list, tags, my own notes on each highlight, full-text search, favorite and discard buttons, and a Daily Review page that shows five highlights chosen by weighting older and favorited ones, with Remembered and Skip buttons that feed a simple spaced-repetition schedule. Add Markdown export (one file per book) and JSON backup and restore. Write tests for the clippings parser using sample files. Deploy to Cloudflare Pages free tier, explain installing it on a phone, and note what to do about duplicate highlights on re-import."
+      },
+      "cancel": {
+        "howTo": "Log in at readwise.io, open Account settings, then Billing, and cancel the subscription. Export your highlights (CSV or Markdown) first.",
+        "gotchas": "Prices are quoted for yearly billing and the yearly plan saves up to 23 percent versus monthly. The trial lasts 30 days, so cancel before it ends if you are not continuing."
+      }
+    },
+    "sources": [
+      "https://readwise.io/pricing",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "instapaper-premium",
+    "name": "Instapaper Premium",
+    "category": "productivity",
+    "url": "https://www.instapaper.com",
+    "match": {
+      "patterns": [
+        "INSTAPAPER"
+      ],
+      "examples": [
+        "INSTAPAPER",
+        "INSTAPAPER.COM PREMIUM",
+        "INSTAPAPER PREMIUM SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Premium is $59.99 a year for full-text search, PDF reading and Kindle delivery. Wallabag does the same job on a box you own, but the polished apps and Kindle delivery are the draw, so keep it if you use them.",
+    "alternatives": [
+      {
+        "name": "Instapaper Free",
+        "url": "https://www.instapaper.com/premium",
+        "note": "Free accounts have a monthly cap of 5 notes and no full-text search."
+      },
+      {
+        "name": "Wallabag",
+        "url": "https://wallabag.org",
+        "note": "Open-source read-it-later you host yourself."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Wallabag",
+          "Docker Compose",
+          "Tailscale (free tier)"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 4,
+        "powerCostYear": 22,
+        "youLose": "Instapaper's Kindle delivery, polished mobile reading and text-to-speech voices. You run the server, apply updates, and back it up, and saving only works while it is reachable.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Set up Wallabag as my Instapaper replacement. Target: a Raspberry Pi 4, NAS or old laptop running Debian or Ubuntu Server. Write a Docker Compose file for Wallabag with Postgres, named volumes, a restart policy, and secrets in an env file outside the repository. Install Tailscale on the server, my phone and my laptop so the web app and mobile app reach it privately, with no open router ports. Add a nightly database dump and a weekly copy of the data folder to a USB drive, keeping 14 days. Then walk me through exporting my Instapaper archive, importing it into Wallabag, installing the browser extension and the mobile app, and testing a save from my phone. Finish with a README for updates and restoring from backup. Ask what hardware I have before starting."
+      },
+      "cancel": {
+        "howTo": "Log in to Instapaper, open Settings, then Subscription, and cancel. If you subscribed in the iOS app, cancel in Apple subscriptions instead.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Premium is $5.99 monthly or $59.99 yearly. Free accounts are limited to 5 notes a month and have no full-text search, so export your articles first."
+      }
+    },
+    "sources": [
+      "https://www.instapaper.com/premium",
+      "https://wallabag.org",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "raindrop-pro",
+    "name": "Raindrop.io Pro",
+    "category": "productivity",
+    "url": "https://raindrop.io",
+    "match": {
+      "patterns": [
+        "RAINDROP\\.IO|RAINDROP PRO"
+      ],
+      "examples": [
+        "RAINDROP.IO",
+        "RAINDROP.IO PRO YEARLY",
+        "RAINDROP PRO SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Raindrop Free keeps unlimited bookmarks and devices; Pro adds full-text search, permanent copies and backups. Keep it if you use those. If not, downgrade, or run linkding on a Pi.",
+    "alternatives": [
+      {
+        "name": "Raindrop.io Free",
+        "url": "https://raindrop.io/pro",
+        "note": "Free plan keeps unlimited bookmarks, collections and devices."
+      },
+      {
+        "name": "linkding",
+        "url": "https://linkding.link",
+        "note": "Self-hosted bookmark manager, one Docker container with SQLite."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "linkding (Docker)",
+          "Tailscale (free tier)",
+          "Browser extension for Firefox or Chrome"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 3,
+        "powerCostYear": 22,
+        "youLose": "Raindrop's polished mobile apps and visual boards, nested collections, sharing, and one-click permanent copies. linkding is deliberately minimal, and you handle updates and backups.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Set up linkding as my Raindrop.io Pro replacement. Target: a Raspberry Pi, NAS or old laptop running Debian or Ubuntu Server. Write a Docker Compose file for linkding with a named volume, a restart policy, and the admin password set through an env file kept out of the repository. Install Tailscale on the server, my laptop and my phone so I reach it privately with no open router ports. Add a nightly backup of the SQLite database and data folder to a USB drive, keeping 14 days, and a restore test. Then walk me through exporting my Raindrop bookmarks as HTML, writing a small script that turns each collection into a tag, importing the file into linkding, installing the browser extension, and adding a phone bookmarklet or share shortcut. End with a short README for updates. Ask what hardware I have before starting."
+      },
+      "cancel": {
+        "howTo": "Log in at raindrop.io, open Settings, then Pro, and cancel the subscription. Export your bookmarks (HTML or CSV) first so they stay available on the free plan or elsewhere.",
+        "gotchas": "Yearly billing is usually about 20 percent cheaper than monthly. Raindrop's page did not show dollar prices when checked, so read your receipt. Permanent copies and full-text search are Pro features and stop with the plan."
+      }
+    },
+    "sources": [
+      "https://raindrop.io/pro",
+      "https://linkding.link/"
+    ]
+  },
+  {
+    "id": "toggl-track",
+    "name": "Toggl Track (Starter)",
+    "category": "productivity",
+    "url": "https://toggl.com/track",
+    "match": {
+      "patterns": [
+        "TOGGL"
+      ],
+      "examples": [
+        "TOGGL",
+        "TOGGL.COM TRACK STARTER",
+        "TOGGL OU TALLINN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "rebuild",
+      "keep"
+    ],
+    "why": "Toggl's Free plan covers timers, calendar integrations and basic planning. Starter ($9 yearly, $12 monthly) adds billable rates, timeline views and team reports. Downgrade unless you invoice from it.",
+    "alternatives": [
+      {
+        "name": "Toggl Track Free",
+        "url": "https://toggl.com/track/pricing/",
+        "note": "Manual and live timers, calendar integrations, basic planning."
+      },
+      {
+        "name": "ActivityWatch",
+        "url": "https://activitywatch.net",
+        "note": "Open-source automatic app and web tracking, data stays on your device."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A personal time tracker with start and stop timers, projects, tags, manual entries, weekly and monthly reports, billable rates, and CSV export for invoices.",
+        "hours": 6,
+        "runsOn": "Installable PWA on Cloudflare Pages (free) with data in IndexedDB.",
+        "ongoingCostYear": 0,
+        "youLose": "Toggl's team features, browser and desktop timers, integrations, reminders and idle detection. Without a sync server, your phone and laptop keep separate data unless you move the backup file between them.",
+        "prompt": "Build me a personal time tracker to replace Toggl Track. An installable PWA (Vite, React, TypeScript) with data in IndexedDB. Features: a one-tap start and stop timer with description, project and tags; manual entries and editing; projects with a hourly rate and client name; a weekly timesheet view; reports by day, week, project and tag with simple bar charts; CSV export for invoices; and JSON backup and restore. Add a Pomodoro-style reminder using the Notifications API that I can switch off. Import my Toggl detailed-report CSV (columns User, Email, Client, Project, Task, Description, Billable, Start date, Start time, End date, End time, Duration, Tags). Write tests for duration rounding and the report totals across time zones and daylight saving. Deploy to Cloudflare Pages free tier, explain how to install it on a phone and laptop, and say how to move data between them."
+      },
+      "cancel": {
+        "howTo": "In Toggl Track, open Organization or Profile settings, then Subscription, and downgrade to the Free plan. Export your time entries as CSV from Reports first.",
+        "gotchas": "Starter is $9 per user on yearly billing and $12 monthly. Free limits include no billable rates, timeline views or team-level reports, so check your invoices before you drop it."
+      }
+    },
+    "sources": [
+      "https://toggl.com/track/pricing/",
+      "https://activitywatch.net/",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "rescuetime",
+    "name": "RescueTime",
+    "category": "productivity",
+    "url": "https://www.rescuetime.com",
+    "match": {
+      "patterns": [
+        "RESCUETIME"
+      ],
+      "examples": [
+        "RESCUETIME",
+        "RESCUETIME.COM SOLO FOCUS",
+        "RESCUETIME PREMIUM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 7,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Solo Focus is $9 a month or $84 a year. Check how often you open the reports. ActivityWatch tracks apps and sites for free with data on your own device; Screen Time covers phones.",
+    "alternatives": [
+      {
+        "name": "ActivityWatch",
+        "url": "https://activitywatch.net",
+        "note": "Open-source app and web tracking for Windows, macOS, Linux and Android; data stays local."
+      },
+      {
+        "name": "RescueTime Lite",
+        "url": "https://www.rescuetime.com/plans",
+        "note": "Premium falls back to the free Lite plan after you cancel."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Log in at rescuetime.com, open Account Settings, then Billing, click Cancel my subscription on the right, and follow the prompts. Paid features stay available until the current billing cycle ends, then the account reverts to the free Lite plan.",
+        "url": "https://help.rescuetime.com/article/51-how-does-billing-work",
+        "gotchas": "Paid plans have a 14-day free trial and you are not charged if you cancel before it ends, but prorated refunds for partial periods are generally not offered. Remove the desktop app after canceling."
+      }
+    },
+    "sources": [
+      "https://www.rescuetime.com/plans",
+      "https://activitywatch.net/",
+      "https://help.rescuetime.com/article/51-how-does-billing-work"
+    ]
+  },
+  {
+    "id": "freedom",
+    "name": "Freedom (Premium)",
+    "category": "productivity",
+    "url": "https://freedom.to",
+    "match": {
+      "patterns": [
+        "FREEDOM\\.TO|FREEDOM LABS"
+      ],
+      "examples": [
+        "FREEDOM.TO",
+        "FREEDOM LABS INC",
+        "FREEDOM.TO PREMIUM YEARLY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 3.33,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "rotate"
+    ],
+    "why": "Freedom's free plan blocks apps and sites on unlimited devices; Premium adds scheduling and Locked Mode. Phone and desktop focus modes cover most of that. Pay month to month only for crunch periods.",
+    "alternatives": [
+      {
+        "name": "Freedom Free",
+        "url": "https://freedom.to/pricing",
+        "note": "App, website and internet blocking with custom blocklists on unlimited devices."
+      },
+      {
+        "name": "Cold Turkey",
+        "url": "https://getcoldturkey.com",
+        "note": "Desktop blocker with a free tier."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Pay the $8.99 monthly plan only in the weeks you need Locked Mode (a deadline, an exam period), cancel afterward, and use the free plan and built-in focus modes the rest of the year. If you pay yearly, the annual rate is already lower, so rotate only if you pay month to month.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Log in at freedom.to, open your account's subscription page, and cancel the Premium plan. Your account drops to the free plan, which keeps blocking without scheduling or Locked Mode.",
+        "gotchas": "Premium is $3.33 a month on yearly billing, $8.99 monthly, or a one-time $99.50 for Forever. A free 7-day trial is offered, so cancel before it ends. Scheduled sessions stop when Premium ends."
+      }
+    },
+    "sources": [
+      "https://freedom.to/pricing"
+    ]
+  },
+  {
+    "id": "bitly-core",
+    "name": "Bitly (Core)",
+    "category": "productivity",
+    "url": "https://bitly.com",
+    "match": {
+      "patterns": [
+        "BITLY|\\bBIT\\.LY"
+      ],
+      "examples": [
+        "BITLY",
+        "BITLY INC NEW YORK NY",
+        "BITLY.COM CORE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Core is $120 a year for 100 links a month. A short-link redirect service on a Cloudflare Worker with your own domain is a few hours of work and costs only the domain. Free allows 5 links a month.",
+    "alternatives": [
+      {
+        "name": "Bitly Free",
+        "url": "https://bitly.com/pages/pricing",
+        "note": "5 links a month."
+      },
+      {
+        "name": "Cloudflare Workers",
+        "url": "https://workers.cloudflare.com",
+        "note": "Free tier hosts a small redirect service."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A personal short-link service: create links with custom slugs behind a secret admin token, redirect quickly, count clicks by day and referrer, make QR codes, and export links as CSV.",
+        "hours": 5,
+        "runsOn": "Cloudflare Worker with KV or D1 on the free tier, on a domain you own (about $12 a year for a cheap TLD).",
+        "ongoingCostYear": 12,
+        "youLose": "Bitly's established link reputation with spam filters, branded-domain management, in-depth analytics, QR design tools, integrations and team features. If the Worker or domain lapses, every link you shared breaks.",
+        "prompt": "Build me a personal link shortener to replace Bitly Core, running on a Cloudflare Worker with D1 or KV on the free tier, on a domain I own. Features: a private admin page behind a long secret token where I create short links with optional custom slugs; fast 301 or 302 redirects; click counts per link by day with referrer and country, stored without IP addresses; QR code download for each link; link expiry; and CSV export of my links. My existing bit.ly links keep redirecting on Bitly, so only new links use my domain. Block redirects to private IP ranges and to non-http schemes. Write tests for slug generation and redirect rules. Provide Wrangler config, the commands to deploy and attach my domain, a warning about keeping the domain renewed, and a backup script that exports all links weekly."
+      },
+      "cancel": {
+        "howTo": "In Bitly, open your account's Billing or Plan settings and cancel or downgrade to Free. Export your links and click data first.",
+        "gotchas": "Core is annual-only ($120 a year), so a mid-year cancel is unlikely to refund the rest. After a downgrade, existing links keep redirecting but Free allows only 5 new links a month; check your branded-link and QR settings."
+      }
+    },
+    "sources": [
+      "https://bitly.com/pages/pricing",
+      "https://code.claude.com/docs/en/overview"
+    ]
+  },
+  {
+    "id": "day-one",
+    "name": "Day One (Silver)",
+    "category": "productivity",
+    "url": "https://dayoneapp.com",
+    "match": {
+      "patterns": [
+        "\\bDAYONE|DAY ONE (APP|JOURNAL|SILVER|GOLD)"
+      ],
+      "examples": [
+        "DAYONEAPP.COM",
+        "DAY ONE SILVER",
+        "DAY ONE APP GOLD"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 4.17,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Silver is $49.99 a year for unlimited-device sync of an end-to-end encrypted journal. Journals are personal and long-lived, so a quick rebuild would risk your history. The free plan works on one device.",
+    "alternatives": [
+      {
+        "name": "Day One Basic (free)",
+        "url": "https://dayoneapp.com/plans/",
+        "note": "Unlimited text entries, one photo per entry, encryption, one device."
+      },
+      {
+        "name": "Apple Notes",
+        "url": "https://support.apple.com/guide/notes/welcome/mac",
+        "note": "Free, synced through iCloud, no end-to-end journaling features."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel where you subscribed: Apple subscriptions on iPhone or Mac, Google Play on Android, or your Day One account for web purchases. Export your journals (JSON or PDF) first.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Day One lists only yearly prices (Silver $49.99, Gold $74.99). Sync across devices is a paid feature, and the free plan covers one device, so export before downgrading to keep a full local copy."
+      }
+    },
+    "sources": [
+      "https://dayoneapp.com/plans/",
+      "https://support.apple.com/en-us/118428",
+      "https://support.google.com/googleplay/answer/7018481"
+    ]
+  },
+  {
+    "id": "zoom-workplace-pro",
+    "name": "Zoom Workplace Pro",
+    "category": "productivity",
+    "url": "https://zoom.com",
+    "match": {
+      "patterns": [
+        "\\bZOOM\\.(US|COM)|ZOOM VIDEO"
+      ],
+      "examples": [
+        "ZOOM.US 888-799-9666 CA",
+        "ZOOM VIDEO COMMUNICATIONS",
+        "ZOOM.COM PRO MONTHLY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 14.16,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Basic Zoom meetings are capped at 40 minutes and 100 people. Pro is $16.99 a month, or $14.16 on yearly billing. Pay month to month only in the months you host longer calls.",
+    "alternatives": [
+      {
+        "name": "Zoom Basic",
+        "url": "https://zoom.us/en/pricing",
+        "note": "Free meetings up to 40 minutes and 100 participants."
+      },
+      {
+        "name": "Google Meet",
+        "url": "https://meet.google.com",
+        "note": "Free video calls with a Google account; check the current time limit for group calls."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Stay on Basic and subscribe to the monthly Pro plan only in months when you host calls longer than 40 minutes, then cancel the same week. For occasional long calls, ask the other person to host or use another free meeting link.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at zoom.us, open Account Management, then Billing, and cancel the subscription or downgrade to Basic. Download cloud recordings first.",
+        "gotchas": "Yearly billing is $14.16 a month charged upfront; monthly is $16.99. Cloud recordings and some settings are tied to Pro, so save what you need before the plan ends."
+      }
+    },
+    "sources": [
+      "https://zoom.us/en/pricing"
+    ]
+  },
+  {
+    "id": "goodnotes",
+    "name": "Goodnotes (Pro)",
+    "category": "productivity",
+    "url": "https://www.goodnotes.com",
+    "match": {
+      "patterns": [
+        "GOODNOTES"
+      ],
+      "examples": [
+        "GOODNOTES LIMITED",
+        "GOODNOTES.COM PRO",
+        "GOODNOTES PRO YEARLY"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 35.99,
+          "cadence": "annual",
+          "plan": "Goodnotes Pro (yearly)"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "annual",
+          "plan": "Goodnotes Essential (yearly)"
+        }
+      ]
+    },
+    "typicalMonthly": 3,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Pro is $35.99 a year; Free keeps 3 files, and Essential is $11.99. If you handwrite on an iPad daily, keep it. Watch for the separate $9.99 monthly AI Pass add-on, which many people never use.",
+    "alternatives": [
+      {
+        "name": "Goodnotes Free",
+        "url": "https://www.goodnotes.com/pricing",
+        "note": "Free forever, up to 3 files, limited AI."
+      },
+      {
+        "name": "Apple Notes",
+        "url": "https://support.apple.com/guide/notes/welcome/mac",
+        "note": "Free, with Apple Pencil support and iCloud sync."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Most Goodnotes plans are billed by Apple. iPhone or iPad: Settings, your name, Subscriptions, Goodnotes, Cancel Subscription. Check for a separate AI Pass entry and cancel it too if you do not use it.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Pro has no monthly price; the only monthly charge is the AI Pass add-on at $9.99. The App Store also lists a $28.99 one-time option. Export notebooks as PDF before downgrading, since Free keeps only 3 files."
+      }
+    },
+    "sources": [
+      "https://www.goodnotes.com/pricing",
+      "https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "id": "smallpdf",
+    "name": "Smallpdf Pro",
+    "category": "productivity",
+    "url": "https://smallpdf.com",
+    "match": {
+      "patterns": [
+        "SMALLPDF"
+      ],
+      "examples": [
+        "SMALLPDF.COM",
+        "SMALLPDF PRO",
+        "SMALLPDF AG ZURICH"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "selfhost"
+    ],
+    "why": "Smallpdf is a web toolbox for merging, compressing and signing PDFs. Free use is enough for occasional jobs, and Stirling-PDF or your OS's built-in tools do the same offline. Confirm renewal terms on your receipt.",
+    "alternatives": [
+      {
+        "name": "Stirling-PDF",
+        "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+        "note": "Open-core PDF toolkit you run yourself; 50+ tools, runs in Docker or as a desktop app."
+      },
+      {
+        "name": "macOS Preview",
+        "url": "https://support.apple.com/guide/preview/welcome/mac",
+        "note": "Built in on Mac: merge, sign and annotate PDFs."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Stirling-PDF (Docker)",
+          "Tailscale (free tier)"
+        ],
+        "hardware": [
+          "old-laptop",
+          "nas"
+        ],
+        "hours": 1.5,
+        "powerCostYear": 22,
+        "youLose": "Smallpdf's polished web flow and cloud-drive hookups. Stirling-PDF is open-core, so enterprise features are paid, and you handle updates. Its desktop app needs no server at all if you only work on one computer.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Set up Stirling-PDF as my Smallpdf replacement. Target: an old laptop or NAS running Debian or Ubuntu Server (or tell me to use the desktop app if I only work on one computer). Write a Docker Compose file that runs the Stirling-PDF container on port 8080 with a restart policy, a volume for configuration, and login enabled so only I can use it. Install Tailscale on the server and my devices so I can open it from my laptop and phone without exposing it to the internet. Walk me through the five operations I use most: merge, split, compress, rotate, and sign. Add a note on keeping the image updated and one on backing up its settings. Ask what devices I own before you begin."
+      },
+      "cancel": {
+        "howTo": "Log in to Smallpdf, open Account settings, then Subscription or Billing, and cancel the plan. Cancel before any trial period ends so it does not convert to a paid plan.",
+        "gotchas": "Smallpdf's current prices were not visible on its pricing page, so check your receipt for the plan, billing period and renewal date. Annual plans bill upfront."
+      }
+    },
+    "sources": [
+      "https://smallpdf.com/pricing",
+      "https://github.com/Stirling-Tools/Stirling-PDF"
+    ]
+  }
+]

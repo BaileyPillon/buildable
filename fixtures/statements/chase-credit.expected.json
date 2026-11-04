@@ -1,0 +1,166 @@
+{
+  "file": "chase-credit.csv",
+  "bank": "chaseCredit",
+  "statementStart": "2025-10-01",
+  "statementEnd": "2026-10-31",
+  "rows": 587,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 17.99,
+      "charges": 13,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 15.49,
+          "to": 17.99
+        }
+      ]
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 13,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 11.99,
+          "to": 12.99
+        }
+      ]
+    },
+    {
+      "key": "hulu",
+      "displayName": "Hulu",
+      "match": "HULU",
+      "merchantId": "hulu",
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 13,
+      "active": true
+    },
+    {
+      "key": "youtube-premium",
+      "displayName": "YouTube Premium",
+      "match": "YOUTUBE",
+      "merchantId": "youtube-premium",
+      "cadence": "monthly",
+      "currentAmount": 15.99,
+      "charges": 13,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 13.99,
+          "to": 15.99
+        }
+      ]
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($9.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 9.99,
+      "charges": 13,
+      "active": true,
+      "candidates": [
+        "icloud-plus",
+        "apple-tv-plus"
+      ]
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($0.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 0.99,
+      "charges": 13,
+      "active": true,
+      "candidates": [
+        "icloud-plus"
+      ]
+    },
+    {
+      "key": "audible",
+      "displayName": "Audible",
+      "match": "AUDIBLE",
+      "merchantId": "audible",
+      "cadence": "monthly",
+      "currentAmount": 14.95,
+      "charges": 13,
+      "active": true
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 13,
+      "active": true
+    },
+    {
+      "key": "peloton-app",
+      "displayName": "Peloton App",
+      "match": "PELOTON",
+      "merchantId": "peloton-app",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 13,
+      "active": true
+    },
+    {
+      "key": "amazon-prime",
+      "displayName": "Amazon Prime",
+      "match": "AMAZON PRIME",
+      "merchantId": "amazon-prime",
+      "cadence": "annual",
+      "currentAmount": 139,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "grammarly",
+      "displayName": "Grammarly",
+      "match": "GRAMMARLY",
+      "merchantId": "grammarly",
+      "cadence": "annual",
+      "currentAmount": 144,
+      "charges": 2,
+      "active": true
+    },
+    {
+      "key": "ironforge",
+      "displayName": "Iron Forge Fitness",
+      "match": "IRON FORGE",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 39,
+      "charges": 13,
+      "active": true
+    }
+  ],
+  "inactive": [
+    {
+      "key": "paramount-plus",
+      "displayName": "Paramount+",
+      "match": "PARAMOUNT",
+      "merchantId": "paramount-plus",
+      "cadence": "monthly",
+      "currentAmount": 7.99,
+      "charges": 8,
+      "active": false
+    }
+  ]
+}

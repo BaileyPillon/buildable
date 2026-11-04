@@ -1,0 +1,915 @@
+{
+  "file": "chase-checking-holdout.csv",
+  "format": "Chase checking (Details,Posting Date,...,Balance,Check or Slip #; debits negative, trailing comma)",
+  "statementStart": "2025-10-01",
+  "statementEnd": "2026-10-31",
+  "rows": 1040,
+  "chargeRows": 996,
+  "creditRows": 44,
+  "installmentRows": 0,
+  "dupeEstimate": 3,
+  "series": [
+    {
+      "id": "netflix",
+      "label": "Netflix",
+      "merchantId": "netflix",
+      "match": [
+        "NETFLIX"
+      ],
+      "amounts": [
+        15.49,
+        17.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-14",
+      "lastSeen": "2026-10-14",
+      "currentAmount": 17.99,
+      "meanAmount": 17.22,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 15.49,
+          "to": 17.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "NETFLIX.COM 866-579-7172 CA"
+    },
+    {
+      "id": "spotify-paypal",
+      "label": "Spotify via PayPal",
+      "merchantId": "spotify",
+      "match": [
+        "SPOTIFYUSA"
+      ],
+      "amounts": [
+        11.99,
+        12.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-03",
+      "lastSeen": "2026-10-03",
+      "currentAmount": 12.99,
+      "meanAmount": 12.3,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 11.99,
+          "to": 12.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PAYPAL *SPOTIFYUSA 402-935-7733 CA"
+    },
+    {
+      "id": "hulu",
+      "label": "Hulu (descriptor changes to HLU*HULU mid-statement)",
+      "merchantId": "hulu",
+      "match": [
+        "HULU"
+      ],
+      "amounts": [
+        17.99,
+        18.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-22",
+      "lastSeen": "2026-10-21",
+      "currentAmount": 18.99,
+      "meanAmount": 18.53,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 17.99,
+          "to": 18.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "HULU 877-8244858 CA"
+    },
+    {
+      "id": "youtube-premium",
+      "label": "YouTube Premium",
+      "merchantId": "youtube-premium",
+      "match": [
+        "YOUTUBEPREMIUM"
+      ],
+      "amounts": [
+        13.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-10-09",
+      "currentAmount": 13.99,
+      "meanAmount": 13.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GOOGLE *YOUTUBEPREMIUM g.co/helppay#CA"
+    },
+    {
+      "id": "apple-299",
+      "label": "App Store $2.99",
+      "merchantId": null,
+      "match": [
+        "APPLE.COM/BILL"
+      ],
+      "amounts": [
+        2.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-18",
+      "lastSeen": "2026-10-18",
+      "currentAmount": 2.99,
+      "meanAmount": 2.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "candidatesInclude": [
+        "icloud-plus"
+      ],
+      "bundle": true,
+      "detectable": true,
+      "sampleDescriptor": "APPLE.COM/BILL 866-712-7753 CA"
+    },
+    {
+      "id": "apple-1099",
+      "label": "App Store $10.99",
+      "merchantId": null,
+      "match": [
+        "APPLE.COM/BILL"
+      ],
+      "amounts": [
+        10.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-27",
+      "lastSeen": "2026-10-27",
+      "currentAmount": 10.99,
+      "meanAmount": 10.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "candidatesInclude": [
+        "apple-music"
+      ],
+      "bundle": true,
+      "detectable": true,
+      "sampleDescriptor": "APPLE.COM/BILL 866-712-7753 CA"
+    },
+    {
+      "id": "chatgpt-plus",
+      "label": "ChatGPT Plus",
+      "merchantId": "chatgpt-plus",
+      "match": [
+        "CHATGPT"
+      ],
+      "amounts": [
+        20
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-07",
+      "lastSeen": "2026-10-07",
+      "currentAmount": 20,
+      "meanAmount": 20,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "OPENAI *CHATGPT SUBSCR SAN FRANCISCO CA"
+    },
+    {
+      "id": "dropbox",
+      "label": "Dropbox Plus",
+      "merchantId": "dropbox-plus",
+      "match": [
+        "DROPBOX"
+      ],
+      "amounts": [
+        11.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-25",
+      "lastSeen": "2026-10-25",
+      "currentAmount": 11.99,
+      "meanAmount": 11.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "DROPBOX*VTWXX3LXV DROPBOX.COM CA"
+    },
+    {
+      "id": "planet-fitness",
+      "label": "Planet Fitness",
+      "merchantId": "planet-fitness",
+      "match": [
+        "PLANET FIT"
+      ],
+      "amounts": [
+        15
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-12",
+      "lastSeen": "2026-10-12",
+      "currentAmount": 15,
+      "meanAmount": 15,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PLANET FIT CLUB FEES"
+    },
+    {
+      "id": "spectrum",
+      "label": "Spectrum internet (ACH)",
+      "merchantId": "spectrum",
+      "match": [
+        "SPECTRUM"
+      ],
+      "amounts": [
+        79.99,
+        94.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-17",
+      "lastSeen": "2026-10-17",
+      "currentAmount": 94.99,
+      "meanAmount": 88.07,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 79.99,
+          "to": 94.99
+        }
+      ],
+      "variable": false,
+      "note": "ACH descriptor names SPECTRUM inside a long ORIG CO NAME blob",
+      "detectable": true,
+      "sampleDescriptor": "ORIG CO NAME:CHARTER SPECTRUM ORIG ID:9430264275 DESC DATE:101725 CO ENTRY DESCR:ONLINE PMT SEC:WEB TRACE#:021000447430228 EED:251017 IND ID"
+    },
+    {
+      "id": "verizon",
+      "label": "Verizon Wireless (ACH)",
+      "merchantId": "verizon",
+      "match": [
+        "VERIZON WIRELESS"
+      ],
+      "amounts": [],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-24",
+      "lastSeen": "2026-10-24",
+      "currentAmount": 92.1,
+      "meanAmount": 88.6,
+      "active": true,
+      "priceChanges": [],
+      "variable": true,
+      "detectable": true,
+      "sampleDescriptor": "ORIG CO NAME:VERIZON WIRELESS ORIG ID:4339700928 DESC DATE:102425 CO ENTRY DESCR:PAYMENTREC SEC:WEB TRACE#:021000468607221 EED:251024 IND ID"
+    },
+    {
+      "id": "geico",
+      "label": "GEICO auto",
+      "merchantId": "geico",
+      "match": [
+        "GEICO"
+      ],
+      "amounts": [
+        142.18,
+        151.03
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-20",
+      "lastSeen": "2026-10-20",
+      "currentAmount": 151.03,
+      "meanAmount": 146.95,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 142.18,
+          "to": 151.03
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GEICO *AUTO 800-841-3000 DC"
+    },
+    {
+      "id": "nordvpn",
+      "label": "NordVPN annual (renewal at higher price)",
+      "merchantId": "nordvpn",
+      "match": [
+        "NORDVPN"
+      ],
+      "amounts": [
+        59.88,
+        71.88
+      ],
+      "cadence": "annual",
+      "count": 2,
+      "firstSeen": "2025-10-05",
+      "lastSeen": "2026-10-05",
+      "currentAmount": 71.88,
+      "meanAmount": 65.88,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 59.88,
+          "to": 71.88
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "NORDVPN.COM PANAMA CITY PA"
+    },
+    {
+      "id": "amazon-prime-annual",
+      "label": "Amazon Prime (annual, single charge)",
+      "merchantId": "amazon-prime",
+      "match": [
+        "AMAZON PRIME"
+      ],
+      "amounts": [
+        139
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-03-10",
+      "lastSeen": "2026-03-10",
+      "currentAmount": 139,
+      "meanAmount": 139,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": true,
+      "sampleDescriptor": "AMAZON PRIME*UL3CM3KUU AMZN.COM/BILL WA"
+    },
+    {
+      "id": "audible",
+      "label": "Audible",
+      "merchantId": "audible",
+      "match": [
+        "AUDIBLE"
+      ],
+      "amounts": [
+        14.95
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-11",
+      "lastSeen": "2026-10-11",
+      "currentAmount": 14.95,
+      "meanAmount": 14.95,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "AUDIBLE*Y49U1GQZV NEWARK NJ"
+    },
+    {
+      "id": "google-one",
+      "label": "Google One",
+      "merchantId": "google-one",
+      "match": [
+        "GOOGLE ONE"
+      ],
+      "amounts": [
+        2.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-16",
+      "lastSeen": "2026-10-17",
+      "currentAmount": 2.99,
+      "meanAmount": 2.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GOOGLE *Google One g.co/helppay#CA"
+    },
+    {
+      "id": "duolingo",
+      "label": "Duolingo (cancelled Jun 2026)",
+      "merchantId": "duolingo",
+      "match": [
+        "DUOLINGO"
+      ],
+      "amounts": [
+        12.99
+      ],
+      "cadence": "monthly",
+      "count": 9,
+      "firstSeen": "2025-10-04",
+      "lastSeen": "2026-06-04",
+      "currentAmount": 12.99,
+      "meanAmount": 12.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "DUOLINGO PITTSBURGH PA"
+    },
+    {
+      "id": "canva-pro",
+      "label": "Canva Pro",
+      "merchantId": "canva-pro",
+      "match": [
+        "CANVA"
+      ],
+      "amounts": [
+        15
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-28",
+      "lastSeen": "2026-10-28",
+      "currentAmount": 15,
+      "meanAmount": 15,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CANVA* I47262-9225131 SYDNEY AU"
+    },
+    {
+      "id": "lemonade",
+      "label": "Lemonade renters",
+      "merchantId": "lemonade",
+      "match": [
+        "LEMONADE"
+      ],
+      "amounts": [
+        11.5,
+        12.75
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-02",
+      "lastSeen": "2026-10-02",
+      "currentAmount": 12.75,
+      "meanAmount": 12.17,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 11.5,
+          "to": 12.75
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "LEMONADE INSURANCE 844-733-8666 NY"
+    },
+    {
+      "id": "ynab",
+      "label": "YNAB (annual, single charge)",
+      "merchantId": "ynab",
+      "match": [
+        "YNAB"
+      ],
+      "amounts": [
+        109
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-01-20",
+      "currentAmount": 109,
+      "meanAmount": 109,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": true,
+      "sampleDescriptor": "YNAB.COM SALT LAKE CITY UT"
+    },
+    {
+      "id": "paramount",
+      "label": "Paramount+ (cancelled Apr 2026)",
+      "merchantId": "paramount-plus",
+      "match": [
+        "PARAMOUNT"
+      ],
+      "amounts": [
+        11.99
+      ],
+      "cadence": "monthly",
+      "count": 7,
+      "firstSeen": "2025-10-19",
+      "lastSeen": "2026-04-19",
+      "currentAmount": 11.99,
+      "meanAmount": 11.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PARAMOUNT+ 800-725-9002 NY"
+    },
+    {
+      "id": "1password",
+      "label": "1Password",
+      "merchantId": "1password",
+      "match": [
+        "1PASSWORD"
+      ],
+      "amounts": [
+        3.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-06",
+      "lastSeen": "2026-10-06",
+      "currentAmount": 3.99,
+      "meanAmount": 3.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "1PASSWORD AGILEBITS TORONTO ON"
+    },
+    {
+      "id": "slack",
+      "label": "Slack",
+      "merchantId": null,
+      "match": [
+        "SLACK"
+      ],
+      "amounts": [
+        8.75
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-13",
+      "lastSeen": "2026-10-13",
+      "currentAmount": 8.75,
+      "meanAmount": 8.75,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SLACK T01H2JQ5RM9 SAN FRANCISCO CA"
+    },
+    {
+      "id": "chewy",
+      "label": "Chewy Autoship",
+      "merchantId": null,
+      "match": [
+        "CHEWY"
+      ],
+      "amounts": [
+        48.62,
+        49.87,
+        51.14
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-20",
+      "lastSeen": "2026-10-20",
+      "currentAmount": 51.14,
+      "meanAmount": 49.68,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 48.62,
+          "to": 49.87
+        },
+        {
+          "from": 49.87,
+          "to": 51.14
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CHEWY.COM 800-672-4399 FL"
+    },
+    {
+      "id": "hims",
+      "label": "Hims & Hers",
+      "merchantId": null,
+      "match": [
+        "HIMS"
+      ],
+      "amounts": [
+        39
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-23",
+      "lastSeen": "2026-10-23",
+      "currentAmount": 39,
+      "meanAmount": 39,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "HIMS & HERS HEALTH INC SAN FRANCISCO CA"
+    },
+    {
+      "id": "classpass",
+      "label": "ClassPass (cancelled Aug 2026)",
+      "merchantId": null,
+      "match": [
+        "CLASSPASS"
+      ],
+      "amounts": [
+        79
+      ],
+      "cadence": "monthly",
+      "count": 11,
+      "firstSeen": "2025-10-10",
+      "lastSeen": "2026-08-10",
+      "currentAmount": 79,
+      "meanAmount": 79,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CLASSPASS NEW YORK NY"
+    },
+    {
+      "id": "orkin",
+      "label": "Orkin quarterly pest control",
+      "merchantId": null,
+      "match": [
+        "ORKIN"
+      ],
+      "amounts": [
+        119
+      ],
+      "cadence": "quarterly",
+      "count": 4,
+      "firstSeen": "2025-11-15",
+      "lastSeen": "2026-08-15",
+      "currentAmount": 119,
+      "meanAmount": 119,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ORKIN PEST CONTROL 404-888-2000 GA"
+    },
+    {
+      "id": "stjude",
+      "label": "St Jude monthly donation",
+      "merchantId": null,
+      "match": [
+        "ST JUDE"
+      ],
+      "amounts": [
+        25
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-05",
+      "lastSeen": "2026-10-05",
+      "currentAmount": 25,
+      "meanAmount": 25,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ST JUDE CHILDRENS RESEARCH HOSP 901-578-9000 TN"
+    },
+    {
+      "id": "parking",
+      "label": "Monthly garage parking",
+      "merchantId": null,
+      "match": [
+        "IMPARK"
+      ],
+      "amounts": [
+        225
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-01",
+      "lastSeen": "2026-10-01",
+      "currentAmount": 225,
+      "meanAmount": 225,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "IMPARK 61234 NEW YORK NY"
+    },
+    {
+      "id": "laundry",
+      "label": "Wash and fold biweekly",
+      "merchantId": null,
+      "match": [
+        "SPOT ON LAUNDRY"
+      ],
+      "amounts": [
+        34.5
+      ],
+      "cadence": "biweekly",
+      "count": 26,
+      "firstSeen": "2025-10-18",
+      "lastSeen": "2026-10-17",
+      "currentAmount": 34.5,
+      "meanAmount": 34.5,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SPOT ON LAUNDRY WASH&FOLD NEW YORK NY"
+    },
+    {
+      "id": "tidal-wave",
+      "label": "Tidal Wave Car Wash club (looks like TIDAL)",
+      "merchantId": null,
+      "match": [
+        "TIDAL WAVE"
+      ],
+      "amounts": [
+        29.99
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-17",
+      "lastSeen": "2026-10-16",
+      "currentAmount": 29.99,
+      "meanAmount": 29.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "mimic": true,
+      "detectable": true,
+      "sampleDescriptor": "TIDAL WAVE CAR WASH 0412 BROOKLYN NY"
+    }
+  ],
+  "mustNotDetect": [
+    {
+      "id": "t-amzn-monthly",
+      "label": "Monthly Amazon marketplace purchase, same amount",
+      "match": [
+        "AMZN MKTP"
+      ],
+      "why": "Amazon marketplace purchases are not subscriptions (spec rule 3)",
+      "count": 13
+    },
+    {
+      "id": "t-zelle-rent",
+      "label": "Rent via Zelle",
+      "match": [
+        "ZELLE PAYMENT TO GREENBRIAR"
+      ],
+      "why": "rent / Zelle transfer",
+      "count": 13
+    },
+    {
+      "id": "t-zelle-dog",
+      "label": "Dog walker weekly via Zelle",
+      "match": [
+        "ZELLE PAYMENT TO MARCUS"
+      ],
+      "why": "person-to-person Zelle",
+      "count": 57
+    },
+    {
+      "id": "t-venmo",
+      "label": "Venmo split of utilities, monthly",
+      "match": [
+        "VENMO"
+      ],
+      "why": "person-to-person VENMO",
+      "count": 13
+    },
+    {
+      "id": "t-ccpay",
+      "label": "Chase card autopay",
+      "match": [
+        "PAYMENT TO CHASE"
+      ],
+      "why": "credit card payment",
+      "count": 13
+    },
+    {
+      "id": "t-atm",
+      "label": "ATM cash withdrawal monthly",
+      "match": [
+        "ATM WITHDRAWAL"
+      ],
+      "why": "ATM",
+      "count": 13
+    },
+    {
+      "id": "t-atm-fee",
+      "label": "Non-Chase ATM fee",
+      "match": [
+        "ATM FEE"
+      ],
+      "why": "fee",
+      "count": 13
+    },
+    {
+      "id": "t-svcfee",
+      "label": "Monthly service fee",
+      "match": [
+        "MONTHLY SERVICE FEE"
+      ],
+      "why": "fee",
+      "count": 13
+    },
+    {
+      "id": "t-loan",
+      "label": "Student loan autopay",
+      "match": [
+        "NELNET"
+      ],
+      "why": "loan payment",
+      "count": 13
+    },
+    {
+      "id": "t-sav",
+      "label": "Transfer to savings",
+      "match": [
+        "TRANSFER TO SAV"
+      ],
+      "why": "transfer",
+      "count": 13
+    },
+    {
+      "id": "t-payroll",
+      "label": "Payroll (money in)",
+      "match": [
+        "PAYROLL"
+      ],
+      "why": "payroll deposit, money in",
+      "count": 29
+    },
+    {
+      "id": "t-interest",
+      "label": "Interest credit",
+      "match": [
+        "INTEREST PAYMENT"
+      ],
+      "why": "interest, money in",
+      "count": 13
+    }
+  ],
+  "undetectableByDesign": [
+    {
+      "id": "aaa",
+      "label": "AAA membership (annual, non-KB single)",
+      "merchantId": null,
+      "match": [
+        "AAA NORTHEAST"
+      ],
+      "amounts": [
+        64
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-02-12",
+      "lastSeen": "2026-02-12",
+      "currentAmount": 64,
+      "meanAmount": 64,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": false,
+      "undetectableReason": "non-KB with fewer than 3 charges",
+      "sampleDescriptor": "AAA NORTHEAST MEMBERSHIP 800-222-4357 NJ"
+    },
+    {
+      "id": "coned",
+      "label": "Con Edison electric (variable, non-KB)",
+      "merchantId": null,
+      "match": [
+        "CON ED"
+      ],
+      "amounts": [],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-14",
+      "lastSeen": "2026-10-14",
+      "currentAmount": 100.6,
+      "meanAmount": 107.53,
+      "active": true,
+      "priceChanges": [],
+      "variable": true,
+      "detectable": false,
+      "undetectableReason": "variable amount, non-KB (spec: variable only for KB telecom-utilities-finance)",
+      "sampleDescriptor": "ORIG CO NAME:CON ED OF NY ORIG ID:3581549959 DESC DATE:101425 CO ENTRY DESCR:WEB PMTS SEC:WEB TRACE#:021000355529569 EED:251014 IND ID:93170"
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+[
+  {
+    "merchantId": "huckleberry",
+    "merchantName": "Huckleberry",
+    "appName": "Nestlog",
+    "model": "Claude Sonnet 5.5 (agent, one session)",
+    "builtAt": "2026-11-03",
+    "score": {
+      "works": 11,
+      "partial": 1,
+      "missing": 0
+    },
+    "summary": "Nestlog is a solid, working build: every requested feature I exercised in a real browser under the strict CSP worked, including the service worker and offline reload the builder could not verify, the narrowing predictor, and a clean 1080 px share PNG. The one gap is the Huckleberry importer, which is a generic mapping wizard whose Huckleberry layout is unverified and over-advertised, plus minor 375 px table clipping and a bright Share preview in night mode.",
+    "checklist": [
+      {
+        "item": "Installable PWA (React, Vite, TypeScript, IndexedDB, no backend) that works offline",
+        "status": "works",
+        "note": "Tested in real headless Edge 155 under the site's CSP headers. Service worker registered, activated and controlled the page. It precached 11 files. The app loaded with the Network offline and also with the static server killed. Entries could be logged while offline. The manifest parsed with no errors and the 192, 512, maskable and 180 px icons are the right sizes. The actual install prompt could not be exercised. The builder's claim that the SW is unverifiable in a browser is wrong for a normal browser. Served through serve-dist.mjs with the CSP header, I walked all tabs, modals, canvas PNG, blob downloads, CSV wizard and offline reload with a securitypolicyviolation listener: zero violations and zero console errors. No tab scrolls horizontally at 375 px."
+      },
+      {
+        "item": "One-tap timers for sleep, breast feed, bottle feed, diaper and pumping, with editing and backdating",
+        "status": "works",
+        "note": "Sleep, Breast (left/right sub-timers), Bottle and Pump start and stop with one tap. Diaper is a one-tap Wet, Dirty or Both. A running sleep survived a reload. Edit/backdate on a running timer (1 h ago chip) moved the start. Existing entries edit and save. Delete works with Undo. Add past entry works for sleep, feed (bottle and breast), diaper and pump. Validation rejects a future start and an end before the start. Stopping bottle or pump opens an amount editor. Only one feed can run at a time. Toasts stack up when tapping quickly."
+      },
+      {
+        "item": "Today timeline",
+        "status": "works",
+        "note": "A 24 h strip plus a chronological list with day navigation. Tapping a row opens the editor. Midnight-spanning sleep shows under the day it started and is clipped correctly in totals."
+      },
+      {
+        "item": "Daily and weekly summaries (total sleep, longest stretch, feeds, diapers)",
+        "status": "works",
+        "note": "Daily and Weekly tabs with prev/next navigation. Numbers match the imported data: 7 feeds and 6 diapers per day, sleep clipped at midnight, longest stretch not clipped. The weekly view has stat tiles, a bar chart and a table. Weekly averages include the in-progress current day, which pulls them down. At 375 px the table header 'Diapers' is clipped and the bar labels crowd each other."
+      },
+      {
+        "item": "Nap predictor from age-based wake-window ranges that the user can edit",
+        "status": "works",
+        "note": "Twelve age bands apply per child. Editing 4-5 mo to 100-160 min saved, persisted across reload and changed the predicted window. Min above max is rejected, and Reset to defaults works. A 14-month child got the 3-4 h band. Predictions follow the last wake time. Not slot-aware (first, second and third wake window of the day). On tapping Sleep the card shows 'Awake since' for up to 15 s before switching to 'Asleep', because its clock ticks every 15 s."
+      },
+      {
+        "item": "Predictor narrows as it learns from the baby's last ten days",
+        "status": "works",
+        "note": "With about 12 days of imported data the age band 1h30 to 2h30 became a predicted 1h43 to 2h05 from 40 learned wake windows (typical 1h54, 85% blend). The card explains the blend. With no data it falls back to the age band. The ten-day cutoff is covered by unit tests (24 predictor tests), and I re-ran all 72 tests and they pass."
+      },
+      {
+        "item": "Shareable summary exported as PNG or text for a pediatrician or caregiver",
+        "status": "works",
+        "note": "Today, Yesterday, Last 7 days and Custom ranges. Text has a daily average, day-by-day lines and notes. The downloaded PNG is 1080 px wide and I looked at both the week and single-day versions: clean layout, correct numbers, readable. Copy, Download text and Share buttons are present. In night mode the image preview is a bright cream card with blue, orange and green."
+      },
+      {
+        "item": "Multiple children",
+        "status": "works",
+        "note": "Add child in Settings, then a header switcher. Entries are isolated per child. The selection persists across reload. Each child has their own age band. Delete child asks for confirmation and removes their entries. Verified via IndexedDB counts."
+      },
+      {
+        "item": "Dim red night mode",
+        "status": "works",
+        "note": "The header toggle and the Settings select (Auto 7 pm-7 am, Always on, Always off) work, persist across reload, and Auto flipped to night at 7 pm. In night mode, 5 screens plus the modal were scanned for non-red colours. Only the light-pink active-tab and pill text (240,167,159) and the white Share preview deviate. No CSP violations."
+      },
+      {
+        "item": "Local storage plus JSON and CSV export and import",
+        "status": "works",
+        "note": "Data is in IndexedDB. JSON export, delete child, then Merge restored exactly. Replace everything worked in both directions. A corrupt or foreign JSON gives a clear error. CSV export re-imports as 'recognised as this app's own export' and can filter by child. Generic CSV import handled my 219-row Huckleberry-style file, a second layout (Activity/Details, US AM/PM) and a UTF-8 BOM, CRLF, semicolon, day-first file. Bad rows are reported. Re-importing the same file creates no duplicates. A day-first file imports 0 rows until the user flips Date order, since it is not auto-detected."
+      },
+      {
+        "item": "Huckleberry importer (inspect the export first and ask about column mapping)",
+        "status": "partial",
+        "note": "The builder could not get a real export. There is a generic CSV wizard with an always-shown column mapping and type-value mapping. It guessed my invented Huckleberry-like layout (Start/End/Duration/Type/Start Condition/Start Location/End Condition) correctly and imported 219 of 219 entries, skipping a Growth row. Whether it matches a real export is unverified. The UI text 'Works with ... a Huckleberry CSV export' and README 'Huckleberry CSV preset' overclaim."
+      },
+      {
+        "item": "Tests for the predictor and free Cloudflare Pages deploy steps",
+        "status": "works",
+        "note": "72 vitest tests pass on re-run: predictor (age bands, blending/narrowing, outliers, 10-day window, bedtime, edited bands), summaries, data/import, and offline via a sandboxed service worker. README gives Git-integration and wrangler direct-upload steps and a _headers file with the CSP. Actual deployment was not attempted, as the brief said to skip it."
+      }
+    ],
+    "bugs": [
+      "375 px: the Wake windows table in Settings scrolls inside its wrapper (scrollWidth 353 vs 309), so the Max column inputs are cut off at the right edge until the table is scrolled.",
+      "375 px: the weekly summary table header 'Diapers' is clipped ('Diape') and the seven bar labels (14h 57m ...) crowd each other.",
+      "Night mode: the Share image preview stays a bright cream/white card with blue, orange and green bars, which defeats a dim-red view. Active tab and pill text is light pink (240,167,159) rather than dim red.",
+      "The nap predictor's 'now' ticks every 15 s, so after tapping Sleep it keeps showing 'Awake since ...' for up to 15 s before switching to 'Asleep since'.",
+      "Weekly averages include the in-progress current day. With today at 1h31m of sleep, the 7-day average reads 12h59m versus roughly 15h on full days.",
+      "The service worker precache list includes ./_headers, a Cloudflare config file. cache.addAll rejects if the host does not return 200 for it, which would stop the SW installing and silently break offline. Not verified on Cloudflare.",
+      "UI and README claim Huckleberry export support ('Works with ... a Huckleberry CSV export', 'Huckleberry CSV preset'), but the layout is a guess from memory.",
+      "CSV import defaults to month-first dates and does not auto-detect day-first (25/10/2026). The preview says 0 entries ready until the user changes Date order.",
+      "Several quick toasts stack (3 diaper taps give 3 toasts) and cover the timeline rows.",
+      "Backup and CSV filenames use the UTC date: nestlog-backup-2026-11-04.json was produced while the local date was still Nov 3 (evening)."
+    ],
+    "path": "/rebuilt/huckleberry/"
+  },
+  {
+    "merchantId": "adobe-acrobat-pro",
+    "merchantName": "Adobe Acrobat Pro",
+    "appName": "Private PDF Toolkit",
+    "model": "Claude Sonnet 5.5 (agent, one session)",
+    "builtAt": "2026-11-03",
+    "score": {
+      "works": 10,
+      "partial": 2,
+      "missing": 0
+    },
+    "summary": "All six tools do real work under the strict CSP: merge, split, rotate, delete, fill and sign, compress and OCR produced correct, re-openable PDFs, the recent list stores names only, and all 49 unit tests pass. The gaps are that offline mode and install could not be tested in this browser, deployment was skipped as instructed, and OCR on a dense page is slow (about 96 s).",
+    "checklist": [
+      {
+        "item": "Static PWA stack (Vite, TypeScript, pdf-lib, pdf.js, tesseract.js), no backend, no accounts, files never leave the device, runs under the site's strict CSP",
+        "status": "works",
+        "note": "Served with the real vercel.json headers. Every request during all six tools went to localhost:4317 only; no CSP violation from the app's own loads. The WebAssembly feature probe fires 2 harmless CSP violation events at startup. tsc --noEmit passes. public/ build is identical to dist/."
+      },
+      {
+        "item": "Merge several PDFs and drag to reorder pages",
+        "status": "works",
+        "note": "Added a 5-page A4 PDF plus a 2-page PDF: 7 thumbnails rendered. Drag reorder worked with synthetic DragEvents (card 1 moved after card 3); move-earlier/later buttons also work. Merged download re-opened with the right 6 pages in the right order. A native mouse drag from the pane's drag tool did not reorder (inconclusive: it may not start HTML5 DnD). Touch drag is not implemented (documented)."
+      },
+      {
+        "item": "Split by page range and extract pages",
+        "status": "works",
+        "note": "Extract '1-2, 5' gave 3 correct pages. Split by ranges '1-2, 3-5' gave 2 files; every-2 gave 3 files (2+2+1). 'Download all as .zip' produced a valid zip (3 stored entries, CRC checks pass, each starts with %PDF-). Typing a range syncs the thumbnail selection. Bad ranges ('9-12', 'abc') and a non-PDF file give clear messages."
+      },
+      {
+        "item": "Rotate and delete pages",
+        "status": "works",
+        "note": "Per-page and bulk rotate left/right work (rotation persists in the exported PDF: the rotated page re-opened landscape). Delete and Undo work; the export count matched. Undo restores one page per click, so 'Delete selected' on several pages needs several undos."
+      },
+      {
+        "item": "Fill form fields and add typed or drawn signatures and text boxes",
+        "status": "works",
+        "note": "Filled a text field, checkbox and dropdown, added a text box, a typed signature and a drawn signature (real mouse stroke on the pad), downloaded, re-opened: field values (Jane Q. Tester, checked, Green) persisted, text box and both signatures were rendered in the right spots (text ink bounding box matched the click position within 4 px). The Flatten option removes the fields and keeps the text. Stale hint text 'Click on the page where the signature should go' stays visible after placing."
+      },
+      {
+        "item": "Compress by re-rendering pages as JPEG at a chosen quality, with a flattening warning",
+        "status": "works",
+        "note": "Warning panel shown and the Compress button is disabled until the 'I understand' box is ticked. A 662 KB noisy scan became 21 KB at q40/96 DPI and 714 KB at q90/200 DPI, so the sliders work. A text-only 5.4 KB PDF came out 328 KB and the app says the result is larger and to keep the original. Output re-opens with 1 page."
+      },
+      {
+        "item": "OCR a scanned PDF into a searchable PDF",
+        "status": "works",
+        "note": "Under the strict CSP the engine falls back to the JS core. Sparse scan (3 lines): 6.1 s, 13 of 13 words, text exact. Dense full page (32 lines, 448 words, 150 DPI): about 96 s, 32 of 32 lines exact. Re-running OCR on the output with 'skip pages that already have text' skipped the page (0 recognized, 1 skipped), which shows the invisible text layer is real. .txt export works. The dense-page time is longer than the README's own estimate."
+      },
+      {
+        "item": "Recent-files list of names only in IndexedDB, never file contents",
+        "status": "works",
+        "note": "IndexedDB 'pdf-toolkit/recent-files' rows hold only key,name,openedAt,size,tool (13 rows, about 1.4 KB in total). The list survives a reload, clicking an entry opens the right tool with a 'choose the file again' banner, and the per-entry remove and 'Clear list' both work. localStorage and sessionStorage are empty."
+      },
+      {
+        "item": "Unit tests for merge, split and rotate using small sample PDFs",
+        "status": "works",
+        "note": "npx vitest run: 7 files, 49 tests, all pass. Covers merge, split, extract, rotate, delete and reorder with the samples in tests/samples, plus ranges, forms, geometry, OCR text layer, zip and recent-files."
+      },
+      {
+        "item": "Installable PWA (manifest, icons, service worker, offline)",
+        "status": "partial",
+        "note": "Manifest is valid (standalone, scope, 192/512/maskable icons) and all icon files exist. All 30 precache URLs in sw.js return 200 and sw.js has valid syntax. But this browser refuses service worker registration (my own register call failed with 'unknown error fetching the script'), so install prompt, offline mode and the in-app Install button were not exercised."
+      },
+      {
+        "item": "Deploy free to Cloudflare Pages or GitHub Pages and explain how to install it from the browser",
+        "status": "partial",
+        "note": "Not deployed (skipped as instructed). Provided instead: README steps for both hosts, .github/workflows/deploy-pages.yml, public/_headers with the CSP, and install steps per browser (also shown on the Home page). The workflow was read, not run."
+      },
+      {
+        "item": "README listing what it cannot do compared with Acrobat Pro",
+        "status": "works",
+        "note": "README has a long, specific 'What it cannot do compared with Acrobat Pro' section (no text editing, redaction, certified signatures, encryption, tagging, bookmarks carried over, etc.)."
+      }
+    ],
+    "bugs": [
+      "Service worker, offline mode and install prompt could not be exercised: the test browser refuses service worker registration. Treat PWA behaviour as unverified, not as broken.",
+      "OCR on a dense full page at 150 DPI took about 96 s with the JavaScript core, longer than the README estimate ('up to a minute' at 200 to 300 DPI). Sparse pages take about 6 s.",
+      "Undo delete restores one page per click, so deleting several selected pages needs several undos.",
+      "Fill & sign: stale hint 'Click on the page where the signature should go. Press Esc to cancel.' stays on screen after the signature is placed and after download.",
+      "Fill & sign at 375 px wide: the default 160% zoom is wider than the screen, so the page is cut off and scrolls inside its box (no page-level horizontal scroll); the user has to press the minus button. Other tools fit at 375 px with no horizontal overflow.",
+      "Real mouse drag-and-drop reorder of page cards could not be confirmed in the test pane (only synthetic DragEvents); touch drag-reorder is not implemented, only move buttons.",
+      "Two CSP violation events (script-src wasm-eval) are raised at startup by the WebAssembly feature probe; harmless but visible in violation reports.",
+      "Test-harness note: while the Browser pane was hidden, thumbnails never rendered because pdf.js display renders wait on requestAnimationFrame and IntersectionObserver; I polyfilled both to test. A visible tab renders normally (it did at first)."
+    ],
+    "path": "/rebuilt/adobe-acrobat-pro/"
+  },
+  {
+    "merchantId": "habitify",
+    "merchantName": "Habitify",
+    "appName": "Habit Tracker",
+    "model": "Claude Sonnet 5.5 (agent, one session)",
+    "builtAt": "2026-11-03",
+    "score": {
+      "works": 10,
+      "partial": 2,
+      "missing": 0
+    },
+    "summary": "A complete, working local-first habit tracker: check-ins, skips and notes, streaks and heatmaps, review charts, archive/reorder, a lossless JSON/CSV round trip, dark mode and 375px layout all work, and the offline service worker and 67 passing tests hold up in real Chrome. The Habitify importer is the weak spot: it handles the one assumed CSV layout well (with a confirm gate, deduplication and several date formats) but rejects files with other header names, skips the .sqlite backup, and was never confirmed against a real export, and system notifications could not be observed.",
+    "checklist": [
+      {
+        "item": "Habits with a schedule (daily, specific weekdays, N times per week), optional numeric goals, time-of-day grouping",
+        "status": "works",
+        "note": "Created a daily goal habit (8 glasses, Morning) and a 3x-per-week habit through the form; edited the latter to 4x. Mon/Wed/Fri came in via JSON import and was scheduled and streaked correctly. Today groups by Morning/Afternoon/Evening/Anytime and weekly habits show 'x of N this week'."
+      },
+      {
+        "item": "One-tap check-in from a Today screen, with skip and note options",
+        "status": "works",
+        "note": "One tap checked in Run, the +/- stepper took water to 2/8, and the '...' dialog saved Skipped plus a note ('Has a note: ...' shows on the row). Previous-day backfill works. All of it survived a reload (IndexedDB 'habit-tracker' exists)."
+      },
+      {
+        "item": "Streaks, completion rate and a calendar heatmap per habit",
+        "status": "works",
+        "note": "Against a seeded 40-day history I worked out by hand, Meditate showed 22 current / 22 best, Gym (Mon/Wed/Fri with a missed Wed) 8 / 8, and Read (goal 20 pages) 2 / 3. Completion rates and the average logged value were correct. Heatmap cells carry labels like 'partly done (12 of 20 pages)', and arrow keys, Home/End and Enter work. Clicking a day opens the edit dialog."
+      },
+      {
+        "item": "Weekly and monthly review charts",
+        "status": "works",
+        "note": "Week and Month views with prev/next both render SVG bar charts, each with a hidden data table. Numbers reconcile with the data (October: 49 check-ins = 29 + 11 + 9). Includes period-over-period delta, perfect days and a per-habit table."
+      },
+      {
+        "item": "Local reminders via the Notifications API, with a clear fallback message where unsupported",
+        "status": "partial",
+        "note": "The reminder time field and the in-app banner work: a 00:01 reminder produced 'Stretch is not done yet (reminder 00:01)' with Open Today / Dismiss. The 'denied' message shows, and deleting window.Notification gives the explicit 'doesn't support the Notifications API' fallback. A real system notification could not be observed because the pane reports permission denied. Reminders only fire while the app or tab is open (no push or trigger support)."
+      },
+      {
+        "item": "Archive and reorder habits",
+        "status": "works",
+        "note": "Move up/down buttons reorder and Today follows that order. Archive moves a habit to an 'Archived (1)' section with its history kept, and Restore returns it. Edit and delete exist. Drag-and-drop is wired (draggable) but I did not drive it."
+      },
+      {
+        "item": "All data in IndexedDB with JSON and CSV export and import",
+        "status": "works",
+        "note": "JSON backup and a two-file CSV export (habits and check-ins) both produced valid files. Delete all, then re-import the two CSVs together: 8 habits and 177 check-ins restored with identical entries. JSON merge and replace both work, and the theme and week-start settings are restored. Bad JSON and unrecognised CSVs give readable error messages."
+      },
+      {
+        "item": "Check whether Habitify can export history and, if so, write an importer after confirming its columns with the user",
+        "status": "partial",
+        "note": "A CSV importer exists with a column-mapping table, a date-format selector (ymd/mdy/dmy, with a preview) and status mapping. Import stays disabled until the 'these match my file' box is ticked. A 130-row test file imported 111 check-ins correctly (Completed and Skipped kept, Failed dropped, the goal inferred from the unit), and re-importing created no duplicates. ISO, datetime, 'Oct 27, 2026', dd/mm/yyyy and semicolon files were all detected. But the builder never confirmed the columns with the user and the date format is a guess. The .sqlite backup is not imported, and the file picker only accepts .json/.csv. If the header differs from Habit/Date/Status (e.g. 'Name,Date,Log Value,Status'), the file is rejected as 'not a recognised file' and the mapping UI never appears."
+      },
+      {
+        "item": "Installable PWA and offline-first",
+        "status": "works",
+        "note": "The built-in pane refuses service workers, so I used real headless Chrome through CDP against the same server and CSP. The SW registered and activated, precached 10 files, and with the network set offline a reload still rendered the app, with 0 console errors and 0 CSP violations. The manifest has standalone display, a relative scope, and 192/512/maskable PNG icons that exist at the right sizes. The install prompt itself was not exercised."
+      },
+      {
+        "item": "Dark-mode aware",
+        "status": "works",
+        "note": "Under emulated prefers-color-scheme: dark with 'Match device', the body background was rgb(11,20,18). The Light/Dark/Match toggle works and the dark theme-color meta exists."
+      },
+      {
+        "item": "Keyboard accessible",
+        "status": "works",
+        "note": "Skip-to-content link, a visible 2.4px focus outline on Tab, a roving-tabindex heatmap with arrow keys, native <dialog> modals that close on Escape, and aria-labelled stepper and check buttons. Minor: after Escape closes the heatmap day dialog, focus ended on body instead of returning to the cell. I could not look at the screen, so contrast was not judged by eye."
+      },
+      {
+        "item": "Tests for streak logic and free GitHub Pages deploy steps; 375px mobile layout",
+        "status": "works",
+        "note": "vitest: 4 files, 67/67 pass (streak tests cover daily, weekdays, N-per-week, skips, year/leap boundaries and Sunday-start weeks). DEPLOY.md has numbered GitHub Pages steps and .github/workflows/deploy.yml (test, build, publish) exists. Vite base is './'. At 375px there was no page-level horizontal overflow on Today, Habits, Review, Settings or the habit detail page; the heatmap scrolls inside its own container."
+      }
+    ],
+    "bugs": [
+      "Habitify importer only runs when the header already looks like Habit/Date/Status. A CSV with different column names (e.g. 'Name,Date,Log Value,Status' or 'habit_name,log_date,value,state') is rejected with 'not a recognised file' before the mapping UI is shown, so a user cannot map columns by hand.",
+      "Habitify .sqlite backup cannot be imported (the file picker accepts only .json/.csv); the Habitify date format and column names are the builder's assumption and were never confirmed against a real export.",
+      "After the heatmap day dialog is closed with Escape, keyboard focus is dropped to the body rather than returned to the heatmap cell.",
+      "Re-importing an already imported Habitify file reports 'Imported 0 new habits and 111 check-ins' although nothing new was added (the count shown is rows processed, not rows added).",
+      "Merging a JSON backup into existing data can interleave habit order (imported order values 0..n collide with existing ones), e.g. an imported habit landing above existing habits.",
+      "System notifications could not be verified, and reminders fire only while the app is open (no background delivery), which is a platform limit but weaker than the 'local reminders' wording suggests.",
+      "The service worker cannot register in the built-in browser pane ('An unknown error occurred when fetching the script' in the console); this is a pane limitation, and it registers and works offline in real Chrome."
+    ],
+    "path": "/rebuilt/habitify/"
+  },
+  {
+    "merchantId": "quizlet-plus",
+    "merchantName": "Quizlet Plus",
+    "appName": "Flashcards+",
+    "model": "Claude Sonnet 5.5 (agent, one session)",
+    "builtAt": "2026-11-03",
+    "score": {
+      "works": 12,
+      "partial": 0,
+      "missing": 0
+    },
+    "summary": "A complete, working offline flashcard PWA: every item in the prompt was exercised in a real browser under the host CSP and worked, including FSRS scheduling with daily limits, all four study modes, stats, Quizlet/CSV/JSON import and export, backup-erase-restore, dark mode, and offline reload in real Chrome with the server stopped. The defects found are minor (a wrong percentage in the session summary after Undo, scrambled JSON export order, cosmetic mobile header and copy-naming issues), and iOS/Safari and a real GitHub Pages deploy remain untested.",
+    "checklist": [
+      {
+        "item": "Decks and cards with text and optional images stored in IndexedDB",
+        "status": "works",
+        "note": "Created decks and cards through the UI, they survived reload (IndexedDB flashcards-plus: decks/cards/reviews/meta). Image added via file input and via a paste event: stored as 900px WebP blob, shown in study view, restored from backup. Non-image file rejected with a toast; empty card rejected. Rename, edit, delete card and delete deck (cascades) all work. 1002-card deck imports in about 0.2s, lists 100 rows at a time with search."
+      },
+      {
+        "item": "FSRS/SM-2 scheduling with a daily due queue and a new-cards-per-day limit",
+        "status": "works",
+        "note": "FSRS-4.5 with the published default weights (new-card Good stability 3.7145, Easy about 14d). Learning steps, graduation, lapse and Hard/Good/Easy intervals shown on buttons. Set cards overdue in IndexedDB and the deck list showed 11 due; Again/Good ratings changed schedules. New limit defaults to 20, set to 3 on a 32-card deck, held after reload, and reset when I back-dated the review log by a day. Undo restores the previous schedule."
+      },
+      {
+        "item": "Study mode: flip",
+        "status": "works",
+        "note": "Space reveals, 1-4 rate (real key events), z undoes, Esc ends, session-complete screen, practice-all mode does not touch the schedule."
+      },
+      {
+        "item": "Study mode: type the answer",
+        "status": "works",
+        "note": "Typed with real keystrokes: lowercase typed answer accepted as Correct, wrong answer marked Not quite with suggested rating, Enter then Enter accepts, I don't know button works."
+      },
+      {
+        "item": "Study mode: multiple choice built from other cards in the deck",
+        "status": "works",
+        "note": "Four options (one correct, distractors from other cards in the same deck), right/wrong marking, fallback to fewer options/flip in tiny decks, works with an image card and with back-first direction."
+      },
+      {
+        "item": "Study mode: timed matching game",
+        "status": "works",
+        "note": "4/6/8 pairs, clock starts on first pick, miss counter, finished a 6-pair round in 0:04.5 with 1 miss and 'New best time' saved; tile keys 1-9/0/a-f select tiles; decks under 3 cards show a clear message."
+      },
+      {
+        "item": "Stats: streak, retention rate and a heatmap of reviews",
+        "status": "works",
+        "note": "Injected back-dated reviews: streak 6 days with a gap correctly breaking it, retention 82% then 94% matches the review-phase ratings, 12-month heatmap with per-day counts, card maturity bar, 14-day forecast, deck filter. Looks right in dark mode."
+      },
+      {
+        "item": "Import from a Quizlet export pasted as text (tab between term and definition, newline between cards)",
+        "status": "works",
+        "note": "Pasted 12 lines with accents, a ; inside a definition and one line with no tab: 11 cards ready, 1 line reported as skipped, imported into a new deck. Also .txt file with CRLF and blank lines, custom separators offered, preview before import. Card text containing HTML is rendered as text (no XSS)."
+      },
+      {
+        "item": "CSV and JSON import and export",
+        "status": "works",
+        "note": "CSV with quoted commas, escaped quotes, embedded newlines and a deck column imported correctly (32 cards); UTF-8 BOM + semicolon CSV and bare JSON arrays of term/definition also work; garbage/empty files give a friendly message. Exported deck CSV and deck JSON re-import with 32 cards; merge import adds no duplicates. Full backup JSON (decks, images, schedules, 64 reviews) then Erase all then Replace restore gave identical counts and the image blob back."
+      },
+      {
+        "item": "Dark mode and keyboard shortcuts",
+        "status": "works",
+        "note": "t toggles auto/dark/light and persists via localStorage; prefers-color-scheme dark honoured on a fresh profile; screenshots of dark decks, stats and matching look clean and text contrast is at least 4.5:1 on checked elements. ? help overlay (11 rows), g then d/s/i/b navigation, n focuses new deck, study keys all work."
+      },
+      {
+        "item": "Vite + TypeScript, installable, offline-capable, tests for the scheduler",
+        "status": "works",
+        "note": "tsc --noEmit clean and vitest 75/75 pass (24 FSRS tests incl. new/learning/review/lapse transitions). Served with the host strict CSP: zero CSP violations and no console errors from the app. Headless Chrome: service worker activated and controlled the page, cached all 10 files, then with the static server killed the app reloaded, showed a deck created earlier and navigated to #/stats. Chrome reports no installability errors and no manifest errors. The built-in browser pane cannot register service workers (environment limit), and iOS/Safari was not tested."
+      },
+      {
+        "item": "Host free on GitHub Pages and explain how to back up decks",
+        "status": "works",
+        "note": "pages.yml workflow (npm ci, test, build, upload-pages-artifact, deploy-pages) and a README section on Pages setup plus a clear backup/restore guide; the Backup & settings page repeats it, shows last-backup age and a 14-day nag. Backup and restore was verified end to end. The workflow itself was not run (not deployed by instruction)."
+      }
+    ],
+    "bugs": [
+      "Session-complete '% remembered' is wrong after Undo: study.ts undo() decrements stats.done but not stats.remembered, so a 21-review session that included an Again press on a new card reported '100% remembered' (it can exceed 100%).",
+      "JSON deck export lists cards in id order rather than creation order (CSV export keeps creation order).",
+      "'Import as copies' creates a deck with the identical name (no '(copy)' suffix), and because review history is not copied the copy shows a fresh daily new-card quota.",
+      "At 375px width there is no page horizontal scroll, but the header nav stacks into a tall block (Backup & settings wraps to two lines, about 195px of 812px) and matching tiles break long words mid-word ('bibliotec / a').",
+      "Erase all data relies on window.prompt (and some flows on window.confirm); in browsers/webviews that block prompt() it throws an unhandled rejection and nothing happens (the embedded browser pane does this).",
+      "Not verified: real iOS/Safari, the actual OS install flow, and the GitHub Pages workflow on real GitHub."
+    ],
+    "path": "/rebuilt/quizlet-plus/"
+  }
+]

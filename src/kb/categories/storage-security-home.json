@@ -1,0 +1,1938 @@
+[
+  {
+    "id": "icloud-plus",
+    "name": "iCloud+",
+    "category": "storage-security-home",
+    "url": "https://www.icloud.com",
+    "match": {
+      "patterns": [
+        "ICLOUD"
+      ],
+      "examples": [
+        "APPLE.COM/BILL ICLOUD 866-712-7753 CA",
+        "ICLOUD+ 200GB APPLE.COM/BILL"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 0.99,
+          "cadence": "monthly",
+          "plan": "iCloud+ 50 GB"
+        },
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "iCloud+ 200 GB"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "iCloud+ 2 TB"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "iCloud+ 6 TB"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "monthly",
+          "plan": "iCloud+ 12 TB"
+        }
+      ]
+    },
+    "typicalMonthly": 0.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Plans run $0.99 (50 GB), $2.99 (200 GB) and $9.99 (2 TB) and hold device backups, Photos and Keychain. Self-hosting does not beat them once an off-site copy is counted, and it replaces only the photo library.",
+    "alternatives": [
+      {
+        "name": "Immich",
+        "url": "https://immich.app",
+        "note": "Self-hosted photo library with iPhone and Android auto-backup."
+      },
+      {
+        "name": "Free 5 GB iCloud tier",
+        "url": "https://support.apple.com/en-us/108047",
+        "note": "Enough for contacts, settings and a small backup if photos live elsewhere."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Immich",
+          "icloudpd",
+          "Tailscale",
+          "restic"
+        ],
+        "hardware": [
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 6,
+        "powerCostYear": 30,
+        "youLose": "iPhone device backups, iCloud Keychain, iMessage in iCloud, Shared Albums that non-technical relatives can open, and the built-in off-site copy. You become the backup admin, and one failed disk without a second copy loses photos. icloudpd does not work if Advanced Data Protection is on (use a privacy.apple.com export instead), and albums need one icloudpd run per album. The cost figure includes about $8 a year for an off-site copy of 100 GB.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to move my iCloud Photos library to a self-hosted Immich server so I can drop my iCloud+ storage tier. Target: an always-on old laptop running Ubuntu Server 24.04 with Docker, or my NAS. First ask whether Advanced Data Protection is on: icloudpd does not work with it, so tell me to request a full export from privacy.apple.com or turn it off for the migration. Then: 1) install Immich from the official docker-compose files with Postgres, 2) keep the library on a disk with a second copy, plus a nightly encrypted restic job to an off-site bucket, 3) install Tailscale on the server and my phone, 4) list my albums, run icloudpd once per album with --album into a folder per album, and upload each folder with immich upload --album, 5) turn on automatic backup in the Immich iPhone app. Give exact commands, a photo and video count checklist before I downgrade, and a restore test."
+      },
+      "cancel": {
+        "howTo": "iPhone or iPad: Settings > your name > Subscriptions > iCloud+ > Cancel Subscription, or Settings > your name > iCloud > Manage Account Storage > Change Storage Plan > Downgrade Options. Mac: System Settings > your name > iCloud > Manage > Change Storage Plan. You can also use account.apple.com.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "The free tier is 5 GB. If you are over it, device backups and Photos uploads pause until you free space or resubscribe. Download your photos first (Photos settings > Download and Keep Originals, or a data export at privacy.apple.com). Family Sharing members lose a shared plan too."
+      }
+    },
+    "sources": [
+      "https://support.apple.com/en-us/108047",
+      "https://support.apple.com/en-us/118428",
+      "https://immich.app",
+      "https://www.backblaze.com/cloud-storage/pricing",
+      "https://icloud-photos-downloader.github.io/icloud_photos_downloader/authentication.html"
+    ]
+  },
+  {
+    "id": "google-one",
+    "name": "Google One",
+    "category": "storage-security-home",
+    "url": "https://one.google.com",
+    "match": {
+      "patterns": [
+        "GOOGLE ?\\*? ?STORAGE",
+        "GOOGLE ?\\*? ?ONE (STORAGE|BASIC|PREMIUM|PLAN)",
+        "GOOGLE ?\\*? ?ONE\\b(?! AI)"
+      ],
+      "examples": [
+        "GOOGLE *GOOGLE STORAGE",
+        "GOOGLE *GOOGLE ONE BASIC G.CO/HELPPAY# CA",
+        "GOOGLE *Google One g.co/helppay#CA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 1.99,
+          "cadence": "monthly",
+          "plan": "Google One Basic 100 GB"
+        },
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Google One 200 GB (older Standard tier, still billed to existing members)"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Google One 2 TB (also sold as Google AI Plus)"
+        }
+      ]
+    },
+    "typicalMonthly": 1.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "At $1.99 for 100 GB it is cheap, and it backs Gmail, Drive and Photos together. Self-hosting photos does not beat it once an off-site copy is counted. Trim usage or drop to the free 15 GB instead.",
+    "alternatives": [
+      {
+        "name": "Immich",
+        "url": "https://immich.app",
+        "note": "Self-hosted Google Photos replacement with mobile auto-backup."
+      },
+      {
+        "name": "Google Takeout",
+        "url": "https://takeout.google.com",
+        "note": "Official export of Photos, Drive and Gmail before you downgrade."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Immich",
+          "immich-go",
+          "Tailscale",
+          "restic"
+        ],
+        "hardware": [
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 6,
+        "powerCostYear": 30,
+        "youLose": "Google Photos search, Memories and shared albums that anyone can open, Gmail and Drive headroom, and the off-site copy. You manage backups, updates and disk health yourself. The cost figure includes about $8 a year for an off-site copy of 100 GB.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace Google Photos storage with a self-hosted Immich server so I can cancel my Google One plan or drop to the free tier. Target: an always-on old laptop running Ubuntu Server 24.04 with Docker, or a NAS with Docker. Walk me through: 1) installing Immich with the official docker-compose files and Postgres, 2) keeping the library on a disk with a second copy plus an encrypted nightly restic backup to an off-site bucket, 3) Tailscale on the server and my phone for remote access without open ports, 4) exporting everything with Google Takeout and importing it using immich-go so albums, dates and descriptions survive, 5) installing the Immich app on Android or iPhone with automatic backup. Include exact commands, a count-match checklist (photos, videos, albums) to finish before I delete anything from Google, and a restore drill from the backup."
+      },
+      "cancel": {
+        "howTo": "Open one.google.com/settings, choose Cancel membership and confirm. On Android use the Google One app > Settings > Cancel membership. If you subscribed through Apple, cancel under Apple Subscriptions instead.",
+        "url": "https://one.google.com/settings",
+        "gotchas": "You drop to 15 GB shared across Gmail, Drive and Photos. Over that, you cannot upload or receive new email, and Google says it may delete content in accounts that stay over quota for two years. Check you are not on a Google AI plan, which bills through the same page."
+      }
+    },
+    "sources": [
+      "https://one.google.com/about/plans",
+      "https://takeout.google.com",
+      "https://immich.app",
+      "https://www.backblaze.com/cloud-storage/pricing"
+    ]
+  },
+  {
+    "id": "dropbox-plus",
+    "name": "Dropbox Plus",
+    "category": "storage-security-home",
+    "url": "https://www.dropbox.com",
+    "match": {
+      "patterns": [
+        "DROPBOX(?! ?SIGN| ?DOCSEND)"
+      ],
+      "examples": [
+        "DROPBOX*K3M8Q2NZ4V9R DROPBOX.COM CA",
+        "DROPBOX PLUS SUBSCRIPTION"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 119.88,
+          "cadence": "annual",
+          "plan": "Plus 2 TB, billed yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Plus is 2 TB for $9.99/mo billed yearly. Nextcloud or Syncthing replace the sync, but with the off-site copy counted, self-hosting pays only for a mid-sized library you do not share. Keep it if you send links.",
+    "alternatives": [
+      {
+        "name": "Syncthing",
+        "url": "https://syncthing.net",
+        "note": "Peer-to-peer folder sync between your own devices, no server or account."
+      },
+      {
+        "name": "Dropbox Basic (free)",
+        "url": "https://www.dropbox.com/plans",
+        "note": "2 GB free tier, enough for a few shared folders."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Nextcloud",
+          "Syncthing",
+          "Tailscale",
+          "restic"
+        ],
+        "hardware": [
+          "nas",
+          "old-laptop",
+          "raspberry-pi"
+        ],
+        "hours": 8,
+        "powerCostYear": 60,
+        "youLose": "Dropbox apps that work everywhere with Smart Sync, shared links that anyone can open without a VPN, third-party integrations, and support. A dead disk means lost files unless you keep a second copy off-site. The cost figure counts about $38 a year of off-site bucket storage for 500 GB. A 2 TB library would cost about $167 a year at $6.95 per TB a month, more than the plan. A second disk is not counted.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace my Dropbox Plus subscription with a self-hosted Nextcloud server for my own files. Target: an always-on old laptop or NAS running Ubuntu Server 24.04 with Docker (a Raspberry Pi 5 with an SSD also works). Walk me through: 1) a Docker Compose stack with the official Nextcloud image, Postgres and Redis, with data on its own disk, 2) a nightly restic backup to a second drive plus an encrypted off-site copy, 3) Tailscale on the server, phone and laptops with HTTPS through tailscale serve, so no router ports are opened, 4) the Nextcloud desktop and mobile clients with selective sync, 5) migrating by syncing Dropbox to a local folder, copying it into Nextcloud and comparing file counts and sizes. Explain how to share a file with a friend who is not on my tailnet and what that exposes. Finish with a restore test before I cancel."
+      },
+      "cancel": {
+        "howTo": "Sign in at dropbox.com, open your profile menu > Settings > Plan, and choose Cancel plan. If you subscribed in the iOS or Android app, cancel in Apple Subscriptions or Google Play instead.",
+        "url": "https://www.dropbox.com/account/plan",
+        "gotchas": "You fall back to the free Basic plan (2 GB per the pricing page). If you hold more than that, Dropbox stops syncing new changes until you free space or upgrade, so move files first. The plan usually runs to the end of the period you paid for."
+      }
+    },
+    "sources": [
+      "https://www.dropbox.com/plans",
+      "https://nextcloud.com",
+      "https://syncthing.net",
+      "https://www.backblaze.com/cloud-storage/pricing"
+    ]
+  },
+  {
+    "id": "onedrive",
+    "name": "Microsoft OneDrive (100 GB)",
+    "category": "storage-security-home",
+    "url": "https://onedrive.live.com",
+    "match": {
+      "patterns": [
+        "ONEDRIVE",
+        "365 BASIC"
+      ],
+      "examples": [
+        "MICROSOFT*ONEDRIVE 100GB WA",
+        "MSFT *ONEDRIVE STORAGE WA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 1.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "The 100 GB tier is Microsoft 365 Basic at $1.99/mo ($19.99/yr), one of the cheapest storage plans. Drop it only if you can stay under the free 5 GB, and check you do not also pay for Microsoft 365 Personal or Family.",
+    "alternatives": [
+      {
+        "name": "OneDrive free tier",
+        "url": "https://onedrive.live.com",
+        "note": "5 GB free with a Microsoft account."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at account.microsoft.com/services, find the Microsoft 365 Basic (or OneDrive) subscription, choose Manage > Cancel subscription, and confirm.",
+        "url": "https://account.microsoft.com/services",
+        "gotchas": "The 100 GB tier is a Microsoft 365 plan, so cancelling can also remove ad-free Outlook and other Basic extras. If you are over the free 5 GB after it ends, OneDrive goes read-only: you can view and download but not upload. Move files before the end date."
+      }
+    },
+    "sources": [
+      "https://www.microsoft.com/en-us/microsoft-365/onedrive/onedrive-plans-and-pricing",
+      "https://account.microsoft.com/services"
+    ]
+  },
+  {
+    "id": "box",
+    "name": "Box (Personal Pro)",
+    "category": "storage-security-home",
+    "url": "https://www.box.com",
+    "match": {
+      "patterns": [
+        "^BOX\\.COM",
+        "^BOX\\*",
+        "^BOX,? INC\\b"
+      ],
+      "examples": [
+        "BOX.COM PERSONAL PRO SUBSCRIPTION",
+        "BOX, INC. REDWOOD CITY CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Personal Pro sells 100 GB, while iCloud+ sells 200 GB for $2.99 and Google One 100 GB for $1.99. Unless you need Box Sign or a work integration, move your files and drop the plan.",
+    "alternatives": [
+      {
+        "name": "iCloud+ 200 GB",
+        "url": "https://support.apple.com/en-us/108047",
+        "note": "$2.99/mo for 200 GB, built into iPhone and Mac."
+      },
+      {
+        "name": "Google One",
+        "url": "https://one.google.com/about/plans",
+        "note": "100 GB at $1.99/mo, 15 GB free."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at box.com, open Account Settings, go to the plan or billing section and downgrade to the free Individual plan.",
+        "url": "https://www.box.com/pricing/individual",
+        "gotchas": "The free Individual plan has 10 GB of storage and a 250 MB upload cap. Over 10 GB you must delete or move files. Download a full copy, including any older file versions you need, before you downgrade."
+      }
+    },
+    "sources": [
+      "https://www.box.com/pricing/individual"
+    ]
+  },
+  {
+    "id": "backblaze-personal",
+    "name": "Backblaze Personal Backup",
+    "category": "storage-security-home",
+    "url": "https://www.backblaze.com",
+    "match": {
+      "patterns": [
+        "BACKBLAZE"
+      ],
+      "examples": [
+        "BACKBLAZE INC SAN MATEO CA",
+        "BACKBLAZE.COM PERSONAL BACKUP"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "Computer Backup, yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Unlimited off-site backup for one computer at $9/mo ($99 a year) is hard to beat, and a backup only counts if a copy sits off-site. Cancel only if another off-site copy already exists.",
+    "alternatives": [
+      {
+        "name": "Pay yearly or for two years",
+        "url": "https://www.backblaze.com/cloud-backup/pricing",
+        "note": "$99 a year ($8.25/mo) or $189 for two years beats the $9 monthly rate."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Per Backblaze's help article: sign in at secure.backblaze.com, open Preferences, choose Delete Backup next to each computer, then open Overview and delete the unused license. Then check that your account shows no active renewal. If the steps differ, contact support before deleting anything.",
+        "url": "https://help.backblaze.com/hc/en-us/articles/217665728-Canceling-and-Deleting-a-Backblaze-Account",
+        "gotchas": "Deleting a backup removes its stored files at once and cannot be undone, so keep a local or other off-site copy first. Monthly plans are not refundable; yearly and two-year plans can be refunded within 30 days of subscribing. Forever version history is a paid add-on."
+      }
+    },
+    "sources": [
+      "https://www.backblaze.com/cloud-backup/personal",
+      "https://www.backblaze.com/cloud-backup/pricing",
+      "https://help.backblaze.com/hc/en-us/articles/217665728-Canceling-and-Deleting-a-Backblaze-Account",
+      "https://help.backblaze.com/hc/en-us/articles/217665118-Refunds"
+    ]
+  },
+  {
+    "id": "smugmug",
+    "name": "SmugMug",
+    "category": "storage-security-home",
+    "url": "https://www.smugmug.com",
+    "match": {
+      "patterns": [
+        "SMUGMUG(?!.{0,60}FLICKR)"
+      ],
+      "examples": [
+        "SMUGMUG, INC. SAN FRANCISCO CA",
+        "SMUGMUG.COM PORTFOLIO PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 23.5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "rebuild",
+      "cancel"
+    ],
+    "why": "At $23.50/mo billed yearly it earns its keep if you sell prints or deliver client galleries. For a plain portfolio of your own photos, a static site you generate yourself does the job.",
+    "alternatives": [
+      {
+        "name": "Cloudflare Pages",
+        "url": "https://pages.cloudflare.com",
+        "note": "Free static hosting for a portfolio built with Astro or Eleventy."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A static photo portfolio generated from folders of images: album pages, responsive grid, keyboard-friendly lightbox, build-time resized WebP images, EXIF captions, unlisted albums and a sitemap.",
+        "hours": 8,
+        "runsOn": "Static site built on your own machine with Astro, then uploaded with Wrangler to Cloudflare Pages (free tier) on your own domain. Originals stay on your disk and out of Git.",
+        "ongoingCostYear": 12,
+        "youLose": "Print and merchandise sales, client proofing and download delivery, unlimited original-file storage and its off-site backup, password-protected galleries, analytics and support. Keep SmugMug if clients or print sales matter.",
+        "prompt": "Build me a static photo portfolio website to replace my SmugMug plan. Stack: Astro with plain CSS and no database. Features: 1) a home page with a featured grid, 2) album pages generated from folders under photos/<album>/, each with a responsive masonry grid and a keyboard-accessible lightbox, 3) a build script using sharp that creates WebP thumbnails and 2000px display sizes, 4) captions and alt text read from a per-album YAML file plus EXIF data, 5) unlisted albums with long random URLs, left out of navigation and the sitemap, with noindex meta tags and a robots rule, and tell me they are unlisted, not private, 6) a contact page with a mailto link. Add an import script that turns a folder of originals downloaded from SmugMug into one album per folder. Build on my machine so the originals never go into Git, and publish the built dist folder to the Cloudflare Pages free tier with Wrangler on my custom domain. Include a README and state the file-count and file-size limits I will hit."
+      },
+      "cancel": {
+        "howTo": "Sign in at smugmug.com, open Account Settings > Billing (or Subscription) and cancel the plan. Annual plans normally run to the end of the paid term.",
+        "url": "https://www.smugmug.com/plans",
+        "gotchas": "Download your originals first, because galleries, shop links and shared URLs go offline when the plan ends. SmugMug advertises a 14-day free trial, so cancel before it ends if you are only testing. The listed prices are per month but billed annually."
+      }
+    },
+    "sources": [
+      "https://www.smugmug.com/plans",
+      "https://pages.cloudflare.com",
+      "https://astro.build"
+    ]
+  },
+  {
+    "id": "flickr-pro",
+    "name": "Flickr Pro",
+    "category": "storage-security-home",
+    "url": "https://www.flickr.com",
+    "match": {
+      "patterns": [
+        "FLICKR"
+      ],
+      "examples": [
+        "FLICKR PRO ANNUAL SUBSCRIPTION",
+        "FLICKR.COM PRO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 6.83,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Pro is $82 a year ($11 monthly) for unlimited full-size storage, ad-free browsing and stats. As a private archive, Immich at home replaces it. If you share publicly or use the community, keep it.",
+    "alternatives": [
+      {
+        "name": "Immich",
+        "url": "https://immich.app",
+        "note": "Self-hosted private photo archive with mobile backup."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Immich",
+          "Tailscale",
+          "restic"
+        ],
+        "hardware": [
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 6,
+        "powerCostYear": 35,
+        "youLose": "The Flickr community, public pages with views and favorites, groups, ad-free sharing links and the off-site copy. You manage disks, backups and updates. The cost figure includes about $13 a year for an off-site copy of a typical 150 GB archive.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to move my Flickr photo archive to a self-hosted Immich server and cancel Flickr Pro. Target: an always-on old laptop running Ubuntu Server 24.04 with Docker, or a NAS with Docker support. Walk me through: 1) installing Immich using the official docker-compose files and Postgres, 2) storing originals on a disk with a second copy and a nightly encrypted restic backup to an off-site bucket, 3) Tailscale on the server and my phone for remote access without open router ports, 4) requesting my Flickr data export, extracting the original files, and importing them with the Immich CLI while preserving capture dates (use exiftool to fix any missing dates from Flickr's JSON metadata), 5) recreating my main albums. Give exact commands, a count-match checklist before I cancel, and a restore test. Tell me which Flickr metadata (comments, favorites, groups) I will lose."
+      },
+      "cancel": {
+        "howTo": "On the web: profile photo > Settings > Membership status > Manage your Pro subscription > Cancel your subscription. If you subscribed in the iOS or Android app: Flickr app > Profile > Settings > Flickr Pro > Manage subscription.",
+        "url": "https://www.flickrhelp.com/hc/en-us/articles/4404058166548-Cancel-your-Flickr-Pro-subscription",
+        "gotchas": "Cancel at least a day before the billing date. Pro lasts until the term ends, then the account is free, capped at 1,000 items and 50 non-public photos or videos; content over the limits risks suspension or deletion. Export first (Settings > Your Flickr Data)."
+      }
+    },
+    "sources": [
+      "https://www.flickrhelp.com/hc/en-us/articles/4404064001812-Pricing-FAQ",
+      "https://www.flickrhelp.com/hc/en-us/articles/13690320471060-Free-account-limits-and-enforcement",
+      "https://www.flickrhelp.com/hc/en-us/articles/4404058166548-Cancel-your-Flickr-Pro-subscription",
+      "https://immich.app",
+      "https://www.backblaze.com/cloud-storage/pricing"
+    ]
+  },
+  {
+    "id": "ring-protect",
+    "name": "Ring Protect",
+    "category": "storage-security-home",
+    "url": "https://ring.com",
+    "match": {
+      "patterns": [
+        "\\bRING (PROTECT|BASIC|PLUS|PRO|SOLO|MULTI|YEARLY|MONTHLY|PLAN)\\b",
+        "\\bRING\\.COM"
+      ],
+      "examples": [
+        "RING PROTECT PLAN",
+        "RING YEARLY PLAN",
+        "RING.COM SANTA MONICA CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Ring Home Basic, yearly"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Ring Home Standard, yearly"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "Ring Home Premium, yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Ring cameras keep live view and alerts without a plan. Recording and history need Solo ($4.99), Multi ($9.99) or Pro ($19.99). Keep it if you review footage; otherwise step down to Solo or cancel.",
+    "alternatives": [
+      {
+        "name": "eufy cameras with local storage",
+        "url": "https://www.eufy.com",
+        "note": "Record to a built-in card or drive with no subscription; cloud storage is optional."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In the Ring app open the menu and go to your Ring Protect plan settings (or sign in at ring.com and open your account), select the location, then choose Cancel plan or change to Solo. Menu names shift between app versions.",
+        "url": "https://ring.com/support",
+        "gotchas": "Plans are per location, and Multi and Pro cover every device there. Ring lists plans as auto-renewing until canceled and starts a 30-day trial when you set up a device, so cancel before day 30 if you do not want it. Pro includes 24/7 professional monitoring, which stops with the plan."
+      }
+    },
+    "sources": [
+      "https://ring.com/plans",
+      "https://ring.com/support",
+      "https://ring.com/support/articles/v5hc7/introducing-ring-home-plans"
+    ]
+  },
+  {
+    "id": "google-nest-aware",
+    "name": "Google Nest Aware (Google Home Premium)",
+    "category": "storage-security-home",
+    "url": "https://home.google.com",
+    "match": {
+      "patterns": [
+        "NEST ?AWARE",
+        "GOOGLE.{0,6}HOME ?PREMIUM"
+      ],
+      "examples": [
+        "GOOGLE *NEST AWARE G.CO/HELPPAY# CA",
+        "GOOGLE *GOOGLE HOME PREMIUM"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 10,
+          "cadence": "monthly",
+          "plan": "Google Home Premium Standard"
+        },
+        {
+          "amount": 100,
+          "cadence": "annual",
+          "plan": "Google Home Premium Standard (annual)"
+        },
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Google Home Premium Advanced"
+        },
+        {
+          "amount": 200,
+          "cadence": "annual",
+          "plan": "Google Home Premium Advanced (annual)"
+        }
+      ]
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Nest Aware became Google Home Premium: Standard is $10/mo, Advanced $20. Google AI Pro already includes Standard, so check for double billing before paying separately.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open the Google Home app > Settings > Subscriptions (Home Premium), choose the plan and cancel. If you bought through the Google Store, a Google One bundle or Apple, manage it there instead.",
+        "url": "https://support.google.com/googlehome/",
+        "gotchas": "Google AI Pro includes the Standard plan. If you pay for both, cancel the standalone one. Cameras lose cloud event history and the AI features, but live view and basic alerts remain."
+      }
+    },
+    "sources": [
+      "https://blog.google/products-and-platforms/devices/google-nest/googe-home-premium-google-ai-pro-subscription/",
+      "https://9to5google.com/2025/10/01/google-home-premium/"
+    ]
+  },
+  {
+    "id": "arlo-secure",
+    "name": "Arlo Secure",
+    "category": "storage-security-home",
+    "url": "https://www.arlo.com",
+    "match": {
+      "patterns": [
+        "ARLO (SECURE|SMART|PLUS|PREMIUM|SUBSCR)",
+        "ARLO\\.COM",
+        "ARLO TECH"
+      ],
+      "examples": [
+        "ARLO SECURE PLUS",
+        "ARLO.COM SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Arlo cameras stream live and send basic alerts without a plan. Secure Plus runs $9.99 a month for one camera or $19.99 for unlimited. Pay only for cameras whose footage you actually review.",
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at my.arlo.com (or the Arlo app > Settings > Subscription), open Subscriptions, select the plan and cancel it.",
+        "url": "https://my.arlo.com",
+        "gotchas": "Plans are per camera or unlimited, and the Premium tier adds professional monitoring. Without a plan, cloud clips, AI detection and facial recognition stop, so download any clips you want to keep first."
+      }
+    },
+    "sources": [
+      "https://www.nerdwallet.com/home-ownership/home-security/reviews/arlo",
+      "https://www.security.org/security-cameras/arlo/"
+    ]
+  },
+  {
+    "id": "wyze-cam-plus",
+    "name": "Wyze Cam Plus",
+    "category": "storage-security-home",
+    "url": "https://www.wyze.com",
+    "match": {
+      "patterns": [
+        "WYZE"
+      ],
+      "examples": [
+        "WYZE LABS INC SEATTLE WA",
+        "WYZE.COM CAM PLUS"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 2.5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Cam Plus is $29.99 per camera per year. Frigate on an old laptop replaces it only for older models with RTSP firmware, and it pays only with 3 or more cameras. With one or two, keep Cam Plus on the front door camera.",
+    "alternatives": [
+      {
+        "name": "Local microSD recording",
+        "url": "https://www.wyze.com",
+        "note": "Many Wyze cameras record continuously to a microSD card with no plan."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Frigate",
+          "Home Assistant",
+          "Tailscale"
+        ],
+        "hardware": [
+          "old-laptop"
+        ],
+        "hours": 8,
+        "powerCostYear": 30,
+        "youLose": "Cam Plus detection tuned to Wyze hardware, simple cloud clips that survive a stolen camera, app polish and support. Only Wyze Cam v2, v3 and Pan v1 have RTSP firmware, and Wyze does not actively maintain it. Newer models cannot join. You manage disks and updates.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace Wyze Cam Plus with Frigate NVR running locally. This only pays off with 3 or more cameras, so ask how many I have first; with one or two, tell me to keep Cam Plus on the front door camera. Target: an old x86 laptop (8 GB RAM) on Ubuntu Server 24.04 with Docker, plus a surveillance disk. Only Wyze Cam v2, v3 and Pan v1 have RTSP firmware, so ask for my camera models and tell me which can be used. Walk me through: 1) installing the RTSP firmware from a microSD card and putting each camera on an isolated IoT network, 2) a Frigate docker-compose setup using the sub-stream for detection and the main stream for recording, 3) person, car and pet detection on CPU or OpenVINO, 4) phone notifications through Home Assistant, 5) Tailscale for remote viewing. Include disk sizing math and an honest comparison with Cam Plus detection."
+      },
+      "cancel": {
+        "howTo": "Sign in at my.wyze.com/account/services (or Wyze app > Account > Services), select Cam Plus, then Manage Subscription to cancel or reduce the number of cameras. If you subscribed through Apple, Google or Amazon, cancel there instead.",
+        "url": "https://support.wyze.com/hc/en-us/articles/17402446439451-How-do-I-make-changes-to-my-Wyze-subscriptions",
+        "gotchas": "Cam Plus is per camera, so keep it only on the doorbell or front door camera. Annual Cam Plus rose from $19.99 to $29.99 for renewals on or after March 2, 2026. Pro AI is a separate $4.99 per camera per month add-on with its own cancel button."
+      }
+    },
+    "sources": [
+      "https://support.wyze.com/hc/en-us/articles/46048795912347-Important-Cam-Plus-Annual-Price-Update",
+      "https://support.wyze.com/hc/en-us/articles/56320349469723-What-is-Pro-AI",
+      "https://support.wyze.com/hc/en-us/articles/49431832406939-Wyze-Cam-RTSP",
+      "https://frigate.video"
+    ]
+  },
+  {
+    "id": "simplisafe",
+    "name": "SimpliSafe",
+    "category": "storage-security-home",
+    "url": "https://simplisafe.com",
+    "match": {
+      "patterns": [
+        "SIMPLI ?SAFE"
+      ],
+      "examples": [
+        "SIMPLISAFE MONITORING",
+        "SIMPLISAFE.COM CORE PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 32.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Plans are month-to-month with no contract, so leaving is a real threat. Core is $32.99, Standard $22.99 (no camera recordings) and Self-Monitoring $9.99. Ask for a loyalty rate or step down a tier.",
+    "alternatives": [
+      {
+        "name": "Ring Protect Pro",
+        "url": "https://ring.com/plans",
+        "note": "$19.99/mo with 24/7 professional monitoring at one location."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "No contract, so you can leave any month. Credible alternatives: SimpliSafe Standard at $22.99 or Self-Monitoring at $9.99, or Ring Protect Pro at $19.99 a month with professional monitoring.",
+        "script": "Hi, I've been a SimpliSafe customer for a few years on the Core plan at $32.99 a month. I'm reviewing my monthly costs and comparing alternatives, including Ring's Pro plan at $19.99 a month. I'd rather stay, so I'm asking whether there is a loyalty rate or promotional price available on Core. If not, could you tell me exactly what I would lose by moving to Standard at $22.99, and whether camera recordings could be kept on a separate cheaper plan? I'd like to decide today if there is an offer.",
+        "expectedDiscountPct": [
+          5,
+          20
+        ],
+        "bestTime": "Weekday morning by phone or chat, ideally right after a price increase or after a quiet stretch with no alarm events."
+      },
+      "cancel": {
+        "howTo": "Chat with SimpliSafe support or call 1-888-783-8441 to cancel or change your monitoring plan. In some states you can start a cancellation online: SimpliSafe.com Account > Security Dashboard > Manage Account. Only the account owner can cancel.",
+        "url": "https://support.simplisafe.com/articles/account-billing/how-do-i-change-my-monitoring-plan",
+        "gotchas": "Plans are billed monthly with no contract. Without a monitoring plan you lose 24/7 dispatch, though live camera video and remote arming stay in the app. Self-Monitoring at $9.99 keeps 30 days of recordings for up to 10 cameras but no professional monitoring. Sales tax may apply."
+      }
+    },
+    "sources": [
+      "https://support.simplisafe.com/articles/alarm-event-monitoring/what-are-the-service-plan-options",
+      "https://support.simplisafe.com/articles/account-billing/how-do-i-change-my-monitoring-plan",
+      "https://ring.com/plans"
+    ]
+  },
+  {
+    "id": "adt",
+    "name": "ADT",
+    "category": "storage-security-home",
+    "url": "https://www.adt.com",
+    "match": {
+      "patterns": [
+        "\\bADT SECURITY",
+        "\\bADT SERVICES",
+        "\\bADT\\*",
+        "\\bADT PULSE",
+        "\\bADT HOME"
+      ],
+      "examples": [
+        "ADT SECURITY SERVICES 800-238-2727 FL",
+        "ADT*MONITORING BOCA RATON FL"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 49.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Professionally installed ADT runs on a 36-month contract (24 in California), and early termination can cost 75% of the remaining months. Negotiate near the contract end instead of cancelling mid-term.",
+    "alternatives": [
+      {
+        "name": "ADT Blu (no-contract tiers)",
+        "url": "https://www.adt.com",
+        "note": "ADT lists self-install plans without contracts, though a monthly plan is still required."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Your contract end date, published SimpliSafe and Ring Protect Pro prices, and ADT's own no-contract Blu DIY monitoring. Retention teams can sometimes offer a lower monthly rate or free equipment.",
+        "script": "Hi, I've been an ADT customer for [X] years, and my contract ends on [date]. I'm paying $[amount] a month for monitoring. SimpliSafe and Ring both publish month-to-month plans that are meaningfully lower. I'd prefer to stay with ADT, so what rate can you offer if I renew? Please give me any offer in writing, including the contract length and the early termination terms. If you cannot lower the rate, please tell me the exact steps and date to end service without a penalty.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "In the 60 to 90 days before your contract ends, by phone, and ask for the retention or loyalty department."
+      },
+      "cancel": {
+        "howTo": "Call ADT customer service and ask for your contract end date and exact payoff balance before you cancel. Ask them to confirm the cancellation and final bill in writing.",
+        "url": "https://www.adt.com/about-adt/legal/residential-terms-and-conditions",
+        "gotchas": "ADT's terms say that ending a 36-month monitoring contract early can mean paying 75% of the monthly charges due for the rest of the term (California contracts are 24 months). Financed equipment keeps billing separately, so ask for both numbers."
+      }
+    },
+    "sources": [
+      "https://www.adt.com/about-adt/legal/residential-terms-and-conditions",
+      "https://www.security.org/home-security-systems/adt/"
+    ]
+  },
+  {
+    "id": "blink-subscription",
+    "name": "Blink Subscription Plan",
+    "category": "storage-security-home",
+    "url": "https://blinkforhome.com",
+    "match": {
+      "patterns": [
+        "BLINK (SUBSCR|PLUS|BASIC|HOME|FOR HOME)",
+        "BLINKFORHOME"
+      ],
+      "examples": [
+        "BLINK SUBSCRIPTION PLUS PLAN",
+        "BLINKFORHOME.COM"
+      ],
+      "billedVia": "amazon"
+    },
+    "typicalMonthly": 3.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Blink gives live view and motion alerts without a plan, and a USB drive in a Sync Module 2 can hold clips locally. Basic is $3.99 a month per device and Plus is $11.99 for unlimited devices.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open the Blink app > Settings > Subscription Plans and cancel, or manage it in your Amazon account under Memberships and subscriptions if it was billed through Amazon.",
+        "url": "https://support.blinkforhome.com/en_US/subscriptions",
+        "gotchas": "Plus bundles an extended warranty and device discounts that end with the plan. Check which features you use (cloud history, person detection) before cancelling, and confirm what the Sync Module 2 local option needs on your current plan."
+      }
+    },
+    "sources": [
+      "https://www.security.org/security-cameras/blink/",
+      "https://blinkforhome.com"
+    ]
+  },
+  {
+    "id": "abode",
+    "name": "Abode",
+    "category": "storage-security-home",
+    "url": "https://goabode.com",
+    "match": {
+      "patterns": [
+        "ABODE ?SYSTEMS",
+        "GOABODE"
+      ],
+      "examples": [
+        "ABODE SYSTEMS INC PALO ALTO CA",
+        "GOABODE.COM SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Abode has a free tier, a Standard tier and a Pro tier with 24/7 professional monitoring, with no contracts. Keep Pro only if you want dispatch; the cheaper tiers cover app control and video.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open the Abode app, go to your plan settings and switch to a lower plan or cancel Pro. Abode says you can change plans at any time from the app. Camera-only video ($3.99 a month per camera) and 24/7 video storage ($9.99 a month) are separate add-ons.",
+        "url": "https://help.goabode.com/en/collections/7419626-plans-and-billing",
+        "gotchas": "Downgrading removes professional monitoring and may shorten cloud video history. Check whether you are billed monthly or yearly before you switch, since a yearly term may run to its end date."
+      }
+    },
+    "sources": [
+      "https://goabode.com/plans/",
+      "https://www.security.org/home-security-systems/abode/"
+    ]
+  },
+  {
+    "id": "vivint",
+    "name": "Vivint",
+    "category": "storage-security-home",
+    "url": "https://www.vivint.com",
+    "match": {
+      "patterns": [
+        "VIVINT(?! ?SOLAR)"
+      ],
+      "examples": [
+        "VIVINT SMART HOME PROVO UT",
+        "VIVINT INC MONITORING"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Vivint pairs a monitoring plan with equipment, often financed. Cancelling early can leave the remaining equipment balance due, so negotiate rate or term at renewal rather than walking away mid-contract.",
+    "plans": {
+      "haggle": {
+        "leverage": "A contract nearing its end, published SimpliSafe, Ring and ADT prices, and the fact that Vivint advertises month-to-month service when equipment is bought upfront.",
+        "script": "Hi, I've been a Vivint customer for [X] years and I'm currently paying $[amount] a month for monitoring. I've compared SimpliSafe and Ring, whose published plans are lower and don't require long contracts. I'd like to stay, so what retention rate can you offer on my current service level, and can I move to month-to-month after my equipment is paid off? Please also tell me my remaining equipment balance and contract end date, and send any offer in writing so I can compare it before I decide.",
+        "expectedDiscountPct": [
+          10,
+          20
+        ],
+        "bestTime": "Within three months of your agreement ending, by phone, and ask for the retention team."
+      },
+      "cancel": {
+        "howTo": "Call Vivint and ask for your agreement end date and the payoff balance on any financed equipment before you cancel. Ask for confirmation in writing.",
+        "url": "https://www.vivint.com/resources/article/vivint-monthly-pricing",
+        "gotchas": "Vivint says that without a service plan, product functionality is limited, including loss of remote connectivity. Equipment financing is a separate agreement with a lender and keeps billing after monitoring ends."
+      }
+    },
+    "sources": [
+      "https://www.vivint.com/resources/article/vivint-monthly-pricing",
+      "https://www.security.org/home-security-systems/vivint/"
+    ]
+  },
+  {
+    "id": "ecobee-smart-security",
+    "name": "ecobee Smart Security",
+    "category": "storage-security-home",
+    "url": "https://www.ecobee.com",
+    "match": {
+      "patterns": [
+        "ECOBEE"
+      ],
+      "examples": [
+        "ECOBEE INC SMART SECURITY",
+        "ECOBEE.COM SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "ecobee Smart Security now has Core (free), Plus ($5/mo) and Advanced ($10/mo) tiers. Existing pricing holds through December 2026 only if you change nothing, so check the new tier before you renew.",
+    "plans": {
+      "cancel": {
+        "howTo": "Use the ecobee app or your account on ecobee.com to open Smart Security subscription settings and cancel or downgrade the plan.",
+        "url": "https://support.ecobee.com/s/?language=en_US",
+        "gotchas": "ecobee says plan changes, add-on changes, cancellation or a lapse in service move you to current pricing and permanently end loyalty discounts. Professional monitoring is a separate add-on."
+      }
+    },
+    "sources": [
+      "https://www.ecobee.com/en-us/smart-security/",
+      "https://www.ecobee.com/en-us/citizen/evolving-ecobee-smart-security-for-simplicity-flexibility-and-control/"
+    ]
+  },
+  {
+    "id": "eufy-security",
+    "name": "eufy Security Cloud Storage",
+    "category": "storage-security-home",
+    "url": "https://www.eufy.com",
+    "match": {
+      "patterns": [
+        "EUFY"
+      ],
+      "examples": [
+        "EUFY SECURITY CLOUD STORAGE",
+        "EUFYLIFE.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 2.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "eufy cameras record to local storage at no charge, and cloud storage ($2.99 per camera, or $9.99 for up to 10) is optional. Cancel unless you need off-site clips in case a camera is stolen.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open the eufy Security app, go to your account or cloud storage subscription settings, and cancel the plan. If it was billed through Apple or Google, cancel there.",
+        "url": "https://service.eufy.com/",
+        "gotchas": "Confirm that your cameras have a card or HomeBase drive recording locally before you cancel. Cloud clips stop being stored when the plan ends, so save any you need first."
+      }
+    },
+    "sources": [
+      "https://www.security.org/security-cameras/eufy/",
+      "https://www.eufy.com"
+    ]
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "category": "storage-security-home",
+    "url": "https://nordvpn.com",
+    "match": {
+      "patterns": [
+        "NORDVPN",
+        "NORD ?SECURITY",
+        "NORDSEC"
+      ],
+      "examples": [
+        "NORDVPN.COM 1 YEAR PLAN",
+        "NORDVPN* NORDSEC B.V."
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "NordVPN sells deep multi-year discounts, then renews at the standard rate, so the renewal date is when to push for a retention offer. A home WireGuard server covers public Wi-Fi and home access only.",
+    "alternatives": [
+      {
+        "name": "Surfshark",
+        "url": "https://surfshark.com/pricing",
+        "note": "Advertises 24-month plans from about $2.49/mo."
+      },
+      {
+        "name": "Private Internet Access",
+        "url": "https://www.privateinternetaccess.com/buy-vpn-online",
+        "note": "$47.88 a year, renewing at the same price."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Your renewal date, and rival multi-year prices: Surfshark advertises 24-month plans from about $2.49 a month, ExpressVPN's 28-month Basic plan is $2.99 a month, and PIA charges $47.88 a year.",
+        "script": "Hi, I'm a NordVPN subscriber and my plan renews on [date]. The renewal price is well above the multi-year deals other providers advertise, such as Surfshark at about $2.49 a month and ExpressVPN at about $2.99 a month. I'd like to stay, so what is the best price you can give me to renew for the next 12 or 24 months? If there is a retention discount or coupon, please apply it before I turn off auto-renew, and confirm the exact total and billing date in writing.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "A week or two before the renewal date, through live chat from your account, and be ready to turn off auto-renew if the offer is weak."
+      },
+      "selfhost": {
+        "software": [
+          "WireGuard",
+          "PiVPN",
+          "Pi-hole",
+          "Tailscale"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "old-laptop"
+        ],
+        "hours": 4,
+        "powerCostYear": 22,
+        "youLose": "IP addresses in other countries, streaming-region access, hiding your location from websites (your home IP is exposed), multi-hop and malware-blocking features, and any support. It covers public Wi-Fi protection and access to your home network.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace my NordVPN subscription with a self-hosted WireGuard VPN at home, mainly for safer public Wi-Fi and reaching my home network. Target: a Raspberry Pi 4 or newer (or an old laptop) running Raspberry Pi OS Lite or Ubuntu Server, wired to my router. Set up: 1) WireGuard with PiVPN, 2) a dynamic DNS name and one UDP port forward, or Tailscale with the server as an exit node if my ISP uses CGNAT, 3) client configs and QR codes for my phone and laptop, with automatic connection on untrusted Wi-Fi, 4) Pi-hole on the same box for DNS ad blocking, 5) unattended OS updates and a backup of the config. Give exact commands and a test checklist (DNS leak test, speed test, reconnect after a reboot), plus an honest list of what I lose compared with NordVPN, including other countries' IP addresses and region unblocking."
+      },
+      "cancel": {
+        "howTo": "Log in to your Nord Account, open the Billing tab, click Cancel next to auto-renewal and confirm; a confirmation email follows. If you subscribed through Google Play, the Apple App Store or the Amazon Appstore, cancel in that store instead.",
+        "url": "https://support.nordvpn.com/hc/en-us/articles/19556844985489-How-to-cancel-auto-renewal-for-your-NordVPN-subscription",
+        "gotchas": "Multi-year plans are charged up front, and renewal uses the then-current rate, which can be far above your intro price. All plans carry a 30-day money-back guarantee. NordPass and NordLocker are separate subscriptions on the same account."
+      }
+    },
+    "sources": [
+      "https://www.security.org/vpn/nordvpn/review/",
+      "https://support.nordvpn.com/hc/en-us/articles/19556844985489-How-to-cancel-auto-renewal-for-your-NordVPN-subscription",
+      "https://surfshark.com/pricing",
+      "https://www.expressvpn.com/pricing"
+    ]
+  },
+  {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "category": "storage-security-home",
+    "url": "https://www.expressvpn.com",
+    "match": {
+      "patterns": [
+        "EXPRESS ?VPN"
+      ],
+      "examples": [
+        "EXPRESSVPN.COM",
+        "EXPRESSVPN* 24 MONTH PLAN"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 99.95,
+          "cadence": "annual",
+          "plan": "Basic, yearly renewal"
+        },
+        {
+          "amount": 119.95,
+          "cadence": "annual",
+          "plan": "Advanced, yearly renewal"
+        },
+        {
+          "amount": 199.95,
+          "cadence": "annual",
+          "plan": "Pro, yearly renewal"
+        }
+      ]
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "The long Advanced plan shows $4.49/mo, but it renews at $119.95 a year (about $10/mo). Ask for a retention price before you renew; a home Tailscale exit node covers only public Wi-Fi and home access.",
+    "alternatives": [
+      {
+        "name": "Private Internet Access",
+        "url": "https://www.privateinternetaccess.com/buy-vpn-online",
+        "note": "$47.88 a year, renewing at the same price."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "ExpressVPN lists annual renewal at $99.95 (Basic), $119.95 (Advanced) and $199.95 (Pro), while rivals advertise multi-year plans near $2.50 to $3.50 a month and PIA charges $47.88 a year.",
+        "script": "Hi, my ExpressVPN subscription renews on [date] at $119.95 for the year. I've been comparing providers, and several multi-year plans work out to a third of that, including Surfshark, and PIA charges $47.88 a year. I'd like to stay with ExpressVPN, so what is the best price you can offer me to renew, either for 12 months or on a longer plan? If there is a retention discount, please apply it to my account before I turn off auto-renewal, and send the confirmed total and renewal date in writing.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "A few days before the renewal date, through live chat from your account, before you switch off auto-renewal."
+      },
+      "selfhost": {
+        "software": [
+          "Tailscale",
+          "Pi-hole",
+          "AdGuard Home"
+        ],
+        "hardware": [
+          "old-laptop",
+          "raspberry-pi"
+        ],
+        "hours": 3,
+        "powerCostYear": 22,
+        "youLose": "Choice of countries, streaming-region access, hiding your home IP from websites, a no-logs claim backed by audits, and ExpressVPN extras such as its password manager and identity tools. You keep public Wi-Fi protection and access to home devices.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace my ExpressVPN subscription with a Tailscale exit node at home for public Wi-Fi protection and access to my home devices. Target: an old laptop running Ubuntu Server 24.04 (a Raspberry Pi also works), wired to my router. Steps: 1) install Tailscale, enable IP forwarding, and advertise the machine as an exit node and as a subnet router for my home LAN, 2) approve the routes in the admin console and set key expiry and access controls for my own devices only, 3) install Tailscale on my phone and laptop and show me how to switch the exit node on and off, 4) add Pi-hole or AdGuard Home for DNS, 5) enable unattended OS upgrades and a nightly config backup. Provide exact commands and a test checklist for DNS leaks, IP leaks and speed. List plainly what I lose compared with ExpressVPN: country choice, streaming-region access and hiding my home IP."
+      },
+      "cancel": {
+        "howTo": "Sign in to your ExpressVPN account on the website, open Subscription and turn off automatic renewal. Live chat can handle it too. If you subscribed through Apple or Google, cancel in that store.",
+        "url": "https://www.expressvpn.com/support/",
+        "gotchas": "ExpressVPN offers a 30-day money-back guarantee for new users. Plans renew yearly at the full rate shown on the pricing page, far above the intro monthly figure. Higher tiers bundle extras you may be paying for elsewhere."
+      }
+    },
+    "sources": [
+      "https://www.expressvpn.com/pricing",
+      "https://www.security.org/vpn/expressvpn/review/",
+      "https://tailscale.com/kb/1103/exit-nodes"
+    ]
+  },
+  {
+    "id": "surfshark",
+    "name": "Surfshark",
+    "category": "storage-security-home",
+    "url": "https://surfshark.com",
+    "match": {
+      "patterns": [
+        "SURFSHARK"
+      ],
+      "examples": [
+        "SURFSHARK.COM",
+        "SURFSHARK* SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Surfshark advertises two-year plans near $2.49/mo, billed up front, then charges annually after. The renewal price is not shown on the pricing page, so check it and ask for a retention offer.",
+    "alternatives": [
+      {
+        "name": "Private Internet Access",
+        "url": "https://www.privateinternetaccess.com/buy-vpn-online",
+        "note": "$47.88 a year, renewing at the same price."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Your renewal date and the gap between the advertised two-year deal and the renewal charge, plus PIA at $47.88 a year and ExpressVPN's 28-month Basic plan at $2.99 a month.",
+        "script": "Hi, my Surfshark subscription renews on [date]. I originally signed up for a two-year deal at around $2.49 a month, and I want to know the exact renewal charge before it happens. I'm comparing PIA at $47.88 a year and ExpressVPN's long plans. I'd like to stay, so can you offer a retention price for the next 12 or 24 months, or move me onto the current promotional plan? Please confirm the total, the billing date and the term in writing before I decide whether to turn off auto-renewal.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "About a week before the renewal date, through live chat from your account."
+      },
+      "selfhost": {
+        "software": [
+          "WireGuard",
+          "wg-easy",
+          "AdGuard Home"
+        ],
+        "hardware": [
+          "old-laptop"
+        ],
+        "hours": 3,
+        "powerCostYear": 22,
+        "youLose": "Servers in other countries, region unblocking, multi-hop, hiding your home IP from websites, and support. If your ISP uses carrier-grade NAT, a plain port forward will not work and you need Tailscale instead.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to stop paying for Surfshark and run my own WireGuard VPN at home using wg-easy. Target: an old laptop on Ubuntu Server 24.04 with Docker, connected by Ethernet. Walk me through: 1) installing Docker and wg-easy with a docker-compose file and a strong admin password, 2) a dynamic DNS name (DuckDNS or Cloudflare) and the single UDP port forward on my router, with a fallback using Tailscale if my ISP uses CGNAT, 3) creating clients for my phone and laptop with QR codes and automatic connection on untrusted Wi-Fi, 4) firewall rules, automatic updates, and a backup of the WireGuard config, 5) DNS through AdGuard Home. Include a leak-test checklist and be explicit about what I give up compared with Surfshark: servers in other countries, region unblocking, multi-hop and hiding my home IP address."
+      },
+      "cancel": {
+        "howTo": "Log in to your Surfshark account, click your email address (top right) > Subscription > Payments > Cancel auto-renewal, then confirm. Live chat can also cancel it. If you subscribed through Google Play, the Apple App Store or the Amazon Appstore, cancel in that store.",
+        "url": "https://support.surfshark.com/hc/en-us/articles/360003069694-How-to-cancel-auto-renewal-for-your-Surfshark-subscription",
+        "gotchas": "Cancelling auto-renewal keeps access until the end of the paid period. Surfshark says two-year plans are billed once at the start and then annually after they expire, and the renewal amount is not listed on the pricing page. A 30-day money-back guarantee applies to new subscriptions."
+      }
+    },
+    "sources": [
+      "https://surfshark.com/pricing",
+      "https://support.surfshark.com/hc/en-us/articles/360003069694-How-to-cancel-auto-renewal-for-your-Surfshark-subscription",
+      "https://www.security.org/vpn/surfshark/review/"
+    ]
+  },
+  {
+    "id": "proton",
+    "name": "Proton (Unlimited, VPN, Mail, Pass)",
+    "category": "storage-security-home",
+    "url": "https://proton.me",
+    "match": {
+      "patterns": [
+        "PROTON ?(AG|\\.ME|VPN|MAIL|PASS|DRIVE|UNLIMITED)",
+        "PROTONMAIL"
+      ],
+      "examples": [
+        "PROTON AG GENEVA CH",
+        "PROTON.ME UNLIMITED"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 119.88,
+          "cadence": "annual",
+          "plan": "Unlimited, 12-month billing"
+        },
+        {
+          "amount": 47.88,
+          "cadence": "annual",
+          "plan": "Mail Plus, 12-month billing"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Unlimited is $9.99/mo billed yearly and bundles VPN, Mail, Drive, Pass and Calendar. It can replace several separate subscriptions, so cancel overlapping standalone ones first.",
+    "alternatives": [
+      {
+        "name": "Proton Free",
+        "url": "https://proton.me/pricing",
+        "note": "Free tier for Mail, Calendar, Drive and VPN with limits."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at account.proton.me, open Settings > Dashboard (Subscription) and cancel or downgrade to Free. If you subscribed through Apple or Google, cancel in that store.",
+        "url": "https://account.proton.me",
+        "gotchas": "Yearly billing runs to the end of the paid year. After downgrade, paid VPN servers, custom domains and extra storage end, and an account over the free storage limit can be restricted until you free space. Export mail and Drive files first."
+      }
+    },
+    "sources": [
+      "https://proton.me/pricing"
+    ]
+  },
+  {
+    "id": "private-internet-access",
+    "name": "Private Internet Access (PIA)",
+    "category": "storage-security-home",
+    "url": "https://www.privateinternetaccess.com",
+    "match": {
+      "patterns": [
+        "PRIVATE ?INTERNET ?ACCESS",
+        "\\bPIA VPN"
+      ],
+      "examples": [
+        "PRIVATEINTERNETACCESS.COM",
+        "PRIVATE INTERNET ACCESS 3 YEAR PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 3.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "$47.88 a year renewing at the same price is cheap. A home WireGuard server saves under $42 a year and replaces neither server choice nor hiding your home IP, so keep PIA unless you only need remote access to home.",
+    "plans": {
+      "selfhost": {
+        "software": [
+          "WireGuard",
+          "PiVPN",
+          "Tailscale"
+        ],
+        "hardware": [
+          "raspberry-pi"
+        ],
+        "hours": 4,
+        "powerCostYear": 6,
+        "youLose": "Servers in dozens of countries, region unblocking, port forwarding through the provider for torrents, and hiding your home IP from websites. Savings are small: the plan is about $48 a year.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace Private Internet Access with a WireGuard server on a Raspberry Pi at home. Target: Raspberry Pi 4 or 5 running Raspberry Pi OS Lite 64-bit on Ethernet, with a reserved IP on my router. Steps: 1) install WireGuard with PiVPN, creating profiles for my phone and laptop, 2) a dynamic DNS name and one UDP port forward, or Tailscale as the fallback if my ISP uses CGNAT, 3) a kill switch on my laptop client so traffic stops if the tunnel drops, 4) unattended upgrades and a backup of the WireGuard config and an SD card image, 5) a verification pass: DNS leak test, IPv6 leak test, speed test and a reboot test. Be explicit about what I lose compared with PIA, such as country choice and provider port forwarding, and tell me how to decide whether the roughly $48 a year saved is worth the upkeep."
+      },
+      "cancel": {
+        "howTo": "Log in to your PIA Client Control Panel, find Next Billing and select Turn off auto-renewal, then confirm. Your account stays active until the paid term ends. Subscriptions bought through the Apple App Store or Google Play are cancelled in that store.",
+        "url": "https://helpdesk.privateinternetaccess.com/hc/en-us/articles/46565550505627-How-Do-I-Cancel-My-Subscription",
+        "gotchas": "The 3-year plan auto-renews at $79 every 3 years, so a charge can land years after you forget. A 30-day money-back guarantee applies to new subscribers; subscriptions bought through app stores follow the store refund terms."
+      }
+    },
+    "sources": [
+      "https://www.privateinternetaccess.com/buy-vpn-online",
+      "https://helpdesk.privateinternetaccess.com/hc/en-us/articles/46565550505627-How-Do-I-Cancel-My-Subscription"
+    ]
+  },
+  {
+    "id": "1password",
+    "name": "1Password",
+    "category": "storage-security-home",
+    "url": "https://1password.com",
+    "match": {
+      "patterns": [
+        "1PASSWORD",
+        "AGILE ?BITS"
+      ],
+      "examples": [
+        "AGILEBITS INC 1PASSWORD.COM",
+        "1PASSWORD INDIVIDUAL"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 47.88,
+          "cadence": "annual",
+          "plan": "Individual, regular rate"
+        },
+        {
+          "amount": 35.88,
+          "cadence": "annual",
+          "plan": "Individual, first-year promotion"
+        },
+        {
+          "amount": 71.88,
+          "cadence": "annual",
+          "plan": "Families, regular rate"
+        },
+        {
+          "amount": 53.88,
+          "cadence": "annual",
+          "plan": "Families, first-year promotion"
+        }
+      ]
+    },
+    "typicalMonthly": 3.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Password managers are not worth rebuilding or self-hosting. Individual is $3.99/mo regular ($2.99 promo for the first year). Bitwarden Premium at about $19.80 a year is the cheaper swap.",
+    "alternatives": [
+      {
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com/pricing/",
+        "note": "Free plan with unlimited passwords and devices; Premium is $19.80 a year."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at 1password.com, open your account profile and the Billing or Subscription page, and cancel the membership. If you subscribed through the App Store or Google Play, cancel there instead.",
+        "url": "https://1password.com",
+        "gotchas": "The $2.99 promotional price applies to new customers paying annually on 1Password.com for the first year, and is not offered through app stores. Export or move your vault before cancelling, and check 1Password's current rules for what access remains after a subscription lapses."
+      }
+    },
+    "sources": [
+      "https://1password.com/pricing/password-manager",
+      "https://bitwarden.com/pricing/"
+    ]
+  },
+  {
+    "id": "lastpass",
+    "name": "LastPass",
+    "category": "storage-security-home",
+    "url": "https://www.lastpass.com",
+    "match": {
+      "patterns": [
+        "LASTPASS",
+        "LOGMEIN ?\\*? ?LAST"
+      ],
+      "examples": [
+        "LASTPASS.COM PREMIUM",
+        "LOGMEIN*LASTPASS"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 36,
+          "cadence": "annual",
+          "plan": "Premium, billed annually"
+        },
+        {
+          "amount": 48,
+          "cadence": "annual",
+          "plan": "Families, billed annually"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "LastPass Free is limited to one device type; Premium lifts that. After the breaches LastPass disclosed in 2022, compare Bitwarden or 1Password before renewing by default. Never rebuild or self-host this.",
+    "alternatives": [
+      {
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com/pricing/",
+        "note": "Free plan with unlimited passwords and devices; Premium is $19.80 a year."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Log in to the LastPass web vault, open Account Settings > Billing (or Manage Subscription) and cancel Premium, Families or Plus. Store-billed subscriptions are cancelled in Apple or Google.",
+        "url": "https://www.lastpass.com/pricing",
+        "gotchas": "The free plan works on one device type only (computers or mobile), so downgrading breaks sync between your laptop and phone. Export your vault before cancelling and delete the old copy once you have moved it."
+      }
+    },
+    "sources": [
+      "https://www.lastpass.com/pricing",
+      "https://bitwarden.com/pricing/",
+      "https://www.security.org/password-manager/lastpass/"
+    ]
+  },
+  {
+    "id": "dashlane",
+    "name": "Dashlane",
+    "category": "storage-security-home",
+    "url": "https://www.dashlane.com",
+    "match": {
+      "patterns": [
+        "DASHLANE"
+      ],
+      "examples": [
+        "DASHLANE INC PREMIUM",
+        "DASHLANE.COM"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 59.88,
+          "cadence": "annual",
+          "plan": "Premium, billed annually"
+        },
+        {
+          "amount": 89.88,
+          "cadence": "annual",
+          "plan": "Friends & Family, billed annually"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Dashlane sells yearly Premium and Friends & Family plans with a 14-day trial. A free Bitwarden vault covers the basics, so check you use the extras before you renew. Never self-host this.",
+    "alternatives": [
+      {
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com/pricing/",
+        "note": "Free plan with unlimited passwords and devices; Premium is $19.80 a year."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "If you paid by card on the Dashlane website, open the web app in a computer browser and cancel from the Vault menu (Plan or Subscription). If you paid through the Apple App Store, Google Play or PayPal, cancel there instead.",
+        "url": "https://support.dashlane.com/hc/en-us/articles/12247552144786-Cancel-my-Dashlane-subscription-and-stop-autorenewal",
+        "gotchas": "Cancelling turns off auto-renewal, and you keep your plan and data until the current period ends. The in-app cancel option appears only in a browser, not in the mobile or Mac apps. Export your vault and choose a new manager before the plan ends."
+      }
+    },
+    "sources": [
+      "https://www.dashlane.com/pricing-personal",
+      "https://support.dashlane.com/hc/en-us/articles/12247552144786-Cancel-my-Dashlane-subscription-and-stop-autorenewal",
+      "https://www.security.org/password-manager/dashlane/"
+    ]
+  },
+  {
+    "id": "bitwarden-premium",
+    "name": "Bitwarden Premium",
+    "category": "storage-security-home",
+    "url": "https://bitwarden.com",
+    "match": {
+      "patterns": [
+        "BITWARDEN"
+      ],
+      "examples": [
+        "BITWARDEN INC PREMIUM",
+        "BITWARDEN.COM SUBSCRIPTION"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 19.8,
+          "cadence": "annual",
+          "plan": "Premium"
+        },
+        {
+          "amount": 47.88,
+          "cadence": "annual",
+          "plan": "Families (up to 6 users)"
+        }
+      ]
+    },
+    "typicalMonthly": 1.65,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "At $19.80 a year it is already the cheap option. Premium adds the built-in authenticator, file attachments, vault health reports and emergency access. Never rebuild or self-host a password manager.",
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to the web vault at vault.bitwarden.com, open Settings > Subscription and cancel Premium. Your vault stays on the free plan.",
+        "url": "https://vault.bitwarden.com",
+        "gotchas": "Premium-only features end, including the integrated authenticator (TOTP), file attachments, vault health reports and emergency access. Move any 2FA codes held in Bitwarden to another authenticator before cancelling."
+      }
+    },
+    "sources": [
+      "https://bitwarden.com/pricing/"
+    ]
+  },
+  {
+    "id": "keeper-security",
+    "name": "Keeper Password Manager",
+    "category": "storage-security-home",
+    "url": "https://www.keepersecurity.com",
+    "match": {
+      "patterns": [
+        "KEEPER ?SECURITY",
+        "KEEPERSECURITY"
+      ],
+      "examples": [
+        "KEEPER SECURITY INC CHICAGO IL",
+        "KEEPERSECURITY.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Keeper bills per year, with BreachWatch dark-web monitoring and extra file storage as paid add-ons. Check you are not paying for add-ons you never use. Never rebuild or self-host a password manager.",
+    "alternatives": [
+      {
+        "name": "Bitwarden",
+        "url": "https://bitwarden.com/pricing/",
+        "note": "Free plan with unlimited passwords and devices."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to the Keeper web vault, open your account and subscription settings, and turn off auto-renewal or remove the add-ons. Store-billed subscriptions are cancelled in Apple or Google.",
+        "url": "https://www.keepersecurity.com",
+        "gotchas": "The personal and family plans bill yearly and renew automatically, and BreachWatch and storage are separate add-ons. Export your records before the plan lapses."
+      }
+    },
+    "sources": [
+      "https://www.keepersecurity.com/pricing/personal-and-family.html"
+    ]
+  },
+  {
+    "id": "norton-360",
+    "name": "Norton 360",
+    "category": "storage-security-home",
+    "url": "https://us.norton.com",
+    "match": {
+      "patterns": [
+        "NORTON ?(\\*|360|SECURITY|ANTIVIRUS|SUBSCR)(?!.{0,60}LIFELOCK)"
+      ],
+      "examples": [
+        "NORTON *360 DELUXE",
+        "NORTON SECURITY ANTIVIRUS SUBSCRIPTION"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Deluxe, first year"
+        },
+        {
+          "amount": 124.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Deluxe, renewal"
+        },
+        {
+          "amount": 119.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Deluxe, renewal (reported by some reviews)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "First-year prices are promotional: Deluxe is $49.99 and renews at $124.99, per security.org. Call before renewal for a retention price, or cancel if Microsoft Defender or macOS protection is enough.",
+    "alternatives": [
+      {
+        "name": "Microsoft Defender",
+        "url": "https://www.microsoft.com/en-us/windows/comprehensive-security",
+        "note": "Built into Windows at no cost."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "The gap between the first-year price and the renewal price, a built-in alternative (Microsoft Defender), and the 60-day refund window on annual plans.",
+        "script": "Hi, my Norton 360 subscription renews on [date] at $[renewal price], which is far above what new customers pay in their first year. Windows already includes Microsoft Defender, so I'm deciding whether to keep paying. I'd stay with Norton if you can match the first-year promotional price for another year. Can you apply that offer or a retention discount today? Please confirm the new price, the term and the renewal date in writing by email. If there is no discount, I'll cancel before the renewal date.",
+        "expectedDiscountPct": [
+          15,
+          35
+        ],
+        "bestTime": "One to two weeks before renewal, by phone or chat, and ask for retention; after the renewal charge you are limited to the 60-day refund window."
+      },
+      "cancel": {
+        "howTo": "Sign in at my.norton.com, open your subscription and turn off automatic renewal (or cancel). Support chat or phone can process it. Store-billed plans are cancelled in Apple or Google.",
+        "url": "https://support.norton.com",
+        "gotchas": "Annual plans renew automatically at the higher regular rate. Norton advertises a 60-day money-back guarantee on annual plans, so cancel within 60 days of a charge to get it back. Expect retention offers, and note LifeLock bundles are cancelled separately."
+      }
+    },
+    "sources": [
+      "https://www.security.org/antivirus/norton/",
+      "https://support.norton.com",
+      "https://www.costbench.com/software/cybersecurity/norton/"
+    ]
+  },
+  {
+    "id": "mcafee-plus",
+    "name": "McAfee+",
+    "category": "storage-security-home",
+    "url": "https://www.mcafee.com",
+    "match": {
+      "patterns": [
+        "MCAFEE"
+      ],
+      "examples": [
+        "MCAFEE *TOTAL PROTECTION",
+        "MCAFEE.COM AUTO-RENEW"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "haggle",
+      "keep"
+    ],
+    "why": "McAfee often arrives as a preinstalled trial that auto-renews, and intro prices jump on renewal (one plan goes from $29.99 to $84.99). Windows and macOS already include baseline protection.",
+    "alternatives": [
+      {
+        "name": "Microsoft Defender",
+        "url": "https://www.microsoft.com/en-us/windows/comprehensive-security",
+        "note": "Built into Windows at no cost."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "The renewal price versus the first-year price, built-in alternatives, and the fact that McAfee often runs auto-renew promotions for existing customers.",
+        "script": "Hi, my McAfee subscription is set to renew on [date] at $[price]. That is much higher than the first-year price, and I'm comparing it with the protection already built into my computer. I'd keep McAfee if you can offer a loyalty or first-year price for the next term. Can you apply any available discount today, and confirm the new total, the term length and the date it renews in writing? If not, please cancel auto-renewal and confirm that by email.",
+        "expectedDiscountPct": [
+          15,
+          35
+        ],
+        "bestTime": "At least a week before the renewal date, by chat or phone, before turning off auto-renewal."
+      },
+      "cancel": {
+        "howTo": "Sign in at mcafee.com > My Account, open your subscription and turn off automatic renewal. Chat support can finish the cancellation. If it was billed through Apple or Google, cancel there.",
+        "url": "https://www.mcafee.com/support/s/?language=en_US",
+        "gotchas": "Refund windows are short, so cancel before the renewal date rather than after. Trials need cancelling about seven days before they end. Some bundles tie VPN features to auto-renew or sign you up for two years, so read the terms."
+      }
+    },
+    "sources": [
+      "https://www.security.org/antivirus/mcafee/",
+      "https://www.mcafee.com"
+    ]
+  },
+  {
+    "id": "aura",
+    "name": "Aura",
+    "category": "storage-security-home",
+    "url": "https://www.aura.com",
+    "match": {
+      "patterns": [
+        "\\bAURA\\.COM",
+        "^AURA ?(IDENTITY|SUBSCR)"
+      ],
+      "examples": [
+        "AURA.COM SUBSCRIPTION",
+        "AURA IDENTITY PROTECTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 12,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Aura Individual is $12/mo billed annually ($15 monthly), with a 60-day refund window on annual plans. Free credit freezes cover the basics, so keep it only for the monitoring and recovery help. Never self-host this.",
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to Aura on the web or in the app, open Account > Subscription and cancel. If the option is missing, use chat or phone support from the Help page.",
+        "url": "https://www.aura.com",
+        "gotchas": "Annual plans carry a 60-day money-back guarantee, and the free trial can be redeemed once per customer. The pricing page does not state the renewal price, so confirm it before the anniversary. Free credit freezes at the three bureaus stay in place after you cancel."
+      }
+    },
+    "sources": [
+      "https://www.aura.com/pricing"
+    ]
+  },
+  {
+    "id": "lifelock",
+    "name": "LifeLock",
+    "category": "storage-security-home",
+    "url": "https://www.lifelock.com",
+    "match": {
+      "patterns": [
+        "LIFELOCK"
+      ],
+      "examples": [
+        "LIFELOCK.COM MEMBERSHIP",
+        "NORTON *LIFELOCK ADVANCED"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "LifeLock plans are sold on a first-year promotion and renew at a higher rate, so ask for the loyalty price before renewal. Free credit freezes at the three bureaus cover the core protection.",
+    "plans": {
+      "haggle": {
+        "leverage": "First-year versus renewal pricing, competing identity services such as Aura, free credit freezes, and the 60-day refund window on annual plans.",
+        "script": "Hi, my LifeLock membership renews on [date] at $[price]. New customers pay much less in their first year, and I'm comparing Aura and the free credit freezes at the credit bureaus. I'd like to stay, so can you apply a loyalty or first-year rate to my renewal? Please tell me the exact price, the term and the date it renews, and confirm it by email. If there is no discount available, please turn off auto-renewal and confirm the cancellation in writing.",
+        "expectedDiscountPct": [
+          15,
+          35
+        ],
+        "bestTime": "One to two weeks before the renewal date, by phone, and ask for the retention department."
+      },
+      "cancel": {
+        "howTo": "Sign in to your LifeLock or Norton account, open the membership and turn off auto-renewal, or contact Member Services to cancel. If you bought Norton 360 with LifeLock, cancel in your Norton account.",
+        "url": "https://lifelock.norton.com/",
+        "gotchas": "Annual plans advertise a 60-day money-back guarantee, and the site says you can cancel anytime. Turn off auto-renewal before the anniversary to avoid a charge at the higher regular rate."
+      }
+    },
+    "sources": [
+      "https://www.security.org/identity-theft/lifelock/review/",
+      "https://www.lifelock.com"
+    ]
+  },
+  {
+    "id": "malwarebytes-premium",
+    "name": "Malwarebytes Premium",
+    "category": "storage-security-home",
+    "url": "https://www.malwarebytes.com",
+    "match": {
+      "patterns": [
+        "MALWAREBYTES"
+      ],
+      "examples": [
+        "MALWAREBYTES.COM PREMIUM",
+        "MALWAREBYTES CORP SANTA CLARA CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 44.99,
+          "cadence": "annual",
+          "plan": "Premium, one device, yearly"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Malwarebytes Premium (listed around $44.99 a year for one device) duplicates the protection built into Windows and macOS for most home users. Keep it only if you rely on its scanning or VPN extras.",
+    "alternatives": [
+      {
+        "name": "Microsoft Defender",
+        "url": "https://www.microsoft.com/en-us/windows/comprehensive-security",
+        "note": "Built into Windows at no cost."
+      },
+      {
+        "name": "Malwarebytes Free",
+        "url": "https://www.malwarebytes.com",
+        "note": "Free on-demand scanner."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at my.malwarebytes.com, open Subscriptions and turn off auto-renew. If it was billed through Apple or Google, cancel there.",
+        "url": "https://my.malwarebytes.com",
+        "gotchas": "Plans bill yearly and renew at the regular rate. Security.org reports a 60-day refund window, but check the one shown at checkout. Deactivate the app on each device after you cancel."
+      }
+    },
+    "sources": [
+      "https://www.security.org/antivirus/malwarebytes/",
+      "https://www.malwarebytes.com/pricing"
+    ]
+  },
+  {
+    "id": "plex-pass",
+    "name": "Plex Pass",
+    "category": "storage-security-home",
+    "url": "https://www.plex.tv",
+    "match": {
+      "patterns": [
+        "\\bPLEX ?(PASS|INC)\\b",
+        "\\bPLEX\\.TV"
+      ],
+      "examples": [
+        "PLEX.TV PLEX PASS",
+        "PLEX INC PLEX PASS MONTHLY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "selfhost",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "Since April 2025, streaming your own server away from home needs Plex Pass or a Remote Watch Pass. Jellyfin on the same hardware does it free over Tailscale, but you lose Plex polish and its apps.",
+    "alternatives": [
+      {
+        "name": "Jellyfin",
+        "url": "https://jellyfin.org",
+        "note": "Free, open-source media server with no paid tier."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Jellyfin",
+          "Tailscale",
+          "Docker"
+        ],
+        "hardware": [
+          "spare-pc",
+          "old-laptop",
+          "nas"
+        ],
+        "hours": 5,
+        "powerCostYear": 0,
+        "youLose": "Plex's polished apps on every TV, its free ad-supported catalog, Watchlist and Discover, easy friend sharing, and its metadata matching. Jellyfin TV apps vary by platform, and friends need accounts plus a way to reach your server. The cost figure is zero because the machine already runs Plex.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace Plex Pass with Jellyfin on the machine that already hosts my Plex library. Target: an always-on spare PC, old laptop or NAS running Ubuntu Server 24.04 with Docker. Walk me through: 1) installing Jellyfin with Docker, mounting media read-only so Plex keeps running during the trial, 2) Movies, TV Shows and Music libraries with correct naming, 3) hardware transcoding if my GPU supports it, 4) Tailscale on the server and clients for remote playback with no router ports, 5) a nightly backup of Jellyfin's config and data folders, 6) family accounts and watched-status migration with JellyPlex-Watched. Ask which TVs and streamers I own and check each against jellyfin.org/downloads/clients: Apple TV, Android TV, Fire TV, Roku and LG webOS have clients, Samsung has a Tizen client so check my model, and tell me what to do for any device without one. End with a checklist so I cancel Plex Pass only after playback, subtitles and remote streaming work."
+      },
+      "cancel": {
+        "howTo": "Sign in at plex.tv, open Account > Subscription & Payments, choose Manage on the Plex Pass subscription, then cancel automatic renewal. If you subscribed through an app store (Apple, Google Play, Amazon or Roku), cancel there.",
+        "url": "https://support.plex.tv/articles/201580107-plex-subscription-management/",
+        "gotchas": "You keep Plex Pass until the paid period ends, with no refund for unused time. Without it, remote streaming from your server needs a Remote Watch Pass for each viewer (Plex lists $2.99 a month or $29.99 a year from June 2026). A lifetime Plex Pass is a one-time purchase with nothing to cancel."
+      }
+    },
+    "sources": [
+      "https://support.plex.tv/articles/201580107-plex-subscription-management/",
+      "https://support.plex.tv/articles/remote-watch-pass-overview/",
+      "https://www.plex.tv/plans/",
+      "https://jellyfin.org",
+      "https://jellyfin.org/downloads/clients/all"
+    ]
+  },
+  {
+    "id": "tile-premium",
+    "name": "Tile Premium",
+    "category": "storage-security-home",
+    "url": "https://www.tile.com",
+    "match": {
+      "patterns": [
+        "\\bTILE (PREMIUM|INC)\\b",
+        "\\bTILE\\.COM"
+      ],
+      "examples": [
+        "TILE PREMIUM SUBSCRIPTION",
+        "TILE INC TILE.COM CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Tile Premium adds extras such as smart alerts and location history on top of the free tracker app. If you rarely lose things or already use Apple Find My or Google's tracker network, it is an easy cut.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel where you subscribed. iPhone: Settings > your name > Subscriptions > Tile. Android: Play Store > Profile > Payments & subscriptions > Tile. Tile account on the Life360 website: log in, Account icon > Billing & Premium > Manage Subscription > Cancel Subscription.",
+        "url": "https://support.life360.com/hc/en-us/articles/30582997380887-Cancel-Tile-Premium-or-Premium-Protect-Subscription",
+        "gotchas": "Refunds are not available for unused time, and benefits last to the end of the period. Premium Protect is a separate Tile tier, and Life360 family membership is a separate subscription, so cancel the right one. Trackers keep working with the free app."
+      }
+    },
+    "sources": [
+      "https://support.life360.com/hc/en-us/articles/30582997380887-Cancel-Tile-Premium-or-Premium-Protect-Subscription",
+      "https://support.life360.com/hc/en-us/articles/30583018923927-Tile-Premium-and-Premium-Protect-Overview"
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "file": "revolut-eu.csv",
+  "bank": "revolutEu",
+  "statementStart": "2025-11-01",
+  "statementEnd": "2026-10-31",
+  "rows": 474,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 15.99,
+      "charges": 12,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 13.99,
+          "to": 15.99
+        }
+      ]
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 10.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 22,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "notion",
+      "displayName": "Notion",
+      "match": "NOTION",
+      "merchantId": "notion",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "dropbox",
+      "displayName": "Dropbox",
+      "match": "DROPBOX",
+      "merchantId": "dropbox",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "disney-plus",
+      "displayName": "Disney+",
+      "match": "DISNEY",
+      "merchantId": "disney-plus",
+      "cadence": "monthly",
+      "currentAmount": 8.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "youtube-premium",
+      "displayName": "YouTube Premium",
+      "match": "YOUTUBE",
+      "merchantId": "youtube-premium",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "fitpark",
+      "displayName": "Fitness Park",
+      "match": "FITNESS PARK",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 29.9,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "deezer",
+      "displayName": "Deezer",
+      "match": "DEEZER",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 10.99,
+      "charges": 12,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

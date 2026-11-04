@@ -1,0 +1,110 @@
+{
+  "file": "bofa-checking.csv",
+  "bank": "bofaChecking",
+  "statementStart": "2025-11-03",
+  "statementEnd": "2026-10-30",
+  "rows": 476,
+  "active": [
+    {
+      "key": "xfinity",
+      "displayName": "Xfinity",
+      "match": "COMCAST",
+      "merchantId": "xfinity",
+      "cadence": "monthly",
+      "currentAmount": 82.95,
+      "charges": 12,
+      "active": true,
+      "variable": true
+    },
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 15.49,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "hulu",
+      "displayName": "Hulu",
+      "match": "HULU",
+      "merchantId": "hulu",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 12,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 9.99,
+          "to": 11.99
+        }
+      ]
+    },
+    {
+      "key": "claude-pro",
+      "displayName": "Claude Pro",
+      "match": "CLAUDE",
+      "merchantId": "claude-pro",
+      "cadence": "monthly",
+      "currentAmount": 20,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "youtube-premium",
+      "displayName": "YouTube Premium",
+      "match": "YOUTUBE",
+      "merchantId": "youtube-premium",
+      "cadence": "monthly",
+      "currentAmount": 13.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "lumosity",
+      "displayName": "Google Play subscription ($12.99/mo)",
+      "match": "LUMOSITY",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 12,
+      "active": true,
+      "candidates": [
+        "duolingo"
+      ]
+    },
+    {
+      "key": "peloton-app",
+      "displayName": "Peloton App",
+      "match": "PELOTON",
+      "merchantId": "peloton-app",
+      "cadence": "monthly",
+      "currentAmount": 24,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "ynab",
+      "displayName": "YNAB",
+      "match": "YNAB",
+      "merchantId": "ynab",
+      "cadence": "annual",
+      "currentAmount": 109,
+      "charges": 1,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

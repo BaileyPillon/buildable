@@ -1,0 +1,118 @@
+{
+  "file": "chase-checking.csv",
+  "bank": "chaseChecking",
+  "statementStart": "2025-11-01",
+  "statementEnd": "2026-10-31",
+  "rows": 488,
+  "active": [
+    {
+      "key": "xfinity",
+      "displayName": "Xfinity",
+      "match": "COMCAST",
+      "merchantId": "xfinity",
+      "cadence": "monthly",
+      "currentAmount": 84.85,
+      "charges": 12,
+      "active": true,
+      "variable": true
+    },
+    {
+      "key": "verizon",
+      "displayName": "Verizon Wireless",
+      "match": "VZWRLSS",
+      "merchantId": "verizon",
+      "cadence": "monthly",
+      "currentAmount": 90.38,
+      "charges": 12,
+      "active": true,
+      "variable": true
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "zapier",
+      "displayName": "Zapier",
+      "match": "ZAPIER",
+      "merchantId": "zapier",
+      "cadence": "monthly",
+      "currentAmount": 29.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "dropbox",
+      "displayName": "Dropbox",
+      "match": "DROPBOX",
+      "merchantId": "dropbox",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "planet-fitness",
+      "displayName": "Planet Fitness",
+      "match": "PLANET FITNESS",
+      "merchantId": "planet-fitness",
+      "cadence": "monthly",
+      "currentAmount": 24.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "ring-protect",
+      "displayName": "Ring Protect",
+      "match": "RING",
+      "merchantId": "ring-protect",
+      "cadence": "monthly",
+      "currentAmount": 5.99,
+      "charges": 12,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 4.99,
+          "to": 5.99
+        }
+      ]
+    },
+    {
+      "key": "nordvpn",
+      "displayName": "NordVPN",
+      "match": "NORDVPN",
+      "merchantId": "nordvpn",
+      "cadence": "annual",
+      "currentAmount": 59.88,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "notion",
+      "displayName": "Notion",
+      "match": "NOTION",
+      "merchantId": "notion",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "storage",
+      "displayName": "West Side Self Storage",
+      "match": "WEST SIDE",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 129,
+      "charges": 12,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

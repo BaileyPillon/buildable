@@ -1,0 +1,116 @@
+{
+  "file": "monzo.csv",
+  "bank": "monzo",
+  "statementStart": "2025-11-01",
+  "statementEnd": "2026-10-31",
+  "rows": 581,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 12,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 10.99,
+          "to": 12.99
+        }
+      ]
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "disney-plus",
+      "displayName": "Disney+",
+      "match": "DISNEY",
+      "merchantId": "disney-plus",
+      "cadence": "monthly",
+      "currentAmount": 7.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "amazon-prime",
+      "displayName": "Amazon Prime",
+      "match": "AMAZON PRIME",
+      "merchantId": "amazon-prime",
+      "cadence": "monthly",
+      "currentAmount": 8.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "chatgpt-plus",
+      "displayName": "ChatGPT Plus",
+      "match": "CHATGPT",
+      "merchantId": "chatgpt-plus",
+      "cadence": "monthly",
+      "currentAmount": 15.8,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "claude-pro",
+      "displayName": "Claude Pro",
+      "match": "CLAUDE",
+      "merchantId": "claude-pro",
+      "cadence": "monthly",
+      "currentAmount": 17,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "youtube-premium",
+      "displayName": "YouTube Premium",
+      "match": "YOUTUBE",
+      "merchantId": "youtube-premium",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "audible",
+      "displayName": "Audible",
+      "match": "AUDIBLE",
+      "merchantId": "audible",
+      "cadence": "monthly",
+      "currentAmount": 7.99,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "todoist",
+      "displayName": "Todoist",
+      "match": "TODOIST",
+      "merchantId": "todoist",
+      "cadence": "monthly",
+      "currentAmount": 4.5,
+      "charges": 12,
+      "active": true
+    },
+    {
+      "key": "puregym",
+      "displayName": "PureGym",
+      "match": "PURE GYM",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 24.99,
+      "charges": 12,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

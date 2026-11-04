@@ -1,0 +1,815 @@
+{
+  "file": "capitalone-holdout.csv",
+  "format": "Capital One (Transaction Date,Posted Date,Card No.,Description,Category,Debit,Credit; ISO dates)",
+  "statementStart": "2025-11-01",
+  "statementEnd": "2026-10-31",
+  "rows": 740,
+  "chargeRows": 727,
+  "creditRows": 13,
+  "installmentRows": 0,
+  "dupeEstimate": 0,
+  "series": [
+    {
+      "id": "amazon-prime-monthly",
+      "label": "Amazon Prime monthly",
+      "merchantId": "amazon-prime",
+      "match": [
+        "AMAZON PRIME"
+      ],
+      "amounts": [
+        14.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-12",
+      "lastSeen": "2026-10-12",
+      "currentAmount": 14.99,
+      "meanAmount": 14.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "AMAZON PRIME*ZVX3R55ES AMZN.COM/BILL WA"
+    },
+    {
+      "id": "kindle-unlimited",
+      "label": "Kindle Unlimited (cancelled Aug 2026)",
+      "merchantId": "kindle-unlimited",
+      "match": [
+        "KINDLE UNLTD"
+      ],
+      "amounts": [
+        11.99
+      ],
+      "cadence": "monthly",
+      "count": 10,
+      "firstSeen": "2025-11-26",
+      "lastSeen": "2026-08-26",
+      "currentAmount": 11.99,
+      "meanAmount": 11.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "KINDLE UNLTD*4YP21JGNN AMZN.COM/BILL WA"
+    },
+    {
+      "id": "xbox",
+      "label": "Xbox Game Pass (descriptor changes mid-statement)",
+      "merchantId": "xbox-game-pass",
+      "match": [
+        "XBOX"
+      ],
+      "amounts": [
+        29.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-09",
+      "lastSeen": "2026-10-09",
+      "currentAmount": 29.99,
+      "meanAmount": 29.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MICROSOFT*XBOX GAME PASS 425-882-8080 WA"
+    },
+    {
+      "id": "playstation",
+      "label": "PlayStation Plus",
+      "merchantId": "playstation-plus",
+      "match": [
+        "PLAYSTATION"
+      ],
+      "amounts": [
+        9.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-03",
+      "lastSeen": "2026-10-03",
+      "currentAmount": 9.99,
+      "meanAmount": 9.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PLAYSTATION NETWORK 800-345-7669 CA"
+    },
+    {
+      "id": "discord",
+      "label": "Discord Nitro",
+      "merchantId": "discord-nitro",
+      "match": [
+        "DISCORD"
+      ],
+      "amounts": [
+        9.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-21",
+      "lastSeen": "2026-10-21",
+      "currentAmount": 9.99,
+      "meanAmount": 9.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "DISCORD* NITRO SAN FRANCISCO CA"
+    },
+    {
+      "id": "crunchyroll",
+      "label": "Crunchyroll (cancelled Apr 2026)",
+      "merchantId": "crunchyroll",
+      "match": [
+        "CRUNCHYROLL"
+      ],
+      "amounts": [
+        7.99
+      ],
+      "cadence": "monthly",
+      "count": 6,
+      "firstSeen": "2025-11-06",
+      "lastSeen": "2026-04-06",
+      "currentAmount": 7.99,
+      "meanAmount": 7.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CRUNCHYROLL 877-278-6224 CA"
+    },
+    {
+      "id": "youtube-tv",
+      "label": "YouTube TV",
+      "merchantId": "youtube-tv",
+      "match": [
+        "YOUTUBE TV"
+      ],
+      "amounts": [
+        82.99,
+        87.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-15",
+      "lastSeen": "2026-10-15",
+      "currentAmount": 87.99,
+      "meanAmount": 85.49,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 82.99,
+          "to": 87.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GOOGLE *YOUTUBE TV g.co/helppay#CA"
+    },
+    {
+      "id": "peacock-paypal",
+      "label": "Peacock via PayPal",
+      "merchantId": "peacock",
+      "match": [
+        "PEACOCK"
+      ],
+      "amounts": [
+        10.99,
+        13.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-08",
+      "lastSeen": "2026-10-08",
+      "currentAmount": 13.99,
+      "meanAmount": 12.99,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 10.99,
+          "to": 13.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PAYPAL *PEACOCK 402-935-7733 CA"
+    },
+    {
+      "id": "siriusxm",
+      "label": "SiriusXM",
+      "merchantId": "siriusxm",
+      "match": [
+        "SIRIUSXM"
+      ],
+      "amounts": [
+        16.84
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-18",
+      "lastSeen": "2026-10-18",
+      "currentAmount": 16.84,
+      "meanAmount": 16.84,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SIRIUSXM.COM/ACCT 888-635-5144 NY"
+    },
+    {
+      "id": "mint-mobile",
+      "label": "Mint Mobile 3-month plans",
+      "merchantId": "mint-mobile",
+      "match": [
+        "MINT MOBILE"
+      ],
+      "amounts": [
+        45
+      ],
+      "cadence": "quarterly",
+      "count": 4,
+      "firstSeen": "2025-11-20",
+      "lastSeen": "2026-08-20",
+      "currentAmount": 45,
+      "meanAmount": 45,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MINT MOBILE 800-683-7392 CA"
+    },
+    {
+      "id": "starlink",
+      "label": "Starlink",
+      "merchantId": "starlink",
+      "match": [
+        "STARLINK"
+      ],
+      "amounts": [
+        120
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-04",
+      "lastSeen": "2026-10-04",
+      "currentAmount": 120,
+      "meanAmount": 120,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "STARLINK INTERNET REDMOND WA"
+    },
+    {
+      "id": "crunch",
+      "label": "Crunch Fitness",
+      "merchantId": "crunch-fitness",
+      "match": [
+        "CRUNCH"
+      ],
+      "amounts": [
+        14.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-11",
+      "lastSeen": "2026-10-11",
+      "currentAmount": 14.99,
+      "meanAmount": 14.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CRUNCH FITNESS 0481 TUCSON AZ"
+    },
+    {
+      "id": "myfitnesspal",
+      "label": "MyFitnessPal Premium (cancelled Mar 2026)",
+      "merchantId": "myfitnesspal-premium",
+      "match": [
+        "MYFITNESSPAL"
+      ],
+      "amounts": [
+        19.99
+      ],
+      "cadence": "monthly",
+      "count": 5,
+      "firstSeen": "2025-11-14",
+      "lastSeen": "2026-03-15",
+      "currentAmount": 19.99,
+      "meanAmount": 19.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MYFITNESSPAL INC SAN FRANCISCO CA"
+    },
+    {
+      "id": "whoop",
+      "label": "WHOOP",
+      "merchantId": "whoop",
+      "match": [
+        "WHOOP"
+      ],
+      "amounts": [
+        30
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-24",
+      "lastSeen": "2026-10-24",
+      "currentAmount": 30,
+      "meanAmount": 30,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "WHOOP INC BOSTON MA"
+    },
+    {
+      "id": "life360",
+      "label": "Life360 Gold",
+      "merchantId": "life360",
+      "match": [
+        "LIFE360"
+      ],
+      "amounts": [
+        14.99,
+        15.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-02",
+      "lastSeen": "2026-10-02",
+      "currentAmount": 15.99,
+      "meanAmount": 15.32,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 14.99,
+          "to": 15.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "LIFE360 INC SAN FRANCISCO CA"
+    },
+    {
+      "id": "backblaze",
+      "label": "Backblaze",
+      "merchantId": "backblaze-personal",
+      "match": [
+        "BACKBLAZE"
+      ],
+      "amounts": [
+        9
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-27",
+      "lastSeen": "2026-10-27",
+      "currentAmount": 9,
+      "meanAmount": 9,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "BACKBLAZE INC SAN MATEO CA"
+    },
+    {
+      "id": "ring",
+      "label": "Ring Protect",
+      "merchantId": "ring-protect",
+      "match": [
+        "RING PROTECT"
+      ],
+      "amounts": [
+        4.99,
+        5.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-07",
+      "lastSeen": "2026-10-07",
+      "currentAmount": 5.99,
+      "meanAmount": 5.74,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 4.99,
+          "to": 5.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "RING PROTECT PLAN SANTA MONICA CA"
+    },
+    {
+      "id": "simplisafe",
+      "label": "SimpliSafe monitoring",
+      "merchantId": "simplisafe",
+      "match": [
+        "SIMPLISAFE"
+      ],
+      "amounts": [
+        29.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-16",
+      "lastSeen": "2026-10-16",
+      "currentAmount": 29.99,
+      "meanAmount": 29.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SIMPLISAFE.COM 888-957-4675 MA"
+    },
+    {
+      "id": "bitwarden",
+      "label": "Bitwarden Premium (annual, single charge)",
+      "merchantId": "bitwarden-premium",
+      "match": [
+        "BITWARDEN"
+      ],
+      "amounts": [
+        19.8
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-02-05",
+      "lastSeen": "2026-02-05",
+      "currentAmount": 19.8,
+      "meanAmount": 19.8,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": true,
+      "sampleDescriptor": "BITWARDEN INC SANTA BARBARA CA"
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "merchantId": "medium",
+      "match": [
+        "MEDIUM MONTHLY"
+      ],
+      "amounts": [
+        5
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-19",
+      "lastSeen": "2026-10-19",
+      "currentAmount": 5,
+      "meanAmount": 5,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MEDIUM MONTHLY SAN FRANCISCO CA"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn Premium (cancelled Jul 2026)",
+      "merchantId": "linkedin-premium",
+      "match": [
+        "LINKEDIN"
+      ],
+      "amounts": [
+        39.99
+      ],
+      "cadence": "monthly",
+      "count": 9,
+      "firstSeen": "2025-11-13",
+      "lastSeen": "2026-07-13",
+      "currentAmount": 39.99,
+      "meanAmount": 39.99,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "LINKEDIN PRE*54878612 SUNNYVALE CA"
+    },
+    {
+      "id": "masterclass",
+      "label": "MasterClass (annual, single charge)",
+      "merchantId": "masterclass",
+      "match": [
+        "MASTERCLASS"
+      ],
+      "amounts": [
+        120
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-04-22",
+      "lastSeen": "2026-04-22",
+      "currentAmount": 120,
+      "meanAmount": 120,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": true,
+      "sampleDescriptor": "MASTERCLASS.COM SAN FRANCISCO CA"
+    },
+    {
+      "id": "patreon",
+      "label": "Patreon pledge",
+      "merchantId": "patreon",
+      "match": [
+        "PATREON"
+      ],
+      "amounts": [
+        5
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-01",
+      "lastSeen": "2026-10-01",
+      "currentAmount": 5,
+      "meanAmount": 5,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PATREON* MEMBERSHIP INTERNET"
+    },
+    {
+      "id": "nebula",
+      "label": "Nebula",
+      "merchantId": null,
+      "match": [
+        "NEBULA"
+      ],
+      "amounts": [
+        6
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-22",
+      "lastSeen": "2026-10-22",
+      "currentAmount": 6,
+      "meanAmount": 6,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "NEBULA STREAMING NEBULA.TV"
+    },
+    {
+      "id": "mubi",
+      "label": "MUBI",
+      "merchantId": null,
+      "match": [
+        "MUBI"
+      ],
+      "amounts": [
+        14.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-10",
+      "lastSeen": "2026-10-10",
+      "currentAmount": 14.99,
+      "meanAmount": 14.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MUBI.COM LONDON GB"
+    },
+    {
+      "id": "trupanion",
+      "label": "Trupanion pet insurance",
+      "merchantId": null,
+      "match": [
+        "TRUPANION"
+      ],
+      "amounts": [
+        62.41,
+        68.65
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-05",
+      "lastSeen": "2026-10-05",
+      "currentAmount": 68.65,
+      "meanAmount": 65.01,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 62.41,
+          "to": 68.65
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "TRUPANION INC 855-288-6252 SEATTLE WA"
+    },
+    {
+      "id": "carwash",
+      "label": "Mister Car Wash club",
+      "merchantId": null,
+      "match": [
+        "MISTER CAR WASH"
+      ],
+      "amounts": [
+        24.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-20",
+      "lastSeen": "2026-10-19",
+      "currentAmount": 24.99,
+      "meanAmount": 24.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MISTER CAR WASH #0891 TUCSON AZ"
+    },
+    {
+      "id": "wikimedia",
+      "label": "Wikimedia monthly donation",
+      "merchantId": null,
+      "match": [
+        "WIKIMEDIA"
+      ],
+      "amounts": [
+        5
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-15",
+      "lastSeen": "2026-10-15",
+      "currentAmount": 5,
+      "meanAmount": 5,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "WIKIMEDIA FOUNDATION SAN FRANCISCO CA"
+    },
+    {
+      "id": "harrys",
+      "label": "Harrys razors quarterly",
+      "merchantId": null,
+      "match": [
+        "HARRYS"
+      ],
+      "amounts": [
+        27.5
+      ],
+      "cadence": "quarterly",
+      "count": 4,
+      "firstSeen": "2025-12-12",
+      "lastSeen": "2026-09-12",
+      "currentAmount": 27.5,
+      "meanAmount": 27.5,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "HARRYS INC NEW YORK NY"
+    },
+    {
+      "id": "cloudflare",
+      "label": "Cloudflare Pro",
+      "merchantId": null,
+      "match": [
+        "CLOUDFLARE"
+      ],
+      "amounts": [
+        20
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-08",
+      "lastSeen": "2026-10-08",
+      "currentAmount": 20,
+      "meanAmount": 20,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CLOUDFLARE SAN FRANCISCO CA"
+    },
+    {
+      "id": "coffee-club",
+      "label": "Medium Roast coffee club (looks like Medium)",
+      "merchantId": null,
+      "match": [
+        "MEDIUM ROAST"
+      ],
+      "amounts": [
+        18.99
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-06",
+      "lastSeen": "2026-10-06",
+      "currentAmount": 18.99,
+      "meanAmount": 18.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "mimic": true,
+      "detectable": true,
+      "sampleDescriptor": "MEDIUM ROAST COFFEE CLUB LAKEWOOD OH"
+    },
+    {
+      "id": "calm-spa",
+      "label": "Calm Waters Spa membership (looks like Calm)",
+      "merchantId": null,
+      "match": [
+        "CALM WATERS"
+      ],
+      "amounts": [
+        65
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-28",
+      "lastSeen": "2026-10-28",
+      "currentAmount": 65,
+      "meanAmount": 65,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "mimic": true,
+      "detectable": true,
+      "sampleDescriptor": "CALM WATERS SPA MEMBERSHIP TUCSON AZ"
+    }
+  ],
+  "mustNotDetect": [
+    {
+      "id": "t-amzn-monthly",
+      "label": "Amazon.com* marketplace, same amount monthly",
+      "match": [
+        "AMAZON.COM*"
+      ],
+      "why": "Amazon marketplace, not a subscription",
+      "count": 12
+    },
+    {
+      "id": "t-rent",
+      "label": "Rent through a portal",
+      "match": [
+        "RENTCAFE"
+      ],
+      "why": "rent, > $400",
+      "count": 12
+    },
+    {
+      "id": "t-interest",
+      "label": "Interest charge",
+      "match": [
+        "INTEREST CHARGE"
+      ],
+      "why": "interest",
+      "count": 12
+    },
+    {
+      "id": "t-venmo",
+      "label": "PayPal person-to-person",
+      "match": [
+        "PAYPAL *JESSEKIM"
+      ],
+      "why": "person-to-person",
+      "count": 12
+    }
+  ],
+  "undetectableByDesign": [
+    {
+      "id": "zipcar",
+      "label": "Zipcar annual (non-KB single)",
+      "merchantId": null,
+      "match": [
+        "ZIPCAR"
+      ],
+      "amounts": [
+        90
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-01-14",
+      "currentAmount": 90,
+      "meanAmount": 90,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": false,
+      "undetectableReason": "non-KB with fewer than 3 charges",
+      "sampleDescriptor": "ZIPCAR.COM CAMBRIDGE MA"
+    }
+  ]
+}

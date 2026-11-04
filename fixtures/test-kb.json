@@ -1,0 +1,1613 @@
+[
+  {
+    "id": "chatgpt-plus",
+    "name": "ChatGPT Plus",
+    "category": "ai",
+    "url": "https://chatgpt-plus.example.com",
+    "match": {
+      "patterns": [
+        "OPENAI|CHATGPT"
+      ],
+      "examples": [
+        "OPENAI *CHATGPT SUBSCR"
+      ],
+      "priceHints": [
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Plus"
+        }
+      ]
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "absorb",
+    "also": [
+      "cancel"
+    ],
+    "why": "ChatGPT Plus test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel ChatGPT Plus in account settings."
+      },
+      "absorb": {
+        "claudeDoes": "Claude does the core of ChatGPT Plus.",
+        "howTo": "Ask Claude.",
+        "limits": "Fewer integrations.",
+        "prompt": "Paste-ready test prompt for ChatGPT Plus. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "claude-pro",
+    "name": "Claude Pro",
+    "category": "ai",
+    "url": "https://claude-pro.example.com",
+    "match": {
+      "patterns": [
+        "ANTHROPIC|CLAUDE\\.AI"
+      ],
+      "examples": [
+        "CLAUDE.AI SUBSCRIPTION"
+      ],
+      "priceHints": [
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 200,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
+    },
+    "typicalMonthly": 20,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "why": "Claude Pro test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Claude Pro in account settings."
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "category": "productivity",
+    "url": "https://grammarly.example.com",
+    "match": {
+      "patterns": [
+        "GRAMMARLY"
+      ],
+      "examples": [
+        "GRAMMARLY GRAMMARLY.COM CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 144,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        },
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Premium"
+        }
+      ]
+    },
+    "typicalMonthly": 12,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "absorb",
+    "why": "Grammarly test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Grammarly in account settings."
+      },
+      "absorb": {
+        "claudeDoes": "Claude does the core of Grammarly.",
+        "howTo": "Ask Claude.",
+        "limits": "Fewer integrations.",
+        "prompt": "Paste-ready test prompt for Grammarly. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "category": "productivity",
+    "url": "https://otter-ai.example.com",
+    "match": {
+      "patterns": [
+        "OTTER\\.?AI"
+      ],
+      "examples": [
+        "OTTER.AI 650-555-0100 CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
+    },
+    "typicalMonthly": 16.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Otter.ai test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Otter.ai in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Local Whisper transcriber",
+        "hours": 8,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Local Whisper transcriber. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "category": "productivity",
+    "url": "https://notion.example.com",
+    "match": {
+      "patterns": [
+        "NOTION"
+      ],
+      "examples": [
+        "NOTION LABS SAN FRANCISCO CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 10,
+          "cadence": "monthly",
+          "plan": "Plus"
+        }
+      ]
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Notion test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Notion in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Personal notes app",
+        "hours": 12,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Personal notes app. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "todoist",
+    "name": "Todoist",
+    "category": "productivity",
+    "url": "https://todoist.example.com",
+    "match": {
+      "patterns": [
+        "TODOIST|DOIST"
+      ],
+      "examples": [
+        "TODOIST DOIST.COM"
+      ],
+      "priceHints": [
+        {
+          "amount": 5,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 48,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
+    },
+    "typicalMonthly": 5,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Todoist test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Todoist in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Task list PWA",
+        "hours": 6,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Task list PWA. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "calendly",
+    "name": "Calendly",
+    "category": "productivity",
+    "url": "https://calendly.example.com",
+    "match": {
+      "patterns": [
+        "CALENDLY"
+      ],
+      "examples": [
+        "CALENDLY ATLANTA GA"
+      ],
+      "priceHints": [
+        {
+          "amount": 10,
+          "cadence": "monthly",
+          "plan": "Standard"
+        },
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "Standard 2027"
+        }
+      ]
+    },
+    "typicalMonthly": 10,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Calendly test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Calendly in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Booking page",
+        "hours": 5,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Booking page. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "linktree",
+    "name": "Linktree",
+    "category": "shopping-news-social",
+    "url": "https://linktree.example.com",
+    "match": {
+      "patterns": [
+        "LINKTREE|LINK\\.TREE"
+      ],
+      "examples": [
+        "LINKTREE LINKTR.EE"
+      ],
+      "priceHints": [
+        {
+          "amount": 5,
+          "cadence": "monthly",
+          "plan": "Starter"
+        },
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "Pro"
+        }
+      ]
+    },
+    "typicalMonthly": 12,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Linktree test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Linktree in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Link-in-bio page",
+        "hours": 3,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Link-in-bio page. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "category": "productivity",
+    "url": "https://zapier.example.com",
+    "match": {
+      "patterns": [
+        "ZAPIER"
+      ],
+      "examples": [
+        "ZAPIER.COM SAN FRANCISCO CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Starter"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Free+"
+        }
+      ]
+    },
+    "typicalMonthly": 29.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Zapier test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Zapier in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Cron + scripts",
+        "hours": 10,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Cron + scripts. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "ynab",
+    "name": "YNAB",
+    "category": "productivity",
+    "url": "https://ynab.example.com",
+    "match": {
+      "patterns": [
+        "YNAB|YOU NEED A BUDGET"
+      ],
+      "examples": [
+        "YNAB.COM 855-555-0101"
+      ],
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        },
+        {
+          "amount": 109,
+          "cadence": "annual",
+          "plan": "Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "YNAB test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel YNAB in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Envelope budgeting PWA",
+        "hours": 12,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Envelope budgeting PWA. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "peloton-app",
+    "name": "Peloton App",
+    "category": "health-family",
+    "url": "https://peloton-app.example.com",
+    "match": {
+      "patterns": [
+        "PELOTON"
+      ],
+      "examples": [
+        "PELOTON MEMBERSHIP NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "App One"
+        },
+        {
+          "amount": 24,
+          "cadence": "monthly",
+          "plan": "App+"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "Peloton App test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Peloton App in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 4
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "myfitnesspal",
+    "name": "MyFitnessPal Premium",
+    "category": "health-family",
+    "url": "https://myfitnesspal.example.com",
+    "match": {
+      "patterns": [
+        "MYFITNESSPAL|MFP PREMIUM"
+      ],
+      "examples": [
+        "MYFITNESSPAL.COM 888-555-0102"
+      ],
+      "priceHints": [
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 19.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "MyFitnessPal Premium test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel MyFitnessPal Premium in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Food log PWA",
+        "hours": 8,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Food log PWA. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "huckleberry",
+    "name": "Huckleberry",
+    "category": "health-family",
+    "url": "https://huckleberry.example.com",
+    "match": {
+      "patterns": [
+        "HUCKLEBERRY"
+      ],
+      "examples": [
+        "HUCKLEBERRY LABS SAN FRANCISCO CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 58.99,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Huckleberry test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Huckleberry in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Baby sleep tracker PWA",
+        "hours": 7,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Baby sleep tracker PWA. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "headspace",
+    "name": "Headspace",
+    "category": "health-family",
+    "url": "https://headspace.example.com",
+    "match": {
+      "patterns": [
+        "HEADSPACE"
+      ],
+      "examples": [
+        "HEADSPACE INC SANTA MONICA CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Headspace test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Headspace in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Meditation timer",
+        "hours": 4,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Meditation timer. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "planet-fitness",
+    "name": "Planet Fitness",
+    "category": "health-family",
+    "url": "https://planet-fitness.example.com",
+    "match": {
+      "patterns": [
+        "PLANET FIT|PLNT FIT"
+      ],
+      "examples": [
+        "PLANET FITNESS CLUB FEE",
+        "PLANET FITNESS MONTHLY FEE"
+      ],
+      "priceHints": [
+        {
+          "amount": 10,
+          "cadence": "monthly",
+          "plan": "Classic"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "Black Card"
+        }
+      ]
+    },
+    "typicalMonthly": 24.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "haggle",
+    "why": "Planet Fitness test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Planet Fitness in account settings."
+      },
+      "haggle": {
+        "leverage": "A competitor offer",
+        "script": "Hello, I would like a better rate.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Before renewal"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "hellofresh",
+    "name": "HelloFresh",
+    "category": "shopping-news-social",
+    "url": "https://hellofresh.example.com",
+    "match": {
+      "patterns": [
+        "HELLO ?FRESH"
+      ],
+      "examples": [
+        "HELLOFRESH.COM NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 59.94,
+          "cadence": "weekly",
+          "plan": "3 meals"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "HelloFresh test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel HelloFresh in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 3
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "category": "storage-security-home",
+    "url": "https://dropbox.example.com",
+    "match": {
+      "patterns": [
+        "DROPBOX"
+      ],
+      "examples": [
+        "DROPBOX DROPBOX.COM CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 119.88,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "selfhost",
+    "also": [
+      "cancel"
+    ],
+    "why": "Dropbox test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Dropbox in account settings."
+      },
+      "selfhost": {
+        "software": [
+          "Nextcloud",
+          "Syncthing"
+        ],
+        "hardware": [
+          "old-laptop",
+          "spare-pc",
+          "raspberry-pi",
+          "nas"
+        ],
+        "hours": 4,
+        "powerCostYear": 22,
+        "youLose": "Support",
+        "prompt": "Paste-ready test prompt for Nextcloud Syncthing. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "ring-protect",
+    "name": "Ring Protect",
+    "category": "storage-security-home",
+    "url": "https://ring-protect.example.com",
+    "match": {
+      "patterns": [
+        "RING (PROTECT|PLAN|YEARLY)|RING\\.COM"
+      ],
+      "examples": [
+        "RING PROTECT PLAN RING.COM CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 4.99,
+          "cadence": "monthly",
+          "plan": "Basic"
+        },
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Basic annual"
+        }
+      ]
+    },
+    "typicalMonthly": 4.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Ring Protect test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Ring Protect in account settings."
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "category": "storage-security-home",
+    "url": "https://nordvpn.example.com",
+    "match": {
+      "patterns": [
+        "NORD ?VPN|NORDSEC"
+      ],
+      "examples": [
+        "NORDVPN.COM NORDSEC"
+      ],
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        },
+        {
+          "amount": 59.88,
+          "cadence": "annual",
+          "plan": "1 year"
+        },
+        {
+          "amount": 71.88,
+          "cadence": "annual",
+          "plan": "1 year renew"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "selfhost",
+    "why": "NordVPN test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel NordVPN in account settings."
+      },
+      "selfhost": {
+        "software": [
+          "WireGuard",
+          "Tailscale"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "old-laptop",
+          "spare-pc",
+          "nas"
+        ],
+        "hours": 3,
+        "powerCostYear": 6,
+        "youLose": "Support",
+        "prompt": "Paste-ready test prompt for WireGuard Tailscale. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "icloud-plus",
+    "name": "iCloud+",
+    "category": "storage-security-home",
+    "url": "https://icloud-plus.example.com",
+    "match": {
+      "patterns": [
+        "ICLOUD"
+      ],
+      "examples": [
+        "APPLE ICLOUD STORAGE"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 0.99,
+          "cadence": "monthly",
+          "plan": "50 GB"
+        },
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "200 GB"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "2 TB"
+        }
+      ]
+    },
+    "typicalMonthly": 2.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "why": "iCloud+ test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel iCloud+ in account settings."
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "category": "streaming-media",
+    "url": "https://netflix.example.com",
+    "match": {
+      "patterns": [
+        "NETFLIX"
+      ],
+      "examples": [
+        "NETFLIX.COM 866-579-7172 CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 7.99,
+          "cadence": "monthly",
+          "plan": "Ads"
+        },
+        {
+          "amount": 15.49,
+          "cadence": "monthly",
+          "plan": "Standard"
+        },
+        {
+          "amount": 17.99,
+          "cadence": "monthly",
+          "plan": "Standard 2026"
+        },
+        {
+          "amount": 22.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        }
+      ]
+    },
+    "typicalMonthly": 17.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "also": [
+      "keep",
+      "cancel"
+    ],
+    "why": "Netflix test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Netflix in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 4
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "category": "streaming-media",
+    "url": "https://spotify.example.com",
+    "match": {
+      "patterns": [
+        "SPOTIFY"
+      ],
+      "examples": [
+        "SPOTIFY P3F8A2B91C STOCKHOLM"
+      ],
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Individual 2026"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "Spotify test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Spotify in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 2
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "hulu",
+    "name": "Hulu",
+    "category": "streaming-media",
+    "url": "https://hulu.example.com",
+    "match": {
+      "patterns": [
+        "HLU\\*?HULU|^HULU"
+      ],
+      "examples": [
+        "HLU*HULU 877-824-4858 CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Ads"
+        },
+        {
+          "amount": 18.99,
+          "cadence": "monthly",
+          "plan": "No ads"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "Hulu test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Hulu in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 5
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "max",
+    "name": "Max",
+    "category": "streaming-media",
+    "url": "https://max.example.com",
+    "match": {
+      "patterns": [
+        "MAX\\.COM|HBO ?MAX"
+      ],
+      "examples": [
+        "MAX.COM NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Ads"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "No ads"
+        },
+        {
+          "amount": 18.49,
+          "cadence": "monthly",
+          "plan": "No ads 2026"
+        }
+      ]
+    },
+    "typicalMonthly": 16.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "Max test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Max in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 6
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "disney-plus",
+    "name": "Disney+",
+    "category": "streaming-media",
+    "url": "https://disney-plus.example.com",
+    "match": {
+      "patterns": [
+        "DISNEY ?PLUS|DISNEYPLUS"
+      ],
+      "examples": [
+        "DISNEY PLUS 888-905-7888 CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Ads"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "No ads"
+        }
+      ]
+    },
+    "typicalMonthly": 13.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "Disney+ test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Disney+ in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 6
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "paramount-plus",
+    "name": "Paramount+",
+    "category": "streaming-media",
+    "url": "https://paramount-plus.example.com",
+    "match": {
+      "patterns": [
+        "PARAMOUNT"
+      ],
+      "examples": [
+        "PARAMOUNT PLUS 877-555-0103 NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 7.99,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        }
+      ]
+    },
+    "typicalMonthly": 7.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "Paramount+ test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Paramount+ in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 8
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "audible",
+    "name": "Audible",
+    "category": "streaming-media",
+    "url": "https://audible.example.com",
+    "match": {
+      "patterns": [
+        "AUDIBLE"
+      ],
+      "examples": [
+        "AUDIBLE*AB1CD2EF3 AMZN.COM/BILL WA"
+      ],
+      "billedVia": "amazon",
+      "priceHints": [
+        {
+          "amount": 14.95,
+          "cadence": "monthly",
+          "plan": "Premium Plus"
+        },
+        {
+          "amount": 149.5,
+          "cadence": "annual",
+          "plan": "Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.95,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Audible test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Audible in account settings."
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "youtube-premium",
+    "name": "YouTube Premium",
+    "category": "streaming-media",
+    "url": "https://youtube-premium.example.com",
+    "match": {
+      "patterns": [
+        "GOOGLE ?\\*YOUTUBE|YOUTUBE ?(PREMIUM|MUSIC)"
+      ],
+      "examples": [
+        "GOOGLE *YouTube",
+        "GOOGLE *YOUTUBEPREMIUM"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Individual 2026"
+        },
+        {
+          "amount": 22.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        }
+      ]
+    },
+    "typicalMonthly": 13.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "YouTube Premium test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel YouTube Premium in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 3
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "apple-music",
+    "name": "Apple Music",
+    "category": "streaming-media",
+    "url": "https://apple-music.example.com",
+    "match": {
+      "patterns": [
+        "APPLE MUSIC"
+      ],
+      "examples": [
+        "APPLE MUSIC SUBSCRIPTION"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        }
+      ]
+    },
+    "typicalMonthly": 10.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "why": "Apple Music test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Apple Music in account settings."
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "apple-tv-plus",
+    "name": "Apple TV+",
+    "category": "streaming-media",
+    "url": "https://apple-tv-plus.example.com",
+    "match": {
+      "patterns": [
+        "APPLE TV"
+      ],
+      "examples": [
+        "APPLE TV PLUS"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rotate",
+    "why": "Apple TV+ test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Apple TV+ in account settings."
+      },
+      "rotate": {
+        "pattern": "Subscribe one month in three",
+        "monthsOffPerYear": 8
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "xfinity",
+    "name": "Xfinity",
+    "category": "telecom-utilities-finance",
+    "url": "https://xfinity.example.com",
+    "match": {
+      "patterns": [
+        "XFINITY|COMCAST"
+      ],
+      "examples": [
+        "COMCAST CABLE COMM 800-COMCAST PA"
+      ]
+    },
+    "typicalMonthly": 80,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "haggle",
+    "why": "Xfinity test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Xfinity in account settings."
+      },
+      "haggle": {
+        "leverage": "A competitor offer",
+        "script": "Hello, I would like a better rate.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Before renewal"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "verizon",
+    "name": "Verizon Wireless",
+    "category": "telecom-utilities-finance",
+    "url": "https://verizon.example.com",
+    "match": {
+      "patterns": [
+        "VZWRLSS|VERIZON|VZW"
+      ],
+      "examples": [
+        "VZWRLSS*APOCC VISB 800-922-0204 NJ"
+      ]
+    },
+    "typicalMonthly": 85,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "haggle",
+    "why": "Verizon Wireless test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Verizon Wireless in account settings."
+      },
+      "haggle": {
+        "leverage": "A competitor offer",
+        "script": "Hello, I would like a better rate.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before renewal"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "duolingo",
+    "name": "Duolingo Super",
+    "category": "software-learning",
+    "url": "https://duolingo.example.com",
+    "match": {
+      "patterns": [
+        "DUOLINGO"
+      ],
+      "examples": [
+        "DUOLINGO PITTSBURGH PA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Super"
+        },
+        {
+          "amount": 83.99,
+          "cadence": "annual",
+          "plan": "Super annual"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "absorb",
+    "why": "Duolingo Super test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Duolingo Super in account settings."
+      },
+      "absorb": {
+        "claudeDoes": "Claude does the core of Duolingo Super.",
+        "howTo": "Ask Claude.",
+        "limits": "Fewer integrations.",
+        "prompt": "Paste-ready test prompt for Duolingo Super. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "calm",
+    "name": "Calm",
+    "category": "health-family",
+    "url": "https://calm.example.com",
+    "match": {
+      "patterns": [
+        "\\bCALM\\b|CALM\\.COM"
+      ],
+      "examples": [
+        "CALM.COM SAN FRANCISCO CA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "rebuild",
+    "why": "Calm test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Calm in account settings."
+      },
+      "rebuild": {
+        "whatYouBuild": "Meditation timer",
+        "hours": 4,
+        "runsOn": "Installable PWA",
+        "ongoingCostYear": 0,
+        "youLose": "Sync across devices",
+        "prompt": "Paste-ready test prompt for Meditation timer. step1 step2 step3 step4 step5 step6 step7 step8 step9 step10 step11 step12 step13 step14 step15 step16 step17 step18 step19 step20 step21 step22 step23 step24 step25 step26 step27 step28 step29 step30 step31 step32 step33 step34 step35 step36 step37 step38 step39 step40 step41 step42 step43 step44 step45 step46 step47 step48 step49 step50 step51 step52 step53 step54 step55 step56 step57 step58 step59 step60 step61 step62 step63 step64 step65 step66 step67 step68 step69 step70 step71 step72 step73 step74 step75 step76 step77 step78 step79 step80"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "amazon-prime",
+    "name": "Amazon Prime",
+    "category": "shopping-news-social",
+    "url": "https://amazon-prime.example.com",
+    "match": {
+      "patterns": [
+        "AMAZON PRIME|AMZN PRIME|PRIME VIDEO|AMZN DIGITAL"
+      ],
+      "examples": [
+        "AMAZON PRIME*XX1AB2CD3 AMZN.COM/BILL WA",
+        "AMZN DIGITAL*AB1CD2EF3"
+      ],
+      "billedVia": "amazon",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        },
+        {
+          "amount": 139,
+          "cadence": "annual",
+          "plan": "Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "keep",
+    "why": "Amazon Prime test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel Amazon Prime in account settings."
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  },
+  {
+    "id": "nytimes",
+    "name": "The New York Times",
+    "category": "shopping-news-social",
+    "url": "https://nytimes.example.com",
+    "match": {
+      "patterns": [
+        "NYTIMES|NY TIMES|NEW YORK TIMES"
+      ],
+      "examples": [
+        "NYTIMES*NYTIMES.COM 800-698-4637 NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 17,
+          "cadence": "monthly",
+          "plan": "All Access"
+        },
+        {
+          "amount": 25,
+          "cadence": "monthly",
+          "plan": "Full price"
+        }
+      ]
+    },
+    "typicalMonthly": 25,
+    "pricesCheckedAt": "2026-10",
+    "verdict": "haggle",
+    "why": "The New York Times test reason.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel The New York Times in account settings."
+      },
+      "haggle": {
+        "leverage": "A competitor offer",
+        "script": "Hello, I would like a better rate.",
+        "expectedDiscountPct": [
+          20,
+          50
+        ],
+        "bestTime": "Before renewal"
+      }
+    },
+    "sources": [
+      "https://example.com/test-kb"
+    ]
+  }
+]

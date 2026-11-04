@@ -1,0 +1,133 @@
+{
+  "file": "amex.csv",
+  "bank": "amex",
+  "statementStart": "2025-12-01",
+  "statementEnd": "2026-10-31",
+  "rows": 555,
+  "active": [
+    {
+      "key": "hellofresh",
+      "displayName": "HelloFresh",
+      "match": "HELLOFRESH",
+      "merchantId": "hellofresh",
+      "cadence": "weekly",
+      "currentAmount": 59.94,
+      "charges": 45,
+      "active": true
+    },
+    {
+      "key": "notion",
+      "displayName": "Notion",
+      "match": "NOTION",
+      "merchantId": "notion",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 11,
+      "active": true
+    },
+    {
+      "key": "otter-ai",
+      "displayName": "Otter.ai",
+      "match": "OTTER",
+      "merchantId": "otter-ai",
+      "cadence": "monthly",
+      "currentAmount": 16.99,
+      "charges": 11,
+      "active": true
+    },
+    {
+      "key": "calendly",
+      "displayName": "Calendly",
+      "match": "CALENDLY",
+      "merchantId": "calendly",
+      "cadence": "monthly",
+      "currentAmount": 12,
+      "charges": 11,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 10,
+          "to": 12
+        }
+      ]
+    },
+    {
+      "key": "disney-plus",
+      "displayName": "Disney+",
+      "match": "DISNEY",
+      "merchantId": "disney-plus",
+      "cadence": "monthly",
+      "currentAmount": 13.99,
+      "charges": 11,
+      "active": true
+    },
+    {
+      "key": "max",
+      "displayName": "Max",
+      "match": "MAX.COM",
+      "merchantId": "max",
+      "cadence": "monthly",
+      "currentAmount": 18.49,
+      "charges": 11,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 16.99,
+          "to": 18.49
+        }
+      ]
+    },
+    {
+      "key": "nytimes",
+      "displayName": "The New York Times",
+      "match": "NYTIMES",
+      "merchantId": "nytimes",
+      "cadence": "monthly",
+      "currentAmount": 17,
+      "charges": 11,
+      "active": true
+    },
+    {
+      "key": "myfitnesspal",
+      "displayName": "MyFitnessPal Premium",
+      "match": "MYFITNESSPAL",
+      "merchantId": "myfitnesspal",
+      "cadence": "monthly",
+      "currentAmount": 19.99,
+      "charges": 11,
+      "active": true
+    },
+    {
+      "key": "headspace",
+      "displayName": "Headspace",
+      "match": "HEADSPACE",
+      "merchantId": "headspace",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 11,
+      "active": true
+    },
+    {
+      "key": "bsc",
+      "displayName": "Boston Sports Club",
+      "match": "BOSTON SPORTS",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 89,
+      "charges": 11,
+      "active": true
+    }
+  ],
+  "inactive": [
+    {
+      "key": "todoist",
+      "displayName": "Todoist",
+      "match": "TODOIST",
+      "merchantId": "todoist",
+      "cadence": "monthly",
+      "currentAmount": 5,
+      "charges": 7,
+      "active": false
+    }
+  ]
+}

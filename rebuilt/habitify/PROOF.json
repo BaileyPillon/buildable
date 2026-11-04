@@ -1,0 +1,82 @@
+{
+  "merchantId": "habitify",
+  "model": "Claude Sonnet 5.5 (agent, one session)",
+  "builtAt": "2026-11-03",
+  "checklist": [
+    {
+      "item": "Habits with a schedule (daily, specific weekdays, N times per week), optional numeric goals, time-of-day grouping",
+      "status": "works",
+      "note": "Created a daily goal habit (8 glasses, Morning) and a 3x-per-week habit through the form; edited the latter to 4x. Mon/Wed/Fri came in via JSON import and was scheduled and streaked correctly. Today groups by Morning/Afternoon/Evening/Anytime and weekly habits show 'x of N this week'."
+    },
+    {
+      "item": "One-tap check-in from a Today screen, with skip and note options",
+      "status": "works",
+      "note": "One tap checked in Run, the +/- stepper took water to 2/8, and the '...' dialog saved Skipped plus a note ('Has a note: ...' shows on the row). Previous-day backfill works. All of it survived a reload (IndexedDB 'habit-tracker' exists)."
+    },
+    {
+      "item": "Streaks, completion rate and a calendar heatmap per habit",
+      "status": "works",
+      "note": "Against a seeded 40-day history I worked out by hand, Meditate showed 22 current / 22 best, Gym (Mon/Wed/Fri with a missed Wed) 8 / 8, and Read (goal 20 pages) 2 / 3. Completion rates and the average logged value were correct. Heatmap cells carry labels like 'partly done (12 of 20 pages)', and arrow keys, Home/End and Enter work. Clicking a day opens the edit dialog."
+    },
+    {
+      "item": "Weekly and monthly review charts",
+      "status": "works",
+      "note": "Week and Month views with prev/next both render SVG bar charts, each with a hidden data table. Numbers reconcile with the data (October: 49 check-ins = 29 + 11 + 9). Includes period-over-period delta, perfect days and a per-habit table."
+    },
+    {
+      "item": "Local reminders via the Notifications API, with a clear fallback message where unsupported",
+      "status": "partial",
+      "note": "The reminder time field and the in-app banner work: a 00:01 reminder produced 'Stretch is not done yet (reminder 00:01)' with Open Today / Dismiss. The 'denied' message shows, and deleting window.Notification gives the explicit 'doesn't support the Notifications API' fallback. A real system notification could not be observed because the pane reports permission denied. Reminders only fire while the app or tab is open (no push or trigger support)."
+    },
+    {
+      "item": "Archive and reorder habits",
+      "status": "works",
+      "note": "Move up/down buttons reorder and Today follows that order. Archive moves a habit to an 'Archived (1)' section with its history kept, and Restore returns it. Edit and delete exist. Drag-and-drop is wired (draggable) but I did not drive it."
+    },
+    {
+      "item": "All data in IndexedDB with JSON and CSV export and import",
+      "status": "works",
+      "note": "JSON backup and a two-file CSV export (habits and check-ins) both produced valid files. Delete all, then re-import the two CSVs together: 8 habits and 177 check-ins restored with identical entries. JSON merge and replace both work, and the theme and week-start settings are restored. Bad JSON and unrecognised CSVs give readable error messages."
+    },
+    {
+      "item": "Check whether Habitify can export history and, if so, write an importer after confirming its columns with the user",
+      "status": "partial",
+      "note": "A CSV importer exists with a column-mapping table, a date-format selector (ymd/mdy/dmy, with a preview) and status mapping. Import stays disabled until the 'these match my file' box is ticked. A 130-row test file imported 111 check-ins correctly (Completed and Skipped kept, Failed dropped, the goal inferred from the unit), and re-importing created no duplicates. ISO, datetime, 'Oct 27, 2026', dd/mm/yyyy and semicolon files were all detected. But the builder never confirmed the columns with the user and the date format is a guess. The .sqlite backup is not imported, and the file picker only accepts .json/.csv. If the header differs from Habit/Date/Status (e.g. 'Name,Date,Log Value,Status'), the file is rejected as 'not a recognised file' and the mapping UI never appears."
+    },
+    {
+      "item": "Installable PWA and offline-first",
+      "status": "works",
+      "note": "The built-in pane refuses service workers, so I used real headless Chrome through CDP against the same server and CSP. The SW registered and activated, precached 10 files, and with the network set offline a reload still rendered the app, with 0 console errors and 0 CSP violations. The manifest has standalone display, a relative scope, and 192/512/maskable PNG icons that exist at the right sizes. The install prompt itself was not exercised."
+    },
+    {
+      "item": "Dark-mode aware",
+      "status": "works",
+      "note": "Under emulated prefers-color-scheme: dark with 'Match device', the body background was rgb(11,20,18). The Light/Dark/Match toggle works and the dark theme-color meta exists."
+    },
+    {
+      "item": "Keyboard accessible",
+      "status": "works",
+      "note": "Skip-to-content link, a visible 2.4px focus outline on Tab, a roving-tabindex heatmap with arrow keys, native <dialog> modals that close on Escape, and aria-labelled stepper and check buttons. Minor: after Escape closes the heatmap day dialog, focus ended on body instead of returning to the cell. I could not look at the screen, so contrast was not judged by eye."
+    },
+    {
+      "item": "Tests for streak logic and free GitHub Pages deploy steps; 375px mobile layout",
+      "status": "works",
+      "note": "vitest: 4 files, 67/67 pass (streak tests cover daily, weekdays, N-per-week, skips, year/leap boundaries and Sunday-start weeks). DEPLOY.md has numbered GitHub Pages steps and .github/workflows/deploy.yml (test, build, publish) exists. Vite base is './'. At 375px there was no page-level horizontal overflow on Today, Habits, Review, Settings or the habit detail page; the heatmap scrolls inside its own container."
+    }
+  ],
+  "score": {
+    "works": 10,
+    "partial": 2,
+    "missing": 0
+  },
+  "bugs": [
+    "Habitify importer only runs when the header already looks like Habit/Date/Status. A CSV with different column names (e.g. 'Name,Date,Log Value,Status' or 'habit_name,log_date,value,state') is rejected with 'not a recognised file' before the mapping UI is shown, so a user cannot map columns by hand.",
+    "Habitify .sqlite backup cannot be imported (the file picker accepts only .json/.csv); the Habitify date format and column names are the builder's assumption and were never confirmed against a real export.",
+    "After the heatmap day dialog is closed with Escape, keyboard focus is dropped to the body rather than returned to the heatmap cell.",
+    "Re-importing an already imported Habitify file reports 'Imported 0 new habits and 111 check-ins' although nothing new was added (the count shown is rows processed, not rows added).",
+    "Merging a JSON backup into existing data can interleave habit order (imported order values 0..n collide with existing ones), e.g. an imported habit landing above existing habits.",
+    "System notifications could not be verified, and reminders fire only while the app is open (no background delivery), which is a platform limit but weaker than the 'local reminders' wording suggests.",
+    "The service worker cannot register in the built-in browser pane ('An unknown error occurred when fetching the script' in the console); this is a pane limitation, and it registers and works offline in real Chrome."
+  ],
+  "summary": "A complete, working local-first habit tracker: check-ins, skips and notes, streaks and heatmaps, review charts, archive/reorder, a lossless JSON/CSV round trip, dark mode and 375px layout all work, and the offline service worker and 67 passing tests hold up in real Chrome. The Habitify importer is the weak spot: it handles the one assumed CSV layout well (with a confirm gate, deduplication and several date formats) but rejects files with other header names, skips the .sqlite backup, and was never confirmed against a real export, and system notifications could not be observed."
+}

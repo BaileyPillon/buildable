@@ -1,0 +1,112 @@
+{
+  "file": "usbank.csv",
+  "bank": "usBank",
+  "statementStart": "2026-01-01",
+  "statementEnd": "2026-10-31",
+  "rows": 407,
+  "active": [
+    {
+      "key": "xfinity",
+      "displayName": "Xfinity",
+      "match": "COMCAST",
+      "merchantId": "xfinity",
+      "cadence": "monthly",
+      "currentAmount": 83.95,
+      "charges": 10,
+      "active": true,
+      "variable": true
+    },
+    {
+      "key": "spotify",
+      "displayName": "Spotify",
+      "match": "SPOTIFY",
+      "merchantId": "spotify",
+      "cadence": "monthly",
+      "currentAmount": 11.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 15.49,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "nytimes",
+      "displayName": "The New York Times",
+      "match": "NYTIMES",
+      "merchantId": "nytimes",
+      "cadence": "monthly",
+      "currentAmount": 17,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "linktree",
+      "displayName": "Linktree",
+      "match": "LINKTREE",
+      "merchantId": "linktree",
+      "cadence": "monthly",
+      "currentAmount": 12,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "todoist",
+      "displayName": "Todoist",
+      "match": "TODOIST",
+      "merchantId": "todoist",
+      "cadence": "monthly",
+      "currentAmount": 5,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "ynab",
+      "displayName": "YNAB",
+      "match": "YNAB",
+      "merchantId": "ynab",
+      "cadence": "monthly",
+      "currentAmount": 14.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "amazon-prime",
+      "displayName": "Amazon Prime",
+      "match": "AMAZON PRIME",
+      "merchantId": "amazon-prime",
+      "cadence": "annual",
+      "currentAmount": 139,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "calendly",
+      "displayName": "Calendly",
+      "match": "CALENDLY",
+      "merchantId": "calendly",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "verizon",
+      "displayName": "Verizon Wireless",
+      "match": "VZWRLSS",
+      "merchantId": "verizon",
+      "cadence": "monthly",
+      "currentAmount": 93.46,
+      "charges": 10,
+      "active": true,
+      "variable": true
+    }
+  ],
+  "inactive": []
+}

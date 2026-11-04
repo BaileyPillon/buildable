@@ -1,0 +1,821 @@
+{
+  "file": "amex-holdout.csv",
+  "format": "American Express (Date,Receipt,Description,Card Member,Account #,Amount; charges positive)",
+  "statementStart": "2025-09-01",
+  "statementEnd": "2026-10-31",
+  "rows": 791,
+  "chargeRows": 748,
+  "creditRows": 43,
+  "installmentRows": 0,
+  "dupeEstimate": 0,
+  "series": [
+    {
+      "id": "adobe-cc",
+      "label": "Adobe Creative Cloud",
+      "merchantId": "adobe-creative-cloud",
+      "match": [
+        "ADOBE"
+      ],
+      "amounts": [
+        59.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-06",
+      "lastSeen": "2026-10-06",
+      "currentAmount": 59.99,
+      "meanAmount": 59.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ADOBE *CREATIVE CLOUD            408-536-6000 CA"
+    },
+    {
+      "id": "microsoft-365",
+      "label": "Microsoft 365 (annual, 2 charges)",
+      "merchantId": "microsoft-365",
+      "match": [
+        "MICROSOFT"
+      ],
+      "amounts": [
+        99.99
+      ],
+      "cadence": "annual",
+      "count": 2,
+      "firstSeen": "2025-10-12",
+      "lastSeen": "2026-10-12",
+      "currentAmount": 99.99,
+      "meanAmount": 99.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "MICROSOFT*MICROSOFT 365 MSBILL.INFO WA"
+    },
+    {
+      "id": "github-copilot",
+      "label": "GitHub Copilot (descriptor is just GITHUB)",
+      "merchantId": "github-copilot",
+      "match": [
+        "GITHUB"
+      ],
+      "amounts": [
+        10
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-15",
+      "lastSeen": "2026-10-15",
+      "currentAmount": 10,
+      "meanAmount": 10,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "acceptable": [
+        "github-copilot",
+        "github-pro"
+      ],
+      "note": "GitHub bills Copilot/Pro under one descriptor; either KB id is acceptable",
+      "detectable": true,
+      "sampleDescriptor": "GITHUB, INC. GITHUB.COM CA"
+    },
+    {
+      "id": "cursor",
+      "label": "Cursor",
+      "merchantId": "cursor",
+      "match": [
+        "CURSOR"
+      ],
+      "amounts": [
+        20
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-20",
+      "lastSeen": "2026-10-20",
+      "currentAmount": 20,
+      "meanAmount": 20,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CURSOR, AI POWERED IDE           NEW YORK NY"
+    },
+    {
+      "id": "claude-pro",
+      "label": "Claude Pro",
+      "merchantId": "claude-pro",
+      "match": [
+        "CLAUDE.AI"
+      ],
+      "amounts": [
+        20
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-23",
+      "lastSeen": "2026-10-24",
+      "currentAmount": 20,
+      "meanAmount": 20,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CLAUDE.AI SUBSCRIPTION           SAN FRANCISCO CA"
+    },
+    {
+      "id": "perplexity",
+      "label": "Perplexity Pro (cancelled Jun 2026)",
+      "merchantId": "perplexity-pro",
+      "match": [
+        "PERPLEXITY"
+      ],
+      "amounts": [
+        20
+      ],
+      "cadence": "monthly",
+      "count": 10,
+      "firstSeen": "2025-09-02",
+      "lastSeen": "2026-06-02",
+      "currentAmount": 20,
+      "meanAmount": 20,
+      "active": false,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PERPLEXITY AI                    SAN FRANCISCO CA"
+    },
+    {
+      "id": "notion",
+      "label": "Notion Plus",
+      "merchantId": "notion-plus",
+      "match": [
+        "NOTION"
+      ],
+      "amounts": [
+        12
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-08",
+      "lastSeen": "2026-10-08",
+      "currentAmount": 12,
+      "meanAmount": 12,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "NOTION LABS, INC.                SAN FRANCISCO CA"
+    },
+    {
+      "id": "zoom",
+      "label": "Zoom Workplace Pro",
+      "merchantId": "zoom-workplace-pro",
+      "match": [
+        "ZOOM.US"
+      ],
+      "amounts": [
+        15.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-17",
+      "lastSeen": "2026-10-17",
+      "currentAmount": 15.99,
+      "meanAmount": 15.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ZOOM.US                          888-799-9666 CA"
+    },
+    {
+      "id": "calendly",
+      "label": "Calendly Standard",
+      "merchantId": "calendly-standard",
+      "match": [
+        "CALENDLY"
+      ],
+      "amounts": [
+        12
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-27",
+      "lastSeen": "2026-10-27",
+      "currentAmount": 12,
+      "meanAmount": 12,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "CALENDLY.COM                     ATLANTA GA"
+    },
+    {
+      "id": "grammarly",
+      "label": "Grammarly Premium (annual, 2 charges)",
+      "merchantId": "grammarly-pro",
+      "match": [
+        "GRAMMARLY"
+      ],
+      "amounts": [
+        144
+      ],
+      "cadence": "annual",
+      "count": 2,
+      "firstSeen": "2025-09-19",
+      "lastSeen": "2026-09-19",
+      "currentAmount": 144,
+      "meanAmount": 144,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "GRAMMARLY                        SAN FRANCISCO CA"
+    },
+    {
+      "id": "nyt",
+      "label": "NYT Digital (promo $4 -> $25)",
+      "merchantId": "nyt-digital",
+      "match": [
+        "NYTIMES"
+      ],
+      "amounts": [
+        4,
+        25
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-05",
+      "lastSeen": "2026-10-05",
+      "currentAmount": 25,
+      "meanAmount": 17.5,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 4,
+          "to": 25
+        }
+      ],
+      "variable": false,
+      "note": "intro price then full price; one subscription with a price change",
+      "detectable": true,
+      "sampleDescriptor": "NYTIMES*NYTIMES.COM              800-698-4637 NY"
+    },
+    {
+      "id": "wsj",
+      "label": "Wall Street Journal",
+      "merchantId": "wall-street-journal",
+      "match": [
+        "WALL STREET JOURNAL"
+      ],
+      "amounts": [
+        39.99,
+        44
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-09",
+      "lastSeen": "2026-10-09",
+      "currentAmount": 44,
+      "meanAmount": 42,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 39.99,
+          "to": 44
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "WALL STREET JOURNAL              800-568-7625 NJ"
+    },
+    {
+      "id": "peloton",
+      "label": "Peloton App",
+      "merchantId": "peloton-app",
+      "match": [
+        "PELOTON"
+      ],
+      "amounts": [
+        12.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-14",
+      "lastSeen": "2026-10-14",
+      "currentAmount": 12.99,
+      "meanAmount": 12.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PELOTON MEMBERSHIP               NEW YORK NY"
+    },
+    {
+      "id": "headspace",
+      "label": "Headspace (annual, single charge)",
+      "merchantId": "headspace",
+      "match": [
+        "HEADSPACE"
+      ],
+      "amounts": [
+        69.99
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2025-10-03",
+      "lastSeen": "2025-10-03",
+      "currentAmount": 69.99,
+      "meanAmount": 69.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": true,
+      "sampleDescriptor": "HEADSPACE INC.                   SANTA MONICA CA"
+    },
+    {
+      "id": "disney",
+      "label": "Disney+ (DISNEYPLUS -> DISNEY PLUS mid-statement)",
+      "merchantId": "disney-plus",
+      "match": [
+        "DISNEY"
+      ],
+      "amounts": [
+        13.99,
+        15.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-12",
+      "lastSeen": "2026-10-13",
+      "currentAmount": 15.99,
+      "meanAmount": 14.99,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 13.99,
+          "to": 15.99
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "DISNEYPLUS                       888-905-7888 CA"
+    },
+    {
+      "id": "hbo-max",
+      "label": "HBO Max",
+      "merchantId": "hbo-max",
+      "match": [
+        "HBOMAX"
+      ],
+      "amounts": [
+        16.99,
+        18.49
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-26",
+      "lastSeen": "2026-10-26",
+      "currentAmount": 18.49,
+      "meanAmount": 17.53,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 16.99,
+          "to": 18.49
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "HBOMAX.COM                       NEW YORK NY"
+    },
+    {
+      "id": "xfinity",
+      "label": "Xfinity internet (variable)",
+      "merchantId": "xfinity",
+      "match": [
+        "XFINITY"
+      ],
+      "amounts": [],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-23",
+      "lastSeen": "2026-10-23",
+      "currentAmount": 113.56,
+      "meanAmount": 113.89,
+      "active": true,
+      "priceChanges": [],
+      "variable": true,
+      "detectable": true,
+      "sampleDescriptor": "COMCAST XFINITY                  800-266-2278 PA"
+    },
+    {
+      "id": "t-mobile",
+      "label": "T-Mobile wireless",
+      "merchantId": "t-mobile",
+      "match": [
+        "T-MOBILE"
+      ],
+      "amounts": [],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-27",
+      "lastSeen": "2026-10-28",
+      "currentAmount": 142.37,
+      "meanAmount": 140.87,
+      "active": true,
+      "priceChanges": [],
+      "variable": true,
+      "detectable": true,
+      "sampleDescriptor": "T-MOBILE*AUTO PAY                BELLEVUE WA"
+    },
+    {
+      "id": "costco",
+      "label": "Costco Executive membership (annual, 2 charges)",
+      "merchantId": "costco-membership",
+      "match": [
+        "COSTCO"
+      ],
+      "amounts": [
+        130
+      ],
+      "cadence": "annual",
+      "count": 2,
+      "firstSeen": "2025-10-04",
+      "lastSeen": "2026-10-05",
+      "currentAmount": 130,
+      "meanAmount": 130,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "COSTCO MEMBERSHIP                800-774-2678 WA"
+    },
+    {
+      "id": "dashpass",
+      "label": "DoorDash DashPass (bills on the 30th)",
+      "merchantId": "doordash-dashpass",
+      "match": [
+        "DASHPASS"
+      ],
+      "amounts": [
+        9.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-30",
+      "lastSeen": "2026-10-30",
+      "currentAmount": 9.99,
+      "meanAmount": 9.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "DOORDASH*DASHPASS                SAN FRANCISCO CA"
+    },
+    {
+      "id": "uber-one",
+      "label": "Uber One (bills on the 31st)",
+      "merchantId": "uber-one",
+      "match": [
+        "UBER *ONE"
+      ],
+      "amounts": [
+        9.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-30",
+      "lastSeen": "2026-10-31",
+      "currentAmount": 9.99,
+      "meanAmount": 9.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "UBER   *ONE MEMBERSHIP           HELP.UBER.COM CA"
+    },
+    {
+      "id": "progressive",
+      "label": "Progressive auto",
+      "merchantId": "progressive",
+      "match": [
+        "PROGRESSIVE"
+      ],
+      "amounts": [
+        168.4,
+        181.25
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-12",
+      "lastSeen": "2026-10-11",
+      "currentAmount": 181.25,
+      "meanAmount": 175.74,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 168.4,
+          "to": 181.25
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "PROGRESSIVE INSURANCE            800-776-4737 OH"
+    },
+    {
+      "id": "squarespace",
+      "label": "Squarespace",
+      "merchantId": "squarespace",
+      "match": [
+        "SQSP"
+      ],
+      "amounts": [
+        16
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-03",
+      "lastSeen": "2026-10-03",
+      "currentAmount": 16,
+      "meanAmount": 16,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SQSP* INV61022636                NEW YORK NY"
+    },
+    {
+      "id": "digitalocean",
+      "label": "DigitalOcean droplet",
+      "merchantId": "digitalocean",
+      "match": [
+        "DIGITALOCEAN"
+      ],
+      "amounts": [
+        24
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-01",
+      "lastSeen": "2026-10-01",
+      "currentAmount": 24,
+      "meanAmount": 24,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "DIGITALOCEAN.COM                 NEW YORK NY"
+    },
+    {
+      "id": "shopify",
+      "label": "Shopify (changing invoice number)",
+      "merchantId": null,
+      "match": [
+        "SHOPIFY"
+      ],
+      "amounts": [
+        39
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-07",
+      "lastSeen": "2026-10-07",
+      "currentAmount": 39,
+      "meanAmount": 39,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "SHOPIFY* 3407220                 OTTAWA ON"
+    },
+    {
+      "id": "quickbooks",
+      "label": "QuickBooks Online",
+      "merchantId": null,
+      "match": [
+        "QBOOKS"
+      ],
+      "amounts": [
+        35,
+        38
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-16",
+      "lastSeen": "2026-10-16",
+      "currentAmount": 38,
+      "meanAmount": 36.29,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 35,
+          "to": 38
+        }
+      ],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "INTUIT *QBooks Online            CL.INTUIT.COM CA"
+    },
+    {
+      "id": "airtable",
+      "label": "Airtable",
+      "merchantId": null,
+      "match": [
+        "AIRTABLE"
+      ],
+      "amounts": [
+        20
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-22",
+      "lastSeen": "2026-10-22",
+      "currentAmount": 20,
+      "meanAmount": 20,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "AIRTABLE.COM                     SAN FRANCISCO CA"
+    },
+    {
+      "id": "stamps",
+      "label": "Stamps.com",
+      "merchantId": null,
+      "match": [
+        "STAMPS.COM"
+      ],
+      "amounts": [
+        19.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-13",
+      "lastSeen": "2026-10-13",
+      "currentAmount": 19.99,
+      "meanAmount": 19.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "STAMPS.COM                       888-434-0055 CA"
+    },
+    {
+      "id": "webflow",
+      "label": "Webflow",
+      "merchantId": null,
+      "match": [
+        "WEBFLOW"
+      ],
+      "amounts": [
+        23
+      ],
+      "cadence": "monthly",
+      "count": 12,
+      "firstSeen": "2025-11-25",
+      "lastSeen": "2026-10-25",
+      "currentAmount": 23,
+      "meanAmount": 23,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "WEBFLOW.COM                      SAN FRANCISCO CA"
+    },
+    {
+      "id": "twitch",
+      "label": "Twitch sub",
+      "merchantId": null,
+      "match": [
+        "TWITCH"
+      ],
+      "amounts": [
+        4.99
+      ],
+      "cadence": "monthly",
+      "count": 14,
+      "firstSeen": "2025-09-18",
+      "lastSeen": "2026-10-18",
+      "currentAmount": 4.99,
+      "meanAmount": 4.99,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "TWITCH INTERACTIVE               SAN FRANCISCO CA"
+    },
+    {
+      "id": "cox-pest",
+      "label": "Pest control quarterly (looks like Cox)",
+      "merchantId": null,
+      "match": [
+        "COX PEST"
+      ],
+      "amounts": [
+        89
+      ],
+      "cadence": "quarterly",
+      "count": 5,
+      "firstSeen": "2025-09-10",
+      "lastSeen": "2026-09-10",
+      "currentAmount": 89,
+      "meanAmount": 89,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "mimic": true,
+      "detectable": true,
+      "sampleDescriptor": "COX PEST CONTROL SERVICES        AUSTIN TX"
+    },
+    {
+      "id": "robinhood",
+      "label": "Robinhood Gold",
+      "merchantId": null,
+      "match": [
+        "ROBINHOOD"
+      ],
+      "amounts": [
+        5
+      ],
+      "cadence": "monthly",
+      "count": 13,
+      "firstSeen": "2025-10-29",
+      "lastSeen": "2026-10-29",
+      "currentAmount": 5,
+      "meanAmount": 5,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "detectable": true,
+      "sampleDescriptor": "ROBINHOOD*GOLD                   MENLO PARK CA"
+    }
+  ],
+  "mustNotDetect": [
+    {
+      "id": "t-amazon-snsv",
+      "label": "Amazon Subscribe & Save style monthly AMAZON.COM*",
+      "match": [
+        "AMAZON.COM*"
+      ],
+      "why": "AMAZON.COM* marketplace charge is not a KB Amazon subscription (spec rule 3)",
+      "count": 14
+    },
+    {
+      "id": "t-freedom-mtg",
+      "label": "Freedom Mortgage (looks like Freedom the app blocker)",
+      "match": [
+        "FREEDOM MORTGAGE"
+      ],
+      "why": "mortgage payment (> $400 and MORTGAGE keyword)",
+      "count": 14
+    },
+    {
+      "id": "t-credit-ent",
+      "label": "Monthly digital entertainment credit",
+      "match": [
+        "DIGITAL ENTERTAINMENT CREDIT"
+      ],
+      "why": "statement credit, money in",
+      "count": 14
+    },
+    {
+      "id": "t-dining-credit",
+      "label": "Monthly dining credit",
+      "match": [
+        "DINING CREDIT"
+      ],
+      "why": "statement credit, money in",
+      "count": 14
+    }
+  ],
+  "undetectableByDesign": [
+    {
+      "id": "amex-fee",
+      "label": "Amex annual fee (single)",
+      "merchantId": null,
+      "match": [
+        "ANNUAL MEMBERSHIP FEE"
+      ],
+      "amounts": [
+        325
+      ],
+      "cadence": "annual",
+      "count": 1,
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-01-14",
+      "currentAmount": 325,
+      "meanAmount": 325,
+      "active": true,
+      "priceChanges": [],
+      "variable": false,
+      "singleCharge": true,
+      "detectable": false,
+      "undetectableReason": "non-KB with fewer than 3 charges",
+      "sampleDescriptor": "ANNUAL MEMBERSHIP FEE            NEW YORK NY"
+    }
+  ]
+}

@@ -1,0 +1,2024 @@
+[
+  {
+    "id": "xfinity",
+    "name": "Xfinity (Comcast)",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.xfinity.com/",
+    "match": {
+      "patterns": [
+        "XFINITY",
+        "COMCAST"
+      ],
+      "examples": [
+        "COMCAST CABLE COMM 800-266-2278 PA",
+        "XFINITY MOBILE",
+        "COMCAST XFINITY INTERNET"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Introductory rates expire and bills creep up each year. Retention reps can re-price you or add a price guarantee, and a fiber or fixed-wireless competitor at your address gives you real leverage.",
+    "alternatives": [
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      },
+      {
+        "name": "T-Mobile Home Internet",
+        "url": "https://www.t-mobile.com/home-internet",
+        "note": "Fixed wireless home internet at a flat monthly price; availability depends on your address."
+      },
+      {
+        "name": "Lifeline program",
+        "url": "https://www.lifelinesupport.org/",
+        "note": "Federal monthly discount on phone or internet service for eligible low-income households."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Your promotional rate has ended or just rose, a competing fiber or fixed-wireless offer exists at your address, and you are willing to disconnect. The retention department can apply credits that front-line reps cannot.",
+        "script": "Hi, I have been an Xfinity customer for [N] years and my bill has gone up to $[X] a month. I would like to stay, but [AT&T Fiber / Frontier / T-Mobile Home Internet] has quoted me $[Y] a month with a price lock. Can you move me to your current new-customer rate or a plan with a multi-year price guarantee? Please also check whether I can use my own modem instead of renting one. Before we change anything, I need the total monthly price with equipment, taxes and fees. If you cannot get close, please tell me how to disconnect and return equipment.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Within 30 days before a promotion ends or right after a price increase. Ask for the retention or disconnect department rather than general support."
+      },
+      "cancel": {
+        "howTo": "Xfinity's cancel page lists three routes: call 1-800-934-6489, schedule a call from the page, or visit an Xfinity Store. If you have Xfinity Mobile, move your number to the new carrier before you cancel. Return rented equipment at a store or by the instructions you are given.",
+        "url": "https://www.xfinity.com/cancel",
+        "gotchas": "Expect a retention offer before the cancellation is processed, so ask for the exact last day of service. If you signed a term or price-guarantee agreement, check for an early termination fee. NOW Internet is canceled separately in the NOW portal."
+      }
+    },
+    "sources": [
+      "https://www.xfinity.com/cancel",
+      "https://www.xfinity.com/support/articles/manage-now-subscriptions"
+    ]
+  },
+  {
+    "id": "spectrum",
+    "name": "Spectrum",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.spectrum.com/",
+    "match": {
+      "patterns": [
+        "\\bSPECTRUM(?! BRANDS| PHARM| HEALTH| CENTER| ENERGY| CLUB| MEDICAL| DENTAL)",
+        "CHARTER COMM"
+      ],
+      "examples": [
+        "CHARTER COMM",
+        "SPECTRUM 855-707-7328 CT",
+        "SPECTRUM MOBILE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Spectrum lists first-year promotional prices and then moves you to standard rates. A call before the promo ends, with a named competitor offer, is the cheapest way to hold the price down.",
+    "alternatives": [
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      },
+      {
+        "name": "T-Mobile Home Internet",
+        "url": "https://www.t-mobile.com/home-internet",
+        "note": "Fixed wireless home internet at a flat monthly price; availability depends on your address."
+      },
+      {
+        "name": "Lifeline program",
+        "url": "https://www.lifelinesupport.org/",
+        "note": "Federal monthly discount on phone or internet service for eligible low-income households."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "The first-year promotional price is ending, a competitor serves your address at a lower price, and Spectrum's own page promises no contracts, so leaving costs you nothing in fees.",
+        "script": "Hello, I have been a Spectrum internet customer for [N] years and my promotional rate ended, so my bill is now $[X]. I would like to keep service, but [AT&T Fiber / Frontier / T-Mobile Home Internet] quoted me $[Y] a month with a price lock. Can you extend my promotional pricing or move me to a plan close to that price? Please tell me the total monthly cost with equipment, taxes and fees, and how long the price is guaranteed. If you cannot match it, please explain how to disconnect and where to return the equipment.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "One to two months before the 12-month promotion ends. Ask for the retention team and a written confirmation of the new price."
+      },
+      "cancel": {
+        "howTo": "Call Spectrum at the number on your bill or visit a Spectrum Store, and check the residential terms linked here for the written-notice rules. Return the modem and any boxes at a store or as instructed. Mobile lines are canceled separately through Spectrum Mobile support.",
+        "url": "https://www.spectrum.com/policies/residential-general-terms-and-conditions-of-service",
+        "gotchas": "The final bill can include charges through the disconnect date and fees for equipment you do not return. Phone numbers differ between Spectrum pages, so use the one on your own bill. A canceled Spectrum Mobile line may be charged the full month."
+      }
+    },
+    "sources": [
+      "https://www.spectrum.com/internet",
+      "https://www.spectrum.com/policies/residential-general-terms-and-conditions-of-service"
+    ]
+  },
+  {
+    "id": "att",
+    "name": "AT&T (internet and wireless)",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.att.com/",
+    "match": {
+      "patterns": [
+        "\\bAT&T",
+        "\\bATT(?: ?\\*|\\s+(?:BILL|WIRELESS|MOBILITY|INTERNET|FIBER|U-?VERSE|PMT|PAYMENT))",
+        "U-?VERSE"
+      ],
+      "examples": [
+        "AT&T*BILL PAYMENT 800-331-0500 TX",
+        "ATT*BILL PAYMENT",
+        "AT&T U-VERSE 800-288-2020 TX"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Wireless and fiber prices drift up through fee changes and expiring credits. Ask for loyalty credits, a cheaper plan with the same data, and a review of lines you no longer use before you consider porting out.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      },
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A named per-line offer from Verizon, T-Mobile or a prepaid brand, a long tenure, and unused or low-use lines on the account.",
+        "script": "Hello, I have been with AT&T for [N] years on [plan name] at $[X] a month. I am comparing a $[Y] offer from [Verizon / T-Mobile / Visible] and I would rather not move my numbers. Are there loyalty credits, a cheaper plan with the data I actually use, or a price-lock plan that gets me closer? Please also review whether any lines on the account are unused. Before I agree to anything, I need the total monthly cost with taxes and fees confirmed in writing or by email.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "When a device promotion credit is about to end, or right after a fee or price notice. Wireless and fiber are separate departments, so ask about each."
+      },
+      "cancel": {
+        "howTo": "Wireless: call 800.331.0500 or use Chat on att.com when available. Internet and U-verse TV: only the account owner can cancel, by calling 800.288.2020. If you are keeping your number, let the new carrier port it before you cancel.",
+        "url": "https://www.att.com/support/article/wireless/KM1008472/",
+        "gotchas": "Wireless is billed for the entire period even if you cancel mid-cycle, and any remaining device installment balance is due immediately. Internet can carry penalties and extra fees if you cancel before a promotional commitment ends; AT&T's page gives no amount, so ask before you commit."
+      }
+    },
+    "sources": [
+      "https://www.att.com/internet/fiber/",
+      "https://www.att.com/support/article/wireless/KM1008472/",
+      "https://www.att.com/support/article/my-account/KM1009500/"
+    ]
+  },
+  {
+    "id": "verizon",
+    "name": "Verizon (Fios and wireless)",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.verizon.com/",
+    "match": {
+      "patterns": [
+        "(?<!VISIBLE BY )VERIZON",
+        "VZWRLSS",
+        "VZ ?WIRELESS"
+      ],
+      "examples": [
+        "VERIZON WRLS*AC/RC VE 800-922-0204 FL",
+        "VZWRLSS*APOCC VISB 800-922-0204 FL",
+        "VERIZON FIOS 800-837-4966 NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Per-line pricing depends on how many lines you have and which promotions are still running. Call before you leave: retention offers and plan reviews often beat the price you are paying now.",
+    "alternatives": [
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      },
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A competing per-line price from T-Mobile, AT&T or a prepaid brand, an old plan name that is no longer sold, and lines that rarely get used.",
+        "script": "Hello, I have been a Verizon customer for [N] years and I pay $[X] a month for [N] lines. I have a $[Y] offer from [T-Mobile / AT&T / Visible] that I would rather not take because I do not want to move my numbers. Can you review my plan and tell me whether a current plan, a loyalty credit or a multi-year price lock gets me closer to that price? Please also check for lines I could remove or move to a cheaper plan. I would like the new total with taxes and fees confirmed before I agree.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before a device-payment promotion credit runs out, or right after a notice of a price or fee increase."
+      },
+      "cancel": {
+        "howTo": "Mobile: call 800-922-0204 with the account owner's name, number and PIN, or sign in to My Verizon, open chat and type \"Cancel\". Fios: use Disconnect in My Verizon or call 1-800-VERIZON (800-837-4966). Mobile cancellation takes effect on the last day of the billing period, so time it near your cycle end.",
+        "url": "https://www.verizon.com/support/disconnect-cancel-mobile/",
+        "gotchas": "Pay off Device Payment balances before lines are disconnected, or the balance is charged in full on your final bill; device promotion credits stop when service ends. Fios under a term can carry an early termination fee (up to $350, falling by $15 a month per Verizon's page), and rented equipment must come back within 30 days. A pending mobile disconnect can be cancelled until the day before it takes effect."
+      }
+    },
+    "sources": [
+      "https://www.verizon.com/plans/unlimited/",
+      "https://www.verizon.com/support/disconnect-cancel-mobile/",
+      "https://www.verizon.com/support/residential/account/manage-service/cancel"
+    ]
+  },
+  {
+    "id": "t-mobile",
+    "name": "T-Mobile",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.t-mobile.com/",
+    "match": {
+      "patterns": [
+        "(?<!METRO BY )\\bT[- ]?MOBILE"
+      ],
+      "examples": [
+        "T-MOBILE*PCS SVC 800-937-8997 WA",
+        "TMOBILE*AUTOPAY",
+        "T-MOBILE HOME INTERNET"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "T-Mobile rarely discounts a plan outright, but a plan review can trim lines, fees and old add-ons. Keep your promotions in mind: canceling a line can end the credits on the others.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Add-ons and insurance you no longer need, an old plan with a cheaper current equivalent, and a named competitor per-line price.",
+        "script": "Hello, I have been with T-Mobile for [N] years and I pay $[X] a month for [N] lines. I have a $[Y] per-line offer from [Verizon / AT&T / Mint Mobile]. I would like to stay, so could you review my account for a cheaper plan with the data I actually use, for add-ons or protection plans I can drop, and for any loyalty or switcher-matching credit? Please also tell me whether removing a line would end any promotion credits on the other lines. I would like the final total with taxes and fees confirmed before I agree to a change.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "When a device credit or promotion is about to end, and before you add or drop a line."
+      },
+      "cancel": {
+        "howTo": "T-Mobile's support page says to contact Customer Care: dial 611 from a T-Mobile phone, or use chat or a scheduled callback from t-mobile.com. Get your port-out details first if you are moving your number.",
+        "url": "https://www.t-mobile.com/support/account/cancel-service",
+        "gotchas": "Cancellations are dated to the end of the billing cycle. Device balances come due on the final bill, promotions and multi-line discounts can end, and AutoPay may still draw the final charge unless you remove it. Voicemail and call history are deleted. T-Mobile has offered a seasonal suspension of up to 90 days if you only want a pause; confirm it is available for your line."
+      }
+    },
+    "sources": [
+      "https://www.t-mobile.com/support/account/cancel-service",
+      "https://www.t-mobile.com/cell-phone-plans"
+    ]
+  },
+  {
+    "id": "cox",
+    "name": "Cox",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.cox.com/",
+    "match": {
+      "patterns": [
+        "\\bCOX[ *]?COMM",
+        "COX CABLE",
+        "COX INTERNET",
+        "COX MOBILE"
+      ],
+      "examples": [
+        "COX COMMUNICATIONS",
+        "COX CABLE",
+        "COX COMM LAS VEGAS NV"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Cox's website now reads \"Cox is now Spectrum\", so plans and promotions may be changing. Check your current bill, then ask for retention pricing with a competing quote in hand.",
+    "alternatives": [
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      },
+      {
+        "name": "T-Mobile Home Internet",
+        "url": "https://www.t-mobile.com/home-internet",
+        "note": "Fixed wireless home internet at a flat monthly price; availability depends on your address."
+      },
+      {
+        "name": "Lifeline program",
+        "url": "https://www.lifelinesupport.org/",
+        "note": "Federal monthly discount on phone or internet service for eligible low-income households."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A competing offer at your address, your tenure, and a speed tier you are paying for but not using.",
+        "script": "Hi, I am a Cox internet customer and my bill is now $[X] a month. I have a quote from [competitor] for $[Y] a month. I would like to stay if we can get closer. Could you check whether a lower speed tier, a current promotion or a retention offer applies to my account, and whether I can use my own modem to drop the equipment fee? Please give me the total monthly price with taxes and fees, and tell me how long that price is guaranteed. If there is nothing available, I will plan to disconnect at the end of this cycle.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "When a promotional price is ending or right after a rate notice. Ask for the retention team."
+      },
+      "cancel": {
+        "howTo": "Cox's site now reads \"Cox is now Spectrum\" and lists Cancel Service under Manage Your Spectrum Services. Use that link or the Customer Care number on your own bill. Return any leased gateway or boxes.",
+        "url": "https://www.cox.com/residential/support/billing-and-account/cancel-cox-service.html",
+        "gotchas": "Equipment you do not return is billed to you. The Cox pages are changing with the Spectrum rebrand, so confirm the cancellation steps and last service date with the company and keep the confirmation number."
+      }
+    },
+    "sources": [
+      "https://www.cox.com/",
+      "https://www.cox.com/residential/support/billing-and-account/cancel-cox-service.html"
+    ]
+  },
+  {
+    "id": "optimum",
+    "name": "Optimum (Altice)",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.optimum.com/",
+    "match": {
+      "patterns": [
+        "OPTIMUM(?: |-|\\*|/)?(?:ALTICE|CABLE|INTERNET|ONLINE|BILL|PAY|SERVICES?|MOBILE|COMM)",
+        "ALTICE",
+        "CABLEVISION",
+        "OPTONLINE",
+        "^OPTIMUM(?: (?:BETHPAGE|LONG ISLAND|NEW YORK|NY)\\b|$)"
+      ],
+      "examples": [
+        "ALTICE USA OPTIMUM",
+        "OPTIMUM ONLINE PAYMENT",
+        "CABLEVISION OPTIMUM",
+        "OPTIMUM BETHPAGE NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Optimum advertises price-locked promotions and bills rise when they end. A call with a fiber competitor in hand often gets you the current lock price again.",
+    "alternatives": [
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      },
+      {
+        "name": "T-Mobile Home Internet",
+        "url": "https://www.t-mobile.com/home-internet",
+        "note": "Fixed wireless home internet at a flat monthly price; availability depends on your address."
+      },
+      {
+        "name": "Lifeline program",
+        "url": "https://www.lifelinesupport.org/",
+        "note": "Federal monthly discount on phone or internet service for eligible low-income households."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A fiber competitor at your address, a promotion or price lock that is about to end, and Optimum's own advertised lock price for new customers.",
+        "script": "Hello, I have been an Optimum customer for [N] years and my bill has risen to $[X] a month. Your site is advertising [plan] at $[Y] with a price lock for new customers, and [Verizon Fios / Frontier] has quoted me a similar price. I would like to stay. Can you apply the current price and a multi-year price lock to my account? Please also check whether I can drop the equipment rental. I would like the new total with taxes and fees in writing. If that is not possible, please tell me how to disconnect and return equipment.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Within 30 days before a promotion ends, or after a bill increase. Expect to call."
+      },
+      "cancel": {
+        "howTo": "Optimum's moving page lists 877-694-9474 for cancelling by phone; promotion terms list other numbers, so use that one. Cancellation takes effect at the end of the current billing period, except in CT and NJ. Return equipment, with cables, power cords and remotes, at an Optimum store with photo ID and your account number, or by mail using Optimum's mail-in instructions.",
+        "url": "https://www.optimum.com/moving",
+        "gotchas": "Plan on calling; the page does not offer an online or chat cancellation. Equipment you do not return can be billed. Optimum advertises a 60-day money-back guarantee for new internet customers, so check the terms if you are inside it."
+      }
+    },
+    "sources": [
+      "https://www.optimum.com/internet",
+      "https://www.optimum.com/moving",
+      "https://www.optimum.com/terms-of-service/residential"
+    ]
+  },
+  {
+    "id": "frontier",
+    "name": "Frontier",
+    "category": "telecom-utilities-finance",
+    "url": "https://frontier.com/",
+    "match": {
+      "patterns": [
+        "FRONTIER COMM",
+        "FRONTIER (?:INTERNET|FIBER|CABLE|TELEPHONE)"
+      ],
+      "examples": [
+        "FRONTIER COMMUNICATIONS",
+        "FRONTIER FIBER INTERNET",
+        "FRONTIER COMM OF CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Frontier is now owned by Verizon but still sells under its own name. Fiber plans often carry multi-year price locks, so haggle before a lock expires and ask for a lower speed tier or a fiber upgrade at the same price.",
+    "alternatives": [
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      },
+      {
+        "name": "T-Mobile Home Internet",
+        "url": "https://www.t-mobile.com/home-internet",
+        "note": "Fixed wireless home internet at a flat monthly price; availability depends on your address."
+      },
+      {
+        "name": "Lifeline program",
+        "url": "https://www.lifelinesupport.org/",
+        "note": "Federal monthly discount on phone or internet service for eligible low-income households."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A cable or fixed-wireless competitor at your address, an expiring promotion, and a fiber plan with a longer price lock. Verizon's Frontier announcement lists a $15 a month Mobile + Home discount for Frontier Fiber customers on a Verizon mobile line; ask whether it applies.",
+        "script": "Hi, I have been a Frontier customer for [N] years and my bill is now $[X] a month. I have a quote of $[Y] from [Xfinity / Spectrum / T-Mobile Home Internet]. I would like to stay. Can you tell me whether a fiber plan is available at my address with a multi-year price lock, or whether you can extend my current promotional price? Please also check whether I can use my own router to drop the equipment fee. I would like the monthly total with taxes and fees and the lock length confirmed in writing before I agree.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "When a promotion or price lock is about to end. Ask whether a newer fiber plan is available at the same address."
+      },
+      "cancel": {
+        "howTo": "Frontier's cancel page lists 1-855-956-4702; numbers differ between Frontier pages, so use the one in your account. If you only want a break, Frontier says you can suspend service for one to nine months through its vacation services page.",
+        "url": "https://frontier.com/resources/cancel-service",
+        "gotchas": "A $50 equipment restocking fee per household applies when internet is disconnected, and unreturned equipment can cost up to $150 per device (up to $500 for 5 Gig). Check your agreement for an early termination fee, and keep the confirmation number."
+      }
+    },
+    "sources": [
+      "https://frontier.com/resources/cancel-service",
+      "https://go.frontier.com/blog/frontier-verizon-2026-merger"
+    ]
+  },
+  {
+    "id": "google-fi",
+    "name": "Google Fi",
+    "category": "telecom-utilities-finance",
+    "url": "https://fi.google.com/",
+    "match": {
+      "patterns": [
+        "GOOGLE FI\\b",
+        "GOOGLE ?\\*(?:GOOGLE )?FI\\b"
+      ],
+      "examples": [
+        "GOOGLE FI WIRELESS",
+        "GOOGLE *GOOGLE FI",
+        "GOOGLE *FI 855-836-3987 CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Fi has no contract and no real room to negotiate. Plans and prices have been renamed more than once, so check that your plan still matches how you use data, then leave it alone.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In the Google Fi app or website go to Account, then Manage plan, then Cancel service. To keep your number, choose Leave Google Fi to get your account number and port-out PIN and give them to the new carrier; Fi cancels automatically when the transfer finishes.",
+        "url": "https://support.google.com/fi/answer/6079398",
+        "gotchas": "On unlimited plans you owe the full month even if you cancel mid-cycle. Group plan owners can only cancel after every member has left. Any remaining phone installment balance is charged to your card, and you receive two final statements up to 30 days apart."
+      }
+    },
+    "sources": [
+      "https://fi.google.com/about/plans",
+      "https://support.google.com/fi/answer/6079398"
+    ]
+  },
+  {
+    "id": "mint-mobile",
+    "name": "Mint Mobile",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.mintmobile.com/",
+    "match": {
+      "patterns": [
+        "MINT ?MOBILE"
+      ],
+      "examples": [
+        "MINT MOBILE",
+        "MINTMOBILE.COM",
+        "MINT MOBILE 3 MONTH PLAN"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 30,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Already one of the cheapest ways to buy unlimited on a major network, especially prepaid for 12 months. Watch the renewal: short intro terms jump to the regular price if you do nothing.",
+    "alternatives": [
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Mint is prepaid and renews automatically. Turn off renewal or cancel from your Mint account (or through Mint support) before the term ends; service runs to the end of the period you paid for. If you are keeping your number, port it out before you close the account.",
+        "url": "https://www.mintmobile.com/plan-terms-and-conditions/",
+        "gotchas": "Short intro plans (3 or 6 months) renew at the higher regular price, and Mint's family plan terms say lines renew automatically unless canceled at least one day before the end of the billing cycle; read your own plan terms for the exact deadline. Check the terms for refund rules before paying for a 12-month plan."
+      }
+    },
+    "sources": [
+      "https://www.mintmobile.com/plans/",
+      "https://www.mintmobile.com/plan-terms-and-conditions/"
+    ]
+  },
+  {
+    "id": "visible",
+    "name": "Visible",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.visible.com/",
+    "match": {
+      "patterns": [
+        "VISIBLE\\.COM",
+        "VISIBLE (?:WIRELESS|MOBILE|SERVICE|BY VERIZON)",
+        "^VISIBLE$"
+      ],
+      "examples": [
+        "VISIBLE.COM",
+        "VISIBLE WIRELESS",
+        "VISIBLE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 25,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Taxes and fees are included in the listed price and there is no contract, so there is little left to haggle. Promotions can end and revert to the market rate, so recheck after any promo window.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to the Visible app or visible.com, open Account (app) or Profile (web), go to Service and choose the cancel option. A pop-up shows your end date, and you can undo the request until then. If you are keeping your number, wait until the new service is active before you cancel.",
+        "url": "https://www.visible.com/help/managing-visible-account",
+        "gotchas": "Annual plans are not refunded after activation, and cancelling or moving to a non-eligible plan forfeits remaining promotional credits. You have 50 days after your last day to return and keep the old number. Home Internet is removed separately."
+      }
+    },
+    "sources": [
+      "https://www.visible.com/plans",
+      "https://www.visible.com/help/managing-visible-account"
+    ]
+  },
+  {
+    "id": "cricket-wireless",
+    "name": "Cricket Wireless",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.cricketwireless.com/",
+    "match": {
+      "patterns": [
+        "CRICKET WIRELESS",
+        "CRICKETWIRELESS",
+        "CRICKET WRLS",
+        "MYCRICKET"
+      ],
+      "examples": [
+        "CRICKET WIRELESS",
+        "CRICKETWIRELESS.COM",
+        "CRICKET WIRELESS 800-274-2538 TX"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 35,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Prepaid AT&T-network service with taxes and fees included and no contract. Cricket does not negotiate much; keep it unless a cheaper plan on the same network fits how much data you use.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cricket's terms say you may cancel any of your services at any time. Dial 611 from your Cricket phone or use the customer care number at cricketwireless.com/contactus. If you are keeping your number, wait for the new carrier to confirm the transfer before you cancel.",
+        "url": "https://www.cricketwireless.com/terms",
+        "gotchas": "Stopping Auto Pay is a separate step (online, 611 or customer care) and can cost you discounts. If you cancel before the monthly service period ends there is no refund or credit for unused service. Add-ons billed through a third party, such as an app store, follow that company's agreement and are canceled there."
+      }
+    },
+    "sources": [
+      "https://www.cricketwireless.com/cell-phone-plans.html",
+      "https://www.cricketwireless.com/terms"
+    ]
+  },
+  {
+    "id": "metro-by-t-mobile",
+    "name": "Metro by T-Mobile",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.metrobyt-mobile.com/",
+    "match": {
+      "patterns": [
+        "METRO BY T-?MOBILE",
+        "METRO ?PCS"
+      ],
+      "examples": [
+        "METRO BY T-MOBILE",
+        "METROPCS",
+        "METRO PCS PAYMENT"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 25,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Prepaid, no contract, and pricing is already low. Intro offers and multi-month prepay change often, so check the current deals page before you renew; there is no meaningful haggle.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Dial 611 from your Metro phone, call customer care or visit a Metro store; confirm the steps for your account because Metro's public pages do not spell out a self-service cancel. If you are keeping your number, port it out first.",
+        "url": "https://www.metrobyt-mobile.com/phone-plans",
+        "gotchas": "Prepaid service fees are not refundable, and cancelling can reset the clock on future promotional offers. If you financed a phone, check the remaining balance before you cancel."
+      }
+    },
+    "sources": [
+      "https://www.metrobyt-mobile.com/phone-plans",
+      "https://www.metrobyt-mobile.com/deals/one-line-for-25-phone-plan"
+    ]
+  },
+  {
+    "id": "boost-mobile",
+    "name": "Boost Mobile",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.boostmobile.com/",
+    "match": {
+      "patterns": [
+        "BOOST MOBILE",
+        "BOOSTMOBILE",
+        "BOOST INFINITE"
+      ],
+      "examples": [
+        "BOOST MOBILE",
+        "BOOSTMOBILE.COM",
+        "BOOST MOBILE 833-502-6678"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 25,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Boost lists an Unlimited plan at a low flat price with AutoPay and no contract. The AutoPay discount is the main lever, so keep it on and watch for add-ons like Boost Protect.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Boost's terms say you can cancel any time by visiting a Boost Mobile store or calling 833-50-BOOST (833-502-6678). Turn off AutoPay separately in your account, and port your number out first if you want to keep it.",
+        "url": "https://help.boostmobile.com/docs/general-terms-conditions",
+        "gotchas": "Cancelling mid-cycle does not give a prorated refund; service continues until the cycle ends. If you cancel within 30 days of your order you may get a refund for service under the 30-Day Money-Back Guarantee. You still owe the balance on any financed device. Boost's terms list store or phone only, so plan on a call, and ask how Boost Protect is cancelled."
+      }
+    },
+    "sources": [
+      "https://www.boostmobile.com/plans/",
+      "https://help.boostmobile.com/docs/general-terms-conditions"
+    ]
+  },
+  {
+    "id": "straight-talk",
+    "name": "Straight Talk Wireless",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.straighttalk.com/",
+    "match": {
+      "patterns": [
+        "STRAIGHT ?TALK"
+      ],
+      "examples": [
+        "STRAIGHT TALK WIRELESS",
+        "STRAIGHTTALK.COM",
+        "STRAIGHT TALK"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 45,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "No-contract prepaid sold at Walmart and online. The listed price is steady, but intro AutoPay pricing lasts only three months. Compare against Mint, Visible or Boost if you pay for more data than you use.",
+    "alternatives": [
+      {
+        "name": "Mint Mobile",
+        "url": "https://www.mintmobile.com/",
+        "note": "Prepaid unlimited on the T-Mobile network, cheapest when you prepay 12 months."
+      },
+      {
+        "name": "Visible",
+        "url": "https://www.visible.com/",
+        "note": "Verizon-network prepaid with taxes and fees included in the listed monthly price."
+      },
+      {
+        "name": "US Mobile",
+        "url": "https://www.usmobile.com/",
+        "note": "Build-your-own prepaid plan on more than one network; check coverage at your address first."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Straight Talk's site lists 866-664-3878 for calling customer care, and 1-877-430-2355 when you cannot verify from your phone. Call to cancel, turn off AutoPay, and port your number out first if you are keeping it.",
+        "url": "https://www.straighttalk.com/",
+        "gotchas": "The first-three-months AutoPay price applies only at the start, and the standard price follows. Cancel AutoPay separately so a final payment is not drawn, and ask what happens to any unused days on your plan before you cancel."
+      }
+    },
+    "sources": [
+      "https://www.straighttalk.com/"
+    ]
+  },
+  {
+    "id": "starlink",
+    "name": "Starlink",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.starlink.com/",
+    "match": {
+      "patterns": [
+        "STARLINK"
+      ],
+      "examples": [
+        "STARLINK INTERNET",
+        "STARLINK.COM",
+        "SPACEX STARLINK"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "Starlink is often the only decent option where it is used full time, and it does not negotiate. If you only use it seasonally (cabin, RV), pausing service is the real saving.",
+    "alternatives": [
+      {
+        "name": "FCC National Broadband Map",
+        "url": "https://broadbandmap.fcc.gov/",
+        "note": "Lists the providers that serve your address, so the competitor offer you quote is a real one."
+      },
+      {
+        "name": "T-Mobile Home Internet",
+        "url": "https://www.t-mobile.com/home-internet",
+        "note": "Fixed wireless home internet at a flat monthly price; availability depends on your address."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Pause the subscription for the months the dish is not in use (cabin, RV, seasonal home) and resume when you return. Pause only on a plan that allows it, and expect that a Residential spot is not held while you are paused.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Sign in at starlink.com, open Your Subscription, click Manage next to your plan and choose Cancel Service. To pause instead, choose Pause Current Service under Manage.",
+        "url": "https://starlink.com/support/article/9d43bef2-36fe-bcd1-9f6a-e0304e9cf22e",
+        "gotchas": "Service stays active until the date you paid for. Reactivating a Residential plan depends on local capacity, so a cancel or long pause may leave you unable to come back at the same price. Pausing for more than 12 months in a row can require a fee or a different plan, and billing changes must be made before 12:00 AM UTC on your billing day."
+      }
+    },
+    "sources": [
+      "https://starlink.com/support/article/37bb3b47-9525-7224-5f0a-6d016ce26975",
+      "https://starlink.com/support/article/9d43bef2-36fe-bcd1-9f6a-e0304e9cf22e"
+    ]
+  },
+  {
+    "id": "geico",
+    "name": "GEICO",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.geico.com/",
+    "match": {
+      "patterns": [
+        "GEICO"
+      ],
+      "examples": [
+        "GEICO *AUTO",
+        "GEICO INSURANCE",
+        "GEICO*AUTO PREMIUM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Auto premiums rise at most renewals and rates differ a lot between carriers for the same driver. Get comparable quotes, ask GEICO to re-rate you, and switch only if a rival is clearly cheaper.",
+    "alternatives": [
+      {
+        "name": "NAIC consumer insurance resources",
+        "url": "https://content.naic.org/consumer.htm",
+        "note": "Neutral guidance on comparing quotes and your state regulator if a claim or cancellation goes wrong."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Competing quotes with identical coverage limits and deductibles, a clean record, bundling, paying in full, and telematics or safe-driver programs. A new quote from a rival is the one lever that works at every carrier.",
+        "script": "Hello, I am reviewing my policy with GEICO before renewal. My premium is $[X] and I have quotes from Progressive and State Farm at $[Y] for the same coverage limits. I would like to stay if we can lower it. Can you check for unapplied discounts such as bundling, multi-car, paid in full, safe-driver or telematics, paperless, good student and affinity or employer, and show me deductible options? Please re-rate me against my current driving record and give me the new premium and what changes in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "30 to 45 days before renewal, once you hold two or three quotes with identical coverage limits. Do not cancel the old policy until the new one is active."
+      },
+      "cancel": {
+        "howTo": "Call GEICO at (800) 841-1587 and speak to a licensed agent, or say \"cancel insurance policy\" and then \"auto\" at the automated prompt. Have the policy number ready and ask for written confirmation of the end date.",
+        "url": "https://www.geico.com/information/faq/cancel-insurance/",
+        "gotchas": "Buy the new policy first so you have no gap in coverage. GEICO says there is no cancellation fee, except that North Carolina policies may use a short-rate calculation. Refund rules vary by state, and some states want proof of other coverage or returned plates before a refund."
+      }
+    },
+    "sources": [
+      "https://www.geico.com/information/faq/cancel-insurance/",
+      "https://www.geico.com/information/faq/cancel-previous-insurance/"
+    ]
+  },
+  {
+    "id": "progressive",
+    "name": "Progressive",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.progressive.com/",
+    "match": {
+      "patterns": [
+        "PROGRESSIVE (?:INS|CASUALTY|PREM|AUTO|DIRECT|INSURANCE|SELECT)",
+        "PROGRESSIVE ?\\*",
+        "PROGRESSIVEINS",
+        "\\bPROG DIRECT"
+      ],
+      "examples": [
+        "PROGRESSIVE INSURANCE",
+        "PROGRESSIVE CASUALTY INS",
+        "PROGRESSIVE*INSURANCE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Premiums vary by driver and insurer and can jump at renewal. Progressive's Snapshot-style discounts and a competing quote are the practical levers; there is no fee to leave.",
+    "alternatives": [
+      {
+        "name": "NAIC consumer insurance resources",
+        "url": "https://content.naic.org/consumer.htm",
+        "note": "Neutral guidance on comparing quotes and your state regulator if a claim or cancellation goes wrong."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Competing quotes with identical coverage limits and deductibles, a clean record, bundling, paying in full, and telematics or safe-driver programs. A new quote from a rival is the one lever that works at every carrier.",
+        "script": "Hello, I am reviewing my policy with Progressive before renewal. My premium is $[X] and I have quotes from GEICO and State Farm at $[Y] for the same coverage limits. I would like to stay if we can lower it. Can you check for unapplied discounts such as bundling, multi-car, paid in full, safe-driver or telematics, paperless, good student and affinity or employer, and show me deductible options? Please re-rate me against my current driving record and give me the new premium and what changes in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "30 to 45 days before renewal, once you hold two or three quotes with identical coverage limits. Do not cancel the old policy until the new one is active."
+      },
+      "cancel": {
+        "howTo": "Call Progressive at 1-866-749-7436 or go through your agent. Progressive's page does not say which method it requires, so confirm when you call. Set the end date to match the start of your new policy.",
+        "url": "https://www.progressive.com/answers/how-to-cancel-car-insurance/",
+        "gotchas": "Have the new policy active before the old one ends, and if you finance or lease the car keep comprehensive and collision for the lender. Unused prepaid premium is generally refunded, but a cancellation fee can apply depending on your state and timing."
+      }
+    },
+    "sources": [
+      "https://www.progressive.com/answers/how-to-cancel-car-insurance/",
+      "https://www.progressive.com/answers/changing-car-insurance-companies/"
+    ]
+  },
+  {
+    "id": "state-farm",
+    "name": "State Farm",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.statefarm.com/",
+    "match": {
+      "patterns": [
+        "\\bSTATE ?FARM"
+      ],
+      "examples": [
+        "STATE FARM INSURANCE",
+        "STATE FARM RO 4521",
+        "STATE FARM INS PREMIUM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Your agent controls discounts, bundling and deductible choices, so a renewal conversation with a rival quote can lower the premium. Price shop every year or two before you accept an increase.",
+    "alternatives": [
+      {
+        "name": "NAIC consumer insurance resources",
+        "url": "https://content.naic.org/consumer.htm",
+        "note": "Neutral guidance on comparing quotes and your state regulator if a claim or cancellation goes wrong."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Competing quotes with identical coverage limits and deductibles, a clean record, bundling, paying in full, and telematics or safe-driver programs. A new quote from a rival is the one lever that works at every carrier. Your local agent can review discounts directly.",
+        "script": "Hello, I am reviewing my policy with State Farm before renewal. My premium is $[X] and I have quotes from GEICO and Progressive at $[Y] for the same coverage limits. I would like to stay if we can lower it. Can you check for unapplied discounts such as bundling, multi-car, paid in full, safe-driver or telematics, paperless, good student and affinity or employer, and show me deductible options? Please re-rate me against my current driving record and give me the new premium and what changes in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "30 to 45 days before renewal, once you hold two or three quotes with identical coverage limits. Do not cancel the old policy until the new one is active."
+      },
+      "cancel": {
+        "howTo": "Call or visit your local State Farm agent with your policy number, name and date of birth, and tell them the date and time you want coverage to end. State Farm's customer care site also has a cancel-your-policy page, so check whether your policy type can be canceled online. If switching, give the new insurer's name and policy number.",
+        "url": "https://www.statefarm.com/customer-care/manage-your-accounts/cancel-my-policy",
+        "gotchas": "Confirm the new policy is active before you cancel, ask whether any cancellation fee applies, ask for written confirmation, stop any automatic payments, and check whether your state requires you to notify the DMV."
+      }
+    },
+    "sources": [
+      "https://www.statefarm.com/customer-care/manage-your-accounts/cancel-my-policy",
+      "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-switch-car-insurance"
+    ]
+  },
+  {
+    "id": "allstate",
+    "name": "Allstate",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.allstate.com/",
+    "match": {
+      "patterns": [
+        "ALLSTATE(?! IDENTITY| ID PROTECT)"
+      ],
+      "examples": [
+        "ALLSTATE INS CO",
+        "ALLSTATE*AUTO PREMIUM",
+        "ALLSTATE INSURANCE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Allstate premiums change with each renewal and the same driver can see very different quotes elsewhere. Ask for a re-rate, a deductible review and every available discount, with a rival quote in hand.",
+    "alternatives": [
+      {
+        "name": "NAIC consumer insurance resources",
+        "url": "https://content.naic.org/consumer.htm",
+        "note": "Neutral guidance on comparing quotes and your state regulator if a claim or cancellation goes wrong."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Competing quotes with identical coverage limits and deductibles, a clean record, bundling, paying in full, and telematics or safe-driver programs. A new quote from a rival is the one lever that works at every carrier.",
+        "script": "Hello, I am reviewing my policy with Allstate before renewal. My premium is $[X] and I have quotes from GEICO and Progressive at $[Y] for the same coverage limits. I would like to stay if we can lower it. Can you check for unapplied discounts such as bundling, multi-car, paid in full, safe-driver or telematics, paperless, good student and affinity or employer, and show me deductible options? Please re-rate me against my current driving record and give me the new premium and what changes in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "30 to 45 days before renewal, once you hold two or three quotes with identical coverage limits. Do not cancel the old policy until the new one is active."
+      },
+      "cancel": {
+        "howTo": "Contact Allstate by phone, through your agent, or with written notice naming the date coverage should end; Allstate's policy FAQ points you to its support team, and wording varies by state. Stopping payments does not cancel the policy.",
+        "url": "https://www.allstate.com/resources/car-insurance/can-i-cancel-my-car-insurance",
+        "gotchas": "Turn off autopay and auto-renewal separately in the Payment Center or app. A small cancellation fee can apply in some states, so ask about fees and any refund of unused premium. Start the new policy first to avoid a coverage gap."
+      }
+    },
+    "sources": [
+      "https://www.allstate.com/resources/car-insurance/can-i-cancel-my-car-insurance",
+      "https://www.allstate.com/help-support/my-policy/faqs"
+    ]
+  },
+  {
+    "id": "lemonade",
+    "name": "Lemonade",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.lemonade.com/",
+    "match": {
+      "patterns": [
+        "LEMONADE (?:INSURANCE|INS\\b|INC|RENTERS|CAR|HOME|PET)",
+        "LEMONADE\\.COM",
+        "LEMONADE\\*"
+      ],
+      "examples": [
+        "LEMONADE INSURANCE",
+        "LEMONADE*RENTERS",
+        "LEMONADE.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "haggle"
+    ],
+    "why": "Lemonade prices are set by its app, with little room to negotiate by phone. Your levers are raising the deductible, bundling products and comparing a rival quote at renewal.",
+    "alternatives": [
+      {
+        "name": "NAIC consumer insurance resources",
+        "url": "https://content.naic.org/consumer.htm",
+        "note": "Neutral guidance on comparing quotes and your state regulator if a claim or cancellation goes wrong."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Lemonade quotes are algorithmic, so the realistic levers are deductible and coverage settings, bundling renters or home with car, and a rival quote.",
+        "script": "Hello, I am reviewing my Lemonade policy before renewal. I pay $[X] a month and I have a quote from [competitor] at $[Y] for the same coverage. I would like to stay if possible. Could you check whether a higher deductible, a bundle with my other Lemonade policies, or any discount that I do not have applied would lower my premium? Please tell me the new monthly price and what coverage changes with it, and send that to me in writing so I can compare it with the other quote.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before renewal, after you have a rival quote. Use the in-app chat and ask for a written re-quote."
+      },
+      "cancel": {
+        "howTo": "Cancel any time in the Lemonade app; renters policies can also be canceled on the website. Lemonade's FAQ promises a refund for the unused paid period and lists no cancellation fee.",
+        "url": "https://www.lemonade.com/faq",
+        "gotchas": "Canceling a pet policy ends any Giveback tied to it, and illnesses diagnosed under the old policy count as pre-existing if you return. Start your replacement policy first so there is no gap."
+      }
+    },
+    "sources": [
+      "https://www.lemonade.com/renters",
+      "https://www.lemonade.com/faq"
+    ]
+  },
+  {
+    "id": "usaa-insurance",
+    "name": "USAA Insurance",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.usaa.com/",
+    "match": {
+      "patterns": [
+        "USAA (?:P ?& ?C|INS|INSURANCE|PREM|CASUALTY|GENERAL)",
+        "USAA\\*(?:INS|P&C)"
+      ],
+      "examples": [
+        "USAA P&C INSURANCE",
+        "USAA INS PREMIUM",
+        "USAA CASUALTY INS CO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "USAA is only open to military members, veterans and their families, and it prices well for many of them but not all. Re-quote every renewal and use the result to ask for a re-rate.",
+    "alternatives": [
+      {
+        "name": "NAIC consumer insurance resources",
+        "url": "https://content.naic.org/consumer.htm",
+        "note": "Neutral guidance on comparing quotes and your state regulator if a claim or cancellation goes wrong."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Competing quotes with identical coverage limits and deductibles, a clean record, bundling, paying in full, and telematics or safe-driver programs. A new quote from a rival is the one lever that works at every carrier. USAA membership is limited, so make sure the rival quote reflects any military or garaging discounts you already get.",
+        "script": "Hello, I am reviewing my policy with USAA before renewal. My premium is $[X] and I have quotes from GEICO and Progressive at $[Y] for the same coverage limits. I would like to stay if we can lower it. Can you check for unapplied discounts such as bundling, multi-car, paid in full, safe-driver or telematics, paperless, good student and affinity or employer, and show me deductible options? Please re-rate me against my current driving record and give me the new premium and what changes in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "30 to 45 days before renewal, once you hold two or three quotes with identical coverage limits. Do not cancel the old policy until the new one is active."
+      },
+      "cancel": {
+        "howTo": "Contact USAA through the number on your policy documents or the USAA app and ask for the end date to match your new policy. USAA's current published cancellation steps were not confirmed for this entry, so check them on usaa.com before you act.",
+        "url": "https://www.usaa.com/",
+        "gotchas": "Leaving USAA insurance does not close your USAA bank account, but check for discounts tied to holding both. Start the new policy first, and get written confirmation of the cancellation date and any refund."
+      }
+    },
+    "sources": [
+      "https://www.usaa.com/"
+    ]
+  },
+  {
+    "id": "planet-fitness",
+    "name": "Planet Fitness",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.planetfitness.com/",
+    "match": {
+      "patterns": [
+        "PLANET FIT(?:NESS)?",
+        "PLANETFIT"
+      ],
+      "examples": [
+        "PLANET FITNESS",
+        "PLANET FIT CLUB FEES",
+        "PLANET FITNESS ANNUAL FEE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 15,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "At the Classic price it is hard to beat if you go often, and clubs rarely negotiate. If you barely go, cancel: the annual fee and long commitments make it easy to keep paying for nothing.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "SilverSneakers",
+        "url": "https://www.silversneakers.com/",
+        "note": "Gym access included with many Medicare Advantage and Medicare supplement plans; check your plan."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Cancellation rules are set per club and state, so read your membership agreement. Commonly you cancel in person at your home club or send a signed notice by certified mail to the club; some clubs also offer cancellation in your online account. Ask for a written confirmation either way.",
+        "url": "https://www.planetfitness.com/",
+        "gotchas": "The annual fee (listed as $49 on the corporate site, higher at some clubs) is billed once a year on top of monthly dues. Many clubs require a 12-month commitment and some require 18. A month-to-month option can cost more than the commitment price."
+      }
+    },
+    "sources": [
+      "https://www.planetfitness.com/",
+      "https://www.planetfitness.com/gyms/plano-tx/offers"
+    ]
+  },
+  {
+    "id": "la-fitness",
+    "name": "LA Fitness",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.lafitness.com/",
+    "match": {
+      "patterns": [
+        "\\bLA ?FITNESS"
+      ],
+      "examples": [
+        "LA FITNESS",
+        "LAFITNESS",
+        "LA FITNESS CLUB DUES"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Dues, fees and add-ons vary by club and plan. Most memberships are month to month, so you can threaten to leave, ask for a rate review and look for add-on fees you do not use.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "SilverSneakers",
+        "url": "https://www.silversneakers.com/",
+        "note": "Gym access included with many Medicare Advantage and Medicare supplement plans; check your plan."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A local competitor promotion, an employer or health-plan fitness benefit, and your willingness to cancel. Club managers often have discretion to waive fees, offer a freeze or move you to a cheaper tier.",
+        "script": "Hi, I am a member at this club and my dues are $[X] a month. [Planet Fitness / Crunch / the YMCA] near me is offering $[Y] with no joining fee. I enjoy this club and would like to stay. Is there a lower rate, a waived annual fee, a freeze option for the months I am away, or a corporate or health-plan rate through [my employer / my insurer]? If not, I will need to cancel at the end of this billing cycle. Please confirm any change in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before your next billing date and in person or by phone at your home club. Ask about promotions after a price increase or at the start of the year, when clubs want to keep members."
+      },
+      "cancel": {
+        "howTo": "LA Fitness lists three ways to cancel: mailed written notice, in person at the club front desk, or your online account (My LA Fitness); email may also work depending on your state. Mail to P.O. Box 54170, Irvine, CA 92619, and use registered or certified mail.",
+        "url": "https://www.lafitness.com/Pages/MembershipQuestions.aspx",
+        "gotchas": "A mailed notice should be postmarked at least 5 business days before your next billing date; if it is later you may be billed once more, and LA Fitness says it will refund that charge. An initial term of three months or more carries a termination fee. A freeze for a month-to-month membership costs $10 a month."
+      }
+    },
+    "sources": [
+      "https://www.lafitness.com/Pages/MembershipQuestions.aspx"
+    ]
+  },
+  {
+    "id": "equinox",
+    "name": "Equinox",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.equinox.com/",
+    "match": {
+      "patterns": [
+        "EQUINOX"
+      ],
+      "examples": [
+        "EQUINOX CLUB DUES",
+        "EQUINOX GROUP",
+        "EQUINOX FITNESS CLUBS"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Premium dues leave the most room to move. Ask for a corporate rate, a downgrade to a single-club tier or a freeze if you travel, and cancel add-on spa and training subscriptions you no longer use.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A local competitor promotion, an employer or health-plan fitness benefit, and your willingness to cancel. Club managers often have discretion to waive fees, offer a freeze or move you to a cheaper tier. Equinox also sells corporate memberships and single-club tiers.",
+        "script": "Hi, I am a member at this club and my dues are $[X] a month. [Life Time / a boutique studio] near me is offering $[Y] with no joining fee. I enjoy this club and would like to stay. Is there a lower rate, a waived annual fee, a freeze option for the months I am away, or a corporate or health-plan rate through [my employer / my insurer]? If not, I will need to cancel at the end of this billing cycle. Please confirm any change in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before your next billing date and in person or by phone at your home club. Ask about promotions after a price increase or at the start of the year, when clubs want to keep members."
+      },
+      "cancel": {
+        "howTo": "Equinox lists several channels: in the club with a club manager, by mail under your Membership Agreement, by email to Cancellations@Equinox.com, through Equinox Concierge by phone, or by logging in at equinox.com. Notice periods vary by state, so check your agreement.",
+        "url": "https://www.equinox.com/faq",
+        "gotchas": "Personal training, Pilates and nutrition sessions expire when your membership ends or six months after purchase, and unused sessions are generally not refundable, so use them first. Cancel booked sessions at least 24 hours ahead to avoid charges. In some states, cancelling soon after a dues increase can give you extra rights."
+      }
+    },
+    "sources": [
+      "https://www.equinox.com/faq",
+      "https://www.equinox.com/member-policies"
+    ]
+  },
+  {
+    "id": "crunch-fitness",
+    "name": "Crunch Fitness",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.crunch.com/",
+    "match": {
+      "patterns": [
+        "CRUNCH (?:FITNESS|FIT\\b|CLUB|GYM)",
+        "CRUNCH-",
+        "CRUNCHFITNESS"
+      ],
+      "examples": [
+        "CRUNCH FITNESS",
+        "CRUNCH FITNESS-BOULDER",
+        "CRUNCH-GARWOOD NJ"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Most clubs are franchised, so price and cancellation terms differ by location. The base tier is cheap enough that the main question is whether you actually go; if not, cancel.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Crunch clubs are individually run, so call or visit your home club and ask for its cancellation process. Crunch's location pages describe month-to-month plans that can be paused or canceled, but notice periods and fees are set by the club.",
+        "url": "https://www.crunch.com/locations/boulder",
+        "gotchas": "A lower price can require an annual commitment, and annual fees or add-on tiers (such as Peak) may be billed separately. Ask for the cancellation terms in writing before you sign, and for the exact last billing date when you leave."
+      }
+    },
+    "sources": [
+      "https://www.crunch.com/locations/boulder",
+      "https://www.crunch.com/locations/canton"
+    ]
+  },
+  {
+    "id": "orangetheory",
+    "name": "Orangetheory Fitness",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.orangetheory.com/",
+    "match": {
+      "patterns": [
+        "ORANGE ?THEORY"
+      ],
+      "examples": [
+        "ORANGETHEORY FITNESS",
+        "ORANGE THEORY FITNESS",
+        "ORANGETHEORY 0894"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Pricing varies widely by studio and tier. If you use fewer classes than your plan allows, moving down a tier or negotiating a studio promotion is the realistic saving.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Studios set their own pricing, so the lever is a lower class-count tier, a studio promotion, or a competing studio's intro rate.",
+        "script": "Hi, I am a member at this studio and I pay $[X] a month. I average [N] classes a month, so I think I am on a tier that is higher than I need. A nearby [studio / gym] is offering $[Y]. Could you move me to a lower class-count tier, apply any current membership promotion, or offer a freeze for the months I travel? I would like to stay a member. Please confirm any change, the new billing date and the cancellation notice period in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before your next billing date, with your actual attendance numbers in hand. Ask the studio manager rather than the app."
+      },
+      "cancel": {
+        "howTo": "Tell your home studio you want to cancel and follow its Membership Agreement. Orangetheory's membership page advertises month-to-month with 30-day cancellation; confirm the notice rule with your studio.",
+        "url": "https://www.orangetheory.com/en-us/memberships",
+        "gotchas": "A dues refund applies only to Premier members who complete 12 sessions in their first month at their home studio and tell the studio within 30 days of the start date. Promotional memberships follow the studio's own agreement, and OTBeat sales are not refundable."
+      }
+    },
+    "sources": [
+      "https://www.orangetheory.com/en-us/memberships",
+      "https://www.orangetheory.com/en-us/promotion-terms"
+    ]
+  },
+  {
+    "id": "anytime-fitness",
+    "name": "Anytime Fitness",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.anytimefitness.com/",
+    "match": {
+      "patterns": [
+        "ANYTIME ?FIT"
+      ],
+      "examples": [
+        "ANYTIME FITNESS",
+        "ANYTIMEFITNESS.COM",
+        "ANYTIME FIT DUES"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Anytime Fitness clubs are franchises that set their own prices and terms. Ask your club about a rate review, a waived fee or a lower plan, and always compare a nearby competitor.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "SilverSneakers",
+        "url": "https://www.silversneakers.com/",
+        "note": "Gym access included with many Medicare Advantage and Medicare supplement plans; check your plan."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A local competitor promotion, an employer or health-plan fitness benefit, and your willingness to cancel. Club managers often have discretion to waive fees, offer a freeze or move you to a cheaper tier.",
+        "script": "Hi, I am a member at this club and my dues are $[X] a month. [Planet Fitness / Crunch / the YMCA] near me is offering $[Y] with no joining fee. I enjoy this club and would like to stay. Is there a lower rate, a waived annual fee, a freeze option for the months I am away, or a corporate or health-plan rate through [my employer / my insurer]? If not, I will need to cancel at the end of this billing cycle. Please confirm any change in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before your next billing date and in person or by phone at your home club. Ask about promotions after a price increase or at the start of the year, when clubs want to keep members."
+      },
+      "cancel": {
+        "howTo": "Contact your home gym: Anytime Fitness says pricing and terms vary by location, and some clubs offer 6, 12 or 18-month plans. Ask for the cancellation process and notice period in writing.",
+        "url": "https://www.anytimefitness.com/membership/",
+        "gotchas": "Commitment lengths and fees are set by the franchise. If you are in a fixed term, ask what is owed to leave or whether the club allows a freeze or a transfer instead."
+      }
+    },
+    "sources": [
+      "https://www.anytimefitness.com/membership/"
+    ]
+  },
+  {
+    "id": "24-hour-fitness",
+    "name": "24 Hour Fitness",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.24hourfitness.com/",
+    "match": {
+      "patterns": [
+        "24 ?(?:HOUR|HR) ?FIT"
+      ],
+      "examples": [
+        "24 HOUR FITNESS",
+        "24 HOUR FITNESS USA",
+        "24HR FITNESS"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Dues and joining fees differ by club and tier. Ask your club about a lower tier or a freeze, and compare against a nearby competitor before you renew a long term.",
+    "alternatives": [
+      {
+        "name": "YMCA",
+        "url": "https://www.ymca.org/",
+        "note": "Nonprofit gyms, often with sliding-scale pricing and no joining fee at some branches."
+      },
+      {
+        "name": "SilverSneakers",
+        "url": "https://www.silversneakers.com/",
+        "note": "Gym access included with many Medicare Advantage and Medicare supplement plans; check your plan."
+      },
+      {
+        "name": "Active&Fit Direct",
+        "url": "https://www.activeandfitdirect.com/",
+        "note": "Discounted gym access through many employer and health plans; check whether yours participates."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "A local competitor promotion, an employer or health-plan fitness benefit, and your willingness to cancel. Club managers often have discretion to waive fees, offer a freeze or move you to a cheaper tier.",
+        "script": "Hi, I am a member at this club and my dues are $[X] a month. [Planet Fitness / LA Fitness / the YMCA] near me is offering $[Y] with no joining fee. I enjoy this club and would like to stay. Is there a lower rate, a waived annual fee, a freeze option for the months I am away, or a corporate or health-plan rate through [my employer / my insurer]? If not, I will need to cancel at the end of this billing cycle. Please confirm any change in writing.",
+        "expectedDiscountPct": [
+          5,
+          15
+        ],
+        "bestTime": "Before your next billing date and in person or by phone at your home club. Ask about promotions after a price increase or at the start of the year, when clubs want to keep members."
+      },
+      "cancel": {
+        "howTo": "24 Hour Fitness says you can make changes by contacting your home club or signing in to My24 online. Ask which of the two the club accepts for cancellations and ask for written confirmation of the last billing date.",
+        "url": "https://www.24hourfitness.com/membership/",
+        "gotchas": "A joining fee exists and the site does not list the monthly price, so read the agreement for the term and any early termination fee. A free 5-day pass is offered to try a club before you commit."
+      }
+    },
+    "sources": [
+      "https://www.24hourfitness.com/membership/"
+    ]
+  },
+  {
+    "id": "ynab",
+    "name": "YNAB (You Need A Budget)",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.ynab.com/",
+    "match": {
+      "patterns": [
+        "\\bYNAB\\b",
+        "YOU ?NEED ?A ?BUDGET"
+      ],
+      "examples": [
+        "YNAB.COM",
+        "YNAB SUBSCRIPTION",
+        "YOUNEEDABUDGET.COM"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 109,
+          "cadence": "annual",
+          "plan": "YNAB annual plan"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "selfhost",
+    "also": [
+      "rebuild",
+      "keep"
+    ],
+    "why": "YNAB's method is envelope budgeting, and Actual Budget is a mature open-source tool built on the same idea. It imports YNAB exports, so the switch is a weekend project. Bank sync is the main thing you give up.",
+    "alternatives": [
+      {
+        "name": "Actual Budget",
+        "url": "https://actualbudget.org/",
+        "note": "Free, open-source envelope budgeting you can run locally or self-host."
+      },
+      {
+        "name": "Goodbudget",
+        "url": "https://goodbudget.com/",
+        "note": "Envelope budgeting app with a free tier that works from manual entry."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Actual Budget (actual-server)",
+          "Docker",
+          "Tailscale"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 4,
+        "powerCostYear": 37,
+        "youLose": "Automatic bank connections: in the US, Actual syncs through SimpleFIN Bridge, a separate paid service you sign up for, or you import CSV files by hand. There is no native phone app, only a web app. YNAB's support and teaching content are gone. You handle updates and backups, and credit card payment categories do not map one for one on import. The cost figure adds about $15 a year for SimpleFIN Bridge.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. I want to replace my YNAB subscription with a self-hosted Actual Budget server. Target device: a Raspberry Pi 4 or 5, or an old laptop, running 64-bit Linux with Docker and Tailscale. Install Docker and Compose, then create a docker-compose.yml that runs actualbudget/actual-server with the latest-alpine tag, port 5006 and a persistent /data volume, restarting automatically. Install Tailscale and use tailscale serve so I can open Actual over HTTPS from my phone and laptop without exposing a port. Set a strong server password on first run. Add a nightly cron job that copies /data to a USB drive and keeps 14 days, a monthly restic copy to a second location, and an update script that can roll back. Finally, walk me through exporting my YNAB plan as JSON with a personal access token and importing it through Switch file, Import file, nYNAB, fixing a not-ynab5 error if it appears, then list the categories to clean up afterwards."
+      },
+      "rebuild": {
+        "whatYouBuild": "An offline envelope-budgeting PWA with accounts (including credit cards), transfers and split transactions, monthly category groups, rollover, CSV import from your bank, scheduled transactions and a spending report.",
+        "hours": 12,
+        "runsOn": "Installable PWA on Cloudflare Pages or GitHub Pages free tier, with data in IndexedDB on your device.",
+        "ongoingCostYear": 0,
+        "youLose": "Automatic bank sync (CSV import only), sync between devices except by exporting a JSON backup, YNAB's support and teaching, and polish. Budget math has to be tested carefully because mistakes are yours to find. Credit card handling is the hardest part and the place a budget goes quietly wrong.",
+        "prompt": "Build me a free, offline envelope budgeting app to replace YNAB, as an installable PWA with Vite, React and TypeScript and all data in IndexedDB. Core features: 1) accounts with a running balance, including credit card accounts, where spending moves money from the category to a payment category; 2) category groups with Assigned, Activity and Available per month, rollover and overspending flags; 3) quick entry, transfers between accounts, split transactions, and CSV import from my bank with column mapping and duplicate detection; 4) scheduled transactions; 5) a Ready to Assign banner and a spending-by-category report; 6) JSON export and import. Include an importer for YNAB's Register.csv and budget CSV that handles its \"Transfer : Account\" payees and splits. Write Vitest tests for the budget math, especially rollover, overspending, credit card payments, transfers and splits. Deploy free to Cloudflare Pages or GitHub Pages, explain installing it on my phone, and write a README."
+      },
+      "cancel": {
+        "howTo": "Sign in at app.ynab.com/settings, scroll to Cancel your subscription and confirm. Cancellation takes effect at the end of your billing period. On a phone, billing settings are only in the web browser. If you subscribed through the App Store or Google Play, cancel in that store instead.",
+        "url": "https://www.ynab.com/cancellation",
+        "gotchas": "The annual plan renews automatically for a year at a time, so cancel before the renewal date. YNAB gives no retroactive refunds. Export your plan data first if you want to import it into another tool."
+      }
+    },
+    "sources": [
+      "https://www.ynab.com/pricing",
+      "https://www.ynab.com/cancellation",
+      "https://actualbudget.org/docs/migration/nynab/",
+      "https://actualbudget.org/docs/install/docker/",
+      "https://actualbudget.org/docs/advanced/bank-sync/"
+    ]
+  },
+  {
+    "id": "monarch-money",
+    "name": "Monarch Money",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.monarch.com/",
+    "match": {
+      "patterns": [
+        "MONARCH ?MONEY",
+        "MONARCH\\.COM"
+      ],
+      "examples": [
+        "MONARCH MONEY",
+        "MONARCHMONEY.COM",
+        "MONARCH.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 14.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost",
+      "cancel"
+    ],
+    "why": "Actual Budget with SimpleFIN sync covers budgeting only. You lose investment tracking, net worth, polished reports and partner sharing. Keep Monarch if those matter; self-host only for plain spending.",
+    "alternatives": [
+      {
+        "name": "Actual Budget",
+        "url": "https://actualbudget.org/",
+        "note": "Free, open-source envelope budgeting you can run locally or self-host."
+      },
+      {
+        "name": "SimpleFIN Bridge",
+        "url": "https://www.simplefin.org/",
+        "note": "The bank-connection service Actual Budget uses for US accounts; it is a separate paid subscription."
+      },
+      {
+        "name": "Empower",
+        "url": "https://www.empower.com/",
+        "note": "Free net-worth and investment tracking dashboard, supported by advisory sales."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Actual Budget (actual-server)",
+          "SimpleFIN Bridge (optional bank sync)",
+          "Docker",
+          "Tailscale"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 4,
+        "powerCostYear": 37,
+        "youLose": "Investment and net-worth tracking, Monarch's categorization and report polish, and its partner-sharing interface. SimpleFIN Bridge is a separate paid service; the cost figure here adds about $15 a year for it on top of power, so check its current price. Sync keys are stored on your server without end-to-end encryption.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Set up a self-hosted replacement for Monarch Money using Actual Budget. Target: an old laptop running Ubuntu Server 24.04, or a Raspberry Pi 5, with Docker and Tailscale. Steps: install Docker, run actualbudget/actual-server with a persistent /data volume and automatic restarts, expose it on my tailnet over HTTPS with tailscale serve, and set a server password. Then help me connect bank sync with SimpleFIN Bridge for my US accounts: explain how to create the SimpleFIN account, generate the setup token and add it in Actual, and warn me that sync keys are stored on the server unencrypted, so I should lock down disk access and backups. Show me how to import my Monarch transactions CSV export, build category rules from my existing categories, and recreate my top three reports. Add nightly backups of /data to an external drive with 30-day retention and test a restore. Finish with a checklist of what Monarch did that Actual will not, such as investment tracking."
+      },
+      "cancel": {
+        "howTo": "Monarch says you can cancel anytime. Sign in on the web and open your subscription or billing settings to cancel; if you subscribed through the Apple App Store or Google Play, cancel in that store instead. Download your transactions as CSV before you leave.",
+        "url": "https://www.monarch.com/pricing",
+        "gotchas": "Promo codes apply only to annual Core plans billed directly by Monarch, not through Apple or Google. The pricing page advertises a no-questions-asked money-back guarantee, so ask about the window before you pay for an annual plan."
+      }
+    },
+    "sources": [
+      "https://www.monarch.com/pricing",
+      "https://actualbudget.org/docs/advanced/bank-sync/",
+      "https://actualbudget.org/docs/install/docker/"
+    ]
+  },
+  {
+    "id": "rocket-money",
+    "name": "Rocket Money Premium",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.rocketmoney.com/",
+    "match": {
+      "patterns": [
+        "ROCKET ?MONEY",
+        "TRUEBILL"
+      ],
+      "examples": [
+        "ROCKET MONEY",
+        "ROCKETMONEY PREMIUM",
+        "ROCKET MONEY SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "rebuild",
+    "also": [
+      "cancel"
+    ],
+    "why": "Premium mostly sells subscription tracking and cancellation help. A local tracker built from monthly CSV downloads does the tracking part free; you do the cancelling and haggling yourself.",
+    "alternatives": [
+      {
+        "name": "Rocket Money free tier",
+        "url": "https://www.rocketmoney.com/",
+        "note": "The free plan lists recurring subscriptions; Premium adds cancellation help and negotiation."
+      },
+      {
+        "name": "Actual Budget",
+        "url": "https://actualbudget.org/",
+        "note": "Free, open-source envelope budgeting you can run locally or self-host."
+      }
+    ],
+    "plans": {
+      "rebuild": {
+        "whatYouBuild": "A private subscription tracker: drop bank CSVs, detect recurring charges, flag price hikes and stopped charges, store keep/cancel/haggle decisions and renewal dates, and export reminders to your calendar.",
+        "hours": 6,
+        "runsOn": "Installable PWA on Cloudflare Pages or GitHub Pages free tier, with data in IndexedDB; nothing leaves your device.",
+        "ongoingCostYear": 0,
+        "youLose": "Automatic bank sync (you drop a CSV each month), concierge cancellation, bill negotiation, credit score tools and phone alerts when a new charge appears.",
+        "prompt": "Build me a private subscription tracker to replace Rocket Money Premium. Make it an installable PWA using Vite, React and TypeScript, with all data stored in IndexedDB and nothing uploaded anywhere. Features: 1) drop one or more bank or credit card CSV files and parse them in the browser with PapaParse, handling common column names and date formats; 2) detect recurring charges by merchant, cadence and amount stability, and show the annual cost of each; 3) flag price increases and charges that stopped; 4) let me mark each subscription as keep, cancel or haggle, add a renewal date and notes, and export upcoming renewals as an .ics calendar file; 5) a cancel checklist per service with a link field; 6) JSON export and import for backup. Add Vitest tests with a sample statement fixture. Deploy it free on Cloudflare Pages or GitHub Pages, and write a README that explains how to download CSVs from my bank each month."
+      },
+      "cancel": {
+        "howTo": "Rocket Money's help center has a Premium Membership collection that covers managing and cancelling your membership; start there, or check the account settings in the app. If you subscribed through the App Store or Google Play, cancel there as well.",
+        "url": "https://help.rocketmoney.com/en/collections/110584-rocket-money-premium-membership",
+        "gotchas": "Check the app for any fee on bill-negotiation savings before you use that feature, and confirm the cancellation completes before your next billing date."
+      }
+    },
+    "sources": [
+      "https://help.rocketmoney.com/",
+      "https://help.rocketmoney.com/en/collections/110584-rocket-money-premium-membership",
+      "https://help.rocketmoney.com/en/collections/110540-managing-subscriptions-with-rocket-money"
+    ]
+  },
+  {
+    "id": "copilot-money",
+    "name": "Copilot Money",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.copilot.money/",
+    "match": {
+      "patterns": [
+        "COPILOT ?MONEY",
+        "COPILOT\\.MONEY"
+      ],
+      "examples": [
+        "COPILOT MONEY",
+        "COPILOT.MONEY",
+        "COPILOT MONEY ANNUAL"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 109,
+          "cadence": "annual",
+          "plan": "Copilot Money annual"
+        },
+        {
+          "amount": 119,
+          "cadence": "annual",
+          "plan": "Copilot Money annual (regular price)"
+        }
+      ]
+    },
+    "typicalMonthly": 9,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "keep",
+    "also": [
+      "selfhost"
+    ],
+    "why": "The value is a polished Apple-first app with bank sync. Actual Budget can do the budgeting for free, but it is plainer and needs a home server, so keep Copilot unless the price bothers you.",
+    "alternatives": [
+      {
+        "name": "Actual Budget",
+        "url": "https://actualbudget.org/",
+        "note": "Free, open-source envelope budgeting you can run locally or self-host."
+      },
+      {
+        "name": "Goodbudget",
+        "url": "https://goodbudget.com/",
+        "note": "Envelope budgeting app with a free tier that works from manual entry."
+      }
+    ],
+    "plans": {
+      "selfhost": {
+        "software": [
+          "Actual Budget (actual-server)",
+          "Docker",
+          "Tailscale"
+        ],
+        "hardware": [
+          "raspberry-pi",
+          "nas",
+          "old-laptop"
+        ],
+        "hours": 4,
+        "powerCostYear": 37,
+        "youLose": "Automatic bank connections unless you add a paid SimpleFIN Bridge account, Copilot's iOS design and widgets, its investment views, and its smart categorization. You also own updates and backups. The cost figure adds about $15 a year for SimpleFIN Bridge.",
+        "prompt": "I am running you on the target machine (or over SSH to it); confirm that before changing anything. Help me move off Copilot Money to a self-hosted Actual Budget server. Target: an old laptop or Raspberry Pi running Linux with Docker, plus Tailscale so my iPhone can reach it. Please set up actualbudget/actual-server with a persistent data volume, restart policy and a strong password, then publish it to my tailnet over HTTPS with tailscale serve and walk me through adding the site to my iPhone home screen as a web app. Next, guide me through exporting my transactions from Copilot as CSV and importing them into Actual: map date, name, amount and category, create matching categories, and write rules so recurring merchants are categorized automatically. Set up nightly backups of the data folder to an external disk. Finally, list plainly what I give up compared with Copilot, such as automatic bank connections, investment tracking and its iOS design, and suggest a manual weekly routine to keep transactions up to date by CSV."
+      },
+      "cancel": {
+        "howTo": "If you subscribed through the App Store, cancel in iPhone Settings, then your name, then Subscriptions. If you subscribed on the web, open the account or subscription settings on copilot.money. Export your transactions before you leave.",
+        "url": "https://www.copilot.money/pricing",
+        "gotchas": "The annual plan renews each year, so cancel before the renewal date. App Store and web subscriptions are managed in different places, so check where your charge appears (APPLE.COM/BILL or COPILOT MONEY) before you look for the cancel button."
+      }
+    },
+    "sources": [
+      "https://www.copilot.money/pricing",
+      "https://www.copilot.money/",
+      "https://actualbudget.org/docs/install/docker/"
+    ]
+  },
+  {
+    "id": "quicken-simplifi",
+    "name": "Quicken Simplifi",
+    "category": "telecom-utilities-finance",
+    "url": "https://simplifi.quicken.com/",
+    "match": {
+      "patterns": [
+        "SIMPLIFI(?!ED|NG|ES|CATION)"
+      ],
+      "examples": [
+        "SIMPLIFI BY QUICKEN",
+        "QUICKEN SIMPLIFI",
+        "SIMPLIFI.QUICKEN.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Simplifi advertises $3.99 a month billed annually for the first year against a $6.99 list price, then renews at the then-current rate. Ask for the new-member price at renewal, or cancel.",
+    "alternatives": [
+      {
+        "name": "Actual Budget",
+        "url": "https://actualbudget.org/",
+        "note": "Free, open-source envelope budgeting you can run locally or self-host."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "The first-year offer is for new memberships, and the page says renewal uses the then-current rate. Your leverage is that you can cancel and your data exports to CSV.",
+        "script": "Hello, my Simplifi annual membership renews on [date] and I see the price is going up to $[X]. I paid $[Y] last year under the new-member offer. I like the product and would like to continue, but I am comparing it with a free alternative. Can you apply the current new-member price or a renewal discount to my account? If not, please confirm the exact renewal date and amount so I can cancel before I am charged. Please confirm the outcome in writing.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Two to three weeks before your renewal date. Use chat or phone support, and have your renewal date and last price ready."
+      },
+      "cancel": {
+        "howTo": "Quicken says you can manage your subscription at your My Account page (myaccount.quicken.com) and can cancel before your renewal date. Export your data first.",
+        "url": "https://myaccount.quicken.com/",
+        "gotchas": "Offers on the page apply to first-year memberships ordered directly from Quicken; after that the subscription renews at the then-current rate. A refund window was not confirmed for this entry, so check the Quicken terms before an annual purchase."
+      }
+    },
+    "sources": [
+      "https://www.quicken.com/products/simplifi/"
+    ]
+  },
+  {
+    "id": "experian-premium",
+    "name": "Experian Premium (CreditWorks Premium)",
+    "category": "telecom-utilities-finance",
+    "url": "https://www.experian.com/",
+    "match": {
+      "patterns": [
+        "EXPERIAN"
+      ],
+      "examples": [
+        "EXPERIAN*CREDITWORKS",
+        "EXPERIAN CREDITWORKS PREM",
+        "EXPERIAN MEMBERSHIP"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": 24.99,
+    "pricesCheckedAt": "2026-11",
+    "verdict": "cancel",
+    "why": "Paid credit monitoring mostly repeats what is free: weekly reports at annualcreditreport.com, free credit freezes and card-issuer alerts. Keep it only if you want the identity-theft insurance and three-bureau alerts.",
+    "alternatives": [
+      {
+        "name": "AnnualCreditReport.com",
+        "url": "https://www.annualcreditreport.com/",
+        "note": "The federally authorized site for free credit reports from all three bureaus."
+      },
+      {
+        "name": "FTC: free credit reports",
+        "url": "https://www.consumer.ftc.gov/articles/free-credit-reports",
+        "note": "Explains your free report rights and how to dispute errors."
+      },
+      {
+        "name": "Credit Karma",
+        "url": "https://www.creditkarma.com/",
+        "note": "Free credit scores and alerts for TransUnion and Equifax, supported by offers."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in to your Experian account and open your membership settings to cancel or switch to the free plan; Experian says you can change plan, cancel or downgrade to free at any time. If you cannot find it, use Experian's help center or call the number on your statement.",
+        "url": "https://www.experian.com/plans/",
+        "gotchas": "If you use CreditLock, cancelling the paid plan unlocks your credit file at the end of the billing period, so place a free credit freeze at all three bureaus first if you still want protection. Experian's plans page lists Core, Plus and Premium, and your statement may still say CreditWorks, so check which plan you are paying for."
+      }
+    },
+    "sources": [
+      "https://www.experian.com/plans/",
+      "https://www.experian.com/consumer-products/credit-monitoring.html"
+    ]
+  }
+]

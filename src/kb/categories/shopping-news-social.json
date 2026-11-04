@@ -1,0 +1,1818 @@
+[
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "amazon-prime",
+    "name": "Amazon Prime",
+    "url": "https://www.amazon.com/amazonprime",
+    "match": {
+      "patterns": [
+        "AMAZON PRIME(?! ?VIDEO)",
+        "AMZN PRIME(?! ?VIDEO)",
+        "PRIME MEMBERSHIP"
+      ],
+      "examples": [
+        "AMAZON PRIME*2K4TY87 AMZN.COM/BILL WA",
+        "AMZN PRIME MEMBERSHIP AMZN.COM/BILL WA",
+        "PRIME MEMBERSHIP AMZN.COM/BILL WA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Prime monthly"
+        },
+        {
+          "amount": 139,
+          "cadence": "annual",
+          "plan": "Prime annual"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Prime Access (government assistance)"
+        },
+        {
+          "amount": 7.49,
+          "cadence": "monthly",
+          "plan": "Prime for Young Adults"
+        },
+        {
+          "amount": 69,
+          "cadence": "annual",
+          "plan": "Prime for Young Adults, annual"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "verdict": "keep",
+    "also": [
+      "rotate",
+      "cancel"
+    ],
+    "why": "Prime bundles delivery, video and perks for one fee, hard to beat if you order often. If you don't, the $14.99 monthly plan lets you pay only for the months you use it.",
+    "alternatives": [
+      {
+        "name": "Walmart+",
+        "url": "https://www.walmart.com/plus",
+        "note": "Cheaper at $98/yr with free delivery on grocery orders over its minimum; check it covers your usual stores."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Switch to the $14.99 monthly plan and hold Prime only for the months you really use it, such as November and December gifting, Prime Day or a move. The $139 annual plan only wins if you keep Prime more than about nine months a year.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "On Amazon open Account & Lists > Prime Membership, choose Update, Cancel and More (menu labels shift), then End Membership and follow the prompts. If you joined through Google Play or another company, cancel there instead.",
+        "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GTJQ7QZY7QL2HK4Y",
+        "gotchas": "The flow has several \"keep my benefits\" screens. A full refund generally needs cancelling within 3 business days of signing up, or no Prime benefits used since the last charge. Prime Video add-on channels such as Paramount+ are billed separately and may keep charging after Prime ends, so check Memberships & Subscriptions. Free Grubhub+ via Prime ends with it."
+      }
+    },
+    "sources": [
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=GTJQ7QZY7QL2HK4Y",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=G34EUPKVMYFW8N2U",
+      "https://www.dealnews.com/features/amazon/membership-cost/",
+      "https://lp.grubhub.com/grubhub-amazon-prime/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "walmart-plus",
+    "name": "Walmart+",
+    "url": "https://www.walmart.com/plus",
+    "match": {
+      "patterns": [
+        "WALMART ?\\+",
+        "WALMART PLUS",
+        "WM ?\\+ ?MEMBERSHIP",
+        "\\bWM ?PLUS\\b"
+      ],
+      "examples": [
+        "WALMART+ MEMBERSHIP",
+        "WALMART PLUS MEMBERSHIP BENTONVILLE AR",
+        "WM+ MEMBERSHIP"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12.95,
+          "cadence": "monthly",
+          "plan": "Walmart+ monthly"
+        },
+        {
+          "amount": 98,
+          "cadence": "annual",
+          "plan": "Walmart+ annual"
+        },
+        {
+          "amount": 49,
+          "cadence": "annual",
+          "plan": "Walmart+ Assist (qualifying assistance)"
+        }
+      ]
+    },
+    "typicalMonthly": 12.95,
+    "verdict": "keep",
+    "also": [
+      "rotate",
+      "cancel"
+    ],
+    "why": "Delivery, fuel savings and a streaming perk for $98/yr. Keep it if you order Walmart groceries often; skip it if you hold Prime or Sam's Club Plus, which now includes Walmart+.",
+    "alternatives": [
+      {
+        "name": "Sam's Club Plus (includes Walmart+)",
+        "url": "https://www.samsclub.com/join",
+        "note": "Plus is $120/yr and Sam's says it now includes Walmart+, so one fee can cover both."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Walmart lets you pause for one month at a time, up to three times a year. Pause in slow months, such as travel or cooking-from-the-pantry stretches, and resume when you need delivery.",
+        "monthsOffPerYear": 2
+      },
+      "cancel": {
+        "howTo": "On walmart.com or in the app open Account > Walmart+ > Manage membership > Manage, then Cancel. You can also contact Walmart Customer Care from the Help page.",
+        "url": "https://www.walmart.com/help/article/manage-walmart-membership/126c9a990a944c3abd8531de52a87440",
+        "gotchas": "Benefits continue until the current term ends, but cancelling during a free trial ends them at once and no refunds are issued. The flow offers a discount before the final cancel step. Streaming benefits can be cancelled separately, and Walmart+ bundled with Sam's Club Plus follows its own rules."
+      }
+    },
+    "sources": [
+      "https://www.walmart.com/help/article/manage-walmart-membership/126c9a990a944c3abd8531de52a87440",
+      "https://www.walmart.com/help/article/walmart-terms-of-use/de696dfa1dd4423bb1005668dd19b845",
+      "https://www.samsclub.com/join",
+      "https://clark.com/shopping-retail/walmart-plus/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "costco-membership",
+    "name": "Costco membership",
+    "url": "https://www.costco.com/f/-/join-costco",
+    "match": {
+      "patterns": [
+        "COSTCO\\b.{0,60}(MEMBERSHIP|MEMBER FEE|RENEWAL)"
+      ],
+      "examples": [
+        "COSTCO MEMBERSHIP",
+        "COSTCO.COM MEMBERSHIP RENEWAL",
+        "COSTCO WHSE MEMBERSHIP RENEWAL"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 65,
+          "cadence": "annual",
+          "plan": "Gold Star or Business"
+        },
+        {
+          "amount": 130,
+          "cadence": "annual",
+          "plan": "Executive"
+        }
+      ]
+    },
+    "typicalMonthly": 5.42,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Annual fee of $65 (Gold Star) or $130 (Executive). Worth it only if your savings and Executive rewards exceed the fee; Costco says it refunds the fee any time you are dissatisfied, so lock-in risk is low.",
+    "plans": {
+      "cancel": {
+        "howTo": "Ask at a warehouse membership counter, call or chat with Member Services, or turn off auto-renewal in your Costco.com account. Do it before your renewal date.",
+        "url": "https://customerservice.costco.com/app/answers/detail/a_id/1812/~/how-can-i-manage-membership-auto-renewal-online",
+        "gotchas": "Auto-renewal charges the card around your renewal month, so turn it off ahead of time. Executive members earn a 2% Reward on the membership year, so ask Costco what you forfeit before you downgrade or cancel mid-year. Costco says it will cancel and refund the fee at any time if you are dissatisfied."
+      }
+    },
+    "sources": [
+      "https://customerservice.costco.com/app/answers/answer_view/a_id/1013504/~/membership-fee-increase",
+      "https://customerservice.costco.com/app/answers/detail/a_id/1812/~/how-can-i-manage-membership-auto-renewal-online",
+      "https://www.costco.com/f/-/executive-rewards"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "sams-club",
+    "name": "Sam's Club",
+    "url": "https://www.samsclub.com/join",
+    "match": {
+      "patterns": [
+        "SAM'?S ?CLUB.{0,60}(MEMBER|RENEW|PLUS)",
+        "SAMSCLUB\\.COM.{0,60}MEMBER"
+      ],
+      "examples": [
+        "SAMS CLUB MEMBERSHIP",
+        "SAMSCLUB.COM MEMBERSHIP FEE",
+        "SAM'S CLUB PLUS MEMBERSHIP"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 60,
+          "cadence": "annual",
+          "plan": "Club"
+        },
+        {
+          "amount": 120,
+          "cadence": "annual",
+          "plan": "Plus"
+        },
+        {
+          "amount": 50,
+          "cadence": "annual",
+          "plan": "Club (before the May 2026 increase)"
+        },
+        {
+          "amount": 110,
+          "cadence": "annual",
+          "plan": "Plus (before the May 2026 increase)"
+        }
+      ]
+    },
+    "typicalMonthly": 5,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Club is $60/yr and Plus is $120/yr (raised May 2026). Plus now includes Walmart+, so drop a separate Walmart+ if you pay for both. A satisfaction-guarantee refund is available.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel in a club, call 1-888-746-7726, or use your online account. Cancelling auto-renew is a separate step from cancelling the membership itself, so do both.",
+        "url": "https://help.samsclub.com/app/answers/detail/a_id/2563/~/how-to-deactivate-a-sams-club-membership",
+        "gotchas": "Without a refund your access runs to the end of the membership year. The 100% satisfaction guarantee excludes sponsored or third-party memberships and memberships billed through Walmart. Only one Plus cancellation per household or business per year. Ask Sam's for the refund before disputing the charge with your card issuer."
+      }
+    },
+    "sources": [
+      "https://www.samsclub.com/join",
+      "https://help.samsclub.com/app/answers/detail/a_id/2563/~/how-to-deactivate-a-sams-club-membership",
+      "https://help.samsclub.com/app/answers/detail/a_id/4075/~/terms-and-conditions---sams-club",
+      "https://www.tastingtable.com/2137988/sams-club-2026-membership-price-increase"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "instacart-plus",
+    "name": "Instacart+",
+    "url": "https://www.instacart.com/instacart-plus",
+    "match": {
+      "patterns": [
+        "INSTACART ?\\+",
+        "INSTACART ?PLUS",
+        "INSTACART.{0,60}(MEMBERSHIP|SUBSCR)"
+      ],
+      "examples": [
+        "INSTACART+ MEMBERSHIP",
+        "INSTACART PLUS SAN FRANCISCO CA",
+        "INSTACART+ ANNUAL SUBSCRIPTION"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Instacart+ monthly"
+        },
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "Instacart+ annual"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "$9.99/mo or $99/yr waives delivery fees on orders over the minimum. It only pays off if you order often; the free trial auto-renews into the annual plan, so many people overpay.",
+    "plans": {
+      "rotate": {
+        "pattern": "Use the $9.99 monthly plan only in months with several big orders (holidays, a sick week, a new baby) and cancel after. Annual refunds are limited, so switch to monthly at your next renewal rather than mid-term.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "In the Instacart app or on instacart.com open the menu or Account icon, choose Your Instacart+ membership, then Manage your membership > Cancel membership > Continue to cancel > Confirm cancellation. A confirmation email follows.",
+        "url": "https://www.instacart.com/help/section/107169420/423178048",
+        "gotchas": "The 14-day free trial auto-renews to the $99/year plan, not the monthly one. After cancelling, $0 delivery fees continue to the end of the billing period. Annual fees are refundable only if you cancel within 5 calendar days of the paid term and have placed no orders with the membership; otherwise there is no refund."
+      }
+    },
+    "sources": [
+      "https://www.instacart.com/instacart-plus",
+      "https://www.instacart.com/help/section/107169420/423178048",
+      "https://www.instacart.com/terms"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "doordash-dashpass",
+    "name": "DoorDash DashPass",
+    "url": "https://www.doordash.com/dashpass/",
+    "match": {
+      "patterns": [
+        "DASH ?PASS"
+      ],
+      "examples": [
+        "DOORDASH*DASHPASS",
+        "DD *DOORDASH DASHPASS",
+        "DOORDASH DASHPASS SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "DashPass monthly"
+        },
+        {
+          "amount": 96,
+          "cadence": "annual",
+          "plan": "DashPass annual"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "At $9.99/mo it saves delivery fees only if you order several times a month. Pause or cancel in slow months and restart when you need it; benefits run to the end of the billing period.",
+    "plans": {
+      "rotate": {
+        "pattern": "Cancel or pause DashPass in months you cook at home and restart in the months you order a lot. DoorDash lets you pause from the Manage DashPass page. Check whether a card benefit covers it before paying yourself.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Open the DoorDash app or doordash.com, tap your account icon, open Manage DashPass, tap Cancel Membership, choose a reason and confirm with Cancel DashPass. You get a confirmation email.",
+        "url": "https://help.doordash.com/en-us/consumers/article/how-do-i-cancel-my-dashpass-subscription",
+        "gotchas": "Cancel at least 24 hours before the next scheduled payment. Benefits stay active until the billing period ends, but cancelling during a free trial ends them immediately. The same page offers Pause as an alternative. Some card-linked promotions (for example from certain credit cards) step up to the full price after the promo months."
+      }
+    },
+    "sources": [
+      "https://help.doordash.com/en-us/consumers/article/how-do-i-cancel-my-dashpass-subscription",
+      "https://help.doordash.com/en-us/consumers/article/what-is-dashpass",
+      "https://www.ridesharingdriver.com/doordash-dashpass-savings/",
+      "https://recurdash.com/subscription-pricing/doordash-dashpass"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "uber-one",
+    "name": "Uber One",
+    "url": "https://www.uber.com/us/en/u/uber-one/",
+    "match": {
+      "patterns": [
+        "UBER ?\\*? ?ONE\\b"
+      ],
+      "examples": [
+        "UBER ONE",
+        "UBER *ONE MEMBERSHIP",
+        "UBER ONE HELP.UBER.COM CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Uber One monthly"
+        },
+        {
+          "amount": 96,
+          "cadence": "annual",
+          "plan": "Uber One annual"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "$9.99/mo covers delivery fees and ride perks. Worth it only if you use it a few times a month; otherwise end it and rejoin when needed. No refunds once a billing cycle has begun.",
+    "plans": {
+      "rotate": {
+        "pattern": "End Uber One after months with few orders or rides and rejoin the month you travel or order a lot. End it a couple of days before renewal, since fees are not refunded mid-cycle.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "In the Uber app open the Uber One section, choose Manage Membership, then End Membership.",
+        "url": "https://www.uber.com/us/en/u/uber-one/",
+        "gotchas": "Charges are non-refundable once a billing cycle begins. A charge made within about 48 hours of renewal may still go through; Uber often reverses it, but some members report needing to contact support, so cancel at least 48 hours ahead. Uber Cash and credits earned through the membership may be lost when it ends."
+      }
+    },
+    "sources": [
+      "https://www.uber.com/us/en/u/uber-one/",
+      "https://www.dealnews.com/features/uber-one/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "grubhub-plus",
+    "name": "Grubhub+",
+    "url": "https://www.grubhub.com/plus",
+    "match": {
+      "patterns": [
+        "GRUBHUB ?\\+",
+        "GRUBHUB PLUS",
+        "GRUBHUB.{0,60}(MEMBERSHIP|SUBSCR)"
+      ],
+      "examples": [
+        "GRUBHUB+ MEMBERSHIP",
+        "GRUBHUB PLUS",
+        "GRUBHUB+ CHICAGO IL"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Grubhub+ monthly"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Amazon Prime members get Grubhub+ free by linking accounts. If you pay from about $9.99/mo for it and also have Prime, you are paying twice for the same perk.",
+    "plans": {
+      "cancel": {
+        "howTo": "First link your Amazon Prime account to Grubhub using the Prime offer page. Grubhub then cancels your paid plan, and the Prime-based membership starts the day after your current billing cycle ends. Without Prime, cancel in your Grubhub account under the Grubhub+ membership settings or contact Grubhub support.",
+        "url": "https://lp.grubhub.com/grubhub-amazon-prime/",
+        "gotchas": "The free Prime benefit ends the moment Prime ends and never converts to a paid plan on its own. Grubhub+ Credit from pickup expires 90 days after the most recent credit is issued and cannot be used on alcohol. Grubhub can change or end the Prime offer at any time. The paid plan is reported as starting at $9.99/mo and what you pay can be higher, so confirm it in the app."
+      }
+    },
+    "sources": [
+      "https://lp.grubhub.com/grubhub-amazon-prime/",
+      "https://recurdash.com/subscription-pricing/grubhub-plus"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "hellofresh",
+    "name": "HelloFresh",
+    "url": "https://www.hellofresh.com/",
+    "match": {
+      "patterns": [
+        "HELLO ?FRESH"
+      ],
+      "examples": [
+        "HELLOFRESH",
+        "HELLOFRESH US NEW YORK NY",
+        "HELLOFRESH.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Weekly boxes plus a shipping fee, charged automatically unless you skip or pause by the cutoff. Skip weeks and pause between stretches instead of paying every week.",
+    "plans": {
+      "rotate": {
+        "pattern": "Order for a few weeks, skip or pause for a few, and come back when you want a reset. Set a calendar reminder for the skip cutoff, which is 11:59 pm PST five days before delivery. Savings are modest because you still buy groceries in the weeks you skip.",
+        "monthsOffPerYear": 2
+      },
+      "cancel": {
+        "howTo": "Log in, click your name > Account Settings, open Plan settings, scroll to Status and click Cancel Plan, then follow the prompts. To skip instead, select the delivery day and click Skip Week.",
+        "url": "https://www.hellofresh.com/about/how-to-cancel-hellofresh-subscription",
+        "gotchas": "Changes must be made by 11:59 pm PST, five days before the delivery or you pay for that box. Free add-ons from new-customer offers usually end if you cancel and may not return when you reactivate. The first-box offer does not cover shipping, upgrades or add-ons."
+      }
+    },
+    "sources": [
+      "https://www.hellofresh.com/about/how-to-cancel-hellofresh-subscription",
+      "https://www.hellofresh.com/stories/research/hellofresh-vs-blue-apron",
+      "https://www.hellofresh.com/about/menus-and-plans"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "blue-apron",
+    "name": "Blue Apron",
+    "url": "https://www.blueapron.com/",
+    "match": {
+      "patterns": [
+        "BLUE ?APRON"
+      ],
+      "examples": [
+        "BLUE APRON",
+        "BLUEAPRON.COM",
+        "BLUE APRON NEW YORK NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Weekly boxes bill automatically, with per-serving price falling as order size grows and a shipping fee on top. Skip weeks in advance and keep it for weeks you actually cook.",
+    "plans": {
+      "rotate": {
+        "pattern": "Skip upcoming deliveries up to five weeks ahead from the Upcoming page and keep a rolling plan of two or three boxes a month. There is no minimum commitment, so you can also pause for a few months. Savings are modest because you still buy groceries in skipped weeks.",
+        "monthsOffPerYear": 2
+      },
+      "cancel": {
+        "howTo": "Open Plan Settings, choose Edit, then Pause/Cancel Subscription and follow the prompts.",
+        "url": "https://support.blueapron.com/hc/en-us/articles/203146687-How-do-I-cancel-my-account",
+        "gotchas": "Orders marked Order Processed or Shipped on the Upcoming page have already been charged and cannot be cancelled. The plan auto-renews, so skip or cancel before the weekly cutoff. Blue Apron+ (about $9.99/month per the company blog) is a separate paid membership for free shipping; check you did not enroll. Shipping and per-serving prices on the support page may be dated."
+      }
+    },
+    "sources": [
+      "https://support.blueapron.com/hc/en-us/articles/10238944320788-How-much-will-my-subscription-cost",
+      "https://support.blueapron.com/hc/en-us/articles/203146687-How-do-I-cancel-my-account",
+      "https://support.blueapron.com/hc/en-us/articles/202117806-How-do-I-skip-a-delivery",
+      "https://blog.blueapron.com/guides/membership-autoship-faq"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "factor-meals",
+    "name": "Factor",
+    "url": "https://www.factor75.com/",
+    "match": {
+      "patterns": [
+        "FACTOR[ _]?75",
+        "FACTOR[ _]?MEALS"
+      ],
+      "examples": [
+        "FACTOR75",
+        "FACTOR 75 NEW YORK NY",
+        "FACTOR75.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Prepared meals billed weekly with a shipping fee on every delivery. Skip the weeks you will not eat them; changes are due about five days before delivery.",
+    "plans": {
+      "rotate": {
+        "pattern": "Order for busy stretches (a new job, a baby, travel prep) and skip the rest. Pick the smallest weekly meal count that covers your gap. Savings are modest because you still eat in the weeks you skip.",
+        "monthsOffPerYear": 2
+      },
+      "cancel": {
+        "howTo": "Log in on factor75.com or the app, open your account and plan settings, and choose pause or cancel. You can also skip individual deliveries from the Upcoming deliveries view.",
+        "url": "https://www.factor75.com/about/how-it-works",
+        "gotchas": "Factor says you can pause or cancel at any time, but changes are due about five days before delivery and the exact cutoff shows in your account. A shipping fee applies on every delivery. Menu labels may differ from these steps, so follow the on-screen prompts."
+      }
+    },
+    "sources": [
+      "https://www.factor75.com/about/how-it-works",
+      "https://www.factor75.com/eat",
+      "https://www.factor75.com/eat/meal-delivery-for-one"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "home-chef",
+    "name": "Home Chef",
+    "url": "https://www.homechef.com/",
+    "match": {
+      "patterns": [
+        "HOME ?CHEF\\b"
+      ],
+      "examples": [
+        "HOMECHEF",
+        "HOME CHEF CHICAGO IL",
+        "HOMECHEF.COM"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Weekly meal kits with a minimum order and shipping at checkout. Skip any week before the Friday noon CT cutoff, and note that 'pause' actually cancels the plan.",
+    "plans": {
+      "rotate": {
+        "pattern": "Keep the subscription but skip the weeks you will be away or eating out, from the Upcoming Orders page. Home Chef lets you skip any week without cancelling, so you only pay for the weeks you cook.",
+        "monthsOffPerYear": 2
+      },
+      "cancel": {
+        "howTo": "Log in, open Account > Account Settings and choose Pause My Account at the bottom of the left-hand tabs (in the app: Account > My Settings > Pause My Account). Despite the name this cancels the subscription, and it is complete only after the confirmation screen and email. Your first order is handled separately through support.",
+        "url": "https://support.homechef.com/hc/en-us/articles/210097853-How-do-I-cancel-my-subscription",
+        "gotchas": "Home Chef's support site says 'pause' actually cancels the subscription, which you can reactivate later. Deadlines are noon CT on the Friday before delivery; later changes are still billed. If you changed before the deadline and have timestamped proof, the terms promise a credit or refund within 30 days. Prices (about $9.99 a serving) and minimum orders vary by plan."
+      }
+    },
+    "sources": [
+      "https://support.homechef.com/hc/en-us/articles/210097853-How-do-I-cancel-my-subscription",
+      "https://support.homechef.com/hc/en-us/articles/210097763-How-much-does-Home-Chef-cost",
+      "https://support.homechef.com/hc/en-us/articles/208562016-Can-I-control-which-weeks-I-receive-meals",
+      "https://www.homechef.com/terms"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "barkbox",
+    "name": "BarkBox",
+    "url": "https://bark.co/",
+    "match": {
+      "patterns": [
+        "BARK ?BOX",
+        "BARK\\.CO\\b",
+        "SUPER CHEWER"
+      ],
+      "examples": [
+        "BARKBOX",
+        "BARKBOX INC NEW YORK NY",
+        "BARK.CO"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Monthly toy and treat box starting around $24 a month. Six- and twelve-month plans charge the remainder if you cancel early, so pick monthly or skip months.",
+    "plans": {
+      "rotate": {
+        "pattern": "Stay on the flexible monthly plan and skip months when the toy pile is already big. Skip a renewal or cancel before your next bill date from your account. Avoid 6 and 12 month prepay plans if you want to rotate.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Cancel or skip a renewal from your BarkBox account before your next bill date. To end a 6 or 12 month commitment early, contact the Happy Team.",
+        "url": "https://faq.barkbox.com/hc/en-us/articles/360033801474-What-is-your-cancellation-policy-How-do-I-cancel-",
+        "gotchas": "On 6 and 12 month plans the terms say you are charged for the rest of the commitment if you cancel early, and you must act by the first day of the month after your current subscription period ends. The homepage says \"starting at $24 a month\"; checkout shows the real price, and the price depends on plan length and add-ons."
+      }
+    },
+    "sources": [
+      "https://faq.barkbox.com/hc/en-us/articles/360033801474-What-is-your-cancellation-policy-How-do-I-cancel-",
+      "https://bark.co/pages/subscriptions",
+      "https://faq.barkbox.com/hc/en-us/articles/4402405740567-How-much-is-BarkBox-",
+      "https://bark.co/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "dollar-shave-club",
+    "name": "Dollar Shave Club",
+    "url": "https://us.dollarshaveclub.com/",
+    "match": {
+      "patterns": [
+        "DOLLAR ?SHAVE"
+      ],
+      "examples": [
+        "DOLLAR SHAVE CLUB",
+        "DOLLARSHAVECLUB.COM",
+        "DOLLAR SHAVE CLUB VENICE CA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Razor and grooming shipments with no membership fee, but they keep coming on your set schedule. Stretch the interval or skip until your stockpile runs low.",
+    "plans": {
+      "rotate": {
+        "pattern": "Move shipments to every second or third month, or use Skip Order and Pause Subscription on the Next Box tab. Add products only when you run out, so blades are not piling up in a drawer.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Visit Subscriptions on your account page, find the subscription and select Cancel Subscription. If you run into trouble, the Club Pros support team says it will honor the request right away.",
+        "url": "https://ask.dollarshaveclub.com/en-US/manage-my-subscriptions-264213",
+        "gotchas": "Cancel at least one day before your order date to avoid an unwanted charge. There is no membership fee, only product charges. Skip Order and Pause Subscription on the Next Box tab are alternatives if you only need a break."
+      }
+    },
+    "sources": [
+      "https://ask.dollarshaveclub.com/en-US/manage-my-subscriptions-264213",
+      "https://ask.dollarshaveclub.com/en-US/what-is-your-cancellation-policy-192367"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "nyt-digital",
+    "name": "The New York Times",
+    "url": "https://www.nytimes.com/subscription",
+    "match": {
+      "patterns": [
+        "NYTIMES",
+        "NEW YORK TIMES(?! ?SQ)",
+        "NYT\\*",
+        "NYT DIGITAL"
+      ],
+      "examples": [
+        "NYTIMES*NYTIMES.COM",
+        "NYTIMES.COM DIGITAL SUBSCRIPTION",
+        "THE NEW YORK TIMES"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "Intro rates give way to a much higher renewal price. Contact them before the first renewal: retention offers are widely reported. Also check you are not paying twice for The Athletic, which All Access includes.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "You are about to renew from an introductory rate to full price. Subscriber-retention offers are widely reported when you start to cancel, and similar publications run low first-year rates for new readers.",
+        "script": "Hi, my New York Times subscription is about to renew at a much higher price than I started at. I read it regularly, but I'm comparing it with other news subscriptions that are offering new readers a low first-year rate. I'd like to stay if you can give me a comparable discounted rate for the next twelve months. If there's no retention offer, please cancel effective at the end of this billing period and send me a confirmation email.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "A week or two before the introductory rate ends. Use chat or the cancel flow; offers are not guaranteed."
+      },
+      "cancel": {
+        "howTo": "Sign in at nytimes.com, open your account page, go to Subscription overview and choose Cancel subscription. If you do not see the option, use the help center chat. Subscribed through Apple or Google? Cancel in those subscription settings.",
+        "url": "https://help.nytimes.com/hc/en-us",
+        "gotchas": "Introductory pricing steps up at renewal. Third-party sources describe plans billed every four weeks rather than monthly, which would mean 13 charges a year; check your own billing cycle. The App Store lists All Access Monthly at $29.99, while third-party sources report about $25 on the website, so compare before subscribing in the iPhone app. Cancelling normally keeps access to the end of the paid period."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/nytimes-us-and-world-news/id284862083",
+      "https://subger.com/en/service/nyt",
+      "https://www.nytimes.com/subscription"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "wall-street-journal",
+    "name": "The Wall Street Journal",
+    "url": "https://www.wsj.com/",
+    "match": {
+      "patterns": [
+        "WSJ\\.COM",
+        "WSJ\\*",
+        "WALL STREET JOURNAL",
+        "DOW JONES"
+      ],
+      "examples": [
+        "WSJ.COM",
+        "WALL STREET JOURNAL",
+        "WSJ*DIGITAL SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Low introductory rates jump to a high standard rate after the promo. Contact customer service before renewal and ask for a retention rate; accept only a price you would pay today.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "The promotional rate is ending and the standard rate is several times higher. Retention offers when you call to cancel are commonly reported; hold out for a price you would accept as a new customer.",
+        "script": "Hello, I'd like to talk about my Wall Street Journal digital subscription, which is about to renew at the full price. I read it often, but the standard rate is far above what I started at, and other publications are offering new readers a low first-year price. Is there a retention rate you can offer for the next year? If not, please cancel it effective at the end of this period and email me a confirmation.",
+        "expectedDiscountPct": [
+          15,
+          40
+        ],
+        "bestTime": "One to two weeks before the promotional rate ends. Phone or chat usually reaches the retention team."
+      },
+      "cancel": {
+        "howTo": "Use WSJ Customer Center (chat or phone) to cancel; it may not be a one-click option. Subscribed via Apple or Google? Cancel in those subscription settings.",
+        "url": "https://customercenter.wsj.com/",
+        "gotchas": "Third-party sources report the standard rate as $38.99 plus tax every four weeks, which means 13 charges a year, and the App Store lists WSJ at up to $44.99 for some plans. You normally keep access to the end of the paid period and refunds for the current period are not typical. Confirm your own price and billing cycle in account settings."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/the-wall-street-journal-news/id364387007",
+      "https://subtracker.io/cancel/cancel-wsj",
+      "https://terms.law/ToS-Watchdog/news-subscriptions/wsj/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "washington-post",
+    "name": "The Washington Post",
+    "url": "https://subscribe.washingtonpost.com/",
+    "match": {
+      "patterns": [
+        "WASHINGTON ?POST",
+        "WASHPOST"
+      ],
+      "examples": [
+        "WASHINGTONPOST.COM",
+        "THE WASHINGTON POST",
+        "WASHINGTON POST DIGITAL"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Promo-priced digital plans renew at a higher rate. Check your renewal date, then ask for a retention offer before you cancel; access continues to the end of the paid period.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Your renewal price is higher than the first-year rate and other outlets are offering new readers deep first-year discounts. Cancelling from the My Post profile is easy, so the retention team has reason to make an offer.",
+        "script": "Hi, I've been a Washington Post digital subscriber and my plan is about to renew at a higher price. I'd like to keep reading, but I'm weighing it against other news subscriptions that are offering new readers a low first-year rate. Can you offer me a discounted rate for the next twelve months? If not, please cancel the renewal and confirm by email so I'm not charged.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "Before the first renewal date, through chat or the help center contact form."
+      },
+      "cancel": {
+        "howTo": "If you bought directly from the Post, cancel through your My Post profile. Subscriptions bought through Apple, Amazon or Google Play must be cancelled through those stores.",
+        "url": "https://helpcenter.washingtonpost.com/hc/en-us/articles/360000177571-How-to-cancel-your-digital-only-subscription",
+        "gotchas": "Cancelling stops charges for the following billing cycle and your digital access continues to the end of the current period; afterwards you keep a limited monthly article allowance. Check price and renewal terms in the My Post profile because plans (Core and Premium) and promo rates change."
+      }
+    },
+    "sources": [
+      "https://helpcenter.washingtonpost.com/hc/en-us/articles/360000177571-How-to-cancel-your-digital-only-subscription",
+      "https://helpcenter.washingtonpost.com/hc/en-us/articles/115000443968-Compare-subscription-packages"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "the-athletic",
+    "name": "The Athletic",
+    "url": "https://www.nytimes.com/athletic/",
+    "match": {
+      "patterns": [
+        "THE ATHLETIC(?= ?(\\.COM|MEDIA|SUBSCR|DIGITAL|NEW YORK|NYTIMES|\\*)|$)",
+        "THEATHLETIC",
+        "ATHLETIC MEDIA"
+      ],
+      "examples": [
+        "THE ATHLETIC",
+        "THEATHLETIC.COM",
+        "ATHLETIC MEDIA COMPANY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Sports journalism that NYT All Access already includes. Check for a duplicate, then ask for a retention rate before the renewal date or cancel and read the free articles.",
+    "plans": {
+      "haggle": {
+        "leverage": "Annual pricing is cheaper than monthly, and retention discounts are commonly offered when you start to cancel. If you also hold an NYT All Access plan, the standalone Athletic plan is a duplicate and you can cancel it with no loss.",
+        "script": "Hi, I subscribe to The Athletic and my plan is coming up for renewal. I enjoy the coverage but I'm trimming subscriptions, and the renewal price is higher than I'd like. Is there a discounted annual rate or retention offer available for the next year? If not, please cancel at the end of this billing period and send me a confirmation email so I know I won't be charged.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "One to two weeks before renewal. Offers are not guaranteed."
+      },
+      "cancel": {
+        "howTo": "Sign in to your account, open subscription settings and choose Cancel. If your Athletic access comes through a NYT account, manage it there. If you subscribed through Apple or Google, cancel in those subscription settings.",
+        "gotchas": "Reported standalone prices range from $7.99 to $9.99 a month, or $71.99 a year, and sources disagree, so check your own price in account settings. A NYT All Access bundle includes The Athletic. Some plans have 7-day free trials that auto-renew."
+      }
+    },
+    "sources": [
+      "https://www.lowermysubs.com/lower/the_athletic",
+      "https://digiday.com/media/athletic-tries-get-subscribers-renew/",
+      "https://visualping.io/pages/the-athletic-pricing-alerts-4894568"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "the-economist",
+    "name": "The Economist",
+    "url": "https://www.economist.com/",
+    "match": {
+      "patterns": [
+        "THE ECONOMIST(?= ?(\\.COM|NEWSPAPER|GROUP|SUBSCR|DIGITAL|LONDON|NEW YORK|$))",
+        "ECONOMIST\\.COM",
+        "ECONOMIST NEWSPAPER",
+        "ECONOMIST GROUP"
+      ],
+      "examples": [
+        "THE ECONOMIST",
+        "ECONOMIST NEWSPAPER LTD",
+        "ECONOMIST.COM SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Digital access is reported around $200-$300 a year at full price and renews automatically. Ask for a retention discount before renewal; a library card may cover the magazine for free.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "The renewal price is far above the introductory rate, and The Economist regularly sells discounted first-year plans to new readers. Retention teams commonly match a version of that offer.",
+        "script": "Hello, my Economist subscription is coming up for renewal at a much higher price than I paid to start. I enjoy reading it but I'm comparing it to the discounted first-year rate new subscribers get. Can you offer me the same or a similar rate for the next twelve months? If not, please cancel the renewal and email me a confirmation so I'm not charged.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "About two weeks before renewal, by phone or chat to customer care."
+      },
+      "cancel": {
+        "howTo": "Contact Economist customer care by phone, chat or the contact form in your account, or manage the plan in your account page. If you subscribed through Apple or Google, cancel in those subscription settings.",
+        "gotchas": "Subscriptions auto-renew at the then-current price, which is usually higher than the introductory rate. Reported US prices are $24.90/mo (monthly) or about $199-$209 a year, and sources disagree, so confirm your own price in account settings. Cancel before the renewal date to avoid the next charge."
+      }
+    },
+    "sources": [
+      "https://subger.com/en/service/economist"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "apple-news-plus",
+    "name": "Apple News+",
+    "url": "https://www.apple.com/apple-news/",
+    "match": {
+      "patterns": [
+        "APPLE NEWS"
+      ],
+      "examples": [
+        "APPLE NEWS+",
+        "APPLE NEWS PLUS SUBSCRIPTION"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Apple News+"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel",
+      "keep"
+    ],
+    "why": "$12.99/mo for magazines, newspapers and puzzles, also bundled in Apple One Premier. Subscribe in months you read, cancel at least a day before renewal, and resubscribe later.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      },
+      {
+        "name": "Apple News (free tier)",
+        "url": "https://www.apple.com/apple-news/",
+        "note": "The free app still covers headlines and free articles from many outlets."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Keep Apple News+ for a few months when you want magazines or the daily puzzles, then cancel. Apple restarts it any time from the News app. Check whether an Apple One Premier plan already bundles it before paying separately.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "On iPhone open Settings, tap your name, then Subscriptions > Apple News+ > Cancel Subscription. You can also manage it from the Apple News app.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Cancel at least a day before the renewal date. Cancelling during a free trial ends access immediately, including family members. If you have Apple News+ through Apple One Premier, you change the Apple One plan instead."
+      }
+    },
+    "sources": [
+      "https://www.apple.com/apple-news/",
+      "https://support.apple.com/en-us/118428",
+      "https://www.apple.com/apple-one/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "the-atlantic",
+    "name": "The Atlantic",
+    "url": "https://www.theatlantic.com/",
+    "match": {
+      "patterns": [
+        "ATLANTIC MONTHLY",
+        "THEATLANTIC",
+        "THE ATLANTIC(?= ?(\\.COM|MONTHLY|MEDIA|SUBSCR|DIGITAL|MAGAZINE|WASHINGTON|$))"
+      ],
+      "examples": [
+        "THE ATLANTIC",
+        "ATLANTIC MONTHLY GROUP",
+        "THEATLANTIC.COM"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Digital (reported, third-party)"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "Digital (reported August 2026)"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Print + Digital (reported)"
+        },
+        {
+          "amount": 130,
+          "cadence": "annual",
+          "plan": "Premium (reported)"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "Premium Plus (reported)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Digital is reported at about $80-$90 a year. Annual renewals are easy to forget; ask for a retention rate each year or cancel before the renewal date.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Annual renewals charge the full list price and publishers routinely sell first-year discounts. You are most likely to get a retention rate when you contact them before renewal and say you are about to cancel.",
+        "script": "Hi, my Atlantic subscription renews soon. I like the magazine, but I'm cutting back on subscriptions and the renewal price is higher than my first-year rate. Is there a discounted renewal or retention offer for the next year? If there isn't, please cancel the auto-renewal now and email me a confirmation so I won't be charged.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Two to four weeks before the annual renewal date."
+      },
+      "cancel": {
+        "howTo": "Sign in to your account on theatlantic.com, open Manage Subscription and turn off auto-renew or cancel, or contact customer care. If you subscribed through Apple or Google, cancel in those subscription settings.",
+        "gotchas": "Annual plans renew automatically at the then-current price. A Premium Plus tier (reported at $199.99/yr) adds sharing; check you did not upgrade by accident. Third-party sources disagree on the digital price ($79.99 to $89.99 a year) and the official site could not be read, so confirm yours in account settings."
+      }
+    },
+    "sources": [
+      "https://recurdash.com/subscription-pricing/the-atlantic",
+      "https://subger.com/en/service/atlantic"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "the-new-yorker",
+    "name": "The New Yorker",
+    "url": "https://www.newyorker.com/",
+    "match": {
+      "patterns": [
+        "THE NEW ?YORKER(?! ?(HOTEL|DELI|PIZZA|BAR))",
+        "NEW ?YORKER\\.COM",
+        "NEW ?YORKER ?(MAGAZINE|SUBSCR|DIGITAL)",
+        "CONDE ?NAST.{0,60}NEW ?YORKER"
+      ],
+      "examples": [
+        "THE NEW YORKER",
+        "NEWYORKER.COM",
+        "NEWYORKER SUBSCRIPTION CONDE NAST"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "Introductory offers (reported around $65 for the first year) step up at renewal. Ask for the intro rate again when it renews, or let a library lend the issues.",
+    "alternatives": [
+      {
+        "name": "Libby (your public library)",
+        "url": "https://libbyapp.com/",
+        "note": "Many libraries lend digital magazines and newspapers for free with a library card; availability varies by library."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Condé Nast sells low first-year digital rates to new readers, so a renewal near list price is out of line with what new customers pay. Say you will cancel and ask for the new-subscriber rate.",
+        "script": "Hello, my New Yorker subscription is about to renew at a much higher price than my first year. I'd like to keep reading, but new subscribers get a low introductory rate and I'm weighing whether to cancel. Can you give me a similar rate for the next twelve months? If not, please turn off auto-renewal and email me a confirmation so I won't be charged.",
+        "expectedDiscountPct": [
+          10,
+          30
+        ],
+        "bestTime": "A few weeks before the first renewal, by phone or chat with customer care."
+      },
+      "cancel": {
+        "howTo": "Use the Manage Subscription page in your account or contact New Yorker customer care to turn off auto-renewal. If you subscribed through Apple or Google, cancel in those subscription settings.",
+        "gotchas": "Third-party sources report a first-year rate near $65 that renews at a much higher price, and an app-store price of about $11.99 a month. Sources disagree, so confirm your own price and renewal date in account settings."
+      }
+    },
+    "sources": [
+      "https://www.thepricer.org/how-much-does-new-yorker-subscription-cost/",
+      "https://subger.com/en/service/new-yorker",
+      "https://www.barnesandnoble.com/w/new-yorker-conde-nast/1101056695"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "tinder",
+    "name": "Tinder",
+    "url": "https://tinder.com/",
+    "match": {
+      "patterns": [
+        "\\bTINDER\\b"
+      ],
+      "examples": [
+        "TINDER",
+        "TINDER* GOLD",
+        "TINDER.COM"
+      ],
+      "billedVia": "apple"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Plus, Gold and Platinum cost different amounts by plan length and region and auto-renew. Subscribe in short bursts while actively dating and switch off auto-renew right away.",
+    "plans": {
+      "rotate": {
+        "pattern": "Buy the shortest term only while you are actively using Tinder, switch auto-renew off the same day you buy, and let it lapse during breaks. Longer plans look cheaper per month but renew automatically for the full term.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Cancel where you bought it: iPhone Settings > your name > Subscriptions > Tinder; Android Google Play > Payments & subscriptions > Subscriptions > Tinder; web purchases in your Tinder account settings under manage payment account.",
+        "gotchas": "Deleting the app or your profile does not stop billing. The App Store shows several price points for Gold ($13.99 to $24.99) and Plus ($9.99), and one-off add-ons such as Boosts and Super Likes are separate charges. Prices vary by region and plan length."
+      }
+    },
+    "sources": [
+      "https://tinder.com/feature/subscription-tiers",
+      "https://apps.apple.com/us/app/tinder-dating-app-meet-chat/id547702041"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "bumble",
+    "name": "Bumble",
+    "url": "https://bumble.com/",
+    "match": {
+      "patterns": [
+        "^BUMBLE(?! ?(BEE|&|AND ))",
+        "BUMBLE TRADING"
+      ],
+      "examples": [
+        "BUMBLE",
+        "BUMBLE BOOST",
+        "BUMBLE TRADING AUSTIN TX"
+      ],
+      "billedVia": "apple"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Premium and Boost renew automatically at varying prices (the App Store lists several price points). Buy only while actively using the app and end auto-renew straight away.",
+    "plans": {
+      "rotate": {
+        "pattern": "Buy the shortest term only while you are actively using Bumble, switch auto-renew off the same day you buy, and let it lapse during breaks. Longer plans look cheaper per month but renew automatically for the full term.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Cancel where you bought it: iPhone Settings > your name > Subscriptions > Bumble; Android Google Play > Subscriptions; web purchases through the subscription settings in the Bumble app or the Bumble support site.",
+        "url": "https://support.bumble.com/hc/en-us",
+        "gotchas": "Deleting the app or your account does not stop billing from Apple or Google. The App Store lists Premium at $17.99 to $32.99 and Boost at $2.99 to $12.99, and it does not say which plan length each price covers. BumbleCoins and one-off purchases are separate."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/bumble-dating-meet-friends/id930441707",
+      "https://support.bumble.com/hc/en"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "hinge",
+    "name": "Hinge",
+    "url": "https://hinge.co/",
+    "match": {
+      "patterns": [
+        "^HINGE(?= ?\\+|X\\b|\\.CO|$| SUBSCR| PREMIUM| ROSES| BOOST)",
+        "HINGE\\.CO\\b",
+        "HINGE ?\\+"
+      ],
+      "examples": [
+        "HINGE",
+        "HINGE+ SUBSCRIPTION",
+        "HINGE.CO"
+      ],
+      "billedVia": "apple"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Hinge+ and HingeX renew automatically with several price points on the App Store. Pay only during active periods and switch auto-renew off when you pause.",
+    "plans": {
+      "rotate": {
+        "pattern": "Buy the shortest term only while you are actively using Hinge, switch auto-renew off the same day you buy, and let it lapse during breaks. Longer plans look cheaper per month but renew automatically for the full term.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Cancel where you bought it: iPhone Settings > your name > Subscriptions > Hinge; Android Google Play > Subscriptions. Check the Hinge help center for web purchases.",
+        "url": "https://help.hinge.co/hc/en-us",
+        "gotchas": "Deleting the app or your profile does not stop billing. The App Store lists subscription price points from $14.99 to $34.99, plus Boosts and Roses as separate purchases, and does not say how long each plan runs, so check the renewal date on your Apple or Google subscription page."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/hinge-dating-relationships/id595287172",
+      "https://help.hinge.co/hc/en-us"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "match-com",
+    "name": "Match",
+    "url": "https://www.match.com/",
+    "match": {
+      "patterns": [
+        "MATCH\\.COM",
+        "MATCHCOM",
+        "MATCH (SUBSCRIPTION|MEMBERSHIP)"
+      ],
+      "examples": [
+        "MATCH.COM",
+        "MATCH.COM DALLAS TX",
+        "MATCH SUBSCRIPTION"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Multi-month plans auto-renew at the then-current price. Buy the shortest term while active, turn off auto-renew right away, and cancel again when you stop dating.",
+    "plans": {
+      "rotate": {
+        "pattern": "Buy the shortest term only while you are actively using Match, switch auto-renew off the same day you buy, and let it lapse during breaks. Longer plans look cheaper per month but renew automatically for the full term.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Sign in at match.com, open Account Settings and the subscription or billing page, and turn off auto-renewal or cancel. If you bought through Apple or Google, cancel in those subscription settings.",
+        "gotchas": "Longer plans renew for the full term at the current price unless you cancel before the renewal date, which is shown in account settings. Record any confirmation number or email. Prices vary by plan length and promotions, and no current US list price is confirmed on an official page."
+      }
+    },
+    "sources": [
+      "https://www.match.com/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "ancestry",
+    "name": "Ancestry",
+    "url": "https://www.ancestry.com/",
+    "match": {
+      "patterns": [
+        "ANCESTRY"
+      ],
+      "examples": [
+        "ANCESTRY.COM",
+        "ANCESTRY.COM LLC LEHI UT",
+        "ANCESTRYDNA"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Record access is the product, and you can buy it in bursts. Subscribe for a research push, then cancel: your trees and DNA results stay on a free guest account.",
+    "alternatives": [
+      {
+        "name": "FamilySearch",
+        "url": "https://www.familysearch.org/",
+        "note": "Free genealogy records and trees; many Ancestry users supplement or move their research here."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Buy a month or a few months when you plan a research push, download the records and sources you need, then cancel. Export your tree before you cancel so you keep a copy. Resubscribe when you have new leads.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Go to Account Settings, find the Membership section and select Cancel membership (or Cancel trial). Follow the prompts until you receive a confirmation number, and save it.",
+        "url": "https://help.ancestry.com/hc/en-us/articles/53933302397331-Canceling-a-Membership",
+        "gotchas": "Cancelling stops renewal but benefits continue to the expiration date. Charges can still occur if you cancel too close to renewal. Some semi-annual and annual memberships paid monthly carry a cancellation fee if you leave before the period ends. After expiry your account becomes a free Registered Guest account; trees and DNA results stay but with fewer features."
+      }
+    },
+    "sources": [
+      "https://help.ancestry.com/hc/en-us/articles/53933302397331-Canceling-a-Membership",
+      "https://help.ancestry.com/hc/en-us",
+      "https://www.ancestry.com/offers/subscribe"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "23andme-membership",
+    "name": "23andMe Premium membership",
+    "url": "https://www.23andme.org/",
+    "match": {
+      "patterns": [
+        "23 ?AND ?ME"
+      ],
+      "examples": [
+        "23ANDME",
+        "23ANDME MEMBERSHIP",
+        "23ANDME INC"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "Premium Ancestry + Health membership"
+        }
+      ]
+    },
+    "typicalMonthly": 8.25,
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Premium membership is $99/yr after a trial month, renews automatically and does not warn you before each charge. Save your reports and raw data, then cancel unless you want ongoing updates.",
+    "plans": {
+      "cancel": {
+        "howTo": "Go to your 23andMe Account Settings and cancel or modify your membership. To avoid the next charge, act at least one day before the next billing cycle.",
+        "url": "https://www.23andme.org/legal/terms-of-service/subscription/",
+        "gotchas": "Free trials convert to paid automatically and the terms say you may not be notified before each charge. You keep access to the end of the paid period; afterwards you lose access to membership content, including genetic reports provided as part of the membership. Download the reports and raw data you want first. The company is now run as 23andMe Research Institute (23andme.org), and the older name 23andMe+ no longer appears on its pricing page."
+      }
+    },
+    "sources": [
+      "https://www.23andme.org/shop/premium-ancestry-health",
+      "https://www.23andme.org/legal/terms-of-service/subscription/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "myheritage",
+    "name": "MyHeritage",
+    "url": "https://www.myheritage.com/",
+    "match": {
+      "patterns": [
+        "MY ?HERITAGE"
+      ],
+      "examples": [
+        "MYHERITAGE",
+        "MYHERITAGE.COM",
+        "MYHERITAGE LTD"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Plans (Premium, Complete, PremiumPlus) renew automatically. Use it for a research push, export your tree as GEDCOM, then cancel; FamilySearch offers free records.",
+    "alternatives": [
+      {
+        "name": "FamilySearch",
+        "url": "https://www.familysearch.org/",
+        "note": "Free genealogy records and family trees, no subscription."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe when you have a specific research goal, download matches and records, export your tree as a GEDCOM file, then cancel before the renewal date. Resubscribe when new leads come up.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in, open your account settings, find your subscription and turn off auto-renewal. If you cannot find the option, use the contact form in the Help Center and keep the confirmation.",
+        "url": "https://www.myheritage.com/help/en/collections/17325151-billing-charges-subscription-types",
+        "gotchas": "Subscriptions renew automatically, so cancel before the renewal date. The pricing page lists plan names without amounts, so no US list price is confirmed. Check your own plan and price in account settings."
+      }
+    },
+    "sources": [
+      "https://www.myheritage.com/pricing",
+      "https://www.myheritage.com/help/en/collections/17325151-billing-charges-subscription-types"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "discord-nitro",
+    "name": "Discord Nitro",
+    "url": "https://discord.com/nitro",
+    "match": {
+      "patterns": [
+        "\\bDISCORD\\b"
+      ],
+      "examples": [
+        "DISCORD* NITRO",
+        "DISCORD.COM SAN FRANCISCO CA",
+        "DISCORD NITRO"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Nitro"
+        },
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Nitro Basic"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Nitro yearly"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Nitro is $9.99/mo ($2.99 Basic): bigger uploads, custom emoji, HD streaming and profile perks. Keep it if you use them weekly; otherwise cancel and the free tier remains.",
+    "plans": {
+      "cancel": {
+        "howTo": "In Discord open User Settings > Subscriptions and cancel Nitro. If you subscribed through Apple or Google, cancel in those subscription settings instead.",
+        "gotchas": "Server Boosts you bought separately are their own charge (the App Store lists 1 Server Boost at $4.99/mo and Nitro plus Boost bundles), so check them after cancelling Nitro. Nitro perks end when the paid period does. Discord says price varies by country and plan."
+      }
+    },
+    "sources": [
+      "https://discord.com/nitro",
+      "https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "x-premium",
+    "name": "X Premium",
+    "url": "https://x.com/i/premium_sign_up",
+    "match": {
+      "patterns": [
+        "X CORP\\.? PAID",
+        "TWITTER ?\\*? ?(PAID|VERIFIED|BLUE|PREMIUM)",
+        "X PREMIUM",
+        "\\bX SUBSCRIPTION( CORP)?"
+      ],
+      "examples": [
+        "X CORP. PAID FEATURES",
+        "X CORP. PAID FEATURES TWITTER.COM TX",
+        "TWITTER* VERIFIED",
+        "X SUBSCRIPTION CORP. SAN FRANCISCO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 4,
+          "cadence": "monthly",
+          "plan": "Premium Basic (App Store)"
+        },
+        {
+          "amount": 11,
+          "cadence": "monthly",
+          "plan": "Premium (App Store)"
+        },
+        {
+          "amount": 50,
+          "cadence": "monthly",
+          "plan": "Premium+ (App Store)"
+        },
+        {
+          "amount": 42,
+          "cadence": "annual",
+          "plan": "Premium Basic annual (App Store)"
+        },
+        {
+          "amount": 114.99,
+          "cadence": "annual",
+          "plan": "Premium annual (App Store)"
+        },
+        {
+          "amount": 490,
+          "cadence": "annual",
+          "plan": "Premium+ annual (App Store)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Since Oct 2026 X sells Grok, Cursor and X Premium as one X Subscription (Plus $8 to Ultra $200), so cancelling also ends Grok and Cursor. Cancel it unless you use those, earn on X or rely on the perks.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel where you bought it: iPhone Settings > your name > Subscriptions > X; Android Google Play > Subscriptions; on the web use the Premium or subscription settings in your X account (Premium > Manage subscription).",
+        "gotchas": "A web purchase and an App Store purchase are separate subscriptions; cancelling one does not stop the other. App Store prices run higher than web prices, and no web price is confirmed on an official X page. You keep the perks until the paid period ends. The X Subscription bought through X Subscription Corp also bundles Grok and Cursor, and cancelling it ends all three."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/x/id333903271",
+      "https://help.x.com/en/using-x/x-premium",
+      "https://cursor.com/pricing"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "snapchat-plus",
+    "name": "Snapchat+",
+    "url": "https://www.snapchat.com/plus",
+    "match": {
+      "patterns": [
+        "SNAPCHAT ?\\+",
+        "SNAPCHAT PLUS",
+        "SNAP INC.{0,60}(PLUS|SUBSCR)"
+      ],
+      "examples": [
+        "SNAPCHAT+",
+        "SNAPCHAT PLUS",
+        "SNAP INC. SNAPCHAT+"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 4.99,
+          "cadence": "monthly",
+          "plan": "Snapchat+ (App Store)"
+        },
+        {
+          "amount": 3.99,
+          "cadence": "monthly",
+          "plan": "Snapchat+ (earlier price)"
+        }
+      ]
+    },
+    "typicalMonthly": 4.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Snapchat+ at $4.99/mo (App Store) buys cosmetic and early-access perks such as custom icons, a badge and chat wallpapers. Cheap, so keep it if you use the perks; cancel when you stop.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel where you bought it: iPhone Settings > your name > Subscriptions > Snapchat+; Android Google Play > Subscriptions. In the Snapchat app, open your profile and the Snapchat+ page to manage the subscription.",
+        "gotchas": "Snapchat+ is separate from Memories storage plans and Snapstreak Restore purchases, which appear as their own App Store charges ($1.99 and $0.49 to $1.49 in the listing). Deleting the app does not cancel the subscription."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/snapchat/id447188370",
+      "https://www.snapchat.com/plus"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "telegram-premium",
+    "name": "Telegram Premium",
+    "url": "https://telegram.org/faq_premium",
+    "match": {
+      "patterns": [
+        "^TELEGRAM(?! ?(&|AND |GAZETTE|NEWS|HERALD|TIMES))",
+        "TELEGRAM FZ"
+      ],
+      "examples": [
+        "TELEGRAM PREMIUM",
+        "TELEGRAM FZ-LLC",
+        "TELEGRAM.ORG"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 4.99,
+          "cadence": "monthly",
+          "plan": "Telegram Premium"
+        },
+        {
+          "amount": 35.99,
+          "cadence": "annual",
+          "plan": "Telegram Premium annual"
+        },
+        {
+          "amount": 1.19,
+          "cadence": "weekly",
+          "plan": "Telegram Premium, one week"
+        }
+      ]
+    },
+    "typicalMonthly": 4.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Telegram Premium is $4.99/mo or $35.99/yr (App Store listing) for bigger files and extra features. Keep it if you use the limits; the free app is fully usable otherwise.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel with the provider you used: send /stop to @PremiumBot, or on iPhone go to Settings > your name > Subscriptions, or on Android Google Play > Payments & subscription > Subscriptions.",
+        "url": "https://telegram.org/faq_premium",
+        "gotchas": "Cancelling stops future payments, and Premium features remain until the current billing period ends. Prices vary by country and the yearly plan is discounted. Telegram Stars purchases are separate, one-off charges."
+      }
+    },
+    "sources": [
+      "https://telegram.org/faq_premium",
+      "https://apps.apple.com/us/app/telegram-messenger/id686449807"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "meta-verified",
+    "name": "Meta Verified",
+    "url": "https://www.meta.com/meta-verified/",
+    "match": {
+      "patterns": [
+        "META ?\\*? ?VERIFIED",
+        "FACEBK ?\\*? ?VERIFIED",
+        "FB ?\\*? ?VERIFIED"
+      ],
+      "examples": [
+        "META VERIFIED",
+        "FACEBK *VERIFIED",
+        "FB *VERIFIED"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Standard (mobile app)"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Standard (web)"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 149.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 499.99,
+          "cadence": "monthly",
+          "plan": "Max"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "verdict": "cancel",
+    "also": [
+      "keep"
+    ],
+    "why": "Badge, impersonation protection and support at $11.99/mo on web, $14.99 in the app, per profile. Worth it mainly for creators and small businesses; most individuals can cancel.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel on the platform where you bought it: the subscription management screen in the Facebook or Instagram app, or Apple or Google subscription settings. The Meta Verified Help Center on Facebook or Instagram has the current menu path.",
+        "url": "https://www.meta.com/meta-verified/",
+        "gotchas": "Billing is per profile, so a Facebook and an Instagram subscription are separate charges. The web price ($11.99) is cheaper than the app price ($14.99), and the Plus ($49.99), Premium ($149.99) and Max ($499.99) tiers are app-only. Subscriptions renew automatically and the verified badge is removed when the subscription ends."
+      }
+    },
+    "sources": [
+      "https://www.meta.com/meta-verified/"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "patreon",
+    "name": "Patreon (memberships)",
+    "url": "https://www.patreon.com/",
+    "match": {
+      "patterns": [
+        "\\bPATREON\\b"
+      ],
+      "examples": [
+        "PATREON* MEMBERSHIP",
+        "PATREON* MEMBERSHIP INTERNET CA",
+        "PATREON* PLEDGE"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Each pledge is a separate charge to a creator you chose, so one line on your statement can hide several memberships. Keep the ones you value; review the list each quarter and cancel the rest.",
+    "plans": {
+      "cancel": {
+        "howTo": "Open Patreon, go to your memberships list, choose the creator, then edit or cancel the membership. Repeat for every creator you want to drop.",
+        "url": "https://support.patreon.com/hc/en-us",
+        "gotchas": "Patreon bills each creator separately, usually at the start of the month for monthly pledges, so cancelling after the charge date does not undo that month. Purchases made on iOS or Android may be billed by Apple or Google instead. The statement line does not name the creator, so use Patreon billing history to match amounts."
+      }
+    },
+    "sources": [
+      "https://support.patreon.com/hc/en-us"
+    ]
+  },
+  {
+    "category": "shopping-news-social",
+    "pricesCheckedAt": "2026-11",
+    "id": "reddit-premium",
+    "name": "Reddit Premium",
+    "url": "https://www.reddit.com/premium",
+    "match": {
+      "patterns": [
+        "REDDIT ?\\*? ?(PREMIUM|GOLD)"
+      ],
+      "examples": [
+        "REDDIT PREMIUM",
+        "REDDIT* PREMIUM",
+        "REDDIT GOLD"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Reddit Premium (App Store)"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "Reddit Annual Premium (App Store)"
+        }
+      ]
+    },
+    "typicalMonthly": 6.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Ad-free browsing and perks at $6.99/mo or $59.99/yr (App Store listing). Keep it if you are on Reddit daily; otherwise cancel and use the free site.",
+    "plans": {
+      "cancel": {
+        "howTo": "Cancel where you bought it: iPhone Settings > your name > Subscriptions > Reddit; Android Google Play > Subscriptions; web purchases from your Reddit account settings under Premium.",
+        "gotchas": "Deleting the app does not cancel an Apple or Google subscription. Collectible avatars and Reddit Gold awards are one-off purchases that appear as separate charges. Web and app prices can differ, and no web price is confirmed on an official page."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/reddit/id1064216828"
+    ]
+  }
+]

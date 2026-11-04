@@ -1,0 +1,112 @@
+{
+  "file": "discover.csv",
+  "bank": "discover",
+  "statementStart": "2026-01-01",
+  "statementEnd": "2026-10-31",
+  "rows": 366,
+  "active": [
+    {
+      "key": "netflix",
+      "displayName": "Netflix",
+      "match": "NETFLIX",
+      "merchantId": "netflix",
+      "cadence": "monthly",
+      "currentAmount": 22.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "peloton-app",
+      "displayName": "Peloton App",
+      "match": "PELOTON",
+      "merchantId": "peloton-app",
+      "cadence": "monthly",
+      "currentAmount": 12.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "otter-ai",
+      "displayName": "Otter.ai",
+      "match": "OTTER",
+      "merchantId": "otter-ai",
+      "cadence": "monthly",
+      "currentAmount": 16.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "notion",
+      "displayName": "Notion",
+      "match": "NOTION",
+      "merchantId": "notion",
+      "cadence": "monthly",
+      "currentAmount": 10,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "calm",
+      "displayName": "Calm",
+      "match": "CALM",
+      "merchantId": "calm",
+      "cadence": "annual",
+      "currentAmount": 69.99,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "youtube-premium",
+      "displayName": "YouTube Premium",
+      "match": "YOUTUBE",
+      "merchantId": "youtube-premium",
+      "cadence": "monthly",
+      "currentAmount": 13.99,
+      "charges": 10,
+      "active": true
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($4.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 4.99,
+      "charges": 10,
+      "active": true,
+      "candidates": []
+    },
+    {
+      "key": "dropbox",
+      "displayName": "Dropbox",
+      "match": "DROPBOX",
+      "merchantId": "dropbox",
+      "cadence": "annual",
+      "currentAmount": 119.88,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "xfinity",
+      "displayName": "Xfinity",
+      "match": "COMCAST",
+      "merchantId": "xfinity",
+      "cadence": "monthly",
+      "currentAmount": 82.2,
+      "charges": 10,
+      "active": true,
+      "variable": true
+    },
+    {
+      "key": "anytime",
+      "displayName": "Anytime Fitness",
+      "match": "ANYTIME",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 45,
+      "charges": 10,
+      "active": true
+    }
+  ],
+  "inactive": []
+}

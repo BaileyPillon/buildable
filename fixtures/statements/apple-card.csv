@@ -1,0 +1,357 @@
+Transaction Date,Clearing Date,Description,Merchant,Category,Type,Amount (USD),Purchased By
+10/31/2026,11/02/2026,"USPS PO 2503130119 BOSTON US","USPS",Shopping,Purchase,26.93,Jane Doe
+10/31/2026,11/02/2026,"AMZN MKTP US*M8W8E0OL2 AMZN.COM/BILL US","Amazon",Shopping,Purchase,36.84,Jane Doe
+10/31/2026,11/01/2026,"TRADER JOE'S #552 CAMBRIDGE US","Grocer",Groceries,Purchase,27.64,Jane Doe
+10/30/2026,11/01/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,22.94,Jane Doe
+10/30/2026,10/31/2026,"AMZN MKTP US*R5UPE61T1 US","Amazon",Shopping,Purchase,54.96,Jane Doe
+10/29/2026,10/30/2026,"AMAZON.COM*V6J49AXD8 AMZN.COM/BILL US","Amazon",Shopping,Purchase,24.08,Jane Doe
+10/28/2026,10/30/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+10/28/2026,10/30/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,25.48,Jane Doe
+10/28/2026,10/30/2026,"AMZN MKTP US*S57GIW5G7 US","Amazon",Shopping,Purchase,62.05,Jane Doe
+10/25/2026,10/26/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+10/25/2026,10/27/2026,"AMZN MKTP US*E4XJDBAM8 US","Amazon",Shopping,Purchase,90.64,Jane Doe
+10/22/2026,10/23/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,47.87,Jane Doe
+10/22/2026,10/23/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,9.56,Jane Doe
+10/22/2026,10/23/2026,"AMZN MKTP US*B9XLS47O4 US","Amazon",Shopping,Purchase,71.45,Jane Doe
+10/20/2026,10/22/2026,"SPOTIFY PS2924AA2 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+10/20/2026,10/22/2026,"THE HOME DEPOT #4123 BOSTON US","Home Depot",Shopping,Purchase,59.75,Jane Doe
+10/20/2026,10/22/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-1403.58,Jane Doe
+10/19/2026,10/21/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,5.63,Jane Doe
+10/18/2026,10/20/2026,"IKEA STOUGHTON US","IKEA",Shopping,Purchase,156.63,Jane Doe
+10/18/2026,10/20/2026,"AMZN MKTP US*Q3YCA50F5 US","Amazon",Shopping,Purchase,40.10,Jane Doe
+10/17/2026,10/18/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,5.19,Jane Doe
+10/16/2026,10/18/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+10/16/2026,10/18/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,15.54,Jane Doe
+10/16/2026,10/18/2026,"CVS/PHARMACY #08123 BOSTON US","CVS",Shopping,Purchase,15.45,Jane Doe
+10/13/2026,10/15/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+10/12/2026,10/13/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,22.85,Jane Doe
+10/11/2026,10/12/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,30.44,Jane Doe
+10/10/2026,10/12/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,23.64,Jane Doe
+10/09/2026,10/10/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+10/07/2026,10/09/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,4.71,Jane Doe
+10/06/2026,10/07/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+10/06/2026,10/08/2026,"AMZN MKTP US*Q6WBYHX61 AMZN.COM/BILL US","Amazon",Shopping,Purchase,12.93,Jane Doe
+10/04/2026,10/05/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+10/03/2026,10/05/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,14.47,Jane Doe
+10/03/2026,10/05/2026,"USPS PO 2503130119 BOSTON US","USPS",Shopping,Purchase,18.75,Jane Doe
+10/02/2026,10/04/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,45.34,Jane Doe
+10/02/2026,10/04/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,60.46,Jane Doe
+10/02/2026,10/04/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,30.91,Jane Doe
+10/02/2026,10/04/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,20.72,Jane Doe
+10/01/2026,10/03/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+10/01/2026,10/03/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,156.68,Jane Doe
+10/01/2026,10/02/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,130.37,Jane Doe
+10/01/2026,10/03/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,14.91,Jane Doe
+09/29/2026,10/01/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,6.95,Jane Doe
+09/28/2026,09/29/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+09/26/2026,09/27/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,35.69,Jane Doe
+09/25/2026,09/27/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+09/24/2026,09/26/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,30.94,Jane Doe
+09/24/2026,09/25/2026,"PARKMOBILE 877-727-5897 US","ParkMobile",Shopping,Purchase,8.97,Jane Doe
+09/23/2026,09/24/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,4.93,Jane Doe
+09/23/2026,09/25/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,10.41,Jane Doe
+09/23/2026,09/25/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,47.43,Jane Doe
+09/21/2026,09/22/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,4.54,Jane Doe
+09/21/2026,09/22/2026,"AMZN MKTP US*Y2DMOHB83 AMZN.COM/BILL US","Amazon",Shopping,Purchase,35.97,Jane Doe
+09/20/2026,09/21/2026,"SPOTIFY PH7YQ1R57 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+09/20/2026,09/21/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,10.68,Jane Doe
+09/20/2026,09/21/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-2290.13,Jane Doe
+09/16/2026,09/17/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+09/16/2026,09/18/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,11.49,Jane Doe
+09/16/2026,09/17/2026,"PARKMOBILE 877-727-5897 US","ParkMobile",Shopping,Purchase,9.51,Jane Doe
+09/16/2026,09/18/2026,"AMAZON.COM*D65P8YL63 AMZN.COM/BILL US","Amazon",Shopping,Purchase,40.51,Jane Doe
+09/15/2026,09/17/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,23.81,Jane Doe
+09/14/2026,09/16/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,84.59,Jane Doe
+09/13/2026,09/15/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+09/13/2026,09/15/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,49.13,Jane Doe
+09/13/2026,09/15/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,58.82,Jane Doe
+09/13/2026,09/15/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,50.92,Jane Doe
+09/13/2026,09/15/2026,"AMAZON.COM*D7NF275F8 AMZN.COM/BILL US","Amazon",Shopping,Purchase,58.27,Jane Doe
+09/11/2026,09/13/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,39.27,Jane Doe
+09/09/2026,09/11/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+09/09/2026,09/10/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,20.83,Jane Doe
+09/09/2026,09/10/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,15.64,Jane Doe
+09/08/2026,09/10/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,85.38,Jane Doe
+09/07/2026,09/08/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,41.40,Jane Doe
+09/06/2026,09/08/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+09/06/2026,09/07/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,116.47,Jane Doe
+09/06/2026,09/08/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,19.53,Jane Doe
+09/06/2026,09/08/2026,"AMZN MKTP US*K1TV4HEZ9 AMZN.COM/BILL US","Amazon",Shopping,Purchase,25.61,Jane Doe
+09/05/2026,09/07/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,150.34,Jane Doe
+09/05/2026,09/07/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,18.76,Jane Doe
+09/04/2026,09/06/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+09/04/2026,09/05/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,33.17,Jane Doe
+09/04/2026,09/06/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,14.78,Jane Doe
+09/03/2026,09/05/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,11.85,Jane Doe
+09/02/2026,09/04/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,52.66,Jane Doe
+09/01/2026,09/03/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+09/01/2026,09/02/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,19.40,Jane Doe
+08/31/2026,09/01/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,43.12,Jane Doe
+08/31/2026,09/02/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,40.91,Jane Doe
+08/31/2026,09/02/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,13.20,Jane Doe
+08/31/2026,09/02/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,45.09,Jane Doe
+08/30/2026,09/01/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,20.10,Jane Doe
+08/29/2026,08/31/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,41.94,Jane Doe
+08/29/2026,08/31/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,45.32,Jane Doe
+08/28/2026,08/29/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+08/27/2026,08/28/2026,"CVS/PHARMACY #08123 BOSTON US","CVS",Shopping,Purchase,10.45,Jane Doe
+08/25/2026,08/26/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+08/23/2026,08/24/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,30.23,Jane Doe
+08/23/2026,08/24/2026,"AMAZON.COM*S1EHBJVC9 AMZN.COM/BILL US","Amazon",Shopping,Purchase,84.96,Jane Doe
+08/22/2026,08/23/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,9.91,Jane Doe
+08/22/2026,08/23/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,40.02,Jane Doe
+08/21/2026,08/23/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,22.88,Jane Doe
+08/21/2026,08/23/2026,"USPS PO 2503130119 BOSTON US","USPS",Shopping,Purchase,26.66,Jane Doe
+08/20/2026,08/22/2026,"SPOTIFY PA76LZ6S2 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+08/20/2026,08/22/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,7.33,Jane Doe
+08/20/2026,08/21/2026,"CVS/PHARMACY #08123 BOSTON US","CVS",Shopping,Purchase,23.42,Jane Doe
+08/20/2026,08/22/2026,"IKEA STOUGHTON US","IKEA",Shopping,Purchase,263.18,Jane Doe
+08/20/2026,08/22/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-2043.37,Jane Doe
+08/19/2026,08/20/2026,"AMZN MKTP US*Y6M0X32Y8 AMZN.COM/BILL US","Amazon",Shopping,Purchase,56.15,Jane Doe
+08/17/2026,08/18/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,69.03,Jane Doe
+08/17/2026,08/18/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,11.00,Jane Doe
+08/16/2026,08/17/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+08/15/2026,08/16/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,42.64,Jane Doe
+08/15/2026,08/17/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,39.62,Jane Doe
+08/14/2026,08/15/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,31.67,Jane Doe
+08/14/2026,08/15/2026,"AMZN MKTP US*V6DR03879 US","Amazon",Shopping,Purchase,76.80,Jane Doe
+08/13/2026,08/15/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+08/13/2026,08/14/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,72.59,Jane Doe
+08/12/2026,08/14/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,16.33,Jane Doe
+08/12/2026,08/13/2026,"AMZN MKTP US*V33GYWTS2 US","Amazon",Shopping,Purchase,68.12,Jane Doe
+08/10/2026,08/12/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,33.19,Jane Doe
+08/09/2026,08/10/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+08/09/2026,08/10/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,73.52,Jane Doe
+08/09/2026,08/11/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,11.89,Jane Doe
+08/09/2026,08/10/2026,"THE HOME DEPOT #4123 BOSTON US","Home Depot",Shopping,Purchase,141.63,Jane Doe
+08/09/2026,08/10/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,38.88,Jane Doe
+08/08/2026,08/10/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,164.14,Jane Doe
+08/08/2026,08/09/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,16.68,Jane Doe
+08/07/2026,08/08/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,159.69,Jane Doe
+08/07/2026,08/08/2026,"TARGET 00011234 BOSTON US","Target",Shopping,Purchase,18.44,Jane Doe
+08/06/2026,08/07/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+08/05/2026,08/07/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,23.57,Jane Doe
+08/05/2026,08/06/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,15.38,Jane Doe
+08/05/2026,08/06/2026,"AMZN MKTP US*F5BNP0M11 US","Amazon",Shopping,Purchase,70.50,Jane Doe
+08/04/2026,08/05/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+08/04/2026,08/05/2026,"WALGREENS #12384 BOSTON US","Walgreens",Shopping,Purchase,14.50,Jane Doe
+08/04/2026,08/05/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,25.48,Jane Doe
+08/03/2026,08/04/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,30.93,Jane Doe
+08/01/2026,08/03/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+08/01/2026,08/03/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,29.00,Jane Doe
+08/01/2026,08/03/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,15.11,Jane Doe
+07/29/2026,07/30/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,16.05,Jane Doe
+07/29/2026,07/31/2026,"TARGET 00011234 BOSTON US","Target",Shopping,Purchase,115.05,Jane Doe
+07/28/2026,07/30/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+07/25/2026,07/27/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+07/25/2026,07/26/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,123.29,Jane Doe
+07/24/2026,07/26/2026,"WALGREENS #12384 BOSTON US","Walgreens",Shopping,Purchase,42.72,Jane Doe
+07/23/2026,07/25/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,63.77,Jane Doe
+07/23/2026,07/25/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,17.22,Jane Doe
+07/23/2026,07/25/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,56.78,Jane Doe
+07/23/2026,07/25/2026,"AMZN MKTP US*V1YI3IKB6 AMZN.COM/BILL US","Amazon",Shopping,Purchase,84.30,Jane Doe
+07/21/2026,07/23/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,127.17,Jane Doe
+07/21/2026,07/23/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,94.13,Jane Doe
+07/21/2026,07/22/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,18.17,Jane Doe
+07/21/2026,07/23/2026,"AMAZON.COM*N6DL7A618 AMZN.COM/BILL US","Amazon",Shopping,Purchase,17.41,Jane Doe
+07/20/2026,07/21/2026,"SPOTIFY PG1JN9GN5 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+07/20/2026,07/22/2026,"AMZN MKTP US*W1052J178 US","Amazon",Shopping,Purchase,49.52,Jane Doe
+07/20/2026,07/21/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-1513.44,Jane Doe
+07/18/2026,07/20/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,34.27,Jane Doe
+07/17/2026,07/19/2026,"PARKMOBILE 877-727-5897 US","ParkMobile",Shopping,Purchase,5.49,Jane Doe
+07/16/2026,07/18/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+07/16/2026,07/18/2026,"AMZN MKTP US*F3V899D22 AMZN.COM/BILL US","Amazon",Shopping,Purchase,31.89,Jane Doe
+07/14/2026,07/15/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,37.81,Jane Doe
+07/14/2026,07/16/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,24.25,Jane Doe
+07/14/2026,07/16/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,9.40,Jane Doe
+07/14/2026,07/16/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,13.79,Jane Doe
+07/13/2026,07/14/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+07/13/2026,07/15/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,15.85,Jane Doe
+07/12/2026,07/14/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,45.06,Jane Doe
+07/11/2026,07/12/2026,"USPS PO 2503130119 BOSTON US","USPS",Shopping,Purchase,23.91,Jane Doe
+07/09/2026,07/11/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+07/09/2026,07/11/2026,"AMZN MKTP US*Q60LEML07 AMZN.COM/BILL US","Amazon",Shopping,Purchase,15.51,Jane Doe
+07/09/2026,07/11/2026,"AMZN MKTP US*C76QGC028 US","Amazon",Shopping,Purchase,69.02,Jane Doe
+07/06/2026,07/08/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+07/06/2026,07/07/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,199.75,Jane Doe
+07/05/2026,07/07/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,98.09,Jane Doe
+07/05/2026,07/07/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,22.69,Jane Doe
+07/04/2026,07/06/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+07/04/2026,07/06/2026,"IKEA STOUGHTON US","IKEA",Shopping,Purchase,214.44,Jane Doe
+07/03/2026,07/05/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,77.78,Jane Doe
+07/03/2026,07/05/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,39.04,Jane Doe
+07/02/2026,07/03/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,56.29,Jane Doe
+07/01/2026,07/02/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+07/01/2026,07/03/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,14.92,Jane Doe
+07/01/2026,07/02/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,13.61,Jane Doe
+06/30/2026,07/02/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,53.05,Jane Doe
+06/30/2026,07/02/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,7.15,Jane Doe
+06/28/2026,06/30/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+06/28/2026,06/29/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,22.16,Jane Doe
+06/25/2026,06/26/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+06/25/2026,06/26/2026,"AMZN MKTP US*U66SBVKH1 US","Amazon",Shopping,Purchase,67.88,Jane Doe
+06/24/2026,06/25/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,88.65,Jane Doe
+06/23/2026,06/25/2026,"TARGET 00011234 BOSTON US","Target",Shopping,Purchase,38.88,Jane Doe
+06/22/2026,06/24/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,45.14,Jane Doe
+06/21/2026,06/22/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,20.79,Jane Doe
+06/21/2026,06/22/2026,"AMAZON.COM*V6TSX5XH2 AMZN.COM/BILL US","Amazon",Shopping,Purchase,41.89,Jane Doe
+06/20/2026,06/22/2026,"SPOTIFY PA2XTSYT3 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+06/20/2026,06/22/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-2244.41,Jane Doe
+06/19/2026,06/21/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,72.84,Jane Doe
+06/19/2026,06/21/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,32.08,Jane Doe
+06/17/2026,06/19/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,30.86,Jane Doe
+06/16/2026,06/18/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+06/16/2026,06/17/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,36.93,Jane Doe
+06/14/2026,06/15/2026,"CVS/PHARMACY #08123 BOSTON US","CVS",Shopping,Purchase,36.61,Jane Doe
+06/13/2026,06/14/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+06/13/2026,06/15/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,29.59,Jane Doe
+06/13/2026,06/15/2026,"AMAZON.COM*Z63UCLYW4 AMZN.COM/BILL US","Amazon",Shopping,Purchase,54.87,Jane Doe
+06/12/2026,06/13/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,16.45,Jane Doe
+06/11/2026,06/13/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,37.74,Jane Doe
+06/10/2026,06/11/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,234.00,Jane Doe
+06/09/2026,06/10/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+06/09/2026,06/10/2026,"AMZN MKTP US*T3W95UBD7 AMZN.COM/BILL US","Amazon",Shopping,Purchase,41.01,Jane Doe
+06/08/2026,06/09/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,11.51,Jane Doe
+06/08/2026,06/09/2026,"AMZN MKTP US*U17M68KV3 AMZN.COM/BILL US","Amazon",Shopping,Purchase,29.31,Jane Doe
+06/07/2026,06/08/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,6.93,Jane Doe
+06/06/2026,06/07/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+06/06/2026,06/07/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,144.47,Jane Doe
+06/06/2026,06/08/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,16.06,Jane Doe
+06/05/2026,06/07/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,30.03,Jane Doe
+06/04/2026,06/06/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+06/04/2026,06/06/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,63.08,Jane Doe
+06/03/2026,06/04/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,48.55,Jane Doe
+06/01/2026,06/02/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+05/31/2026,06/02/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,93.75,Jane Doe
+05/31/2026,06/02/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,23.90,Jane Doe
+05/30/2026,05/31/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,32.45,Jane Doe
+05/29/2026,05/30/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,4.25,Jane Doe
+05/28/2026,05/29/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+05/28/2026,05/30/2026,"TARGET 00011234 BOSTON US","Target",Shopping,Purchase,62.38,Jane Doe
+05/28/2026,05/30/2026,"AMZN MKTP US*L4T0JWO75 US","Amazon",Shopping,Purchase,24.69,Jane Doe
+05/27/2026,05/28/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,59.72,Jane Doe
+05/27/2026,05/29/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,59.28,Jane Doe
+05/25/2026,05/26/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+05/24/2026,05/25/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,52.19,Jane Doe
+05/23/2026,05/24/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,7.47,Jane Doe
+05/22/2026,05/24/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,18.40,Jane Doe
+05/21/2026,05/23/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,69.42,Jane Doe
+05/21/2026,05/22/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,85.46,Jane Doe
+05/21/2026,05/22/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,36.79,Jane Doe
+05/20/2026,05/21/2026,"SPOTIFY PN858R4W1 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+05/20/2026,05/21/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,8.05,Jane Doe
+05/20/2026,05/22/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,4.87,Jane Doe
+05/20/2026,05/22/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-1196.76,Jane Doe
+05/18/2026,05/20/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,54.82,Jane Doe
+05/17/2026,05/18/2026,"THE HOME DEPOT #4123 BOSTON US","Home Depot",Shopping,Purchase,236.26,Jane Doe
+05/17/2026,05/19/2026,"AMZN MKTP US*Z4YX0HW32 AMZN.COM/BILL US","Amazon",Shopping,Purchase,52.66,Jane Doe
+05/17/2026,05/18/2026,"AMAZON.COM*Q4W1R72D8 AMZN.COM/BILL US","Amazon",Shopping,Purchase,80.01,Jane Doe
+05/17/2026,05/18/2026,"AMAZON.COM*B2CE1CCD6 AMZN.COM/BILL US","Amazon",Shopping,Purchase,21.36,Jane Doe
+05/16/2026,05/17/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+05/15/2026,05/17/2026,"AMAZON.COM*J11YYYWE7 AMZN.COM/BILL US","Amazon",Shopping,Purchase,74.15,Jane Doe
+05/14/2026,05/15/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,23.36,Jane Doe
+05/13/2026,05/15/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+05/13/2026,05/15/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,73.69,Jane Doe
+05/13/2026,05/14/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,28.90,Jane Doe
+05/13/2026,05/15/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,19.90,Jane Doe
+05/12/2026,05/13/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,36.86,Jane Doe
+05/11/2026,05/13/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,58.92,Jane Doe
+05/11/2026,05/12/2026,"TARGET 00011234 BOSTON US","Refund",Shopping,Credit,-56.42,Jane Doe
+05/10/2026,05/12/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,61.46,Jane Doe
+05/10/2026,05/12/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,155.24,Jane Doe
+05/10/2026,05/12/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,46.92,Jane Doe
+05/09/2026,05/11/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+05/09/2026,05/10/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,86.64,Jane Doe
+05/09/2026,05/10/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,26.89,Jane Doe
+05/08/2026,05/09/2026,"AMZN MKTP US*R7EBNQPN5 US","Amazon",Shopping,Purchase,29.83,Jane Doe
+05/07/2026,05/09/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,107.87,Jane Doe
+05/07/2026,05/09/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,40.40,Jane Doe
+05/07/2026,05/08/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,32.44,Jane Doe
+05/07/2026,05/09/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,53.31,Jane Doe
+05/06/2026,05/08/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+05/06/2026,05/07/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,24.92,Jane Doe
+05/04/2026,05/05/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+05/03/2026,05/04/2026,"CHEVRON 0098123 QUINCY US","Chevron",Gas,Purchase,48.43,Jane Doe
+05/03/2026,05/05/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,14.60,Jane Doe
+05/02/2026,05/04/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,12.99,Jane Doe
+05/01/2026,05/03/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+04/30/2026,05/02/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,8.46,Jane Doe
+04/28/2026,04/29/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+04/28/2026,04/29/2026,"USPS PO 2503130119 BOSTON US","USPS",Shopping,Purchase,11.38,Jane Doe
+04/27/2026,04/28/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,28.94,Jane Doe
+04/25/2026,04/26/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+04/25/2026,04/27/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,107.28,Jane Doe
+04/24/2026,04/25/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,105.77,Jane Doe
+04/23/2026,04/24/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,4.46,Jane Doe
+04/23/2026,04/24/2026,"AMZN MKTP US*W89OM7744 AMZN.COM/BILL US","Amazon",Shopping,Purchase,93.92,Jane Doe
+04/22/2026,04/24/2026,"IKEA STOUGHTON US","IKEA",Shopping,Purchase,84.65,Jane Doe
+04/20/2026,04/21/2026,"SPOTIFY PW5EHO235 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+04/20/2026,04/22/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,25.35,Jane Doe
+04/20/2026,04/21/2026,"ACH Deposit Internet transfer from account ending in 1234","",Payment,Payment,-1408.16,Jane Doe
+04/19/2026,04/21/2026,"MCDONALD'S F27311 BOSTON US","McDonalds",Restaurants,Purchase,10.57,Jane Doe
+04/19/2026,04/20/2026,"WALGREENS #12384 BOSTON US","Walgreens",Shopping,Purchase,7.65,Jane Doe
+04/18/2026,04/20/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,19.36,Jane Doe
+04/16/2026,04/17/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+04/15/2026,04/17/2026,"BEST BUY 00001234 BOSTON US","Refund",Shopping,Credit,-43.16,Jane Doe
+04/14/2026,04/15/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,38.69,Jane Doe
+04/14/2026,04/16/2026,"AMZN MKTP US*A4PAKBL05 US","Amazon",Shopping,Purchase,92.62,Jane Doe
+04/13/2026,04/15/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+04/13/2026,04/14/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,43.08,Jane Doe
+04/11/2026,04/13/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,21.05,Jane Doe
+04/10/2026,04/12/2026,"TST* TOASTY GRILL BOSTON US","Toasty Grill",Restaurants,Purchase,38.64,Jane Doe
+04/09/2026,04/11/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+04/09/2026,04/10/2026,"LOWES #1234 BOSTON US","Lowes",Shopping,Purchase,21.64,Jane Doe
+04/09/2026,04/10/2026,"WALGREENS #12384 BOSTON US","Walgreens",Shopping,Purchase,29.74,Jane Doe
+04/08/2026,04/10/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,47.54,Jane Doe
+04/07/2026,04/08/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,30.84,Jane Doe
+04/06/2026,04/07/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+04/06/2026,04/08/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,7.23,Jane Doe
+04/06/2026,04/08/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,17.01,Jane Doe
+04/05/2026,04/06/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,52.06,Jane Doe
+04/04/2026,04/06/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+04/04/2026,04/06/2026,"SQ *GREEN ST DELI SOMERVILLE US","Green St Deli",Restaurants,Purchase,10.59,Jane Doe
+04/03/2026,04/05/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,42.28,Jane Doe
+04/03/2026,04/05/2026,"DOORDASH*SUSHI PALACE 855-973-1040 US","DoorDash",Restaurants,Purchase,27.47,Jane Doe
+04/03/2026,04/05/2026,"AMZN MKTP US*M1O5X1TD1 AMZN.COM/BILL US","Amazon",Shopping,Purchase,14.05,Jane Doe
+04/01/2026,04/03/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+04/01/2026,04/02/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,39.25,Jane Doe
+04/01/2026,04/03/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,3.42,Jane Doe
+03/31/2026,04/01/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,77.39,Jane Doe
+03/30/2026,03/31/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,19.60,Jane Doe
+03/29/2026,03/30/2026,"AMZN MKTP US*M4ZT2PZD9 AMZN.COM/BILL US","Amazon",Shopping,Purchase,59.55,Jane Doe
+03/28/2026,03/30/2026,"CLAUDE.AI SUBSCRIPTION ANTHROPIC.COM US","Claude Pro",Entertainment,Purchase,20.00,Jane Doe
+03/28/2026,03/29/2026,"PY *CORNER PIZZA MALDEN US","Corner Pizza",Restaurants,Purchase,22.43,Jane Doe
+03/26/2026,03/27/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,30.68,Jane Doe
+03/26/2026,03/28/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,50.33,Jane Doe
+03/25/2026,03/26/2026,"OPENAI *CHATGPT SUBSCR SAN FRANCISCO US","ChatGPT Plus",Entertainment,Purchase,20.00,Jane Doe
+03/25/2026,03/27/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,39.70,Jane Doe
+03/24/2026,03/25/2026,"PARKMOBILE 877-727-5897 US","ParkMobile",Shopping,Purchase,3.18,Jane Doe
+03/23/2026,03/24/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,59.21,Jane Doe
+03/23/2026,03/25/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,21.40,Jane Doe
+03/21/2026,03/23/2026,"SQ *BLUE BOTTLE COFFEE BOSTON US","Blue Bottle",Restaurants,Purchase,8.06,Jane Doe
+03/20/2026,03/22/2026,"SPOTIFY PS7CBW036 US","Spotify",Entertainment,Purchase,19.99,Jane Doe
+03/20/2026,03/21/2026,"PANERA BREAD #601 BOSTON US","Panera",Restaurants,Purchase,22.54,Jane Doe
+03/19/2026,03/21/2026,"CHIPOTLE 1893 CAMBRIDGE US","Chipotle",Restaurants,Purchase,11.75,Jane Doe
+03/18/2026,03/19/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,33.93,Jane Doe
+03/16/2026,03/18/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,0.99,Jane Doe
+03/15/2026,03/16/2026,"DUNKIN #348120 Q35 BOSTON US","Dunkin",Restaurants,Purchase,3.39,Jane Doe
+03/14/2026,03/16/2026,"AMZN MKTP US*P8YT5MEP5 AMZN.COM/BILL US","Amazon",Shopping,Purchase,45.65,Jane Doe
+03/13/2026,03/15/2026,"HULU 877-824-4858 US","Hulu",Entertainment,Purchase,18.99,Jane Doe
+03/12/2026,03/14/2026,"UBER *TRIP HELP.UBER.COM US","Uber",Travel,Purchase,8.00,Jane Doe
+03/11/2026,03/12/2026,"LOWES #1234 BOSTON US","Lowes",Shopping,Purchase,98.39,Jane Doe
+03/09/2026,03/10/2026,"APPLE.COM/BILL 866-712-7753 US","App Store",Entertainment,Purchase,9.99,Jane Doe
+03/09/2026,03/10/2026,"THE HOME DEPOT #4123 BOSTON US","Home Depot",Shopping,Purchase,79.51,Jane Doe
+03/09/2026,03/11/2026,"AMAZON.COM*W9JRBLBM2 AMZN.COM/BILL US","Refund",Shopping,Credit,-20.68,Jane Doe
+03/08/2026,03/09/2026,"WHOLEFDS MKT 10234 BOSTON US","Whole Foods",Groceries,Purchase,142.34,Jane Doe
+03/07/2026,03/08/2026,"EXXONMOBIL 47281 NEWTON US","Exxon",Gas,Purchase,52.97,Jane Doe
+03/06/2026,03/07/2026,"MAX.COM NEW YORK US","Max",Entertainment,Purchase,16.99,Jane Doe
+03/06/2026,03/08/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,71.73,Jane Doe
+03/06/2026,03/07/2026,"PARKMOBILE 877-727-5897 US","ParkMobile",Shopping,Purchase,11.70,Jane Doe
+03/05/2026,03/07/2026,"TRADER JOE'S #552 CAMBRIDGE US","Trader Joes",Groceries,Purchase,58.22,Jane Doe
+03/04/2026,03/06/2026,"NETFLIX.COM 866-579-7172 US","Netflix",Entertainment,Purchase,17.99,Jane Doe
+03/04/2026,03/06/2026,"SHELL OIL 57444212345 BOSTON US","Shell",Gas,Purchase,30.96,Jane Doe
+03/04/2026,03/05/2026,"AMAZON.COM*H8CTKNJW2 AMZN.COM/BILL US","Amazon",Shopping,Purchase,75.95,Jane Doe
+03/03/2026,03/04/2026,"KROGER #0345 COLUMBUS US","Kroger",Groceries,Purchase,28.33,Jane Doe
+03/03/2026,03/04/2026,"STOP & SHOP 0453 SOMERVILLE US","Stop & Shop",Groceries,Purchase,37.65,Jane Doe
+03/01/2026,03/03/2026,"CRUNCH FITNESS 4412 SOMERVILLE US","Crunch Fitness",Entertainment,Purchase,29.99,Jane Doe
+03/01/2026,03/03/2026,"COSTCO WHSE #0123 BROOKLINE US","Costco",Groceries,Purchase,69.37,Jane Doe

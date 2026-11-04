@@ -1,0 +1,112 @@
+{
+  "file": "citi.csv",
+  "bank": "citi",
+  "statementStart": "2026-02-02",
+  "statementEnd": "2026-10-31",
+  "rows": 346,
+  "active": [
+    {
+      "key": "disney-plus",
+      "displayName": "Disney+",
+      "match": "DISNEY",
+      "merchantId": "disney-plus",
+      "cadence": "monthly",
+      "currentAmount": 13.99,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "grammarly",
+      "displayName": "Grammarly",
+      "match": "GRAMMARLY",
+      "merchantId": "grammarly",
+      "cadence": "monthly",
+      "currentAmount": 30,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "huckleberry",
+      "displayName": "Huckleberry",
+      "match": "HUCKLEBERRY",
+      "merchantId": "huckleberry",
+      "cadence": "monthly",
+      "currentAmount": 14.99,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "myfitnesspal",
+      "displayName": "MyFitnessPal Premium",
+      "match": "MYFITNESSPAL",
+      "merchantId": "myfitnesspal",
+      "cadence": "annual",
+      "currentAmount": 79.99,
+      "charges": 1,
+      "active": true
+    },
+    {
+      "key": "audible",
+      "displayName": "Audible",
+      "match": "AUDIBLE",
+      "merchantId": "audible",
+      "cadence": "monthly",
+      "currentAmount": 14.95,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "nytimes",
+      "displayName": "The New York Times",
+      "match": "NYTIMES",
+      "merchantId": "nytimes",
+      "cadence": "monthly",
+      "currentAmount": 25,
+      "charges": 9,
+      "active": true,
+      "priceChanges": [
+        {
+          "from": 17,
+          "to": 25
+        }
+      ]
+    },
+    {
+      "key": "zapier",
+      "displayName": "Zapier",
+      "match": "ZAPIER",
+      "merchantId": "zapier",
+      "cadence": "monthly",
+      "currentAmount": 19.99,
+      "charges": 9,
+      "active": true
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($10.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 10.99,
+      "charges": 9,
+      "active": true,
+      "candidates": [
+        "apple-music"
+      ]
+    },
+    {
+      "key": "apple",
+      "displayName": "App Store subscription ($2.99/mo)",
+      "match": "APPLE.COM/BILL",
+      "merchantId": null,
+      "cadence": "monthly",
+      "currentAmount": 2.99,
+      "charges": 9,
+      "active": true,
+      "candidates": [
+        "icloud-plus"
+      ]
+    }
+  ],
+  "inactive": []
+}

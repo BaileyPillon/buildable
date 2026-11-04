@@ -1,0 +1,79 @@
+{
+  "merchantId": "adobe-acrobat-pro",
+  "model": "Claude Sonnet 5.5 (agent, one session)",
+  "builtAt": "2026-11-03",
+  "checklist": [
+    {
+      "item": "Static PWA stack (Vite, TypeScript, pdf-lib, pdf.js, tesseract.js), no backend, no accounts, files never leave the device, runs under the site's strict CSP",
+      "status": "works",
+      "note": "Served with the real vercel.json headers. Every request during all six tools went to localhost:4317 only; no CSP violation from the app's own loads. The WebAssembly feature probe fires 2 harmless CSP violation events at startup. tsc --noEmit passes. public/ build is identical to dist/."
+    },
+    {
+      "item": "Merge several PDFs and drag to reorder pages",
+      "status": "works",
+      "note": "Added a 5-page A4 PDF plus a 2-page PDF: 7 thumbnails rendered. Drag reorder worked with synthetic DragEvents (card 1 moved after card 3); move-earlier/later buttons also work. Merged download re-opened with the right 6 pages in the right order. A native mouse drag from the pane's drag tool did not reorder (inconclusive: it may not start HTML5 DnD). Touch drag is not implemented (documented)."
+    },
+    {
+      "item": "Split by page range and extract pages",
+      "status": "works",
+      "note": "Extract '1-2, 5' gave 3 correct pages. Split by ranges '1-2, 3-5' gave 2 files; every-2 gave 3 files (2+2+1). 'Download all as .zip' produced a valid zip (3 stored entries, CRC checks pass, each starts with %PDF-). Typing a range syncs the thumbnail selection. Bad ranges ('9-12', 'abc') and a non-PDF file give clear messages."
+    },
+    {
+      "item": "Rotate and delete pages",
+      "status": "works",
+      "note": "Per-page and bulk rotate left/right work (rotation persists in the exported PDF: the rotated page re-opened landscape). Delete and Undo work; the export count matched. Undo restores one page per click, so 'Delete selected' on several pages needs several undos."
+    },
+    {
+      "item": "Fill form fields and add typed or drawn signatures and text boxes",
+      "status": "works",
+      "note": "Filled a text field, checkbox and dropdown, added a text box, a typed signature and a drawn signature (real mouse stroke on the pad), downloaded, re-opened: field values (Jane Q. Tester, checked, Green) persisted, text box and both signatures were rendered in the right spots (text ink bounding box matched the click position within 4 px). The Flatten option removes the fields and keeps the text. Stale hint text 'Click on the page where the signature should go' stays visible after placing."
+    },
+    {
+      "item": "Compress by re-rendering pages as JPEG at a chosen quality, with a flattening warning",
+      "status": "works",
+      "note": "Warning panel shown and the Compress button is disabled until the 'I understand' box is ticked. A 662 KB noisy scan became 21 KB at q40/96 DPI and 714 KB at q90/200 DPI, so the sliders work. A text-only 5.4 KB PDF came out 328 KB and the app says the result is larger and to keep the original. Output re-opens with 1 page."
+    },
+    {
+      "item": "OCR a scanned PDF into a searchable PDF",
+      "status": "works",
+      "note": "Under the strict CSP the engine falls back to the JS core. Sparse scan (3 lines): 6.1 s, 13 of 13 words, text exact. Dense full page (32 lines, 448 words, 150 DPI): about 96 s, 32 of 32 lines exact. Re-running OCR on the output with 'skip pages that already have text' skipped the page (0 recognized, 1 skipped), which shows the invisible text layer is real. .txt export works. The dense-page time is longer than the README's own estimate."
+    },
+    {
+      "item": "Recent-files list of names only in IndexedDB, never file contents",
+      "status": "works",
+      "note": "IndexedDB 'pdf-toolkit/recent-files' rows hold only key,name,openedAt,size,tool (13 rows, about 1.4 KB in total). The list survives a reload, clicking an entry opens the right tool with a 'choose the file again' banner, and the per-entry remove and 'Clear list' both work. localStorage and sessionStorage are empty."
+    },
+    {
+      "item": "Unit tests for merge, split and rotate using small sample PDFs",
+      "status": "works",
+      "note": "npx vitest run: 7 files, 49 tests, all pass. Covers merge, split, extract, rotate, delete and reorder with the samples in tests/samples, plus ranges, forms, geometry, OCR text layer, zip and recent-files."
+    },
+    {
+      "item": "Installable PWA (manifest, icons, service worker, offline)",
+      "status": "partial",
+      "note": "Manifest is valid (standalone, scope, 192/512/maskable icons) and all icon files exist. All 30 precache URLs in sw.js return 200 and sw.js has valid syntax. But this browser refuses service worker registration (my own register call failed with 'unknown error fetching the script'), so install prompt, offline mode and the in-app Install button were not exercised."
+    },
+    {
+      "item": "Deploy free to Cloudflare Pages or GitHub Pages and explain how to install it from the browser",
+      "status": "partial",
+      "note": "Not deployed (skipped as instructed). Provided instead: README steps for both hosts, .github/workflows/deploy-pages.yml, public/_headers with the CSP, and install steps per browser (also shown on the Home page). The workflow was read, not run."
+    },
+    {
+      "item": "README listing what it cannot do compared with Acrobat Pro",
+      "status": "works",
+      "note": "README has a long, specific 'What it cannot do compared with Acrobat Pro' section (no text editing, redaction, certified signatures, encryption, tagging, bookmarks carried over, etc.)."
+    }
+  ],
+  "score": { "works": 10, "partial": 2, "missing": 0 },
+  "bugs": [
+    "Service worker, offline mode and install prompt could not be exercised: the test browser refuses service worker registration. Treat PWA behaviour as unverified, not as broken.",
+    "OCR on a dense full page at 150 DPI took about 96 s with the JavaScript core, longer than the README estimate ('up to a minute' at 200 to 300 DPI). Sparse pages take about 6 s.",
+    "Undo delete restores one page per click, so deleting several selected pages needs several undos.",
+    "Fill & sign: stale hint 'Click on the page where the signature should go. Press Esc to cancel.' stays on screen after the signature is placed and after download.",
+    "Fill & sign at 375 px wide: the default 160% zoom is wider than the screen, so the page is cut off and scrolls inside its box (no page-level horizontal scroll); the user has to press the minus button. Other tools fit at 375 px with no horizontal overflow.",
+    "Real mouse drag-and-drop reorder of page cards could not be confirmed in the test pane (only synthetic DragEvents); touch drag-reorder is not implemented, only move buttons.",
+    "Two CSP violation events (script-src wasm-eval) are raised at startup by the WebAssembly feature probe; harmless but visible in violation reports.",
+    "Test-harness note: while the Browser pane was hidden, thumbnails never rendered because pdf.js display renders wait on requestAnimationFrame and IntersectionObserver; I polyfilled both to test. A visible tab renders normally (it did at first)."
+  ],
+  "summary": "All six tools do real work under the strict CSP: merge, split, rotate, delete, fill and sign, compress and OCR produced correct, re-openable PDFs, the recent list stores names only, and all 49 unit tests pass. The gaps are that offline mode and install could not be tested in this browser, deployment was skipped as instructed, and OCR on a dense page is slow (about 96 s)."
+}

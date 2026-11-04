@@ -1,0 +1,2616 @@
+[
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "netflix",
+    "name": "Netflix",
+    "url": "https://www.netflix.com",
+    "match": {
+      "patterns": [
+        "NETFLIX"
+      ],
+      "examples": [
+        "NETFLIX.COM 866-579-7172 CA",
+        "NETFLIX.COM LOS GATOS CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 8.99,
+          "cadence": "monthly",
+          "plan": "Standard with ads"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Standard"
+        },
+        {
+          "amount": 26.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        }
+      ]
+    },
+    "typicalMonthly": 19.99,
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "The one catalog most households use all year, so rotating saves less than elsewhere. If ads are tolerable, Standard with ads at $8.99 is the cheaper move than Standard at $19.99.",
+    "alternatives": [
+      {
+        "name": "Netflix Standard with ads",
+        "url": "https://help.netflix.com/en/node/24926/US",
+        "note": "$8.99 a month, about $11 less than Standard."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Cancel after a season you finished and rejoin when something you want arrives. Netflix keeps your profiles and viewing history for a while after you cancel, so coming back is quick.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Sign in at netflix.com, open Account, choose Cancel Membership, then Finish Cancellation. Netflix emails a confirmation.",
+        "url": "https://help.netflix.com/en/node/407",
+        "gotchas": "Signing out or deleting the app does not cancel. You keep access until the paid period ends. If you are billed through a carrier, internet provider or app store, the Cancel button may be missing and you must cancel with that partner. Price increases land on your next bill."
+      }
+    },
+    "sources": [
+      "https://help.netflix.com/en/node/24926/US",
+      "https://help.netflix.com/en/node/407",
+      "https://www.fox9.com/news/netflix-raising-prices-again-all-plans-how-much-more-youll-be-paying"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "hulu",
+    "name": "Hulu",
+    "url": "https://www.hulu.com",
+    "match": {
+      "patterns": [
+        "HLU\\*?HULU",
+        "^HULU\\b"
+      ],
+      "examples": [
+        "HLU*HULU 877-8244858 CA",
+        "HULU 877-8244858 CA",
+        "HULU.COM/BILL SANTA MONICA CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Hulu (With Ads)"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Disney+ and Hulu bundle (With Ads)"
+        },
+        {
+          "amount": 21.99,
+          "cadence": "monthly",
+          "plan": "Disney+ and Hulu Premium bundle (No Ads)"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "monthly",
+          "plan": "Hulu + Live TV, Disney+ and ESPN Select (With Ads)"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Hulu pays off in bursts around a few shows. The Disney+ and Hulu bundle is $12.99, only $1 above Hulu alone, so take the bundle in months you want both and drop it between seasons.",
+    "alternatives": [
+      {
+        "name": "Disney+ and Hulu bundle",
+        "url": "https://disneyplus.com/welcome/plans",
+        "note": "$12.99 with ads, $11.99 for the first 6 months per Disney."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      },
+      {
+        "name": "Pluto TV",
+        "url": "https://pluto.tv/",
+        "note": "Free ad-supported live channels and on-demand titles."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe the months a show you follow airs, binge the backlog, cancel. Take the Disney+ and Hulu bundle in months you want both services.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Sign in at hulu.com, open Account, and choose Cancel under Your Subscription, then confirm. If you subscribed through Disney+, Apple, Amazon or Roku, cancel with that provider instead.",
+        "url": "https://secure.hulu.com/account",
+        "gotchas": "Add-ons ride on the plan, so check nothing is left billing separately. Bundle promo pricing (such as $11.99 for the first 6 months) reverts to the regular price. A bundle started through Disney+ must be changed where you subscribed. The cancel flow may offer a pause or a discount before the final confirmation."
+      }
+    },
+    "sources": [
+      "https://www.hulu.com/welcome",
+      "https://disneyplus.com/welcome/plans"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "disney-plus",
+    "name": "Disney+",
+    "url": "https://www.disneyplus.com",
+    "match": {
+      "patterns": [
+        "DISNEY ?PLUS",
+        "DISNEY\\+"
+      ],
+      "examples": [
+        "DISNEY PLUS 888-905-7888 CA",
+        "DISNEYPLUS 888-905-7888 CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12.49,
+          "cadence": "monthly",
+          "plan": "Disney+ (With Ads)"
+        },
+        {
+          "amount": 21.49,
+          "cadence": "monthly",
+          "plan": "Disney+ Premium (No Ads)"
+        },
+        {
+          "amount": 214.99,
+          "cadence": "annual",
+          "plan": "Disney+ Premium annual"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Disney+ (With Ads) previous price"
+        },
+        {
+          "amount": 18.99,
+          "cadence": "monthly",
+          "plan": "Disney+ Premium previous price"
+        }
+      ]
+    },
+    "typicalMonthly": 12.49,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Most households watch Disney+ in bursts around a release or a trip. Monthly billing makes dropping it between releases cheap, while the annual Premium plan commits $214.99 up front.",
+    "alternatives": [
+      {
+        "name": "Disney+ with ads",
+        "url": "https://disneyplus.com/welcome/plans",
+        "note": "$12.49 a month, $9 less than Premium."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe the month a Marvel, Star Wars or Pixar title lands or the kids need a movie weekend, then cancel. Stay on monthly billing rather than annual.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Sign in at disneyplus.com, open Account, select your subscription, and choose Cancel Subscription, then confirm.",
+        "url": "https://help.disneyplus.com/article/disneyplus-cancel-subscription",
+        "gotchas": "If you pay through Apple, Google, Amazon, Roku or a carrier, cancel there. Bundle discounts end if you drop one service. Annual plans are paid up front, so confirm how Disney treats the unused months before switching to one."
+      }
+    },
+    "sources": [
+      "https://disneyplus.com/welcome/plans",
+      "https://help.disneyplus.com/article/disneyplus-cancel-subscription",
+      "https://www.tomsguide.com/entertainment/disney-plus/disney-confirms-another-price-hike-heres-how-much-youll-pay-now"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "hbo-max",
+    "name": "HBO Max (formerly Max)",
+    "url": "https://www.hbomax.com",
+    "match": {
+      "patterns": [
+        "HBO ?MAX",
+        "\\bMAX\\.COM\\b"
+      ],
+      "examples": [
+        "HBOMAX.COM NEW YORK NY",
+        "HBO MAX NEW YORK NY",
+        "MAX.COM NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Basic with Ads"
+        },
+        {
+          "amount": 18.49,
+          "cadence": "monthly",
+          "plan": "Standard"
+        },
+        {
+          "amount": 22.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 109.99,
+          "cadence": "annual",
+          "plan": "Basic with Ads annual"
+        },
+        {
+          "amount": 184.99,
+          "cadence": "annual",
+          "plan": "Standard annual"
+        },
+        {
+          "amount": 229.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 18.49,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "HBO Max raised prices again in late 2025 and its draw is a few tentpole series. Join for a season, binge, leave. Annual plans save about 16% but only pay off if you would stay all year.",
+    "alternatives": [
+      {
+        "name": "Basic with Ads",
+        "url": "https://www.hbomax.com/information",
+        "note": "$10.99 a month, $7.50 less than Standard."
+      },
+      {
+        "name": "Disney+, Hulu and HBO Max bundle",
+        "url": "https://disneyplus.com/welcome/plans",
+        "note": "From $21.99 with ads if you would pay for all three."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe the month a flagship series starts or ends, binge it, cancel. Return for the next one. Use Basic with Ads ($10.99) if you do not need downloads or 4K.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Sign in at hbomax.com, open your profile, go to Subscription (or Settings), choose Cancel Subscription and confirm.",
+        "url": "https://help.hbomax.com/",
+        "gotchas": "If HBO Max is billed through Amazon, Apple, Roku, a Disney+ or Hulu bundle, or a TV provider, you must cancel there. Access continues to the end of the paid period. Annual plans are paid up front."
+      }
+    },
+    "sources": [
+      "https://www.hbomax.com/information",
+      "https://help.hbomax.com/price-change",
+      "https://www.macrumors.com/2025/10/21/hbo-max-gets-another-price-increase/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "peacock",
+    "name": "Peacock",
+    "url": "https://www.peacocktv.com",
+    "match": {
+      "patterns": [
+        "PEACOCK ?TV",
+        "PEACOCK ?PREMIUM",
+        "^PEACOCK$",
+        "PAYPAL ?\\*? ?PEACOCK\\b",
+        "PEACOCK ?(SELECT|PLUS)"
+      ],
+      "examples": [
+        "PEACOCKTV.COM NEW YORK NY",
+        "PEACOCK PREMIUM NEW YORK NY",
+        "PAYPAL *PEACOCK 402-935-7733 CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 8.99,
+          "cadence": "monthly",
+          "plan": "Select"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Premium Plus"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "Select annual"
+        },
+        {
+          "amount": 129.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "Premium Plus annual"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Peacock is mostly live sports and events, and every plan went up again in August 2026 (Premium to $12.99). Pay for football season, a big event or one show, then drop it.",
+    "alternatives": [
+      {
+        "name": "Select (cheapest tier)",
+        "url": "https://www.peacocktv.com/",
+        "note": "$8.99 a month per the August 2026 price list."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for football season, a Premier League stretch or a major event, then cancel. Annual Premium ($129.99) only beats monthly if you would stay about 10 months or more.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at peacocktv.com, open Account, go to Plans & Payment (or Subscription), choose Cancel plan and confirm.",
+        "url": "https://www.peacocktv.com/help",
+        "gotchas": "If you pay through Apple, Roku, Amazon or a cable provider, cancel there. Existing subscribers move to the August 2026 prices on their first bill on or after September 17. Annual plans are paid up front."
+      }
+    },
+    "sources": [
+      "https://www.droid-life.com/2026/08/18/peacock-raises-prices/",
+      "https://9to5mac.com/2026/08/18/peacock-is-the-latest-streaming-service-to-increase-prices-details-here/",
+      "https://www.tvline.com/2238983/peacock-price-increase-august-2026-subscription-cost/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "paramount-plus",
+    "name": "Paramount+",
+    "url": "https://www.paramountplus.com",
+    "match": {
+      "patterns": [
+        "PARAMOUNT ?\\+",
+        "PARAMOUNT ?PLUS"
+      ],
+      "examples": [
+        "PARAMOUNT+ 888-274-5343 NY",
+        "PARAMOUNT PLUS NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 8.99,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 7.99,
+          "cadence": "monthly",
+          "plan": "Essential before Jan 2026"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Premium before Jan 2026"
+        }
+      ]
+    },
+    "typicalMonthly": 8.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Paramount+ rests on live CBS, football and a few franchises, and both plans rose $1 in January 2026. Pay for the months you watch, cancel the rest, and think twice before paying for a year up front.",
+    "alternatives": [
+      {
+        "name": "Pluto TV",
+        "url": "https://pluto.tv/",
+        "note": "Free ad-supported live channels and on-demand titles."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for NFL on CBS, Champions League stretches or a new Star Trek season, then cancel. Annual plans are paid up front, so they only win if you would stay most of the year.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at paramountplus.com, open Account, choose Cancel Subscription and confirm.",
+        "url": "https://www.paramountplus.com/account/",
+        "gotchas": "Subscriptions started through Amazon Channels, Apple, Google, Roku or a TV provider are cancelled there. You keep access until the paid period ends. Annual plans are paid up front."
+      }
+    },
+    "sources": [
+      "https://www.paramountplus.com/",
+      "https://www.techradar.com/streaming/paramount-plus/paramount-is-making-big-changes-in-2026-and-its-not-all-good-news-for-subscribers"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "apple-tv-plus",
+    "name": "Apple TV (Apple TV+)",
+    "url": "https://tv.apple.com",
+    "match": {
+      "patterns": [
+        "\\bAPPLE ?TV"
+      ],
+      "examples": [
+        "APPLE TV+ 866-712-7753 CA",
+        "APPLE TV 866-712-7753 CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Apple TV monthly"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Apple TV monthly before Aug 2026"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Apple TV monthly before Aug 2025"
+        },
+        {
+          "amount": 119,
+          "cadence": "annual",
+          "plan": "Apple TV annual"
+        },
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "Apple TV annual before Aug 2026"
+        }
+      ]
+    },
+    "typicalMonthly": 14.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Apple TV has a small library and its fourth price hike since 2022 landed in August 2026. Shows come in short seasons, so one or two paid months a year usually covers what you want.",
+    "alternatives": [
+      {
+        "name": "Apple TV with a new device",
+        "url": "https://www.apple.com/apple-tv-plus/",
+        "note": "3 months included when you buy an eligible Apple device."
+      },
+      {
+        "name": "Apple One",
+        "url": "https://www.apple.com/apple-one/",
+        "note": "Cheaper than Apple TV plus Music if you use both."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe when a new season of a show you follow drops, finish it, then cancel right away. You keep access to the end of the paid month. Use device-purchase free months first.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "iPhone or iPad: Settings > your name > Subscriptions > Apple TV > Cancel Subscription. Mac: App Store > your name > Subscriptions. Web: account.apple.com > Subscriptions.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Cancel at least 24 hours before a free trial ends. If there is no Cancel button, it is already cancelled. If the charge comes from Apple One, cancel or change Apple One instead."
+      }
+    },
+    "sources": [
+      "https://www.apple.com/apple-tv-plus/",
+      "https://macdailynews.com/2026/08/28/apple-tv-climbs-to-14-99-a-month-as-apple-also-ups-apple-one-individual-price/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "prime-video-channels",
+    "name": "Prime Video Channels and add-ons",
+    "url": "https://www.primevideo.com",
+    "match": {
+      "patterns": [
+        "PRIME ?VIDEO",
+        "AMAZON ?CHANNELS"
+      ],
+      "examples": [
+        "PRIMEVIDEO CHANNELS SEATTLE WA",
+        "AMAZON CHANNELS 888-802-3080 WA"
+      ],
+      "billedVia": "amazon"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Each channel (Starz, Paramount+, AMC+ and others) renews monthly under an Amazon charge, so add-ons get forgotten. Review them every quarter and add a channel only for the month you want it.",
+    "alternatives": [
+      {
+        "name": "Pluto TV",
+        "url": "https://pluto.tv/",
+        "note": "Free ad-supported live channels and on-demand titles."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      },
+      {
+        "name": "The Roku Channel",
+        "url": "https://therokuchannel.roku.com/",
+        "note": "Free ad-supported movies, shows and live channels."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Add a channel only for the month you need it, cancel in Manage Your Prime Video Channels the same day, and re-add it later. Free trials renew at full price unless you cancel.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Open Manage Your Prime Video Channels in your Amazon account, find the channel, choose Cancel Channel and confirm. The confirmation shows an end date, and you can reverse it until then.",
+        "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G8637923FFWAR2YH",
+        "gotchas": "A channel needs an active Prime or Prime Video membership, and ending that membership also cancels your channels. If you pay through Apple, cancel at least 24 hours before renewal. Each channel is a separate monthly charge."
+      }
+    },
+    "sources": [
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=G8637923FFWAR2YH"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "youtube-premium",
+    "name": "YouTube Premium",
+    "url": "https://www.youtube.com/premium",
+    "match": {
+      "patterns": [
+        "YOUTUBE ?PREMIUM"
+      ],
+      "examples": [
+        "GOOGLE *YOUTUBEPREMIUM G.CO/HELPPAY# CA",
+        "GOOGLE *YOUTUBE PREMIUM G.CO/HELPPAY# CA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 26.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        },
+        {
+          "amount": 8.99,
+          "cadence": "monthly",
+          "plan": "Premium Lite"
+        },
+        {
+          "amount": 159.99,
+          "cadence": "annual",
+          "plan": "Individual annual"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "Individual before 2026 hike"
+        },
+        {
+          "amount": 22.99,
+          "cadence": "monthly",
+          "plan": "Family before 2026 hike"
+        }
+      ]
+    },
+    "typicalMonthly": 15.99,
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "Ad-free YouTube with music is a daily habit for many, but it rose to $15.99 in 2026. If you mainly want no ads, Premium Lite at $8.99 costs $7 less. If you pay for music elsewhere, Music duplicates it.",
+    "alternatives": [
+      {
+        "name": "Premium Lite",
+        "url": "https://www.youtube.com/premium",
+        "note": "$8.99 a month: most videos ad-free, but no YouTube Music."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "If your use is seasonal, pause or cancel in months you are not commuting, traveling or watching much, then resume when you need background play and downloads again.",
+        "monthsOffPerYear": 2
+      },
+      "cancel": {
+        "howTo": "Go to youtube.com/paid_memberships, choose Manage membership, then Deactivate (or Pause).",
+        "url": "https://www.youtube.com/paid_memberships",
+        "gotchas": "If you subscribed through the Apple App Store you must cancel in iOS Settings. A Family plan manager who cancels ends it for everyone. Premium already includes YouTube Music, so check you are not also paying for Music separately."
+      }
+    },
+    "sources": [
+      "https://9to5google.com/2026/04/10/youtube-premium-us-price-hike/",
+      "https://www.notebookcheck.net/YouTube-Premium-price-increases-in-the-US.1270882.0.html",
+      "https://www.youtube.com/premium",
+      "https://support.google.com/youtube/answer/6308116"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "youtube-tv",
+    "name": "YouTube TV",
+    "url": "https://tv.youtube.com",
+    "match": {
+      "patterns": [
+        "YOUTUBE ?TV"
+      ],
+      "examples": [
+        "GOOGLE *YOUTUBETV G.CO/HELPPAY# CA",
+        "GOOGLE *YOUTUBE TV G.CO/HELPPAY# CA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 82.99,
+          "cadence": "monthly",
+          "plan": "Base plan"
+        },
+        {
+          "amount": 64.99,
+          "cadence": "monthly",
+          "plan": "Sports plan"
+        },
+        {
+          "amount": 54.99,
+          "cadence": "monthly",
+          "plan": "Entertainment plan"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "monthly",
+          "plan": "News + Entertainment + Family plan"
+        }
+      ]
+    },
+    "typicalMonthly": 82.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "At $82.99 this is the priciest typical charge in the category. Genre plans from February 2026 start at $54.99, and a built-in pause suits sports seasons. Rotating around what you watch saves the most.",
+    "alternatives": [
+      {
+        "name": "Sling Orange or Blue",
+        "url": "https://www.sling.com/",
+        "note": "$45.99 each, month to month."
+      },
+      {
+        "name": "Philo",
+        "url": "https://www.philo.com/",
+        "note": "$25 for 70+ channels, no sports or locals."
+      },
+      {
+        "name": "YouTube TV genre plans",
+        "url": "https://tv.youtube.com/welcome/",
+        "note": "Sports plan $64.99 and other genre plans cost less than Base."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Pause or cancel after the sports season you watch ends and restart when it begins. Use a genre plan (Sports at $64.99) in months where it covers your channels.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "In YouTube TV, click your profile photo, open Settings > Membership, and choose Cancel membership (or Pause).",
+        "url": "https://support.google.com/youtubetv/answer/7129668",
+        "gotchas": "Intro pricing ($59.99 for the first 2 months) reverts to $82.99 automatically. Add-ons such as 4K or NFL Sunday Ticket renew and are cancelled separately. If billed through Apple or Roku, cancel there."
+      }
+    },
+    "sources": [
+      "https://tv.youtube.com/welcome/",
+      "https://www.macrumors.com/2026/02/09/youtube-tv-cheaper-bundles/",
+      "https://cordcuttersnews.com/everything-you-need-to-know-about-youtube-tv-in-2026-pricing-channels-packages-more/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "sling-tv",
+    "name": "Sling TV",
+    "url": "https://www.sling.com",
+    "match": {
+      "patterns": [
+        "SLING ?TV",
+        "SLING\\.COM"
+      ],
+      "examples": [
+        "SLING TV ENGLEWOOD CO",
+        "SLING.COM ENGLEWOOD CO"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 45.99,
+          "cadence": "monthly",
+          "plan": "Orange or Blue"
+        },
+        {
+          "amount": 60.99,
+          "cadence": "monthly",
+          "plan": "Orange & Blue"
+        },
+        {
+          "amount": 56.99,
+          "cadence": "monthly",
+          "plan": "Orange + Sports Extra"
+        }
+      ]
+    },
+    "typicalMonthly": 45.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Sling is month to month with no contract, which makes it the easiest live TV service to rotate. Orange and Blue are $45.99 each. Keep it through your sport or event, then drop it.",
+    "alternatives": [
+      {
+        "name": "Philo",
+        "url": "https://www.philo.com/",
+        "note": "$25 for 70+ channels, no sports or local broadcast."
+      },
+      {
+        "name": "Pluto TV",
+        "url": "https://pluto.tv/",
+        "note": "Free ad-supported live channels and on-demand titles."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for the season of the sport or event you follow and cancel the day it ends. Sling bills monthly, so a short run costs one or two months.",
+        "monthsOffPerYear": 5
+      },
+      "cancel": {
+        "howTo": "Sign in at sling.com, open your account, go to Manage Subscription (or My Account) and choose Cancel Subscription.",
+        "url": "https://www.sling.com/help",
+        "gotchas": "Local channel fees reported in 2026 can add to the headline price. If you pay through Roku, Amazon or Apple, cancel there. A cancelled plan stays active until the end of the billing period."
+      }
+    },
+    "sources": [
+      "https://www.sling.com/",
+      "https://cordcuttersnews.com/sling-tv-is-raising-its-price-this-month/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "fubo",
+    "name": "Fubo",
+    "url": "https://www.fubo.tv",
+    "match": {
+      "patterns": [
+        "FUBO ?TV",
+        "FUBO\\.TV",
+        "^FUBO\\b"
+      ],
+      "examples": [
+        "FUBO.TV NEW YORK NY",
+        "FUBOTV INC NEW YORK NY"
+      ],
+      "billedVia": "direct"
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Fubo is the sports-first live TV option, and reported plan prices run well above Sling. Plan prices conflicted across sources, so check your own bill and join per season.",
+    "alternatives": [
+      {
+        "name": "Sling Orange or Blue",
+        "url": "https://www.sling.com/",
+        "note": "$45.99 each, month to month."
+      },
+      {
+        "name": "YouTube TV Sports plan",
+        "url": "https://tv.youtube.com/welcome/",
+        "note": "$64.99 for a sports-focused channel set."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Join for a football or soccer season and cancel afterward. Check the first bill: taxes and add-ons are charged on top of the advertised price.",
+        "monthsOffPerYear": 5
+      },
+      "cancel": {
+        "howTo": "Sign in at fubo.tv, open Account, go to Manage Subscription and choose Cancel, then follow the prompts.",
+        "url": "https://support.fubo.tv/",
+        "gotchas": "Add-ons such as My Local Sports renew separately. Disney and Fubo closed their Hulu + Live TV deal in October 2025 but the services were still sold separately, so check which one bills you. If billed through Apple, Roku or Amazon, cancel there."
+      }
+    },
+    "sources": [
+      "https://www.fubo.tv/welcome",
+      "https://cordcuttersnews.com/fubo-integrates-hulu-live-tv-into-package-options-on-its-homepage/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "philo",
+    "name": "Philo",
+    "url": "https://www.philo.com",
+    "match": {
+      "patterns": [
+        "PHILO\\.COM",
+        "PHILO ?TV",
+        "PHILO INC",
+        "^PHILO( |$)"
+      ],
+      "examples": [
+        "PHILO.COM NEW YORK NY",
+        "PHILO INC NEW YORK NY",
+        "PHILO NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 25,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 33,
+          "cadence": "monthly",
+          "plan": "Bundle+"
+        }
+      ]
+    },
+    "typicalMonthly": 25,
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "At $25 for 70+ channels, Philo is the cheapest live TV service here. It has no local broadcast channels or sports, so keep it only if cable-style entertainment is what you watch.",
+    "alternatives": [
+      {
+        "name": "Sling Orange or Blue",
+        "url": "https://www.sling.com/",
+        "note": "$45.99 each, includes more news and sports."
+      },
+      {
+        "name": "Pluto TV",
+        "url": "https://pluto.tv/",
+        "note": "Free ad-supported live channels and on-demand titles."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Pause or cancel in months you are away or watching little, then rejoin. The Essential plan is $25 and new users get a 7-day trial.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Sign in at philo.com, open Account, choose Cancel Subscription and confirm. If you pay through Apple or Roku, cancel there.",
+        "url": "https://help.philo.com/",
+        "gotchas": "Bundle+ at $33 adds HBO Max Basic with Ads, AMC+ and discovery+, which you may already pay for separately. Add-on channel packs renew with the plan."
+      }
+    },
+    "sources": [
+      "https://www.philo.com/",
+      "https://help.philo.com/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "spotify",
+    "name": "Spotify",
+    "url": "https://www.spotify.com",
+    "match": {
+      "patterns": [
+        "SPOTIFY"
+      ],
+      "examples": [
+        "SPOTIFY USA",
+        "SPOTIFY AB STOCKHOLM SE",
+        "SPOTIFY P1B2C3D4E5"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Premium Individual"
+        },
+        {
+          "amount": 18.99,
+          "cadence": "monthly",
+          "plan": "Premium Duo"
+        },
+        {
+          "amount": 21.99,
+          "cadence": "monthly",
+          "plan": "Premium Family"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Premium Student"
+        }
+      ]
+    },
+    "typicalMonthly": 12.99,
+    "verdict": "keep",
+    "why": "The music service most people keep. Duo at $18.99 and Family at $21.99 cut the per-person price a lot. Make sure you are not also paying for Apple Music or YouTube Premium.",
+    "alternatives": [
+      {
+        "name": "Spotify Duo or Family",
+        "url": "https://www.spotify.com/us/premium/",
+        "note": "Duo $18.99 for two, Family $21.99 for up to six at one address."
+      },
+      {
+        "name": "Spotify Free",
+        "url": "https://www.spotify.com/us/free/",
+        "note": "Ad-supported listening at no cost."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Go to your account, open Manage your plan, and choose Cancel subscription.",
+        "url": "https://support.spotify.com/us/article/cancel-premium/",
+        "gotchas": "Premium stays active until your next billing date, then the account moves to the free tier and keeps your playlists. Cancelling a Family or Duo plan ends it for every member. If there is no cancel option, billing is tied to a partner such as a carrier. Cancelling during a free trial switches you to free immediately and the trial cannot be reactivated."
+      }
+    },
+    "sources": [
+      "https://www.spotify.com/us/premium/",
+      "https://support.spotify.com/us/article/cancel-premium/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "apple-music",
+    "name": "Apple Music",
+    "url": "https://www.apple.com/apple-music/",
+    "match": {
+      "patterns": [
+        "\\bAPPLE ?MUSIC"
+      ],
+      "examples": [
+        "APPLE MUSIC 866-712-7753 CA",
+        "APPLE MUSIC CUPERTINO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Student"
+        },
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Individual (previous price)"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Family (previous price)"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "A solid default if you live on Apple devices. Cancel it if you already pay for Spotify or YouTube Premium; two music subscriptions are rarely used equally. Apple One can be cheaper if you also use Apple TV.",
+    "alternatives": [
+      {
+        "name": "Apple One",
+        "url": "https://www.apple.com/apple-one/",
+        "note": "Individual $21.95 includes Music, TV, Arcade and 50 GB iCloud+."
+      },
+      {
+        "name": "Apple Music Student",
+        "url": "https://www.apple.com/apple-music/",
+        "note": "$6.99 for verified college students."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "iPhone or iPad: Settings > your name > Subscriptions > Apple Music > Cancel Subscription. Mac: App Store > your name > Subscriptions. Web: account.apple.com > Subscriptions.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Songs you downloaded from the Apple Music catalog and library additions stop working when the subscription ends; music you bought or uploaded stays. If you pay for Apple One, cancel the bundle rather than Apple Music alone."
+      }
+    },
+    "sources": [
+      "https://www.apple.com/apple-music/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "amazon-music-unlimited",
+    "name": "Amazon Music Unlimited",
+    "url": "https://music.amazon.com",
+    "match": {
+      "patterns": [
+        "AMAZON ?MUSIC",
+        "AMZN ?MUSIC"
+      ],
+      "examples": [
+        "AMAZON MUSIC UNLIMITED WA",
+        "AMZN MUSIC*RT4HJ8K20 WA"
+      ],
+      "billedVia": "amazon",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Individual (Prime member)"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Individual (non-Prime)"
+        },
+        {
+          "amount": 21.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Prime members pay $11.99 for Unlimited, and Prime already includes Amazon Music with a smaller catalog, which is enough for some listeners. Keep it only if it is your main service; drop it if you also pay for another.",
+    "alternatives": [
+      {
+        "name": "Amazon Music with Prime",
+        "url": "https://music.amazon.com/",
+        "note": "Included with Prime at no extra cost, with a smaller catalog than Unlimited."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "In Amazon Music settings open Amazon Music Unlimited and choose Cancel subscription, or use Memberships and Subscriptions in your Amazon account.",
+        "gotchas": "The charge lives in your Amazon account, so it can hide among Prime renewals. Check the renewal date in Memberships and Subscriptions. After you cancel you keep access until the paid period ends."
+      }
+    },
+    "sources": [
+      "https://interspacemusic.com/blog/?p=4439"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "youtube-music",
+    "name": "YouTube Music Premium",
+    "url": "https://music.youtube.com/music_premium",
+    "match": {
+      "patterns": [
+        "YOUTUBE ?MUSIC"
+      ],
+      "examples": [
+        "GOOGLE *YOUTUBE MUSIC G.CO/HELPPAY# CA",
+        "GOOGLE *YOUTUBEMUSIC G.CO/HELPPAY# CA"
+      ],
+      "billedVia": "google",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 18.99,
+          "cadence": "monthly",
+          "plan": "Family"
+        },
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Individual before 2026 hike"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Standalone YouTube Music is $11.99, only $4 less than YouTube Premium, which adds ad-free video and includes Music. Pick one: paying for both Music and Premium is a pure duplicate.",
+    "alternatives": [
+      {
+        "name": "YouTube Music free tier",
+        "url": "https://music.youtube.com/",
+        "note": "Ad-supported listening at no cost."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Go to youtube.com/paid_memberships, choose Manage membership for YouTube Music Premium, then Deactivate.",
+        "url": "https://www.youtube.com/paid_memberships",
+        "gotchas": "If you also hold YouTube Premium, Music is already included, so cancel the Music-only plan. If billed through Apple, cancel in iOS Settings. Downloads stop working when the membership lapses."
+      }
+    },
+    "sources": [
+      "https://www.edmtunes.com/2026/04/youtube-raises-subscription-prices-for-premium-and-music-plans/",
+      "https://www.pulse.bot/saas/news/youtube-premium-and-music-prices-rise-up-to-4-in-us-effective-june-2026-1bde2b32-cc73-48f1-ada5-a7ad7a40b949",
+      "https://music.youtube.com/music_premium"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "tidal",
+    "name": "TIDAL",
+    "url": "https://tidal.com",
+    "match": {
+      "patterns": [
+        "TIDAL ?(MUSIC|\\.COM)",
+        "^TIDAL\\*"
+      ],
+      "examples": [
+        "TIDAL MUSIC AS",
+        "TIDAL.COM"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Individual from Aug 2026"
+        },
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Individual before Aug 2026"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Family from Aug 2026"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Family before Aug 2026"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Tidal sells lossless and hi-res audio, reported at $11.99 from August 2026 (support pages still showed $10.99). Keep it only if you can hear the difference on your gear; otherwise a cheaper service is enough.",
+    "alternatives": [
+      {
+        "name": "Qobuz",
+        "url": "https://www.qobuz.com/us-en/",
+        "note": "Another hi-res service for comparison."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "Sign in at tidal.com, open your account page, go to Subscription and choose Cancel subscription. In the app: Settings > Subscription.",
+        "gotchas": "If billed through Apple or Google, cancel in that store. Downloaded music stops playing when the subscription ends. Prices rose in August 2026, so compare the charge on your statement to the plan you think you have."
+      }
+    },
+    "sources": [
+      "https://www.ecoustics.com/news/tidal-price-increase-2026/",
+      "https://support.tidal.com/hc/en-us/articles/115003662825-Subscription-Types"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "pandora",
+    "name": "Pandora (Plus and Premium)",
+    "url": "https://www.pandora.com",
+    "match": {
+      "patterns": [
+        "PANDORA ?(MEDIA|RADIO|MUSIC|PLUS|PREMIUM|SUBSCR)",
+        "PANDORA\\.COM",
+        "PANDORA\\*"
+      ],
+      "examples": [
+        "PANDORA MEDIA 510-451-4100 CA",
+        "PANDORA*PLUS SUBSCRIPTION CA"
+      ]
+    },
+    "typicalMonthly": null,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Plus is a low-cost radio-style tier and Premium is priced like Spotify. Sources conflict on an October 2026 increase, so check your bill. Cancel Premium if you already pay for another on-demand service.",
+    "alternatives": [
+      {
+        "name": "AccuRadio",
+        "url": "https://www.accuradio.com/",
+        "note": "Free curated radio channels."
+      },
+      {
+        "name": "iHeartRadio",
+        "url": "https://www.iheart.com/",
+        "note": "Free radio streaming with ads."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "On pandora.com open the Subscriptions page (also in the Settings menu), choose Switch Plans, then Cancel Subscription and confirm. If you subscribed through Apple, Google, Amazon, Roku or a carrier, cancel there.",
+        "url": "https://help.pandora.com/s/article/Cancel-your-Subscription-1519949295562",
+        "gotchas": "Prices differ by platform: app-store billing has been reported higher than direct. Free ad-supported listening continues after you cancel."
+      }
+    },
+    "sources": [
+      "https://routenote.com/radar/is-pandora-plus-worth-it-in-2026-price-features-and-spotify-comparison/",
+      "https://help.pandora.com/s/article/Cancel-your-Subscription-1519949295562"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "siriusxm",
+    "name": "SiriusXM",
+    "url": "https://www.siriusxm.com",
+    "match": {
+      "patterns": [
+        "SIRIUS ?XM",
+        "SIRIUS SATELLITE",
+        "SXM\\*"
+      ],
+      "examples": [
+        "SIRIUSXM.COM/ACCT NEW YORK NY",
+        "SIRIUS XM RADIO INC NEW YORK NY",
+        "SXM*SIRIUSXM.COM/ACCT NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "All Music (car and app) or All Access (app only)"
+        },
+        {
+          "amount": 25.99,
+          "cadence": "monthly",
+          "plan": "All Access (car and app)"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "haggle",
+    "also": [
+      "cancel"
+    ],
+    "why": "SiriusXM is where retention offers are the norm: the site shows $1 for 3 months, then $11.99 to $25.99 a month. Call before renewal, mention cheaper streaming, and take the saving or cancel.",
+    "alternatives": [
+      {
+        "name": "Pandora free",
+        "url": "https://www.pandora.com/",
+        "note": "Ad-supported stations at no cost."
+      },
+      {
+        "name": "AccuRadio",
+        "url": "https://www.accuradio.com/",
+        "note": "Free curated radio channels."
+      },
+      {
+        "name": "iHeartRadio",
+        "url": "https://www.iheart.com/",
+        "note": "Free radio streaming with ads."
+      }
+    ],
+    "plans": {
+      "haggle": {
+        "leverage": "Say you are about to cancel and that free radio, Pandora and Spotify cover most of your listening. Retention agents have room to offer promotional pricing, but only if you ask.",
+        "script": "Hi, I'm calling about my SiriusXM subscription, which renews soon at $[current price] a month. That is more than I want to pay, and Pandora and Spotify cover most of what I listen to for much less. I've enjoyed SiriusXM and would like to stay if you can offer a better rate. Are there any promotions or lower-priced plans I qualify for? If not, please cancel the account at the end of this billing period and give me a confirmation number.",
+        "expectedDiscountPct": [
+          10,
+          25
+        ],
+        "bestTime": "Call 2 to 4 weeks before renewal and ask for cancellations or retention. SiriusXM asks for at least 24 hours before renewal, so do not wait for the last day."
+      },
+      "cancel": {
+        "howTo": "Call 1-866-635-2349 or use the online cancellation request from the Help Center page for managing or cancelling a subscription. Cancel at least 24 hours before renewal; it ends with the current billing period.",
+        "url": "https://care.siriusxm.com/",
+        "gotchas": "Intro offers ($1 for 3 months on the site) renew at the regular rate. Agents will present save offers; say plainly that you want to cancel and ask for a confirmation number. A trial that came with a new car converts to a paid plan unless you stop it."
+      }
+    },
+    "sources": [
+      "https://www.siriusxm.com/",
+      "https://www.siriusxm.com/plans"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "audible",
+    "name": "Audible",
+    "url": "https://www.audible.com",
+    "match": {
+      "patterns": [
+        "AUDIBLE"
+      ],
+      "examples": [
+        "AUDIBLE*MP9QK4R30 NEWARK NJ",
+        "AUDIBLE US NEWARK NJ"
+      ],
+      "billedVia": "amazon",
+      "priceHints": [
+        {
+          "amount": 14.95,
+          "cadence": "monthly",
+          "plan": "Premium (1 credit)"
+        },
+        {
+          "amount": 8.99,
+          "cadence": "monthly",
+          "plan": "Standard (1 selection, no credits)"
+        },
+        {
+          "amount": 22.95,
+          "cadence": "monthly",
+          "plan": "Premium (2 credits)"
+        },
+        {
+          "amount": 149.5,
+          "cadence": "annual",
+          "plan": "Premium annual (12 credits)"
+        },
+        {
+          "amount": 229.5,
+          "cadence": "annual",
+          "plan": "Premium annual (24 credits)"
+        }
+      ]
+    },
+    "typicalMonthly": 14.95,
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "Audible makes sense if you use a credit every month and want to keep the books. If credits pile up unused you are prepaying. A library card through Libby gets many of the same titles free.",
+    "alternatives": [
+      {
+        "name": "Libby (public library)",
+        "url": "https://www.libbyapp.com/",
+        "note": "Free ebooks and audiobooks with a library card."
+      },
+      {
+        "name": "Hoopla",
+        "url": "https://www.hoopladigital.com/",
+        "note": "Free with a library card: audiobooks, comics, music and some video, with a monthly borrow limit."
+      },
+      {
+        "name": "Audible Standard",
+        "url": "https://www.audible.com/ep/membership-compare",
+        "note": "$8.99 a month for one selection that does not roll over, per Audible. Check whether titles stay after you cancel."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Use up your credits, cancel, and rejoin when you want the next batch of books. Audible says credits expire when a membership is cancelled, so spend them first. Check the rule for Standard before choosing it.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "Sign in at audible.com, open Account Details, choose Cancel membership and click through the retention screens to the final confirmation.",
+        "url": "https://www.audible.com/account/overview",
+        "gotchas": "Spend unused credits first, since they can be lost when a membership ends. The cancel flow shows discounts and pause offers before the final screen. Intro offers ($0.99 a month for 3 months on the site) renew at the regular price."
+      }
+    },
+    "sources": [
+      "https://www.audible.com/ep/membership-compare",
+      "https://www.audible.com/whatis",
+      "https://goodereader.com/blog/tag/audible-standard"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "kindle-unlimited",
+    "name": "Kindle Unlimited",
+    "url": "https://www.amazon.com/kindle-dbs/landing/kindle-unlimited",
+    "match": {
+      "patterns": [
+        "KINDLE ?UNLIMITED",
+        "KINDLE ?UNLTD"
+      ],
+      "examples": [
+        "KINDLE UNLIMITED*RO1AB23C5 WA",
+        "KINDLE UNLTD*RO1AB23C5 WA"
+      ],
+      "billedVia": "amazon",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Kindle Unlimited"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Kindle Unlimited is a binge product at $143.88 a year, and borrowed books disappear when you stop. Read a stack over two or three months, cancel, and use library apps in between.",
+    "alternatives": [
+      {
+        "name": "Libby (public library)",
+        "url": "https://www.libbyapp.com/",
+        "note": "Free ebooks and audiobooks with a library card."
+      },
+      {
+        "name": "Hoopla",
+        "url": "https://www.hoopladigital.com/",
+        "note": "Free with a library card: audiobooks, comics, music and some video, with a monthly borrow limit."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for 2 to 3 months, borrow the books you have been saving, finish them, cancel. Amazon runs 3-months-for-$0.99 style promos that renew at $11.99.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "In your Amazon account open Memberships and Subscriptions, select Kindle Unlimited and click Cancel Membership.",
+        "gotchas": "Access continues to the end of the billing cycle, then borrowed books are removed from your devices. Highlights and notes stay in the cloud. Payments are generally non-refundable and partial months are not prorated. Free trial and 3-month promos auto-renew at $11.99."
+      }
+    },
+    "sources": [
+      "https://www.dealnews.com/features/kindle-unlimited/cost/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "everand",
+    "name": "Everand (Scribd)",
+    "url": "https://www.everand.com",
+    "match": {
+      "patterns": [
+        "EVERAND",
+        "SCRIBD"
+      ],
+      "examples": [
+        "EVERAND.COM SAN FRANCISCO CA",
+        "SCRIBD.COM SAN FRANCISCO CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Standard (1 title a month)"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Plus (3 titles a month)"
+        },
+        {
+          "amount": 28.99,
+          "cadence": "monthly",
+          "plan": "Deluxe (5 titles a month)"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Everand gives a set number of premium titles a month ($11.99 for one, $16.99 for three), and its listing says unlocks roll over for up to 6 months. Heavy-reading stretches suit it better than year-round billing.",
+    "alternatives": [
+      {
+        "name": "Libby (public library)",
+        "url": "https://www.libbyapp.com/",
+        "note": "Free ebooks and audiobooks with a library card."
+      },
+      {
+        "name": "Hoopla",
+        "url": "https://www.hoopladigital.com/",
+        "note": "Free with a library card: audiobooks, comics, music and some video, with a monthly borrow limit."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe when you have a stack of books to read, use the monthly unlocks, then cancel. Library apps cover the gaps.",
+        "monthsOffPerYear": 5
+      },
+      "cancel": {
+        "howTo": "Sign in at everand.com, open Account settings, go to Membership and choose Cancel membership. If you subscribed in an app store, cancel there.",
+        "url": "https://www.everand.com/account-settings",
+        "gotchas": "The website offers a 30-day free trial that converts to paid unless you cancel before it ends; app-store trials may differ. Subscriptions auto-renew until cancelled. Plans are sold by unlocks, so check which tier you are on."
+      }
+    },
+    "sources": [
+      "https://apps.apple.com/us/app/-/id542557212",
+      "https://www.publishersweekly.com/pw/by-topic/digital/content-and-e-books/article/98426-scribd-s-everand-adds-deluxe-subscription-tier.html"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "crunchyroll",
+    "name": "Crunchyroll",
+    "url": "https://www.crunchyroll.com",
+    "match": {
+      "patterns": [
+        "CRUNCHYROLL"
+      ],
+      "examples": [
+        "CRUNCHYROLL.COM SAN FRANCISCO CA",
+        "CRUNCHYROLL LLC"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Fan"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "Mega Fan"
+        },
+        {
+          "amount": 17.99,
+          "cadence": "monthly",
+          "plan": "Ultimate Fan"
+        },
+        {
+          "amount": 7.99,
+          "cadence": "monthly",
+          "plan": "Fan before 2026 hike"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Mega Fan before 2026 hike"
+        }
+      ]
+    },
+    "typicalMonthly": 9.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Anime runs in four seasons a year. Fan at $9.99 (up $2 in 2026) covers most viewers, and Mega Fan adds more streams. Pay for the one or two seasons you follow and skip the rest.",
+    "alternatives": [
+      {
+        "name": "HIDIVE",
+        "url": "https://www.hidive.com/",
+        "note": "Another anime service, useful for titles that are not on Crunchyroll."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Pay for the one or two simulcast seasons you follow, catch up on backlog during those months, and cancel between seasons.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Sign in at crunchyroll.com, open Account > Membership and choose Cancel Membership.",
+        "url": "https://www.crunchyroll.com/account/membership",
+        "gotchas": "If you subscribed through Apple, Google, Amazon, PlayStation or another partner, cancel there. Crunchyroll ended its free ad-supported tier at the end of 2025, so cancelling ends access entirely. Fan allows 1 device at a time."
+      }
+    },
+    "sources": [
+      "https://alternativeto.net/news/2026/2/crunchyroll-raises-prices-for-all-plans-in-the-us-right-after-killing-its-free-tier",
+      "https://nerdist.com/article/crunchyroll-announces-price-changes-2026",
+      "https://www.crunchyroll.com/welcome"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "espn-plus",
+    "name": "ESPN Select (ESPN+) and ESPN Unlimited",
+    "url": "https://www.espn.com",
+    "match": {
+      "patterns": [
+        "ESPN ?\\+",
+        "ESPN ?(PLUS|SELECT|UNLIMITED)"
+      ],
+      "examples": [
+        "ESPN+ BRISTOL CT",
+        "ESPN PLUS BRISTOL CT"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "ESPN Select"
+        },
+        {
+          "amount": 31.99,
+          "cadence": "monthly",
+          "plan": "ESPN Unlimited"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "ESPN Select before Sep 2026"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "ESPN Unlimited before Sep 2026"
+        },
+        {
+          "amount": 139.99,
+          "cadence": "annual",
+          "plan": "ESPN Select annual"
+        },
+        {
+          "amount": 319.99,
+          "cadence": "annual",
+          "plan": "ESPN Unlimited annual"
+        }
+      ]
+    },
+    "typicalMonthly": 13.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "ESPN+ became ESPN Select at $13.99, with ESPN Unlimited at $31.99 after the September 2026 increases. Its value is live college and niche sports, so pay during the seasons you follow.",
+    "alternatives": [
+      {
+        "name": "Disney+, Hulu and ESPN Select bundle",
+        "url": "https://disneyplus.com/welcome/plans",
+        "note": "$21.99 with ads, cheaper than buying the three separately."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for the college football, hockey or other season you follow, then cancel. Compare the Disney+, Hulu and ESPN Select bundle ($21.99 with ads) if you want all three.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Manage it where you bought it: your Disney or ESPN account on the web, or Apple, Google, Amazon or Roku if you subscribed there. Choose Cancel subscription.",
+        "gotchas": "Plans bought inside a Disney bundle are cancelled in the Disney account. The September 2026 price rise took effect on September 17. Annual plans are billed up front."
+      }
+    },
+    "sources": [
+      "https://www.newscaststudio.com/2026/08/24/espn-dtc-streaming-price-hike-826/",
+      "https://9to5mac.com/2026/08/24/espn-streaming-prices-are-going-up-along-with-disney-and-hulu-bundles/",
+      "https://disneyplus.com/welcome/plans"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "dazn",
+    "name": "DAZN",
+    "url": "https://www.dazn.com",
+    "match": {
+      "patterns": [
+        "DAZN"
+      ],
+      "examples": [
+        "DAZN USA NEW YORK NY",
+        "DAZN.COM NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 34.99,
+          "cadence": "monthly",
+          "plan": "Boxing monthly"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "Boxing annual paid monthly"
+        },
+        {
+          "amount": 44.99,
+          "cadence": "monthly",
+          "plan": "Ultimate"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "DAZN sells fight nights and season passes, and its cheaper monthly rate usually means a 12-month commitment. Pay monthly for the event or season you want and avoid annual-paid-monthly billing.",
+    "alternatives": [
+      {
+        "name": "Free DAZN account",
+        "url": "https://www.dazn.com/",
+        "note": "A free sign-up gives some free channels and games, depending on rights."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Take the monthly plan only for the months with the fights or games you want. Skip the annual-paid-monthly option; it keeps billing for 12 payments.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at dazn.com, open your account, go to Subscription and choose Cancel. The help center explains notice periods for each plan.",
+        "url": "https://help.dazn.com/",
+        "gotchas": "DAZN's pricing page describes the monthly boxing plan as cancelable with 30 days' notice. An annual plan paid monthly commits you to 12 payments. If billed through Fubo, Apple or Google, cancel there."
+      }
+    },
+    "sources": [
+      "https://www.dazn.com/en-CA/news/other/dazn-cost-subscription-price-payment-methods-how-to-watch-usa-us-america/p4tzgn0msoc51q2291y9ycjfh"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "mlb-tv",
+    "name": "MLB.TV",
+    "url": "https://www.mlb.com/tv",
+    "match": {
+      "patterns": [
+        "MLB\\.TV",
+        "MLB ?TV",
+        "MLBAM"
+      ],
+      "examples": [
+        "MLB.TV NEW YORK NY",
+        "MLBAM*MLB.TV NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 139.99,
+          "cadence": "annual",
+          "plan": "Seasonal after May 2026 price cut"
+        },
+        {
+          "amount": 149.99,
+          "cadence": "annual",
+          "plan": "Seasonal before May 2026"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Monthly (April to October, reported)"
+        }
+      ]
+    },
+    "typicalMonthly": 11.67,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "MLB.TV is a seasonal product. The pass fell to $139.99 in May 2026, and a monthly plan has been sold near $30, so month by month wins if you watch four months or fewer. Do not let a season pass renew by default.",
+    "alternatives": [
+      {
+        "name": "MLB.TV on ESPN",
+        "url": "https://www.mlb.com/news/mlb-tv-on-espn-may-2026-price-drop",
+        "note": "Cord Cutters News reported a $124.99 season price for ESPN Unlimited subscribers in May 2026."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Use the monthly plan only for the stretches you follow your team, such as the stretch run and playoffs, and skip the season pass unless you watch five or more months.",
+        "monthsOffPerYear": 5
+      },
+      "cancel": {
+        "howTo": "Sign in at mlb.com, open your account subscriptions, find MLB.TV and turn off auto-renew or cancel. If you bought through ESPN, Apple or Google, cancel there.",
+        "url": "https://www.mlb.com/tv",
+        "gotchas": "Seasonal passes can renew for the next season, so turn off renewal before spring. The monthly plan recurs through October. Blackouts apply to local and national-exclusive games. The seasonal price dropped from $149.99 to $139.99 in May 2026."
+      }
+    },
+    "sources": [
+      "https://www.mlb.com/news/mlb-tv-on-espn-may-2026-price-drop",
+      "https://www.mlb.com/tv",
+      "https://cordcuttersnews.com/save-now-mlb-tv-gets-a-mid-season-price-cut-on-espn/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "nba-league-pass",
+    "name": "NBA League Pass",
+    "url": "https://www.nba.com/watch/league-pass-stream",
+    "match": {
+      "patterns": [
+        "NBA[ *]?LEAGUE ?PASS",
+        "NBA\\.COM/LEAGUE"
+      ],
+      "examples": [
+        "NBA LEAGUE PASS NEW YORK NY",
+        "NBA.COM/LEAGUEPASS NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 109.99,
+          "cadence": "annual",
+          "plan": "League Pass season (NBA.com)"
+        },
+        {
+          "amount": 159.99,
+          "cadence": "annual",
+          "plan": "League Pass Premium season (NBA.com)"
+        }
+      ]
+    },
+    "typicalMonthly": null,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "League Pass runs October to April. NBA.com lists $109.99 for the season and $159.99 for Premium. Blackouts make the value depend on your team, so take the season pass only if you will watch most of it.",
+    "alternatives": [
+      {
+        "name": "DAZN NBA team passes",
+        "url": "https://www.dazn.com/",
+        "note": "Some teams stream on DAZN instead of League Pass."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Buy the season pass if you watch most of the year, or go month to month for the stretch you care about, such as the playoffs, then cancel. Turn off renewal before the next season.",
+        "monthsOffPerYear": 5
+      },
+      "cancel": {
+        "howTo": "If you bought on NBA.com, cancel in your NBA.com profile. If you bought in the NBA app, cancel in the app store you used. Cancel before the next billing event.",
+        "url": "https://www.nba.com/nba-league-pass-faqs",
+        "gotchas": "NBA says you can cancel any time before your next billing event, which may be monthly, seasonal or annual depending on platform. Annual plans sold in the app renew automatically. Blackouts apply to local and national games."
+      }
+    },
+    "sources": [
+      "https://www.nba.com/nba-league-pass-faqs",
+      "https://www.americantv.com/nba-league-pass-plans-prices.php"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "xbox-game-pass",
+    "name": "Xbox Game Pass",
+    "url": "https://www.xbox.com/en-US/xbox-game-pass",
+    "match": {
+      "patterns": [
+        "XBOX ?GAME ?PASS",
+        "XBOX ?LIVE",
+        "MICROSOFT ?\\*(XBOX|ULTIMATE) ?(GAME|LIVE|GOLD|PASS|PA)",
+        "MSFT ?\\*? ?XBOX ?(GAME|LIVE)"
+      ],
+      "examples": [
+        "XBOX GAME PASS 800-642-7676 WA",
+        "XBOX GAME PASS ULTIMATE REDMOND WA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 22.99,
+          "cadence": "monthly",
+          "plan": "Ultimate"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "PC Game Pass"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Ultimate before Apr 2026"
+        }
+      ]
+    },
+    "typicalMonthly": 22.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Ultimate fell to $22.99 in April 2026 (Essential $9.99, Premium $14.99). Games rotate off, so most players get the same value from two or three months on and a break after finishing what they wanted.",
+    "alternatives": [
+      {
+        "name": "Game Pass Essential",
+        "url": "https://www.xbox.com/en-US/xbox-game-pass",
+        "note": "$9.99 a month with online console multiplayer and a smaller catalog."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe when a game you want arrives, finish it, then cancel; saves stay with your account. Step down to Essential ($9.99) for online multiplayer only.",
+        "monthsOffPerYear": 4
+      },
+      "cancel": {
+        "howTo": "Go to account.microsoft.com/services, find Xbox Game Pass, choose Manage and then Cancel subscription.",
+        "url": "https://support.xbox.com/en-US/help/subscriptions-billing/manage-subscriptions/cancel-xbox-subscription",
+        "gotchas": "Intro offers (such as $1 for the first month) renew at the full price. Games leave your library when the period ends. Billing through a gift card, carrier or reseller is managed there."
+      }
+    },
+    "sources": [
+      "https://www.purexbox.com/news/2026/04/heres-a-breakdown-of-the-new-prices-for-xbox-game-pass-as-of-april-2026",
+      "https://www.xbox.com/en-US/xbox-game-pass",
+      "https://support.xbox.com/en-US/help/subscriptions-billing/manage-subscriptions/cancel-xbox-subscription"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "playstation-plus",
+    "name": "PlayStation Plus",
+    "url": "https://www.playstation.com/en-us/ps-plus/",
+    "match": {
+      "patterns": [
+        "PLAYSTATION ?(PLUS|NETWORK)",
+        "\\bPS ?PLUS",
+        "SONY ?INTERACTIVE"
+      ],
+      "examples": [
+        "PLAYSTATION NETWORK SAN MATEO CA",
+        "PLAYSTATION PLUS SAN MATEO CA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Extra"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 27.99,
+          "cadence": "quarterly",
+          "plan": "Essential 3 months"
+        },
+        {
+          "amount": 43.99,
+          "cadence": "quarterly",
+          "plan": "Extra 3 months"
+        },
+        {
+          "amount": 54.99,
+          "cadence": "quarterly",
+          "plan": "Premium 3 months"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Essential 12 months"
+        },
+        {
+          "amount": 134.99,
+          "cadence": "annual",
+          "plan": "Extra 12 months"
+        },
+        {
+          "amount": 159.99,
+          "cadence": "annual",
+          "plan": "Premium 12 months"
+        }
+      ]
+    },
+    "typicalMonthly": 10.99,
+    "verdict": "keep",
+    "also": [
+      "rotate"
+    ],
+    "why": "Online play on PlayStation needs Essential, so keep it and buy the 12-month plan ($79.99) over monthly ($10.99). Extra and Premium are catalogs; add them for a few months when games you want appear.",
+    "alternatives": [
+      {
+        "name": "PS Plus 12-month plan",
+        "url": "https://www.playstation.com/en-us/ps-plus/",
+        "note": "Essential is $79.99 for 12 months versus $131.88 paid monthly."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Hold Essential for online play. Add Extra or Premium on monthly or 3-month plans only in stretches when the catalog has games you want, then step back down.",
+        "monthsOffPerYear": 3
+      },
+      "cancel": {
+        "howTo": "On a PS5: Settings > Users and Accounts > Account > Payment and Subscriptions > Subscriptions > PlayStation Plus > Cancel Subscription. On the web, sign in to Account Management, open Subscription and choose Cancel Subscription next to PlayStation Plus.",
+        "url": "https://www.playstation.com/en-us/support/subscriptions/cancel-playstation-plus/",
+        "gotchas": "You keep benefits until the end of the paid period, then lose monthly games, online storage and online multiplayer. Free monthly games you downloaded stop working. Annual plans renew at the then-current price."
+      }
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/ps-plus/"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "nintendo-switch-online",
+    "name": "Nintendo Switch Online",
+    "url": "https://www.nintendo.com/us/switch/online/",
+    "match": {
+      "patterns": [
+        "NINTENDO ?\\*? ?(SWITCH ?)?ONLINE",
+        "NINTENDO ?\\*? ?NSO"
+      ],
+      "examples": [
+        "NINTENDO *SWITCH ONLINE REDMOND WA",
+        "NINTENDO SWITCH ONLINE 800-255-3700 WA"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 19.99,
+          "cadence": "annual",
+          "plan": "Individual 12 months"
+        },
+        {
+          "amount": 34.99,
+          "cadence": "annual",
+          "plan": "Family 12 months"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Expansion Pack Individual 12 months"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Expansion Pack Family 12 months"
+        }
+      ]
+    },
+    "typicalMonthly": 1.67,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "At $19.99 a year this is the cheapest subscription here. Keep it if you play online or use cloud saves. The $49.99 Expansion Pack only matters if you want the classic game libraries.",
+    "alternatives": [
+      {
+        "name": "Family membership",
+        "url": "https://www.nintendo.com/us/switch/online/",
+        "note": "$34.99 a year covers up to 8 accounts."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "On the console, open the eShop, choose your account, open Account Information and select Cancel Your Subscription by Turning Off Automatic Renewal. On the web, sign in at accounts.nintendo.com, select Nintendo Switch Online and turn off auto-renewal.",
+        "url": "https://en-americas-support.nintendo.com/app/answers/detail/p/1096/a_id/41196",
+        "gotchas": "Per Nintendo, turn off auto-renewal at least 48 hours before the membership expires; access continues to the end of the term with no refund, and cloud save backups become unavailable afterward. A free trial converts to a 1-month auto-renewing membership at the then-current price unless you turn off renewal."
+      }
+    },
+    "sources": [
+      "https://www.nintendo.com/us/switch/online/",
+      "https://en-americas-support.nintendo.com/app/answers/detail/p/1096/a_id/41196"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "apple-arcade",
+    "name": "Apple Arcade",
+    "url": "https://www.apple.com/apple-arcade/",
+    "match": {
+      "patterns": [
+        "\\bAPPLE ?ARCADE"
+      ],
+      "examples": [
+        "APPLE ARCADE 866-712-7753 CA",
+        "APPLE ARCADE CUPERTINO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Apple Arcade monthly"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Apple Arcade annual"
+        }
+      ]
+    },
+    "typicalMonthly": 6.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "A catalog of ad-free mobile games at $6.99 that people subscribe to once and forget. Play through what you want in a month or two, cancel, and rejoin when new games arrive.",
+    "alternatives": [
+      {
+        "name": "Apple One",
+        "url": "https://www.apple.com/apple-one/",
+        "note": "Includes Arcade with Music, TV and iCloud+ from $21.95."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for a month or two, play the games you wanted, cancel, and rejoin when new titles land. Use the 3 free months that come with an eligible new device first.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "iPhone or iPad: Settings > your name > Subscriptions > Apple Arcade > Cancel Subscription. Mac: App Store > your name > Subscriptions. Web: account.apple.com > Subscriptions.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Games stop opening once the paid period ends. If the charge is part of Apple One, cancel or change Apple One instead."
+      }
+    },
+    "sources": [
+      "https://www.apple.com/apple-arcade/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "apple-one",
+    "name": "Apple One",
+    "url": "https://www.apple.com/apple-one/",
+    "match": {
+      "patterns": [
+        "\\bAPPLE ONE\\b"
+      ],
+      "examples": [
+        "APPLE ONE 866-712-7753 CA",
+        "APPLE ONE CUPERTINO CA"
+      ],
+      "billedVia": "apple",
+      "priceHints": [
+        {
+          "amount": 21.95,
+          "cadence": "monthly",
+          "plan": "Individual"
+        },
+        {
+          "amount": 27.95,
+          "cadence": "monthly",
+          "plan": "Family"
+        },
+        {
+          "amount": 39.95,
+          "cadence": "monthly",
+          "plan": "Premier"
+        },
+        {
+          "amount": 19.95,
+          "cadence": "monthly",
+          "plan": "Individual before Aug 2026"
+        },
+        {
+          "amount": 25.95,
+          "cadence": "monthly",
+          "plan": "Family (previous price)"
+        },
+        {
+          "amount": 37.95,
+          "cadence": "monthly",
+          "plan": "Premier (previous price)"
+        }
+      ]
+    },
+    "typicalMonthly": 21.95,
+    "verdict": "keep",
+    "also": [
+      "cancel"
+    ],
+    "why": "Apple One only saves money if you use at least two of its services: Individual is $21.95 against $34.96 bought separately, per Apple. If you use one service plus iCloud, single plans can cost less.",
+    "alternatives": [
+      {
+        "name": "Apple Music alone",
+        "url": "https://www.apple.com/apple-music/",
+        "note": "$11.99 a month."
+      },
+      {
+        "name": "Apple TV alone",
+        "url": "https://www.apple.com/apple-tv-plus/",
+        "note": "$14.99 a month."
+      }
+    ],
+    "plans": {
+      "cancel": {
+        "howTo": "iPhone or iPad: Settings > your name > Subscriptions > Apple One > Cancel Subscription. Mac: App Store > your name > Subscriptions. Web: account.apple.com > Subscriptions.",
+        "url": "https://support.apple.com/en-us/118428",
+        "gotchas": "Cancelling Apple One also drops its iCloud+ storage back to the free tier unless you buy a standalone plan, so back up first. Family and Premier need Family Sharing set up."
+      }
+    },
+    "sources": [
+      "https://www.apple.com/apple-one/",
+      "https://macdailynews.com/2026/08/28/apple-tv-climbs-to-14-99-a-month-as-apple-also-ups-apple-one-individual-price/",
+      "https://support.apple.com/en-us/118428"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "starz",
+    "name": "Starz",
+    "url": "https://www.starz.com",
+    "match": {
+      "patterns": [
+        "STARZ"
+      ],
+      "examples": [
+        "STARZ.COM",
+        "STARZ ENTERTAINMENT"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Starz monthly"
+        }
+      ]
+    },
+    "typicalMonthly": 11.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "Starz is a handful of originals plus movies. A May 2026 report put the plan at $11.99, and the site pushes $5 a month for 3 months promos. Use a promo for one series, then cancel before the full-price bill.",
+    "alternatives": [
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      },
+      {
+        "name": "Pluto TV",
+        "url": "https://pluto.tv/",
+        "note": "Free ad-supported live channels and on-demand titles."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Use a promo such as $5 a month for 3 months, watch the series you came for, and cancel before the first full-price bill. Rejoin on the next promo.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at starz.com, open your account and choose Cancel subscription. If you joined through Amazon Channels, Apple, Roku or a TV provider, cancel there.",
+        "gotchas": "The promo rate ends after 3 months and moves to the regular rate. Amazon Channels billing appears under Amazon rather than Starz."
+      }
+    },
+    "sources": [
+      "https://www.starz.com/us/en",
+      "https://cordcuttersnews.com/?p=235788"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "amc-plus",
+    "name": "AMC+",
+    "url": "https://www.amcplus.com",
+    "match": {
+      "patterns": [
+        "AMC ?\\+",
+        "AMC ?PLUS"
+      ],
+      "examples": [
+        "AMC+ NEW YORK NY",
+        "AMC PLUS NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Premium (ad-free)"
+        },
+        {
+          "amount": 7.99,
+          "cadence": "monthly",
+          "plan": "With Ads"
+        },
+        {
+          "amount": 109.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
+    },
+    "typicalMonthly": 10.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "AMC+ is mostly Walking Dead and Anne Rice universe shows plus AMC series. Premium is $10.99, with an ads tier at $7.99. Subscribe when a series you follow airs, and note that Philo Bundle+ already includes it.",
+    "alternatives": [
+      {
+        "name": "Philo Bundle+",
+        "url": "https://www.philo.com/",
+        "note": "$33 includes AMC+, HBO Max Basic with Ads and discovery+."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe the months a series you follow airs, finish it, cancel. The ads tier is $7.99 if you can accept ads.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at amcplus.com, open Account, choose Manage Subscription and Cancel. If you joined through Amazon Channels, Apple, Roku or a TV provider, cancel there.",
+        "gotchas": "The site shows several overlapping prices, so check what checkout charges. A 7-day free trial converts to paid. Annual Premium ($109.99) is paid up front."
+      }
+    },
+    "sources": [
+      "https://www.amcplus.com/",
+      "https://cordcuttersnews.com/?p=235788"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "britbox",
+    "name": "BritBox",
+    "url": "https://www.britbox.com/us/",
+    "match": {
+      "patterns": [
+        "BRITBOX"
+      ],
+      "examples": [
+        "BRITBOX.COM",
+        "BRITBOX NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "BritBox monthly"
+        },
+        {
+          "amount": 109.99,
+          "cadence": "annual",
+          "plan": "BritBox annual"
+        }
+      ]
+    },
+    "typicalMonthly": 10.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "Most BritBox subscribers want one or two series. At about $10.99 a month, pay for a few months, watch them and leave. The annual plan is roughly 17% cheaper but ties up $109.99.",
+    "alternatives": [
+      {
+        "name": "Kanopy",
+        "url": "https://www.kanopy.com/",
+        "note": "Free film streaming through many public libraries and universities, with a deep arthouse and classics selection."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for the months a series you want is available, finish it, cancel. Rejoin when the next one arrives.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at britbox.com, open your account, go to Subscription and choose Cancel. If billed through Apple, Amazon Channels or Roku, cancel there.",
+        "gotchas": "An annual plan is paid up front. A free trial converts to paid unless cancelled before it ends."
+      }
+    },
+    "sources": [
+      "https://www.britbox.com/us/",
+      "https://latestcost.com/britbox-cost-price-u-s-viewers/",
+      "https://apppricinglab.com/iap/apple/1206838907"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "criterion-channel",
+    "name": "The Criterion Channel",
+    "url": "https://www.criterionchannel.com",
+    "match": {
+      "patterns": [
+        "CRITERION ?CHANNEL"
+      ],
+      "examples": [
+        "CRITERIONCHANNEL.COM NEW YORK NY",
+        "CRITERION CHANNEL NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 10.99,
+          "cadence": "monthly",
+          "plan": "Monthly"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Annual"
+        }
+      ]
+    },
+    "typicalMonthly": 10.99,
+    "verdict": "rotate",
+    "also": [
+      "keep"
+    ],
+    "why": "The Criterion Channel is a film lover service built on rotating collections with monthly leaving dates. At $10.99, a few months at a time is enough. A library card through Kanopy is the free alternative.",
+    "alternatives": [
+      {
+        "name": "Kanopy",
+        "url": "https://www.kanopy.com/",
+        "note": "Free film streaming through many public libraries and universities, with a deep arthouse and classics selection."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for the months with collections you want, watch before their leaving dates, then cancel. Rejoin when the next themed run starts.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at criterionchannel.com, open your account page from the profile menu and choose Cancel subscription.",
+        "url": "https://www.criterionchannel.com/account",
+        "gotchas": "A free trial converts to paid unless cancelled. Early charter members pay lower rates that you may lose if you cancel and rejoin. An annual plan is paid up front."
+      }
+    },
+    "sources": [
+      "https://www.criterionchannel.com/",
+      "https://www.whattowatch.com/news/how-much-does-criterion-channel-cost"
+    ]
+  },
+  {
+    "category": "streaming-media",
+    "pricesCheckedAt": "2026-11",
+    "id": "discovery-plus",
+    "name": "discovery+",
+    "url": "https://www.discoveryplus.com",
+    "match": {
+      "patterns": [
+        "DISCOVERY ?\\+",
+        "DISCOVERY ?PLUS"
+      ],
+      "examples": [
+        "DISCOVERY+ NEW YORK NY",
+        "DISCOVERYPLUS.COM NEW YORK NY"
+      ],
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "With Ads"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Ad-Free"
+        },
+        {
+          "amount": 5.99,
+          "cadence": "monthly",
+          "plan": "With Ads before Oct 2026"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Ad-Free before Oct 2026"
+        }
+      ]
+    },
+    "typicalMonthly": 6.99,
+    "verdict": "rotate",
+    "also": [
+      "cancel"
+    ],
+    "why": "A thin catalog that overlaps with other services: Philo Bundle+ includes it, and it rose to $6.99 with ads and $11.99 ad-free in October 2026. Subscribe for a show you want, then drop it.",
+    "alternatives": [
+      {
+        "name": "HBO Max Basic with Ads",
+        "url": "https://www.hbomax.com/information",
+        "note": "$10.99 a month, a larger catalog from the same parent company."
+      },
+      {
+        "name": "Tubi",
+        "url": "https://tubi.tv/",
+        "note": "Free ad-supported movies and TV."
+      }
+    ],
+    "plans": {
+      "rotate": {
+        "pattern": "Subscribe for the month of a specific show, binge it and cancel. If you already pay for Philo Bundle+ or another service that carries it, skip it.",
+        "monthsOffPerYear": 6
+      },
+      "cancel": {
+        "howTo": "Sign in at discoveryplus.com, open your profile, go to Account then Manage Subscription and choose Cancel. If billed through Amazon, Apple, Roku or a TV provider, cancel there.",
+        "url": "https://help.discoveryplus.com/",
+        "gotchas": "The October 13, 2026 increase reached new subscribers first, with existing members getting 30 days notice. It may also be included in plans you already pay for, such as Philo Bundle+."
+      }
+    },
+    "sources": [
+      "https://www.americantv.com/discovery-plus-price-increase-october-2026.php",
+      "https://www.androidheadlines.com/2026/10/discovery-plus-subscribers-will-now-pay-more-for-streaming.html"
+    ]
+  }
+]
