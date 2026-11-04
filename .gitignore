@@ -4,3 +4,6 @@ dist/
 *.local
 rebuilt/*/dist/
 .review/
+
+.vercel
+.env*
