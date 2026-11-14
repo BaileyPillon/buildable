@@ -277,7 +277,7 @@
       ],
       "billedVia": "direct"
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 75,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -382,6 +382,7 @@
       }
     },
     "sources": [
+      "https://www.cox.com/residential/home.html",
       "https://www.cox.com/",
       "https://www.cox.com/residential/support/billing-and-account/cancel-cox-service.html"
     ]
@@ -511,6 +512,7 @@
       }
     },
     "sources": [
+      "https://frontier.com/",
       "https://frontier.com/resources/cancel-service",
       "https://go.frontier.com/blog/frontier-verizon-2026-merger"
     ]
@@ -530,9 +532,31 @@
         "GOOGLE *GOOGLE FI",
         "GOOGLE *FI 855-836-3987 CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 65,
+          "cadence": "monthly",
+          "plan": "Unlimited Premium (1 line)"
+        },
+        {
+          "amount": 50,
+          "cadence": "monthly",
+          "plan": "Unlimited Standard (1 line)"
+        },
+        {
+          "amount": 35,
+          "cadence": "monthly",
+          "plan": "Unlimited Essentials (1 line)"
+        },
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Flexible base (1 line, plus $10/GB)"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 65,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -924,6 +948,7 @@
       }
     },
     "sources": [
+      "https://www.starlink.com/",
       "https://starlink.com/support/article/37bb3b47-9525-7224-5f0a-6d016ce26975",
       "https://starlink.com/support/article/9d43bef2-36fe-bcd1-9f6a-e0304e9cf22e"
     ]
@@ -1029,6 +1054,7 @@
       }
     },
     "sources": [
+      "https://www.progressive.com/auto/",
       "https://www.progressive.com/answers/how-to-cancel-car-insurance/",
       "https://www.progressive.com/answers/changing-car-insurance-companies/"
     ]
@@ -1080,6 +1106,7 @@
       }
     },
     "sources": [
+      "https://www.statefarm.com/insurance/auto",
       "https://www.statefarm.com/customer-care/manage-your-accounts/cancel-my-policy",
       "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-switch-car-insurance"
     ]
@@ -1131,6 +1158,7 @@
       }
     },
     "sources": [
+      "https://www.allstate.com/auto-insurance",
       "https://www.allstate.com/resources/car-insurance/can-i-cancel-my-car-insurance",
       "https://www.allstate.com/help-support/my-policy/faqs"
     ]
@@ -1453,6 +1481,7 @@
       }
     },
     "sources": [
+      "https://www.crunch.com/faq",
       "https://www.crunch.com/locations/boulder",
       "https://www.crunch.com/locations/canton"
     ]
@@ -1840,6 +1869,8 @@
       }
     },
     "sources": [
+      "https://www.rocketmoney.com/learn/personal-finance/how-much-does-rocket-money-cost",
+      "https://www.rocketmoney.com/faq",
       "https://help.rocketmoney.com/",
       "https://help.rocketmoney.com/en/collections/110584-rocket-money-premium-membership",
       "https://help.rocketmoney.com/en/collections/110540-managing-subscriptions-with-rocket-money"
@@ -1938,7 +1969,7 @@
       ],
       "billedVia": "direct"
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 6.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -1969,6 +2000,8 @@
       }
     },
     "sources": [
+      "https://www.quicken.com/products/pricing-comparison-products/",
+      "https://support.simplifi.quicken.com/en/articles/3363727-quicken-simplifi-subscription-questions",
       "https://www.quicken.com/products/simplifi/"
     ]
   },

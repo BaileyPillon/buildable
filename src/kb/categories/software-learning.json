@@ -490,9 +490,51 @@
       "examples": [
         "JETBRAINS S.R.O. PRAGUE CZ",
         "JETBRAINS AMERICAS INC"
+      ],
+      "priceHints": [
+        {
+          "amount": 29.9,
+          "cadence": "monthly",
+          "plan": "All Products Pack"
+        },
+        {
+          "amount": 19.9,
+          "cadence": "monthly",
+          "plan": "IntelliJ IDEA Ultimate"
+        },
+        {
+          "amount": 299,
+          "cadence": "annual",
+          "plan": "All Products Pack, first year"
+        },
+        {
+          "amount": 239,
+          "cadence": "annual",
+          "plan": "All Products Pack, second year"
+        },
+        {
+          "amount": 179,
+          "cadence": "annual",
+          "plan": "All Products Pack, third year onwards"
+        },
+        {
+          "amount": 199,
+          "cadence": "annual",
+          "plan": "IntelliJ IDEA Ultimate, first year"
+        },
+        {
+          "amount": 159,
+          "cadence": "annual",
+          "plan": "IntelliJ IDEA Ultimate, second year"
+        },
+        {
+          "amount": 119,
+          "cadence": "annual",
+          "plan": "IntelliJ IDEA Ultimate, third year onwards"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 29.9,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -519,6 +561,8 @@
       }
     },
     "sources": [
+      "https://www.jetbrains.com/store/?section=personal&billing=monthly",
+      "https://www.jetbrains.com/store/?section=personal&billing=yearly",
       "https://www.jetbrains.com/store/",
       "https://www.jetbrains.com/idea/buy/",
       "https://sales.jetbrains.com/hc/en-gb/articles/207240845-What-is-a-perpetual-fallback-license"
@@ -539,13 +583,18 @@
       ],
       "priceHints": [
         {
+          "amount": 4,
+          "cadence": "monthly",
+          "plan": "GitHub Pro"
+        },
+        {
           "amount": 48,
           "cadence": "annual",
           "plan": "GitHub Pro, billed yearly"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 4,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -572,6 +621,7 @@
       }
     },
     "sources": [
+      "https://github.com/pricing/calculator",
       "https://github.com/pricing",
       "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
       "https://docs.github.com/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan"
@@ -1078,9 +1128,21 @@
       "examples": [
         "LINKEDIN PREMIUM SUNNYVALE CA",
         "LINKEDIN P-4839122 SUNNYVALE CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 39.99,
+          "cadence": "monthly",
+          "plan": "Premium Career"
+        },
+        {
+          "amount": 239.88,
+          "cadence": "annual",
+          "plan": "Premium Career annual"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 39.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -1105,6 +1167,7 @@
       }
     },
     "sources": [
+      "https://premium.linkedin.com/careers/career",
       "https://www.linkedin.com/premium/products/"
     ]
   },
@@ -1446,7 +1509,7 @@
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -1472,8 +1535,7 @@
     },
     "sources": [
       "https://www.masterclass.com/checkout",
-      "https://www.masterclass.com/",
-      "https://recurdash.com/subscription-pricing/masterclass"
+      "https://www.masterclass.com/"
     ]
   },
   {
@@ -1488,9 +1550,16 @@
       "examples": [
         "SKILLSHARE.COM NEW YORK NY",
         "SKILLSHARE ANNUAL NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 167.88,
+          "cadence": "annual",
+          "plan": "Annual membership"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 13.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -1521,6 +1590,7 @@
       }
     },
     "sources": [
+      "https://www.skillshare.com/pricing",
       "https://www.skillshare.com/en/",
       "https://help.skillshare.com/hc/en-us/articles/4402806767117-How-do-Skillshare-subscriptions-pricing-and-refunds-work",
       "https://help.skillshare.com/hc/en-us/articles/115001701651-How-do-I-cancel-my-Skillshare-subscription"
@@ -1538,9 +1608,21 @@
       "examples": [
         "BLINKIST.COM BERLIN DE",
         "BLINKIST GMBH BERLIN DE"
+      ],
+      "priceHints": [
+        {
+          "amount": 174.99,
+          "cadence": "annual",
+          "plan": "PRO"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Premium"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14.58,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -1567,6 +1649,7 @@
       }
     },
     "sources": [
+      "https://www.blinkist.com/en/pricing",
       "https://www.blinkist.com/",
       "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
       "https://support.claude.com/en/articles/9517075-what-are-projects",
@@ -2062,18 +2145,48 @@
       ],
       "priceHints": [
         {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Core Tech"
+        },
+        {
+          "amount": 55,
+          "cadence": "monthly",
+          "plan": "Complete"
+        },
+        {
+          "amount": 35,
+          "cadence": "monthly",
+          "plan": "AI+/Cloud+/Data+/Security+"
+        },
+        {
+          "amount": 252,
+          "cadence": "annual",
+          "plan": "Core Tech annual"
+        },
+        {
+          "amount": 468,
+          "cadence": "annual",
+          "plan": "Complete annual"
+        },
+        {
+          "amount": 294,
+          "cadence": "annual",
+          "plan": "AI+/Cloud+/Data+/Security+ annual"
+        },
+        {
           "amount": 299,
           "cadence": "annual",
-          "plan": "Individual annual plan (AI+, Cloud+, Security+, Data+ tier)"
+          "plan": "Individual annual plan, legacy price (AI+, Cloud+, Security+, Data+)"
         },
         {
           "amount": 449,
           "cadence": "annual",
-          "plan": "Individual annual plan (Core Tech or Complete tier)"
+          "plan": "Individual annual plan, legacy price (Core Tech or Complete)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 55,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [

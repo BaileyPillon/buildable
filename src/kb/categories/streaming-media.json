@@ -388,6 +388,8 @@
       }
     },
     "sources": [
+      "https://www.peacocktv.com/",
+      "https://www.peacocktv.com/help/article/price-increase",
       "https://www.droid-life.com/2026/08/18/peacock-raises-prices/",
       "https://9to5mac.com/2026/08/18/peacock-is-the-latest-streaming-service-to-increase-prices-details-here/",
       "https://www.tvline.com/2238983/peacock-price-increase-august-2026-subscription-cost/"
@@ -840,9 +842,26 @@
         "FUBO.TV NEW YORK NY",
         "FUBOTV INC NEW YORK NY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 88.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 98.99,
+          "cadence": "monthly",
+          "plan": "Elite"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Latino"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 88.99,
     "verdict": "rotate",
     "also": [
       "keep"
@@ -872,6 +891,7 @@
       }
     },
     "sources": [
+      "https://www.fubo.tv/welcome/plans",
       "https://www.fubo.tv/welcome",
       "https://cordcuttersnews.com/fubo-integrates-hulu-live-tv-into-package-options-on-its-homepage/"
     ]
@@ -1135,6 +1155,8 @@
       }
     },
     "sources": [
+      "https://www.amazon.com/music/i/faq",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6",
       "https://interspacemusic.com/blog/?p=4439"
     ]
   },
@@ -1275,9 +1297,61 @@
       "examples": [
         "PANDORA MEDIA 510-451-4100 CA",
         "PANDORA*PLUS SUBSCRIPTION CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 5.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 65.89,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 131.89,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Premium Family"
+        },
+        {
+          "amount": 219.89,
+          "cadence": "annual",
+          "plan": "Premium Family annual"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Plus (App Store)"
+        },
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Premium (App Store)"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Plus (Google Play)"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Premium (Google Play)"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 5.99,
     "verdict": "keep",
     "also": [
       "cancel"
@@ -1303,6 +1377,9 @@
       }
     },
     "sources": [
+      "https://www.pandora.com/plans",
+      "https://help.pandora.com/s/article/2026-Pandora-Subscription-Rate-Change?language=en_US",
+      "https://help.pandora.com/s/article/Upgrade-to-Pandora-Plus-or-Pandora-Premium-1519949306612?language=en_US",
       "https://routenote.com/radar/is-pandora-plus-worth-it-in-2026-price-features-and-spotify-comparison/",
       "https://help.pandora.com/s/article/Cancel-your-Subscription-1519949295562"
     ]
@@ -1518,6 +1595,7 @@
       }
     },
     "sources": [
+      "https://www.aboutamazon.com/news/devices/what-is-kindle-unlimited",
       "https://www.dealnews.com/features/kindle-unlimited/cost/"
     ]
   },
@@ -1552,6 +1630,11 @@
           "amount": 28.99,
           "cadence": "monthly",
           "plan": "Deluxe (5 titles a month)"
+        },
+        {
+          "amount": 203.88,
+          "cadence": "annual",
+          "plan": "Plus annual"
         }
       ]
     },
@@ -1585,6 +1668,8 @@
       }
     },
     "sources": [
+      "https://support.scribd.com/hc/en-us/articles/40678839226644-Everand-plans-Standard-Plus-and-Deluxe",
+      "https://www.everand.com/",
       "https://apps.apple.com/us/app/-/id542557212",
       "https://www.publishersweekly.com/pw/by-topic/digital/content-and-e-books/article/98426-scribd-s-everand-adds-deluxe-subscription-tier.html"
     ]
@@ -1740,6 +1825,8 @@
       }
     },
     "sources": [
+      "https://support.espn.com/hc/en-us/articles/40375475974036-ESPN-Select-or-Unlimited-Plans-and-Prices",
+      "https://plus.espn.com/",
       "https://www.newscaststudio.com/2026/08/24/espn-dtc-streaming-price-hike-826/",
       "https://9to5mac.com/2026/08/24/espn-streaming-prices-are-going-up-along-with-disney-and-hulu-bundles/",
       "https://disneyplus.com/welcome/plans"
@@ -1775,10 +1862,20 @@
           "amount": 44.99,
           "cadence": "monthly",
           "plan": "Ultimate"
+        },
+        {
+          "amount": 249.99,
+          "cadence": "annual",
+          "plan": "Boxing annual (paid up front)"
+        },
+        {
+          "amount": 449.99,
+          "cadence": "annual",
+          "plan": "Ultimate annual"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 34.99,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -1803,6 +1900,7 @@
       }
     },
     "sources": [
+      "https://www.dazn.com/en-US/news/boxing/dazn-cost-subscription-price-payment-methods-how-to-watch-usa-us-america/p4tzgn0msoc51q2291y9ycjfh",
       "https://www.dazn.com/en-CA/news/other/dazn-cost-subscription-price-payment-methods-how-to-watch-usa-us-america/p4tzgn0msoc51q2291y9ycjfh"
     ]
   },
@@ -1897,10 +1995,25 @@
           "amount": 159.99,
           "cadence": "annual",
           "plan": "League Pass Premium season (NBA.com)"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "League Pass monthly (NBA.com)"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "League Pass Premium monthly (NBA.com)"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "Team Pass monthly (NBA.com)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 16.99,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -1925,6 +2038,7 @@
       }
     },
     "sources": [
+      "https://www.nba.com/league-pass-purchase",
       "https://www.nba.com/nba-league-pass-faqs",
       "https://www.americantv.com/nba-league-pass-plans-prices.php"
     ]
@@ -2609,6 +2723,8 @@
       }
     },
     "sources": [
+      "https://www.discoveryplus.com/",
+      "https://help.discoveryplus.com/hc/en-us/articles/44191391175703-discovery-plan-price-changes",
       "https://www.americantv.com/discovery-plus-price-increase-october-2026.php",
       "https://www.androidheadlines.com/2026/10/discovery-plus-subscribers-will-now-pay-more-for-streaming.html"
     ]

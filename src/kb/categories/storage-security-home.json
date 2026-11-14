@@ -264,7 +264,19 @@
         "MICROSOFT*ONEDRIVE 100GB WA",
         "MSFT *ONEDRIVE STORAGE WA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 1.99,
+          "cadence": "monthly",
+          "plan": "Microsoft 365 Basic"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "annual",
+          "plan": "Microsoft 365 Basic annual"
+        }
+      ]
     },
     "typicalMonthly": 1.99,
     "pricesCheckedAt": "2026-11",
@@ -307,9 +319,16 @@
         "BOX.COM PERSONAL PRO SUBSCRIPTION",
         "BOX, INC. REDWOOD CITY CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14,
+          "cadence": "monthly",
+          "plan": "Personal Pro"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -453,9 +472,21 @@
         "FLICKR PRO ANNUAL SUBSCRIPTION",
         "FLICKR.COM PRO"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 82,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": 6.83,
+    "typicalMonthly": 11,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -614,6 +645,7 @@
       }
     },
     "sources": [
+      "https://store.google.com/product/google_home_premium?hl=en-US",
       "https://blog.google/products-and-platforms/devices/google-nest/googe-home-premium-google-ai-pro-subscription/",
       "https://9to5google.com/2025/10/01/google-home-premium/"
     ]
@@ -633,7 +665,49 @@
         "ARLO SECURE PLUS",
         "ARLO.COM SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Smart Aware 1 camera"
+        },
+        {
+          "amount": 95.88,
+          "cadence": "annual",
+          "plan": "Smart Aware 1 camera annual"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Smart Aware unlimited cameras"
+        },
+        {
+          "amount": 215.88,
+          "cadence": "annual",
+          "plan": "Smart Aware unlimited cameras annual"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Smart Secure"
+        },
+        {
+          "amount": 299.98,
+          "cadence": "annual",
+          "plan": "Smart Secure annual"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "monthly",
+          "plan": "Ultra Secure"
+        },
+        {
+          "amount": 479.88,
+          "cadence": "annual",
+          "plan": "Ultra Secure annual"
+        }
+      ]
     },
     "typicalMonthly": 9.99,
     "pricesCheckedAt": "2026-11",
@@ -650,6 +724,7 @@
       }
     },
     "sources": [
+      "https://us.arlo.com/pages/arlo-secure",
       "https://www.nerdwallet.com/home-ownership/home-security/reviews/arlo",
       "https://www.security.org/security-cameras/arlo/"
     ]
@@ -867,9 +942,41 @@
         "ABODE SYSTEMS INC PALO ALTO CA",
         "GOABODE.COM SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 8.49,
+          "cadence": "monthly",
+          "plan": "Standard"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Standard annual"
+        },
+        {
+          "amount": 26.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 245.99,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        },
+        {
+          "amount": 3.99,
+          "cadence": "monthly",
+          "plan": "Camera-only video per camera"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "24/7 video storage"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 8.49,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -1014,9 +1121,41 @@
         "NORDVPN.COM 1 YEAR PLAN",
         "NORDVPN* NORDSEC B.V."
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Basic"
+        },
+        {
+          "amount": 139.08,
+          "cadence": "annual",
+          "plan": "Basic renewal"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Complete"
+        },
+        {
+          "amount": 219.48,
+          "cadence": "annual",
+          "plan": "Complete renewal"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Prime"
+        },
+        {
+          "amount": 296.28,
+          "cadence": "annual",
+          "plan": "Prime renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -1069,6 +1208,7 @@
       }
     },
     "sources": [
+      "https://nordvpn.com/pricing/",
       "https://www.security.org/vpn/nordvpn/review/",
       "https://support.nordvpn.com/hc/en-us/articles/19556844985489-How-to-cancel-auto-renewal-for-your-NordVPN-subscription",
       "https://surfshark.com/pricing",
@@ -1172,9 +1312,41 @@
         "SURFSHARK.COM",
         "SURFSHARK* SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 18.95,
+          "cadence": "monthly",
+          "plan": "Starter"
+        },
+        {
+          "amount": 79,
+          "cadence": "annual",
+          "plan": "Starter renewal"
+        },
+        {
+          "amount": 19.95,
+          "cadence": "monthly",
+          "plan": "One"
+        },
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "One renewal"
+        },
+        {
+          "amount": 22.85,
+          "cadence": "monthly",
+          "plan": "One+"
+        },
+        {
+          "amount": 119,
+          "cadence": "annual",
+          "plan": "One+ renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 18.95,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -1220,6 +1392,7 @@
       }
     },
     "sources": [
+      "https://surfshark.com/terms-of-service/pricing",
       "https://surfshark.com/pricing",
       "https://support.surfshark.com/hc/en-us/articles/360003069694-How-to-cancel-auto-renewal-for-your-Surfshark-subscription",
       "https://www.security.org/vpn/surfshark/review/"
@@ -1420,7 +1593,7 @@
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 3,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -1463,18 +1636,28 @@
       "billedVia": "direct",
       "priceHints": [
         {
-          "amount": 59.88,
+          "amount": 64.99,
           "cadence": "annual",
           "plan": "Premium, billed annually"
         },
         {
-          "amount": 89.88,
+          "amount": 97.49,
           "cadence": "annual",
           "plan": "Friends & Family, billed annually"
+        },
+        {
+          "amount": 59.88,
+          "cadence": "annual",
+          "plan": "Premium, billed annually (older price)"
+        },
+        {
+          "amount": 89.88,
+          "cadence": "annual",
+          "plan": "Friends & Family, billed annually (older price)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 5.42,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -1496,6 +1679,9 @@
       }
     },
     "sources": [
+      "https://www.dashlane.com/getpremium",
+      "https://www.dashlane.com/getfamily",
+      "https://support.dashlane.com/hc/en-us/articles/360001166969-Compare-Dashlane-personal-plans",
       "https://www.dashlane.com/pricing-personal",
       "https://support.dashlane.com/hc/en-us/articles/12247552144786-Cancel-my-Dashlane-subscription-and-stop-autorenewal",
       "https://www.security.org/password-manager/dashlane/"
@@ -1560,9 +1746,31 @@
         "KEEPER SECURITY INC CHICAGO IL",
         "KEEPERSECURITY.COM"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 42.99,
+          "cadence": "annual",
+          "plan": "Personal, billed annually"
+        },
+        {
+          "amount": 91.99,
+          "cadence": "annual",
+          "plan": "Family, billed annually"
+        },
+        {
+          "amount": 26.99,
+          "cadence": "annual",
+          "plan": "BreachWatch add-on"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "annual",
+          "plan": "Secure File Storage add-on (starting at)"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 3.58,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -1603,6 +1811,16 @@
       "billedVia": "direct",
       "priceHints": [
         {
+          "amount": 39.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Standard, first year"
+        },
+        {
+          "amount": 94.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Standard, renewal"
+        },
+        {
           "amount": 49.99,
           "cadence": "annual",
           "plan": "Norton 360 Deluxe, first year"
@@ -1615,11 +1833,21 @@
         {
           "amount": 119.99,
           "cadence": "annual",
-          "plan": "Norton 360 Deluxe, renewal (reported by some reviews)"
+          "plan": "Norton 360 for Gamers, renewal"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Norton AntiVirus Plus, first year"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "Norton AntiVirus Plus, renewal"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 7.92,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -1651,6 +1879,9 @@
       }
     },
     "sources": [
+      "https://us.norton.com/products",
+      "https://us.norton.com/products/norton-360-deluxe",
+      "https://us.norton.com/pricing",
       "https://www.security.org/antivirus/norton/",
       "https://support.norton.com",
       "https://www.costbench.com/software/cybersecurity/norton/"
@@ -1669,9 +1900,51 @@
         "MCAFEE *TOTAL PROTECTION",
         "MCAFEE.COM AUTO-RENEW"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Basic, first year"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Basic, renewal"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Premium, first year"
+        },
+        {
+          "amount": 149.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Premium, renewal"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Advanced, first year"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Advanced, renewal"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Ultimate, first year"
+        },
+        {
+          "amount": 279.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Ultimate, renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 16.67,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -1703,6 +1976,8 @@
       }
     },
     "sources": [
+      "https://www.mcafee.com/en-us/identity-theft/protection.html",
+      "https://www.mcafee.com/",
       "https://www.security.org/antivirus/mcafee/",
       "https://www.mcafee.com"
     ]
@@ -1754,9 +2029,56 @@
         "LIFELOCK.COM MEMBERSHIP",
         "NORTON *LIFELOCK ADVANCED"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "LifeLock Core"
+        },
+        {
+          "amount": 19,
+          "cadence": "monthly",
+          "plan": "LifeLock Advanced"
+        },
+        {
+          "amount": 34,
+          "cadence": "monthly",
+          "plan": "LifeLock Total"
+        },
+        {
+          "amount": 120,
+          "cadence": "annual",
+          "plan": "LifeLock Core, first year"
+        },
+        {
+          "amount": 124.99,
+          "cadence": "annual",
+          "plan": "LifeLock Core, renewal"
+        },
+        {
+          "amount": 192,
+          "cadence": "annual",
+          "plan": "LifeLock Advanced, first year"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "LifeLock Advanced, renewal"
+        },
+        {
+          "amount": 348,
+          "cadence": "annual",
+          "plan": "LifeLock Total, first year"
+        },
+        {
+          "amount": 349.99,
+          "cadence": "annual",
+          "plan": "LifeLock Total, renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 19,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -1781,6 +2103,8 @@
       }
     },
     "sources": [
+      "https://lifelock.norton.com/",
+      "https://us.norton.com/pricing",
       "https://www.security.org/identity-theft/lifelock/review/",
       "https://www.lifelock.com"
     ]
@@ -1803,11 +2127,41 @@
         {
           "amount": 44.99,
           "cadence": "annual",
-          "plan": "Premium, one device, yearly"
+          "plan": "Standard, 1 device, yearly (formerly Premium)"
+        },
+        {
+          "amount": 47.93,
+          "cadence": "annual",
+          "plan": "Standard 3 devices, first year"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "Standard 3 devices, renewal"
+        },
+        {
+          "amount": 55.99,
+          "cadence": "annual",
+          "plan": "Plus, first year"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Plus, renewal"
+        },
+        {
+          "amount": 139.99,
+          "cadence": "annual",
+          "plan": "Ultimate, first year"
+        },
+        {
+          "amount": 279.99,
+          "cadence": "annual",
+          "plan": "Ultimate, renewal"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 6.67,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -1852,9 +2206,31 @@
         "PLEX.TV PLEX PASS",
         "PLEX INC PLEX PASS MONTHLY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Plex Pass"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Plex Pass annual"
+        },
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Remote Watch Pass"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Remote Watch Pass annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 6.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "selfhost",
     "also": [
@@ -1914,9 +2290,26 @@
         "TILE PREMIUM SUBSCRIPTION",
         "TILE INC TILE.COM CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Premium Protect"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 2.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -1931,6 +2324,7 @@
       }
     },
     "sources": [
+      "https://support.life360.com/hc/en-us/articles/30582950726167-Tile-Premium-and-Premium-Protect-Pricing",
       "https://support.life360.com/hc/en-us/articles/30582997380887-Cancel-Tile-Premium-or-Premium-Protect-Subscription",
       "https://support.life360.com/hc/en-us/articles/30583018923927-Tile-Premium-and-Premium-Protect-Overview"
     ]

@@ -62,9 +62,31 @@
         "EVERNOTE PREMIUM SUBSCRIPTION",
         "EVERNOTE CORP"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Starter monthly"
+        },
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "Starter annual"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "Advanced monthly"
+        },
+        {
+          "amount": 249.99,
+          "cadence": "annual",
+          "plan": "Advanced annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "selfhost",
     "also": [
@@ -202,10 +224,15 @@
           "amount": 49.99,
           "cadence": "annual",
           "plan": "TickTick Premium (App Store)"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "TickTick Premium annual (web)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 4.17,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -232,6 +259,7 @@
       }
     },
     "sources": [
+      "https://ticktick.com/upgrade",
       "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601",
       "https://support.apple.com/en-us/118428",
       "https://support.google.com/googleplay/answer/7018481"
@@ -542,9 +570,21 @@
         "DOODLE AG ZURICH",
         "DOODLE PRO SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 132,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -570,6 +610,7 @@
       }
     },
     "sources": [
+      "https://doodle.com/en/premium",
       "https://doodle.com",
       "https://koalendar.com/blog/doodle-pricing"
     ]
@@ -773,9 +814,41 @@
         "TYPEFORM S.L. BARCELONA",
         "TYPEFORM BASIC PLAN"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 39,
+          "cadence": "monthly",
+          "plan": "Basic monthly"
+        },
+        {
+          "amount": 336,
+          "cadence": "annual",
+          "plan": "Basic annual"
+        },
+        {
+          "amount": 79,
+          "cadence": "monthly",
+          "plan": "Plus monthly"
+        },
+        {
+          "amount": 672,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 129,
+          "cadence": "monthly",
+          "plan": "Business monthly"
+        },
+        {
+          "amount": 1092,
+          "cadence": "annual",
+          "plan": "Business annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 39,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -1315,9 +1388,31 @@
         "SUPERHUMAN MAIL STARTER",
         "SUPERHUMAN LABS INC"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 144,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        },
+        {
+          "amount": 40,
+          "cadence": "monthly",
+          "plan": "Business monthly"
+        },
+        {
+          "amount": 396,
+          "cadence": "annual",
+          "plan": "Business annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 40,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -1408,9 +1503,26 @@
         "SANEBOX.COM",
         "SANEBOX INC"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.49,
+          "cadence": "monthly",
+          "plan": "Snack monthly"
+        },
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Lunch monthly"
+        },
+        {
+          "amount": 42.99,
+          "cadence": "monthly",
+          "plan": "Dinner monthly"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 9.49,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -1652,9 +1764,21 @@
         "RAINDROP.IO PRO YEARLY",
         "RAINDROP PRO SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 3,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 28,
+          "cadence": "annual",
+          "plan": "Pro yearly"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 3,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -1697,6 +1821,7 @@
       }
     },
     "sources": [
+      "https://raindrop.io/pro/buy",
       "https://raindrop.io/pro",
       "https://linkding.link/"
     ]
@@ -1970,9 +2095,21 @@
         "ZOOM VIDEO COMMUNICATIONS",
         "ZOOM.COM PRO MONTHLY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 169.92,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": 14.16,
+    "typicalMonthly": 16.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -2002,6 +2139,7 @@
       }
     },
     "sources": [
+      "https://zoom.us/pricing",
       "https://zoom.us/en/pricing"
     ]
   },
@@ -2079,9 +2217,21 @@
         "SMALLPDF PRO",
         "SMALLPDF AG ZURICH"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 120,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [

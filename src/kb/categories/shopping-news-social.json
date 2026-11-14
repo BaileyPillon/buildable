@@ -514,7 +514,19 @@
         "BLUEAPRON.COM",
         "BLUE APRON NEW YORK NY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Blue Apron+"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Blue Apron+ annual"
+        }
+      ]
     },
     "typicalMonthly": null,
     "verdict": "rotate",
@@ -534,6 +546,9 @@
       }
     },
     "sources": [
+      "https://www.blueapron.com/membership",
+      "https://www.blueapron.com/subscribe-and-save",
+      "https://www.blueapron.com/",
       "https://support.blueapron.com/hc/en-us/articles/10238944320788-How-much-will-my-subscription-cost",
       "https://support.blueapron.com/hc/en-us/articles/203146687-How-do-I-cancel-my-account",
       "https://support.blueapron.com/hc/en-us/articles/202117806-How-do-I-skip-a-delivery",
@@ -1044,24 +1059,24 @@
       "billedVia": "direct",
       "priceHints": [
         {
-          "amount": 79.99,
-          "cadence": "annual",
-          "plan": "Digital (reported, third-party)"
-        },
-        {
           "amount": 89.99,
           "cadence": "annual",
-          "plan": "Digital (reported August 2026)"
+          "plan": "Digital"
         },
         {
           "amount": 99.99,
           "cadence": "annual",
-          "plan": "Print + Digital (reported)"
+          "plan": "Print + Digital"
         },
         {
           "amount": 130,
           "cadence": "annual",
-          "plan": "Premium (reported)"
+          "plan": "Premium"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Digital (reported, third-party)"
         },
         {
           "amount": 199.99,
@@ -1070,7 +1085,7 @@
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 7.5,
     "verdict": "haggle",
     "also": [
       "cancel"
@@ -1099,6 +1114,7 @@
       }
     },
     "sources": [
+      "https://accounts.theatlantic.com/products/?source=subscribeurl",
       "https://recurdash.com/subscription-pricing/the-atlantic",
       "https://subger.com/en/service/atlantic"
     ]
@@ -1191,6 +1207,7 @@
       }
     },
     "sources": [
+      "https://policies.tinder.com/terms/intl/en",
       "https://tinder.com/feature/subscription-tiers",
       "https://apps.apple.com/us/app/tinder-dating-app-meet-chat/id547702041"
     ]
@@ -1231,6 +1248,7 @@
       }
     },
     "sources": [
+      "https://bumble.com/terms",
       "https://apps.apple.com/us/app/bumble-dating-meet-friends/id930441707",
       "https://support.bumble.com/hc/en"
     ]
@@ -1272,6 +1290,7 @@
       }
     },
     "sources": [
+      "https://hinge.co/terms",
       "https://apps.apple.com/us/app/hinge-dating-relationships/id595287172",
       "https://help.hinge.co/hc/en-us"
     ]
@@ -1330,9 +1349,26 @@
         "ANCESTRY.COM LLC LEHI UT",
         "ANCESTRYDNA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "U.S. Discovery"
+        },
+        {
+          "amount": 39.99,
+          "cadence": "monthly",
+          "plan": "World Explorer"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "monthly",
+          "plan": "All Access"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 39.99,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -1419,9 +1455,61 @@
         "MYHERITAGE.COM",
         "MYHERITAGE LTD"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 129,
+          "cadence": "annual",
+          "plan": "Premium"
+        },
+        {
+          "amount": 209,
+          "cadence": "annual",
+          "plan": "PremiumPlus"
+        },
+        {
+          "amount": 189,
+          "cadence": "annual",
+          "plan": "Data"
+        },
+        {
+          "amount": 299,
+          "cadence": "annual",
+          "plan": "Complete"
+        },
+        {
+          "amount": 399,
+          "cadence": "annual",
+          "plan": "Omni"
+        },
+        {
+          "amount": 89,
+          "cadence": "annual",
+          "plan": "Premium, first year"
+        },
+        {
+          "amount": 149,
+          "cadence": "annual",
+          "plan": "PremiumPlus, first year"
+        },
+        {
+          "amount": 129,
+          "cadence": "annual",
+          "plan": "Data, first year"
+        },
+        {
+          "amount": 199,
+          "cadence": "annual",
+          "plan": "Complete, first year"
+        },
+        {
+          "amount": 239,
+          "cadence": "annual",
+          "plan": "Omni, first year"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 10.75,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -1551,6 +1639,51 @@
           "amount": 490,
           "cadence": "annual",
           "plan": "Premium+ annual (App Store)"
+        },
+        {
+          "amount": 3,
+          "cadence": "monthly",
+          "plan": "Premium Basic (web)"
+        },
+        {
+          "amount": 32,
+          "cadence": "annual",
+          "plan": "Premium Basic annual (web)"
+        },
+        {
+          "amount": 8,
+          "cadence": "monthly",
+          "plan": "Premium (web) / X Subscription Plus"
+        },
+        {
+          "amount": 84,
+          "cadence": "annual",
+          "plan": "Premium annual (web)"
+        },
+        {
+          "amount": 40,
+          "cadence": "monthly",
+          "plan": "Premium+ (web)"
+        },
+        {
+          "amount": 395,
+          "cadence": "annual",
+          "plan": "Premium+ annual (web)"
+        },
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "X Subscription Premium"
+        },
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "X Subscription Super"
+        },
+        {
+          "amount": 200,
+          "cadence": "monthly",
+          "plan": "X Subscription Ultra"
         }
       ]
     },
@@ -1567,6 +1700,7 @@
       }
     },
     "sources": [
+      "https://x.ai/pricing",
       "https://apps.apple.com/us/app/x/id333903271",
       "https://help.x.com/en/using-x/x-premium",
       "https://cursor.com/pricing"
@@ -1796,6 +1930,16 @@
           "amount": 59.99,
           "cadence": "annual",
           "plan": "Reddit Annual Premium (App Store)"
+        },
+        {
+          "amount": 5.99,
+          "cadence": "monthly",
+          "plan": "Reddit Premium (web)"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Reddit Annual Premium (web)"
         }
       ]
     },
@@ -1812,6 +1956,7 @@
       }
     },
     "sources": [
+      "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
       "https://apps.apple.com/us/app/reddit/id1064216828"
     ]
   }

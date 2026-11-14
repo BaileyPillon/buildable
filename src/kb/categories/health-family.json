@@ -331,7 +331,7 @@
         }
       ]
     },
-    "typicalMonthly": 8,
+    "typicalMonthly": 15.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -368,6 +368,7 @@
       }
     },
     "sources": [
+      "https://fitbod.me/faqs/",
       "https://apps.apple.com/us/app/id1041517543",
       "https://support.apple.com/en-us/118428",
       "https://github.com/yuhonas/free-exercise-db",
@@ -569,6 +570,7 @@
       }
     },
     "sources": [
+      "https://habitify.me/pricing",
       "https://intercom.help/habitify-app/en/articles/6113487-explore-habitify-plans-free-plus-and-pro",
       "https://intercom.help/habitify-app/en/articles/6713601-how-to-cancel-a-habitify-subscription",
       "https://apps.apple.com/us/app/habitify-habit-tracker/id1111447047"
@@ -834,6 +836,7 @@
       }
     },
     "sources": [
+      "https://glowing.com/glow-premium",
       "https://apps.apple.com/us/app/id1077177456",
       "https://appshunter.io/ios/app/1077177456/glow-baby-tracker-and-growth-app/how-to-cancel-subscription",
       "https://support.apple.com/en-us/118428",
@@ -1541,6 +1544,7 @@
       }
     },
     "sources": [
+      "https://help.care.com/families/s/article/How-much-does-Premium-membership-cost?language=en_US",
       "https://www.care.com/",
       "https://recurdash.com/guides/how-to-cancel-care-com"
     ]
@@ -1635,7 +1639,7 @@
         }
       ]
     },
-    "typicalMonthly": 5,
+    "typicalMonthly": 9.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -1741,13 +1745,23 @@
       "billedVia": "apple",
       "priceHints": [
         {
-          "amount": 69.99,
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Zero Plus monthly"
+        },
+        {
+          "amount": 89.99,
           "cadence": "annual",
           "plan": "Zero Plus annual"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Zero Plus annual (older price point)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 9.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -1770,6 +1784,7 @@
       }
     },
     "sources": [
+      "https://zerofasting.zendesk.com/hc/en-us/articles/4402526584091-How-Much-Does-A-Zero-Plus-Subscription-Cost",
       "https://apps.apple.com/us/app/zero-fasting-food-tracker/id1168348542",
       "https://support.apple.com/en-us/118428"
     ]
@@ -1861,7 +1876,19 @@
         "GARMIN SUBSCRIPTION",
         "GARMIN INTERNATIONAL OLATHE KS"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Connect+ monthly"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Connect+ annual"
+        }
+      ]
     },
     "typicalMonthly": 6.99,
     "pricesCheckedAt": "2026-11",
@@ -1878,6 +1905,8 @@
       }
     },
     "sources": [
+      "https://www.garmin.com/en-US/p/1565777/",
+      "https://www.garmin.com/en-US/p/1565777/pn/010-D2235-SU/",
       "https://www.tomsguide.com/wellness/smartwatches/garmin-launches-a-paywall-here-are-all-the-premium-connect-features-that-will-cost-you-usd6-99-a-month",
       "https://www.androidcentral.com/wearables/new-garmin-connect-plus-subscription-adds-active-intelligence-beta-enhanced-smarts",
       "https://bikeradar.com/news/garmin-connect-plus"

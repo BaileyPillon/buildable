@@ -13,7 +13,14 @@
         "OPENAI *CHATGPT SUBSCR SAN FRANCISCO CA",
         "OPENAI *CHATGPT SUBSCR OPENAI.COM CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Plus"
+        }
+      ]
     },
     "typicalMonthly": 20,
     "pricesCheckedAt": "2026-11",
@@ -49,6 +56,7 @@
       }
     },
     "sources": [
+      "https://chatgpt.com/pricing",
       "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
       "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
       "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
@@ -70,9 +78,26 @@
         "OPENAI *CHATGPT PRO SAN FRANCISCO CA",
         "OPENAI *CHATGPT PRO SUBSCR OPENAI.COM CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "Pro 100"
+        },
+        {
+          "amount": 200,
+          "cadence": "monthly",
+          "plan": "Pro 200"
+        },
+        {
+          "amount": 500,
+          "cadence": "monthly",
+          "plan": "Pro 500"
+        }
+      ]
     },
-    "typicalMonthly": 200,
+    "typicalMonthly": 100,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -101,6 +126,7 @@
       }
     },
     "sources": [
+      "https://chatgpt.com/pricing",
       "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
       "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
       "https://claude.com/pricing"
@@ -422,9 +448,21 @@
         "QUILLBOT.COM CHICAGO IL",
         "QUILLBOT PREMIUM"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 19.95,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 99.95,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 19.95,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -453,6 +491,8 @@
       }
     },
     "sources": [
+      "https://quillbot.com/premium",
+      "https://quillbot.com/blog/frequently-asked-questions/how-much-is-quillbot-premium/",
       "https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription",
       "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription",
       "https://claude.com/pricing"
@@ -1079,9 +1119,41 @@
         "GAMMA.APP SAN FRANCISCO CA",
         "GAMMA TECHNOLOGIES INC"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 108,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 25,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 216,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        },
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "Ultra"
+        },
+        {
+          "amount": 1080,
+          "cadence": "annual",
+          "plan": "Ultra annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 25,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -1235,9 +1307,31 @@
         "JENNI.AI SUBSCRIPTION",
         "JENNI AI PLUS"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 144,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 73,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 348,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 30,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -1270,6 +1364,7 @@
       }
     },
     "sources": [
+      "https://jenni.ai/tool-reviews/jenni-ai-vs-claude",
       "https://jenni.ai/pricing",
       "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
       "https://claude.com/pricing"
@@ -1288,9 +1383,16 @@
         "CHATPDF.COM",
         "CHATPDF PLUS SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -1341,6 +1443,11 @@
       "billedVia": "direct",
       "priceHints": [
         {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
           "amount": 200,
           "cadence": "annual",
           "plan": "Pro, yearly billing"
@@ -1387,7 +1494,14 @@
         "CLAUDE.AI MAX SUBSCRIPTION ANTHROPIC.COM CA",
         "ANTHROPIC CLAUDE MAX SAN FRANCISCO CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "Max"
+        }
+      ]
     },
     "typicalMonthly": 100,
     "pricesCheckedAt": "2026-11",
@@ -1541,9 +1655,26 @@
         "LEONARDO.AI SYDNEY AU",
         "LEONARDO AI PREMIUM PLAN"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 60,
+          "cadence": "monthly",
+          "plan": "Ultimate"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 12,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [

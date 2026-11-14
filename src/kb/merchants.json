@@ -116,7 +116,14 @@
         "OPENAI *CHATGPT SUBSCR SAN FRANCISCO CA",
         "OPENAI *CHATGPT SUBSCR OPENAI.COM CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Plus"
+        }
+      ]
     },
     "typicalMonthly": 20,
     "pricesCheckedAt": "2026-11",
@@ -152,6 +159,7 @@
       }
     },
     "sources": [
+      "https://chatgpt.com/pricing",
       "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
       "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
       "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
@@ -173,9 +181,26 @@
         "OPENAI *CHATGPT PRO SAN FRANCISCO CA",
         "OPENAI *CHATGPT PRO SUBSCR OPENAI.COM CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "Pro 100"
+        },
+        {
+          "amount": 200,
+          "cadence": "monthly",
+          "plan": "Pro 200"
+        },
+        {
+          "amount": 500,
+          "cadence": "monthly",
+          "plan": "Pro 500"
+        }
+      ]
     },
-    "typicalMonthly": 200,
+    "typicalMonthly": 100,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -204,6 +229,7 @@
       }
     },
     "sources": [
+      "https://chatgpt.com/pricing",
       "https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers",
       "https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription",
       "https://claude.com/pricing"
@@ -222,9 +248,16 @@
         "CHATPDF.COM",
         "CHATPDF PLUS SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -271,7 +304,14 @@
         "CLAUDE.AI MAX SUBSCRIPTION ANTHROPIC.COM CA",
         "ANTHROPIC CLAUDE MAX SAN FRANCISCO CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "Max"
+        }
+      ]
     },
     "typicalMonthly": 100,
     "pricesCheckedAt": "2026-11",
@@ -307,6 +347,11 @@
       ],
       "billedVia": "direct",
       "priceHints": [
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
         {
           "amount": 200,
           "cadence": "annual",
@@ -612,9 +657,41 @@
         "GAMMA.APP SAN FRANCISCO CA",
         "GAMMA TECHNOLOGIES INC"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 108,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 25,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 216,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        },
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "Ultra"
+        },
+        {
+          "amount": 1080,
+          "cadence": "annual",
+          "plan": "Ultra annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 25,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -977,9 +1054,31 @@
         "JENNI.AI SUBSCRIPTION",
         "JENNI AI PLUS"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 144,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 73,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 348,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 30,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -1012,6 +1111,7 @@
       }
     },
     "sources": [
+      "https://jenni.ai/tool-reviews/jenni-ai-vs-claude",
       "https://jenni.ai/pricing",
       "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
       "https://claude.com/pricing"
@@ -1074,9 +1174,26 @@
         "LEONARDO.AI SYDNEY AU",
         "LEONARDO AI PREMIUM PLAN"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "Essential"
+        },
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 60,
+          "cadence": "monthly",
+          "plan": "Ultimate"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 12,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -1408,9 +1525,21 @@
         "QUILLBOT.COM CHICAGO IL",
         "QUILLBOT PREMIUM"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 19.95,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 99.95,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 19.95,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -1439,6 +1568,8 @@
       }
     },
     "sources": [
+      "https://quillbot.com/premium",
+      "https://quillbot.com/blog/frequently-asked-questions/how-much-is-quillbot-premium/",
       "https://help.quillbot.com/hc/en-us/articles/360056300334-How-do-I-cancel-my-Premium-subscription",
       "https://help.quillbot.com/hc/en-us/articles/6046562291223-Can-I-get-a-refund-for-Quillbot-subscription",
       "https://claude.com/pricing"
@@ -2089,6 +2220,7 @@
       }
     },
     "sources": [
+      "https://help.care.com/families/s/article/How-much-does-Premium-membership-cost?language=en_US",
       "https://www.care.com/",
       "https://recurdash.com/guides/how-to-cancel-care-com"
     ]
@@ -2324,7 +2456,7 @@
         }
       ]
     },
-    "typicalMonthly": 8,
+    "typicalMonthly": 15.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -2361,6 +2493,7 @@
       }
     },
     "sources": [
+      "https://fitbod.me/faqs/",
       "https://apps.apple.com/us/app/id1041517543",
       "https://support.apple.com/en-us/118428",
       "https://github.com/yuhonas/free-exercise-db",
@@ -2460,7 +2593,19 @@
         "GARMIN SUBSCRIPTION",
         "GARMIN INTERNATIONAL OLATHE KS"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Connect+ monthly"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Connect+ annual"
+        }
+      ]
     },
     "typicalMonthly": 6.99,
     "pricesCheckedAt": "2026-11",
@@ -2477,6 +2622,8 @@
       }
     },
     "sources": [
+      "https://www.garmin.com/en-US/p/1565777/",
+      "https://www.garmin.com/en-US/p/1565777/pn/010-D2235-SU/",
       "https://www.tomsguide.com/wellness/smartwatches/garmin-launches-a-paywall-here-are-all-the-premium-connect-features-that-will-cost-you-usd6-99-a-month",
       "https://www.androidcentral.com/wearables/new-garmin-connect-plus-subscription-adds-active-intelligence-beta-enhanced-smarts",
       "https://bikeradar.com/news/garmin-connect-plus"
@@ -2544,6 +2691,7 @@
       }
     },
     "sources": [
+      "https://glowing.com/glow-premium",
       "https://apps.apple.com/us/app/id1077177456",
       "https://appshunter.io/ios/app/1077177456/glow-baby-tracker-and-growth-app/how-to-cancel-subscription",
       "https://support.apple.com/en-us/118428",
@@ -2641,6 +2789,7 @@
       }
     },
     "sources": [
+      "https://habitify.me/pricing",
       "https://intercom.help/habitify-app/en/articles/6113487-explore-habitify-plans-free-plus-and-pro",
       "https://intercom.help/habitify-app/en/articles/6713601-how-to-cancel-a-habitify-subscription",
       "https://apps.apple.com/us/app/habitify-habit-tracker/id1111447047"
@@ -2853,7 +3002,7 @@
         }
       ]
     },
-    "typicalMonthly": 5,
+    "typicalMonthly": 9.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -3641,13 +3790,23 @@
       "billedVia": "apple",
       "priceHints": [
         {
-          "amount": 69.99,
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Zero Plus monthly"
+        },
+        {
+          "amount": 89.99,
           "cadence": "annual",
           "plan": "Zero Plus annual"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Zero Plus annual (older price point)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 9.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -3670,6 +3829,7 @@
       }
     },
     "sources": [
+      "https://zerofasting.zendesk.com/hc/en-us/articles/4402526584091-How-Much-Does-A-Zero-Plus-Subscription-Cost",
       "https://apps.apple.com/us/app/zero-fasting-food-tracker/id1168348542",
       "https://support.apple.com/en-us/118428"
     ]
@@ -4087,9 +4247,21 @@
         "DOODLE AG ZURICH",
         "DOODLE PRO SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 132,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -4115,6 +4287,7 @@
       }
     },
     "sources": [
+      "https://doodle.com/en/premium",
       "https://doodle.com",
       "https://koalendar.com/blog/doodle-pricing"
     ]
@@ -4133,9 +4306,31 @@
         "EVERNOTE PREMIUM SUBSCRIPTION",
         "EVERNOTE CORP"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Starter monthly"
+        },
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "Starter annual"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "Advanced monthly"
+        },
+        {
+          "amount": 249.99,
+          "cadence": "annual",
+          "plan": "Advanced annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "selfhost",
     "also": [
@@ -4926,9 +5121,21 @@
         "RAINDROP.IO PRO YEARLY",
         "RAINDROP PRO SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 3,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 28,
+          "cadence": "annual",
+          "plan": "Pro yearly"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 3,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -4971,6 +5178,7 @@
       }
     },
     "sources": [
+      "https://raindrop.io/pro/buy",
       "https://raindrop.io/pro",
       "https://linkding.link/"
     ]
@@ -5156,9 +5364,26 @@
         "SANEBOX.COM",
         "SANEBOX INC"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.49,
+          "cadence": "monthly",
+          "plan": "Snack monthly"
+        },
+        {
+          "amount": 15.99,
+          "cadence": "monthly",
+          "plan": "Lunch monthly"
+        },
+        {
+          "amount": 42.99,
+          "cadence": "monthly",
+          "plan": "Dinner monthly"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 9.49,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -5210,9 +5435,21 @@
         "SMALLPDF PRO",
         "SMALLPDF AG ZURICH"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 120,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -5318,9 +5555,31 @@
         "SUPERHUMAN MAIL STARTER",
         "SUPERHUMAN LABS INC"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 15,
+          "cadence": "monthly",
+          "plan": "Pro monthly"
+        },
+        {
+          "amount": 144,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        },
+        {
+          "amount": 40,
+          "cadence": "monthly",
+          "plan": "Business monthly"
+        },
+        {
+          "amount": 396,
+          "cadence": "annual",
+          "plan": "Business annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 40,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -5421,10 +5680,15 @@
           "amount": 49.99,
           "cadence": "annual",
           "plan": "TickTick Premium (App Store)"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "TickTick Premium annual (web)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 4.17,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -5451,6 +5715,7 @@
       }
     },
     "sources": [
+      "https://ticktick.com/upgrade",
       "https://apps.apple.com/us/app/ticktick-to-do-list-calendar/id626144601",
       "https://support.apple.com/en-us/118428",
       "https://support.google.com/googleplay/answer/7018481"
@@ -5636,9 +5901,41 @@
         "TYPEFORM S.L. BARCELONA",
         "TYPEFORM BASIC PLAN"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 39,
+          "cadence": "monthly",
+          "plan": "Basic monthly"
+        },
+        {
+          "amount": 336,
+          "cadence": "annual",
+          "plan": "Basic annual"
+        },
+        {
+          "amount": 79,
+          "cadence": "monthly",
+          "plan": "Plus monthly"
+        },
+        {
+          "amount": 672,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 129,
+          "cadence": "monthly",
+          "plan": "Business monthly"
+        },
+        {
+          "amount": 1092,
+          "cadence": "annual",
+          "plan": "Business annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 39,
     "pricesCheckedAt": "2026-11",
     "verdict": "rebuild",
     "also": [
@@ -5765,9 +6062,21 @@
         "ZOOM VIDEO COMMUNICATIONS",
         "ZOOM.COM PRO MONTHLY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 169.92,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": 14.16,
+    "typicalMonthly": 16.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -5797,6 +6106,7 @@
       }
     },
     "sources": [
+      "https://zoom.us/pricing",
       "https://zoom.us/en/pricing"
     ]
   },
@@ -5935,9 +6245,26 @@
         "ANCESTRY.COM LLC LEHI UT",
         "ANCESTRYDNA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "U.S. Discovery"
+        },
+        {
+          "amount": 39.99,
+          "cadence": "monthly",
+          "plan": "World Explorer"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "monthly",
+          "plan": "All Access"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 39.99,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -6084,7 +6411,19 @@
         "BLUEAPRON.COM",
         "BLUE APRON NEW YORK NY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Blue Apron+"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Blue Apron+ annual"
+        }
+      ]
     },
     "typicalMonthly": null,
     "verdict": "rotate",
@@ -6104,6 +6443,9 @@
       }
     },
     "sources": [
+      "https://www.blueapron.com/membership",
+      "https://www.blueapron.com/subscribe-and-save",
+      "https://www.blueapron.com/",
       "https://support.blueapron.com/hc/en-us/articles/10238944320788-How-much-will-my-subscription-cost",
       "https://support.blueapron.com/hc/en-us/articles/203146687-How-do-I-cancel-my-account",
       "https://support.blueapron.com/hc/en-us/articles/202117806-How-do-I-skip-a-delivery",
@@ -6146,6 +6488,7 @@
       }
     },
     "sources": [
+      "https://bumble.com/terms",
       "https://apps.apple.com/us/app/bumble-dating-meet-friends/id930441707",
       "https://support.bumble.com/hc/en"
     ]
@@ -6504,6 +6847,7 @@
       }
     },
     "sources": [
+      "https://hinge.co/terms",
       "https://apps.apple.com/us/app/hinge-dating-relationships/id595287172",
       "https://help.hinge.co/hc/en-us"
     ]
@@ -6721,9 +7065,61 @@
         "MYHERITAGE.COM",
         "MYHERITAGE LTD"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 129,
+          "cadence": "annual",
+          "plan": "Premium"
+        },
+        {
+          "amount": 209,
+          "cadence": "annual",
+          "plan": "PremiumPlus"
+        },
+        {
+          "amount": 189,
+          "cadence": "annual",
+          "plan": "Data"
+        },
+        {
+          "amount": 299,
+          "cadence": "annual",
+          "plan": "Complete"
+        },
+        {
+          "amount": 399,
+          "cadence": "annual",
+          "plan": "Omni"
+        },
+        {
+          "amount": 89,
+          "cadence": "annual",
+          "plan": "Premium, first year"
+        },
+        {
+          "amount": 149,
+          "cadence": "annual",
+          "plan": "PremiumPlus, first year"
+        },
+        {
+          "amount": 129,
+          "cadence": "annual",
+          "plan": "Data, first year"
+        },
+        {
+          "amount": 199,
+          "cadence": "annual",
+          "plan": "Complete, first year"
+        },
+        {
+          "amount": 239,
+          "cadence": "annual",
+          "plan": "Omni, first year"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 10.75,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -6812,6 +7208,16 @@
           "amount": 59.99,
           "cadence": "annual",
           "plan": "Reddit Annual Premium (App Store)"
+        },
+        {
+          "amount": 5.99,
+          "cadence": "monthly",
+          "plan": "Reddit Premium (web)"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "Reddit Annual Premium (web)"
         }
       ]
     },
@@ -6828,6 +7234,7 @@
       }
     },
     "sources": [
+      "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
       "https://apps.apple.com/us/app/reddit/id1064216828"
     ]
   },
@@ -7058,24 +7465,24 @@
       "billedVia": "direct",
       "priceHints": [
         {
-          "amount": 79.99,
-          "cadence": "annual",
-          "plan": "Digital (reported, third-party)"
-        },
-        {
           "amount": 89.99,
           "cadence": "annual",
-          "plan": "Digital (reported August 2026)"
+          "plan": "Digital"
         },
         {
           "amount": 99.99,
           "cadence": "annual",
-          "plan": "Print + Digital (reported)"
+          "plan": "Print + Digital"
         },
         {
           "amount": 130,
           "cadence": "annual",
-          "plan": "Premium (reported)"
+          "plan": "Premium"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Digital (reported, third-party)"
         },
         {
           "amount": 199.99,
@@ -7084,7 +7491,7 @@
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 7.5,
     "verdict": "haggle",
     "also": [
       "cancel"
@@ -7113,6 +7520,7 @@
       }
     },
     "sources": [
+      "https://accounts.theatlantic.com/products/?source=subscribeurl",
       "https://recurdash.com/subscription-pricing/the-atlantic",
       "https://subger.com/en/service/atlantic"
     ]
@@ -7420,6 +7828,7 @@
       }
     },
     "sources": [
+      "https://policies.tinder.com/terms/intl/en",
       "https://tinder.com/feature/subscription-tiers",
       "https://apps.apple.com/us/app/tinder-dating-app-meet-chat/id547702041"
     ]
@@ -7595,6 +8004,51 @@
           "amount": 490,
           "cadence": "annual",
           "plan": "Premium+ annual (App Store)"
+        },
+        {
+          "amount": 3,
+          "cadence": "monthly",
+          "plan": "Premium Basic (web)"
+        },
+        {
+          "amount": 32,
+          "cadence": "annual",
+          "plan": "Premium Basic annual (web)"
+        },
+        {
+          "amount": 8,
+          "cadence": "monthly",
+          "plan": "Premium (web) / X Subscription Plus"
+        },
+        {
+          "amount": 84,
+          "cadence": "annual",
+          "plan": "Premium annual (web)"
+        },
+        {
+          "amount": 40,
+          "cadence": "monthly",
+          "plan": "Premium+ (web)"
+        },
+        {
+          "amount": 395,
+          "cadence": "annual",
+          "plan": "Premium+ annual (web)"
+        },
+        {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "X Subscription Premium"
+        },
+        {
+          "amount": 100,
+          "cadence": "monthly",
+          "plan": "X Subscription Super"
+        },
+        {
+          "amount": 200,
+          "cadence": "monthly",
+          "plan": "X Subscription Ultra"
         }
       ]
     },
@@ -7611,6 +8065,7 @@
       }
     },
     "sources": [
+      "https://x.ai/pricing",
       "https://apps.apple.com/us/app/x/id333903271",
       "https://help.x.com/en/using-x/x-premium",
       "https://cursor.com/pricing"
@@ -7826,9 +8281,21 @@
       "examples": [
         "BLINKIST.COM BERLIN DE",
         "BLINKIST GMBH BERLIN DE"
+      ],
+      "priceHints": [
+        {
+          "amount": 174.99,
+          "cadence": "annual",
+          "plan": "PRO"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Premium"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14.58,
     "pricesCheckedAt": "2026-11",
     "verdict": "absorb",
     "also": [
@@ -7855,6 +8322,7 @@
       }
     },
     "sources": [
+      "https://www.blinkist.com/en/pricing",
       "https://www.blinkist.com/",
       "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
       "https://support.claude.com/en/articles/9517075-what-are-projects",
@@ -8502,13 +8970,18 @@
       ],
       "priceHints": [
         {
+          "amount": 4,
+          "cadence": "monthly",
+          "plan": "GitHub Pro"
+        },
+        {
           "amount": 48,
           "cadence": "annual",
           "plan": "GitHub Pro, billed yearly"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 4,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -8535,6 +9008,7 @@
       }
     },
     "sources": [
+      "https://github.com/pricing/calculator",
       "https://github.com/pricing",
       "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
       "https://docs.github.com/en/billing/how-tos/manage-plan-and-licenses/downgrade-plan"
@@ -8707,9 +9181,51 @@
       "examples": [
         "JETBRAINS S.R.O. PRAGUE CZ",
         "JETBRAINS AMERICAS INC"
+      ],
+      "priceHints": [
+        {
+          "amount": 29.9,
+          "cadence": "monthly",
+          "plan": "All Products Pack"
+        },
+        {
+          "amount": 19.9,
+          "cadence": "monthly",
+          "plan": "IntelliJ IDEA Ultimate"
+        },
+        {
+          "amount": 299,
+          "cadence": "annual",
+          "plan": "All Products Pack, first year"
+        },
+        {
+          "amount": 239,
+          "cadence": "annual",
+          "plan": "All Products Pack, second year"
+        },
+        {
+          "amount": 179,
+          "cadence": "annual",
+          "plan": "All Products Pack, third year onwards"
+        },
+        {
+          "amount": 199,
+          "cadence": "annual",
+          "plan": "IntelliJ IDEA Ultimate, first year"
+        },
+        {
+          "amount": 159,
+          "cadence": "annual",
+          "plan": "IntelliJ IDEA Ultimate, second year"
+        },
+        {
+          "amount": 119,
+          "cadence": "annual",
+          "plan": "IntelliJ IDEA Ultimate, third year onwards"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 29.9,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -8736,6 +9252,8 @@
       }
     },
     "sources": [
+      "https://www.jetbrains.com/store/?section=personal&billing=monthly",
+      "https://www.jetbrains.com/store/?section=personal&billing=yearly",
       "https://www.jetbrains.com/store/",
       "https://www.jetbrains.com/idea/buy/",
       "https://sales.jetbrains.com/hc/en-gb/articles/207240845-What-is-a-perpetual-fallback-license"
@@ -8753,9 +9271,21 @@
       "examples": [
         "LINKEDIN PREMIUM SUNNYVALE CA",
         "LINKEDIN P-4839122 SUNNYVALE CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 39.99,
+          "cadence": "monthly",
+          "plan": "Premium Career"
+        },
+        {
+          "amount": 239.88,
+          "cadence": "annual",
+          "plan": "Premium Career annual"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 39.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -8780,6 +9310,7 @@
       }
     },
     "sources": [
+      "https://premium.linkedin.com/careers/career",
       "https://www.linkedin.com/premium/products/"
     ]
   },
@@ -8866,7 +9397,7 @@
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 15,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -8892,8 +9423,7 @@
     },
     "sources": [
       "https://www.masterclass.com/checkout",
-      "https://www.masterclass.com/",
-      "https://recurdash.com/subscription-pricing/masterclass"
+      "https://www.masterclass.com/"
     ]
   },
   {
@@ -9225,18 +9755,48 @@
       ],
       "priceHints": [
         {
+          "amount": 30,
+          "cadence": "monthly",
+          "plan": "Core Tech"
+        },
+        {
+          "amount": 55,
+          "cadence": "monthly",
+          "plan": "Complete"
+        },
+        {
+          "amount": 35,
+          "cadence": "monthly",
+          "plan": "AI+/Cloud+/Data+/Security+"
+        },
+        {
+          "amount": 252,
+          "cadence": "annual",
+          "plan": "Core Tech annual"
+        },
+        {
+          "amount": 468,
+          "cadence": "annual",
+          "plan": "Complete annual"
+        },
+        {
+          "amount": 294,
+          "cadence": "annual",
+          "plan": "AI+/Cloud+/Data+/Security+ annual"
+        },
+        {
           "amount": 299,
           "cadence": "annual",
-          "plan": "Individual annual plan (AI+, Cloud+, Security+, Data+ tier)"
+          "plan": "Individual annual plan, legacy price (AI+, Cloud+, Security+, Data+)"
         },
         {
           "amount": 449,
           "cadence": "annual",
-          "plan": "Individual annual plan (Core Tech or Complete tier)"
+          "plan": "Individual annual plan, legacy price (Core Tech or Complete)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 55,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -9459,9 +10019,16 @@
       "examples": [
         "SKILLSHARE.COM NEW YORK NY",
         "SKILLSHARE ANNUAL NEW YORK NY"
+      ],
+      "priceHints": [
+        {
+          "amount": 167.88,
+          "cadence": "annual",
+          "plan": "Annual membership"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 13.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "rotate",
     "also": [
@@ -9492,6 +10059,7 @@
       }
     },
     "sources": [
+      "https://www.skillshare.com/pricing",
       "https://www.skillshare.com/en/",
       "https://help.skillshare.com/hc/en-us/articles/4402806767117-How-do-Skillshare-subscriptions-pricing-and-refunds-work",
       "https://help.skillshare.com/hc/en-us/articles/115001701651-How-do-I-cancel-my-Skillshare-subscription"
@@ -9855,9 +10423,41 @@
         "ABODE SYSTEMS INC PALO ALTO CA",
         "GOABODE.COM SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 8.49,
+          "cadence": "monthly",
+          "plan": "Standard"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Standard annual"
+        },
+        {
+          "amount": 26.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 245.99,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        },
+        {
+          "amount": 3.99,
+          "cadence": "monthly",
+          "plan": "Camera-only video per camera"
+        },
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "24/7 video storage"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 8.49,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -9945,7 +10545,49 @@
         "ARLO SECURE PLUS",
         "ARLO.COM SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 9.99,
+          "cadence": "monthly",
+          "plan": "Smart Aware 1 camera"
+        },
+        {
+          "amount": 95.88,
+          "cadence": "annual",
+          "plan": "Smart Aware 1 camera annual"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Smart Aware unlimited cameras"
+        },
+        {
+          "amount": 215.88,
+          "cadence": "annual",
+          "plan": "Smart Aware unlimited cameras annual"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Smart Secure"
+        },
+        {
+          "amount": 299.98,
+          "cadence": "annual",
+          "plan": "Smart Secure annual"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "monthly",
+          "plan": "Ultra Secure"
+        },
+        {
+          "amount": 479.88,
+          "cadence": "annual",
+          "plan": "Ultra Secure annual"
+        }
+      ]
     },
     "typicalMonthly": 9.99,
     "pricesCheckedAt": "2026-11",
@@ -9962,6 +10604,7 @@
       }
     },
     "sources": [
+      "https://us.arlo.com/pages/arlo-secure",
       "https://www.nerdwallet.com/home-ownership/home-security/reviews/arlo",
       "https://www.security.org/security-cameras/arlo/"
     ]
@@ -10145,9 +10788,16 @@
         "BOX.COM PERSONAL PRO SUBSCRIPTION",
         "BOX, INC. REDWOOD CITY CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14,
+          "cadence": "monthly",
+          "plan": "Personal Pro"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -10193,18 +10843,28 @@
       "billedVia": "direct",
       "priceHints": [
         {
-          "amount": 59.88,
+          "amount": 64.99,
           "cadence": "annual",
           "plan": "Premium, billed annually"
         },
         {
-          "amount": 89.88,
+          "amount": 97.49,
           "cadence": "annual",
           "plan": "Friends & Family, billed annually"
+        },
+        {
+          "amount": 59.88,
+          "cadence": "annual",
+          "plan": "Premium, billed annually (older price)"
+        },
+        {
+          "amount": 89.88,
+          "cadence": "annual",
+          "plan": "Friends & Family, billed annually (older price)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 5.42,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -10226,6 +10886,9 @@
       }
     },
     "sources": [
+      "https://www.dashlane.com/getpremium",
+      "https://www.dashlane.com/getfamily",
+      "https://support.dashlane.com/hc/en-us/articles/360001166969-Compare-Dashlane-personal-plans",
       "https://www.dashlane.com/pricing-personal",
       "https://support.dashlane.com/hc/en-us/articles/12247552144786-Cancel-my-Dashlane-subscription-and-stop-autorenewal",
       "https://www.security.org/password-manager/dashlane/"
@@ -10469,9 +11132,21 @@
         "FLICKR PRO ANNUAL SUBSCRIPTION",
         "FLICKR.COM PRO"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 11,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 82,
+          "cadence": "annual",
+          "plan": "Pro annual"
+        }
+      ]
     },
-    "typicalMonthly": 6.83,
+    "typicalMonthly": 11,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -10569,6 +11244,7 @@
       }
     },
     "sources": [
+      "https://store.google.com/product/google_home_premium?hl=en-US",
       "https://blog.google/products-and-platforms/devices/google-nest/googe-home-premium-google-ai-pro-subscription/",
       "https://9to5google.com/2025/10/01/google-home-premium/"
     ]
@@ -10765,9 +11441,31 @@
         "KEEPER SECURITY INC CHICAGO IL",
         "KEEPERSECURITY.COM"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 42.99,
+          "cadence": "annual",
+          "plan": "Personal, billed annually"
+        },
+        {
+          "amount": 91.99,
+          "cadence": "annual",
+          "plan": "Family, billed annually"
+        },
+        {
+          "amount": 26.99,
+          "cadence": "annual",
+          "plan": "BreachWatch add-on"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "annual",
+          "plan": "Secure File Storage add-on (starting at)"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 3.58,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -10820,7 +11518,7 @@
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 3,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -10860,9 +11558,56 @@
         "LIFELOCK.COM MEMBERSHIP",
         "NORTON *LIFELOCK ADVANCED"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 12,
+          "cadence": "monthly",
+          "plan": "LifeLock Core"
+        },
+        {
+          "amount": 19,
+          "cadence": "monthly",
+          "plan": "LifeLock Advanced"
+        },
+        {
+          "amount": 34,
+          "cadence": "monthly",
+          "plan": "LifeLock Total"
+        },
+        {
+          "amount": 120,
+          "cadence": "annual",
+          "plan": "LifeLock Core, first year"
+        },
+        {
+          "amount": 124.99,
+          "cadence": "annual",
+          "plan": "LifeLock Core, renewal"
+        },
+        {
+          "amount": 192,
+          "cadence": "annual",
+          "plan": "LifeLock Advanced, first year"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "LifeLock Advanced, renewal"
+        },
+        {
+          "amount": 348,
+          "cadence": "annual",
+          "plan": "LifeLock Total, first year"
+        },
+        {
+          "amount": 349.99,
+          "cadence": "annual",
+          "plan": "LifeLock Total, renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 19,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -10887,6 +11632,8 @@
       }
     },
     "sources": [
+      "https://lifelock.norton.com/",
+      "https://us.norton.com/pricing",
       "https://www.security.org/identity-theft/lifelock/review/",
       "https://www.lifelock.com"
     ]
@@ -10909,11 +11656,41 @@
         {
           "amount": 44.99,
           "cadence": "annual",
-          "plan": "Premium, one device, yearly"
+          "plan": "Standard, 1 device, yearly (formerly Premium)"
+        },
+        {
+          "amount": 47.93,
+          "cadence": "annual",
+          "plan": "Standard 3 devices, first year"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "Standard 3 devices, renewal"
+        },
+        {
+          "amount": 55.99,
+          "cadence": "annual",
+          "plan": "Plus, first year"
+        },
+        {
+          "amount": 79.99,
+          "cadence": "annual",
+          "plan": "Plus, renewal"
+        },
+        {
+          "amount": 139.99,
+          "cadence": "annual",
+          "plan": "Ultimate, first year"
+        },
+        {
+          "amount": 279.99,
+          "cadence": "annual",
+          "plan": "Ultimate, renewal"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 6.67,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -10957,9 +11734,51 @@
         "MCAFEE *TOTAL PROTECTION",
         "MCAFEE.COM AUTO-RENEW"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Basic, first year"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Basic, renewal"
+        },
+        {
+          "amount": 49.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Premium, first year"
+        },
+        {
+          "amount": 149.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Premium, renewal"
+        },
+        {
+          "amount": 89.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Advanced, first year"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Advanced, renewal"
+        },
+        {
+          "amount": 199.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Ultimate, first year"
+        },
+        {
+          "amount": 279.99,
+          "cadence": "annual",
+          "plan": "McAfee+ Ultimate, renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 16.67,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -10991,6 +11810,8 @@
       }
     },
     "sources": [
+      "https://www.mcafee.com/en-us/identity-theft/protection.html",
+      "https://www.mcafee.com/",
       "https://www.security.org/antivirus/mcafee/",
       "https://www.mcafee.com"
     ]
@@ -11009,7 +11830,19 @@
         "MICROSOFT*ONEDRIVE 100GB WA",
         "MSFT *ONEDRIVE STORAGE WA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 1.99,
+          "cadence": "monthly",
+          "plan": "Microsoft 365 Basic"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "annual",
+          "plan": "Microsoft 365 Basic annual"
+        }
+      ]
     },
     "typicalMonthly": 1.99,
     "pricesCheckedAt": "2026-11",
@@ -11052,9 +11885,41 @@
         "NORDVPN.COM 1 YEAR PLAN",
         "NORDVPN* NORDSEC B.V."
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Basic"
+        },
+        {
+          "amount": 139.08,
+          "cadence": "annual",
+          "plan": "Basic renewal"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Complete"
+        },
+        {
+          "amount": 219.48,
+          "cadence": "annual",
+          "plan": "Complete renewal"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "monthly",
+          "plan": "Prime"
+        },
+        {
+          "amount": 296.28,
+          "cadence": "annual",
+          "plan": "Prime renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 14.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -11107,6 +11972,7 @@
       }
     },
     "sources": [
+      "https://nordvpn.com/pricing/",
       "https://www.security.org/vpn/nordvpn/review/",
       "https://support.nordvpn.com/hc/en-us/articles/19556844985489-How-to-cancel-auto-renewal-for-your-NordVPN-subscription",
       "https://surfshark.com/pricing",
@@ -11129,6 +11995,16 @@
       "billedVia": "direct",
       "priceHints": [
         {
+          "amount": 39.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Standard, first year"
+        },
+        {
+          "amount": 94.99,
+          "cadence": "annual",
+          "plan": "Norton 360 Standard, renewal"
+        },
+        {
           "amount": 49.99,
           "cadence": "annual",
           "plan": "Norton 360 Deluxe, first year"
@@ -11141,11 +12017,21 @@
         {
           "amount": 119.99,
           "cadence": "annual",
-          "plan": "Norton 360 Deluxe, renewal (reported by some reviews)"
+          "plan": "Norton 360 for Gamers, renewal"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Norton AntiVirus Plus, first year"
+        },
+        {
+          "amount": 59.99,
+          "cadence": "annual",
+          "plan": "Norton AntiVirus Plus, renewal"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 7.92,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -11177,6 +12063,9 @@
       }
     },
     "sources": [
+      "https://us.norton.com/products",
+      "https://us.norton.com/products/norton-360-deluxe",
+      "https://us.norton.com/pricing",
       "https://www.security.org/antivirus/norton/",
       "https://support.norton.com",
       "https://www.costbench.com/software/cybersecurity/norton/"
@@ -11196,9 +12085,31 @@
         "PLEX.TV PLEX PASS",
         "PLEX INC PLEX PASS MONTHLY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Plex Pass"
+        },
+        {
+          "amount": 69.99,
+          "cadence": "annual",
+          "plan": "Plex Pass annual"
+        },
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Remote Watch Pass"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Remote Watch Pass annual"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 6.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "selfhost",
     "also": [
@@ -11524,9 +12435,41 @@
         "SURFSHARK.COM",
         "SURFSHARK* SUBSCRIPTION"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 18.95,
+          "cadence": "monthly",
+          "plan": "Starter"
+        },
+        {
+          "amount": 79,
+          "cadence": "annual",
+          "plan": "Starter renewal"
+        },
+        {
+          "amount": 19.95,
+          "cadence": "monthly",
+          "plan": "One"
+        },
+        {
+          "amount": 99,
+          "cadence": "annual",
+          "plan": "One renewal"
+        },
+        {
+          "amount": 22.85,
+          "cadence": "monthly",
+          "plan": "One+"
+        },
+        {
+          "amount": 119,
+          "cadence": "annual",
+          "plan": "One+ renewal"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 18.95,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -11572,6 +12515,7 @@
       }
     },
     "sources": [
+      "https://surfshark.com/terms-of-service/pricing",
       "https://surfshark.com/pricing",
       "https://support.surfshark.com/hc/en-us/articles/360003069694-How-to-cancel-auto-renewal-for-your-Surfshark-subscription",
       "https://www.security.org/vpn/surfshark/review/"
@@ -11591,9 +12535,26 @@
         "TILE PREMIUM SUBSCRIPTION",
         "TILE INC TILE.COM CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 2.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 29.99,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        },
+        {
+          "amount": 99.99,
+          "cadence": "annual",
+          "plan": "Premium Protect"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 2.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "cancel",
     "also": [
@@ -11608,6 +12569,7 @@
       }
     },
     "sources": [
+      "https://support.life360.com/hc/en-us/articles/30582950726167-Tile-Premium-and-Premium-Protect-Pricing",
       "https://support.life360.com/hc/en-us/articles/30582997380887-Cancel-Tile-Premium-or-Premium-Protect-Subscription",
       "https://support.life360.com/hc/en-us/articles/30583018923927-Tile-Premium-and-Premium-Protect-Overview"
     ]
@@ -11767,6 +12729,8 @@
       }
     },
     "sources": [
+      "https://www.amazon.com/music/i/faq",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6",
       "https://interspacemusic.com/blog/?p=4439"
     ]
   },
@@ -12377,10 +13341,20 @@
           "amount": 44.99,
           "cadence": "monthly",
           "plan": "Ultimate"
+        },
+        {
+          "amount": 249.99,
+          "cadence": "annual",
+          "plan": "Boxing annual (paid up front)"
+        },
+        {
+          "amount": 449.99,
+          "cadence": "annual",
+          "plan": "Ultimate annual"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 34.99,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -12405,6 +13379,7 @@
       }
     },
     "sources": [
+      "https://www.dazn.com/en-US/news/boxing/dazn-cost-subscription-price-payment-methods-how-to-watch-usa-us-america/p4tzgn0msoc51q2291y9ycjfh",
       "https://www.dazn.com/en-CA/news/other/dazn-cost-subscription-price-payment-methods-how-to-watch-usa-us-america/p4tzgn0msoc51q2291y9ycjfh"
     ]
   },
@@ -12477,6 +13452,8 @@
       }
     },
     "sources": [
+      "https://www.discoveryplus.com/",
+      "https://help.discoveryplus.com/hc/en-us/articles/44191391175703-discovery-plan-price-changes",
       "https://www.americantv.com/discovery-plus-price-increase-october-2026.php",
       "https://www.androidheadlines.com/2026/10/discovery-plus-subscribers-will-now-pay-more-for-streaming.html"
     ]
@@ -12628,6 +13605,8 @@
       }
     },
     "sources": [
+      "https://support.espn.com/hc/en-us/articles/40375475974036-ESPN-Select-or-Unlimited-Plans-and-Prices",
+      "https://plus.espn.com/",
       "https://www.newscaststudio.com/2026/08/24/espn-dtc-streaming-price-hike-826/",
       "https://9to5mac.com/2026/08/24/espn-streaming-prices-are-going-up-along-with-disney-and-hulu-bundles/",
       "https://disneyplus.com/welcome/plans"
@@ -12664,6 +13643,11 @@
           "amount": 28.99,
           "cadence": "monthly",
           "plan": "Deluxe (5 titles a month)"
+        },
+        {
+          "amount": 203.88,
+          "cadence": "annual",
+          "plan": "Plus annual"
         }
       ]
     },
@@ -12697,6 +13681,8 @@
       }
     },
     "sources": [
+      "https://support.scribd.com/hc/en-us/articles/40678839226644-Everand-plans-Standard-Plus-and-Deluxe",
+      "https://www.everand.com/",
       "https://apps.apple.com/us/app/-/id542557212",
       "https://www.publishersweekly.com/pw/by-topic/digital/content-and-e-books/article/98426-scribd-s-everand-adds-deluxe-subscription-tier.html"
     ]
@@ -12717,9 +13703,26 @@
         "FUBO.TV NEW YORK NY",
         "FUBOTV INC NEW YORK NY"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 88.99,
+          "cadence": "monthly",
+          "plan": "Pro"
+        },
+        {
+          "amount": 98.99,
+          "cadence": "monthly",
+          "plan": "Elite"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Latino"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 88.99,
     "verdict": "rotate",
     "also": [
       "keep"
@@ -12749,6 +13752,7 @@
       }
     },
     "sources": [
+      "https://www.fubo.tv/welcome/plans",
       "https://www.fubo.tv/welcome",
       "https://cordcuttersnews.com/fubo-integrates-hulu-live-tv-into-package-options-on-its-homepage/"
     ]
@@ -12970,6 +13974,7 @@
       }
     },
     "sources": [
+      "https://www.aboutamazon.com/news/devices/what-is-kindle-unlimited",
       "https://www.dealnews.com/features/kindle-unlimited/cost/"
     ]
   },
@@ -13064,10 +14069,25 @@
           "amount": 159.99,
           "cadence": "annual",
           "plan": "League Pass Premium season (NBA.com)"
+        },
+        {
+          "amount": 16.99,
+          "cadence": "monthly",
+          "plan": "League Pass monthly (NBA.com)"
+        },
+        {
+          "amount": 24.99,
+          "cadence": "monthly",
+          "plan": "League Pass Premium monthly (NBA.com)"
+        },
+        {
+          "amount": 13.99,
+          "cadence": "monthly",
+          "plan": "Team Pass monthly (NBA.com)"
         }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 16.99,
     "verdict": "rotate",
     "also": [
       "cancel"
@@ -13092,6 +14112,7 @@
       }
     },
     "sources": [
+      "https://www.nba.com/league-pass-purchase",
       "https://www.nba.com/nba-league-pass-faqs",
       "https://www.americantv.com/nba-league-pass-plans-prices.php"
     ]
@@ -13243,9 +14264,61 @@
       "examples": [
         "PANDORA MEDIA 510-451-4100 CA",
         "PANDORA*PLUS SUBSCRIPTION CA"
+      ],
+      "priceHints": [
+        {
+          "amount": 5.99,
+          "cadence": "monthly",
+          "plan": "Plus"
+        },
+        {
+          "amount": 11.99,
+          "cadence": "monthly",
+          "plan": "Premium"
+        },
+        {
+          "amount": 65.89,
+          "cadence": "annual",
+          "plan": "Plus annual"
+        },
+        {
+          "amount": 131.89,
+          "cadence": "annual",
+          "plan": "Premium annual"
+        },
+        {
+          "amount": 19.99,
+          "cadence": "monthly",
+          "plan": "Premium Family"
+        },
+        {
+          "amount": 219.89,
+          "cadence": "annual",
+          "plan": "Premium Family annual"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Plus (App Store)"
+        },
+        {
+          "amount": 14.99,
+          "cadence": "monthly",
+          "plan": "Premium (App Store)"
+        },
+        {
+          "amount": 6.99,
+          "cadence": "monthly",
+          "plan": "Plus (Google Play)"
+        },
+        {
+          "amount": 12.99,
+          "cadence": "monthly",
+          "plan": "Premium (Google Play)"
+        }
       ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 5.99,
     "verdict": "keep",
     "also": [
       "cancel"
@@ -13271,6 +14344,9 @@
       }
     },
     "sources": [
+      "https://www.pandora.com/plans",
+      "https://help.pandora.com/s/article/2026-Pandora-Subscription-Rate-Change?language=en_US",
+      "https://help.pandora.com/s/article/Upgrade-to-Pandora-Plus-or-Pandora-Premium-1519949306612?language=en_US",
       "https://routenote.com/radar/is-pandora-plus-worth-it-in-2026-price-features-and-spotify-comparison/",
       "https://help.pandora.com/s/article/Cancel-your-Subscription-1519949295562"
     ]
@@ -13431,6 +14507,8 @@
       }
     },
     "sources": [
+      "https://www.peacocktv.com/",
+      "https://www.peacocktv.com/help/article/price-increase",
       "https://www.droid-life.com/2026/08/18/peacock-raises-prices/",
       "https://9to5mac.com/2026/08/18/peacock-is-the-latest-streaming-service-to-increase-prices-details-here/",
       "https://www.tvline.com/2238983/peacock-price-increase-august-2026-subscription-cost/"
@@ -14434,6 +15512,7 @@
       }
     },
     "sources": [
+      "https://www.allstate.com/auto-insurance",
       "https://www.allstate.com/resources/car-insurance/can-i-cancel-my-car-insurance",
       "https://www.allstate.com/help-support/my-policy/faqs"
     ]
@@ -14758,6 +15837,7 @@
       }
     },
     "sources": [
+      "https://www.cox.com/residential/home.html",
       "https://www.cox.com/",
       "https://www.cox.com/residential/support/billing-and-account/cancel-cox-service.html"
     ]
@@ -14862,6 +15942,7 @@
       }
     },
     "sources": [
+      "https://www.crunch.com/faq",
       "https://www.crunch.com/locations/boulder",
       "https://www.crunch.com/locations/canton"
     ]
@@ -15029,6 +16110,7 @@
       }
     },
     "sources": [
+      "https://frontier.com/",
       "https://frontier.com/resources/cancel-service",
       "https://go.frontier.com/blog/frontier-verizon-2026-merger"
     ]
@@ -15099,9 +16181,31 @@
         "GOOGLE *GOOGLE FI",
         "GOOGLE *FI 855-836-3987 CA"
       ],
-      "billedVia": "direct"
+      "billedVia": "direct",
+      "priceHints": [
+        {
+          "amount": 65,
+          "cadence": "monthly",
+          "plan": "Unlimited Premium (1 line)"
+        },
+        {
+          "amount": 50,
+          "cadence": "monthly",
+          "plan": "Unlimited Standard (1 line)"
+        },
+        {
+          "amount": 35,
+          "cadence": "monthly",
+          "plan": "Unlimited Essentials (1 line)"
+        },
+        {
+          "amount": 20,
+          "cadence": "monthly",
+          "plan": "Flexible base (1 line, plus $10/GB)"
+        }
+      ]
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 65,
     "pricesCheckedAt": "2026-11",
     "verdict": "keep",
     "also": [
@@ -15648,6 +16752,7 @@
       }
     },
     "sources": [
+      "https://www.progressive.com/auto/",
       "https://www.progressive.com/answers/how-to-cancel-car-insurance/",
       "https://www.progressive.com/answers/changing-car-insurance-companies/"
     ]
@@ -15668,7 +16773,7 @@
       ],
       "billedVia": "direct"
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 6.99,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
@@ -15699,6 +16804,8 @@
       }
     },
     "sources": [
+      "https://www.quicken.com/products/pricing-comparison-products/",
+      "https://support.simplifi.quicken.com/en/articles/3363727-quicken-simplifi-subscription-questions",
       "https://www.quicken.com/products/simplifi/"
     ]
   },
@@ -15754,6 +16861,8 @@
       }
     },
     "sources": [
+      "https://www.rocketmoney.com/learn/personal-finance/how-much-does-rocket-money-cost",
+      "https://www.rocketmoney.com/faq",
       "https://help.rocketmoney.com/",
       "https://help.rocketmoney.com/en/collections/110584-rocket-money-premium-membership",
       "https://help.rocketmoney.com/en/collections/110540-managing-subscriptions-with-rocket-money"
@@ -15868,6 +16977,7 @@
       }
     },
     "sources": [
+      "https://www.starlink.com/",
       "https://starlink.com/support/article/37bb3b47-9525-7224-5f0a-6d016ce26975",
       "https://starlink.com/support/article/9d43bef2-36fe-bcd1-9f6a-e0304e9cf22e"
     ]
@@ -15919,6 +17029,7 @@
       }
     },
     "sources": [
+      "https://www.statefarm.com/insurance/auto",
       "https://www.statefarm.com/customer-care/manage-your-accounts/cancel-my-policy",
       "https://www.statefarm.com/simple-insights/auto-and-vehicles/how-to-switch-car-insurance"
     ]
@@ -15990,7 +17101,7 @@
       ],
       "billedVia": "direct"
     },
-    "typicalMonthly": null,
+    "typicalMonthly": 75,
     "pricesCheckedAt": "2026-11",
     "verdict": "haggle",
     "also": [
